@@ -8,6 +8,6 @@
     "discord.io": "github:woor/discord.io#gateway_v6",
     "discord.js": "^11.2.1",
     "winston": "^2.4.0",
-    "xml2js-parser": "^1.1.1",
+    "xml2js-parser": "^1.1.1"
   }
 }
