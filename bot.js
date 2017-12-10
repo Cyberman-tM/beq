@@ -9,11 +9,11 @@ let s3 = new aws.S3({
 });
 
 //Read boQwI' xml files to build up internal JSON database
-var xmlFiles = fs.readdirSync('.\\KDB\\');
+var xmlFiles = fs.readdirSync('./KDB/');
 var xml = '';
 xmlFiles.forEach(function (item)
 {
-   xml += fs.readFileSync(('.\\KDB\\'+item), 'utf8');
+   xml += fs.readFileSync(('./KDB/'+item), 'utf8');
 });
 var json = parseStringSync((xml));
 
