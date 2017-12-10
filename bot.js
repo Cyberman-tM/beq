@@ -90,7 +90,7 @@ logger.level = 'debug';
 
 // Initialize Discord Bot
 var bot = new Discord.Client({
-    token: token,
+    token: s3.token,
     autorun: true
 });
 
