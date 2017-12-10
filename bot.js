@@ -2,7 +2,6 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var fs = require('fs');
 const parseStringSync = require('xml2js-parser').parseStringSync;
-const aws = require('aws-sdk');
 
 //Read boQwI' xml files to build up internal JSON database
 var xmlFiles = fs.readdirSync('./KDB/');
@@ -60,7 +59,7 @@ json = null;
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '1.1.1	 - XML startRes!';
+var versInt = '1.2.1	 - Finally on Heroku (and gitHub)!';
 var startDateTime = new Date().toLocaleString();
 
 //Can be changed
@@ -83,7 +82,6 @@ logger.add(logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
-console.log(process.env.token);
 // Initialize Discord Bot
 var bot = new Discord.Client({
     token: process.env.token,
