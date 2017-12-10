@@ -4,8 +4,9 @@ var fs = require('fs');
 const parseStringSync = require('xml2js-parser').parseStringSync;
 const aws = require('aws-sdk');
 
+console.log(process.env);
 let s3 = new aws.S3({
-  token: process.env.token  
+  token: process.env.token
 });
 
 //Read boQwI' xml files to build up internal JSON database
@@ -87,7 +88,7 @@ logger.add(logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
-
+console.log(s3);
 // Initialize Discord Bot
 var bot = new Discord.Client({
     token: s3.token,
