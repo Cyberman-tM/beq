@@ -223,7 +223,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				for (i = 0; i < KDBPHJSon.length; i++)
 				{
 					tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
-					if (tmpWord.type == wordType)
+					if (tmpWord != null && tmpWord.type == wordType)
 						break;
 				}
 				
