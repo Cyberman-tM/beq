@@ -1,7 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var fs = require('fs');
-const parseStringSync = require('xml2js-parser').parseStringSync;
+var xmldoc = require('xmldoc');
 
 //Read boQwI' xml files to build up internal JSON database
 var xmlFiles = fs.readdirSync('./KDB/');
@@ -10,13 +10,74 @@ xmlFiles.forEach(function (item)
 {
    xml += fs.readFileSync(('./KDB/'+item), 'utf8');
 });
-var json = parseStringSync((xml));
+
+var document = new xmldoc.XmlDocument(xml);
+
+//Wanted format:
+//{"tlh":"bay","de":"der Konsonant {b:sen:nolink}","en":"the consonant {b:sen:nolink}","type":"n"},
+
+var KDBJSon = new Array();
+var KDBPHJSon = new Array();
+var emptyStruct = {tlh: 'tlhIngan', en:'klingon', de:'Klingone', type:'n', notes:'notes'};
+
+document.children[1].childrenNamed("table").forEach(function (headItem)
+{
+	emptyStruct.tlh = '';
+	emptyStruct.en = '';
+	emptyStruct.de = '';
+	emptyStruct.notes = '';
+	emptyStruct.type = '';
+	
+	//Transfer only the data we actually want
+	headItem.childrenNamed("column").forEach(function (item)
+	{
+		if (item.firstChild != null)
+		{
+			switch (item.attr.name)
+			{
+			  case 'entry_name':
+				emptyStruct.tlh = item.firstChild.text;
+				break;
+			  case 'part_of_speech':
+				emptyStruct.type = item.firstChild.text;
+				break;
+			  case 'definition':
+				emptyStruct.en = item.firstChild.text;
+				break;
+			  case 'definition_de':
+				emptyStruct.de = item.firstChild.text;
+				break;
+			  case 'notes':
+				emptyStruct.notes = item.firstChild.text;
+				break;
+			}
+		}
+	});
+	//Make sure everything's here
+	if (emptyStruct.de == '')
+		emptyStruct.de = emptyStruct.en;
+	
+	//Push it into the array
+	KDBJSon.push(emptyStruct);
+	
+	//Maybe it was a sentence? Separate array for that
+	if (emptyStruct.type.startsWith('sen'))
+		KDBPHJSon.push(emptyStruct);
+	
+});
+process.exit();
+
 
 //Clear as much memory as possible
 xmlFiles = null;
 xml = null;
 fs = null;
 
+/*
+//This is faster, but the resulting JSON is weird :-(
+//const parseStringSync = require('xml2js-parser').parseStringSync;
+//var json = parseStringSync((xml));
+//var json = null;
 //The JSON contains a LOT of (to us) useless information, in a useless format
 //We have to reformat it, and drop everything we don't need while at it
 //Current format:
@@ -56,6 +117,7 @@ json.sm_xml_export.database[0].table.forEach(function (item)
 });
 
 json = null;
+*/
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
