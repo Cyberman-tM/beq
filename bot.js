@@ -209,7 +209,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 		case 'le\'rat':
 			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
-			
+			break;
 		case 'KWOTD':
 				//TODO: KWOTD - random word/sentence, type of word as parameter
 				//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte				
