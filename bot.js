@@ -22,12 +22,8 @@ var emptyStruct = {tlh: 'tlhIngan', en:'klingon', de:'Klingone', type:'n', notes
 
 document.children[1].childrenNamed("table").forEach(function (headItem)
 {
-	emptyStruct.tlh = '';
-	emptyStruct.en = '';
-	emptyStruct.de = '';
-	emptyStruct.notes = '';
-	emptyStruct.type = '';
-	
+	emptyStruct = new Array({tlh: '', en:'', de:'', type:'', notes:''});
+
 	//Transfer only the data we actually want
 	headItem.childrenNamed("column").forEach(function (item)
 	{
@@ -63,7 +59,7 @@ document.children[1].childrenNamed("table").forEach(function (headItem)
 	//Maybe it was a sentence? Separate array for that
 	if (emptyStruct.type.startsWith('sen'))
 		KDBPHJSon.push(emptyStruct);
-	
+
 });
 
 //Clear as much memory as possible
