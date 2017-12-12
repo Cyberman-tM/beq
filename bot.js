@@ -65,8 +65,6 @@ document.children[1].childrenNamed("table").forEach(function (headItem)
 		KDBPHJSon.push(emptyStruct);
 	
 });
-process.exit();
-
 
 //Clear as much memory as possible
 xmlFiles = null;
