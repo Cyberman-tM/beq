@@ -248,6 +248,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   var p_lookFuzz = args[4];
 			   var p_lookCase = args[5];   //Makes no sense - 4 doesn't check for value, so you'd always have to use fuzzy
 			   var p_startRes = args[6];
+			   var p_filtWord = args[7];
 
 			   var lookLang = null;
 			   var lookWord = null;
@@ -255,6 +256,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   var lookFuzz = null;
 			   var lookCase = null;
 			   var startRes = null;
+			   var filtWord = null;
 
 			   if (p_lookTran == null)
 			      p_lookTran = '';
@@ -263,14 +265,21 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   if (p_lookFuzz == null)
 			      p_lookFuzz = '';
 			   if (p_startRes == null)
-				   p_startRes = '';
+		        p_startRes = '';
+         if (p_filtWord == null)
+		        p_filtWord = '';
 			   
-			   var dynArg = p_lookTran + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes;
+			   var dynArg = p_lookTran + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
 
 			   if (dynArg.indexOf('case') >= 0)
 			      lookCase = 'case';
 			   if (dynArg.indexOf('fuzzy') >= 0)
 			      lookFuzz = true;
+            
+         //These paramters have parameters in themselves
+         //always an equal sign without spaces and the value following it
+			   if (dynArg.indexOf('type') >= 0)
+			      filtWord = dynArg.split('type=')[1].split('|')[0];
 			   if (dynArg.indexOf('startRes') >= 0)
 				   startRes = dynArg.split('startRes=')[1].split('|')[0];
 			   
@@ -341,9 +350,15 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				    
 				  var RE = new RegExp(regexLook, regexFlag);
 				  results = KDBJSon.filter(function(item){ return item[lookLang].match(RE);});
+          
+          if (filtWord != null)
+          {
+            var resultW = results.filter(function(item){return item[type].split(':')[0] == filtWord});
+            results = resultW;
+          }
 
 				   if (results != null)
-				      sndMessage += createTranslation(lookWord, lookLang, lookTran, results, lookFuzz, lookCase, startRes);
+				      sndMessage += createTranslation(lookWord, lookLang, lookTran, results, lookFuzz, lookCase, startRes, filtWord);
 				   else
 				      sndMessage += 'Sorry, nothing found.\n';
 			   }
