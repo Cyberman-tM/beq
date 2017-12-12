@@ -49,8 +49,8 @@ document.children[1].childrenNamed("table").forEach(function (headItem)
 			}
 		}
 	});
-	//Make sure everything's here
-	if (emptyStruct.de == '')
+	//Make sure everything's here (sometimes the german is missing)
+	if (emptyStruct.de == '' || emptyStruct.de == undefined)
 		emptyStruct.de = emptyStruct.en;
 	
 	//Push it into the array
@@ -115,7 +115,7 @@ json = null;
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '1.2.1	 - Finally on Heroku (and gitHub)!';
+var versInt = '1.3.1	 - New XML reader!';
 var startDateTime = new Date().toLocaleString();
 
 //Can be changed
