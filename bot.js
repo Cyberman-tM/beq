@@ -353,7 +353,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
           
           if (filtWord != null)
           {
-            var resultW = results.filter(function(item){return item[type].split(':')[0] == filtWord});
+            var resultW = results.filter(function(item){return item.type.split(':')[0] == filtWord});
             results = resultW;
           }
 
