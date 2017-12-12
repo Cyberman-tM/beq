@@ -208,6 +208,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 			
 		case 'le\'rat':
+		case 'Le\'rat':
 			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
 			break;
 		case 'KWOTD':
