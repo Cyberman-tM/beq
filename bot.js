@@ -228,7 +228,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'setDefaultTLang de/tlh/en\n'
 				 + 'setFuzzy on/off\n'
 				 + 'Le\'rat\n'
-				 + 'KWOTD \n'
+				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
 				 + 'OUTDATED!\n';
 			break;
 
@@ -340,13 +340,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			aIdx = null;
 			var ULang = getUserTranLang(userID);
 
-			console.log(wordType);
-			console.log(wordType2);
-			
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < KDBPHJSon.length; i++)			
 			{
-				console.log(tmpWord);
 				tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
 				if (tmpWord != null && (tmpWord.type == wordType || tmpWord.type == wordType2))
 					break;
