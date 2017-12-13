@@ -204,25 +204,25 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'ping':
 			sndMessage = 'pong';
 			break;
-		case 'yIngu\'':
-			sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
-				sndMessage += 'I am active since ' + startDateTime + '\n';
-			sndMessage += 'I\'m using the database of De\'vIDs boQwI\', ' + KDBVer + '\n';
-			sndMessage += '\n';
-			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
-			break;
-
+			
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
 			sndMessage = 'ping - simple response test\n'
-				 + 'yIngu\' - Name and version of the bot\n'
+				 + 'yIngu\' - Name and version of the bot & database version\n'
 				 + 'CMDLIST - this here\n'
 				 + 'tlhIngan - replies "maH!"\n'
-				 + 'mugh - translation lookup, is intended to look up single words in the boQwI\' database\n'
-				 + '       sentences have to have their spaces replaced with _ !'
-				 + 'mugh tlh - look up klingon->english(or german)\n'
-				 + 'mugh en  - look up english->klingon\n'
-				 + 'mugh de  - look up german->klingon\n'
+				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
+				 + '       Multiple words have to be separated by a _!\n'
+				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [filtWord=(n,v,adv,sen,ques,...)]\n'
+				 + '       the first parameter has to be the language the word you want translated is in. Mandatory\n'
+				 + '       the second parameter is the word, or phrase, you\'re looking for, also mandatory\n'
+				 + '       the rest of the parameters are optional and be used in any order or not at all\n'
+				 + '       [tlh,de,en] - the language you want the translation to be in. If none is supplied, the default (yours, if defined) is used\n'
+				 + '       [fuzzy] - normally only exact matches are returned. If you want to find anything that contains the term, add the keyword fuzzy\n'
+				 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon\n'
+				 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,\n'
+				 + '                       add this parameter with the number or results you want to skip\n'
+				 + '       [filtWord=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n'
 				 + 'setTLang - set translation language to the argument, i.e. "setTLang en" for english translations\n'
 				 + 'showMySettings\n'
 				 + 'setDefaultTLang\n'
@@ -230,6 +230,14 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'Le\'rat\n'
 				 + 'KWOTD\n'
 				 + 'OUTDATED!\n';
+			break;
+
+		case 'yIngu\'':
+			sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
+				sndMessage += 'I am active since ' + startDateTime + '\n';
+			sndMessage += 'I\'m using the database of De\'vIDs boQwI\', ' + KDBVer + '\n';
+			sndMessage += '\n';
+			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			break;
 
 		case 'showMySettings':
