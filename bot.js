@@ -13,7 +13,7 @@ var xmlFiles = fs.readdirSync('./KDB/');
 var xml = '';
 xmlFiles.forEach(function (item)
 {
-	if (item.substr(-4) = '.xml')
+	if (item.substr(-4) == '.xml')
 	   xml += fs.readFileSync(('./KDB/' + item), 'utf8');    
 }
 );
