@@ -2,15 +2,23 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var fs = require('fs');
 var xmldoc = require('xmldoc');
+var links = require('./links');
+
+//Internal version - package.json would contain another version, but package.json should never reach the client,
+//so it's easier to just have another version number in here...
+var versInt = '1.3.2	 - New XML reader!';
+var startDateTime = new Date().toLocaleString();
 
 //Read boQwI' xml files to build up internal JSON database
 var xmlFiles = fs.readdirSync('./KDB/');
 var xml = '';
 xmlFiles.forEach(function (item)
 {
-	xml += fs.readFileSync(('./KDB/' + item), 'utf8');
+	if (item.substr(-4) = '.xml')
+	   xml += fs.readFileSync(('./KDB/' + item), 'utf8');    
 }
 );
+var KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 
 var document = new xmldoc.XmlDocument(xml);
 
@@ -84,7 +92,6 @@ document.children[1].childrenNamed("table").forEach(function (headItem)
 	//Maybe it was a sentence? Separate array for that
 	if (emptyStruct.type.startsWith('sen'))
 		KDBPHJSon.push(emptyStruct);
-
 }
 );
 
@@ -138,11 +145,6 @@ KDBPHJSon.push(
 
 json = null;
  */
-
-//Internal version - package.json would contain another version, but package.json should never reach the client,
-//so it's easier to just have another version number in here...
-var versInt = '1.3.1	 - New XML reader!';
-var startDateTime = new Date().toLocaleString();
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -206,7 +208,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'yIngu\'':
 			sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
 				sndMessage += 'I am active since ' + startDateTime + '\n';
-			sndMessage += 'I\'m using the database of De\'vIDs boQwI\'\n';
+			sndMessage += 'I\'m using the database of De\'vIDs boQwI\', ' + KDBVer + '\n';
 			sndMessage += '\n';
 			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			break;
@@ -223,6 +225,11 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'mugh en  - look up english->klingon\n'
 				 + 'mugh de  - look up german->klingon\n'
 				 + 'setTLang - set translation language to the argument, i.e. "setTLang en" for english translations\n'
+				 + 'showMySettings\n'
+				 + 'setDefaultTLang\n'
+				 + 'setFuzzy\n'
+				 + 'Le\'rat\n'
+				 + 'KWOTD\n'
 				 + 'OUTDATED!\n';
 			break;
 
@@ -340,6 +347,14 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				sndMessage += tmpWord.en + '\n';
 			sndMessage += '=>' + tmpWord.tlh + '\n';
 			break;
+			
+		case 'linkMe':
+		   var ListLink1 = args[1];
+		   
+		   if (ListLink1 == 'list')
+			   sndMessage += JSON.stringify(links);
+		
+		break;
 
 			//Übersetzungen
 		case 'mugh':
