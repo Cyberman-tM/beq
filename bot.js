@@ -225,10 +225,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + '       [filtWord=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n'
 				 + 'setTLang - set translation language to the argument, i.e. "setTLang en" for english translations\n'
 				 + 'showMySettings\n'
-				 + 'setDefaultTLang\n'
-				 + 'setFuzzy\n'
+				 + 'setDefaultTLang de/tlh/en\n'
+				 + 'setFuzzy on/off\n'
 				 + 'Le\'rat\n'
-				 + 'KWOTD\n'
+				 + 'KWOTD \n'
 				 + 'OUTDATED!\n';
 			break;
 
@@ -340,9 +340,13 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			aIdx = null;
 			var ULang = getUserTranLang(userID);
 
+			console.log(wordType);
+			console.log(wordType2);
+			
 			//We look in KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < KDBPHJSon.length; i++)
+			for (i = 0; i < KDBPHJSon.length; i++)			
 			{
+				console.log(tmpWord);
 				tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
 				if (tmpWord != null && (tmpWord.type == wordType || tmpWord.type == wordType2))
 					break;
