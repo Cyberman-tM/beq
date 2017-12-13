@@ -216,8 +216,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [filtWord=(n,v,adv,sen,ques,...)]\n'
 				 + '       the first parameter has to be the language the word you want translated is in. Mandatory\n'
 				 + '       the second parameter is the word, or phrase, you\'re looking for, also mandatory\n'
-				 + '       the rest of the parameters are optional and be used in any order or not at all\n'
-				 + '       [tlh,de,en] - the language you want the translation to be in. If none is supplied, the default (yours, if defined) is used\n'
+				 + '       [tlh,de,en] - the language you want the translation to be in. If none is supplied, the default (yours, if defined) is used. If uses, must be the third parameter\n'
+				 + '       the rest of the parameters are optional and be used in any order or not at all\n'				 
 				 + '       [fuzzy] - normally only exact matches are returned. If you want to find anything that contains the term, add the keyword fuzzy\n'
 				 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon\n'
 				 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,\n'
@@ -393,7 +393,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if (p_filtWord == null)
 				p_filtWord = '';
 
-			var dynArg = p_lookTran + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
+			var dynArg = p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
 
 			if (dynArg.indexOf('case') >= 0)
 				lookCase = 'case';
