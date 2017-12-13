@@ -2,7 +2,6 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var fs = require('fs');
 var xmldoc = require('xmldoc');
-var links = require('./links');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
