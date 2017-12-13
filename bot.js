@@ -5,7 +5,7 @@ var xmldoc = require('xmldoc');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '1.3.2	 - New XML reader!';
+var versInt = '1.3.5	 - New XML reader!';
 var startDateTime = new Date().toLocaleString();
 
 //Read boQwI' xml files to build up internal JSON database
