@@ -457,11 +457,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				var results = null;
 				lookWord = lookWord.replace("_", " ");
 
-				var RE = new RegExp(regexLook, regexFlag);
-				
 				while (results == null || results.length == 0)
-				{
-				
+				{				
 					//Case INSensitive search in klingon is useless (qaH is different from QaH)
 					if (lookLang == 'tlh')
 						lookCase = false;
@@ -477,7 +474,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 						regexLook = '^' + regexLook + '$';
 
 					//TODO: search with boundary? only single word?
-				
+					var RE = new RegExp(regexLook, regexFlag);
 					results = KDBJSon.filter(function (item)
 						{
 							return item[lookLang].match(RE);
