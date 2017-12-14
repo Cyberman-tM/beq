@@ -207,10 +207,18 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
-			sndMessage = 'ping - simple response test\n'
+			sndMessage = 'ping - simple response test, replies "pong"\n'
+				 + 'tlhIngan - replies "maH!"\n'
 				 + 'yIngu\' - Name and version of the bot & database version\n'
 				 + 'CMDLIST - this here\n'
-				 + 'tlhIngan - replies "maH!"\n'
+				 + 'Le\'rat\n'
+				 + '\n'
+				 + 'setTLang - set your translation language to the argument, i.e. "setTLang en" for english translations\n'
+				 + 'setFuzzy on/off\n'
+				 + 'showMySettings\n'
+				 + 'setDefaultTLang de/tlh/en\n'				 
+				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
+				 + '\n';
 				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
 				 + '       Multiple words have to be separated by a _!\n'
 				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [filtWord=(n,v,adv,sen,ques,...)]\n'
@@ -222,14 +230,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon\n'
 				 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,\n'
 				 + '                       add this parameter with the number or results you want to skip\n'
-				 + '       [filtWord=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n'
-				 + 'setTLang - set translation language to the argument, i.e. "setTLang en" for english translations\n'
-				 + 'showMySettings\n'
-				 + 'setDefaultTLang de/tlh/en\n'
-				 + 'setFuzzy on/off\n'
-				 + 'Le\'rat\n'
-				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
-				 + 'OUTDATED!\n';
+				 + '       [filtWord=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n';
 			break;
 
 		case 'yIngu\'':
