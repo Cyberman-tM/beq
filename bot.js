@@ -218,7 +218,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'showMySettings\n'
 				 + 'setDefaultTLang de/tlh/en\n'				 
 				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
-				 + '\n';
+				 + '\n'
 				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
 				 + '       Multiple words have to be separated by a _!\n'
 				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [filtWord=(n,v,adv,sen,ques,...)]\n'
