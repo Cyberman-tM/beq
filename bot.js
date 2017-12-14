@@ -379,7 +379,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var lookWord = null;
 			var lookTran = null;
 			var lookFuzz = null;
-			var lookCase = null;
+			var lookCase = false;
 			var startRes = null;
 			var filtWord = null;
 
@@ -496,7 +496,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 					{
 						if (lookCase == false)
 						{
-							sndMessage +="case";
 							lookCase = true;
 							continue;
 						}
