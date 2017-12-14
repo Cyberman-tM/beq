@@ -494,16 +494,20 @@ bot.on('message', function (user, userID, channelID, message, evt)
 					//No results? Maybe with different parameters!
 					if (results == null || results.length == 0)
 					{
-						if (lookCase == false)
+						//First try it without case (unless it's klingon, that always uses case)
+						if (lookCase == false && lookLang != 'tlh')
 						{
 							lookCase = true;
 							continue;
 						}
+						
+						//Still nothing? Try fuzzy search
 						if (lookFuzz == false)
 						{
 							lookFuzz = true;
 							continue;
 						}
+						
 						//Apparently we tried case and fuzzy - nothing to find here :-(
 						break;
 					}
