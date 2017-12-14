@@ -457,29 +457,27 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				var results = null;
 				lookWord = lookWord.replace("_", " ");
 
-				//Case INSensitive search in klingon is useless (qaH is different from QaH)
-				if (lookLang == 'tlh')
-					lookCase = false;
-
-				var regexLook = lookWord;
-				var regexFlag = '';
-
-				if (lookCase == true)
-					regexFlag += 'i';
-
-				//Not fuzzy == exact match
-				if (lookFuzz == false)
-					regexLook = '^' + regexLook + '$';
-
-				//TODO: search with boundary? only single word?
-
-				
-				//TODO: redo search if nothing is found, using case and fuzzy if necessary
-				//      loop? exit when found/all tried?
 				var RE = new RegExp(regexLook, regexFlag);
 				
 				while (results == null || results.length == 0)
 				{
+				
+					//Case INSensitive search in klingon is useless (qaH is different from QaH)
+					if (lookLang == 'tlh')
+						lookCase = false;
+
+					var regexLook = lookWord;
+					var regexFlag = '';
+
+					if (lookCase == true)
+						regexFlag += 'i';
+
+					//Not fuzzy == exact match
+					if (lookFuzz == false)
+						regexLook = '^' + regexLook + '$';
+
+					//TODO: search with boundary? only single word?
+				
 					results = KDBJSon.filter(function (item)
 						{
 							return item[lookLang].match(RE);
