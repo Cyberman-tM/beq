@@ -496,6 +496,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 					{
 						if (lookCase == false)
 						{
+							sndMessage +="case";
 							lookCase = true;
 							continue;
 						}
