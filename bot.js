@@ -394,10 +394,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if (p_filtWord == null)
 				p_filtWord = '';
 
-			var dynArg = p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
+			var dynArg = p_lookTran + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
 
 			if (dynArg.indexOf('case') >= 0)
-				lookCase = 'case';
+				lookCase = true;
 			if (dynArg.indexOf('fuzzy') >= 0)
 				lookFuzz = true;
 
@@ -459,12 +459,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 				//Case INSensitive search in klingon is useless (qaH is different from QaH)
 				if (lookLang == 'tlh')
-					lookCase = '';
+					lookCase = false;
 
 				var regexLook = lookWord;
 				var regexFlag = '';
 
-				if (lookCase == 'case')
+				if (lookCase == true)
 					regexFlag += 'i';
 
 				//Not fuzzy == exact match
@@ -559,6 +559,9 @@ function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useC
 	sndMessage += '\nYou asked for \'' + lookWord + '\' - I found ' + results.length + ' possible results';
 	if (useFuzzy == true)
 		sndMessage += ' using fuzzy searching';
+	
+	if (useCase == true)
+		sndMessage += ' ignoring case';
 	
 	sndMessage += ':\n';
 	if (startRes > 0)
