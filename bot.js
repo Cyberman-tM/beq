@@ -473,21 +473,45 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 				//TODO: search with boundary? only single word?
 
+				
+				//TODO: redo search if nothing is found, using case and fuzzy if necessary
+				//      loop? exit when found/all tried?
 				var RE = new RegExp(regexLook, regexFlag);
-				results = KDBJSon.filter(function (item)
-					{
-						return item[lookLang].match(RE);
-					}
-					);
-
-				if (filtWord != null)
+				
+				while (results == null || results.length == 0)
 				{
-					var resultW = results.filter(function (item)
+					results = KDBJSon.filter(function (item)
 						{
-							return item.type.split(':')[0] == filtWord
+							return item[lookLang].match(RE);
 						}
 						);
-					results = resultW;
+
+					if (filtWord != null)
+					{
+						var resultW = results.filter(function (item)
+							{
+								return item.type.split(':')[0] == filtWord
+							}
+							);
+						results = resultW;
+					}
+					
+					//No results? Maybe with different parameters!
+					if (results == null || results.length == 0)
+					{
+						if (lookCase == false)
+						{
+							lookCase = true;
+							continue;
+						}
+						if (lookFuzz == false)
+						{
+							lookFuzz = true;
+							continue;
+						}
+						//Apparently we tried case and fuzzy - nothing to find here :-(
+						break;
+					}
 				}
 
 				if (results != null)
