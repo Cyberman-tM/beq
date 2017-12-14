@@ -421,7 +421,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 					lookFuzz = uFuzz[0].fuzzy;
 			}
 
-			if ((p_lookTran + p_lookFuzz + p_lookCase).indexOf('nofuzz') >= 0)
+			if ((dynArg).indexOf('nofuzz') >= 0)
 				lookFuzz = false;
 
 			if (lookFuzz == null)
@@ -556,7 +556,11 @@ function langKnown(language)
 function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useCase, startRes)
 {
 	var sndMessage = '';
-	sndMessage += '\nYou asked for \'' + lookWord + '\' - I found ' + results.length + ' possible results:\n';
+	sndMessage += '\nYou asked for \'' + lookWord + '\' - I found ' + results.length + ' possible results';
+	if (useFuzzy == true)
+		sndMessage += ' using fuzzy searching';
+	
+	sndMessage += ':\n';
 	if (startRes > 0)
 		sndMessage += '(Starting from result #' + startRes + ')\n';
 	var count = 0;
