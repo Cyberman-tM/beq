@@ -1,33 +1,4 @@
-const beqTalkDef = JSON.stringify(
-{
-	"fuzzy": false,
-	"wCase": false,
-	"lookLang": "tlh",
-	"transLang": "de",
-	"command": "yIngu\'",
-	"wordType1": "n",
-	"wordType2": "sen:rp",
-	"startRes": '0',
-	"limitRes": '20',
-	"newline": "\n",
-	"result": [{ "type":"n",
-	            "word_tlh":"tlhIngan",
-				"word_en":"word",
-				"word_de":"wort"
-			  }],
-    "message": "",
-	"gotResult": false,
-	"failure":false
-});
-
-
-
-class beq_engine
-{
-	constructor()
-	{}
-	
-beqEngine(beqTalk)
+module.exports.Engine = function(beqTalk)
 {
 	var versInt = '123';
 	var startDateTime = "456";
@@ -161,160 +132,33 @@ beqEngine(beqTalk)
 	   beqTalk.failure = true;
 	}
 	return beqTalk;
-}
-}
+};
 
 
-//TESTIGN
-var beqTalk = JSON.parse(beqTalkDef);
+//Declarations have to be at the end?
 
-beqTalk.command = 'yIngu\'';
-var BE = new beq_engine();
-var resbeq = BE.beqEngine(beqTalk);
-console.log(resbeq);
-
-process.exit();
-
-function getUserTranLang(userID)
+module.exports.beqTalkDef = JSON.stringify(
 {
-	return userTranLang.filter(function (UT, iIdx)
-	{
-		if (UT.userID == userID)
-		{
-			aIdx = iIdx;
-			return UT
-		}
-	}
-	);
-}
+	"fuzzy": false,
+	"wCase": false,
+	"lookLang": "tlh",
+	"transLang": "de",
+	"command": "yIngu\'",
+	"wordType1": "n",
+	"wordType2": "sen:rp",
+	"startRes": '0',
+	"limitRes": '20',
+	"newline": "\n",
+	"result": [{ "type":"n",
+	            "word_tlh":"tlhIngan",
+				"word_en":"word",
+				"word_de":"wort"
+			  }],
+    "message": "",
+	"gotResult": false,
+	"failure":false
+});
 
-function getUserFuzzy(userID)
-{
-	return userFuzzy.filter(function (item, iIdx)
-	{
-		if (item.userID == userID)
-		{
-			aIdx = iIdx;
-			return item
-		}
-	}
-	);
-}
+module.exports.versInt = '0.0.1	 - beq engine!';
+module.exports.startDateTime = new Date().toLocaleString();
 
-function langKnown(language)
-{
-	var langFound = knownLangs.filter(function (lang)
-		{
-			if (lang == language)
-				return true;
-		}
-		);
-
-	if (langFound.length > 0)
-		return true;
-	else
-		return false;
-}
-
-function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useCase, startRes)
-{
-	var sndMessage = '';
-	sndMessage += '\nYou asked for \'' + lookWord + '\' - I found ' + results.length + ' possible results';
-	if (useFuzzy == true)
-		sndMessage += ' using fuzzy searching';
-	
-	if (useCase == true)
-		sndMessage += ' ignoring case';
-	
-	sndMessage += ':\n';
-	if (startRes > 0)
-		sndMessage += '(Starting from result #' + startRes + ')\n';
-	var count = 0;
-	var startCount = startRes;
-
-	results.forEach(function (item)
-	{
-		startCount--;
-		if (startCount <= 0 && count < 20)
-		{
-			count++;
-			sndMessage += (+startRes + +count).toString() + ') ' + getWType(item.type, lookTran) + ': ';
-
-			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
-			//     andernfalls immer das klingonische zurückgegeben
-			if (lookLang == 'tlh')
-			{
-				if (lookTran == 'en')
-					sndMessage += item.en + '\n';
-				else if (lookTran == 'de')
-					sndMessage += item.de + '\n';
-
-				if (useFuzzy == true)
-					sndMessage += '==> ' + item.tlh + '\n';
-			}
-			else
-			{
-				sndMessage += item.tlh + '\n';
-				if (useFuzzy == true || useCase != null)
-				{
-					if (lookTran == 'en')
-						sndMessage += '==> ' + item.en + '\n';
-					else if (lookTran == 'de')
-						sndMessage += '==> ' + item.de + '\n';
-				}
-			}
-		}
-	}
-	)
-	if (count >= 20)
-		sndMessage += '...too many results. Stopping list.\n';
-
-	return sndMessage;
-}
-
-function getWType(wType, tranLang)
-{
-	var wTypeS = wType.split(':')[0];
-	var wTypeL = '';
-
-	if (tranLang == 'de')
-	{
-		if (wTypeS == 'n')
-			wTypeL = 'Nomen';
-		else if (wTypeS == 'v')
-			wTypeL = 'Verb';
-		else if (wTypeS == 'sen')
-			wTypeL = 'Satz';
-		else if (wTypeS == 'excl')
-			wTypeL = 'Ausruf';
-		else if (wTypeS == 'adv')
-			wTypeL = 'Adverb';
-		else if (wTypeS == 'conj')
-			wTypeL = 'Bindewort';
-		else if (wTypeS == 'ques')
-			wTypeL = 'Frage';
-		else
-			wTypeL = 'unsupported yet';
-	}
-	else if (tranLang == 'en')
-	{
-		if (wTypeS == 'n')
-			wTypeL = 'Noun';
-		else if (wTypeS == 'v')
-			wTypeL = 'Verb';
-		else if (wTypeS == 'sen')
-			wTypeL = 'Sentence';
-		else if (wTypeS == 'excl')
-			wTypeL = 'Exclamation';
-		else if (wTypeS == 'adv')
-			wTypeL = 'Adverb';
-		else if (wTypeS == 'conj')
-			wTypeL = 'Conjunction';
-		else if (wTypeS == 'ques')
-			wTypeL = 'Question';
-		else
-			wTypeL = 'unsupported yet';
-	}
-
-	return wTypeL;
-}
