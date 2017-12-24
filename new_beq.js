@@ -1,7 +1,5 @@
-var fs = require('fs');
-var xmldoc = require('xmldoc');
-var beq = require('./beq_engine.js');
 
+var beq = require('./beq_engine.js');
 
 var beqTalk = JSON.parse(beq.beqTalkDef);
 beqTalk.command = "yIngu'";

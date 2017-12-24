@@ -1,18 +1,29 @@
 module.exports.Engine = function(beqTalk)
 {
-	var versInt = '123';
-	var startDateTime = "456";
-	var KDBVer = "sdlfkj";
+	
+	//Startup function (constructor, basically)
+	if (module.exports.versInt == undefined)
+	{
+		module.exports.versInt = '0.0.1	 - beq engine!';
+		module.exports.startDateTime = new Date().toLocaleString();
+		module.exports.KDBVer = "";
+		
+		var KDBJSon = new Array();
+		var KDBPHJSon = new Array();
+			
+		//Load XML data
+		readXML(KDBJSon, KDBPHJSon);
+	}
 	
 	var tmpTxt = "";	
 	switch (beqTalk.command)
 	{
 		case 'yIngu\'':
 			tmpTxt  = 'beq \'oH pongwIj\'e\'.';
-			tmpTxt += beqTalk.newline + 'Version: ' + versInt;
+			tmpTxt += beqTalk.newline + 'Version: ' + module.exports.versInt;
 			tmpTxt += beqTalk.newline + 'I am a helper bot. Use "CMDLIST" for a list of commands.' + beqTalk.newline;
-			tmpTxt += beqTalk.newline + 'I am active since ' + startDateTime + beqTalk.newline;
-			tmpTxt += beqTalk.newline + 'I\'m using the database of De\'vIDs boQwI\', ' + KDBVer + beqTalk.newline;
+			tmpTxt += beqTalk.newline + 'I am active since ' + module.exports.startDateTime + beqTalk.newline;
+			tmpTxt += beqTalk.newline + 'I\'m using the database of De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 			tmpTxt += beqTalk.newline;
 			tmpTxt += beqTalk.newline + '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.';
 			tmpTxt += beqTalk.newline + beqTalk.newline + 'toH. yInvetlh \'oHta\'*' + beqTalk.newline;
@@ -159,6 +170,95 @@ module.exports.beqTalkDef = JSON.stringify(
 	"failure":false
 });
 
-module.exports.versInt = '0.0.1	 - beq engine!';
-module.exports.startDateTime = new Date().toLocaleString();
+function readXML(KDBJSon, KDBPHJSon)
+{
+	var fs = require('fs');
+	var xmldoc = require('xmldoc');
+	//Read boQwI' xml files to build up internal JSON database
+	var xmlFiles = fs.readdirSync('./KDB/');
+	var xml = '';
+	xmlFiles.forEach(function (item)
+	{
+		if (item.substr(-4) == '.xml')
+		   xml += fs.readFileSync(('./KDB/' + item), 'utf8');    
+	}
+	);
+	var KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 
+	var document = new xmldoc.XmlDocument(xml);
+
+	//Wanted format:
+	//{"tlh":"bay","de":"der Konsonant {b:sen:nolink}","en":"the consonant {b:sen:nolink}","type":"n"},
+	var emptyStruct =
+	{
+		tlh: 'tlhIngan',
+		en: 'klingon',
+		de: 'Klingone',
+		type: 'n',
+		notes: 'notes'
+	};
+
+	document.children[1].childrenNamed("table").forEach(function (headItem)
+	{
+		emptyStruct = new Array(
+			{
+				tlh: '',
+				en: '',
+				de: '',
+				type: '',
+				notes: ''
+			}
+			);
+
+		//Transfer only the data we actually want
+		headItem.childrenNamed("column").forEach(function (item)
+		{
+			if (item.firstChild != null)
+			{
+				switch (item.attr.name)
+				{
+				case 'entry_name':
+					emptyStruct.tlh = item.firstChild.text;
+					break;
+				case 'part_of_speech':
+					emptyStruct.type = item.firstChild.text;
+					break;
+				case 'definition':
+					emptyStruct.en = item.firstChild.text;
+					break;
+				case 'definition_de':
+					emptyStruct.de = item.firstChild.text;
+					break;
+				case 'notes':
+					emptyStruct.notes = item.firstChild.text;
+					break;
+				}
+			}
+		}
+		);
+		//Make sure everything's here (sometimes the german is missing)
+		if (emptyStruct.de == '' || emptyStruct.de == undefined)
+			emptyStruct.de = emptyStruct.en;
+
+		//Just to be sure...
+		if (emptyStruct.en == undefined)
+			emptyStruct.en = '';
+		if (emptyStruct.tlh == undefined)
+			emptyStruct.tlh = '';
+		if (emptyStruct.notes == undefined)
+			emptyStruct.notes = '';
+
+		//Push it into the array
+		KDBJSon.push(emptyStruct);
+
+		//Maybe it was a sentence? Separate array for that
+		if (emptyStruct.type.startsWith('sen'))
+			KDBPHJSon.push(emptyStruct);
+}
+);
+
+//Clear as much memory as possible
+xmlFiles = null;
+xml = null;
+fs = null;
+}
