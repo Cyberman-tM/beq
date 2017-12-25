@@ -49,18 +49,18 @@ module.exports.Engine = function(beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = "";
 		
-		var KDBJSon = new Array();
-		var KDBPHJSon = new Array();
+		module.exports.module.exports.KDBJSon = new Array();
+		module.exports.module.exports.KDBPHJSon = new Array();
 			
 		//Load XML data
-		readXML(KDBJSon, KDBPHJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon);
 	}
 	
 	var tmpTxt = "";	
 	switch (beqTalk.command)
 	{
 		case 'yIngu\'':
-		   tmpTxt  = 'beq engine, version ' + module.exports.versInt + beqTalk.newline;
+		   tmpTxt  = 'Beq engine, version ' + module.exports.versInt + beqTalk.newline;
 		   tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 		   
@@ -79,10 +79,10 @@ module.exports.Engine = function(beqTalk)
 			
 			var tmpWord = "";
 
-			//We look in KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < KDBPHJSon.length; i++)			
+			//We look in module.exports.KDBPHJSon - which only contains phrases/sentences
+			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
 			{
-				tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
+				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
 					break;
 				tmpWord = null;
@@ -119,7 +119,7 @@ module.exports.Engine = function(beqTalk)
 				
 				//TODO: search with boundary? only single word?
 				var RE = new RegExp(regexLook, regexFlag);
-				results = KDBJSon.filter(function (item)
+				results = module.exports.KDBJSon.filter(function (item)
 				{
 					return item[beqTalk.lookLang].match(RE);
 				});
@@ -318,7 +318,7 @@ function getWType(wType, tranLang)
 }
 
 
-function readXML(KDBJSon, KDBPHJSon)
+function readXML(module.exports.KDBJSon, module.exports.KDBPHJSon)
 {
 	var fs = require('fs');
 	var xmldoc = require('xmldoc');
@@ -397,11 +397,11 @@ function readXML(KDBJSon, KDBPHJSon)
 			emptyStruct.notes = '';
 
 		//Push it into the array
-		KDBJSon.push(emptyStruct);
+		module.exports.KDBJSon.push(emptyStruct);
 
 		//Maybe it was a sentence? Separate array for that
 		if (emptyStruct.type.startsWith('sen'))
-			KDBPHJSon.push(emptyStruct);
+			module.exports.KDBPHJSon.push(emptyStruct);
 	}
 	);
 
