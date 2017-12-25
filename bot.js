@@ -202,6 +202,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
 			break;
 		case 'KWOTD':
+		    var beqTalk = JSON.parse(beq.beqTalkDef);
+			beqTalk.command = 'KWOTD';
+			sndMessage  = 'Sorry, raw output only:';
+			sndMessage += beqTalk.result;
 			break;
 			
 		case 'linkMe':
