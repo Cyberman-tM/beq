@@ -80,10 +80,10 @@ module.exports.Engine = function(beqTalk)
 			
 			var tmpWord = "";
 
-			//We look in module.exports.KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
+			//We look in KDBPHJSon - which only contains phrases/sentences
+			for (i = 0; i < KDBPHJSon.length; i++)			
 			{
-				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
+				tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
 					break;
 				tmpWord = null;
@@ -402,7 +402,7 @@ function readXML(KDBJSon, KDBPHJSon)
 
 		//Maybe it was a sentence? Separate array for that
 		if (emptyStruct.type.startsWith('sen'))
-			module.exports.KDBPHJSon.push(emptyStruct);
+			KDBPHJSon.push(emptyStruct);
 	}
 	);
 
