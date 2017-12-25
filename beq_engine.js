@@ -274,7 +274,7 @@ module.exports.createTranslation = function(beqTalk)
 		sndMessage += intText.resTMR + beqTalk.newline;
 	
 	sndMessage += beqTalk.newline;
-	sndMessage += "toy'meH jIHtaH.";
+	sndMessage += "*toy'meH jIHtaH.*";
 
 	return sndMessage;
 }
