@@ -45,6 +45,7 @@ module.exports.Engine = function(beqTalk)
 	//Startup function (constructor, basically)
 	if (module.exports.versInt == undefined)
 	{
+		var fs = require('fs');
 		module.exports.versInt = '0.0.2	- complete rework, separate project!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
