@@ -47,12 +47,11 @@ bot.on('ready', function (evt)
 	logger.info('Logged in as: ');
 	logger.info(bot.username + ' - (' + bot.id + ')');
 	logger.info('Version:' + versInt);
-	logger.info('Beq-Engine:');
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
-	logger.info(beqTalk.message);	
+	logger.info(beqTalk.message);
 }
 );
 
