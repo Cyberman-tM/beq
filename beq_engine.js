@@ -11,6 +11,7 @@ createTranslation:
 As the name says, it translates the beqTalk result into a readable string
 Must be called manually, since the result is not useful everywhere, while the beqTalk-Result is JSON
 The result will be NULL if beqTalk-gotResult is set to NULL
+=>This method is intended for Discord-Bots or Text output!
 
 IMPORTANT STUFF:
 
@@ -224,18 +225,20 @@ module.exports.createTranslation = function(beqTalk)
 	if (beqTalk.wCase == true)
 		sndMessage += intText.resCase;
 	sndMessage += beqTalk.newline;
-	
-	if (beqTalk.startRes > 0)
-		sndMessage += intText.resSTR;
-	sndMessage = sndMessage.replace("&1", beqTalk.startRes);
-	sndMessage += beqTalk.newline;
-	
+
 	var count = 0;
 	var startCount = beqTalk.startRes;
 	
 	//Maybe the user though we'd get more results?
 	if (startCount > beqTalk.result.length)
-		startCount = 0;
+		startCount = beqTalk.startRes = 0;
+	
+	if (startCount > 0)
+	{
+		sndMessage += intText.resSTR;
+		sndMessage = sndMessage.replace("&1", startCount);
+		sndMessage += beqTalk.newline;
+	}
 	
 	//We need either DE or EN as language for the word types
 	var listLang = beqTalk.transLang;
@@ -245,6 +248,7 @@ module.exports.createTranslation = function(beqTalk)
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
+		
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
