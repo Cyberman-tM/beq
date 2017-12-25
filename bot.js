@@ -47,6 +47,7 @@ bot.on('ready', function (evt)
 	logger.info('Logged in as: ');
 	logger.info(bot.username + ' - (' + bot.id + ')');
 	logger.info('Version:' + versInt);
+	logger.info('Engine:' + beq.versInt);
 }
 );
 
@@ -100,9 +101,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 
 		case 'yIngu\'':
-			sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
-				sndMessage += 'I am active since ' + startDateTime + '\n';
-			sndMessage += 'I\'m using the database of De\'vIDs boQwI\', ' + KDBVer + '\n';
+			sndMessage  = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
+			sndMessage += 'beq-Engine info missing!';
 			sndMessage += '\n';
 			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			break;
