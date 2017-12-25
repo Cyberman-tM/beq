@@ -49,8 +49,8 @@ module.exports.Engine = function(beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = "";
 		
-		module.exports.KDBJSon = new Array();
-		module.exports.KDBPHJSon = new Array();
+		var KDBJSon = new Array();
+		var KDBPHJSon = new Array();
 			
 		//Load XML data
 		readXML(KDBJSon, KDBPHJSon);
