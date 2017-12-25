@@ -23,8 +23,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"lookWord": "",               // the word you are looking for
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
-	"wordType1": "",              // some commands or functions allow to limit the word type, for example KWOTD does that
-	"wordType2": "",              // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
+	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
+	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
 	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
 	"limitRes": '20',             // in some cases (Discord) you may not want to get ALL the results, but only up to "limitRes"
 	"newline": "\n",              // When formatted text is returned, this will be used as newline - i.e. Text output or HTML output
@@ -102,7 +102,8 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.wCase = false;
 			
 			while (results == null || results.length == 0)
-			{				
+			{			
+
 				var regexLook = beqTalk.lookWord;
 				var regexFlag = '';
 				
@@ -151,6 +152,7 @@ module.exports.Engine = function(beqTalk)
 					break;
 				}
 			}
+			
 			if (results != null && results.length > 0)
 			{
 				beqTalk.gotResult = true;
@@ -176,19 +178,19 @@ module.exports.beqTalkDef = JSON.stringify(
 {
 	"fuzzy": false,
 	"wCase": false,
-	"lookLang": "tlh",
-	"lookWord": "word",
-	"transLang": "de",
-	"command": "yIngu\'",
-	"wordType1": "n",
-	"wordType2": "sen:rp",
+	"lookLang": "",
+	"lookWord": "",
+	"transLang": "",
+	"command": "",
+	"wordType1": null,
+	"wordType2": null,
 	"startRes": '0',
 	"limitRes": '20',
 	"newline": "\n",
-	"result": [{ "type":"n",
-	            "tlh":"tlhIngan",
-				"en":"word",
-				"de":"wort"
+	"result": [{ "type":"",
+	            "tlh":"",
+				"en":"",
+				"de":""
 			  }],
     "message": "",
 	"gotResult": false,
@@ -198,7 +200,7 @@ module.exports.beqTalkDef = JSON.stringify(
 module.exports.createTranslation = function(beqTalk)
 {
 	if (beqTalk.gotResult == false)
-		return null;
+		return "Nothing found.";
 	
 	var sndMessage = '';
 	//Maybe we can use this for multi-language?
@@ -226,6 +228,11 @@ module.exports.createTranslation = function(beqTalk)
 	
 	var count = 0;
 	var startCount = beqTalk.startRes;
+	
+	//We need either DE or EN as language for the word types
+	var listLang = beqTalk.transLang;
+	if (listLang == 'tlh')
+		listLang = 'en';
 
 	beqTalk.result.forEach(function (item)
 	{
@@ -233,7 +240,7 @@ module.exports.createTranslation = function(beqTalk)
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, beqTalk.transLang) + ': ';
+			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 
 			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
 			//     andernfalls immer das klingonische zurückgegeben
@@ -249,10 +256,7 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += item.tlh + beqTalk.newline;
 				if (beqTalk.fuzzy == true || beqTalk.wCase != null)
 				{
-					if (beqTalk.transLang == 'en')
-						sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
-					else if (beqTalk.transLang == 'de')
-						sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+					sndMessage += '==> ' + item[beqTalk.lookLang] + beqTalk.newline;
 				}
 			}
 		}

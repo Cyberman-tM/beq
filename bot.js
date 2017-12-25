@@ -1,149 +1,10 @@
 var Discord = require('discord.io');
 var logger = require('winston');
-var fs = require('fs');
-var xmldoc = require('xmldoc');
+var beq = require('./beq_engine.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '1.3.5	 - New XML reader!';
-var startDateTime = new Date().toLocaleString();
-
-//Read boQwI' xml files to build up internal JSON database
-var xmlFiles = fs.readdirSync('./KDB/');
-var xml = '';
-xmlFiles.forEach(function (item)
-{
-	if (item.substr(-4) == '.xml')
-	   xml += fs.readFileSync(('./KDB/' + item), 'utf8');    
-}
-);
-var KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
-
-var document = new xmldoc.XmlDocument(xml);
-
-//Wanted format:
-//{"tlh":"bay","de":"der Konsonant {b:sen:nolink}","en":"the consonant {b:sen:nolink}","type":"n"},
-
-var KDBJSon = new Array();
-var KDBPHJSon = new Array();
-var emptyStruct =
-{
-	tlh: 'tlhIngan',
-	en: 'klingon',
-	de: 'Klingone',
-	type: 'n',
-	notes: 'notes'
-};
-
-document.children[1].childrenNamed("table").forEach(function (headItem)
-{
-	emptyStruct = new Array(
-		{
-			tlh: '',
-			en: '',
-			de: '',
-			type: '',
-			notes: ''
-		}
-		);
-
-	//Transfer only the data we actually want
-	headItem.childrenNamed("column").forEach(function (item)
-	{
-		if (item.firstChild != null)
-		{
-			switch (item.attr.name)
-			{
-			case 'entry_name':
-				emptyStruct.tlh = item.firstChild.text;
-				break;
-			case 'part_of_speech':
-				emptyStruct.type = item.firstChild.text;
-				break;
-			case 'definition':
-				emptyStruct.en = item.firstChild.text;
-				break;
-			case 'definition_de':
-				emptyStruct.de = item.firstChild.text;
-				break;
-			case 'notes':
-				emptyStruct.notes = item.firstChild.text;
-				break;
-			}
-		}
-	}
-	);
-	//Make sure everything's here (sometimes the german is missing)
-	if (emptyStruct.de == '' || emptyStruct.de == undefined)
-		emptyStruct.de = emptyStruct.en;
-
-	//Just to be sure...
-	if (emptyStruct.en == undefined)
-		emptyStruct.en = '';
-	if (emptyStruct.tlh == undefined)
-		emptyStruct.tlh = '';
-	if (emptyStruct.notes == undefined)
-		emptyStruct.notes = '';
-
-	//Push it into the array
-	KDBJSon.push(emptyStruct);
-
-	//Maybe it was a sentence? Separate array for that
-	if (emptyStruct.type.startsWith('sen'))
-		KDBPHJSon.push(emptyStruct);
-}
-);
-
-//Clear as much memory as possible
-xmlFiles = null;
-xml = null;
-fs = null;
-
-/*
-//This is faster, but the resulting JSON is weird :-(
-//const parseStringSync = require('xml2js-parser').parseStringSync;
-//var json = parseStringSync((xml));
-//var json = null;
-//The JSON contains a LOT of (to us) useless information, in a useless format
-//We have to reformat it, and drop everything we don't need while at it
-//Current format:
-//console.log(json.sm_xml_export.database[0].table[0].column[1]._);   TLH
-//console.log(json.sm_xml_export.database[0].table[0].column[2]._);   TYPE
-//console.log(json.sm_xml_export.database[0].table[0].column[3]._);   EN
-//console.log(json.sm_xml_export.database[0].table[0].column[4]._);   DE
-//Wanted format:
-//{"tlh":"bay","de":"der Konsonant {b:sen:nolink}","en":"the consonant {b:sen:nolink}","type":"n"},
-
-var KDBJSon = new Array();
-var KDBPHJSon = new Array();
-
-json.sm_xml_export.database[0].table.forEach(function (item)
-{
-//Sometimes the german translation is missing - use the english translation, so we don't get any errors
-if (item.column[4]._ == null)
-item.column[4]._ = item.column[3]._;
-
-KDBJSon.push(
-{
-'tlh':item.column[1]._,
-'type':item.column[2]._,
-'en':item.column[3]._,
-'de':item.column[4]._
-});
-
-//Add a separate array for phrases
-if (item.column[2]._.startsWith('sen'))
-KDBPHJSon.push(
-{
-'tlh':item.column[1]._,
-'type':item.column[2]._,
-'en':item.column[3]._,
-'de':item.column[4]._
-});
-});
-
-json = null;
- */
+var versInt = '2.0.0 - complete restart! Beq engine!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -157,7 +18,12 @@ var userFuzzy = new Array();
 //Generic index for search/replace in array
 var aIdx = null;
 
+//We can use these languages (dependent on boQwI')
 var knownLangs = ['de', 'en', 'tlh'];
+
+//Communication structure for beq engine
+//This is not used, it's just to announce that it exists
+var beqTalkRaw = JSON.parse(beq.beqTalkDef);
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -327,33 +193,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
 			break;
 		case 'KWOTD':
-			//TODO: KWOTD - random word/sentence, type of word as parameter
-			//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
-
-			var tmpWord = '';
-			var wordType = args[1];
-			var wordType2 = args[2];
-			if (wordType == null)
-				wordType = 'sen:rp';
-			if (wordType2 == null)
-				wordType2 = 'sen:sp';
-
-			aIdx = null;
-			var ULang = getUserTranLang(userID);
-
-			//We look in KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < KDBPHJSon.length; i++)			
-			{
-				tmpWord = KDBPHJSon[Math.floor(Math.random() * (KDBPHJSon.length + 1))];
-				if (tmpWord != null && (tmpWord.type == wordType || tmpWord.type == wordType2))
-					break;
-			}
-
-			if (aIdx != null)
-				sndMessage += tmpWord[ULang[0].lang] + '\n';
-			else
-				sndMessage += tmpWord.en + '\n';
-			sndMessage += '=>' + tmpWord.tlh + '\n';
 			break;
 			
 		case 'linkMe':
@@ -366,159 +205,76 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 			//Übersetzungen
 		case 'mugh':
-			//TODO: aufräumen, das ganze "null/nicht null" durch true/false ersetzen
-			var p_lookLang = args[1];
-			var p_lookWord = args[2];
-			var p_lookTran = args[3]; //This argument can also be any of the later ones, if the language is taken from default
-			var p_lookFuzz = args[4];
-			var p_lookCase = args[5]; //Makes no sense - 4 doesn't check for value, so you'd always have to use fuzzy
+		    var beqTalk = JSON.parse(beq.beqTalkDef);
+			var talkBeq = JSON.parse(beq.beqTalkDef);
+		
+		    beqTalk.command = 'mugh';
+			beqTalk.lookLang = args[1];
+			beqTalk.lookWord = args[2];
+			beqTalk.transLang = args[3]; //This argument can also be any of the later ones, if the language is taken from default
+			var p_lookFuzz = args[4]; //The naming of these variables is only to see what the possible parameters are
+			var p_lookCase = args[5];
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
-
-			var lookLang = null;
-			var lookWord = null;
-			var lookTran = null;
-			var lookFuzz = null;
-			var lookCase = false;
-			var startRes = null;
-			var filtWord = null;
-
-			if (p_lookTran == null)
-				p_lookTran = '';
-			if (p_lookCase == null)
-				p_lookCase = '';
-			if (p_lookFuzz == null)
-				p_lookFuzz = '';
-			if (p_startRes == null)
-				p_startRes = '';
-			if (p_filtWord == null)
-				p_filtWord = '';
-
-			var dynArg = p_lookTran + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
-
+		
+			if (beqTalk.transLang == undefined)
+				beqTalk.transLang = null;
+			
+			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
+			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
 			if (dynArg.indexOf('case') >= 0)
-				lookCase = true;
+				beqTalk.wCase = true;
+
 			if (dynArg.indexOf('fuzzy') >= 0)
-				lookFuzz = true;
-
-			//These paramters have parameters in themselves
-			//always an equal sign without spaces and the value following it
-			if (dynArg.indexOf('type') >= 0)
-				filtWord = dynArg.split('type=')[1].split('|')[0];
-			if (dynArg.indexOf('startRes') >= 0)
-				startRes = dynArg.split('startRes=')[1].split('|')[0];
-
-			lookLang = p_lookLang;
-			lookWord = p_lookWord;
-			lookTran = p_lookTran;
-
-			//If we have no parameter, we use the user default
-			if (lookFuzz == null)
+				beqTalk.fuzzy = true;
+			else
 			{
 				aIdx = null;
 				var uFuzz = getUserFuzzy(userID);
 				if (aIdx != null)
-					lookFuzz = uFuzz[0].fuzzy;
+					beqTalk.fuzzy = uFuzz[0].fuzzy;
 			}
-
+			
 			if ((dynArg).indexOf('nofuzz') >= 0)
-				lookFuzz = false;
-
-			if (lookFuzz == null)
-				lookFuzz = false;
-
-			//Translation language
-			//as requested
-			//same as lookup language
-			//user Default
-			//program default, if all else fails
-
-			if (lookTran == null || langKnown(lookTran.toLowerCase()) != true)
+				beqTalk.fuzzy = false;
+		
+			//These paramters have parameters in themselves
+			//always an equal sign without spaces and the value following it
+			if (dynArg.indexOf('type') >= 0)
+				beqTalk.wordType1 = dynArg.split('type=')[1].split('|')[0];
+			if (dynArg.indexOf('startRes') >= 0)
+				beqTalk.startRes = dynArg.split('startRes=')[1].split('|')[0];
+			
+			if (beqTalk.transLang == null || langKnown(beqTalk.transLang.toLowerCase()) != true)
 			{
 				aIdx = null;
 				var ULang = getUserTranLang(userID);
 
 				if (aIdx == null)
 				{
-					if (lookLang != 'tlh')
-						lookTran = lookLang;
+					if (beqTalk.lookLang != 'tlh')
+						beqTalk.transLang = beqTalk.lookLang;
 					else
-						lookTran = defaultTranslation;
+						beqTalk.transLang = defaultTranslation;
 				}
 				else
-					lookTran = ULang[0].lang;
+					beqTalk.transLang = ULang[0].lang;
 			}
 
-			lookLang = lookLang.toString().toLowerCase();
-			if (langKnown(lookLang) != true)
-				sndMessage += 'Requested language not supported!\n';
+			if (langKnown(beqTalk.lookLang) != true)
+			{
+				beqTalk.failure = true;
+				beqTalk.gotResult = false;
+				beqTalk.message = "Language not supported!";
+			}
 			else
 			{
-				var results = null;
-				lookWord = lookWord.replace("_", " ");
-
-				while (results == null || results.length == 0)
-				{				
-					//Case INSensitive search in klingon is useless (qaH is different from QaH)
-					if (lookLang == 'tlh')
-						lookCase = false;
-
-					var regexLook = lookWord;
-					var regexFlag = '';
-
-					if (lookCase == true)
-						regexFlag += 'i';
-
-					//Not fuzzy == exact match
-					if (lookFuzz == false)
-						regexLook = '^' + regexLook + '$';
-
-					//TODO: search with boundary? only single word?
-					var RE = new RegExp(regexLook, regexFlag);
-					results = KDBJSon.filter(function (item)
-						{
-							return item[lookLang].match(RE);
-						}
-						);
-
-					if (filtWord != null)
-					{
-						var resultW = results.filter(function (item)
-							{
-								return item.type.split(':')[0] == filtWord
-							}
-							);
-						results = resultW;
-					}
-					
-					//No results? Maybe with different parameters!
-					if (results == null || results.length == 0)
-					{
-						//First try it without case (unless it's klingon, that always uses case)
-						if (lookCase == false && lookLang != 'tlh')
-						{
-							lookCase = true;
-							continue;
-						}
-						
-						//Still nothing? Try fuzzy search
-						if (lookFuzz == false)
-						{
-							lookFuzz = true;
-							continue;
-						}
-						
-						//Apparently we tried case and fuzzy - nothing to find here :-(
-						break;
-					}
-				}
-
-				if (results != null)
-					sndMessage += createTranslation(lookWord, lookLang, lookTran, results, lookFuzz, lookCase, startRes, filtWord);
-				else
-					sndMessage += 'Sorry, nothing found.\n';
+				//Let the engine do its magic :-)
+				talkBeq = beq.Engine(beqTalk);			
 			}
 
+			sndMessage = beq.createTranslation(talkBeq);		
+		
 			break;
 		default:
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
@@ -576,7 +332,7 @@ function langKnown(language)
 		return false;
 }
 
-function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useCase, startRes)
+function createTranslation(lookWord, lookLang, transLang, results, useFuzzy, useCase, startRes)
 {
 	var sndMessage = '';
 	sndMessage += '\nYou asked for \'' + lookWord + '\' - I found ' + results.length + ' possible results';
@@ -598,15 +354,15 @@ function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useC
 		if (startCount <= 0 && count < 20)
 		{
 			count++;
-			sndMessage += (+startRes + +count).toString() + ') ' + getWType(item.type, lookTran) + ': ';
+			sndMessage += (+startRes + +count).toString() + ') ' + getWType(item.type, transLang) + ': ';
 
 			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
 			//     andernfalls immer das klingonische zurückgegeben
 			if (lookLang == 'tlh')
 			{
-				if (lookTran == 'en')
+				if (transLang == 'en')
 					sndMessage += item.en + '\n';
-				else if (lookTran == 'de')
+				else if (transLang == 'de')
 					sndMessage += item.de + '\n';
 
 				if (useFuzzy == true)
@@ -617,9 +373,9 @@ function createTranslation(lookWord, lookLang, lookTran, results, useFuzzy, useC
 				sndMessage += item.tlh + '\n';
 				if (useFuzzy == true || useCase != null)
 				{
-					if (lookTran == 'en')
+					if (transLang == 'en')
 						sndMessage += '==> ' + item.en + '\n';
-					else if (lookTran == 'de')
+					else if (transLang == 'de')
 						sndMessage += '==> ' + item.de + '\n';
 				}
 			}
