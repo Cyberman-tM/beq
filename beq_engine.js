@@ -120,7 +120,7 @@ module.exports.Engine = function(beqTalk)
 				
 				//TODO: search with boundary? only single word?
 				var RE = new RegExp(regexLook, regexFlag);
-				results = module.exports.KDBJSon.filter(function (item)
+				results = KDBJSon.filter(function (item)
 				{
 					return item[beqTalk.lookLang].match(RE);
 				});
@@ -398,7 +398,7 @@ function readXML(KDBJSon, KDBPHJSon)
 			emptyStruct.notes = '';
 
 		//Push it into the array
-		module.exports.KDBJSon.push(emptyStruct);
+		KDBJSon.push(emptyStruct);
 
 		//Maybe it was a sentence? Separate array for that
 		if (emptyStruct.type.startsWith('sen'))
