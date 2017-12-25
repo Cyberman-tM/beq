@@ -49,11 +49,11 @@ module.exports.Engine = function(beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = "";
 		
-		var KDBJSon = new Array();
-		var KDBPHJSon = new Array();
+		module.exports.KDBJSon = new Array();
+		module.exports.KDBPHJSon = new Array();
 			
 		//Load XML data
-		readXML(KDBJSon, KDBPHJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon);
 	}
 	
 	var tmpTxt = "";	
@@ -63,7 +63,7 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt  = 'Beq engine, version ' + module.exports.versInt + beqTalk.newline;
 		   tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
-		   tmpTxt += KDBJSon.length + ' words in database.\n';
+		   tmpTxt += module.exports.KDBJSon.length + ' words in database.\n';
 		   
 		   beqTalk.message = tmpTxt;
 		break;
