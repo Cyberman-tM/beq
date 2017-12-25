@@ -63,6 +63,8 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt  = 'beq engine, version ' + module.exports.versInt + beqTalk.newline;
 		   tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
+		   
+		   beqTalk.message = tmpTxt;
 		break;
 		
 		case 'KWOTD':
