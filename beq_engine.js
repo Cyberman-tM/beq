@@ -1,3 +1,44 @@
+/*
+
+Beq-Engine
+
+Functions to use:
+
+Engine:
+Main function, does the heavy lifting. Translate, identify(yIngu'), KWOTD
+
+createTranslation:
+As the name says, it translates the beqTalk result into a readable string
+Must be called manually, since the result is not useful everywhere, while the beqTalk-Result is JSON
+The result will be NULL if beqTalk-gotResult is set to NULL
+
+IMPORTANT STUFF:
+
+The beq-engine talks through the beqTalk structure - a JSON construct that is modified and returned:
+You must initialize it before calling beq! Some fields may have default entries!
+
+	"fuzzy": false,               // "fuzzy" searching, i.e. no word boundaries  => true/false
+	"wCase": false,               // search ignoring case                        => true/false
+	"lookLang": "",               // the language the word you want translated is in
+	"lookWord": "",               // the word you are looking for
+	"transLang": "",              // the language you want as result
+	"command": "",                // the actual command, like "mugh"
+	"wordType1": "",              // some commands or functions allow to limit the word type, for example KWOTD does that
+	"wordType2": "",              // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
+	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
+	"limitRes": '20',             // in some cases (Discord) you may not want to get ALL the results, but only up to "limitRes"
+	"newline": "\n",              // When formatted text is returned, this will be used as newline - i.e. Text output or HTML output
+	"result": [{ "type":"",       // the translation results are returned in this JSON array. Type is the word type, see boQwI'
+	            "tlh":"",         // the klingon word
+				"en":"",          // the english word
+				"de":""           // the german word
+			  }],                 //
+    "message": "",                // some functions or commands may return a message, it will be in here
+	"gotResult": false,           // indicates if the search was successful => true/false
+	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
+
+*/
+
 module.exports.Engine = function(beqTalk)
 {
 	
@@ -19,26 +60,9 @@ module.exports.Engine = function(beqTalk)
 	switch (beqTalk.command)
 	{
 		case 'yIngu\'':
-			tmpTxt  = 'beq \'oH pongwIj\'e\'.';
-			tmpTxt += beqTalk.newline + 'Version: ' + module.exports.versInt;
-			tmpTxt += beqTalk.newline + 'I am a helper bot. Use "CMDLIST" for a list of commands.' + beqTalk.newline;
-			tmpTxt += beqTalk.newline + 'I am active since ' + module.exports.startDateTime + beqTalk.newline;
-			tmpTxt += beqTalk.newline + 'I\'m using the database of De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
-			tmpTxt += beqTalk.newline;
-			tmpTxt += beqTalk.newline + '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nLe\'rat, Tignar tuq, jIH.';
-			tmpTxt += beqTalk.newline + beqTalk.newline + 'toH. yInvetlh \'oHta\'*' + beqTalk.newline;
-			
-			beqTalk.gotResult = true;
-			beqTalk.message = tmpTxt;
-		break;
-		
-		case 'tlhIngan':
-		   tmpTxt = 'maH!'
-		break;
-		
-		case 'le\'rat':
-		case 'Le\'rat':
-			tmpTxt += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!' + beqTalk.newline;
+		   tmpTxt  = 'beq engine, version ' + module.exports.versInt + beqTalk.newline;
+		   tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
+		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 		break;
 		
 		case 'KWOTD':
@@ -65,12 +89,13 @@ module.exports.Engine = function(beqTalk)
 			if (tmpWord != null)
 			{
 				beqTalk.result = new Array();
-				beqTalk.result.push( {"word_tlh":tmpWord.tlh, "word_en":tmpWord.en,"word_de":tmpWord.de, "type": tmpWord.type});
+				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type});
 			}
 			break;
 			
 		case 'mugh':
 			var results = null;
+			beqTalk.result = new Array();
 
 			//Case INSensitive search in klingon is useless (qaH is different from QaH)
 			if (beqTalk.lookLang == 'tlh')
@@ -78,7 +103,7 @@ module.exports.Engine = function(beqTalk)
 			
 			while (results == null || results.length == 0)
 			{				
-				var regexLook = lookWord;
+				var regexLook = beqTalk.lookWord;
 				var regexFlag = '';
 				
 				//Case sensitive?
@@ -126,13 +151,12 @@ module.exports.Engine = function(beqTalk)
 					break;
 				}
 			}
-			if (results != null)
+			if (results != null && results.length > 0)
 			{
 				beqTalk.gotResult = true;
-				beqTalk.result = new Array();
 				results.forEach(function (item)
 				{
-					beqTalk.result.push( {"word_tlh":item.tlh, "word_en":item.en,"word_de":item.de, "type": item.type});
+					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type});
 				});
 			}
 			else
@@ -153,6 +177,7 @@ module.exports.beqTalkDef = JSON.stringify(
 	"fuzzy": false,
 	"wCase": false,
 	"lookLang": "tlh",
+	"lookWord": "word",
 	"transLang": "de",
 	"command": "yIngu\'",
 	"wordType1": "n",
@@ -161,14 +186,131 @@ module.exports.beqTalkDef = JSON.stringify(
 	"limitRes": '20',
 	"newline": "\n",
 	"result": [{ "type":"n",
-	            "word_tlh":"tlhIngan",
-				"word_en":"word",
-				"word_de":"wort"
+	            "tlh":"tlhIngan",
+				"en":"word",
+				"de":"wort"
 			  }],
     "message": "",
 	"gotResult": false,
 	"failure":false
 });
+
+module.exports.createTranslation = function(beqTalk)
+{
+	if (beqTalk.gotResult == false)
+		return null;
+	
+	var sndMessage = '';
+	//Maybe we can use this for multi-language?
+	var intText =
+	{
+		"resStart": "You asked for '&1', I found &2 possible results",
+		"resFuzz": " using fuzzy searching",
+		"resCase": ", ignoring case",
+		"resSTR": "(Starting from result #&1)",
+		"resTMR": "...too many results. Stopping list."
+	};
+	sndMessage = intText.resStart;
+	sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
+	sndMessage = sndMessage.replace("&2", beqTalk.result.length);
+	if (beqTalk.fuzzy == true)
+		sndMessage += intText.resFuzz;
+	if (beqTalk.wCase == true)
+		sndMessage += intText.resCase;
+	sndMessage += beqTalk.newline;
+	
+	if (beqTalk.startRes > 0)
+		sndMessage += intText.resSTR;
+	sndMessage = sndMessage.replace("&1", beqTalk.startRes);
+	sndMessage += beqTalk.newline;
+	
+	var count = 0;
+	var startCount = beqTalk.startRes;
+
+	beqTalk.result.forEach(function (item)
+	{
+		startCount--;
+		if (startCount <= 0 && count < beqTalk.limitRes)
+		{
+			count++;
+			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, beqTalk.transLang) + ': ';
+
+			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
+			//     andernfalls immer das klingonische zurückgegeben
+			if (beqTalk.lookLang == 'tlh')
+			{
+				sndMessage += item[beqTalk.transLang] + beqTalk.newline;
+
+				if (beqTalk.fuzzy == true)
+					sndMessage += '==> ' + item.tlh + beqTalk.newline;
+			}
+			else
+			{
+				sndMessage += item.tlh + beqTalk.newline;
+				if (beqTalk.fuzzy == true || beqTalk.wCase != null)
+				{
+					if (beqTalk.transLang == 'en')
+						sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+					else if (beqTalk.transLang == 'de')
+						sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+				}
+			}
+		}
+	}
+	)
+	if (count >= beqTalk.limitRes)
+		sndMessage += intText.resTMR + beqTalk.newline;
+
+	return sndMessage;
+}
+
+function getWType(wType, tranLang)
+{
+	var wTypeS = wType.split(':')[0];
+	var wTypeL = '';
+
+	if (tranLang == 'de')
+	{
+		if (wTypeS == 'n')
+			wTypeL = 'Nomen';
+		else if (wTypeS == 'v')
+			wTypeL = 'Verb';
+		else if (wTypeS == 'sen')
+			wTypeL = 'Satz';
+		else if (wTypeS == 'excl')
+			wTypeL = 'Ausruf';
+		else if (wTypeS == 'adv')
+			wTypeL = 'Adverb';
+		else if (wTypeS == 'conj')
+			wTypeL = 'Bindewort';
+		else if (wTypeS == 'ques')
+			wTypeL = 'Frage';
+		else
+			wTypeL = 'unsupported yet';
+	}
+	else if (tranLang == 'en')
+	{
+		if (wTypeS == 'n')
+			wTypeL = 'Noun';
+		else if (wTypeS == 'v')
+			wTypeL = 'Verb';
+		else if (wTypeS == 'sen')
+			wTypeL = 'Sentence';
+		else if (wTypeS == 'excl')
+			wTypeL = 'Exclamation';
+		else if (wTypeS == 'adv')
+			wTypeL = 'Adverb';
+		else if (wTypeS == 'conj')
+			wTypeL = 'Conjunction';
+		else if (wTypeS == 'ques')
+			wTypeL = 'Question';
+		else
+			wTypeL = 'unsupported yet';
+	}
+
+	return wTypeL;
+}
+
 
 function readXML(KDBJSon, KDBPHJSon)
 {
@@ -254,8 +396,8 @@ function readXML(KDBJSon, KDBPHJSon)
 		//Maybe it was a sentence? Separate array for that
 		if (emptyStruct.type.startsWith('sen'))
 			KDBPHJSon.push(emptyStruct);
-}
-);
+	}
+	);
 
 //Clear as much memory as possible
 xmlFiles = null;
