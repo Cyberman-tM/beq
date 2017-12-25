@@ -45,9 +45,9 @@ module.exports.Engine = function(beqTalk)
 	//Startup function (constructor, basically)
 	if (module.exports.versInt == undefined)
 	{
-		module.exports.versInt = '0.0.1	 - beq engine!';
+		module.exports.versInt = '0.0.2	- complete rework, separate project!';
 		module.exports.startDateTime = new Date().toLocaleString();
-		module.exports.KDBVer = "";
+		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
 		module.exports.KDBJSon = new Array();
 		module.exports.KDBPHJSon = new Array();
@@ -232,6 +232,10 @@ module.exports.createTranslation = function(beqTalk)
 	var count = 0;
 	var startCount = beqTalk.startRes;
 	
+	//Maybe the user though we'd get more results?
+	if (startCount > beqTalk.result.length)
+		startCount = 0;
+	
 	//We need either DE or EN as language for the word types
 	var listLang = beqTalk.transLang;
 	if (listLang == 'tlh')
@@ -267,6 +271,9 @@ module.exports.createTranslation = function(beqTalk)
 	)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
+	
+	sndMessage += beqTalk.newline;
+	sndMessage += "toy'meH jIHtaH.";
 
 	return sndMessage;
 }
