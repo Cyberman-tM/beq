@@ -218,14 +218,18 @@ module.exports.createTranslation = function(beqTalk)
 		"resSTR": "(Starting from result #&1)",
 		"resTMR": "...too many results. Stopping list."
 	};
-	sndMessage = intText.resStart;
-	sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
-	sndMessage = sndMessage.replace("&2", beqTalk.result.length);
-	if (beqTalk.fuzzy == true)
-		sndMessage += intText.resFuzz;
-	if (beqTalk.wCase == true)
-		sndMessage += intText.resCase;
-	sndMessage += beqTalk.newline;
+	
+	if (beqTalk.command == "mugh")
+	{
+		sndMessage = intText.resStart;
+		sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
+		sndMessage = sndMessage.replace("&2", beqTalk.result.length);
+		if (beqTalk.fuzzy == true)
+			sndMessage += intText.resFuzz;
+		if (beqTalk.wCase == true)
+			sndMessage += intText.resCase;
+		sndMessage += beqTalk.newline;
+	}
 
 	var count = 0;
 	var startCount = beqTalk.startRes;
@@ -253,7 +257,10 @@ module.exports.createTranslation = function(beqTalk)
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+			if (beqTalk.command == "mugh")
+				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+			else if (beqTalk.command == "KWOTD")
+				sndMessage += getSType(item.type, listLang) + ': ';
 
 			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
 			//     andernfalls immer das klingonische zurückgegeben
@@ -332,6 +339,39 @@ function getWType(wType, tranLang)
 	}
 
 	return wTypeL;
+}
+
+//Get SENTENCE type - needed for KWOTD
+function getSType(wType, tranLang)
+{
+	var wTypeW = wType.split(':')[0];
+	var wTypeS = wType.split(':')[1];
+	
+	var tmpRet = "";
+	
+	if (wTypeW != "sen")
+		return "Wrong type!";
+	
+	if (tranLang == 'de')
+	{
+		if (wTypeS == 'rp')
+			tmpRet = 'Replacement proverb';
+		else if (wTypeS == 'sp')
+			tmpRet = 'Secret proverb';
+		else
+			wTypeL = 'unsupported yet';
+	}
+	else if (tranLang == 'en')
+	{
+		if (wTypeS == 'rp')
+			tmpRet = 'Ersatzsprichwort';
+		else if (wTypeS == 'sp')
+			tmpRet = 'Geheimnissprichwort';
+		else
+			wTypeL = 'unsupported yet';
+	}
+
+	return tmpRet;
 }
 
 
