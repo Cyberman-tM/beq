@@ -72,6 +72,7 @@ module.exports.Engine = function(beqTalk)
 		case 'KWOTD':
 			//TODO: KWOTD - random word/sentence, type of word as parameter
 			//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
+			beqTalk.result = new Array();
 			
 			//Default-Wordtypes?
 			if (beqTalk.wordType1 == null || beqTalk.wordType1 == 'n')
@@ -85,16 +86,15 @@ module.exports.Engine = function(beqTalk)
 			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
 			{
 				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
+				console.log(tmpWord);
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
 					break;
 				tmpWord = null;
 			}
 
 			if (tmpWord != null)
-			{
-				beqTalk.result = new Array();
 				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type});
-			}
+
 			break;
 			
 		case 'mugh':
