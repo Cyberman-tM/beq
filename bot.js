@@ -287,7 +287,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				if (userTLang == null)
 				{
 					if (beqTalk.lookLang != 'tlh')
-						beqTalk.transLang = beqTalk.lookLang;
+						beqTalk.transLang = 'tlh';
 					else
 						beqTalk.transLang = defaultTranslation;
 				}
