@@ -81,12 +81,12 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.wordType2 = 'sen:sp';
 			
 			var tmpWord = "";
+			console.log(beqTalk);
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
 			{
 				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
-				console.log(tmpWord);
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
 					break;
 				tmpWord = null;
