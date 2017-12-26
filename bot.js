@@ -58,6 +58,12 @@ bot.on('ready', function (evt)
 bot.on('message', function (user, userID, channelID, message, evt)
 {
 	var sndMessage = '';
+	var userTLang = null;
+	
+	aIdx = null;
+	var ULang = getUserTranLang(userID);
+	if (aIdx != null)
+		userTLang = ULang[0].lang;
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
@@ -204,8 +210,24 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'KWOTD':
 		    var beqTalk = JSON.parse(beq.beqTalkDef);
 			beqTalk.command = 'KWOTD';
-			sndMessage  = 'Sorry, raw output only:';
-			sndMessage += beqTalk.result;
+			
+			var tmpWord = '';
+			var wordType = args[1];
+			var wordType2 = args[2];
+			if (wordType == null)
+				beqTalk.wordType = 'sen:rp';
+			if (wordType2 == null)
+				beqTalk.wordType2 = 'sen:sp';
+			
+			if (userTLang == null)
+				beqTalk.transLang = defaultTranslation;
+			else
+				beqTalk.transLang = userTLang;
+			
+			//Let the engine do its magic :-)
+			talkBeq = beq.Engine(beqTalk);
+			
+			sndMessage = beq.createTranslation(talkBeq);	
 			break;
 			
 		case 'linkMe':
@@ -251,7 +273,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if ((dynArg).indexOf('nofuzz') >= 0)
 				beqTalk.fuzzy = false;
 		
-			//These paramters have parameters in themselves
+			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
 			if (dynArg.indexOf('type') >= 0)
 				beqTalk.wordType1 = dynArg.split('type=')[1].split('|')[0];
@@ -260,10 +282,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			if (beqTalk.transLang == null || langKnown(beqTalk.transLang.toLowerCase()) != true)
 			{
-				aIdx = null;
-				var ULang = getUserTranLang(userID);
-
-				if (aIdx == null)
+				if (userTLang == null)
 				{
 					if (beqTalk.lookLang != 'tlh')
 						beqTalk.transLang = beqTalk.lookLang;
@@ -271,7 +290,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 						beqTalk.transLang = defaultTranslation;
 				}
 				else
-					beqTalk.transLang = ULang[0].lang;
+					beqTalk.transLang = userTLang;
 			}
 
 			if (langKnown(beqTalk.lookLang) != true)
@@ -283,7 +302,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			else
 			{
 				//Let the engine do its magic :-)
-				talkBeq = beq.Engine(beqTalk);			
+				talkBeq = beq.Engine(beqTalk);
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);		
