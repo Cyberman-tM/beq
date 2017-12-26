@@ -251,7 +251,6 @@ module.exports.createTranslation = function(beqTalk)
 		listLang = 'en';
 
 	
-	console.log(beqTalk);
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
