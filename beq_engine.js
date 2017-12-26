@@ -46,7 +46,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '0.0.2	- complete rework, separate project!';
+		module.exports.versInt = '0.0.3	- complete rework, separate project!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -228,7 +228,7 @@ module.exports.createTranslation = function(beqTalk)
 			sndMessage += intText.resFuzz;
 		if (beqTalk.wCase == true)
 			sndMessage += intText.resCase;
-		sndMessage += beqTalk.newline;
+		sndMessage += beqTalk.newline + beqTalk.newline;
 	}
 
 	var count = 0;
@@ -260,7 +260,7 @@ module.exports.createTranslation = function(beqTalk)
 			if (beqTalk.command == "mugh")
 				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 			else if (beqTalk.command == "KWOTD")
-				sndMessage += getSType(item.type, listLang) + ': ';
+				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
 
 			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
 			//     andernfalls immer das klingonische zurückgegeben
