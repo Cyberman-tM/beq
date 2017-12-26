@@ -42,11 +42,10 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 module.exports.Engine = function(beqTalk)
 {
-	var cntCalls;
-	if (cntCalls == undefined)
-		cntCalls = 0;
+	if (module.exports.cntCalls == undefined)
+		module.exports.cntCalls = 0;
 	else
-		cntCalls++;
+		module.exports.cntCalls++;
 	
 	//Startup function (constructor, basically)
 	if (module.exports.versInt == undefined)
@@ -71,7 +70,7 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 		   tmpTxt += module.exports.KDBJSon.length + ' words in database.' + beqTalk.newline;
-		   tmpTxt += "I have been called " + cntCalls + " times so far!" + beqTalk.newline;
+		   tmpTxt += "I have been called " + module.exports.cntCalls + " times so far!" + beqTalk.newline;
 		   
 		   beqTalk.message = tmpTxt;
 		break;
