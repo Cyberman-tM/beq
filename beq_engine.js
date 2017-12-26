@@ -278,8 +278,11 @@ module.exports.createTranslation = function(beqTalk)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 	
-	sndMessage += beqTalk.newline;
-	sndMessage += "*toy'meH jIHtaH.*";
+	if (beqTalk.result.length > beqTalk.limitRes)
+	{
+		sndMessage += beqTalk.newline;
+		sndMessage += "*toy'meH jIHtaH.*";
+	}
 
 	return sndMessage;
 }

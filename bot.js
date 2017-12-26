@@ -220,6 +220,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if (args[2] == null)
 				beqTalk.wordType2 = 'sen:sp';
 			
+			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
 				beqTalk.transLang = defaultTranslation;
 			else
