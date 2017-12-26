@@ -212,7 +212,7 @@ module.exports.createTranslation = function(beqTalk)
 	//Maybe we can use this for multi-language?
 	var intText =
 	{
-		"resStart": "You asked for '&1', I found &2 possible results",
+		"resStart": 'You asked for "&1", I found &2 possible results',
 		"resFuzz": " using fuzzy searching",
 		"resCase": ", ignoring case",
 		"resSTR": "(Starting from result #&1)",
@@ -244,6 +244,8 @@ module.exports.createTranslation = function(beqTalk)
 		sndMessage = sndMessage.replace("&1", startCount);
 		sndMessage += beqTalk.newline;
 	}
+	
+	console.log(beqTalk);
 	
 	//We need either DE or EN as language for the word types
 	var listLang = beqTalk.transLang;
