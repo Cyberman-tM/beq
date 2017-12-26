@@ -81,7 +81,6 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.wordType2 = 'sen:sp';
 			
 			var tmpWord = "";
-			console.log(beqTalk);
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
@@ -93,7 +92,10 @@ module.exports.Engine = function(beqTalk)
 			}
 
 			if (tmpWord != null)
+			{
 				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type});
+				beqTalk.gotResult = true;
+			}
 
 			break;
 			
