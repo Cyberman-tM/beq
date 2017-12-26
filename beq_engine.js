@@ -245,8 +245,6 @@ module.exports.createTranslation = function(beqTalk)
 		sndMessage += beqTalk.newline;
 	}
 	
-	console.log(beqTalk);
-	
 	//We need either DE or EN as language for the word types
 	var listLang = beqTalk.transLang;
 	if (listLang == 'tlh')
@@ -264,17 +262,8 @@ module.exports.createTranslation = function(beqTalk)
 			else if (beqTalk.command == "KWOTD")
 				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
 
-			//Wenn auf klingonisch gesucht wurde, zuerst die Übersetzung geben, dann zeigen daß es das gesuchte Wort ist
-			if (beqTalk.transLang == 'tlh')
-			{
-				sndMessage += item[beqTalk.transLang] + beqTalk.newline;
-				sndMessage += '==> ' + item.tlh + beqTalk.newline;
-			}
-			else
-			{
-				sndMessage += item.tlh + beqTalk.newline;
-				sndMessage += '==> ' + item[beqTalk.lookLang] + beqTalk.newline;
-			}
+			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
 		}
 	}
 	)
