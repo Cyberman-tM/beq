@@ -212,11 +212,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			beqTalk.command = 'KWOTD';
 			
 			var tmpWord = '';
-			var wordType = args[1];
-			var wordType2 = args[2];
-			if (wordType == null)
-				beqTalk.wordType = 'sen:rp';
-			if (wordType2 == null)
+			beqTalk.wordType1 = null;
+			beqTalk.wordType2 = null;
+
+			if (args[1] == null)
+				beqTalk.wordType1 = 'sen:rp';
+			if (args[2] == null)
 				beqTalk.wordType2 = 'sen:sp';
 			
 			if (userTLang == null)
