@@ -212,7 +212,7 @@ module.exports.createTranslation = function(beqTalk)
 	//Maybe we can use this for multi-language?
 	var intText =
 	{
-		"resStart": 'You asked for "&1 ", I found &2 possible results',
+		"resStart": "You asked for '&1', I found &2 possible results",
 		"resFuzz": " using fuzzy searching",
 		"resCase": ", ignoring case",
 		"resSTR": "(Starting from result #&1)",
@@ -262,8 +262,18 @@ module.exports.createTranslation = function(beqTalk)
 			else if (beqTalk.command == "KWOTD")
 				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
 
-			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
-			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+			//     Wenn auf klingonisch gesucht wurde, in DE/EN übersetzen,
+			//     andernfalls immer das klingonische zurückgegeben
+			if (beqTalk.lookLang == 'tlh')
+			{
+				sndMessage += item[beqTalk.transLang] + beqTalk.newline;
+				sndMessage += '==> ' + item.tlh + beqTalk.newline;
+			}
+			else
+			{
+				sndMessage += item.tlh + beqTalk.newline;
+				sndMessage += '==> ' + item[beqTalk.lookLang] + beqTalk.newline;
+			}
 		}
 	}
 	)
