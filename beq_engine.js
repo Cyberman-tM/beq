@@ -267,17 +267,12 @@ module.exports.createTranslation = function(beqTalk)
 			if (beqTalk.lookLang == 'tlh')
 			{
 				sndMessage += item[beqTalk.transLang] + beqTalk.newline;
-
-				if (beqTalk.fuzzy == true)
-					sndMessage += '==> ' + item.tlh + beqTalk.newline;
+				sndMessage += '==> ' + item.tlh + beqTalk.newline;
 			}
 			else
 			{
 				sndMessage += item.tlh + beqTalk.newline;
-				if (beqTalk.fuzzy == true || beqTalk.wCase != null)
-				{
-					sndMessage += '==> ' + item[beqTalk.lookLang] + beqTalk.newline;
-				}
+				sndMessage += '==> ' + item[beqTalk.lookLang] + beqTalk.newline;
 			}
 		}
 	}
