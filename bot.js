@@ -239,13 +239,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			else
 				beqTalk.transLang = userTLang;
 			
-			console.log(args[1]);
 			switch (args[1])
 			{
 				case 'prefix':
 				case 'moHaq':
 				case 'type=v:pref':
-				   beqTalk.wordType = 'v:pref';
+				   beqTalk.wordType1 = 'v:pref';
 				break;
 			}
 			
