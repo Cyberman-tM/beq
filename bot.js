@@ -239,6 +239,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			else
 				beqTalk.transLang = userTLang;
 			
+			console.log(args[1]);
 			switch (args[1])
 			{
 				case 'prefix':
