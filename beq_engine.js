@@ -50,8 +50,11 @@ module.exports.Engine = function(beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
-		module.exports.KDBJSon = new Array();
-		module.exports.KDBPHJSon = new Array();
+		module.exports.KDBJSon = new Array();           //Generic database of all words
+		module.exports.KDBPHJSon = new Array();         //All phrases
+		module.exports.KDBVPJSon = new Array();         //All verb prefixes
+		module.exports.KDBVSSon = new Array();          //All verb suffixes
+		module.exports.KDBNSJSon = new Array();         //All noun suffixes
 			
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon);
@@ -99,6 +102,16 @@ module.exports.Engine = function(beqTalk)
 
 			break;
 			
+		case "yIcha'":
+			switch(args[1])
+			{
+				case 'prefix':
+				case 'moHaq':
+				case 'type=v:pref':
+					beqTalk.result = KDBVPJSon;				   
+				break;
+			}
+		break;
 		case 'mugh':
 			var results = null;
 			beqTalk.result = new Array();
@@ -447,9 +460,15 @@ function readXML(KDBJSon, KDBPHJSon)
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
 
-		//Maybe it was a sentence? Separate array for that
+		//We have several separate arrays for quick access to predefined word types
 		if (emptyStruct.type.startsWith('sen'))
 			KDBPHJSon.push(emptyStruct);
+		else if (emptyStruct.type.startsWith('v:pref'))
+			KDBVPJSon.push(emptyStruct);
+		else if (emptyStruct.type.startsWith('v:suff'))
+			KDBVSJSon.push(emptyStruct);
+		else if (emptyStruct.type.startsWith('n:suff'))
+			KDBNSJSon.push(emptyStruct);
 	}
 	);
 

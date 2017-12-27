@@ -231,7 +231,19 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			sndMessage = beq.createTranslation(talkBeq);	
 			break;
+		case "yIcha'":
+			beqTalk.command = "cha'";
+			beqTalk.lookLang = 'tlh';
+			if (userTLang == null)
+				beqTalk.transLang = defaultTranslation;
+			else
+				beqTalk.transLang = userTLang;
 			
+			//Let the engine do its magic :-)
+			talkBeq = beq.Engine(beqTalk);
+			
+			sndMessage = beq.createTranslation(talkBeq);	
+		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
 		   
