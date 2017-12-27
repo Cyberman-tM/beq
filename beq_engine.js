@@ -108,7 +108,8 @@ module.exports.Engine = function(beqTalk)
 				case 'prefix':
 				case 'moHaq':
 				case 'type=v:pref':
-					beqTalk.result = module.exports.KDBVPJSon;				   
+					beqTalk.result = module.exports.KDBVPJSon;
+					beqTalk.gotResult = true;
 				break;
 			}
 		break;
