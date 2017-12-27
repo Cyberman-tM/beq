@@ -379,7 +379,7 @@ function getSType(wType, tranLang)
 }
 
 
-function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSSon, KDBNSJSon)
+function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 {
 	var fs = require('fs');
 	var xmldoc = require('xmldoc');
