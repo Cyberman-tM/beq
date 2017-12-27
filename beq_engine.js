@@ -57,7 +57,7 @@ module.exports.Engine = function(beqTalk)
 		module.exports.KDBNSJSon = new Array();         //All noun suffixes
 			
 		//Load XML data
-		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBPHVPJSon, module.exports.KDBPHVSJSon, module.exports.KDBPHNSJSon);
 	}
 	
 	var tmpTxt = "";	
@@ -379,7 +379,7 @@ function getSType(wType, tranLang)
 }
 
 
-function readXML(KDBJSon, KDBPHJSon, KDBVPJSon KDBVSSon, KDBNSJSon)
+function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSSon, KDBNSJSon)
 {
 	var fs = require('fs');
 	var xmldoc = require('xmldoc');
