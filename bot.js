@@ -59,6 +59,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 {
 	var sndMessage = '';
 	var userTLang = null;
+	var beqTalk = JSON.parse(beq.beqTalkDef);
 	
 	aIdx = null;
 	var ULang = getUserTranLang(userID);
@@ -113,7 +114,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'yIngu\'':
 			sndMessage  = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
 			
-			var beqTalk = JSON.parse(beq.beqTalkDef);
 			beqTalk.command = "yIngu'";
 			beqTalk = beq.Engine(beqTalk);
 			sndMessage += beqTalk.message + beqTalk.newline;
@@ -208,7 +208,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
 			break;
 		case 'KWOTD':
-		    var beqTalk = JSON.parse(beq.beqTalkDef);
 			beqTalk.command = 'KWOTD';
 			
 			var tmpWord = '';
@@ -254,7 +253,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 			//Übersetzungen
 		case 'mugh':
-		    var beqTalk = JSON.parse(beq.beqTalkDef);
 			var talkBeq = JSON.parse(beq.beqTalkDef);
 		
 		    beqTalk.command = 'mugh';
