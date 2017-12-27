@@ -232,7 +232,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 		case "yIcha'":
 			var talkBeq = JSON.parse(beq.beqTalkDef);
-			beqTalk.command = "cha'";
+			beqTalk.command = "yIcha'";
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
 				beqTalk.transLang = defaultTranslation;
@@ -241,7 +241,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
-			console.log(talkBeq);
+
 			sndMessage = beq.createTranslation(talkBeq);	
 		break;			
 		case 'linkMe':
