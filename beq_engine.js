@@ -53,7 +53,7 @@ module.exports.Engine = function(beqTalk)
 		module.exports.KDBJSon = new Array();           //Generic database of all words
 		module.exports.KDBPHJSon = new Array();         //All phrases
 		module.exports.KDBVPJSon = new Array();         //All verb prefixes
-		module.exports.KDBVSSon = new Array();          //All verb suffixes
+		module.exports.KDBVSJSon = new Array();          //All verb suffixes
 		module.exports.KDBNSJSon = new Array();         //All noun suffixes
 			
 		//Load XML data
