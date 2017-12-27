@@ -239,13 +239,16 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			else
 				beqTalk.transLang = userTLang;
 			
+			//No use in limiting the number of results...
+			beqTalk.limitRes = 50;
+			
 			switch (args[1])
 			{
 				case 'prefix':
 				case 'moHaq':
 				case 'type=v:pref':
 				   beqTalk.wordType1 = 'v:pref';
-				break;
+				break;				
 			}
 			
 			//Let the engine do its magic :-)
