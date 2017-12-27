@@ -108,7 +108,7 @@ module.exports.Engine = function(beqTalk)
 				case 'prefix':
 				case 'moHaq':
 				case 'type=v:pref':
-					beqTalk.result = KDBVPJSon;				   
+					beqTalk.result = module.exports.KDBVPJSon;				   
 				break;
 			}
 		break;
@@ -379,7 +379,7 @@ function getSType(wType, tranLang)
 }
 
 
-function readXML(KDBJSon, KDBPHJSon)
+function readXML(KDBJSon, KDBPHJSon, KDBVPJSon KDBVSSon, KDBNSJSon)
 {
 	var fs = require('fs');
 	var xmldoc = require('xmldoc');
