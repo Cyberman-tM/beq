@@ -103,11 +103,9 @@ module.exports.Engine = function(beqTalk)
 			break;
 			
 		case "yIcha'":
-			switch(args[1])
+			switch(beqTalk.wordType1)
 			{
-				case 'prefix':
-				case 'moHaq':
-				case 'type=v:pref':
+				case 'v:pref':
 					beqTalk.result = module.exports.KDBVPJSon;
 					beqTalk.gotResult = true;
 				break;

@@ -232,12 +232,21 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 		case "yIcha'":
 			var talkBeq = JSON.parse(beq.beqTalkDef);
-			beqTalk.command = "yIcha'";
+			beqTalk.command = "yIcha'";			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
 				beqTalk.transLang = defaultTranslation;
 			else
 				beqTalk.transLang = userTLang;
+			
+			switch (args[1])
+			{
+				case 'prefix':
+				case 'moHaq':
+				case 'type=v:pref':
+				   beqTalk.wordType = 'v:pref';
+				break;
+			}
 			
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
