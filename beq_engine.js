@@ -103,6 +103,7 @@ module.exports.Engine = function(beqTalk)
 			break;
 			
 		case "yIcha'":
+		console.log(args);
 			switch(args[1])
 			{
 				case 'prefix':
