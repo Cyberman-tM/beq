@@ -57,7 +57,7 @@ module.exports.Engine = function(beqTalk)
 		module.exports.KDBNSJSon = new Array();         //All noun suffixes
 			
 		//Load XML data
-		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBPHVPJSon, module.exports.KDBPHVSJSon, module.exports.KDBPHNSJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 	}
 	
 	var tmpTxt = "";	
