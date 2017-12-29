@@ -113,62 +113,80 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case 'mugh':
 			var results = null;
+			var allResult  = null;
 			beqTalk.result = new Array();
 
 			//Case INSensitive search in klingon is useless (qaH is different from QaH)
 			if (beqTalk.lookLang == 'tlh')
 				beqTalk.wCase = false;
 			
-			while (results == null || results.length == 0)
-			{			
+			//Maybe we are looking for multiple words at once?
+			var multiWord = beqTalk.lookWord.split('|');
+			
+			for (var i = 0; i < multiWord.length; i++)
+			{
+				beqTalk.lookWord = multiWord[i];
+				while (results == null || results.length == 0)
+				{			
 
-				var regexLook = beqTalk.lookWord;
-				var regexFlag = '';
-				
-				//Case sensitive?
-				if (beqTalk.wCase == true)
-					regexFlag += 'i';
-				
-				//Not fuzzy == exact match
-				if (beqTalk.fuzzy == false)
-					regexLook = '^' + regexLook + '$';
-				
-				//TODO: search with boundary? only single word?
-				var RE = new RegExp(regexLook, regexFlag);
-				results = module.exports.KDBJSon.filter(function (item)
-				{
-					return item[beqTalk.lookLang].match(RE);
-				});
-
-				if (beqTalk.wordType1 != null)
-				{
-					var resultW = results.filter(function (item)
-					{
-						return item.type.split(':')[0] == beqTalk.wordType1;
-					});
-					results = resultW;
-				}
-				
-				//No results? Maybe with different parameters!
-				if (results == null || results.length == 0)
-				{
-					//First try it without case (unless it's klingon, that always uses case)
-					if (beqTalk.wCase == false && beqTalk.lookLang != 'tlh')
-					{
-						beqTalk.wCase = true;
-						continue;
-					}
+					var regexLook = beqTalk.lookWord;
+					var regexFlag = '';
 					
-					//Still nothing? Try fuzzy search
+					//Case sensitive?
+					if (beqTalk.wCase == true)
+						regexFlag += 'i';
+					
+					//Not fuzzy == exact match
 					if (beqTalk.fuzzy == false)
+						regexLook = '^' + regexLook + '$';
+					
+					//TODO: search with boundary? only single word?
+					var RE = new RegExp(regexLook, regexFlag);
+					results = module.exports.KDBJSon.filter(function (item)
 					{
-						beqTalk.fuzzy = true;
-						continue;
+						return item[beqTalk.lookLang].match(RE);
+					});
+
+					if (beqTalk.wordType1 != null)
+					{
+						var resultW = results.filter(function (item)
+						{
+							return item.type.split(':')[0] == beqTalk.wordType1;
+						});
+						results = resultW;
 					}
 					
-					//Apparently we tried case and fuzzy - nothing to find here :-(
-					break;
+					//No results? Maybe with different parameters!
+					if (results == null || results.length == 0)
+					{
+						//First try it without case (unless it's klingon, that always uses case)
+						if (beqTalk.wCase == false && beqTalk.lookLang != 'tlh')
+						{
+							beqTalk.wCase = true;
+							continue;
+						}
+						
+						//Still nothing? Try fuzzy search
+						if (beqTalk.fuzzy == false)
+						{
+							beqTalk.fuzzy = true;
+							continue;
+						}
+						
+						//Apparently we tried case and fuzzy - nothing to find here :-(
+						break;
+					}
 				}
+				allResult = allResult.concat(talkBeq.result);
+			   if (allResult.length > 0)
+			   {
+			      talkBeq.gotResult = true;
+			      talkBeq.lookWord = args[2];
+			      talkBeq.result = allResult;
+			   }
+			   else
+				  talkBeq.gotResult = false;			  
+
 			}
 			
 			if (results != null && results.length > 0)

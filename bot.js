@@ -290,10 +290,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 				
-			//Maybe we are looking for multiple words at once?
-			var multiWord = beqTalk.lookWord.split('|');
-   		        beqTalk.lookWord = multiWord[0];
-			
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
 			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
 			if (dynArg.indexOf('case') >= 0)
@@ -340,20 +336,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			}
 			else
 			{
-			   var allResult = new Array();
-			   for (var i = 0; i < multiWord.length; i++)
-			   {
-				beqTalk.lookWord = multiWord[i];
 				//Let the engine do its magic :-)
 				talkBeq = beq.Engine(beqTalk);
-				allResult = allResult.concat(talkBeq.result);
-			   }
-			   if (allResult.length > 0)
-			   {
-			      talkBeq.gotResult = true;
-			      talkBeq.lookWord = args[2];
-			      talkBeq.result = allResult;
-			   }
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);		
