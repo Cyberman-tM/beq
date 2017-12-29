@@ -122,7 +122,9 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.wCase = false;
 
 			//If we're looking for a phrase, any space has to have been replaced with _
+			console.log(beqTalk.lookWord);
 			beqTalk.lookWord = beqTalk.lookWord.replace(/'_'/g, ' ');
+			console.log(beqTalk.lookWord);
 
 			//Maybe we are looking for multiple words at once?
 			var multiWord = beqTalk.lookWord.split('|');
