@@ -284,9 +284,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
 				
-			//If we're looking for a phrase, any space has to have been replaced with _
-			beqTalk.lookWord = beqTalk.lookWord.replace('/_/g', ' ');
-		
+	
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 				

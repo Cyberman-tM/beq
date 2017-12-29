@@ -120,7 +120,10 @@ module.exports.Engine = function(beqTalk)
 			//Case INSensitive search in klingon is useless (qaH is different from QaH)
 			if (beqTalk.lookLang == 'tlh')
 				beqTalk.wCase = false;
-			
+
+			//If we're looking for a phrase, any space has to have been replaced with _
+			beqTalk.lookWord = beqTalk.lookWord.replace(/'_'/g, ' ');
+
 			//Maybe we are looking for multiple words at once?
 			var multiWord = beqTalk.lookWord.split('|');
 			
