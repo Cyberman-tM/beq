@@ -268,7 +268,14 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'mugh':
 			var talkBeq = JSON.parse(beq.beqTalkDef);
 		
-		    beqTalk.command = 'mugh';
+			//The first two arguments after "mugh" are NOT optional!
+		        if (args[2] == undefined)			
+			{
+			   sndMessage = 'Incomplete parameters!';
+			   break;
+			}
+				
+			beqTalk.command = 'mugh';
 			beqTalk.lookLang = args[1];
 			beqTalk.lookWord = args[2];
 			beqTalk.transLang = args[3]; //This argument can also be any of the later ones, if the language is taken from default
