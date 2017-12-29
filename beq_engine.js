@@ -113,6 +113,7 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case 'mugh':
 			var results = null;
+			var sumRes = new Array();
 			var allResult  = new Array();
 			beqTalk.result = new Array();
 
@@ -177,17 +178,9 @@ module.exports.Engine = function(beqTalk)
 						break;
 					}
 				}
-				allResult = allResult.concat(talkBeq.result);
-			   if (allResult.length > 0)
-			   {
-			      talkBeq.gotResult = true;
-			      talkBeq.lookWord = args[2];
-			      talkBeq.result = allResult;
-			   }
-			   else
-				  talkBeq.gotResult = false;			  
-
+				sumRes = sumRes.concat(results);
 			}
+			results = sumRes;
 			
 			if (results != null && results.length > 0)
 			{
