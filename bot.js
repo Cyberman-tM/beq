@@ -331,7 +331,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			else
 			{
 			   var allResult = new Array();
-			   for (var i = 0, i < multiWord.length, i++)
+			   for (var i = 0; i < multiWord.length; i++)
 			   {
 				beqTalk.lookWord = multiWord[i];
 				//Let the engine do its magic :-)
