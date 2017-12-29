@@ -99,7 +99,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + '\n'
 				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
 				 + '       Multiple words have to be separated by a _!\n'
-				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [filtWord=(n,v,adv,sen,ques,...)]\n'
+				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [type=(n,v,adv,sen,ques,...)]\n'
 				 + '       the first parameter has to be the language the word you want translated is in. Mandatory\n'
 				 + '       the second parameter is the word, or phrase, you\'re looking for, also mandatory\n'
 				 + '       [tlh,de,en] - the language you want the translation to be in. If none is supplied, the default (yours, if defined) is used. If uses, must be the third parameter\n'
@@ -108,7 +108,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon\n'
 				 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,\n'
 				 + '                       add this parameter with the number or results you want to skip\n'
-				 + '       [filtWord=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n';
+				 + '       [type=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n';
 			break;
 
 		case 'yIngu\'':
@@ -279,6 +279,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
+				
+			//Maybe we are looking for multiple words at once?
+			var multiWord = beqTalk.lookWord.split('|');
+   		        beqTalk.lookWord = multiWord[0];
 			
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
 			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
@@ -326,8 +330,20 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			}
 			else
 			{
+			   var allResult = new Array();
+			   for (var i = 0, i < multiWord.length, i++)
+			   {
+				beqTalk.lookWord = multiWord[i];
 				//Let the engine do its magic :-)
 				talkBeq = beq.Engine(beqTalk);
+				allResult = allResult.concat(talkBeq.result);
+			   }
+			   if (allResult.length > 0)
+			   {
+			      talkBeq.gotResult = true;
+			      talkBeq.lookWord = args[2];
+			      talkBeq.result = allResult;
+			   }
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);		
