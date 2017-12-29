@@ -179,6 +179,7 @@ module.exports.Engine = function(beqTalk)
 					}
 				}
 				sumRes = sumRes.concat(results);
+				results = new Array();
 			}
 			results = sumRes;
 			
