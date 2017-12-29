@@ -113,7 +113,7 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case 'mugh':
 			var results = null;
-			var allResult  = null;
+			var allResult  = new Array();
 			beqTalk.result = new Array();
 
 			//Case INSensitive search in klingon is useless (qaH is different from QaH)
