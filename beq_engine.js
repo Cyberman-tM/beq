@@ -445,7 +445,9 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		en: 'klingon',
 		de: 'Klingone',
 		type: 'n',
-		notes: 'notes'
+		notes: 'notes',
+		notes_de: 'notes_de',
+		hidden_notes: 'hidden_notes'
 	};
 
 	document.children[1].childrenNamed("table").forEach(function (headItem)
@@ -465,6 +467,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		{
 			if (item.firstChild != null)
 			{
+				console.log(item.attr.name);
 				switch (item.attr.name)
 				{
 				case 'entry_name':
@@ -481,6 +484,12 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 					break;
 				case 'notes':
 					emptyStruct.notes = item.firstChild.text;
+					break;
+				case 'notes_de':
+					emptyStruct.notes_de = item.firstChild.text;
+					break;
+				case 'hidden_notes':
+					emptyStruct.hidden_notes = item.firstChild.text;
 					break;
 				}
 			}
