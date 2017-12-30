@@ -52,7 +52,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '0.0.6	- complete rework, separate project!';
+		module.exports.versInt = '0.0.7	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -313,8 +313,8 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
 			
 			slangWord = '';
-			if (beqTalk.slang == true)
-				slangWord = '*(slang!)*';
+			if (item.slang == true)
+				slangWord = ' *(slang!)*';
 
 			sndMessage += item[beqTalk.lookLang] + slangWord + beqTalk.newline;
 			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
