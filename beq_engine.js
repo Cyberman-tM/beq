@@ -51,7 +51,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '0.0.4	- complete rework, separate project!';
+		module.exports.versInt = '0.0.6	- complete rework, separate project!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -310,12 +310,12 @@ module.exports.createTranslation = function(beqTalk)
 				 
 			if (beqTalk.showNotes == true)
 			{
-				if (item.notes != null)
-					sndMessage += 'Notes:' + beqTalk.newline + item.notes + beqTalk.newline;
-				if (item.notes_de != null)
-					sndMessage += 'Notes de:' + beqTalk.newline + item.notes_de + beqTalk.newline;
-				if (item.hidden_notes != null)
-					sndMessage += 'Hidden notes:' + beqTalk.newline + item.hidden_notes + beqTalk.newline;
+				if (item.notes != '')
+					sndMessage += 'Notes:' + item.notes + beqTalk.newline;
+				if (item.notes_de != '')
+					sndMessage += 'Notes de:' + item.notes_de + beqTalk.newline;
+				if (item.hidden_notes != '')
+					sndMessage += 'Hidden notes:' + item.hidden_notes + beqTalk.newline;
 			}
 		}
 	}
@@ -471,7 +471,9 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				en: '',
 				de: '',
 				type: '',
-				notes: ''
+				notes: '',
+				notes_de: '',
+				hidden_notes: ''
 			}
 			);
 

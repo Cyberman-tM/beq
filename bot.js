@@ -4,7 +4,7 @@ var beq = require('./beq_engine.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.0.0 - complete restart! Beq engine!';
+var versInt = '2.0.1 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
