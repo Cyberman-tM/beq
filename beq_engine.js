@@ -35,6 +35,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	            "tlh":"",         // the klingon word
 				"en":"",          // the english word
 				"de":""           // the german word
+				"slang":""        // Flag, is this is slang word? => true/false
 				"notes":""        // Notes to the word (slang, where from, etc..)
 				"notes_de":""     // Notes in german - if available!
 				"hidden_notes":"" // "Hidden" notes that are shown in small font in boQwI'
@@ -65,7 +66,8 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 	}
 	
-	var tmpTxt = "";	
+	var tmpTxt = "";
+	var isSlang = false;	
 	switch (beqTalk.command)
 	{
 		case 'yIngu\'':
@@ -101,7 +103,12 @@ module.exports.Engine = function(beqTalk)
 
 			if (tmpWord != null)
 			{
-				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type, "notes":tmpWord.notes, "notes_de":tmpWord.notes_de, "hidden_notes":tmpWord.hidden_notes});
+				//Specially mark slang words
+				isSlang = false;
+				if (tmpWord.type.indexOf("slang") >= 0)
+					isSlang = true;
+				
+				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type, "slang": isSlang, "notes":tmpWord.notes, "notes_de":tmpWord.notes_de, "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
 			}
 
@@ -196,7 +203,12 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = true;
 				results.forEach(function (item)
 				{
-					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
+					//Specially mark slang words
+					isSlang = false;
+					if (item.type.indexOf("slang") >= 0)
+						isSlang = true;
+
+					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "slang": isSlang, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
 				});
 			}
 			else
@@ -311,11 +323,11 @@ module.exports.createTranslation = function(beqTalk)
 			if (beqTalk.showNotes == true)
 			{
 				if (item.notes != '')
-					sndMessage += 'Notes:' + item.notes + beqTalk.newline;
+					sndMessage += 'Notes: ' + item.notes + beqTalk.newline;
 				if (item.notes_de != '')
-					sndMessage += 'Notes de:' + item.notes_de + beqTalk.newline;
+					sndMessage += 'Notes de: ' + item.notes_de + beqTalk.newline;
 				if (item.hidden_notes != '')
-					sndMessage += 'Hidden notes:' + item.hidden_notes + beqTalk.newline;
+					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
 		}
 	}
