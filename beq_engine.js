@@ -101,7 +101,7 @@ module.exports.Engine = function(beqTalk)
 
 			if (tmpWord != null)
 			{
-				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type, "notes":tmpWord.notes, "notes_de":tmpWord.notes_de});
+				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type, "notes":tmpWord.notes, "notes_de":tmpWord.notes_de, "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
 			}
 
@@ -196,7 +196,7 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = true;
 				results.forEach(function (item)
 				{
-					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "notes":item.notes, "notes_de":item.notes_de});
+					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
 				});
 			}
 			else
