@@ -1,13 +1,13 @@
 {
   "name": "beq",
   "version": "1.0.0",
-  "description": "helper bot",
-  "main": "bot.js",
+  "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
     "discord.io": "github:woor/discord.io#gateway_v6",
     "discord.js": "^11.2.1",
     "dom-parser": "^0.1.5",
+    "restify": "^6.3.4",
     "winston": "^2.4.0",
     "xmldoc": "^1.1.0"
   }
