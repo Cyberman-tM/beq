@@ -302,6 +302,7 @@ module.exports.createTranslation = function(beqTalk)
 				 
 			if (beqTalk.special = 'notes')
 			{
+				console.log(item);
 				sndMessage += beqTalk.newline + item.notes;
 			}
 		}
@@ -467,7 +468,6 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		{
 			if (item.firstChild != null)
 			{
-				console.log(item.attr.name);
 				switch (item.attr.name)
 				{
 				case 'entry_name':
@@ -506,6 +506,10 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 			emptyStruct.tlh = '';
 		if (emptyStruct.notes == undefined)
 			emptyStruct.notes = '';
+		if (emptyStruct.notes_de == undefined)
+			emptyStruct.notes_de = '';
+		if (emptyStruct.hidden_notes == undefined)
+			emptyStruct.hidden_notes = '';
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
