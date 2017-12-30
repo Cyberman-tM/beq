@@ -543,10 +543,15 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		
 		//Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
 		var regClean = /(\:[a-zA-Z0-9]*)/g;
-		var sourcestring = "source string to match with pattern";
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
+		
+		//Now we replace the paranthesis with stars, so we have a nice italic font in Discord, and mark the words in other cases
+		var regMark = /{|}/g;
+		emptyStruct.notes        = emptyStruct.notes.replace(regMark, '*');
+		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regMark, '*');
+		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regMark, '*');
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
