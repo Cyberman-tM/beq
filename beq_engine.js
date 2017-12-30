@@ -542,7 +542,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 			emptyStruct.hidden_notes = '';
 		
 		//Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
-		var regClean = /(\:[a-zA-Z0-9]*)/;
+		var regClean = /(\:[a-zA-Z0-9]*)/g;
 		var sourcestring = "source string to match with pattern";
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
