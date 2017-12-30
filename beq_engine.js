@@ -24,6 +24,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"lookWord": "",               // the word you are looking for
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
+	"special": "",                // special commands, untested, unlisted, etc...
 	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
 	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
 	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
@@ -122,9 +123,7 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.wCase = false;
 
 			//If we're looking for a phrase, any space has to have been replaced with _
-			console.log(beqTalk.lookWord);
 			beqTalk.lookWord = beqTalk.lookWord.replace(/_/g, ' ');
-			console.log(beqTalk.lookWord);
 
 			//Maybe we are looking for multiple words at once?
 			var multiWord = beqTalk.lookWord.split('|');
@@ -217,6 +216,7 @@ module.exports.beqTalkDef = JSON.stringify(
 	"lookWord": "",
 	"transLang": "",
 	"command": "",
+	"special": "",
 	"wordType1": null,
 	"wordType2": null,
 	"startRes": '0',
@@ -322,9 +322,19 @@ function getWType(wType, tranLang)
 	if (tranLang == 'de')
 	{
 		if (wTypeS == 'n')
+		{
 			wTypeL = 'Nomen';
+			if (wType == 'n:suff')
+				wTypeL = 'Nomen Suffix';
+		}
 		else if (wTypeS == 'v')
+		{
 			wTypeL = 'Verb';
+			if (wType == 'v:pref')
+				wTypeL = 'Verb Prefix';
+			else if (wType == 'v:suff')
+				wTypeL = 'Verb Suffix';
+		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Satz';
 		else if (wTypeS == 'excl')
@@ -341,9 +351,19 @@ function getWType(wType, tranLang)
 	else if (tranLang == 'en')
 	{
 		if (wTypeS == 'n')
+		{
 			wTypeL = 'Noun';
+			if (wType == 'n:suff')
+				wTypeL = 'Noun Suffix';
+		}
 		else if (wTypeS == 'v')
+		{
 			wTypeL = 'Verb';
+			if (wType == 'v:pref')
+				wTypeL = 'Verb Prefix';
+			else if (wType == 'v:suff')
+				wTypeL = 'Verb Suffix';
+		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Sentence';
 		else if (wTypeS == 'excl')
