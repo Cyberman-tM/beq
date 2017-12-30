@@ -833,31 +833,23 @@ DCP.acceptInvite = function(NUL, callback) {
 };
 
 /**
- * (Used to) Generate an invite URL for a channel.
- * @deprecated
+ * Generate an invite URL for a channel.
+ * @arg {Object} input
+ * @arg {Snowflake} input.channelID
+ * @arg {Number} input.max_age
+ * @arg {Number} input.max_uses
+ * @arg {Boolean} input.temporary
+ * @arg {Boolean} input.unique
  */
 DCP.createInvite = function(input, callback) {
-	var payload, client = this;
+	var allowed = ["channelID", "max_age", "max_uses", "temporary", "unique"];
+	var payload = {};
 
-	payload = {
-		max_age: 0,
-		max_users: 0,
-		temporary: false
-	};
+	allowed.forEach(function(name) {
+		if (input[name]) payload[name] = input[name];
+	});
 
-	if ( Object.keys(input).length === 1 && input.channelID ) {
-		payload = {
-			validate: client.internals.lastInviteCode || null
-		};
-	}
-
-	for (var key in input) {
-		if (Object.keys(payload).indexOf(key) < 0) continue;
-		payload[key] = input[key];
-	}
-
-	this._req('post', Endpoints.CHANNEL(input.channelID) + "/invites", payload, function(err, res) {
-		try {client.internals.lastInviteCode = res.body.code;} catch(e) {}
+	this._req('post', Endpoints.CHANNEL(payload.channelID) + "/invites", payload, function(err, res) {
 		handleResCB('Unable to create invite', err, res, callback);
 	});
 };
