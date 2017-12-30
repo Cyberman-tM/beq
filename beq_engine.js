@@ -25,6 +25,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
 	"special": "",                // special commands, untested, unlisted, etc...
+	"showNotes": ""               // Show notes, if available? => true/false
 	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
 	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
 	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
@@ -34,6 +35,9 @@ You must initialize it before calling beq! Some fields may have default entries!
 	            "tlh":"",         // the klingon word
 				"en":"",          // the english word
 				"de":""           // the german word
+				"notes":""        // Notes to the word (slang, where from, etc..)
+				"notes_de":""     // Notes in german - if available!
+				"hidden_notes":"" // "Hidden" notes that are shown in small font in boQwI'
 			  }],                 //
     "message": "",                // some functions or commands may return a message, it will be in here
 	"gotResult": false,           // indicates if the search was successful => true/false
@@ -217,6 +221,7 @@ module.exports.beqTalkDef = JSON.stringify(
 	"transLang": "",
 	"command": "",
 	"special": "",
+	"notes": false,
 	"wordType1": null,
 	"wordType2": null,
 	"startRes": '0',
@@ -225,7 +230,10 @@ module.exports.beqTalkDef = JSON.stringify(
 	"result": [{ "type":"",
 	            "tlh":"",
 				"en":"",
-				"de":""
+				"de":"",
+				"notes":"",
+				"notes_de":"",
+				"hidden_notes":""
 			  }],
     "message": "",
 	"gotResult": false,
@@ -300,7 +308,7 @@ module.exports.createTranslation = function(beqTalk)
 				 (beqTalk.lookLang == 'de' && beqTalk.transLang == 'en'))
 				 sndMessage += '==> ' + item.tlh + beqTalk.newline;
 				 
-			if (beqTalk.special = 'notes')
+			if (beqTalk.special == 'notes')
 			{
 				sndMessage += beqTalk.newline + item.notes;
 			}

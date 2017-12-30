@@ -283,14 +283,15 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var p_lookCase = args[5];
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
-			var p_special  = args[8];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
+			var p_showNotes = args[8];  //show notes, if available
+			var p_special   = args[9];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 				
 	
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 				
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
-			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord;
+			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special;
 			if (dynArg.indexOf('case') >= 0)
 				beqTalk.wCase = true;
 
@@ -303,6 +304,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				if (aIdx != null)
 					beqTalk.fuzzy = uFuzz[0].fuzzy;
 			}
+			
+			if (dynArg.indexOf('notes') >= 0)
+				beqTalk.notes = true;
 			
 			if (dynArg.indexOf('spec=') >= 0)
 				beqTalk.special = dynArg.split('spec=')[1].split('|')[0];
