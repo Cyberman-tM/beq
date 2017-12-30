@@ -306,7 +306,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			}
 			
 			if (dynArg.indexOf('notes') >= 0)
-				beqTalk.notes = true;
+				beqTalk.showNotes = true;
 			
 			if (dynArg.indexOf('spec=') >= 0)
 				beqTalk.special = dynArg.split('spec=')[1].split('|')[0];

@@ -221,7 +221,7 @@ module.exports.beqTalkDef = JSON.stringify(
 	"transLang": "",
 	"command": "",
 	"special": "",
-	"notes": false,
+	"showNotes": false,
 	"wordType1": null,
 	"wordType2": null,
 	"startRes": '0',
@@ -308,9 +308,14 @@ module.exports.createTranslation = function(beqTalk)
 				 (beqTalk.lookLang == 'de' && beqTalk.transLang == 'en'))
 				 sndMessage += '==> ' + item.tlh + beqTalk.newline;
 				 
-			if (beqTalk.special == 'notes')
+			if (beqTalk.showNotes == true)
 			{
-				sndMessage += beqTalk.newline + item.notes;
+				if (item.notes != null)
+					sndMessage += 'Notes:' + beqTalk.newline + item.notes + beqTalk.newline;
+				if (item.notes_de != null)
+					sndMessage += 'Notes de:' + beqTalk.newline + item.notes_de + beqTalk.newline;
+				if (item.hidden_notes != null)
+					sndMessage += 'Hidden notes:' + beqTalk.newline + item.hidden_notes + beqTalk.newline;
 			}
 		}
 	}
