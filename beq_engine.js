@@ -524,7 +524,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				}
 			}
 		}
-		);
+		);		
 		//Make sure everything's here (sometimes the german is missing)
 		if (emptyStruct.de == '' || emptyStruct.de == undefined)
 			emptyStruct.de = emptyStruct.en;
@@ -540,6 +540,13 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 			emptyStruct.notes_de = '';
 		if (emptyStruct.hidden_notes == undefined)
 			emptyStruct.hidden_notes = '';
+		
+		//Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
+		var regClean = /(\:[a-zA-Z0-9]*)/;
+		var sourcestring = "source string to match with pattern";
+		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
+		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
+		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
