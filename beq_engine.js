@@ -299,6 +299,11 @@ module.exports.createTranslation = function(beqTalk)
 			if ( (beqTalk.lookLang == 'en' && beqTalk.transLang == 'de') ||
 				 (beqTalk.lookLang == 'de' && beqTalk.transLang == 'en'))
 				 sndMessage += '==> ' + item.tlh + beqTalk.newline;
+				 
+			if (beqTalk.special = 'notes')
+			{
+				sndMessage += beqTalk.newline + item.notes;
+			}
 		}
 	}
 	)
