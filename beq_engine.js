@@ -299,7 +299,7 @@ module.exports.createTranslation = function(beqTalk)
 	if (listLang == 'tlh')
 		listLang = 'en';
 
-	
+	var slangWord = '';
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
@@ -311,8 +311,12 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 			else if (beqTalk.command == "KWOTD")
 				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
+			
+			slangWord = '';
+			if (beqTalk.slang == true)
+				slangWord = '*(slang!)*';
 
-			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+			sndMessage += item[beqTalk.lookLang] + slangWord + beqTalk.newline;
 			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
 			
 			//Special case (stupid case, but nonetheless)
