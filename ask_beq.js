@@ -10,22 +10,26 @@ var beqTalkRaw = JSON.parse(beq.beqTalkDef);   //Example
 
 //The parameters are sent via URL parameters, the return will be a JSON object (stringified)
 
+
 function respond(req, res, next) {
   var URLParam = req.url;
+  var retMes = 'nuqjatlh?';
 
   var beqTalk = JSON.parse(beq.beqTalkDef);
   parAr = url.parse(URLParam, true).query;
-  console.log(parAr);
+
+  if (parAr.mugh != undefined)
+	  console.log("mugh");
 
  
- 
+  res.send(retMes);
   next();
 }
 
 var server = restify.createServer();
 
-server.get('beq', respond);
-server.head('beq', respond);
+server.get('ask_beq', respond);
+server.head('ask_beq', respond);
 
 server.listen(process.env.PORT || 5000, function()
 {
