@@ -20,22 +20,35 @@ function respond(req, res, next) {
   parAr = url.parse(URLParam, true).query;
 
   //Common parameters
+  beqTalk.newline = '<br />';
+  beqTalk.limitRes = 999;           //No reason for a limit, is there?
+  
   beqTalk.transLang = parAr.transLang;
   if (beqTalk.transLang == undefined)
 	  beqTalk.transLang = 'en';
+
+  beqTalk.lookLang = parAr.lookLang;
+  if (beqTalk.lookLang == undefined)
+	  beqTalk.lookLang = 'tlh';
+
+  if (parAr.showNotes != undefined)
+	  beqTalk.showNotes = true;
+  
+  if (parAr.wordType1 != undefined)
+	  beqTalk.wordType1 = parAr.wordType1;
+    if (parAr.wordType2 != undefined)
+	  beqTalk.wordType2 = parAr.wordType2;
 
   
   //The commands have no parameters, they just are
   if (parAr.mugh != undefined)
   {
 	  beqTalk.command = 'mugh';
-	  beqTalk.lookLang = parAr.lookLang;
 	  beqTalk.lookWord = parAr.lookWord;
-
-	  beqTalk.newline = '<br />';
-	  
-	  if (beqTalk.lookLang == undefined)
-		  beqTalk.lookLang = 'tlh';
+	  if (parAr.fuzzy != undefined)
+		  beqTalk.fuzzy = true;
+	  if (parAr.wCase != undefined)
+		  beqTalk.wCase = true;
 
 		//Let the engine do its magic :-)
 		talkBeq = beq.Engine(beqTalk);
@@ -43,16 +56,42 @@ function respond(req, res, next) {
   else if (parAr.KWOTD != undefined)
   {
 	  beqTalk.command = 'KWOTD';
+	  beqTalk.lookLang = 'tlh';
 	  talkBeq = beq.Engine(beqTalk);
-  }	  
-
-
-		
+  }
+  
+  
+  if (parAr.help != undefined)
+  {
+	 retMes  = 'Ask beq' + '<br />';
+	 retMes += 'All parameters must be encoded into the URL, like this:' + '<br />';
+	 retMes += '/ask_beq?mugh&lookLang=tlh&lookWord=mugh&transLang=de&getJSON' + '<br />';
+	 retMes += '(This will get you the german translation of the klingon word "mugh", the return is the JSON-object of beqTalk.)' + '<br />';
+	 retMes += 'Some of the parameters need to have values, like "lookLang", while others just have to BE there, like "getJSON".' + '<br />';
+	 retMes += '' + '<br />';
+	 retMes += 'Possible parameters:' + '<br />';
+	 retMes += 'mugh - no value, return will be a translation' + '<br />';
+	 retMes += 'KWOTD - no value, return will be a random proverb' + '<br />';
+	 retMes += 'help - you\'re looking at it' + '<br />';
+	 retMes += 'getJSON - no value, return is a JSON object of beqTalk, instead of a preformatted string' + '<br />';
+	 retMes += 'fuzzy - no value, don\'t limit the search to word boundaries' + '<br />';
+	 retMes += 'wCase - no value, ignore case' + '<br />';
+ 	 retMes += 'lookWord - the word you want translated as value' + '<br />';
+ 	 retMes += 'lookLang - the language the word you want translated is in' + '<br />';
+ 	 retMes += 'transLang - the language you want the translation in' + '<br />';
+	 retMes += 'wordType1 - you can use this to limit the results to a specific word type' + '<br />';
+	 retMes += 'wordType2 - the word type is the same as in boQwI\'' + '<br />';
+	 retMes += '' + '<br />';
+  }
+  else
+  {
 	//Get either the JSON object itself, or a nice string
 	if (parAr.getJSON != undefined)
 		retMes = talkBeq;
 	else
-		retMes = beq.createTranslation(talkBeq);		  
+		retMes = beq.createTranslation(talkBeq);
+  }
+	
   res.send(retMes);
   next();
 }
