@@ -157,8 +157,8 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/x/g, 'tlh');
 			  tmpText = tmpText.replace(/c/g, 'ch');
 			  tmpText = tmpText.replace(/k/g, 'q');
-			  tmpText = tmpText.replace(/f/g, 'ng');
 			  tmpText = tmpText.replace(/g/g, 'gh');
+			  tmpText = tmpText.replace(/f/g, 'ng');
 			  
 			  //Restore upper case letters
 			  tmpText = tmpText.replace(/d/g, 'D');
@@ -166,17 +166,6 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/h/g, 'H');
 			  tmpText = tmpText.replace(/q/g, 'Q');			  
 			  tmpText = tmpText.replace(/s/g, 'S');
-			  
-			  if (beqTalk.transLang == 'XIFAN')
-			  {
-				  encoding = 'tlhIngan > XIFAN';
-				  tmpText = tmpText.toUpperCase();
-			  }
-			  else
-			  {
-				  encoding = 'tlhIngan > xifan';
-				  tmpText = tmpText.toLowerCase();
-			  }
 		  }
 		  //This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
 		  beqTalk.result = new Array();
