@@ -129,7 +129,7 @@ module.exports.Engine = function(beqTalk)
 		  var tmpText = '';
 		  var encoding = '';
 		  //lookLang and transLang are NOT language IDs here, but they mark the original "encoding" of the text in lookWord (also not just a word)
-		  if (beqTalk.lookLang == 'tlhIngan' && ( beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN')
+		  if (beqTalk.lookLang == 'tlhIngan' && ( beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN'))
 		  {
 			  //Is there a better way?
 			  tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
