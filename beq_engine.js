@@ -135,7 +135,6 @@ module.exports.Engine = function(beqTalk)
 			  //Is there a better way?
 			  tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
 			  tmpText = tmpText.replace(/ch/g, 'c');
-			  tmpText = tmpText.replace(/ch/g, 'c');
 			  tmpText = tmpText.replace(/q/g, 'k');
 			  tmpText = tmpText.replace(/ng/g, 'f');
 			  tmpText = tmpText.replace(/gh/g, 'g');
@@ -150,12 +149,41 @@ module.exports.Engine = function(beqTalk)
 				  encoding = 'tlhIngan > xifan';
 				  tmpText = tmpText.toLowerCase();
 			  }
-			  
-			  beqTalk.result = new Array();
-			  beqTalk.result.push( {"tlh":beqTalk.lookWord, "en":tmpText,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
-			  beqTalk.lookWord = new String('recoding');
-			  beqTalk.gotResult = true;
 		  }
+		  else if ((beqTalk.lookLang == 'xifan' || beqTalk.lookLang == 'XIFAN') && ( beqTalk.transLang == 'tlhIngan'))
+		  {
+			  tmpText = beqTalk.lookWord.toLowerCase();
+			  //Is there a better way?
+			  tmpText = tmpText.replace(/x/g, 'tlh');
+			  tmpText = tmpText.replace(/c/g, 'ch');
+			  tmpText = tmpText.replace(/k/g, 'q');
+			  tmpText = tmpText.replace(/f/g, 'ng');
+			  tmpText = tmpText.replace(/g/g, 'gh');
+			  
+			  //Restore upper case letters
+			  tmpText = tmpText.replace(/d/g, 'D');
+			  tmpText = tmpText.replace(/i/g, 'I');
+			  tmpText = tmpText.replace(/h/g, 'H');
+			  tmpText = tmpText.replace(/q/g, 'Q');			  
+			  tmpText = tmpText.replace(/s/g, 'S');
+			  
+			  if (beqTalk.transLang == 'XIFAN')
+			  {
+				  encoding = 'tlhIngan > XIFAN';
+				  tmpText = tmpText.toUpperCase();
+			  }
+			  else
+			  {
+				  encoding = 'tlhIngan > xifan';
+				  tmpText = tmpText.toLowerCase();
+			  }
+		  }
+		  //This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
+		  beqTalk.result = new Array();
+		  beqTalk.result.push( {"tlh":beqTalk.lookWord, "en":tmpText,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+		  beqTalk.lookWord = new String('recoding');
+		  beqTalk.gotResult = true;
+
 		
 		break;
 		
