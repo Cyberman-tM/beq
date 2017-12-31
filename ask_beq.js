@@ -73,7 +73,7 @@ function respond(req, res, next) {
 	 retMes += 'mugh - no value, return will be a translation' + '<br />';
 	 retMes += 'KWOTD - no value, return will be a random proverb' + '<br />';
 	 retMes += 'help - you\'re looking at it' + '<br />';
-	 retMes += 'getJSON - no value, return is a JSON object of beqTalk, instead of a preformatted string' + '<br />';
+	 retMes += 'getJSON - no value, return is a JSON object of beqTalk, instead of a preformatted string (still in a JSON object)' + '<br />';
 	 retMes += 'fuzzy - no value, don\'t limit the search to word boundaries' + '<br />';
 	 retMes += 'wCase - no value, ignore case' + '<br />';
  	 retMes += 'lookWord - the word you want translated as value' + '<br />';
@@ -82,6 +82,9 @@ function respond(req, res, next) {
 	 retMes += 'wordType1 - you can use this to limit the results to a specific word type' + '<br />';
 	 retMes += 'wordType2 - the word type is the same as in boQwI\'' + '<br />';
 	 retMes += '' + '<br />';
+	 
+	 //Special case, normally we only send JSON
+	 res.setHeader('Content-Type', 'text/html');
   }
   else
   {
