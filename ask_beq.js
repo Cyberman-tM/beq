@@ -85,6 +85,7 @@ function respond(req, res, next) {
 	 
 	 //Special case, normally we only send JSON
 	 res.setHeader('Content-Type', 'text/html');
+	 res.end(retMes);
   }
   else
   {
@@ -93,9 +94,11 @@ function respond(req, res, next) {
 		retMes = talkBeq;
 	else
 		retMes = beq.createTranslation(talkBeq);
+	
+	res.send(retMes);
   }
 	
-  res.end(retMes);
+  
   next();
 }
 
