@@ -95,7 +95,7 @@ function respond(req, res, next) {
 		retMes = beq.createTranslation(talkBeq);
   }
 	
-  res.send(retMes);
+  res.end(retMes);
   next();
 }
 
