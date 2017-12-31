@@ -1,6 +1,6 @@
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '0.0.2	- Using the beq Engine!';
+var versInt = '0.1.3	- Using the beq Engine!';
 var startDateTime = new Date().toLocaleString();
 
 var url = require('url');
@@ -36,15 +36,15 @@ function respond(req, res, next) {
   
   if (parAr.wordType1 != undefined)
 	  beqTalk.wordType1 = parAr.wordType1;
-    if (parAr.wordType2 != undefined)
+  if (parAr.wordType2 != undefined)
 	  beqTalk.wordType2 = parAr.wordType2;
+  beqTalk.lookWord = parAr.lookWord;
 
   
   //The commands have no parameters, they just are
   if (parAr.mugh != undefined)
   {
 	  beqTalk.command = 'mugh';
-	  beqTalk.lookWord = parAr.lookWord;
 	  if (parAr.fuzzy != undefined)
 		  beqTalk.fuzzy = true;
 	  if (parAr.wCase != undefined)
