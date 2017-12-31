@@ -152,6 +152,7 @@ module.exports.Engine = function(beqTalk)
 			  
 			  beqTalk.result = new Array();
 			  beqTalk.result.push( {"tlh":tmpText, "en":'',"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+			  beqTalk.gotResult = true;
 		  }
 		
 		break;
