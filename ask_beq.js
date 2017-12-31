@@ -27,9 +27,15 @@ var server = restify.createServer();
 server.get('beq', respond);
 server.head('beq', respond);
 
-server.listen(process.env.PORT || 5000, function() {
+server.listen(process.env.PORT || 5000, function()
+{
   console.log('%s listening at %s', server.name, server.url);
   console.log("Version: " + versInt);
+  
+	var beqTalk = JSON.parse(beq.beqTalkDef);
+	beqTalk.command = "yIngu'";
+	beqTalk = beq.Engine(beqTalk);
+	console.log(beqTalk.message);
 });
 
 //--------------------------------------
