@@ -124,6 +124,38 @@ module.exports.Engine = function(beqTalk)
 				break;
 			}
 		break;
+		
+		case "recode":
+		  var tmpText = '';
+		  var encoding = '';
+		  //lookLang and transLang are NOT language IDs here, but they mark the original "encoding" of the text in lookWord (also not just a word)
+		  if (beqTalk.lookLang == 'tlhIngan' && ( beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN')
+		  {
+			  //Is there a better way?
+			  tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
+			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
+			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
+			  tmpText = beqTalk.lookWord.replace(/q/g, 'k');
+			  tmpText = beqTalk.lookWord.replace(/ng/g, 'f');
+			  tmpText = beqTalk.lookWord.replace(/gh/g, 'g');
+			  
+			  if (beqTalk.transLang == 'XIFAN')
+			  {
+				  encoding = 'tlhIngan > XIFAN';
+				  tmpText = tmpText.toUpperCase();
+			  }
+			  else
+			  {
+				  encoding = 'tlhIngan > xifan';
+				  tmpText = tmpText.toLowerCase();
+			  }
+			  
+			  beqTalk.result = new Array();
+			  beqTalk.result.push( {"tlh":tmpText, "en":'',"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+		  }
+		
+		break;
+		
 		case 'mugh':
 			var results = null;
 			var sumRes = new Array();
@@ -201,7 +233,7 @@ module.exports.Engine = function(beqTalk)
 								var tmpVerb = beqTalk.lookWord.replace(/^(HI|gho|yI|tI|pe|qa|Sa|vI|jI|pI|re|wI|DI|ma|cho|ju|Da|bI|tu|che|bo|mu|nu|Du|lI|nI|lI)/, '');
 
 								//Simple checks, shortest syllable has 2 characters
-								if (tmpVerb.length > 2 &&
+								if (tmpVerb.length >= 2 &&
 								    //and has to start with a consonant
 								    tmpVerb.search(/^b|ch|D|gh|H|j|l|m|n|ng|p|q|Q|r|S|t|tlh|v|w|y|’/) > -1)
 									beqTalk.lookWord = tmpVerb;
@@ -289,6 +321,7 @@ module.exports.createTranslation = function(beqTalk)
 		"resStart": 'You asked for "&1 ", I found &2 possible results',
 		"resFuzz": " using fuzzy searching",
 		"resCase": ", ignoring case",
+		"remPref": ", removing possible prefixes",
 		"resSTR": "(Starting from result #&1)",
 		"resTMR": "...too many results. Stopping list."
 	};
@@ -302,6 +335,8 @@ module.exports.createTranslation = function(beqTalk)
 			sndMessage += intText.resFuzz;
 		if (beqTalk.wCase == true)
 			sndMessage += intText.resCase;
+		if (beqTalk.remPref == true)
+			sndMessage += intText.remPref;
 		sndMessage += beqTalk.newline + beqTalk.newline;
 	}
 

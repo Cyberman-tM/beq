@@ -59,7 +59,11 @@ function respond(req, res, next) {
 	  beqTalk.lookLang = 'tlh';
 	  talkBeq = beq.Engine(beqTalk);
   }
-  
+  else if (parAr.recode != undefined)
+  {
+	  beqTalk.command = 'recode';
+	  talkBeq = beq.Engine(beqTalk);
+  }
   
   if (parAr.help != undefined)
   {
