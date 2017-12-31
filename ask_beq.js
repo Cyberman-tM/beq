@@ -16,10 +16,30 @@ function respond(req, res, next) {
   var retMes = 'nuqjatlh?';
 
   var beqTalk = JSON.parse(beq.beqTalkDef);
+  var talkBeq = null;
   parAr = url.parse(URLParam, true).query;
 
+  //The commands have no parameters, they just are
   if (parAr.mugh != undefined)
-	  console.log("mugh");
+  {
+	  beqTalk.command = 'mugh';
+	  beqTalk.lookLang = parAr.lookLang;
+	  beqTalk.transLang = parAr.transLang;
+	  beqTalk.lookWord = parAr.lookWord;
+
+	  beqTalk.newline = '<br />';
+	  
+	  if (beqTalk.lookLang == undefined)
+		  beqTalk.lookLang = 'tlh';
+
+	  if (beqTalk.transLang == undefined)
+		  beqTalk.transLang = 'en';
+	  
+		//Let the engine do its magic :-)
+		talkBeq = beq.Engine(beqTalk);
+	   
+	   	retMes = beq.createTranslation(talkBeq);
+  }
 
  
   res.send(retMes);
