@@ -152,7 +152,8 @@ module.exports.Engine = function(beqTalk)
 			  }
 			  
 			  beqTalk.result = new Array();
-			  beqTalk.result.push( {"tlh":tmpText, "en":'',"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+			  beqTalk.result.push( {"tlh":tmpText, "en":beqTalk.lookWord,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+			  beqTalk.lookWord = new String('recoding');
 			  beqTalk.gotResult = true;
 		  }
 		
