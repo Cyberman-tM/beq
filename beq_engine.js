@@ -20,6 +20,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 	"fuzzy": false,               // "fuzzy" searching, i.e. no word boundaries  => true/false
 	"wCase": false,               // search ignoring case                        => true/false
+	"remPref": false,             // Remove prefix if no result is found otherwise
 	"lookLang": "",               // the language the word you want translated is in
 	"lookWord": "",               // the word you are looking for
 	"transLang": "",              // the language you want as result
@@ -52,7 +53,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '0.0.7	- The beq Engine lives!';
+		module.exports.versInt = '1.0.0	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -189,7 +190,30 @@ module.exports.Engine = function(beqTalk)
 							continue;
 						}
 						
-						//Apparently we tried case and fuzzy - nothing to find here :-(
+						//Even after case and fuzzy we didn't find anything?
+						//Try to remove the prefix:
+						if (beqTalk.lookLang == 'tlh' && beqTalk.remPref == false)
+						{
+							//A verb + prefix has at least 4 characters: 2prefix, 2verb
+							if (beqTalk.lookWord.length > 3)
+							{
+								//Sind das eh alle Prefixe?
+								var tmpVerb = beqTalk.lookWord.replace(/^(HI|gho|yI|tI|pe|qa|Sa|vI|jI|pI|re|wI|DI|ma|cho|ju|Da|bI|tu|che|bo|mu|nu|Du|lI|nI|lI)/, '');
+
+								//Simple checks, shortest syllable has 2 characters
+								if (tmpVerb.length > 2 &&
+								    //and has to start with a consonant
+								    tmpVerb.search(/^b|ch|D|gh|H|j|l|m|n|ng|p|q|Q|r|S|t|tlh|v|w|y|’/) > -1)
+									beqTalk.lookWord = tmpVerb;
+							}
+							
+							//If it has a prefix, it can only be a verb!
+							beqTalk.wordType1 = 'v';
+							beqTalk.remPref = true;
+							continue;
+						}
+						
+						//Apparently we tried case and fuzzy (and removal of prefix) - nothing to find here :-(
 						break;
 					}
 				}
@@ -228,6 +252,7 @@ module.exports.beqTalkDef = JSON.stringify(
 {
 	"fuzzy": false,
 	"wCase": false,
+	"remPref": false,
 	"lookLang": "",
 	"lookWord": "",
 	"transLang": "",
@@ -425,8 +450,8 @@ function getSType(wType, tranLang)
 	
 	if (wTypeW != "sen")
 		return "Wrong type!";
-	
-	if (tranLang == 'de')
+
+	if (tranLang == 'en')
 	{
 		if (wTypeS == 'rp')
 			tmpRet = 'Replacement proverb';
@@ -435,7 +460,7 @@ function getSType(wType, tranLang)
 		else
 			wTypeL = 'unsupported yet';
 	}
-	else if (tranLang == 'en')
+	else if (tranLang == 'de')
 	{
 		if (wTypeS == 'rp')
 			tmpRet = 'Ersatzsprichwort';
