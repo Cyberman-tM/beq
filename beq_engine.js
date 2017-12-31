@@ -153,19 +153,19 @@ module.exports.Engine = function(beqTalk)
 		  else if ((beqTalk.lookLang == 'xifan' || beqTalk.lookLang == 'XIFAN') && ( beqTalk.transLang == 'tlhIngan'))
 		  {
 			  tmpText = beqTalk.lookWord.toLowerCase();
-			  //Is there a better way?
-			  tmpText = tmpText.replace(/x/g, 'tlh');
-			  tmpText = tmpText.replace(/c/g, 'ch');
-			  tmpText = tmpText.replace(/k/g, 'q');
-			  tmpText = tmpText.replace(/g/g, 'gh');
-			  tmpText = tmpText.replace(/f/g, 'ng');
-			  
 			  //Restore upper case letters
 			  tmpText = tmpText.replace(/d/g, 'D');
 			  tmpText = tmpText.replace(/i/g, 'I');
 			  tmpText = tmpText.replace(/h/g, 'H');
-			  tmpText = tmpText.replace(/q/g, 'Q');			  
+			  tmpText = tmpText.replace(/q/g, 'Q');
 			  tmpText = tmpText.replace(/s/g, 'S');
+			  
+			  //Is there a better way?
+  			  tmpText = tmpText.replace(/x/g, 'tlh');
+			  tmpText = tmpText.replace(/c/g, 'ch');
+			  tmpText = tmpText.replace(/k/g, 'q');
+			  tmpText = tmpText.replace(/g/g, 'gh');
+			  tmpText = tmpText.replace(/f/g, 'ng');			  
 		  }
 		  //This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
 		  beqTalk.result = new Array();
