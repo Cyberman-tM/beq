@@ -134,11 +134,11 @@ module.exports.Engine = function(beqTalk)
 		  {
 			  //Is there a better way?
 			  tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
-			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
-			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
-			  tmpText = beqTalk.lookWord.replace(/q/g, 'k');
-			  tmpText = beqTalk.lookWord.replace(/ng/g, 'f');
-			  tmpText = beqTalk.lookWord.replace(/gh/g, 'g');
+			  tmpText = tmpText.replace(/ch/g, 'c');
+			  tmpText = tmpText.replace(/ch/g, 'c');
+			  tmpText = tmpText.replace(/q/g, 'k');
+			  tmpText = tmpText.replace(/ng/g, 'f');
+			  tmpText = tmpText.replace(/gh/g, 'g');
 			  
 			  if (beqTalk.transLang == 'XIFAN')
 			  {
@@ -152,7 +152,7 @@ module.exports.Engine = function(beqTalk)
 			  }
 			  
 			  beqTalk.result = new Array();
-			  beqTalk.result.push( {"tlh":tmpText, "en":beqTalk.lookWord,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+			  beqTalk.result.push( {"tlh":beqTalk.lookWord, "en":tmpText,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
 			  beqTalk.lookWord = new String('recoding');
 			  beqTalk.gotResult = true;
 		  }
