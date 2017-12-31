@@ -53,7 +53,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '1.0.0	- The beq Engine lives!';
+		module.exports.versInt = '1.0.1	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -128,6 +128,8 @@ module.exports.Engine = function(beqTalk)
 		case "recode":
 		  var tmpText = '';
 		  var encoding = '';
+		  
+		  console.log(beqTalk);
 		  //lookLang and transLang are NOT language IDs here, but they mark the original "encoding" of the text in lookWord (also not just a word)
 		  if (beqTalk.lookLang == 'tlhIngan' && ( beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN'))
 		  {
