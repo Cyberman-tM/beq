@@ -1,6 +1,6 @@
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '0.0.1	- Using the beq Engine!';
+var versInt = '0.0.2	- Using the beq Engine!';
 var startDateTime = new Date().toLocaleString();
 
 var url = require('url');
@@ -37,10 +37,13 @@ function respond(req, res, next) {
 	  
 		//Let the engine do its magic :-)
 		talkBeq = beq.Engine(beqTalk);
-	   
-	   	retMes = beq.createTranslation(talkBeq);
+		
+		//Get either the JSON object itself, or a nice string
+		if (parAr.getJSON != undefined)
+			retMes = talkBeq;
+		else
+			retMes = beq.createTranslation(talkBeq);		
   }
-
  
   res.send(retMes);
   next();
