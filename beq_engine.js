@@ -212,6 +212,22 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
 			  tmpText = tmpText.replace(/d/g, 'D');
 		  }
+		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'TIxan')
+		  {
+			  //Very simple transcript, only tlh, ng, gh, ch are replaced
+			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
+			  tmpText = tmpText.replace(/gh/g, 'g');
+			  tmpText = tmpText.replace(/ng/g, 'x');
+			  tmpText = tmpText.replace(/tlh/g, 'T');
+		  }
+  		  else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
+		  {
+			  //Very simple transcript, only tlh, ng, gh, ch are replaced
+			  tmpText = beqTalk.lookWord.replace(/c/g, 'ch');
+			  tmpText = tmpText.replace(/g/g, 'gh');
+			  tmpText = tmpText.replace(/x/g, 'ng');
+			  tmpText = tmpText.replace(/T/g, 'tlh');
+		  }
 		  
 		  if (tmpText != '')
 		  {
@@ -227,10 +243,9 @@ module.exports.Engine = function(beqTalk)
 			  beqTalk.failure = true;
 			  beqTalk.message  = 'Recoding is only possible between these "languages"' + beqTalk.newline + '(supply them in lookLang for source, and transLang for destination)';
 			  beqTalk.message += beqTalk.newline;
-			  beqTalk.message += 'tlhIngan >> xifan/XIFAN' + beqTalk.newline;
-			  beqTalk.message += 'xifan/XIFAN >> tlhIngan' + beqTalk.newline;
-			  beqTalk.message += 'tlhIngan >> uhmal' + beqTalk.newline;
-			  beqTalk.message += 'uhmal >> tlhIngan' + beqTalk.newline;
+			  beqTalk.message += 'tlhIngan <> xifan/XIFAN' + beqTalk.newline;
+			  beqTalk.message += 'tlhIngan <> uhmal' + beqTalk.newline;
+			  beqTalk.message += 'tlhIngan <> TIxan' + beqTalk.newline;
 		  }
 		break;
 		

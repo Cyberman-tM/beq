@@ -90,6 +90,17 @@ function respond(req, res, next) {
 	 retMes += 'wordType1 - you can use this to limit the results to a specific word type' + '<br />';
 	 retMes += 'wordType2 - the word type is the same as in boQwI\'' + '<br />';
 	 retMes += '' + '<br />';
+	 retMes += 'recode - no value, recode a text using a different "encoding", i.e. "tlhIngan->xifan"; parameters have changed meaning!' + '<br />';
+	 retMes += '==>lookLang - with recode, this is the "encoding" of the source text' + '<br />';
+	 retMes += '==>transLang - the "encoding" you want the source text to be transposed to' + '<br />';
+	 retMes += '==>lookWord - the source text' + '<br />';
+	 retMes += '=>the result will ALWAYS be JSON, there is no preformatted text for this!' + '<br />';
+	 retMes += '=>The beqTalk structure will have 1 result, in "tlh" is the source, in "en" is the result.' + '<br />';
+	 retMes += '=>"type" will simply be "RECODE"' + '<br />';
+	 retMes += 'Possible encodings:' + '<br />';
+	 retMes += 'tlhIngan <> xifan/XIFAN' + '<br />';
+	 retMes += 'tlhIngan <> uhmal' + '<br />';
+	 retMes += 'tlhIngan <> TIxan' + '<br />';
   }
   
   if (parAr.help != undefined || talkBeq.failure == true)
