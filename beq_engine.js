@@ -167,13 +167,48 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/g/g, 'gh');
 			  tmpText = tmpText.replace(/f/g, 'ng');			  
 		  }
-		  //This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
-		  beqTalk.result = new Array();
-		  beqTalk.result.push( {"tlh":beqTalk.lookWord, "en":tmpText,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
-		  beqTalk.lookWord = new String('recoding');
-		  beqTalk.gotResult = true;
-
-		
+		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal')
+		  {
+			  tmpText = beqTalk.lookWord;
+  			  tmpText = tmpText.replace(/w'/g, 'x');       //Kein klingonischer Buchstabe!
+  			  tmpText = tmpText.replace(/y'/g, 'y');
+  			  tmpText = tmpText.replace(/'/g, 'z');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/I/g, 'h');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/j/g, 'i');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/gh/g, 'f');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/m/g, 'k');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/v/g, 'w');
+			  tmpText = tmpText.replace(/u/g, 'v');
+			  tmpText = tmpText.replace(/tlh/g, 'u');
+			  tmpText = tmpText.replace(/ch/g, 'c');
+			  tmpText = tmpText.replace(/ng/g, 'm');
+			  tmpText = tmpText.replace(/H/g, 'g');
+			  tmpText = tmpText.replace(/l/g, 'j');
+			  tmpText = tmpText.replace(/n/g, 'l');
+			  tmpText = tmpText.replace(/o/g, 'n');
+			  tmpText = tmpText.replace(/p/g, 'o');			  
+			  tmpText = tmpText.toLowerCase();			  
+		  }		  
+		  
+		  if (tmpText != '')
+		  {
+			  //This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
+			  beqTalk.result = new Array();
+			  beqTalk.result.push( {"tlh":beqTalk.lookWord, "en":tmpText,"de":'', "type": 'RECODE', "slang": false, "notes":'', "notes_de":'', "hidden_notes":''});
+			  beqTalk.lookWord = new String('recoding');
+			  beqTalk.gotResult = true;
+		  }
+		  else
+		  {
+			  beqTalk.gotResult = false;
+			  beqTalk.failure = true;
+			  beqTalk.message  = 'Recoding is only possible between these "languages"' + beqTalk.newline + '(supply them in lookLang for source, and transLang for destination)';
+			  beqTalk.message += beqTalk.newline;
+			  beqTalk.message += 'tlhIngan >> xifan/XIFAN' + beqTalk.newline;
+			  beqTalk.message += 'xifan/XIFAN >> tlhIngan' + beqTalk.newline;
+			  beqTalk.message += 'tlhIngan >> uhmal' + beqTalk.newline;
+			  beqTalk.message += 'uhmal >> tlhIngan' + beqTalk.newline;
+		  }
 		break;
 		
 		case 'mugh':

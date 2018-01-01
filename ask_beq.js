@@ -63,9 +63,13 @@ function respond(req, res, next) {
   {
 	  beqTalk.command = 'recode';
 	  talkBeq = beq.Engine(beqTalk);
+
+	  if (talkBeq.failure == true)
+	  {
+		  retMes = talkBeq.message;
+	  }
   }
-  
-  if (parAr.help != undefined)
+  else if (parAr.help != undefined)
   {
 	 retMes  = 'Ask beq' + '<br />';
 	 retMes += 'All parameters must be encoded into the URL, like this:' + '<br />';
@@ -86,7 +90,10 @@ function respond(req, res, next) {
 	 retMes += 'wordType1 - you can use this to limit the results to a specific word type' + '<br />';
 	 retMes += 'wordType2 - the word type is the same as in boQwI\'' + '<br />';
 	 retMes += '' + '<br />';
-	 
+  }
+  
+  if (parAr.help != undefined || talkBeq.failure == true)
+  {	 
 	 //Special case, normally we only send JSON
 	 res.setHeader('Content-Type', 'text/html');
 	 res.end(retMes);
