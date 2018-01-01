@@ -210,7 +210,7 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
 			  tmpText = tmpText.replace(/y/g, 'y\'');
 			  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/d/g, 'D\'');
+			  tmpText = tmpText.replace(/d/g, 'D');
 		  }
 		  
 		  if (tmpText != '')
