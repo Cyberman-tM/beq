@@ -188,7 +188,30 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/o/g, 'n');
 			  tmpText = tmpText.replace(/p/g, 'o');			  
 			  tmpText = tmpText.toLowerCase();			  
-		  }		  
+		  }
+		  else if (beqTalk.transLang == 'uhmal' && beqTalk.lookLang == 'tlhIngan')
+		  {
+			  tmpText = beqTalk.lookWord;
+			  tmpText = tmpText.replace(/o/g, 'p');
+			  tmpText = tmpText.replace(/n/g, 'o');
+			  tmpText = tmpText.replace(/l/g, 'n');	
+			  tmpText = tmpText.replace(/j/g, 'l');
+			  tmpText = tmpText.replace(/g/g, 'H');
+			  tmpText = tmpText.replace(/m/g, 'ng');			  
+			  tmpText = tmpText.replace(/c/g, 'ch');
+			  tmpText = tmpText.replace(/u/g, 'tlh');
+			  tmpText = tmpText.replace(/v/g, 'u');
+			  tmpText = tmpText.replace(/w/g, 'v');
+			  tmpText = tmpText.replace(/k/g, 'm');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/f/g, 'gh');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/i/g, 'j');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/h/g, 'I');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/y/g, 'y\'');
+			  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
+  			  
+			  tmpText = tmpText.toLowerCase();			  
+		  }
 		  
 		  if (tmpText != '')
 		  {
