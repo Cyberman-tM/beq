@@ -186,10 +186,11 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/l/g, 'j');
 			  tmpText = tmpText.replace(/n/g, 'l');
 			  tmpText = tmpText.replace(/o/g, 'n');
-			  tmpText = tmpText.replace(/p/g, 'o');			  
+			  tmpText = tmpText.replace(/p/g, 'o');
+			  
 			  tmpText = tmpText.toLowerCase();			  
 		  }
-		  else if (beqTalk.transLang == 'uhmal' && beqTalk.lookLang == 'tlhIngan')
+		  else if (beqTalk.lookLang == 'uhmal' && beqTalk.transLang == 'tlhIngan')
 		  {
 			  tmpText = beqTalk.lookWord;
 			  tmpText = tmpText.replace(/o/g, 'p');
