@@ -199,8 +199,8 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/j/g, 'l');
 			  tmpText = tmpText.replace(/g/g, 'H');
 			  tmpText = tmpText.replace(/m/g, 'ng');			  
-			  tmpText = tmpText.replace(/c/g, 'ch');
 			  tmpText = tmpText.replace(/h/g, 'I');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/c/g, 'ch');
 			  tmpText = tmpText.replace(/u/g, 'tlh');
 			  tmpText = tmpText.replace(/v/g, 'u');
 			  tmpText = tmpText.replace(/w/g, 'v');
@@ -210,6 +210,7 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
 			  tmpText = tmpText.replace(/y/g, 'y\'');
 			  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
+			  tmpText = tmpText.replace(/d/g, 'D\'');
 		  }
 		  
 		  if (tmpText != '')
