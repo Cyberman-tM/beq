@@ -72,16 +72,19 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if ( message.substring(0, 1) == '!' ||
-	   ( channelID = DData.clipChan && message.substring(0, 1) == '?' ) ) //Special shorthand, only allowed in special channel
-	
+	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' )
 	{		
-		//Special processing, these are shortcut commands, we have to translate them to normal commands
+		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (message.substring(0, 1) == '?')
 		{
-			//A ? always means "mugh", translate. And must be followed by the language, without space.
-			//So we can simply replace the ? with "!mugh " and the rest will work normally
-			message = message.replace('?', "!mugh ");
+			if (channelID == DData.clipChan)
+			{
+				//A ? always means "mugh", translate. And must be followed by the language, without space.
+				//So we can simply replace the ? with "!mugh " and the rest will work normally
+				message = message.replace('?', "!mugh ");
+			}
+			else
+				message = '!nope';
 		}
 	
 		var args = message.substring(1).split(' ');
