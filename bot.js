@@ -1,6 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var beq = require('./beq_engine.js');
+var DData = require('./discord_data.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -36,7 +37,7 @@ logger.level = 'debug';
 // Initialize Discord Bot
 var bot = new Discord.Client(
 	{
-		token: process.env.token,
+		token: DData.token;
 		autorun: true
 	}
 	);
@@ -71,11 +72,21 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if (message.substring(0, 1) == '!')
-	{
+	if ( message.substring(0, 1) == '!' ||
+	   ( channelID = DData.clipChan && message.substring(0, 1) == '?' ) ) //Special shorthand, only allowed in special channel
+	
+	{		
+		//Special processing, these are shortcut commands, we have to translate them to normal commands
+		if (message.substring(0, 1) == '?')
+		{
+			//A ? always means "mugh", translate. And must be followed by the language, without space.
+			//So we can simply replace the ? with "!mugh " and the rest will work normally
+			message = message.replace('?', "!mugh ");
+		}
+	
 		var args = message.substring(1).split(' ');
 		var cmd = args[0];
-
+		
 		switch (cmd)
 		{
 			// !ping - Standardtest um zu sehen ob er aktiv ist
