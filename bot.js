@@ -380,7 +380,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 bot.on('presence', function(user, userID, status, game, event)
 {
-   bot.sendMessage({to: DData.clipChan, message: user});	
+   //bot.sendMessage({to: DData.clipChan, message: user});	
 });
 
 function getUserTranLang(userID)
