@@ -7,3 +7,4 @@
 //process.env comes from Heroku
 module.exports.token = process.env.token;
 module.exports.clipChan = process.env.clipChan;
+module.exports.bTChan = '398015342217134080';   //MOve to heroku
