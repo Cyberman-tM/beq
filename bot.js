@@ -93,7 +93,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		switch (cmd)
 		{
 		case 'testing':
-		   sndMessage = bot.servers[0].server.members.toString();
+		   sndMessage = bot.servers[0].Server.members.toString();
 
 		break;
 			
