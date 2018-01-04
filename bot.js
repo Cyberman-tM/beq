@@ -92,6 +92,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		
 		switch (cmd)
 		{
+		case 'testing':
+		   sndMessage = bot.servers;
+		   sndMessage += bot;
+		   sndMessage += JSON.stringify(bot);
+		break;
+			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
 		case 'ping':
 			sndMessage = 'pong';
@@ -381,7 +387,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 bot.on('presence', function(user, userID, status, game, event)
 {
    //bot.sendMessage({to: DData.bTChan, message: (user + ' ' + status)});
-   bot.sendMessage({to: DData.bTChan, message: (JSON.stringify(bot))});
 });
 
 function getUserTranLang(userID)
