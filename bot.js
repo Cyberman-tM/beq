@@ -94,8 +94,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		{
 		case 'testing':
 		   sndMessage = bot.servers;
-		   sndMessage += bot;
-		   sndMessage += JSON.stringify(bot);
+		   sndMessage += JSON.stringify(bot.servers);
+		   console.log(bot);
 		break;
 			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
