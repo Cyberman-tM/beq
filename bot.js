@@ -97,9 +97,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'testing':
 		   //sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
 		   //console.log(bot);
-		   console.log(bot.servers);
-		   console.log(bot.client);
-		   console.log(bot.DiscordClient);
+		   console.log(bot.servers[0].members[user]);
 
 		break;
 			
@@ -395,7 +393,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 bot.on('presence', function(user, userID, status, game, event)
 {
-   //bot.sendMessage({to: DData.bTChan, message: (user + ' ' + status)});
+   //bot.sendMessage({to: DData.bTChan, message: (bot.servers[0])});
 });
 
 function getUserTranLang(userID)
