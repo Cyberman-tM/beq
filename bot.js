@@ -400,7 +400,7 @@ bot.on('presence', function(user, userID, status, game, event)
    if (status != idle)
    {   
 	   if (userStatus[userID] == undefined)
-		   userStatus.push(userID: status);
+		   userStatus.push({ userID: userID, status: status});
 	   
 	   bot.servers[DData.servID].members[userID].roles
 	   
