@@ -376,7 +376,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 		default:
 		    //This MUST return false if nothing was done!
-			cmdFound = extCms.extCommands(bot, message, sndMessage);
+			cmdFound = extCmds.extCommands(bot, message, sndMessage);
 		}
 		if (cmdFound == false)		
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
