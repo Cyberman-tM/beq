@@ -27,8 +27,8 @@ var knownLangs = ['de', 'en', 'tlh'];
 //This is not used, it's just to announce that it exists
 var beqTalkRaw = JSON.parse(beq.beqTalkDef);
 
-//Current status of users (current as in, last changed to)
-var userStatus = new Array();
+//Special variable to turn testing features on and off
+var devTest = false;
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -99,8 +99,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		{
 		case 'testing':
 		   //sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
-
-
+		   if (args[1] == 'on')
+			   devTest = true;
+		   else
+			   devTest = false;
 		break;
 			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
@@ -426,6 +428,7 @@ bot.on('presence', function(user, userID, status, game, event)
 */
 bot.on('any', function(event)
 {
+	if (devTest == true)
 	   bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});	
 });
 
