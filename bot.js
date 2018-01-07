@@ -99,7 +99,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		   //console.log(bot);
 		   console.log(bot.servers);
 		   console.log(bot.servers[DData.servID]);
-		console.log(bot.servers[0].members[userID];
 
 		break;
 			
