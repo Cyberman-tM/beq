@@ -96,7 +96,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		{
 		case 'testing':
 		   //sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
-		   console.log(bot.servers[DData.servID].members[userID].roles);
+
 
 		break;
 			
@@ -392,7 +392,23 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 bot.on('presence', function(user, userID, status, game, event)
 {
-   //bot.sendMessage({to: DData.bTChan, message: (bot.servers[0])});
+   var tmpMes = "";
+   
+   bot.servers[DData.servID].members[userID].roles
+   
+   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
+	{
+		if (role == DData.klinRole)
+			return role
+	}
+	);
+	
+	if (isKlingonist.length > 0)
+		tmpMes = 'Klingonist ' + user + 'has entered the server!';
+	else
+		tmpMes = 'New user ' + user ' has entered the server!';   
+   
+   bot.sendMessage({to: DData.bTChan, message: tmpMes});
 });
 
 function getUserTranLang(userID)
