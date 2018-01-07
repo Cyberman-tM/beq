@@ -27,6 +27,9 @@ var knownLangs = ['de', 'en', 'tlh'];
 //This is not used, it's just to announce that it exists
 var beqTalkRaw = JSON.parse(beq.beqTalkDef);
 
+//Current status of users (current as in, last changed to)
+var userStatus = new Array();
+
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console,
@@ -394,21 +397,29 @@ bot.on('presence', function(user, userID, status, game, event)
 {
    var tmpMes = "";
    
-   bot.servers[DData.servID].members[userID].roles
-   
-   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
-	{
-		if (role == DData.klinRole)
-			return role
-	}
-	);
-	
-	if (isKlingonist.length > 0)
-		tmpMes = 'Klingonist ' + user + 'has entered the server!';
-	else
-		tmpMes = 'New user ' + user ' has entered the server!';   
-   
-   bot.sendMessage({to: DData.bTChan, message: tmpMes});
+   if (status != idle)
+   {   
+	   if (userStatus[userID] == undefined)
+		   userStatus.push(userID: status);
+	   
+	   bot.servers[DData.servID].members[userID].roles
+	   
+	   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
+		{
+			if (role == DData.klinRole)
+				return role
+		}
+		);
+		
+		if (isKlingonist.length > 0)
+			tmpMes = 'Klingonist ' + user;
+		else
+			tmpMes = 'New user ' + user;
+		
+		tmpMes +=  'has entered the server!';
+	   
+	   bot.sendMessage({to: DData.bTChan, message: tmpMes});
+   }
 });
 
 function getUserTranLang(userID)
