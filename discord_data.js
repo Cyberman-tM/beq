@@ -8,3 +8,4 @@
 module.exports.token = process.env.token;
 module.exports.clipChan = process.env.clipChan;
 module.exports.bTChan = process.env.bTChan;
+module.exports.servID = process.env.servID;

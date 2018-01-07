@@ -98,8 +98,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		   //sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
 		   //console.log(bot);
 		   console.log(bot.servers);
-		   console.log(bot.servers[0]);
-		   console.log(bot.servers[0].members[user]);
+		   console.log(bot.servers[DData.servID]);
+		console.log(bot.servers[0].members[userID];
 
 		break;
 			
