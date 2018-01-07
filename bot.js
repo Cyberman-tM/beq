@@ -2,7 +2,7 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./discord_data.js');
-var extCmds = require(./ext_commands.js');
+var extCmds = require('./ext_commands.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
