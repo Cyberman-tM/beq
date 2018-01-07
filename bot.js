@@ -392,7 +392,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	}
 }
 );
-
+/*
 bot.on('presence', function(user, userID, status, game, event)
 {
    var tmpMes = "";
@@ -422,6 +422,11 @@ bot.on('presence', function(user, userID, status, game, event)
    }
    
    userStatus[userID] = status;
+});
+*/
+bot.on('any', function(event)
+{
+	   bot.sendMessage({to: DData.bTChan, message: event});	
 });
 
 function getUserTranLang(userID)
