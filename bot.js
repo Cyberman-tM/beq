@@ -399,9 +399,6 @@ bot.on('presence', function(user, userID, status, game, event)
    
    if (status != 'idle')
    {   
-	   if (userStatus[userID] == undefined)
-		   userStatus.push({ userID: userID, status: status});
-	   
 	   bot.servers[DData.servID].members[userID].roles
 	   
 	   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
@@ -416,7 +413,7 @@ bot.on('presence', function(user, userID, status, game, event)
 		else
 			tmpMes = 'New user ' + user;
 		
-		tmpMes +=  'has entered the server!';
+		tmpMes +=  ' has entered the server!';
 	   
 	   bot.sendMessage({to: DData.bTChan, message: tmpMes});
    }
