@@ -397,7 +397,7 @@ bot.on('presence', function(user, userID, status, game, event)
 {
    var tmpMes = "";
    
-   if (status != idle)
+   if (status != 'idle')
    {   
 	   if (userStatus[userID] == undefined)
 		   userStatus.push({ userID: userID, status: status});
