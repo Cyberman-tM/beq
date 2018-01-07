@@ -397,9 +397,12 @@ bot.on('presence', function(user, userID, status, game, event)
 {
    var tmpMes = "";
    
-   if (status != 'idle')
+    if (userStatus[userID] == undefined)
+	   userStatus.push({userID: userID, status:''});
+   
+   if (status == 'online' && userStatus[userID] != status)
    {   
-	   bot.servers[DData.servID].members[userID].roles
+	   //bot.servers[DData.servID].members[userID].roles
 	   
 	   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
 		{
@@ -417,6 +420,8 @@ bot.on('presence', function(user, userID, status, game, event)
 	   
 	   bot.sendMessage({to: DData.bTChan, message: tmpMes});
    }
+   
+   userStatus[userID] = status;
 });
 
 function getUserTranLang(userID)
