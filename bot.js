@@ -2,6 +2,7 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./discord_data.js');
+var extCmds = require(./ext_commands.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -61,6 +62,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	var sndMessage = '';
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
+	var cmdFound = true;
 	
 	aIdx = null;
 	var ULang = getUserTranLang(userID);
@@ -373,8 +375,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		
 			break;
 		default:
-			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
+		    //This MUST return false if nothing was done!
+			cmdFound = extCms.extCommands(bot, message, sndMessage);
 		}
+		if (cmdFound == false)		
+			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
+		
 		bot.sendMessage(
 		{
 			to: channelID,
