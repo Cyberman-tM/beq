@@ -103,6 +103,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   devTest = true;
 		   else
 			   devTest = false;
+				
+		   sndMessage = 'Test mode == ' + devTest;
 		break;
 			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
@@ -430,7 +432,7 @@ bot.on('any', function(event)
 {
 	if (devTest == true)
 	{
-	  if (event.d.author != undefined && event.d.author.user.bot == false)		
+	   if (event.t != 'MESSAGE_CREATE' || event.d.author.bot == false)
 	      bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});
 	}
 });
