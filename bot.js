@@ -429,7 +429,7 @@ bot.on('presence', function(user, userID, status, game, event)
 bot.on('any', function(event)
 {
 	if (devTest == true)
-	   bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});	
+	   bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event) + event.d.author.bot});	
 });
 
 function getUserTranLang(userID)
