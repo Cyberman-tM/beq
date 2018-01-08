@@ -432,9 +432,11 @@ bot.on('any', function(event)
 {
 	if (devTest == true)
 	{
+	   bot.sendMessage({to: DData.bTChan, message: event.t});
 	   if (event.t != 'MESSAGE_CREATE' || event.d.author.bot == false)
 	      bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});
 	}
+	
 });
 
 function getUserTranLang(userID)
