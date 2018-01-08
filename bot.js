@@ -430,7 +430,7 @@ bot.on('any', function(event)
 {
 	if (devTest == true)
 	{
-	   if (event.t != 'MESSAGE_CREATE' || event.d.author.user.bot == false)
+	  if (event.d.author != undefined && event.d.author.user.bot == false)		
 	      bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});
 	}
 });
