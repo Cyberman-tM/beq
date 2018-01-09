@@ -19,6 +19,8 @@ module.exports.rules.en = "To be translated...\n";
 module.exports.rules.tlh = "mugh 'Iv? \n";
 
 module.exports.test = "test";
+module.exports.test2 = 'Details';
+module.exports.rulesDetail = 'Details';
 
 module.exports.rulesDetail.de = 'Details';
 module.exports.rulesDetail.en = '';
