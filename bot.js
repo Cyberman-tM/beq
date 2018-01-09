@@ -117,6 +117,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		case 'HIghojmoH':
 		  //TODO: Nach Benutzersprache auswählen und ausgeben
 		   sndMessage = rules.rules.de;
+				console.log(rules.rules.de);
 		   break;
  		case 'HIghojmoHchu\'':
 		   sndMessage = rules.rulesDetail.de;
