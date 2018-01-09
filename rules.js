@@ -1,5 +1,5 @@
 module.exports.rules = '';
-module.exports.rules.detail = '';
+module.exports.rules.detail = "";
 
 module.exports.rules.detail.de = 'Details';
 module.exports.rules.detail.en = '';
