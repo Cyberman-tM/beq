@@ -116,9 +116,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		//Regeln ausgeben
 		case 'HIghojmoH':
 		  if (args[1] != null && langKnown(args[1]) == true)
-			  sndMessage = rules.[args[1]];
+			  sndMessage = rules.args[1];
 		  else
-			  sndMessage = rules.[userTLang];
+			  sndMessage = rules.userTLang;
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
