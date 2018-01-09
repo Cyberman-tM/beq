@@ -116,11 +116,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		//Regeln ausgeben
 		case 'HIghojmoH':
 		  //TODO: Nach Benutzersprache auswählen und ausgeben
-		   sndMessage = rules.rules.de;
-				console.log(rules.rules);
+		   sndMessage = rules.de;
 		   break;
- 		case 'HIghojmoHchu\'':
-		   sndMessage = rules.rulesDetail.de;
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
