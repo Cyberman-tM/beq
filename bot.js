@@ -115,7 +115,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 		//Regeln ausgeben
 		case 'HIghojmoH':
-		console.log(rules);
+		console.log(rules['de']);
 		  if (args[1] != null && langKnown(args[1]) == true)
 			  sndMessage = rules.args[1];
 		  else
