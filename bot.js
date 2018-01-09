@@ -7,7 +7,7 @@ var rules = require('./rules.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.0.3 - Beq engine forever!';
+var versInt = '2.1.0 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -121,7 +121,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			  if (userTLang != null)
 				sndMessage = rules[userTLang];
 			  else
-				sndMessage = rules.de;
+				sndMessage = rules['de'];
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
@@ -397,7 +397,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		if (cmdFound == false)		
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
 		
-		if (sndMessage = '')
+		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
 		
 		bot.sendMessage(
