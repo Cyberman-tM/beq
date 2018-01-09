@@ -119,7 +119,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		   sndMessage = rules.de;
 		   break;
  		case 'HIghojmoHchu\'':
-		   sndMessage = rules.detail.de;
+		   sndMessage = rulesDetail.de;
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
