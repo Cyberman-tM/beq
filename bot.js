@@ -119,7 +119,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			  sndMessage = rules[args[1]];
 		  else
 			  sndMessage = rules[userTLang];
-		   break;
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
