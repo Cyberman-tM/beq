@@ -14,3 +14,8 @@ module.exports.rules.de += "Falls ihr eine detailiertere Auflistung wollt, gebt 
 
 module.exports.rules.en = "To be translated...\n";
 module.exports.rules.tlh = "mugh 'Iv? \n";
+
+
+module.exports.rules.detail.de = '';
+module.exports.rules.detail.en = '';
+module.exports.rules.detail.tlh = '';
