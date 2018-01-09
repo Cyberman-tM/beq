@@ -118,7 +118,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		  if (args[1] != null && langKnown(args[1]) == true)
 			  sndMessage = rules[args[1]];
 		  else
-			  if (usrTLang != null)
+			  if (userTLang != null)
 				sndMessage = rules[userTLang];
 			  else
 				sndMessage = rules.de;
