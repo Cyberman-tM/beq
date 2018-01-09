@@ -1,3 +1,6 @@
+module.exports.rules = '';
+module.exports.rules.detail = '';
+
 module.exports.rules.de = "Die Regeln" + "\n";
 module.exports.rules.de += "\n";
 module.exports.rules.de += "1) Benehmt Euch!" + "\n";
