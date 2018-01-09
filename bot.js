@@ -115,8 +115,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 		//Regeln ausgeben
 		case 'HIghojmoH':
-		  //TODO: Nach Benutzersprache auswählen und ausgeben
-		   sndMessage = rules.de;
+		  if (args[1] != null && langKnown(args[1]) == true)
+			  sndMessage = rules[args[1]];
+		  else
+			  sndMessage = rules[userTLang];
 		   break;
 		break;			
 				
@@ -404,38 +406,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	}
 }
 );
+
 /*
-bot.on('presence', function(user, userID, status, game, event)
-{
-   var tmpMes = "";
-   
-    if (userStatus[userID] == undefined)
-	   userStatus.push({userID: userID, status:''});
-   
-   if (status == 'online' && userStatus[userID] != status)
-   {   
-	   //bot.servers[DData.servID].members[userID].roles
-	   
-	   var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
-		{
-			if (role == DData.klinRole)
-				return role
-		}
-		);
-		
-		if (isKlingonist.length > 0)
-			tmpMes = 'Klingonist ' + user;
-		else
-			tmpMes = 'New user ' + user;
-		
-		tmpMes +=  ' has entered the server!';
-	   
-	   bot.sendMessage({to: DData.bTChan, message: tmpMes});
-   }
-   
-   userStatus[userID] = status;
-});
-*/
+//I don't trust this - it doesn't trigger often enough, maybe the heartbeat rate for the servers
+//has to be changed?
 bot.on('any', function(event)
 {
 	if (devTest == true)
@@ -446,7 +420,7 @@ bot.on('any', function(event)
 	}
 	
 });
-
+*/
 function getUserTranLang(userID)
 {
 	return userTranLang.filter(function (UT, iIdx)
