@@ -3,6 +3,7 @@ var logger = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./discord_data.js');
 var extCmds = require('./ext_commands.js');
+var rules = require('./rules.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -112,6 +113,15 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = 'pong';
 			break;
 			
+		//Regeln ausgeben
+		case 'HIghojmoH':
+		  //TODO: Nach Benutzersprache auswählen und ausgeben
+		   sndMessage = rules.de;
+		   break;
+ 		case 'HIghojmoHchu\'':
+		   sndMessage = rules.detail.de;
+		break;			
+				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
 			sndMessage = 'ping - simple response test, replies "pong"\n'
