@@ -115,11 +115,13 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 		//Regeln ausgeben
 		case 'HIghojmoH':
-		console.log(rules['de']);
 		  if (args[1] != null && langKnown(args[1]) == true)
-			  sndMessage = rules.args[1];
+			  sndMessage = rules[args[1]];
 		  else
-			  sndMessage = rules.userTLang;
+			  if (usrTLang != null)
+				sndMessage = rules[userTLang];
+			  else
+				sndMessage = rules.de;
 		break;			
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
@@ -394,6 +396,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		}
 		if (cmdFound == false)		
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
+		
+		if (sndMessage = '')
+			sndMessage = 'ERROR - no message?';
 		
 		bot.sendMessage(
 		{
