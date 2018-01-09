@@ -1,10 +1,6 @@
 module.exports.rules = '';
 module.exports.rules.detail = "";
 
-module.exports.rules.detail.de = 'Details';
-module.exports.rules.detail.en = '';
-module.exports.rules.detail.tlh = '';
-
 module.exports.rules.de = "Die Regeln" + "\n";
 module.exports.rules.de += "\n";
 module.exports.rules.de += "1) Benehmt Euch!" + "\n";
@@ -21,3 +17,7 @@ module.exports.rules.de += "Falls ihr eine detailiertere Auflistung wollt, gebt 
 
 module.exports.rules.en = "To be translated...\n";
 module.exports.rules.tlh = "mugh 'Iv? \n";
+
+module.exports.rulesDetail.de = 'Details';
+module.exports.rulesDetail.en = '';
+module.exports.rulesDetail.tlh = '';
