@@ -8,7 +8,6 @@ module.exports.de += "==>Stellt euch vor ihr schreibt alles auf Postkarten. Verm
 module.exports.de += "\n";
 module.exports.de += "3) Das ist ein privater Server, es gibt kein 'Recht' hier zu sein." + "\n";
 module.exports.de += "==>Willkommen ist jeder der sich benehmen kann." + "\n";
-module.exports.de += "\n";
 
 module.exports.en = "The rules:\n";
 module.exports.en += "" + "\n";
@@ -20,14 +19,13 @@ module.exports.en += "==>Imagine every posting is a post card. Probably no one i
 module.exports.en += "\n" + "\n";
 module.exports.en += "3) This is a private server, there is no 'right' to be here." + "\n";
 module.exports.en += "==>Everyone is welcome as long as they behave." + "\n";
-module.exports.en += "\n" + "\n";
 
 module.exports.tlh = "yIpab:\n";
-module.exports.tlh = "1) romuluSngan yIDaQo!\n";
-module.exports.tlh = "==>Hoch nIqIplaH yIghet. yIQaqQo'\n";
-module.exports.tlh = "\n";
-module.exports.tlh = "2) pagh pegh yIghItlh! paghDaq!\n";
-module.exports.tlh = "==>Se' So'be'. ghaytan pagh Qoy'lu', 'ach DaSuDnIS?\n";
-module.exports.tlh = "\n";
-module.exports.tlh = "3) Se'vam maSeH, machaw'mo' naDev SoHtaH.\n";
-module.exports.tlh = "==>yISengmoHbe', bIratlhlaHtaH.\n";
+module.exports.tlh += "1) romuluSngan yIDaQo!\n";
+module.exports.tlh += "==>Hoch nIqIplaH yIghet. yIQaqQo'\n";
+module.exports.tlh += "\n";
+module.exports.tlh += "2) pagh pegh yIghItlh! paghDaq!\n";
+module.exports.tlh += "==>Se' So'be'. ghaytan pagh Qoy'lu', 'ach DaSuDnIS?\n";
+module.exports.tlh += "\n";
+module.exports.tlh += "3) Se'vam maSeH, machaw'mo' naDev SoHtaH.\n";
+module.exports.tlh += "==>yISengmoHbe', bIratlhlaHtaH.\n";
