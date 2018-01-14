@@ -107,6 +107,22 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				
 		   sndMessage = 'Test mode == ' + devTest;
 		break;
+		
+		case 'makeMember':		
+			if (args[1] == DData.makeKlinKey)
+			{
+				var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
+				{
+					if (role == DData.klinRole)
+						return role
+				});
+				if (isKlingonist.length <= 0)
+					bot.addToRole(serverID: DData.servID, userID: userID, roleID: DData.klinRole);
+				sndMessage = 'You should now be a Klingonist!';
+			}			
+			else
+				sndMessage = 'Wrong password.';
+		break;
 			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
 		case 'ping':

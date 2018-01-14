@@ -27,6 +27,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"command": "",                // the actual command, like "mugh"
 	"special": "",                // special commands, untested, unlisted, etc...
 	"showNotes": ""               // Show notes, if available? => true/false
+	"showSource": ""              // Show source, if available => true/false
 	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
 	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
 	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
@@ -40,6 +41,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 				"notes":""        // Notes to the word (slang, where from, etc..)
 				"notes_de":""     // Notes in german - if available!
 				"hidden_notes":"" // "Hidden" notes that are shown in small font in boQwI'
+				"source":""       // Where the text comes from
 			  }],                 //
     "message": "",                // some functions or commands may return a message, it will be in here
 	"gotResult": false,           // indicates if the search was successful => true/false
@@ -53,7 +55,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '1.0.1	- The beq Engine lives!';
+		module.exports.versInt = '1.1.1	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -416,7 +418,10 @@ module.exports.createTranslation = function(beqTalk)
 		"resCase": ", ignoring case",
 		"remPref": ", removing possible prefixes",
 		"resSTR": "(Starting from result #&1)",
-		"resTMR": "...too many results. Stopping list."
+		"resTMR": "...too many results. Stopping list.",
+		"resDeriv": "(Derived translation from other entries.)",
+		"resHyp": "(Hypothesised entry, doesn't exist in canon on its own)",
+		"resSrc": "Source:"
 	};
 	
 	if (beqTalk.command == "mugh")
@@ -486,6 +491,12 @@ module.exports.createTranslation = function(beqTalk)
 				if (item.hidden_notes != '')
 					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
+			if (beqTalk.showSource == true)
+				sndMessage += resSrc + " " + item.shource + beqTalk.newline;
+			if (isDerived(item.type))
+				sndMessage += beqTalk.newline + resDeriv;
+			if (isHyp(item.type))
+				sndMessage += beqTalk.newline + resHyp;
 		}
 	}
 	)
@@ -501,6 +512,25 @@ module.exports.createTranslation = function(beqTalk)
 	return sndMessage;
 }
 
+//Check if the word is actually a derived definition
+function isDerived(wType)
+{
+	if (wType.indexOf("deriv") != -1)
+		return true;
+	else
+		return false;
+}
+
+//Check if entry is hyptothetical
+function isHyp(wType)
+{
+	if (wType.indexOf("hyp") != -1)
+		return true;
+	else
+		return false;
+}
+
+//Get (translate) word Type
 function getWType(wType, tranLang)
 {
 	var wTypeS = wType.split(':')[0];
@@ -629,7 +659,8 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		type: 'n',
 		notes: 'notes',
 		notes_de: 'notes_de',
-		hidden_notes: 'hidden_notes'
+		hidden_notes: 'hidden_notes',
+		source: 'source'
 	};
 
 	document.children[1].childrenNamed("table").forEach(function (headItem)
@@ -642,7 +673,8 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				type: '',
 				notes: '',
 				notes_de: '',
-				hidden_notes: ''
+				hidden_notes: '',
+				source: ''
 			}
 			);
 
@@ -674,6 +706,9 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				case 'hidden_notes':
 					emptyStruct.hidden_notes = item.firstChild.text;
 					break;
+				case 'source':
+					emptyStruct.source = item.firstChild.text;
+					break;			
 				}
 			}
 		}
