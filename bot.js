@@ -117,7 +117,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 						return role
 				});
 				if (isKlingonist.length <= 0)
-					bot.addToRole(serverID: DData.servID, userID: userID, roleID: DData.klinRole);
+					bot.addToRole({serverID: DData.servID, userID: userID, roleID: DData.klinRole});
 				sndMessage = 'You should now be a Klingonist!';
 			}			
 			else
