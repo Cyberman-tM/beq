@@ -494,9 +494,9 @@ module.exports.createTranslation = function(beqTalk)
 			if (beqTalk.showSource == true)
 				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
 			if (isDerived(item.type))
-				sndMessage += beqTalk.newline + intText.resDeriv;
+				sndMessage += '===>' + intText.resDeriv;
 			if (isHyp(item.type))
-				sndMessage += beqTalk.newline + intText.resHyp;
+				sndMessage += '===>' + intText.resHyp;
 		}
 	}
 	)
