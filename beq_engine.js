@@ -492,11 +492,11 @@ module.exports.createTranslation = function(beqTalk)
 					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
 			if (beqTalk.showSource == true)
-				sndMessage += resSrc + " " + item.shource + beqTalk.newline;
+				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
 			if (isDerived(item.type))
-				sndMessage += beqTalk.newline + resDeriv;
+				sndMessage += beqTalk.newline + intText.resDeriv;
 			if (isHyp(item.type))
-				sndMessage += beqTalk.newline + resHyp;
+				sndMessage += beqTalk.newline + intText.resHyp;
 		}
 	}
 	)
