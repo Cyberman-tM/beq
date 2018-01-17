@@ -55,7 +55,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '1.1.1	- The beq Engine lives!';
+		module.exports.versInt = '1.1.2	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -494,9 +494,9 @@ module.exports.createTranslation = function(beqTalk)
 			if (beqTalk.showSource == true)
 				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
 			if (isDerived(item.type))
-				sndMessage += '===>' + intText.resDeriv;
+				sndMessage += '===>' + intText.resDeriv + beqTalk.newline;
 			if (isHyp(item.type))
-				sndMessage += '===>' + intText.resHyp;
+				sndMessage += '===>' + intText.resHyp + beqTalk.newline;
 		}
 	}
 	)
