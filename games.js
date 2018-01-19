@@ -139,7 +139,7 @@ function translateNumber2Word(Number)
 	case 0:
 	   return "pagh";
 	   break;
-	case :
+	case 1:
 	   return "wa'";
 	   break;
 	case 2:
