@@ -83,6 +83,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
+	console.log(message);
 	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
 	{		
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
