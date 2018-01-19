@@ -83,7 +83,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	console.log(message);
 	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
 	{		
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
@@ -424,17 +423,21 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	}
 	else if (message.substring(0, 1) == '%')
 		cmdFound = games.runGames(bot, userID, message, sndMessage);
-	
-	if (cmdFound == false)		
-		sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
-		
-	if (sndMessage == '')
-		sndMessage = 'ERROR - no message?';
-	
-	bot.sendMessage(
+
+
+	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' || message.substring(0, 1) == '%')
 	{
-		to: channelID,
-		message: sndMessage
+		if (cmdFound == false)		
+			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
+			
+		if (sndMessage == '')
+			sndMessage = 'ERROR - no message?';
+		
+		bot.sendMessage(
+		{
+			to: channelID,
+			message: sndMessage
+		}
 	}
 	);
 }
