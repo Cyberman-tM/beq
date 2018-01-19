@@ -4,6 +4,7 @@ var beq = require('./beq_engine.js');
 var DData = require('./discord_data.js');
 var extCmds = require('./ext_commands.js');
 var rules = require('./rules.js');
+var games = require('./games.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -72,13 +73,17 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	var ULang = getUserTranLang(userID);
 	if (aIdx != null)
 		userTLang = ULang[0].lang;
+	
+	//GEneral info: ! => default command indicator
+	//              ? => shorthand for translation (mugh), only applicable in certain channels
+	//              % => default GAME indicator
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' )
+	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
 	{		
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (message.substring(0, 1) == '?')
@@ -413,23 +418,24 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			break;
 		default:
 		    //This MUST return false if nothing was done!
-			cmdFound = extCmds.extCommands(bot, message, sndMessage);
+			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
 		}
-		if (cmdFound == false)		
-			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
-		
-		if (sndMessage == '')
-			sndMessage = 'ERROR - no message?';
-		
-		bot.sendMessage(
-		{
-			to: channelID,
-			message: sndMessage
-		}
-		);
-
-		args = args.splice(1);
 	}
+	else if (message.substring(0, 1) == '%')
+		cmdFound = games.runGames(bot, userID, message, sndMessage);
+	
+	if (cmdFound == false)		
+		sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
+		
+	if (sndMessage == '')
+		sndMessage = 'ERROR - no message?';
+	
+	bot.sendMessage(
+	{
+		to: channelID,
+		message: sndMessage
+	}
+	);
 }
 );
 
