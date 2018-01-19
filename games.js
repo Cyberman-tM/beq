@@ -143,7 +143,7 @@ function translateNumber2Word(Number)
 	   return "wa'";
 	   break;
 	case 2:
-	   return cha';
+	   return "cha'";
 	   break;
 	case 3:
 	   return "wej";
