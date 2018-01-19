@@ -92,6 +92,7 @@ function getUserGame(userID)
 function translateWord2Number(word)
 {
 	switch(word)
+	{
 	case "pagh":
 	   return 0;
 	   break;
@@ -125,6 +126,7 @@ function translateWord2Number(word)
 	case "wa'maH":
 	   return 10;
 	break;
+	}
 
 //Should never happen
 return null;	
@@ -133,6 +135,7 @@ return null;
 function translateNumber2Word(Number)
 {
 	switch(Number)
+	{
 	case 0:
 	   return "pagh";
 	   break;
@@ -166,6 +169,7 @@ function translateNumber2Word(Number)
 	case 10:
 	   return "wa'maH";
 	break;
+	}
 
 //Should never happen
 return null;	
