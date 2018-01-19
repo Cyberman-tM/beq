@@ -42,7 +42,7 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 		    ( userGame.score + userVal !=  userScore ) ||
 			userScore > 10 )
 		{
-			sndMessage = "Qo'! bIluj.';
+			sndMessage = "Qo'! bIluj.";
 			
 			//Remove user
 			userGames = userGames.splice(aIdx, 1);
