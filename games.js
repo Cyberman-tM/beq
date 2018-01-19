@@ -68,7 +68,7 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 			userGames.score += aiScore;
 					
 			if (userGames.score == 10)
-				sndMessage = "Qapla'! jIDunqu'! :-)';
+				sndMessage = "Qapla'! jIDunqu'! :-)";
 			else
 				sndMessage = translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.score);
 		}
