@@ -38,6 +38,8 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 		//We know the user is currently playing a game
 		userGame[cmd]();
 	}
+	
+	sndMessage = 'Testing';
 }
 
 
