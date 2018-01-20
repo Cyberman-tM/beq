@@ -3,6 +3,7 @@ var wamaH = require('./wamaH.js');
 /*
   Generic game interface
 */
+
 var userGameList = new Array();
 var aIdx = null;
 
