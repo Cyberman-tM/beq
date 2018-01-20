@@ -8,13 +8,15 @@ var aIdx = null;
 
 module.exports.runGames = function(bot, userID, message, sndMessage)
 {
+	var args = message.substring(1).split(' ');
+	var cmd = args[0];
 	
 		//This also sets aIdx!
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
 		//Momentan das einzige Spiel
-		if (args[1] != 'wa\'maH')
+		if (args[1] == undefined || args[1] != 'wa\'maH')
 		{
 			sndMessage  = 'Do you want to play a game? Currently, I only know *wa\' cha\' wa\'maH*.\n';
 			sndMessage += 'Please use the command *%wa\'maH* to start the game';
