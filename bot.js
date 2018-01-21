@@ -79,8 +79,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	{
 		if ( message.substring(0, 1) == '$' )
 		   message = message.substring(1);
-	    else if ( message.substring(0, 1) == '!' )
-			message = message.substring(1);
+	    else 
+		   message = message.substring(1);
 	}
 
 	//GEneral info: ! => default command indicator
@@ -436,7 +436,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	else if (message.substring(0, 1) == '%')
 	{
 		var gameTalk = JSON.parse(games.gameTalkDef);
-		gameTalk = games.runGames(bot, userID, message, sndMessage);
+		gameTalk = games.runGames(bot, userID, message);
 		if (gameTalk.noGame == false)
 			sndMessage = gameTalk.message;
 	}

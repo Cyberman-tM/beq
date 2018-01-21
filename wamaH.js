@@ -28,6 +28,8 @@ module.exports.run = function(gameTalk)
 	var num1 = args[0];
 	var num2 = args[1];
 	
+	gameTalk.message = "wa'maH game was called, but did nothing?";
+	
 	//We need TWO parameters
 	if (num1 == undefined || num2 == undefined)
 	{
@@ -54,6 +56,7 @@ module.exports.run = function(gameTalk)
 			userGames.push(UG);
 			
 			userGame = getUserGame(gameTalk.userID);			
+			console.log("usergame empty");
 		}
 		
 		userGame = userGame[0];
@@ -74,6 +77,7 @@ module.exports.run = function(gameTalk)
 		}
 		else
 		{
+			console.log("play");
 			//Lets play
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
