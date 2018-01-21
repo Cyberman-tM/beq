@@ -66,7 +66,6 @@ module.exports.run = function(gameTalk)
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
 		{
-			console.log("usrval > 10");
 			gameTalk.message = "Qo'! bIluj.";
 			
 			//Remove user
@@ -82,7 +81,6 @@ module.exports.run = function(gameTalk)
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
 			
-			console.log("precheck rng");
 			if (userGame.curCount < 8)				
 				if (RNG > 50)
 					aiScore = 2;
@@ -93,10 +91,9 @@ module.exports.run = function(gameTalk)
 			
 			userGame.curCount += aiScore;
 			
-			console.log(userGame.curCount);
 					
 			if (userGame.curCount == 10)
-					gameTalk.message = "Qapla'! jIDunqu'! :-)";
+				gameTalk.message = "Qapla'! jIDunqu'! :-)";
 			else
 				gameTalk.message = "I set" + translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.curCount);
 		}
@@ -104,6 +101,8 @@ module.exports.run = function(gameTalk)
 	
 	if (gameTalk.message = undefined)
 		gameTalk.message = "nope";
+	
+	console.log(gameTalk);
 
 return gameTalk;
 }
