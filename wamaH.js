@@ -28,17 +28,13 @@ module.exports.run = function(gameTalk)
 	var num1 = args[0];
 	var num2 = args[1];
 	
-	console.log(gameTalk);
-	console.log(num1);
-	console.log(num2);
-	
 	//We need TWO parameters
 	if (num1 == undefined || num2 == undefined)
 	{
 		gameTalk.noGame = true;
 		gameTalk.message = "Missing parameters, try again!";
 	}
-	else if (!isNaN(Num1) || !isNaN(Num2))
+	else if (!isNaN(num1) || !isNaN(num2))
 	{
 		gameTalk.noGame = true;
 		gameTalk.message = "Qo'! tlhIngan Hol yIghItlhnIS!";
