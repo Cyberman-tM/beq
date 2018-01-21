@@ -68,7 +68,7 @@ function getUGL(userID)
 		if (UG.userID == userID)
 		{
 			aIdx = iIdx;
-			return UT
+			return UG
 		}
 	}
 	);
