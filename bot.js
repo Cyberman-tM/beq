@@ -75,8 +75,11 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		userTLang = ULang[0].lang;
 	
 	//Dev build	only
-	if ( DData.devBuild == true && message.substring(0, 1) == '$' )
-		message = message.substring(1);
+	if ( DData.devBuild == true )
+		if ( message.substring(0, 1) == '$' )
+		   message = message.substring(1);
+	    else if ( message.substring(0, 1) == '!' )
+			message = message.substring(1);	
 	
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
