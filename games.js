@@ -30,14 +30,16 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
+		//Kein aktives Spiel gefunden => Liste der Spiele
 		//Momentan das einzige Spiel
-		if (args[0] == undefined || args[1] != 'wa\'maH')
+		if (cmd == undefined || cmd != 'wa\'maH')
 		{
 			sndMessage  = 'Do you want to play a game? Currently, I only know *wa\' cha\' wa\'maH*.\n';
 			sndMessage += 'Please use the command *%wa\'maH* to start the game';
 		}
 		else
 		{
+			//Noch kein aktives Spiel, User will Spiel XY aktivieren:
 			userGameList.push(
 			{
 				userID: userID,
