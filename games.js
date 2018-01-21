@@ -60,6 +60,8 @@ module.exports.runGames = function(bot, userID, message)
 		userGame = userGame[0];
 		gameTalk.cmd = message.substring(1);
 		gameTalk = userGame.cmd(gameTalk);
+		if (gameTalk.noGame == true)
+			userGameList.splice(aIdx);
 	}	
 
 	return gameTalk;

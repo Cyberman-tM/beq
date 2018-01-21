@@ -74,6 +74,10 @@ module.exports.run = function(gameTalk)
 		else if ( userScore == 10 )
 		{
 			gameTalk.message = "majQa'!";
+			
+			//Remove user
+			userGames = userGames.splice(aIdx, 1);
+			gameTalk.noGame = true;
 		}
 		else
 		{
@@ -100,6 +104,7 @@ module.exports.run = function(gameTalk)
 				{
 					gameTalk.message  = "jIQap!";
 					gameTalk.message += gameTalk.newline + "maj";
+
 					//Remove user
 					userGames = userGames.splice(aIdx, 1);
 				}
