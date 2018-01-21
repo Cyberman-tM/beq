@@ -67,16 +67,11 @@ module.exports.run = function(gameTalk)
 			userScore > 10 )
 		{
 			gameTalk.message = "Qo'! bIluj.";
-			
-			//Remove user
-			userGames = userGames.splice(aIdx, 1);
+			gameTalk.noGame = true;
 		}
 		else if ( userScore == 10 )
 		{
-			gameTalk.message = "majQa'!";
-			
-			//Remove user
-			userGames = userGames.splice(aIdx, 1);
+			gameTalk.message = "*wa'maH!*  majQa'!";
 			gameTalk.noGame = true;
 		}
 		else
@@ -102,11 +97,9 @@ module.exports.run = function(gameTalk)
 			else
 				if (userGame.curCount == 10)
 				{
-					gameTalk.message  = "jIQap!";
+					gameTalk.message = "*wa'maH!* jIQap!";
 					gameTalk.message += gameTalk.newline + "maj";
-
-					//Remove user
-					userGames = userGames.splice(aIdx, 1);
+					gameTalk.noGame = true;
 				}
 				else
 				{
@@ -117,6 +110,11 @@ module.exports.run = function(gameTalk)
 	
 	if (gameTalk.message == undefined)
 		gameTalk.message = "nope";
+
+	//Remove user	
+	if (gameTalk.noGame == true)
+		userGames = userGames.splice(aIdx, 1);
+
 	
 return gameTalk;
 }
