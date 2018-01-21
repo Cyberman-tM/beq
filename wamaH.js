@@ -38,14 +38,13 @@ module.exports.run = function(gameTalk)
 	{
 		gameTalk.noGame = true;
 		gameTalk.message = "Qo'! tlhIngan Hol yIghItlhnIS!";
-	}
-	
+	}	
 	
 	//Only if we didn't already determine the input is faulty
 	if (gameTalk.noGame == false)
 	{
 		//This also sets aIdx!
-		var userGame = getUserGame(userID);	
+		var userGame = getUserGame(gameTalk.userID);	
 		if (aIdx == null)
 		{
 			//Prepare new game board
@@ -54,7 +53,7 @@ module.exports.run = function(gameTalk)
 			UG.curCount = 0;
 			userGames.push(UG);
 			
-			userGame = getUserGame(userID);			
+			userGame = getUserGame(gameTalk.userID);			
 		}
 		
 		userGame = userGame[0];
