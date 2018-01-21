@@ -76,10 +76,14 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	
 	//Dev build	only
 	if ( DData.devBuild == true )
+	{
+		console.log("sdf");
 		if ( message.substring(0, 1) == '$' )
 		   message = message.substring(1);
 	    else if ( message.substring(0, 1) == '!' )
-			message = message.substring(1);	
+			message = message.substring(1);
+	}
+console.log(DData.devBuild);		
 	
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
