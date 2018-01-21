@@ -53,8 +53,8 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	}
 	else
 	{
-		console.log(userGame);	
-		console.log(userGame.cmd);
+		console.log(userGame);
+		console.log(userGame[0].cmd);
 		userGame.cmd();
 		//We know the user is currently playing a game				
 		//sndMessage = userGame.cmd(message);
