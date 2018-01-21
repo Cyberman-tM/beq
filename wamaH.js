@@ -95,7 +95,15 @@ module.exports.run = function(gameTalk)
 			if (userGame.curCount == 10)
 				gameTalk.message = "Qapla'! jIDunqu'! :-)";
 			else
-				gameTalk.message = "I set" + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGames.curCount);
+				if (userGame.curCount == 10)
+				{
+					gameTalk.message  = "jIQap!";
+					gameTalk.message += gameTalk.newline + "maj";
+					//Remove user
+					userGames = userGames.splice(aIdx, 1);
+				}
+				else
+					gameTalk.message = "I set" + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGame.curCount);
 		}
 	}
 	

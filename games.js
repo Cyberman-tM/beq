@@ -13,7 +13,8 @@ module.exports.gameTalkDef = JSON.stringify(
 	"cmd": "",            //command or parameters to the game
 	"message": "",        //Return message of the game (current score, you win, etc...)
 	"noGame": false,      //No game was requested, error
-	"reserved": "nothing" //There may be more to come
+	"newline": "\n",      //newline character - \n for text, or <br> for web, or whatever
+	"reserved": "nothing" //There may be more to come	
 });
 
 
