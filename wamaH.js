@@ -69,6 +69,12 @@ module.exports.run = function(bot, userID, message, sndMessage)
 }
 
 
+//Return the actual "run" routine that does the game work
+module.exports.init = function()
+{
+	return run;
+}
+
 function getUserGame(userID)
 {
 	return userGames.filter(function (UG, iIdx)
