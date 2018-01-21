@@ -192,10 +192,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			beqTalk.command = "yIngu'";
 			beqTalk = beq.Engine(beqTalk);
-			sndMessage += beqTalk.message + beqTalk.newline + beqTalk.newline;
-			sndMessage += games.verGame;
+			sndMessage += beqTalk.message + beqTalk.newline;
+			sndMessage += games.verGame + beqTalk.newline;
 			
-			sndMessage += '\n';
+			sndMessage += beqTalk.newline;
 			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			
 				if ( DData.devBuild == "true" )

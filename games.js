@@ -4,7 +4,7 @@ var wamaH = require('./wamaH.js');
   Generic game interface
 */
 
-module.exports.verGame = "0.0.1 - the beginning\n";
+module.exports.verGame = "Game Engine 0.0.1 - the beginning\n";
 module.exports.verGame += wamaH.gameInfo;
 
 //This structure is used for the bot to talk with the GAme Engine and vice versa
