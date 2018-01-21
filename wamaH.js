@@ -115,8 +115,7 @@ module.exports.run = function(gameTalk)
 	//Remove user	
 	if (gameTalk.noGame == true)
 	{
-		userGames = userGames.splice(aIdx, 1);
-		console.log(userGames);
+		userGames.splice(aIdx, 1);		
 	}
 
 	
@@ -229,8 +228,6 @@ function translateNumber2Word(num)
 //Should never happen
 return null;	
 }
-
-
 
 
 
