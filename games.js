@@ -39,12 +39,13 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 		}
 		else
 		{
+			var gameRun = wamaH.init();
 			//Noch kein aktives Spiel, User will Spiel XY aktivieren:
 			userGameList.push(
 			{
 				userID: userID,
 				game: "wa'maH",
-				cmd: wamaH.init(),
+				cmd: gameRun,
 				score: '0'				
 			});
 			sndMessage = wamaH.initGame;
@@ -52,9 +53,6 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	}
 	else
 	{
-			console.log(wamaH.init());
-			var x = wamaH.init();
-			console.log(x);
 	console.log(userGame.cmd);
 		//We know the user is currently playing a game				
 		sndMessage = userGame.cmd(message);
