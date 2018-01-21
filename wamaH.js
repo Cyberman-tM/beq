@@ -77,6 +77,8 @@ module.exports.run = function(gameTalk)
 		}
 		else
 		{
+			userGame.curCount = userScore;
+			
 			//Lets play
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
@@ -89,8 +91,7 @@ module.exports.run = function(gameTalk)
 			else
 				aiScore = 10 - userGame.curCount;
 			
-			userGame.curCount += aiScore;
-			
+			userGame.curCount += aiScore;			
 					
 			if (userGame.curCount == 10)
 				gameTalk.message = "Qapla'! jIDunqu'! :-)";
@@ -103,7 +104,9 @@ module.exports.run = function(gameTalk)
 					userGames = userGames.splice(aIdx, 1);
 				}
 				else
-					gameTalk.message = "I set" + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGame.curCount);
+				{
+					gameTalk.message = "My move: " + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGame.curCount);					
+				}
 		}
 	}
 	
