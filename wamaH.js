@@ -56,7 +56,6 @@ module.exports.run = function(gameTalk)
 			userGames.push(UG);
 			
 			userGame = getUserGame(gameTalk.userID);			
-			console.log("usergame empty");
 		}
 		
 		userGame = userGame[0];
@@ -77,7 +76,6 @@ module.exports.run = function(gameTalk)
 		}
 		else
 		{
-			console.log("play");
 			//Lets play
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
@@ -128,6 +126,7 @@ function getUserGame(userID)
 
 function translateWord2Number(word)
 {
+	console.log(word);
 	switch(word)
 	{
 	case "pagh":
@@ -169,9 +168,10 @@ function translateWord2Number(word)
 return null;	
 }
 
-function translateNumber2Word(Number)
+function translateNumber2Word(num)
 {
-	switch(Number)
+	console.log(num);
+	switch(num)
 	{
 	case 0:
 	   return "pagh";
