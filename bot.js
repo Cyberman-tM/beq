@@ -75,7 +75,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		userTLang = ULang[0].lang;
 	
 	//Dev build	only
-	if ( DData.devBuild == true )
+	if ( DData.devBuild == "true" )
 	{
 		console.log("sdf");
 		if ( message.substring(0, 1) == '$' )
