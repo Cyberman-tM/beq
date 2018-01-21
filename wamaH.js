@@ -92,20 +92,14 @@ module.exports.run = function(gameTalk)
 				aiScore = 10 - userGame.curCount;
 			
 			userGame.curCount += aiScore;			
-					
+			gameTalk.message = "My move: " + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGame.curCount);					
 			if (userGame.curCount == 10)
-				gameTalk.message = "Qapla'! jIDunqu'! :-)";
-			else
-				if (userGame.curCount == 10)
-				{
-					gameTalk.message = "*wa'maH!* jIQap!";
-					gameTalk.message += gameTalk.newline + "maj";
-					gameTalk.noGame = true;
-				}
-				else
-				{
-					gameTalk.message = "My move: " + translateNumber2Word(aiScore) + ' ' + translateNumber2Word(userGame.curCount);					
-				}
+			{
+				gameTalk.message += gameTalk.newline;
+				gameTalk.message += "toH. *wa'maH!* jIQap!";
+				gameTalk.message += gameTalk.newline + "maj";
+				gameTalk.noGame = true;
+			}
 		}
 	}
 	
