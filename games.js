@@ -31,6 +31,7 @@ module.exports.runGames = function(bot, userID, message)
 	gameTalk.message = "You should never see this! Something went wrong...";
 		//This also sets aIdx!
 	aIdx = null;
+	console.log(cmd);
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
@@ -38,8 +39,8 @@ module.exports.runGames = function(bot, userID, message)
 		//Momentan das einzige Spiel
 		if (cmd == undefined || cmd != 'wa\'maH')
 		{
-			sndMessage  = 'Do you want to play a game? Currently, I only know *wa\' cha\' wa\'maH*.\n';
-			sndMessage += 'Please use the command *%wa\'maH* to start the game';
+			gameTalk.message  = 'Do you want to play a game? Currently, I only know *wa\' cha\' wa\'maH*.\n';
+			gameTalk.message += 'Please use the command *%wa\'maH* to start the game';
 		}
 		else
 		{
