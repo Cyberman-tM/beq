@@ -52,12 +52,15 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	}
 	else
 	{
+			console.log(wamaH.init());
+			var x = wamaH.init();
+			console.log(x);
+	console.log(userGame.cmd);
 		//We know the user is currently playing a game				
 		sndMessage = userGame.cmd(message);
 	}
 	
-	console.log(wamaH.init());
-	console.log(userGame.cmd);
+
 	
 	
 	gameTalk.message = sndMessage;
