@@ -49,7 +49,7 @@ module.exports.runGames = function(bot, userID, message)
 				game: "wa'maH",
 				cmd: gameRun
 			});
-			sndMessage = wamaH.preGame;
+			gameTalk.message = wamaH.preGame;
 		}		
 	}
 	else
