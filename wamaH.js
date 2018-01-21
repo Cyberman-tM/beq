@@ -67,7 +67,7 @@ module.exports.run = function(gameTalk)
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
 		{
-			console.log(userScore);
+			console.log(userGame.curCount);
 			gameTalk.message = "Qo'! bIluj.";
 			gameTalk.noGame = true;
 		}
