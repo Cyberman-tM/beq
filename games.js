@@ -31,7 +31,7 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	if (aIdx == null)
 	{
 		//Momentan das einzige Spiel
-		if (args[1] == undefined || args[1] != 'wa\'maH')
+		if (args[0] == undefined || args[1] != 'wa\'maH')
 		{
 			sndMessage  = 'Do you want to play a game? Currently, I only know *wa\' cha\' wa\'maH*.\n';
 			sndMessage += 'Please use the command *%wa\'maH* to start the game';

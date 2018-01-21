@@ -196,6 +196,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 			sndMessage += '\n';
 			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
+			
+				if ( DData.devBuild == "true" )
+					sndMessage += "(Development edition)";
 			break;
 
 		case 'showMySettings':
