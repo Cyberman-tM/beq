@@ -24,6 +24,7 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	var args = message.substring(1).split(' ');
 	var cmd = args[0];
 	var gameTalk = JSON.parse(module.exports.gameTalkDef);
+	gameTalk.userID = userID;
 	
 		//This also sets aIdx!
 	var userGame = getUGL(userID);
@@ -53,7 +54,8 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 		userGame[cmd]();
 	}
 	
-	sndMessage = 'Testing';
+	gameTalk.message = 'Testing';
+	return gameTalk;
 }
 
 
