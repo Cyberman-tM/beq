@@ -437,8 +437,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	{
 		var gameTalk = JSON.parse(games.gameTalkDef);
 		gameTalk = games.runGames(bot, userID, message);
-		if (gameTalk.noGame == false)
-			sndMessage = gameTalk.message;
+		sndMessage = gameTalk.message;
 	}
 
 
