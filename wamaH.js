@@ -19,6 +19,7 @@ module.exports.run = function(bot, userID, message, sndMessage)
 	var args = message.substring(1).split(' ');
 	var cmd = args[0];
 	
+	sndMessage = 'nothing';
 	//This also sets aIdx!
 	var userGame = getUserGame(userID);
 	if (aIdx == null)
@@ -62,7 +63,9 @@ module.exports.run = function(bot, userID, message, sndMessage)
 			else
 				sndMessage = translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.score);
 		}
-	}	
+	}
+	
+	return sndMessage;
 }
 
 
