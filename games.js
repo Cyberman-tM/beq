@@ -17,7 +17,6 @@ module.exports.gameTalkDef = JSON.stringify(
 	"reserved": "nothing" //There may be more to come	
 });
 
-
 var userGameList = new Array();
 var aIdx = null;
 
