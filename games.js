@@ -4,6 +4,9 @@ var wamaH = require('./wamaH.js');
   Generic game interface
 */
 
+module.exports.verGame = "0.0.1 - the beginning\n";
+module.exports.verGame += wamaH.gameInfo;
+
 //This structure is used for the bot to talk with the GAme Engine and vice versa
 //It is NOT used by the game internally
 module.exports.gameTalkDef = JSON.stringify(
@@ -16,6 +19,7 @@ module.exports.gameTalkDef = JSON.stringify(
 	"newline": "\n",      //newline character - \n for text, or <br> for web, or whatever
 	"reserved": "nothing" //There may be more to come	
 });
+
 
 var userGameList = new Array();
 var aIdx = null;
@@ -30,7 +34,6 @@ module.exports.runGames = function(bot, userID, message)
 	gameTalk.message = "You should never see this! Something went wrong...";
 		//This also sets aIdx!
 	aIdx = null;
-	console.log(cmd);
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{

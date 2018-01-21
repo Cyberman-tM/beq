@@ -16,6 +16,8 @@ var userGameDef = JSON.stringify(
 	"curCount": 0
 });
 
+module.exports.gameInfo = "wa', cha', wa'maH v0.0.5";
+
 module.exports.preGame = 'maj. DaH maQujchoH!\n';
 module.exports.preGame += "*wa', cha', wa'maH*\n";
 module.exports.preGame += "A game by Joel Peter Anderson, http://mrklingo.freeshell.org/aol/JPKlingon/game/index.html\n\n";
