@@ -66,8 +66,7 @@ module.exports.run = function(gameTalk)
 		if (userVal > 2 ||
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
-		{
-			console.log(userGame.curCount);
+		{			
 			gameTalk.message = "Qo'! bIluj.";
 			gameTalk.noGame = true;
 		}
@@ -115,7 +114,10 @@ module.exports.run = function(gameTalk)
 
 	//Remove user	
 	if (gameTalk.noGame == true)
+	{
 		userGames = userGames.splice(aIdx, 1);
+		console.log(userGames);
+	}
 
 	
 return gameTalk;
