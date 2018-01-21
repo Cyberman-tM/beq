@@ -57,7 +57,7 @@ module.exports.runGames = function(bot, userID, message)
 		//We know the user is currently playing a game				
 		userGame = userGame[0];
 		gameTalk.cmd = message.substring(1);
-		gameTalk = userGame.cmd();
+		gameTalk = userGame.cmd(gameTalk);
 	}	
 
 	return gameTalk;
