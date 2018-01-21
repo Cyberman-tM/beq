@@ -17,6 +17,8 @@ var userGameDef = JSON.stringify(
 });
 
 module.exports.preGame = 'maj. DaH maQujchoH!\n';
+module.exports.preGame += "*wa', cha', wa'maH*\n";
+module.exports.preGame += "A game by Joel Peter Anderson, http://mrklingo.freeshell.org/aol/JPKlingon/game/index.html\n\n";
 module.exports.preGame += 'Rules: write % and either wa\' or cha\', followed by a blank and the TOTAL score so far.\n';
 module.exports.preGame += "Whoever reaches wa'maH first has won. If you want beq to begin, start with *%pagh pagh*";
 
@@ -33,7 +35,6 @@ module.exports.run = function(gameTalk)
 	//We need TWO parameters
 	if (num1 == undefined || num2 == undefined)
 	{
-		gameTalk.noGame = true;
 		gameTalk.message = "Missing parameters, try again!";
 	}
 	else if (!isNaN(num1) || !isNaN(num2))
@@ -67,7 +68,8 @@ module.exports.run = function(gameTalk)
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
 		{			
-			gameTalk.message = "Qo'! bIluj.";
+			gameTalk.message = "Qo'! DabIv. bIluj.";
+			gameTalk.message += gameTalk.newline + "yItaghqa'!";
 			gameTalk.noGame = true;
 		}
 		else if ( userScore == 10 )
