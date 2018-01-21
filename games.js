@@ -56,6 +56,10 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 		sndMessage = userGame.cmd(message);
 	}
 	
+	console.log(wamaH.init());
+	console.log(userGame.cmd);
+	
+	
 	gameTalk.message = sndMessage;
 	return gameTalk;
 }
