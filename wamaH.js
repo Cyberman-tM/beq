@@ -99,11 +99,9 @@ module.exports.run = function(gameTalk)
 		}
 	}
 	
-	if (gameTalk.message = undefined)
+	if (gameTalk.message == undefined)
 		gameTalk.message = "nope";
 	
-	console.log(gameTalk);
-
 return gameTalk;
 }
 
