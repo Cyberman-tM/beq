@@ -4,7 +4,17 @@ var wamaH = require('./wamaH.js');
   Generic game interface
 */
 
-asdfkljalskjf
+//This structure is used for the bot to talk with the GAme Engine and vice versa
+//It is NOT used by the game internally
+module.exports.gameTalkDef = JSON.stringify(
+{
+	"userID": "",         //Current user
+	"playGame": "",       //Game he wants to play
+	"message": "",        //Return message of the game (current score, you win, etc...)
+	"noGame": false,      //No game was requested, error
+	"reserved": "nothing" //There may be more to come
+});
+
 
 var userGameList = new Array();
 var aIdx = null;

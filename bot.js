@@ -74,6 +74,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	if (aIdx != null)
 		userTLang = ULang[0].lang;
 	
+	//Dev build	only
+	if ( DData.devBuld = true && message.substring(0, 1) == '$' )
+		message = message.substring(1);
+	
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
 	//              % => default GAME indicator
@@ -422,7 +426,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		}
 	}
 	else if (message.substring(0, 1) == '%')
-		cmdFound = games.runGames(bot, userID, message, sndMessage);
+	{
+		var gameTalk = JSON.parse(games.gameTalkDef);
+		gameTalk = games.runGames(bot, userID, message, sndMessage);
+		if (gameTalk.noGame == false)
+			sndMessage = gameTalk.message;
+	}
 
 
 	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' || message.substring(0, 1) == '%')

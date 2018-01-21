@@ -11,3 +11,4 @@ module.exports.bTChan = process.env.bTChan;
 module.exports.servID = process.env.servID;
 module.exports.klinRole = process.env.klinRole;        //Klingonist role == default role
 module.exports.makeKlinKey = process.env.makeKlinKey;  //Keyword to automagically make the user a klingonist
+module.exports.devBuild = process.env.devBuild;        //Dev build, enable special checks
