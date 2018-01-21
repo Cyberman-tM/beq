@@ -46,6 +46,7 @@ module.exports.run = function(gameTalk)
 	if (gameTalk.noGame == false)
 	{
 		//This also sets aIdx!
+		aIdx = null;
 		var userGame = getUserGame(gameTalk.userID);	
 		if (aIdx == null)
 		{
