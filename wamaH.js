@@ -61,13 +61,12 @@ module.exports.run = function(gameTalk)
 		userGame = userGame[0];
 		var userVal = translateWord2Number(num1);
 		var userScore = translateWord2Number(num2);
-		console.log(userVal);
-		console.log(userScore);
 		
 		if (userVal > 2 ||
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
 		{
+			console.log("usrval > 10");
 			gameTalk.message = "Qo'! bIluj.";
 			
 			//Remove user
@@ -83,6 +82,7 @@ module.exports.run = function(gameTalk)
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
 			
+			console.log("precheck rng");
 			if (userGame.curCount < 8)				
 				if (RNG > 50)
 					aiScore = 2;
