@@ -61,6 +61,9 @@ module.exports.run = function(gameTalk)
 		userGame = userGame[0];
 		var userVal = translateWord2Number(num1);
 		var userScore = translateWord2Number(num2);
+		console.log(userVal);
+		console.log(userScore);
+		
 		if (userVal > 2 ||
 			( userGame.curCount + userVal !=  userScore ) ||
 			userScore > 10 )
@@ -80,17 +83,19 @@ module.exports.run = function(gameTalk)
 			var RNG = Math.random() * 100;
 			var aiScore = 0;
 			
-			if (userGames.curCount < 8)				
+			if (userGame.curCount < 8)				
 				if (RNG > 50)
 					aiScore = 2;
 				else
 					aiScore = 1;
 			else
-				aiScore = 10 - userGames.curCount;
+				aiScore = 10 - userGame.curCount;
 			
-			userGames.curCount += aiScore;
+			userGame.curCount += aiScore;
+			
+			console.log(userGame.curCount);
 					
-			if (userGames.curCount == 10)
+			if (userGame.curCount == 10)
 					gameTalk.message = "Qapla'! jIDunqu'! :-)";
 			else
 				gameTalk.message = "I set" + translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.curCount);
@@ -126,7 +131,6 @@ function getUserGame(userID)
 
 function translateWord2Number(word)
 {
-	console.log(word);
 	switch(word)
 	{
 	case "pagh":
@@ -170,7 +174,6 @@ return null;
 
 function translateNumber2Word(num)
 {
-	console.log(num);
 	switch(num)
 	{
 	case 0:
