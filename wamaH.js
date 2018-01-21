@@ -28,6 +28,10 @@ module.exports.run = function(gameTalk)
 	var num1 = args[0];
 	var num2 = args[1];
 	
+	console.log(gameTalk);
+	console.log(num1);
+	console.log(num2);
+	
 	//We need TWO parameters
 	if (num1 == undefined || num2 == undefined)
 	{
@@ -95,6 +99,9 @@ module.exports.run = function(gameTalk)
 				gameTalk.message = translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.curCount);
 		}
 	}
+	
+	if (gameTalk.message = undefined)
+		gameTalk.message = "nope";
 
 return gameTalk;
 }
