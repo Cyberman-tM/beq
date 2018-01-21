@@ -93,7 +93,7 @@ module.exports.run = function(gameTalk)
 			if (userGames.curCount == 10)
 					gameTalk.message = "Qapla'! jIDunqu'! :-)";
 			else
-				gameTalk.message = translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.curCount);
+				gameTalk.message = "I set" + translateWord2Number(aiScore) + ' ' + translateWord2Number(userGames.curCount);
 		}
 	}
 	
