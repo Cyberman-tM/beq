@@ -30,6 +30,7 @@ module.exports.runGames = function(bot, userID, message)
 	
 	gameTalk.message = "You should never see this! Something went wrong...";
 		//This also sets aIdx!
+	aIdx = null;
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
@@ -59,10 +60,11 @@ module.exports.runGames = function(bot, userID, message)
 		//We know the user is currently playing a game				
 		userGame = userGame[0];
 		gameTalk.cmd = message.substring(1);
+		
 		gameTalk = userGame.cmd(gameTalk);
+		
 		if (gameTalk.noGame == true)
 			userGameList.splice(aIdx,1);
-		console.log(userGameList);
 	}	
 
 	return gameTalk;
