@@ -49,12 +49,12 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 				score: '0'				
 			});
 			sndMessage = wamaH.initGame;
-			console.log(gameRun);
 		}		
 	}
 	else
 	{
-		console.log(userGame);
+		console.log(userGame.cmd);
+		userGame.cmd();
 		//We know the user is currently playing a game				
 		//sndMessage = userGame.cmd(message);
 	}
