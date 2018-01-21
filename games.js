@@ -53,7 +53,7 @@ module.exports.runGames = function(bot, userID, message, sndMessage)
 	else
 	{
 		//We know the user is currently playing a game				
-		sndMessage = [userGame.cmd](cmd);
+		sndMessage = [userGame.cmd].run(cmd);
 	}
 	
 	gameTalk.message = sndMessage;
