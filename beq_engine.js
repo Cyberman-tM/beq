@@ -38,6 +38,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 				"en":"",          // the english word
 				"de":""           // the german word
 				"slang":""        // Flag, is this is slang word? => true/false
+				"deriv":""        // Flag, is this entry derived from other words? => true/false
 				"notes":""        // Notes to the word (slang, where from, etc..)
 				"notes_de":""     // Notes in german - if available!
 				"hidden_notes":"" // "Hidden" notes that are shown in small font in boQwI'
@@ -48,6 +49,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
+
+var kTranscode = require('./recode.js');
 
 module.exports.Engine = function(beqTalk)
 {
@@ -71,6 +74,7 @@ module.exports.Engine = function(beqTalk)
 	
 	var tmpTxt = "";
 	var isSlang = false;	
+	var isDeriv = false;
 	switch (beqTalk.command)
 	{
 		case 'yIngu\'':
@@ -111,7 +115,20 @@ module.exports.Engine = function(beqTalk)
 				if (tmpWord.type.indexOf("slang") >= 0)
 					isSlang = true;
 				
-				beqTalk.result.push( {"tlh":tmpWord.tlh, "en":tmpWord.en,"de":tmpWord.de, "type": tmpWord.type, "slang": isSlang, "notes":tmpWord.notes, "notes_de":tmpWord.notes_de, "hidden_notes":tmpWord.hidden_notes});
+				//Derived entries are not 100% canon, but most likely
+				isDeriv = isDerived(tmpWord.type);
+				
+				beqTalk.result.push( {"tlh":tmpWord.tlh,
+									   "en":tmpWord.en,
+									   "de":tmpWord.de,
+
+									   "type": tmpWord.type,
+									   "slang": isSlang,
+									   "deriv": isDeriv,
+									   
+									   "notes":tmpWord.notes,
+									   "notes_de":tmpWord.notes_de,
+									   "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
 			}
 
@@ -133,103 +150,28 @@ module.exports.Engine = function(beqTalk)
 		  
 		  //lookLang and transLang are NOT language IDs here, but they mark the original "encoding" of the text in lookWord (also not just a word)
 		  if (beqTalk.lookLang == 'tlhIngan' && ( beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN'))
-		  {
-			  //Is there a better way?
-			  tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
-			  tmpText = tmpText.replace(/ch/g, 'c');
-			  tmpText = tmpText.replace(/q/g, 'k');
-			  tmpText = tmpText.replace(/ng/g, 'f');
-			  tmpText = tmpText.replace(/gh/g, 'g');
-			  
+		  {			  
 			  if (beqTalk.transLang == 'XIFAN')
 			  {
 				  encoding = 'tlhIngan > XIFAN';
-				  tmpText = tmpText.toUpperCase();
+				  tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, true);
 			  }
 			  else
 			  {
 				  encoding = 'tlhIngan > xifan';
-				  tmpText = tmpText.toLowerCase();
+				  tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, false);
 			  }
 		  }
 		  else if ((beqTalk.lookLang == 'xifan' || beqTalk.lookLang == 'XIFAN') && ( beqTalk.transLang == 'tlhIngan'))
-		  {
-			  tmpText = beqTalk.lookWord.toLowerCase();
-			  //Restore upper case letters
-			  tmpText = tmpText.replace(/d/g, 'D');
-			  tmpText = tmpText.replace(/i/g, 'I');
-			  tmpText = tmpText.replace(/h/g, 'H');
-			  tmpText = tmpText.replace(/q/g, 'Q');
-			  tmpText = tmpText.replace(/s/g, 'S');
-			  
-			  //Is there a better way?
-  			  tmpText = tmpText.replace(/x/g, 'tlh');
-			  tmpText = tmpText.replace(/c/g, 'ch');
-			  tmpText = tmpText.replace(/k/g, 'q');
-			  tmpText = tmpText.replace(/g/g, 'gh');
-			  tmpText = tmpText.replace(/f/g, 'ng');			  
-		  }
+			  tmpText = kTranscode.RCx2tlh(beqTalk.lookWord);
 		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal')
-		  {
-			  tmpText = beqTalk.lookWord;
-  			  tmpText = tmpText.replace(/w'/g, 'x');       //Kein klingonischer Buchstabe!
-  			  tmpText = tmpText.replace(/y'/g, 'y');
-  			  tmpText = tmpText.replace(/'/g, 'z');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/I/g, 'h');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/j/g, 'i');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/gh/g, 'f');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/m/g, 'k');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/v/g, 'w');
-			  tmpText = tmpText.replace(/u/g, 'v');
-			  tmpText = tmpText.replace(/tlh/g, 'u');
-			  tmpText = tmpText.replace(/ch/g, 'c');
-			  tmpText = tmpText.replace(/ng/g, 'm');
-			  tmpText = tmpText.replace(/H/g, 'g');
-			  tmpText = tmpText.replace(/l/g, 'j');
-			  tmpText = tmpText.replace(/n/g, 'l');
-			  tmpText = tmpText.replace(/o/g, 'n');
-			  tmpText = tmpText.replace(/p/g, 'o');
-			  
-			  tmpText = tmpText.toLowerCase();			  
-		  }
+			  tmpText = kTranscode.RCtlh2u(beqTalk.lookWord);
 		  else if (beqTalk.lookLang == 'uhmal' && beqTalk.transLang == 'tlhIngan')
-		  {
-			  tmpText = beqTalk.lookWord;
-			  tmpText = tmpText.replace(/o/g, 'p');
-			  tmpText = tmpText.replace(/n/g, 'o');
-			  tmpText = tmpText.replace(/l/g, 'n');	
-			  tmpText = tmpText.replace(/j/g, 'l');
-			  tmpText = tmpText.replace(/g/g, 'H');
-			  tmpText = tmpText.replace(/m/g, 'ng');			  
-			  tmpText = tmpText.replace(/h/g, 'I');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/c/g, 'ch');
-			  tmpText = tmpText.replace(/u/g, 'tlh');
-			  tmpText = tmpText.replace(/v/g, 'u');
-			  tmpText = tmpText.replace(/w/g, 'v');
-			  tmpText = tmpText.replace(/k/g, 'm');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/f/g, 'gh');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/i/g, 'j');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/y/g, 'y\'');
-			  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
-			  tmpText = tmpText.replace(/d/g, 'D');
-		  }
+			  tmpText = kTranscode.RCu2tlh(beqTalk.lookWord);
 		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'TIxan')
-		  {
-			  //Very simple transcript, only tlh, ng, gh, ch are replaced
-			  tmpText = beqTalk.lookWord.replace(/ch/g, 'c');
-			  tmpText = tmpText.replace(/gh/g, 'g');
-			  tmpText = tmpText.replace(/ng/g, 'x');
-			  tmpText = tmpText.replace(/tlh/g, 'T');
-		  }
+			  tmpText = kTranscode.RCtlh2T(beqTalk.lookWord);
   		  else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
-		  {
-			  //Very simple transcript, only tlh, ng, gh, ch are replaced
-			  tmpText = beqTalk.lookWord.replace(/c/g, 'ch');
-			  tmpText = tmpText.replace(/g/g, 'gh');
-			  tmpText = tmpText.replace(/x/g, 'ng');
-			  tmpText = tmpText.replace(/T/g, 'tlh');
-		  }
+			  tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
 		  
 		  if (tmpText != '')
 		  {
@@ -420,6 +362,7 @@ module.exports.createTranslation = function(beqTalk)
 		"resSTR": "(Starting from result #&1)",
 		"resTMR": "...too many results. Stopping list.",
 		"resDeriv": "(Derived translation from other entries.)",
+		"resSlang": "(Slang!)",
 		"resHyp": "(Hypothesised entry, doesn't exist in canon on its own)",
 		"resSrc": "Source:"
 	};
@@ -457,7 +400,6 @@ module.exports.createTranslation = function(beqTalk)
 	if (listLang == 'tlh')
 		listLang = 'en';
 
-	var slangWord = '';
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
@@ -470,11 +412,7 @@ module.exports.createTranslation = function(beqTalk)
 			else if (beqTalk.command == "KWOTD")
 				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
 			
-			slangWord = '';
-			if (item.slang == true)
-				slangWord = ' *(slang!)*';
-
-			sndMessage += item[beqTalk.lookLang] + slangWord + beqTalk.newline;
+			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
 			
 			//Special case (stupid case, but nonetheless)
@@ -493,7 +431,9 @@ module.exports.createTranslation = function(beqTalk)
 			}
 			if (beqTalk.showSource == true)
 				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
-			if (isDerived(item.type))
+			if (item.slang == true)
+				sndMessage += '===>' + intText.resSlang + beqTalk.newline;
+			if (item.deriv == true)
 				sndMessage += '===>' + intText.resDeriv + beqTalk.newline;
 			if (isHyp(item.type))
 				sndMessage += '===>' + intText.resHyp + beqTalk.newline;
