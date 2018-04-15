@@ -352,6 +352,7 @@ module.exports.createTranslation = function(beqTalk)
 		return "Nothing found.";
 	
 	var sndMessage = '';
+	var infTips = "";
 	//Maybe we can use this for multi-language?
 	var intText =
 	{
@@ -431,12 +432,21 @@ module.exports.createTranslation = function(beqTalk)
 			}
 			if (beqTalk.showSource == true)
 				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
+			
+			//Tips about the word, is it slang, is it derived, are there notes, etc...
+			infTips = "";			
 			if (item.slang == true)
-				sndMessage += '===>' + intText.resSlang + beqTalk.newline;
+				infTips = '(slang)';				
 			if (item.deriv == true)
-				sndMessage += '===>' + intText.resDeriv + beqTalk.newline;
+				infTips += '(deriv)';
 			if (isHyp(item.type))
-				sndMessage += '===>' + intText.resHyp + beqTalk.newline;
+				infTips += '(hyp)';
+			if (beqTalk.showNotes != true &&
+			   ( item.notes != "" || item.notes_de != "" || item.hidden_notes != "" ))
+				infTips += '(notes)';
+			
+			if (infTips != "")
+			   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 		}
 	}
 	)
