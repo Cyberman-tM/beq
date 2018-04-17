@@ -104,7 +104,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				message = message.replace('?', "!mugh ");
 			}
 			else
-				message = '!nope';
+				message = '!noShort';
 		}
 	
 		var args = message.substring(1).split(' ');
@@ -120,6 +120,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   devTest = false;
 				
 		   sndMessage = 'Test mode == ' + devTest;
+		break;
+		case 'noShort':
+		   sndMessage = 'Sorry, shorthand commands are only allowed in certain channels (ask_beq).';
 		break;
 		
 		case 'makeMember':		
