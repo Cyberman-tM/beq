@@ -215,8 +215,8 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="synonyms"></column>
       <column name="antonyms">{SIbI'Ha':adv}</column>
       <column name="see_also">{SIbI':adv}, {pay':adv}</column>
-      <column name="notes">Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/eM5zeoAf2Ek}</column>
-      <column name="notes_de">Siehe wie Gowron dies sagt: {YouTube video:url:http://www.youtube.com/v/eM5zeoAf2Ek}</column>
+      <column name="notes">Watch Gowron say this: {YouTube video:url:http://youtu.be/eM5zeoAf2Ek}</column>
+      <column name="notes_de">Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/eM5zeoAf2Ek}</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -1003,7 +1003,7 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="synonyms">{ghetwI':n}</column>
       <column name="antonyms"></column>
       <column name="see_also">{much:n}, {much:v}, {muchpa':n}</column>
-      <column name="notes">Watch the "A Klingon Christmas Carol" trailer where this is used: {YouTube video:url:http://www.youtube.com/v/5Nc5t9AZYsM}</column>
+      <column name="notes">Watch the "A Klingon Christmas Carol" trailer where this is used: {YouTube video:url:http://youtu.be/5Nc5t9AZYsM}</column>
       <column name="notes_de"></column>
       <column name="hidden_notes">The term {DawI' yaH:n:nolink} is used for "stage" in Hamlet.</column>
       <column name="components">{Da:v}, {-wI':v}</column>
@@ -1452,7 +1452,7 @@ In {DSC - The Vulcan Hello:src}, the albino Voq's (see {voq:n:name}) skin colour
       <column name="see_also"></column>
       <column name="notes">This creature is also called {DenIbya' Qatlh:n:nolink}.
 
-Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/7qXuTn9HpP4}</column>
+Watch Gowron say this: {YouTube video:url:http://youtu.be/7qXuTn9HpP4}</column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
@@ -1755,7 +1755,7 @@ Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/7qXuTn9HpP4}<
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Dev:v}, {meH:v}, {paq:n:1h}</column>
+      <column name="components">{Dev:v}, {-meH:v}, {paq:n:1h}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="search_tags"></column>
@@ -2074,7 +2074,7 @@ Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/7qXuTn9HpP4}<
       <column name="components">{De'wI':n}, {Qulpa':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">computer research laboratory</column>
       <column name="search_tags_de"></column>
       <column name="source">[1] {BoP:src}</column>
     </table>
@@ -2390,7 +2390,7 @@ Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/7qXuTn9HpP4}<
       <column name="definition_de">malen mit Malstab</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nItlh:n}, {nagh beQ:n}, {ngoH:v}, {DIj:v:1}</column>
+      <column name="see_also">{nItlh:n}, {nagh beQ:n}, {ngoH:v:2}, {DIj:v:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
@@ -2410,7 +2410,7 @@ Watch Gowron say this: {YouTube video:url:http://www.youtube.com/v/7qXuTn9HpP4}<
       <column name="definition_de">etw. bezahlen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{je':v}, {ghaq:v}, {nob:v}, {rup:v}, {qav'ap:n}</column>
+      <column name="see_also">{je':v:1}, {ghaq:v}, {nob:v}, {rup:v}, {qav'ap:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="hidden_notes">This sounds like "deal".</column>
@@ -3457,7 +3457,7 @@ Coincidentally or not, this words sounds similar to {DI vI':n:nolink} "it accumu
       <column name="synonyms"></column>
       <column name="antonyms">{Don:v}</column>
       <column name="see_also">{leD:v}</column>
-      <column name="notes">This means something like "be misaligned".</column>
+      <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
       <column name="components">{Don:v}, {-Ha':v}</column>
@@ -3619,8 +3619,7 @@ Coincidentally or not, this words sounds similar to {DI vI':n:nolink} "it accumu
       <column name="definition_de">Sind Krieger rot?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <!-- This returns both entries for {SuD:v}. -->
-      <column name="see_also">{SuD:v}</column>
+      <column name="see_also">{SuD:v:0}</column>
       <column name="notes">The joke goes like this:
 
 ▶ {Doq'a' SuvwI'pu'?:sen:nolink}
@@ -3629,7 +3628,7 @@ Coincidentally or not, this words sounds similar to {DI vI':n:nolink} "it accumu
 ▶ {ghobe'. SuD.}
   "No. They are green."
 
-Watch a lesson on this joke: {YouTube video:url:http://www.youtube.com/v/HciuEJSpPq0}</column>
+Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
       <column name="components">{Doq:v}, {-'a':v}, {SuvwI':n}, {-pu':n}</column>
@@ -4433,7 +4432,7 @@ Known classes of Klingon ships include {neghvar:n}, {vorcha':n}, {qItI'nga':n}, 
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Duj:n:2}, {-lIj:n}, {yI:v}, {voq:v}</column>
+      <column name="components">{Duj:n:2}, {-lIj:n}, {yI-:v}, {voq:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="search_tags"></column>
@@ -4757,7 +4756,7 @@ For a stand-alone spike such as a stake, see {wIl:n}.</column>
       <column name="see_also">{chetvI':n:1}</column>
       <column name="notes">This is used for launching a {peng:n}.
 
-The distinction between a {DuS:n:nolink} and a {chetvI':n} has to do with how the projectile is loaded.[2]</column>
+The distinction between a {DuS:n:nolink} and a {chetvI':n:1} has to do with how the projectile is loaded.[2]</column>
       <column name="notes_de"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
@@ -4799,7 +4798,7 @@ The distinction between a {DuS:n:nolink} and a {chetvI':n} has to do with how th
       <column name="see_also"></column>
       <column name="notes"></column>
       <column name="notes_de"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">There is a Seinfeld skit about how one can't slam down a mobile phone, but must swipe or press a button.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {toqwIn vIDut@@toqwIn:n, vI-:v, Dut:v} "I slam down the stamp."</column>
