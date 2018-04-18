@@ -68,6 +68,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	var cmdFound = true;
+		
+	//Any message shorter than 2 characters cannot be sent to us
+	//That would leave one character for "Hey bot!" and one character for the command
+	if (message.length < 3)
+	   return;
+	
 	
 	aIdx = null;
 	var ULang = getUserTranLang(userID);
