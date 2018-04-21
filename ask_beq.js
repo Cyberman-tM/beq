@@ -1,143 +1,160 @@
-//Internal version - package.json would contain another version, but package.json should never reach the client,
-//so it's easier to just have another version number in here...
-var versInt = '0.1.3	- Using the beq Engine!';
-var startDateTime = new Date().toLocaleString();
+/*
+   "Translate" numbers to words and vice versa
+*/
 
-var url = require('url');
-var restify = require('restify');
-var beq = require('./beq_engine.js');
-var beqTalkRaw = JSON.parse(beq.beqTalkDef);   //Example
-
-//The parameters are sent via URL parameters, the return will be a JSON object (stringified)
-
-
-function respond(req, res, next) {
-  var URLParam = req.url;
-  var retMes = 'nuqjatlh?';
-
-  var beqTalk = JSON.parse(beq.beqTalkDef);
-  var talkBeq = null;
-  parAr = url.parse(URLParam, true).query;
-
-  //Common parameters
-  beqTalk.newline = '<br />';
-  beqTalk.limitRes = 999;           //No reason for a limit, is there?
-  
-  beqTalk.transLang = parAr.transLang;
-  if (beqTalk.transLang == undefined)
-	  beqTalk.transLang = 'en';
-
-  beqTalk.lookLang = parAr.lookLang;
-  if (beqTalk.lookLang == undefined)
-	  beqTalk.lookLang = 'tlh';
-
-  if (parAr.showNotes != undefined)
-	  beqTalk.showNotes = true;
-  
-  if (parAr.wordType1 != undefined)
-	  beqTalk.wordType1 = parAr.wordType1;
-  if (parAr.wordType2 != undefined)
-	  beqTalk.wordType2 = parAr.wordType2;
-  beqTalk.lookWord = parAr.lookWord;
-
-  
-  //The commands have no parameters, they just are
-  if (parAr.mugh != undefined)
-  {
-	  beqTalk.command = 'mugh';
-	  if (parAr.fuzzy != undefined)
-		  beqTalk.fuzzy = true;
-	  if (parAr.wCase != undefined)
-		  beqTalk.wCase = true;
-
-		//Let the engine do its magic :-)
-		talkBeq = beq.Engine(beqTalk);
-  }
-  else if (parAr.KWOTD != undefined)
-  {
-	  beqTalk.command = 'KWOTD';
-	  beqTalk.lookLang = 'tlh';
-	  talkBeq = beq.Engine(beqTalk);
-  }
-  else if (parAr.recode != undefined)
-  {
-	  beqTalk.command = 'recode';
-	  talkBeq = beq.Engine(beqTalk);
-
-	  if (talkBeq.failure == true)
-	  {
-		  retMes = talkBeq.message;
-	  }
-  }
-  else if (parAr.help != undefined)
-  {
-	 retMes  = 'Ask beq' + '<br />';
-	 retMes += 'All parameters must be encoded into the URL, like this:' + '<br />';
-	 retMes += '/ask_beq?mugh&lookLang=tlh&lookWord=mugh&transLang=de&getJSON' + '<br />';
-	 retMes += '(This will get you the german translation of the klingon word "mugh", the return is the JSON-object of beqTalk.)' + '<br />';
-	 retMes += 'Some of the parameters need to have values, like "lookLang", while others just have to BE there, like "getJSON".' + '<br />';
-	 retMes += '' + '<br />';
-	 retMes += 'Possible parameters:' + '<br />';
-	 retMes += 'mugh - no value, return will be a translation' + '<br />';
-	 retMes += 'KWOTD - no value, return will be a random proverb' + '<br />';
-	 retMes += 'help - you\'re looking at it' + '<br />';
-	 retMes += 'getJSON - no value, return is a JSON object of beqTalk, instead of a preformatted string (still in a JSON object)' + '<br />';
-	 retMes += 'fuzzy - no value, don\'t limit the search to word boundaries' + '<br />';
-	 retMes += 'wCase - no value, ignore case' + '<br />';
- 	 retMes += 'lookWord - the word you want translated as value' + '<br />';
- 	 retMes += 'lookLang - the language the word you want translated is in' + '<br />';
- 	 retMes += 'transLang - the language you want the translation in' + '<br />';
-	 retMes += 'wordType1 - you can use this to limit the results to a specific word type' + '<br />';
-	 retMes += 'wordType2 - the word type is the same as in boQwI\'' + '<br />';
-	 retMes += '' + '<br />';
-	 retMes += 'recode - no value, recode a text using a different "encoding", i.e. "tlhIngan->xifan"; parameters have changed meaning!' + '<br />';
-	 retMes += '==>lookLang - with recode, this is the "encoding" of the source text' + '<br />';
-	 retMes += '==>transLang - the "encoding" you want the source text to be transposed to' + '<br />';
-	 retMes += '==>lookWord - the source text' + '<br />';
-	 retMes += '=>the result will ALWAYS be JSON, there is no preformatted text for this!' + '<br />';
-	 retMes += '=>The beqTalk structure will have 1 result, in "tlh" is the source, in "en" is the result.' + '<br />';
-	 retMes += '=>"type" will simply be "RECODE"' + '<br />';
-	 retMes += 'Possible encodings:' + '<br />';
-	 retMes += 'tlhIngan <> xifan/XIFAN' + '<br />';
-	 retMes += 'tlhIngan <> uhmal' + '<br />';
-	 retMes += 'tlhIngan <> TIxan' + '<br />';
-  }
-  
-  if (parAr.help != undefined || talkBeq.failure == true)
-  {	 
-	 //Special case, normally we only send JSON
-	 res.setHeader('Content-Type', 'text/html');
-	 res.end(retMes);
-  }
-  else
-  {
-	//Get either the JSON object itself, or a nice string
-	if (parAr.getJSON != undefined)
-		retMes = talkBeq;
-	else
-		retMes = beq.createTranslation(talkBeq);
+module.exports.Num2Word = function(number)
+{
+	var numString = number.toString();
+	var strLen = numString.length;
+	var curPos = strLen - 1;
+	var oneNum = '';
+	var tmpRet = "";
+	var tmpNum = "";
 	
-	res.send(retMes);
-  }
+	if (strLen == 0)
+	   return 'pagh';
 	
-  
-  next();
+	for(i = 0; i < strLen; i++)
+	{
+  	   oneNum = numString.substr(curPos, 1);
+	   /*
+	   tmpNum = digit2Word(oneNum);
+	   tmpNum = getMultiWord(i) + tmpNum;
+	   
+	   tmpRet += tmpNum;
+	   */
+	   tmpRet += oneNum;
+	   
+	   curPos -= 1;
+	}	
+	
+	return tmpRet;
+	return 
 }
 
-var server = restify.createServer();
-
-server.get('ask_beq', respond);
-server.head('ask_beq', respond);
-
-server.listen(process.env.PORT || 5000, function()
+function getMultiWord(numMulti)
 {
-  console.log('%s listening at %s', server.name, server.url);
-  console.log("Version: " + versInt);
-  
-	var beqTalk = JSON.parse(beq.beqTalkDef);
-	beqTalk.command = "yIngu'";
-	beqTalk = beq.Engine(beqTalk);
-	console.log(beqTalk.message);
-});
+	var tmpRet = "";
+	var RNG = Math.random() * 100;
+	
+	
+	switch(numMulti)
+	{
+	   case '0':
+	    tmpRet = "";
+	    break;
+	   case '1':
+	    tmpRet = 'maH';
+	    break;
+	   case '2':
+	    tmpRet = 'vatlh';
+		break;
+	   case '3':
+	    if (RNG > 50)
+	      tmpRet = 'SaD';
+	    else
+		  tmpRet = 'SanID';
+		break;
+	   case '4':
+	    tmpRet = 'netlh';
+		break;
+	   case '5':
+	    tmpRet = 'bIp';
+		break;
+	   case '6':
+	    tmpRet = "'uy'";
+		break;
+	}
+	if (numMulti != '0' && tmpRet == "")
+		tmpRet = '%%%';
+	
+	return tmpRet;
+}
 
-//--------------------------------------
+function digit2Word(Num)
+{
+   var tmpRet = "";
+   
+   switch(Num)
+   {
+	case '0':
+	   tmpRet =  "pagh";
+	   break;
+	case '1':
+	   tmpRet =  "wa'";
+	   break;
+	case '2':
+	   tmpRet =  "cha'";
+	   break;
+	case '3':
+	   tmpRet =  "wej";
+	   break;
+	case '4':
+	   tmpRet =  "loS";
+	   break;
+	case '5':
+	   tmpRet =  "vagh";
+	   break;
+	case '6':
+	   tmpRet =  "jav";
+	   break;
+	case '7':
+	   tmpRet =  "Soch";
+	   break;
+	case '8':
+	   tmpRet =  "chorgh";
+	   break;
+	case '9':
+	   tmpRet =  "Hut";
+	   break;
+	case '10':
+	   tmpRet =  "wa'maH";
+	break;
+   }
+   if (tmpRet == "")
+	   tmpRet = '%%%'; 
+   
+   return tmpRet;
+}
+
+function word2Digit(word)
+{
+   var tmpRet = "";
+	switch(word)
+	{
+	case "pagh":
+	   tmpRet = 0;
+	   break;
+	case "wa'":
+	   tmpRet = 1;
+	   break;
+	case "cha'":
+	   tmpRet = 2;
+	   break;
+	case "wej":
+	   tmpRet = 3;
+	   break;
+	case "loS":
+	   tmpRet = 4;
+	   break;
+	case "vagh":
+	   tmpRet = 5;
+	   break;
+	case "jav":
+	   tmpRet = 6;
+	   break;
+	case "Soch":
+	   tmpRet = 7;
+	   break;
+	case "chorgh":
+	   tmpRet = 8;
+	   break;
+	case "Hut":
+	   tmpRet = 9;
+	   break;
+	case "wa'maH":
+	   tmpRet = 10;
+	break;
+	}
+tmpRet = tmpRet;
+}
