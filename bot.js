@@ -433,7 +433,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = beq.createTranslation(talkBeq);		
 			
 			//Add some personality:
-			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, beqTalk.newline);
+			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
 		
 			break;
 		default:
