@@ -46,14 +46,16 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 	//LineType - what kind of line? Idle, bored, whatever?
 	if (lineType == 1)
 	{
-		var idleLines = JSON.parse(module.exports.idleLines);
-		if (idleLines.length == 0)
+		var myLines = JSON.parse(module.exports.idleLines);
+		if (myLines.length == 0)
 			oneLine = "";
 		else
 		{
-			var lineNum = Math.random() * module.exports.idleLines.length;
+			var lineNum = Math.random() * myLines.length;
 			logger.info(lineNum);
-			oneLine = idleLines[lineNum];
+			logger.info(myLines.length);
+			logger.info(myLines);
+			oneLine = myLines[lineNum];
 		}
 	}
 	
