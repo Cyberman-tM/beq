@@ -369,8 +369,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
 			var p_showNotes = args[8];  //show notes, if available
-			var p_special   = args[9];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
-				
+			var p_special   = args[9];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="				
 	
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
@@ -432,6 +431,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);		
+			
+			//Add some personality:
+			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, beqTalk.newline);
 		
 			break;
 		default:

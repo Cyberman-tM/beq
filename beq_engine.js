@@ -315,9 +315,7 @@ module.exports.Engine = function(beqTalk)
 	return beqTalk;
 };
 
-
 //Declarations have to be at the end?
-
 module.exports.beqTalkDef = JSON.stringify(
 {
 	"fuzzy": false,
