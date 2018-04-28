@@ -32,13 +32,15 @@ module.exports.checkCMD = function(command)
 //Use <BR> as linebreak - this WILL be replaced with a fitting newline character.
 module.exports.idleLines = JSON.stringify(
 [
-	"line1",
-	"line2",
-	"line3"
+	"toy'meH jIHtaH.",
+	"jIvum, jIbech, 'ach SaH pagh.",
+	"Dal 'oH. qaD 'oHbe'...",
+	"pItlh",
+	""
 ]);
  
 //A function that picks a line at random or returns an empty string
-module.exports.getLine = function(lineType, addNewLine, newLine)
+module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, italics = '*')
 {
 	var tmpRet = "";
 	var oneLine = "";
@@ -52,7 +54,6 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 		else
 		{
 			var lineNum = Math.floor(Math.random() * myLines.length);
-			logger.info(lineNum);
 			oneLine = myLines[lineNum];
 		}
 	}
@@ -60,6 +61,9 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 	if (oneLine != "")
 	{
 		tmpRet = oneLine.replace("<BR>", newLine);
+		
+		if (addItalic == true)
+			tmpRet = italics + tmpRet + italics;
 		
 		if (addNewLine == true)
 			tmpRet += newLine;

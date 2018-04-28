@@ -452,12 +452,6 @@ module.exports.createTranslation = function(beqTalk)
 	)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
-	
-	if (beqTalk.result.length > beqTalk.limitRes)
-	{
-		sndMessage += beqTalk.newline;
-		sndMessage += "*toy'meH jIHtaH.*";
-	}
 
 	return sndMessage;
 }
