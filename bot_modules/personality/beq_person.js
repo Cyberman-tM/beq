@@ -51,7 +51,7 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 			oneLine = "";
 		else
 		{
-			var lineNum = Math.random() * idleLines.length;
+			var lineNum = Math.random() * module.exports.idleLines.length;
 			logger.info(lineNum);
 			oneLine = idleLines[lineNum];
 		}
