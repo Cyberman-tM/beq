@@ -5,7 +5,7 @@
    A collection of lines beq may say, or react to   
 
 */
-
+var logger = require('winston');
 module.exports.versInt = '0.1';
 module.exports.nameInt = 'beq Personality';
 
