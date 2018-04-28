@@ -40,9 +40,6 @@ module.exports.idleLines = JSON.stringify(
 //A function that picks a line at random or returns an empty string
 module.exports.getLine = function(lineType, addNewLine, newLine)
 {
-	
-	logger.info(module.exports.idleLines);
-	
 	var tmpRet = "";
 	var oneLine = "";
 	
@@ -54,7 +51,9 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 			oneLine = "";
 		else
 		{
-			oneLine = idleLines[Math.random() * idleLines.length];
+			var lineNum = Math.random() * idleLines.length;
+			logger(lineNum);
+			oneLine = idleLines[lineNum];
 		}
 	}
 	
