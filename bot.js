@@ -122,13 +122,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		var firstBlank = message.indexOf(' ');
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
 		
-		//Lets give the personality module first shot at the command:
-		sndMessage = beqPerson.checkCMD(cmd);
-		//sndMessage either is false because cmd wasn't found, or it contains the answer
-		//it is the job of the personality file to make sure that cmd isn't a duplicate of any command
-		//in here!
-		//(because I can't think of a good way to check :-/ )
-		
 		switch (cmd)
 		{
 		case 'testing':
@@ -441,9 +434,18 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = beq.createTranslation(talkBeq);		
 		
 			break;
-		default:		
+		default:
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
+
+			//Lets give the personality module a try at the command			
+			if (cmdFound == false)
+				sndMessage = beqPerson.checkCMD(cmd);
+			
+			if (sndMessage != false)
+				cmdFound = true;
+			
+			break;
 		}
 	}
 	else if (message.substring(0, 1) == '%')
