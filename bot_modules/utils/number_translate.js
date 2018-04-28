@@ -83,7 +83,11 @@ module.exports.Num2Word = function(number)
           tmpRet = tmpNum + ' ' + tmpRet;
 
 	   curPos -= 1;
-	}	
+	}
+	
+	//Numbers bigger than 10 million don't work :-(
+	if (number > 10000000)
+		tmpRet += '(Numbers this big may be incorrectly translated!)';
 	
 	return tmpRet;
 }
