@@ -12,5 +12,8 @@
 //sndmessage - the return message
 module.exports.extCommands = function(bot, message, sndMessage)
 {
-	return false;
+	if (message.startsWith("!extComTest"))
+		sndMessage = 'External command successfully tested';
+    else
+	   return false;
 }
