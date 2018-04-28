@@ -31,6 +31,14 @@ else
 	//Hardcode your own variables, or take them from somewhere else
 }
 
+module.exports.token = tmpToken;
+module.exports.servID = tmpservID;
+
+module.exports.devBuild = tmpdevBuild;
+module.exports.clipChan = tmpclipChan;
+module.exports.bTChan = tmpbTChan;
+
+
 //Soon to be phased out, these are leftovers of a previous attempt
 module.exports.klinRole = process.env.klinRole;        //Klingonist role == default role
 module.exports.makeKlinKey = process.env.makeKlinKey;  //Keyword to automagically make the user a klingonist
