@@ -21,8 +21,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"fuzzy": false,               // "fuzzy" searching, i.e. no word boundaries  => true/false
 	"wCase": false,               // search ignoring case                        => true/false
 	"remPref": false,             // Remove prefix if no result is found otherwise
-	"lookLang": "",               // the language the word you want translated is in
-	"lookWord": "",               // the word you are looking for
+	"lookLang": "",               // the language the word you want translated is in  (or the type of source)
+	"lookWord": "",               // the word you are looking for                     (or the source value)
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
 	"special": "",                // special commands, untested, unlisted, etc...
@@ -50,7 +50,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 */
 
-var kTranscode = require('./recode.js');
+var kTranscode = require('./bot_modules/utils/recode.js');
 
 module.exports.Engine = function(beqTalk)
 {
@@ -191,8 +191,7 @@ module.exports.Engine = function(beqTalk)
 			  beqTalk.message += 'tlhIngan <> uhmal' + beqTalk.newline;
 			  beqTalk.message += 'tlhIngan <> TIxan' + beqTalk.newline;
 		  }
-		break;
-		
+		break;		
 		case 'mugh':
 			var results = null;
 			var sumRes = new Array();
