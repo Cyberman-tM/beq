@@ -32,11 +32,11 @@ module.exports.checkCMD = function(command)
 //Use <BR> as linebreak - this WILL be replaced with a fitting newline character.
 module.exports.idleLines = JSON.stringify(
 {
-	[{
+	[
 		"line1",
 		"line2",
 		"line3"
-	}]
+	]
 });
  
 //A function that picks a line at random or returns an empty string
