@@ -8,6 +8,9 @@
 
 */
 
+module.exports.versInt = '0.6';
+module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
+
 //tlhIngan Hol => xifan hol or XIFAN HOL
 module.exports.RCtlh2x = function(orig_text, upper_case)
 {

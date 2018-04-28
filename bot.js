@@ -6,6 +6,7 @@ var extCmds = require('./bot_modules/external/ext_commands.js');
 var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
+var beqPerson = require('./bot_modules/personality/beq_person.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -121,6 +122,13 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		var firstBlank = message.indexOf(' ');
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
 		
+		//Lets give the personality module first shot at the command:
+		sndMessage = beqPerson.checkCMD(cmd);
+		//sndMessage either is false because cmd wasn't found, or it contains the answer
+		//it is the job of the personality file to make sure that cmd isn't a duplicate of any command
+		//in here!
+		//(because I can't think of a good way to check :-/ )
+		
 		switch (cmd)
 		{
 		case 'testing':
@@ -136,27 +144,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		   sndMessage = 'Sorry, shorthand commands are only allowed in certain channels (ask_beq).';
 		break;
 		
-		case 'makeMember':		
-			if (args[1] == DData.makeKlinKey)
-			{
-				var isKlingonist = bot.servers[DData.servID].members[userID].roles.filter(function (role)
-				{
-					if (role == DData.klinRole)
-						return role
-				});
-				if (isKlingonist.length <= 0)
-				{
-					bot.addToRole({"serverID": DData.servID, "userID": userID, "roleID": DData.klinRole},
-					              function(err, response){console.log(err); console.log(response);});
-					sndMessage = 'You should now be a Klingonist!';
-				}
-				else
-					sndMessage = 'You already are a klingonist!';
-			}			
-			else
-				sndMessage = 'Wrong password.';
-		break;
-			
 			// !ping - Standardtest um zu sehen ob er aktiv ist
 		case 'ping':
 			sndMessage = 'pong';
@@ -188,6 +175,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
 				 + 'n2w, w2n Number to Word, Word to Number: translates for example 123 into wa\'vetlh cha\'maH wej and vice versa\n'
 				 + '\n'
+//				 + '\n'
+//				 + ''
+//				 + '\n'				 
 				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
 				 + '       Multiple words have to be separated by a _!\n'
 				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [type=(n,v,adv,sen,ques,...)]\n'
@@ -210,9 +200,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage += beqTalk.message + beqTalk.newline;
 			sndMessage += games.verGame + beqTalk.newline;
 			sndMessage += NumWords.versInt + beqTalk.newline;
+			sndMessage += beqPerson.nameInt + ': ' + beqPerson.versInt + beqTalk.newline;
 			
 			sndMessage += beqTalk.newline;
-			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
+
+			sndMessage += beqPerson.yIngu;
+			//sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			
 				if ( DData.devBuild == "true" )
 					sndMessage += "(Development edition)";
@@ -297,11 +290,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			//"Lustige" Meldungen
 		case 'tlhIngan':
 			sndMessage += 'maH!\n';
-			break;
-
-		case 'le\'rat':
-		case 'Le\'rat':
-			sndMessage += 'Qo\'! pongwIj \'oHbe\'! DaH, *beq* HIpong jay\'!\n';
 			break;
 		case 'KWOTD':
 			beqTalk.command = 'KWOTD';
@@ -453,7 +441,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = beq.createTranslation(talkBeq);		
 		
 			break;
-		default:
+		default:		
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
 		}
