@@ -1,14 +1,15 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var beq = require('./beq_engine.js');
-var DData = require('./discord_data.js');
-var extCmds = require('./ext_commands.js');
+var DData = require('./bot_modules/external/discord_data.js');
+var extCmds = require('./bot_modules/external/ext_commands.js');
 var rules = require('./rules.js');
-var games = require('./games.js');
+var games = require('./bot_modules/games/games.js');
+var NumWords = require('./bot_modules/utils/number_translate.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.0 - Beq engine forever!';
+var versInt = '2.1.1 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -53,7 +54,7 @@ bot.on('ready', function (evt)
 	logger.info('Connected');
 	logger.info('Logged in as: ');
 	logger.info(bot.username + ' - (' + bot.id + ')');
-	logger.info('Version:' + versInt);
+	logger.info('Version:' + versInt);	
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	beqTalk.command = "yIngu'";
@@ -115,6 +116,10 @@ bot.on('message', function (user, userID, channelID, message, evt)
 	
 		var args = message.substring(1).split(' ');
 		var cmd = args[0];
+		
+		//Some functions need the entire argument string, unprocessed
+		var firstBlank = message.indexOf(' ');
+		var onePar = message.substr(firstBlank, message.length - firstBlank);
 		
 		switch (cmd)
 		{
@@ -181,6 +186,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'showMySettings\n'
 				 + 'setDefaultTLang de/tlh/en\n'				 
 				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
+				 + 'n2w, w2n Number to Word, Word to Number: translates for example 123 into wa\'vetlh cha\'maH wej and vice versa\n'
 				 + '\n'
 				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
 				 + '       Multiple words have to be separated by a _!\n'
@@ -203,6 +209,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			beqTalk = beq.Engine(beqTalk);
 			sndMessage += beqTalk.message + beqTalk.newline;
 			sndMessage += games.verGame + beqTalk.newline;
+			sndMessage += NumWords.versInt + beqTalk.newline;
 			
 			sndMessage += beqTalk.newline;
 			sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
@@ -352,7 +359,15 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			   sndMessage += JSON.stringify(links);
 		
 		break;
-
+		//Number to Word
+		case 'n2w':
+		  sndMessage = NumWords.Num2Word(parseInt(onePar));
+		break;
+		
+		//Word to Number
+		case 'w2n':
+		   sndMessage = NumWords.Word2Num(onePar);
+		break;
 			//Übersetzungen
 		case 'mugh':
 			var talkBeq = JSON.parse(beq.beqTalkDef);
