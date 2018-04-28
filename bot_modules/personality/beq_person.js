@@ -31,11 +31,11 @@ module.exports.checkCMD = function(command)
 //A JSON string containing an array with lines beq can say whenever he likes (usually after a translation)
 //Use <BR> as linebreak - this WILL be replaced with a fitting newline character.
 module.exports.idleLines = JSON.stringify(
-{[
+[
 	"line1",
 	"line2",
 	"line3"
-]});
+]);
  
 //A function that picks a line at random or returns an empty string
 module.exports.getLine = function(lineType, addNewLine, newLine)
@@ -46,7 +46,7 @@ module.exports.getLine = function(lineType, addNewLine, newLine)
 	//LineType - what kind of line? Idle, bored, whatever?
 	if (lineType == 1)
 	{
-		var idleLines = JSON.parse(idleLines);
+		var idleLines = JSON.parse(module.exports.idleLines);
 		if (idleLines.length == 0)
 			tmpRet = "";
 		else
