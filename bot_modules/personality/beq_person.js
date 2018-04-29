@@ -5,7 +5,7 @@
    A collection of lines beq may say, or react to   
 
 */
-var logger = require('winston');
+var beqLines = require('./beq_lines.js');
 module.exports.versInt = '0.1';
 module.exports.nameInt = 'beq Personality';
 
@@ -28,36 +28,29 @@ module.exports.checkCMD = function(command)
 	return tmpRet;
 };
 
-//A JSON string containing an array with lines beq can say whenever he likes (usually after a translation)
-//Use <BR> as linebreak - this WILL be replaced with a fitting newline character.
-module.exports.idleLines = JSON.stringify(
-[
-	"toy'meH jIHtaH.",
-	"jIvum, jIbech, 'ach SaH pagh.",
-	"Dal 'oH. qaD 'oHbe'...",
-	"pItlh",
-	""
-]);
- 
 //A function that picks a line at random or returns an empty string
 module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, italics = '*')
 {
 	var tmpRet = "";
 	var oneLine = "";
+	var lineNum = 0;
+	var myLines = "";
 	
 	//LineType - what kind of line? Idle, bored, whatever?
 	if (lineType == 1)
+		myLines = JSON.parse(beqLines.idleLines);
+	else if (lineType == 2)
+		myLines = JSON.parse(beqLines.boredLines);
+	
+	if (myLines.length == 0)
+		oneLine = "";
+	else
 	{
-		var myLines = JSON.parse(module.exports.idleLines);
-		if (myLines.length == 0)
-			oneLine = "";
-		else
-		{
-			var lineNum = Math.floor(Math.random() * myLines.length);
-			oneLine = myLines[lineNum];
-		}
+		lineNum = Math.floor(Math.random() * myLines.length);
+		oneLine = myLines[lineNum];
 	}
 	
+	//This applies to all types of lines
 	if (oneLine != "")
 	{
 		tmpRet = oneLine.replace("<BR>", newLine);
