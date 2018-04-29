@@ -7,7 +7,7 @@
    functions: Word2Num
               Num2Word
 */
-module.exports.versInt = 'Number translator 0.0.1';
+module.exports.versInt = 'Number translator 0.5';
 
 module.exports.Word2Num = function(numWord)
 {
@@ -85,6 +85,7 @@ module.exports.Num2Word = function(number)
 	   curPos -= 1;
 	}
 	
+	//Check i (number of tens), if > 1M => use lower + uy?
 	//Numbers bigger than 10 million don't work :-(
 	if (number > 10000000)
 		tmpRet += '(Numbers this big may be incorrectly translated!)';
