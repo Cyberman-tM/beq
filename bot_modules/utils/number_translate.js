@@ -86,7 +86,6 @@ module.exports.Num2Word = function(number)
 	}
 	
 	//Check i (number of tens), if > 1M => use lower + uy?
-	
 	//Numbers bigger than 10 million don't work :-(
 	if (number > 10000000)
 		tmpRet += '(Numbers this big may be incorrectly translated!)';

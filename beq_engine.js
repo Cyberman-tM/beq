@@ -5,7 +5,8 @@ Beq-Engine
 Functions to use:
 
 Engine:
-Main function, does the heavy lifting. Translate, KWOTD
+Main function, does the heavy lifting. Translate, identify(yIngu'), KWOTD
+
 
 createTranslation:
 As the name says, it translates the beqTalk result into a readable string
@@ -84,8 +85,6 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 		   tmpTxt += module.exports.KDBJSon.length + ' words in database.' + beqTalk.newline;
 		   tmpTxt += beqTalk.newline;
-		   
-		   
 		   beqTalk.message = tmpTxt;
 		break;
 		
