@@ -348,7 +348,7 @@ module.exports.beqTalkDef = JSON.stringify(
 module.exports.createTranslation = function(beqTalk)
 {
 	if (beqTalk.gotResult == false)
-		return "Nothing found.";
+		return "Nothing found." + beqTalk.newline;
 	
 	var sndMessage = '';
 	var infTips = "";
