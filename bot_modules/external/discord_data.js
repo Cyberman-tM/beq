@@ -12,6 +12,8 @@ var tmpservID = '';        //Server ID
 var tmpclipChan = '';   //Channel where clipped commands are allowed (translation command ? for example)
 var tmpbTChan = '';     //Channel for beqTalk - system messages should go there
 var tmpdevBuild = '';   //Flag that tells us if this bot runs as developer toy or productive assistant
+var tmpKWOTDChan = '';  //Which channel should we post the KWOTD message to?
+
 
 var useHeroku = true;   //Change this to false if you don't use Heroku, so we won't try to get the Heroku data
 
@@ -23,6 +25,8 @@ if (useHeroku === true)
 	
 	tmpclipChan = process.env.clipChan;
 	tmpbTChan = process.env.bTChan;
+	
+	tmpKWOTDChan = process.env.KWOTDChan;
 	
 	tmpdevBuild = process.env.devBuild;        //Dev build, enable special checks
 }
