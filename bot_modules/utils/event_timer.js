@@ -7,6 +7,11 @@ var KWOTD = require('kwotd.js');
 
 var eventTimer = null;
 
+//TODO: Init routine for timed events, to set up their stuff
+//example: KWOTD: read in timing list
+//TODO: add parameter to timers? current date?
+
+
 module.exports.startEventTimer = function()
 {
 	//Call it once a minute
