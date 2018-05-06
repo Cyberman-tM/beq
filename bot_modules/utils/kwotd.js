@@ -7,30 +7,38 @@
 */
 
 var KWOTDTimings = require('./kwotd_timings.js');
+var myTimings = null;
+var mybeqEngine = null;
 
-module.exports.KWOTD = function()
+module.exports.KWOTD.init = function(beqEngine)
 {
-	var thisDate = Date();
-	
-	//We are called by the universal timer - which runs once a minute
-	//So we need to check if we are supposed to start yet
-	
-	//First lets see if there are any timings to run at all
-	var myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
+	//Lets see if there are any timings to run at all
+	myimings = JSON.parse(KWOTDTimings.KWOTDTimings);
 	if (myTimings.length == 0)
 	   return;
-	var myHour = thisDate.getHours();
-	var myMinu = thisDate.getMinutes();
+	
+	mybeqEngine = beqEngine;
+}
+
+//We are called by the universal timer - which runs once a minute
+module.exports.KWOTD = function(myDate, myHour, myMinute)
+{
+	//Lets check if we have any timings
+	if (myTimings == null || myTimings.length == 0)
+	   return;
+	
 	var waHour = '';
 	var waMinu = '';
-	
+	//Check if we are supposed to start yet
 	myTimings.forEach(item)
 	{
 	   waHour = item.time.substr(0,2);
 	   waMinu = item.time.substr(3,2);
-	   if (waHour == myHour && waMinu == myMinu)
+	   if (waHour == myHour && waMinu == myMinute)
 	   {
-	      //Run KWOTD, send to channel
+	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
+	      beqTalk.command = 'KWOTD';
+              beqTalk.wordType1 = item.type;
 	   }
 	}
 	
