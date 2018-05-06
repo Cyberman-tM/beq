@@ -21,9 +21,6 @@ module.exports.versInt  = '0.01';
 
 module.exports.startEventTimer = function(beqEngine)
 {
-	logger.info(TDData.devBuild);
-	logger.info(devTest);
-	
 	//Call it once a minute
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
 	
@@ -45,6 +42,9 @@ function actualEventTimer()
 	var thisDate = new Date();
 	var thisHour = thisDate.getHours();
 	var thisMinu = thisDate.getMinutes();
+	
+	logger.info(devTest);
+	logger.info(TDData.devBuild);
 	
 	//During tests, give a lifesign
 	if (devTest == true)
