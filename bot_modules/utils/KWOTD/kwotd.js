@@ -28,6 +28,11 @@ module.exports.KWOTDInit = function(beqEngine, bot, mesChan, devTest)
 	myTestFlag  = devTest;
 	myBot       = bot;
 	myChannel   = mesChan;
+	
+	myBot.sendMessage({
+			to: myChannel,
+			message: 'testing'
+		});
 }
 
 //We are called by the universal timer - which runs once a minute
