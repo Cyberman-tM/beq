@@ -34,7 +34,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	var waHour = '';
 	var waMinu = '';
 	//Check if we are supposed to start yet
-	myTimings.forEach(item)
+	myTimings.forEach(function (item) 
 	{
 	   waHour = item.time.substr(0,2);
 	   waMinu = item.time.substr(3,2);
@@ -49,7 +49,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
  	      var sndMessage = mybeqEngine.createTranslation(talkBeq);
 		   logger.info(sndMessage);
 	   }
-	}	
+	});	
 }
 
 /*
