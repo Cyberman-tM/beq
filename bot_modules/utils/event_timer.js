@@ -4,8 +4,8 @@
 */
 
 //This is also included in the main bot file, but we don't have easy access to it, and we need the devBeq flag
-var TDData = require('./../external/discord_data.js');
-
+var TDData   = require('./../external/discord_data.js');
+//Read in custom timers
 var cusTimer = require('./../custom_modules/custom_timers.js');
 
 var KWOTD = require('./KWOTD/kwotd.js');
@@ -21,6 +21,9 @@ module.exports.versInt  = '0.01';
 
 module.exports.startEventTimer = function(beqEngine)
 {
+	logger.info(TDData.devBuild);
+	logger.info(devTest);
+	
 	//Call it once a minute
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
 	
