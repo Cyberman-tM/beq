@@ -30,7 +30,7 @@ module.exports.stopEventTimer = function()
 
 function actualEventTimer()
 {
-	var thisDate = Date();
+	var thisDate = new Date();
 	var thisHour = thisDate.getHours();
 	var thisMinu = thisDate.getMinutes();
 	
