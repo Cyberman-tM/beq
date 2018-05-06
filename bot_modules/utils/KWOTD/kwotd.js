@@ -10,6 +10,9 @@ var KWOTDTimings = require('./kwotd_timings.js');
 var myTimings = null;
 var mybeqEngine = null;
 
+//Testing
+var logger = require('winston');
+
 module.exports.KWOTD.init = function(beqEngine)
 {
 	//Lets see if there are any timings to run at all
@@ -39,10 +42,13 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
 	      beqTalk.command = 'KWOTD';
               beqTalk.wordType1 = item.type;
+		   
+	      //Let the engine do its magic :-)
+	      var talkBeq = mybeqEngine.Engine(beqTalk);			
+ 	      var sndMessage = mybeqEngine.createTranslation(talkBeq);
+		   logger.info(sndMessage);
 	   }
-	}
-	
-	
+	}	
 }
 
 /*
