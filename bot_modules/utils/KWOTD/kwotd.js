@@ -13,7 +13,7 @@ var mybeqEngine = null;
 //Testing
 var logger = require('winston');
 
-module.exports.KWOTD.init = function(beqEngine)
+module.exports.KWOTDinit = function(beqEngine)
 {
 	//Lets see if there are any timings to run at all
 	myimings = JSON.parse(KWOTDTimings.KWOTDTimings);
