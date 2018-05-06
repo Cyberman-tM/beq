@@ -63,8 +63,7 @@ bot.on('ready', function (evt)
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
 	
-	var evTInfo = evTimer.versName + evTimer.versInt;
-	logger.info(evTInfo);
+	//Timer runs once a minute
 	evTimer.startEventTimer(beq);
 }
 );
