@@ -33,6 +33,10 @@ module.exports.startEventTimer = function(beqEngine)
 	
 	//Hardcoded timers
 	KWOTD.KWOTDInit(beqEngine, devTest);
+	
+	//During tests, give a lifesign
+	if (devTest == true)
+	   logger.info(thisHour + ':' + thisMinu);
 }
 
 module.exports.stopEventTimer = function()
