@@ -9,11 +9,12 @@
 var KWOTDTimings = require('./kwotd_timings.js');
 var myTimings = null;
 var mybeqEngine = null;
+var myTestFlag = false;
 
 //Testing
 var logger = require('winston');
 
-module.exports.KWOTDInit = function(beqEngine)
+module.exports.KWOTDInit = function(beqEngine, devTest)
 {
 	//Lets see if there are any timings to run at all
 	myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
@@ -21,6 +22,7 @@ module.exports.KWOTDInit = function(beqEngine)
 	   return;
 	
 	mybeqEngine = beqEngine;
+	myTestFlag = devTest;
 }
 
 //We are called by the universal timer - which runs once a minute
@@ -42,6 +44,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
 	      beqTalk.command = 'KWOTD';
               beqTalk.wordType1 = item.type;
+	      beqTalk.lookLang = 'tlh';
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
