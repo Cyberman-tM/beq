@@ -67,21 +67,17 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 else
 		     wordType = boQwITranslate.getWType(item.type, 'en');
 		      
-		 sndMessage += 'Type of word:' + wordType + beqTalk.newline;
-		 sndMessage += 'wordtype raw:' + item.type + beqTalk.newline;
-		 sndMessage += 'tlhIngan:' + item.tlh + beqTalk.newline;
-		 sndMessage += 'Deutsch:' + item.de + beqTalk.newline;
-		 sndMessage += 'English:' + item.en + beqTalk.newline;		 
-		      logger.info(item);
+		 sndMessage += 'Type of word: ' + wordType + beqTalk.newline;
+		 sndMessage += 'tlhIngan: ' + item.tlh + beqTalk.newline;
+		 sndMessage += 'Deutsch: ' + item.de + beqTalk.newline;
+		 sndMessage += 'English: ' + item.en + beqTalk.newline;		 
 	      });
-	      logger.info(sndMessage);
+	      //logger.info(sndMessage);
 
-		   /*
 		myBot.sendMessage({
 			to: myChannel,
 			message: sndMessage
 		});
-		*/
 	   }
 	});	
 }
