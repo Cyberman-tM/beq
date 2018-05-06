@@ -8,14 +8,15 @@
 
 var boQwITranslate = require('./../boQwI_translate.js');
 var KWOTDTimings = require('./kwotd_timings.js');
-var myTimings = null;
+var myTimings   = null;
 var mybeqEngine = null;
-var myTestFlag = false;
+var myBot       = null;
+var myTestFlag  = false;
 
 //Testing
 var logger = require('winston');
 
-module.exports.KWOTDInit = function(beqEngine, devTest)
+module.exports.KWOTDInit = function(beqEngine, bot, devTest)
 {
 	//Lets see if there are any timings to run at all
 	myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
@@ -23,7 +24,8 @@ module.exports.KWOTDInit = function(beqEngine, devTest)
 	   return;
 	
 	mybeqEngine = beqEngine;
-	myTestFlag = devTest;
+	myTestFlag  = devTest;
+	myBot       = bot;
 }
 
 //We are called by the universal timer - which runs once a minute
@@ -69,6 +71,11 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 sndMessage += 'English:' + item.en;
 	      });
 	      logger.info(sndMessage);
+		   
+		myBot.sendMessage({
+			to: channelID,
+			message: sndMessage
+		});
 	   }
 	});	
 }
