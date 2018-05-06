@@ -6,6 +6,7 @@
    
 */
 
+var boQwITranslate = require('./../boQwI_translate.js');
 var KWOTDTimings = require('./kwotd_timings.js');
 var myTimings = null;
 var mybeqEngine = null;
@@ -55,7 +56,14 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      {
 	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
 		 sndMessage += 'beq edition' + beqTalk.newline + beqTalk.newline;
-		 sndMessage += 'Type of word:', item.wordType;
+		 var wordType = '';
+		 //TODO: get language somehow?
+		 if (item.type.startsWith('sen'))
+		     wordType = boQwITranslate.getSType(item.type, 'en');
+		 else
+		     wordType = boQwITranslate.getWType(item.type, 'en');
+		      
+		 sndMessage += 'Type of word:', wordType;
 		 sndMessage += 'tlhIngan:' + item.tlh + beqTalk.newline;
 		 sndMessage += 'Deutsch:' + item.de + beqTalk.newline;
 		 sndMessage += 'English:' + item.en;
