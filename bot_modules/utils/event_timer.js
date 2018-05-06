@@ -40,7 +40,7 @@ module.exports.startEventTimer = function(beqEngine)
 	   var thisDate = new Date();
 	   var thisHour = thisDate.getHours();
 	   var thisMinu = thisDate.getMinutes();
-	   logger.info(thisHour + ':' + thisMinu);
+	   logger.info('Event timer start:' + thisHour + ':' + thisMinu);
 	}
 }
 
