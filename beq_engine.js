@@ -94,9 +94,9 @@ module.exports.Engine = function(beqTalk)
 			beqTalk.result = new Array();
 			
 			//Default-Wordtypes?
-			if (beqTalk.wordType1 == null || beqTalk.wordType1 == 'n')
+			if (beqTalk.wordType1 == null)
 				beqTalk.wordType1 = 'sen:rp';
-			if (beqTalk.wordType2 == null || beqTalk.wordType2 == 'n')
+			if (beqTalk.wordType2 == null)
 				beqTalk.wordType2 = 'sen:sp';
 			
 			var tmpWord = "";
