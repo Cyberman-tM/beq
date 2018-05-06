@@ -64,7 +64,7 @@ bot.on('ready', function (evt)
 	logger.info(beqTalk.message);
 	
 	//Timer runs once a minute
-	evTimer.startEventTimer(beq);
+	evTimer.startEventTimer(beq, bot);
 }
 );
 
