@@ -49,6 +49,8 @@ function actualEventTimer()
 	//During tests, give a lifesign
 	if (devTest == true)
 	   logger.info(thisHour + ':' + thisMinu);
+	else
+	   logger.info("false?");
 	
 	//Call custom timer functions
 	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
