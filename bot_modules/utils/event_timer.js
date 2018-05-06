@@ -29,10 +29,10 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
 	
 	//Call init function of individual timers
-	cusTimer.runCustInit(beqEngine, bot, devTest);
+	cusTimer.runCustInit(beqEngine, bot, TDData.KWOTDChan, devTest);
 	
 	//Hardcoded timers
-	KWOTD.KWOTDInit(beqEngine, bot, devTest);
+	KWOTD.KWOTDInit(beqEngine, bot, TDData.KWOTDChan, devTest);
 	
 	//During tests, give a lifesign
 	if (devTest == true)
