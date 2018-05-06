@@ -7,6 +7,7 @@ var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
+var evTimer = require('./bot_modules/utils/event_timer.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -55,12 +56,16 @@ bot.on('ready', function (evt)
 	logger.info('Connected');
 	logger.info('Logged in as: ');
 	logger.info(bot.username + ' - (' + bot.id + ')');
-	logger.info('Version:' + versInt);	
+	logger.info('Version:' + versInt);
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
+	
+	var evTInfo = evTimer.versName + evTimer.versInt;
+	logger.info(evTInfo);
+	evTimer.startEventTimer(beq);
 }
 );
 
