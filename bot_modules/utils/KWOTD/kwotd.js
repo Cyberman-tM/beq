@@ -17,7 +17,7 @@ module.exports.KWOTDInit = function(beqEngine)
 {
 	//Lets see if there are any timings to run at all
 	logger.info(KWOTDTimings.KWOTDTimings);
-	myimings = JSON.parse(KWOTDTimings.KWOTDTimings);
+	myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
 	if (myTimings.length == 0)
 	   return;
 	
