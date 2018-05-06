@@ -11,12 +11,13 @@ var KWOTDTimings = require('./kwotd_timings.js');
 var myTimings   = null;
 var mybeqEngine = null;
 var myBot       = null;
+var myChannel   = null;
 var myTestFlag  = false;
 
 //Testing
 var logger = require('winston');
 
-module.exports.KWOTDInit = function(beqEngine, bot, devTest)
+module.exports.KWOTDInit = function(beqEngine, bot, mesChan, devTest)
 {
 	//Lets see if there are any timings to run at all
 	myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
@@ -26,6 +27,7 @@ module.exports.KWOTDInit = function(beqEngine, bot, devTest)
 	mybeqEngine = beqEngine;
 	myTestFlag  = devTest;
 	myBot       = bot;
+	myChannel   = mesChan;
 }
 
 //We are called by the universal timer - which runs once a minute
@@ -73,7 +75,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      logger.info(sndMessage);
 		   
 		myBot.sendMessage({
-			to: channelID,
+			to: myChannel,
 			message: sndMessage
 		});
 	   }
