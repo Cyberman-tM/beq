@@ -7,6 +7,9 @@ var KWOTD = require('./KWOTD/kwotd.js');
 
 var eventTimer = null;
 
+module.exports.versName = 'Event Timer';
+module.exports.versInt  = '0.01';
+
 module.exports.startEventTimer = function(beqEngine)
 {
 	//Call it once a minute
