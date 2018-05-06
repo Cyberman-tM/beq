@@ -36,7 +36,12 @@ module.exports.startEventTimer = function(beqEngine)
 	
 	//During tests, give a lifesign
 	if (devTest == true)
+	{
+	   var thisDate = new Date();
+	   var thisHour = thisDate.getHours();
+	   var thisMinu = thisDate.getMinutes();
 	   logger.info(thisHour + ':' + thisMinu);
+	}
 }
 
 module.exports.stopEventTimer = function()
