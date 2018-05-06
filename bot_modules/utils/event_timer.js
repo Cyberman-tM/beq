@@ -3,7 +3,7 @@
    calls other functions that are defined in 
 */
 var cusTimer = require('./..custom_modules/custom_timers.js');
-var KWOTD = require('kwotd.js');
+var KWOTD = require('./KWOTD/kwotd.js');
 
 var eventTimer = null;
 
