@@ -28,11 +28,6 @@ module.exports.KWOTDInit = function(beqEngine, bot, mesChan, devTest)
 	myTestFlag  = devTest;
 	myBot       = bot;
 	myChannel   = mesChan;
-	
-	myBot.sendMessage({
-			to: myChannel,
-			message: 'testing'
-		});
 }
 
 //We are called by the universal timer - which runs once a minute
@@ -72,7 +67,8 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 else
 		     wordType = boQwITranslate.getWType(item.type, 'en');
 		      
-		 sndMessage += 'Type of word:', wordType;
+		 sndMessage += 'Type of word:', wordType + beqTalk.newline;
+		 sndMessage += 'wordtype raw:', item.type + beqTalk.newline;
 		 sndMessage += 'tlhIngan:' + item.tlh + beqTalk.newline;
 		 sndMessage += 'Deutsch:' + item.de + beqTalk.newline;
 		 sndMessage += 'English:' + item.en;
