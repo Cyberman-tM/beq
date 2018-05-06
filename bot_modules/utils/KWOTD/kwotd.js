@@ -49,9 +49,16 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
 	      var sndMessage = '';
+
+ 	      //There should be only one
  	      beqTalk.result.forEach(function (item)
 	      {
-	         sndMessage += 'tlh:' + item.tlh + beqTalk.newline + 'de:' + item.de + beqTalk.newline + 'en:' + item.en;
+	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
+		 sndMessage += 'beq edition' + beqTalk.newline + beqTalk.newline;
+		 sndMessage += 'Type of word:', item.wordType;
+		 sndMessage += 'tlhIngan:' + item.tlh + beqTalk.newline;
+		 sndMessage += 'Deutsch:' + item.de + beqTalk.newline;
+		 sndMessage += 'English:' + item.en;
 	      });
 	      logger.info(sndMessage);
 	   }
@@ -62,22 +69,11 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 Hints:
 KWOTD:
 
-timeout -> setinterval
-
-alle 8 STunden => 3 jobs?
-Message zu ?incoming?
-
-Abfolge:
-
-3xTag:
-
 Noun
 Verb
 Everything else
 
 Message:
-
-KWOTD => Funktion in beq_engine!
 
 Aussehen:
 
