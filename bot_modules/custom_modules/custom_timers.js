@@ -1,5 +1,7 @@
 /*
    Custom timers
+   
+   //OUTDATED! Check KWOTD timer or similar to see current interface
 */
 
 //Initialize the custom timer, reserver space, etc..
