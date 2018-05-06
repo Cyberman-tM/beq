@@ -71,15 +71,17 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 sndMessage += 'wordtype raw:' + item.type + beqTalk.newline;
 		 sndMessage += 'tlhIngan:' + item.tlh + beqTalk.newline;
 		 sndMessage += 'Deutsch:' + item.de + beqTalk.newline;
-		 sndMessage += 'English:' + item.en + beqTalk.newline;
-		 sndMessage += 'raw data:' + item;
+		 sndMessage += 'English:' + item.en + beqTalk.newline;		 
+		      logger.info(item);
 	      });
 	      logger.info(sndMessage);
-		   
+
+		   /*
 		myBot.sendMessage({
 			to: myChannel,
 			message: sndMessage
 		});
+		*/
 	   }
 	});	
 }
