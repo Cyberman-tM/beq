@@ -19,7 +19,7 @@ module.exports.startEventTimer = function(beqEngine)
 	cusTimer.runCustInit(beqEngine);
 	
 	//Hardcoded timers
-	KWOTD.init(beqEngine);
+	KWOTD.KWOTDInit(beqEngine);
 }
 
 module.exports.stopEventTimer = function()
