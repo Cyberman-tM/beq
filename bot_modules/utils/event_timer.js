@@ -2,7 +2,7 @@
    A global generic timer that ticks once per minute (or so)
    calls other functions that are defined in 
 */
-var cusTimer = require('./..custom_modules/custom_timers.js');
+var cusTimer = require('./../custom_modules/custom_timers.js');
 var KWOTD = require('./KWOTD/kwotd.js');
 
 var eventTimer = null;
