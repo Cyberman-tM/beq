@@ -48,8 +48,12 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
- 	      var sndMessage = mybeqEngine.createTranslation(talkBeq);
-		   logger.info(sndMessage);
+	      var sndMessage = '';
+ 	      beqTalk.result.forEach(function (item)
+	      {
+	         sndMessage += 'tlh:' + item.tlh + beqTalk.newline + 'de:' + item.de + beqTalk.newline + 'en:' + item.en;
+	      });
+	      logger.info(sndMessage);
 	   }
 	});	
 }
