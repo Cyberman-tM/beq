@@ -16,6 +16,12 @@ module.exports.startEventTimer = function()
 {
 	//Call it once a minute
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
+	
+	//Call init function of individual timers
+	cusTimer.runCustInit();
+	
+	//Hardcoded timers
+	KWOTD.init();
 }
 
 module.exports.stopEventTimer = function()
@@ -26,9 +32,13 @@ module.exports.stopEventTimer = function()
 
 function actualEventTimer()
 {
+	var thisDate = Date();
+	var thisHour = thisDate.getHours();
+	var thisMinu = thisDate.getMinutes();
+	
 	//Call custom timer functions
-	cusTimer.runCusTimer();
+	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
 	
 	//Call hardcoded stuff we know we have
-	KWOTD.KWOTD();	
+	KWOTD.KWOTD(thisDate, thisHour, thisMinu);
 }
