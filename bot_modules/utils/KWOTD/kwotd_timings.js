@@ -9,7 +9,7 @@
     The KWOTD event will check the time, and if it's less than a minute after it, it'll run    
 */
 
-module.export.KWOTDTimings = JSON.stringify(
+module.exports.KWOTDTimings = JSON.stringify(
 [
    { "time": "08:00",
      "type": "n" },
