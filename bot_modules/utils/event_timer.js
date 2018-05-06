@@ -4,6 +4,7 @@
 */
 var cusTimer = require('./../custom_modules/custom_timers.js');
 var KWOTD = require('./KWOTD/kwotd.js');
+var logger = require('winston');
 
 var eventTimer = null;
 
@@ -33,6 +34,10 @@ function actualEventTimer()
 	var thisDate = new Date();
 	var thisHour = thisDate.getHours();
 	var thisMinu = thisDate.getMinutes();
+	
+	logger.info(thisHour+thisMinu);
+	
+	
 	
 	//Call custom timer functions
 	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
