@@ -35,6 +35,8 @@ function actualEventTimer()
 	var thisHour = thisDate.getHours();
 	var thisMinu = thisDate.getMinutes();
 	
+	logger.info(thisHour + ':' + thisMinu);
+	
 	//Call custom timer functions
 	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
 	
