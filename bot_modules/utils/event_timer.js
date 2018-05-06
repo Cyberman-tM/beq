@@ -17,7 +17,7 @@ var devTest = '';
 module.exports.versName = 'Event Timer';
 module.exports.versInt  = '0.01';
 
-module.exports.startEventTimer = function(beqEngine)
+module.exports.startEventTimer = function(beqEngine, bot)
 {
 	//Special variable to turn testing features on and off
 	if (TDData.devBuild == "true")
@@ -29,10 +29,10 @@ module.exports.startEventTimer = function(beqEngine)
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
 	
 	//Call init function of individual timers
-	cusTimer.runCustInit(beqEngine, devTest);
+	cusTimer.runCustInit(beqEngine, bot, devTest);
 	
 	//Hardcoded timers
-	KWOTD.KWOTDInit(beqEngine, devTest);
+	KWOTD.KWOTDInit(beqEngine, bot, devTest);
 	
 	//During tests, give a lifesign
 	if (devTest == true)
