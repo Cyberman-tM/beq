@@ -50,7 +50,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
-
+//Testing
+var logger = require('winston');
 var kTranscode = require('./bot_modules/utils/recode.js');
 
 module.exports.Engine = function(beqTalk)
@@ -117,6 +118,9 @@ module.exports.Engine = function(beqTalk)
 			for (i = 0; i < useArray.length; i++)			
 			{
 				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
+				
+				logger.info(tmpWord);
+				
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref)))
 					break;
 				tmpWord = null;
