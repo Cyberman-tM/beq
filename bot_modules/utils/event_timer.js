@@ -42,7 +42,7 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	KWOTD.KWOTDInit(beqEngine, bot, TDData.KWOTDChan, devTest);
 	
 	//During tests, give a lifesign
-	if (devTest == true && noPulse == false)
+	if (devTest == true)
 	{
 	   var thisDate = new Date();
 	   var thisHour = thisDate.getHours();
@@ -63,8 +63,8 @@ function actualEventTimer()
 	var thisHour = thisDate.getHours();
 	var thisMinu = thisDate.getMinutes();
 	
-	//During tests, give a lifesign
-	if (devTest == true)
+	//During tests, give a lifesign, unless we want a clean log
+	if (devTest == true && noPulse == false)
 	   logger.info(thisHour + ':' + thisMinu);
 	
 	//Call custom timer functions
