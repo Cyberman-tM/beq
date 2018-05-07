@@ -54,10 +54,11 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
-	      var sndMessage = '';
+	      var sndMessage = talkBeq.message;
 
  	      //There should be only one
- 	      beqTalk.result.forEach(function (item)
+ 	      "beqTalk.result.forEach(function (item)
+	      talkBeq.result.forEach(function (item)
 	      {
 	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
 		 sndMessage += 'beq edition' + beqTalk.newline + beqTalk.newline;
