@@ -88,28 +88,35 @@ module.exports.Engine = function(beqTalk)
 		   beqTalk.message = tmpTxt;
 		break;
 		
-		case 'KWOTD':
-			
-			//TODO: complete rework, all words, not just phrases!
-			//wordtype selects array
-			
+		case 'KWOTD':			
 			//TODO: KWOTD - random word/sentence, type of word as parameter
 			//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
 			beqTalk.result = new Array();
 			
 			//Default-Wordtypes?
 			if (beqTalk.wordType1 == null)
-				beqTalk.wordType1 = 'sen:rp';
-			if (beqTalk.wordType2 == null)
-				beqTalk.wordType2 = 'sen:sp';
+			   beqTalk.wordType1 = 'sen:rp';
 			
-			var tmpWord = "";
+			//We have to decide which array we're going to use
+			var tmpWord = beqTalk.wordType1.split(':')[0];
+			var useArray = null;
+			
+			if (tmpWord == 'sen')
+			   useArray = module.exports.KDBPHJSon;
+			else if (tmpWord == 'vs')
+			   useArray = module.exports.KDBVSJSon;
+			else if (tmpWord == 'vp')
+			   useArray = module.exports.KDBVPJSon;
+			else if (tmpWord == 'vs')
+			   useArray = module.exports.KDBVSJSon;
+			else if (tmpWord == 'n' || tmpWord == 'v')
+			   useArray= module.exports.KDBJSon;
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
+			for (i = 0; i < useArray.length; i++)			
 			{
-				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
-				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
+				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
+				if (tmpWord != null && tmpWord.type == beqTalk.wordType1)
 					break;
 				tmpWord = null;
 			}
