@@ -57,7 +57,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      var sndMessage = talkBeq.message;
 
  	      //There should be only one
- 	      "beqTalk.result.forEach(function (item)
+ 	      //beqTalk.result.forEach(function (item)
 	      talkBeq.result.forEach(function (item)
 	      {
 	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
