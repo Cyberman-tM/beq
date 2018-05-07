@@ -43,8 +43,8 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	myTimings.forEach(function (item) 
 	{
 	   var tmpTim = item.time.split(':');
-	   waHour = tmpTim[1];
-	   waMinu = tmpTim[2];
+	   waHour = tmpTim[0];
+	   waMinu = tmpTim[1];
 	   if (waHour == myHour && waMinu == myMinute)
 	   {
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
