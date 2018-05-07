@@ -98,7 +98,8 @@ module.exports.Engine = function(beqTalk)
 			   beqTalk.wordType1 = 'sen:rp';
 			
 			//We have to decide which array we're going to use
-			var tmpWord = beqTalk.wordType1.split(':')[0];
+			var tmpWPref = beqTalk.wordType1.split(':')[0];
+			var tmpWord = null;
 			var useArray = null;
 			
 			if (tmpWord == 'sen')
@@ -116,7 +117,7 @@ module.exports.Engine = function(beqTalk)
 			for (i = 0; i < useArray.length; i++)			
 			{
 				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
-				if (tmpWord != null && tmpWord.type == beqTalk.wordType1)
+				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref))
 					break;
 				tmpWord = null;
 			}
@@ -143,20 +144,8 @@ module.exports.Engine = function(beqTalk)
 									   "notes_de":tmpWord.notes_de,
 									   "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
-			}
-
+			}				
 			break;
-			
-		case "yIcha'":
-			switch(beqTalk.wordType1)
-			{
-				case 'v:pref':
-					beqTalk.result = module.exports.KDBVPJSon;
-					beqTalk.gotResult = true;
-				break;
-			}
-		break;
-		
 		case "recode":
 		  var tmpText = '';
 		  var encoding = '';
@@ -418,10 +407,7 @@ module.exports.createTranslation = function(beqTalk)
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			if (beqTalk.command == "mugh")
-				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-			else if (beqTalk.command == "KWOTD")
-				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
+			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 			
 			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
