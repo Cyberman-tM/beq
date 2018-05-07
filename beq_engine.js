@@ -102,16 +102,16 @@ module.exports.Engine = function(beqTalk)
 			var tmpWord = null;
 			var useArray = null;
 			
-			if (tmpWord == 'sen')
+			if (tmpWPref == 'sen')
 			   useArray = module.exports.KDBPHJSon;
-			else if (tmpWord == 'vs')
+			else if (tmpWPref == 'vs')
 			   useArray = module.exports.KDBVSJSon;
-			else if (tmpWord == 'vp')
+			else if (tmpWPref == 'vp')
 			   useArray = module.exports.KDBVPJSon;
-			else if (tmpWord == 'vs')
+			else if (tmpWPref == 'vs')
 			   useArray = module.exports.KDBVSJSon;
-			else if (tmpWord == 'n' || tmpWord == 'v')
-			   useArray= module.exports.KDBJSon;
+			else if (tmpWPref == 'n' || tmpWPref == 'v')
+			   useArray = module.exports.KDBJSon;
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
