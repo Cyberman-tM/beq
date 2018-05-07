@@ -114,16 +114,13 @@ module.exports.Engine = function(beqTalk)
 			else if (tmpWPref == 'n' || tmpWPref == 'v')
 			   useArray = module.exports.KDBJSon;
 
-			logger.info(tmpWPref);
-			logger.info(useArray.length);
+			logger.info(useArray);
 			
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
 			{
 				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
-				
-			logger.info(tmpWord);
-				
+		
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref)))
 					break;
 				tmpWord = null;
