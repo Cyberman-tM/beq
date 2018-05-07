@@ -109,18 +109,24 @@ module.exports.Engine = function(beqTalk)
 			   useArray = module.exports.KDBVSJSon;
 			else if (tmpWPref == 'vp')
 			   useArray = module.exports.KDBVPJSon;
-			else if (tmpWPref == 'vs')
-			   useArray = module.exports.KDBVSJSon;
+			else if (tmpWPref == 'ns')
+			   useArray = module.exports.KDBNSJSon;
 			else if (tmpWPref == 'n' || tmpWPref == 'v')
 			   useArray = module.exports.KDBJSon;
+			
+			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
+			if (tmpWPref == 'vs')
+			   tmpWPref = 'v:suff';
+			else (tmpWPref == 'vp')
+			   tmpWPref = 'v:pref');
+			else (tmpWPref == 'ns')
+			   tmpWPref = 'n:suff');
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
 			{
-				var tmpNum = Math.floor(Math.random() * (useArray.length + 1));
-				logger.info(tmpNum);
-				tmpWord = useArray[tmpNum];
-				logger.info(tmpWord.type);
+				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
+				//The second part may cause problems with v equaling v:pref and such
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref)))
 					break;
 				tmpWord = null;
