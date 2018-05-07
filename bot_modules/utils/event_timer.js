@@ -15,6 +15,8 @@ var eventTimer = null;
 var devTest = '';
 var noPulse = '';
 
+//TODO: Do we want each timing event to have access to the whole bot?
+
 module.exports.versName = 'Event Timer';
 module.exports.versInt  = '0.01';
 
