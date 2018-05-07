@@ -169,7 +169,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'setFuzzy on/off\n'
 				 + 'showMySettings\n'
 				 + 'setDefaultTLang de/tlh/en\n'				 
-				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
+				 + 'KWOTD one parameter: word type as in boQwI\'\n'
 				 + 'n2w, w2n Number to Word, Word to Number: translates for example 123 into wa\'vetlh cha\'maH wej and vice versa\n'
 				 + '\n'
 //				 + '\n'
@@ -299,10 +299,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				beqTalk.wordType1 = 'sen:rp';
 			else
 				beqTalk.wordType1 = args[1];
-			if (args[2] == null)
-				beqTalk.wordType2 = 'sen:sp';
-			else
-				beqTalk.wordType2 = args[2];
 			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
