@@ -117,9 +117,9 @@ module.exports.Engine = function(beqTalk)
 			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
 			if (tmpWPref == 'vs')
 			   tmpWPref = 'v:suff';
-			else (tmpWPref == 'vp')
+			else if (tmpWPref == 'vp')
 			   tmpWPref = 'v:pref';
-			else (tmpWPref == 'ns')
+			else if (tmpWPref == 'ns')
 			   tmpWPref = 'n:suff';
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
