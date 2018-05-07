@@ -120,7 +120,7 @@ module.exports.Engine = function(beqTalk)
 			for (i = 0; i < useArray.length; i++)			
 			{
 				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
-		
+		logger.info(tmpWord);
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref)))
 					break;
 				tmpWord = null;
