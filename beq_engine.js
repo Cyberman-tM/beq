@@ -89,6 +89,10 @@ module.exports.Engine = function(beqTalk)
 		break;
 		
 		case 'KWOTD':
+			
+			//TODO: complete rework, all words, not just phrases!
+			//wordtype selects array
+			
 			//TODO: KWOTD - random word/sentence, type of word as parameter
 			//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
 			beqTalk.result = new Array();
