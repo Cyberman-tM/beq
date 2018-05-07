@@ -42,8 +42,9 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	//Check if we are supposed to start yet
 	myTimings.forEach(function (item) 
 	{
-	   waHour = item.time.substr(0,2);
-	   waMinu = item.time.substr(3,2);
+	   var tmpTim = item.time.split(':');
+	   waHour = tmpTim[1];
+	   waMinu = tmpTim[2];
 	   if (waHour == myHour && waMinu == myMinute)
 	   {
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
