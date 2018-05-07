@@ -297,8 +297,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 			if (args[1] == null)
 				beqTalk.wordType1 = 'sen:rp';
+			else
+				beqTalk.wordType1 = args[1];
 			if (args[2] == null)
 				beqTalk.wordType2 = 'sen:sp';
+			else
+				beqTalk.wordType2 = args[2];
 			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
