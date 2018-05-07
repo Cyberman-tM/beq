@@ -114,7 +114,7 @@ module.exports.Engine = function(beqTalk)
 			else if (tmpWPref == 'n' || tmpWPref == 'v')
 			   useArray = module.exports.KDBJSon;
 
-			logger.info(useArray);
+			logger.info(useArray[7]);
 			
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
