@@ -118,9 +118,9 @@ module.exports.Engine = function(beqTalk)
 			if (tmpWPref == 'vs')
 			   tmpWPref = 'v:suff';
 			else (tmpWPref == 'vp')
-			   tmpWPref = 'v:pref');
+			   tmpWPref = 'v:pref';
 			else (tmpWPref == 'ns')
-			   tmpWPref = 'n:suff');
+			   tmpWPref = 'n:suff';
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
