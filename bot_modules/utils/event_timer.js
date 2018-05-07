@@ -13,6 +13,7 @@ var logger = require('winston');
 
 var eventTimer = null;
 var devTest = '';
+var noPulse = '';
 
 module.exports.versName = 'Event Timer';
 module.exports.versInt  = '0.01';
@@ -20,10 +21,14 @@ module.exports.versInt  = '0.01';
 module.exports.startEventTimer = function(beqEngine, bot)
 {
 	//Special variable to turn testing features on and off
+	devTest = false;
 	if (TDData.devBuild == "true")
 	   devTest = true;
-	else
-	   devTest = false;
+	
+	//Disable log-pulse, to keep the log clean?
+	noPulse = false;
+	if (TDData.noPulse == "true")
+	   noPulse = true;
 	
 	//Call it once a minute
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
@@ -35,7 +40,7 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	KWOTD.KWOTDInit(beqEngine, bot, TDData.KWOTDChan, devTest);
 	
 	//During tests, give a lifesign
-	if (devTest == true)
+	if (devTest == true && noPulse == false)
 	{
 	   var thisDate = new Date();
 	   var thisHour = thisDate.getHours();
