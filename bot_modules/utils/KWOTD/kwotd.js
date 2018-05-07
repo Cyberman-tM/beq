@@ -75,6 +75,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 sndMessage += 'English: ' + item.en + beqTalk.newline;		 
 	      });
 	      logger.info(sndMessage);
+		   logger.info(talkBeq);
 /*
 		myBot.sendMessage({
 			to: myChannel,
