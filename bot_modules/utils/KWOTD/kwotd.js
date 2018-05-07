@@ -72,34 +72,13 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 sndMessage += 'Deutsch: ' + item.de + beqTalk.newline;
 		 sndMessage += 'English: ' + item.en + beqTalk.newline;		 
 	      });
-	      //logger.info(sndMessage);
-
+	      logger.info(sndMessage);
+/*
 		myBot.sendMessage({
 			to: myChannel,
 			message: sndMessage
 		});
+		*/
 	   }
 	});	
 }
-
-/*
-Hints:
-KWOTD:
-
-Noun
-Verb
-Everything else
-
-Message:
-
-Aussehen:
-
-KWOTD
-This is your daily type-of-word (in klingon!)
-
-klingon-word
-english-word
-german-word
-
-notes/source
-*/
