@@ -35,7 +35,7 @@ module.exports.boredLines = JSON.stringify(
 
 //Introduction lines for KWOTD (timed event and regular eventually)
 //Something along "Here's a word, now learn it!" or so
-module.exports.KWOTDLines = JSON.strintify(
+module.exports.KWOTDLines = JSON.stringify(
 	[
 		"toH. yIbuDbe'choH. yIlaD, yIghoj! SIbI'Ha' vI'ol! :-)",
 		"latlh mu', latlh mu'tlhegh, SaH 'Iv?",
