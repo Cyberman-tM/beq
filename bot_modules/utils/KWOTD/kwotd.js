@@ -83,13 +83,12 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		if (item.hidden_notes != '')
 			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 	      });
-	      logger.info(sndMessage);
-/*
+//	      logger.info(sndMessage);
+
 		myBot.sendMessage({
 			to: myChannel,
 			message: sndMessage
-		});
-		*/
+		});		
 	   }
 	});	
 }
