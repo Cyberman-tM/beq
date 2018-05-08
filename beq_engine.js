@@ -105,11 +105,11 @@ module.exports.Engine = function(beqTalk)
 			
 			if (tmpWPref == 'sen')
 			   useArray = module.exports.KDBPHJSon;
-			else if (tmpWPref == 'vs')
+			else if (tmpWPref == 'vs' || beqTalk.wordType1 == 'v:suff')
 			   useArray = module.exports.KDBVSJSon;
-			else if (tmpWPref == 'vp')
+			else if (tmpWPref == 'vp' || beqTalk.wordType1 == 'v:pref')
 			   useArray = module.exports.KDBVPJSon;
-			else if (tmpWPref == 'ns')
+			else if (tmpWPref == 'ns' || beqTalk.wordType1 == 'n:suff')
 			   useArray = module.exports.KDBNSJSon;
 			else if (tmpWPref == 'n' || tmpWPref == 'v')
 			   useArray = module.exports.KDBJSon;
