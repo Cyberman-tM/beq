@@ -8,6 +8,7 @@
 
 var boQwITranslate = require('./../boQwI_translate.js');
 var KWOTDTimings = require('./kwotd_timings.js');
+var beq = require ('./../../personality/beq_peson.js');
 var myTimings   = null;
 var mybeqEngine = null;
 var myBot       = null;
@@ -62,6 +63,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      {
 	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
 		 sndMessage += 'beq edition' + beqTalk.newline + beqTalk.newline;
+		 sndMessage += beq.getLine(3, true, true, beqTalk.newline);
 		 var wordType = '';
 		 //TODO: get language somehow?
 		 if (item.type.startsWith('sen'))
@@ -72,7 +74,14 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		 sndMessage += 'Type of word: ' + wordType + beqTalk.newline;
 		 sndMessage += 'tlhIngan: ' + item.tlh + beqTalk.newline;
 		 sndMessage += 'Deutsch: ' + item.de + beqTalk.newline;
-		 sndMessage += 'English: ' + item.en + beqTalk.newline;		 
+		 sndMessage += 'English: ' + item.en + beqTalk.newline;
+		 sndMessage += beqTalk.newline;
+		if (item.notes != '')
+			sndMessage += 'Notes: ' + item.notes + beqTalk.newline;
+		if (item.notes_de != '')
+			sndMessage += 'Notes de: ' + item.notes_de + beqTalk.newline;
+		if (item.hidden_notes != '')
+			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 	      });
 	      logger.info(sndMessage);
 		   logger.info(talkBeq);
