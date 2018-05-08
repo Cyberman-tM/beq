@@ -11,14 +11,10 @@
 
 module.exports.KWOTDTimings = JSON.stringify(
 [
-   { "time": "08:00",
-     "type": "n" },
-   { "time": "18:22", "type": "n" },
-   { "time": "18:23", "type": "v" },
-   { "time": "18:24", "type": "v:pref" },
-   { "time": "18:25", "type": "n:suff" },
-  { "time": "16:00",
-     "type": "v" },
-  { "time": "24:00",
-     "type": "!n,v" },
+   { "time": "6:1", "type": "n" },
+   { "time": "8:1", "type": "v" },
+   { "time": "10:1", "type": "v:pref" },
+   { "time": "12:1", "type": "v:suff" },
+   { "time": "14:1", "type": "n:suff" },
+   { "time": "20:1", "type": "sen" },
 ]);
