@@ -41,6 +41,8 @@ module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, ital
 		myLines = JSON.parse(beqLines.idleLines);
 	else if (lineType == 2)
 		myLines = JSON.parse(beqLines.boredLines);
+	else if (lineType == 3)
+		myLines = JSON.parse(beqLines.KWOTDLines);
 	
 	if (myLines.length == 0)
 		oneLine = "";

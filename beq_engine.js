@@ -50,7 +50,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
-
+//Testing
+var logger = require('winston');
 var kTranscode = require('./bot_modules/utils/recode.js');
 
 module.exports.Engine = function(beqTalk)
@@ -88,24 +89,46 @@ module.exports.Engine = function(beqTalk)
 		   beqTalk.message = tmpTxt;
 		break;
 		
-		case 'KWOTD':
+		case 'KWOTD':			
 			//TODO: KWOTD - random word/sentence, type of word as parameter
 			//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
 			beqTalk.result = new Array();
 			
 			//Default-Wordtypes?
-			if (beqTalk.wordType1 == null || beqTalk.wordType1 == 'n')
-				beqTalk.wordType1 = 'sen:rp';
-			if (beqTalk.wordType2 == null || beqTalk.wordType2 == 'n')
-				beqTalk.wordType2 = 'sen:sp';
+			if (beqTalk.wordType1 == null)
+			   beqTalk.wordType1 = 'sen:rp';
 			
-			var tmpWord = "";
+			//We have to decide which array we're going to use
+			var tmpWPref = beqTalk.wordType1.split(':')[0];
+			var tmpWord = null;
+			var useArray = null;
+			
+			if (tmpWPref == 'sen')
+			   useArray = module.exports.KDBPHJSon;
+			else if (tmpWPref == 'vs' || beqTalk.wordType1 == 'v:suff')
+			   useArray = module.exports.KDBVSJSon;
+			else if (tmpWPref == 'vp' || beqTalk.wordType1 == 'v:pref')
+			   useArray = module.exports.KDBVPJSon;
+			else if (tmpWPref == 'ns' || beqTalk.wordType1 == 'n:suff')
+			   useArray = module.exports.KDBNSJSon;
+			else if (tmpWPref == 'n' || tmpWPref == 'v')
+			   useArray = module.exports.KDBJSon;
+			
+			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
+			if (tmpWPref == 'vs')
+			   tmpWPref = 'v:suff';
+			else if (tmpWPref == 'vp')
+			   tmpWPref = 'v:pref';
+			else if (tmpWPref == 'ns')
+			   tmpWPref = 'n:suff';
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
-			for (i = 0; i < module.exports.KDBPHJSon.length; i++)			
+			for (i = 0; i < useArray.length; i++)			
 			{
-				tmpWord = module.exports.KDBPHJSon[Math.floor(Math.random() * (module.exports.KDBPHJSon.length + 1))];
-				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type == beqTalk.wordType2))
+				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
+				//The second part may cause problems with v equaling v:pref and such
+				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref))
+				                    && isHyp(tmpWord.type) == false)
 					break;
 				tmpWord = null;
 			}
@@ -133,19 +156,7 @@ module.exports.Engine = function(beqTalk)
 									   "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
 			}
-
 			break;
-			
-		case "yIcha'":
-			switch(beqTalk.wordType1)
-			{
-				case 'v:pref':
-					beqTalk.result = module.exports.KDBVPJSon;
-					beqTalk.gotResult = true;
-				break;
-			}
-		break;
-		
 		case "recode":
 		  var tmpText = '';
 		  var encoding = '';
@@ -348,7 +359,7 @@ module.exports.beqTalkDef = JSON.stringify(
 module.exports.createTranslation = function(beqTalk)
 {
 	if (beqTalk.gotResult == false)
-		return "Nothing found.";
+		return "Nothing found." + beqTalk.newline;
 	
 	var sndMessage = '';
 	var infTips = "";
@@ -407,10 +418,7 @@ module.exports.createTranslation = function(beqTalk)
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			if (beqTalk.command == "mugh")
-				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-			else if (beqTalk.command == "KWOTD")
-				sndMessage += getSType(item.type, listLang) + ':' + beqTalk.newline;
+			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 			
 			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;

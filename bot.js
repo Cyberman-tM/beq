@@ -7,6 +7,7 @@ var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
+var evTimer = require('./bot_modules/utils/event_timer.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -55,12 +56,15 @@ bot.on('ready', function (evt)
 	logger.info('Connected');
 	logger.info('Logged in as: ');
 	logger.info(bot.username + ' - (' + bot.id + ')');
-	logger.info('Version:' + versInt);	
+	logger.info('Version:' + versInt);
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
+	
+	//Timer runs once a minute
+	evTimer.startEventTimer(beq, bot);
 }
 );
 
@@ -165,7 +169,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				 + 'setFuzzy on/off\n'
 				 + 'showMySettings\n'
 				 + 'setDefaultTLang de/tlh/en\n'				 
-				 + 'KWOTD two parameters, both word type (boQwI\'), only "sen:" is used for return!\n'
+				 + 'KWOTD one parameter: word type as in boQwI\'\n'
 				 + 'n2w, w2n Number to Word, Word to Number: translates for example 123 into wa\'vetlh cha\'maH wej and vice versa\n'
 				 + '\n'
 //				 + '\n'
@@ -293,8 +297,8 @@ bot.on('message', function (user, userID, channelID, message, evt)
 
 			if (args[1] == null)
 				beqTalk.wordType1 = 'sen:rp';
-			if (args[2] == null)
-				beqTalk.wordType2 = 'sen:sp';
+			else
+				beqTalk.wordType1 = args[1];
 			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
