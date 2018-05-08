@@ -128,7 +128,7 @@ module.exports.Engine = function(beqTalk)
 				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
 				//The second part may cause problems with v equaling v:pref and such
 				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref))
-				                    && isHyp(item.type) == false)
+				                    && isHyp(tmpWord.type) == false)
 					break;
 				tmpWord = null;
 			}
