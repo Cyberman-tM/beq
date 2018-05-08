@@ -8,7 +8,7 @@
 
 var boQwITranslate = require('./../boQwI_translate.js');
 var KWOTDTimings = require('./kwotd_timings.js');
-var beq = require ('./../../personality/beq_peson.js');
+var beq = require ('./../../personality/beq_person.js');
 var myTimings   = null;
 var mybeqEngine = null;
 var myBot       = null;
