@@ -61,9 +61,9 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
  	      //beqTalk.result.forEach(function (item)
 	      talkBeq.result.forEach(function (item)
 	      {
-	         sndMessage  = 'KWOTD - Klingon Word Of The Day' + beqTalk.newline;
-		 sndMessage += 'beq edition' + beqTalk.newline;
+	         sndMessage  = beqTalk.newline + '**KWOTD** - Klingon Word Of The Day - *beq edition*' + beqTalk.newline;
 		 sndMessage += beq.getLine(3, true, true, beqTalk.newline) + beqTalk.newline;
+
 		 var wordType = '';
 		 //TODO: get language somehow?
 		 if (item.type.startsWith('sen'))
@@ -73,8 +73,8 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		      
 		 sndMessage += 'Type of word: ' + wordType + beqTalk.newline;
 		 sndMessage += 'tlhIngan: ' + item.tlh + beqTalk.newline;
-		 sndMessage += 'Deutsch: ' + item.de + beqTalk.newline;
 		 sndMessage += 'English: ' + item.en + beqTalk.newline;
+		 sndMessage += 'Deutsch: ' + item.de + beqTalk.newline;
 		 sndMessage += beqTalk.newline;
 		if (item.notes != '')
 			sndMessage += 'Notes: ' + item.notes + beqTalk.newline;
