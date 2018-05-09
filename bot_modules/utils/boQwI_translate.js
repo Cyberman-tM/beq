@@ -106,8 +106,10 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Replacement proverb';
 		else if (wTypeS == 'sp')
 			tmpRet = 'Secret proverb';
+		else if (wTypeS == 'phr')
+			tmpRet = 'Phrase';
 		else
-			wTypeL = 'unsupported yet';
+			tmpRet = wTypeS;
 	}
 	else if (tranLang == 'de')
 	{
@@ -115,8 +117,10 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Ersatzsprichwort';
 		else if (wTypeS == 'sp')
 			tmpRet = 'Geheimnissprichwort';
+		else if (wTypeS == 'phr')
+			tmpRet = 'Phrase';
 		else
-			wTypeL = 'unsupported yet';
+			tmpRet = wTypeS;
 	}
 
 	return tmpRet;
