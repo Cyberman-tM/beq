@@ -103,7 +103,7 @@ module.exports.Engine = function(beqTalk)
 
 			//Multiple categories can be combined via |
 			var allCat = beqTalk.wordType1.split('|');
-			allCat.foreach(function(itemCat)
+			allCat.forEach(function(itemCat)
 			{			
 			//We have to decide which array we're going to use
 			var tmpWPref = itemCat.split(':')[0];
