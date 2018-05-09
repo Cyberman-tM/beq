@@ -3,6 +3,7 @@ var logger = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');
 var extCmds = require('./bot_modules/external/ext_commands.js');
+var cmdList = require('./bot_modules/cmdlist.js');
 var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
@@ -159,35 +160,9 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
-			sndMessage = 'ping - simple response test, replies "pong"\n'
-				 + 'tlhIngan - replies "maH!"\n'
-				 + 'yIngu\' - Name and version of the bot & database version\n'
-				 + 'CMDLIST - this here\n'
-				 + 'Le\'rat\n'
-				 + '\n'
-				 + 'setTLang - set your translation language to the argument, i.e. "setTLang en" for english translations\n'
-				 + 'setFuzzy on/off\n'
-				 + 'showMySettings\n'
-				 + 'setDefaultTLang de/tlh/en\n'				 
-				 + 'KWOTD one parameter: word type as in boQwI\'\n'
-				 + 'n2w, w2n Number to Word, Word to Number: translates for example 123 into wa\'vetlh cha\'maH wej and vice versa\n'
-				 + '\n'
-//				 + '\n'
-//				 + ''
-//				 + '\n'				 
-				 + 'mugh - translation lookup, uses the boQwI\' database to find the search item.\n'
-				 + '       Multiple words have to be separated by a _!\n'
-				 + '       Example: !mugh (tlh|de|en) (klingon, english or german word) [tlh,de,en] [fuzzy] [case] [startRes=nn] [type=(n,v,adv,sen,ques,...)]\n'
-				 + '       the first parameter has to be the language the word you want translated is in. Mandatory\n'
-				 + '       the second parameter is the word, or phrase, you\'re looking for, also mandatory\n'
-				 + '       [tlh,de,en] - the language you want the translation to be in. If none is supplied, the default (yours, if defined) is used. If uses, must be the third parameter\n'
-				 + '       the rest of the parameters are optional and be used in any order or not at all\n'				 
-				 + '       [fuzzy] - normally only exact matches are returned. If you want to find anything that contains the term, add the keyword fuzzy\n'
-				 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon\n'
-				 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,\n'
-				 + '                       add this parameter with the number or results you want to skip\n'
-				 + '       [type=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'\n';
-			break;
+			sndMessage = cmdList.list;
+			sndMessage = sndMessage.replace(/<BR>/g, beqTalk.newline);
+		break;
 
 		case 'yIngu\'':
 			sndMessage  = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
