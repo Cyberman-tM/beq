@@ -160,7 +160,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 				
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
-			sndMessage = cmdList.list;
+			sndMessage = cmdList.cmdlist;
 			sndMessage = sndMessage.replace(/<BR>/g, beqTalk.newline);
 		break;
 
