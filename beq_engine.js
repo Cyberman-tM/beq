@@ -127,14 +127,12 @@ module.exports.Engine = function(beqTalk)
 			else if (tmpWPref == 'ns')
 			   tmpWPref = 'n:suff';
 			});  //allCat forEach
-
-			//We look in KDBPHJSon - which only contains phrases/sentences
+			
 			for (i = 0; i < useArray.length; i++)			
 			{
-				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
-				//The second part may cause problems with v equaling v:pref and such
-				if (tmpWord != null && (tmpWord.type == beqTalk.wordType1 || tmpWord.type.startsWith(tmpWPref))
-				                    && isHyp(tmpWord.type) == false)
+				//We already preselected the array, so can we go wrong by taking any entry?
+				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
+				if (tmpWord != null && isHyp(tmpWord.type) == false)
 					break;
 				tmpWord = null;
 			}
