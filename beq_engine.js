@@ -97,22 +97,27 @@ module.exports.Engine = function(beqTalk)
 			//Default-Wordtypes?
 			if (beqTalk.wordType1 == null)
 			   beqTalk.wordType1 = 'sen:rp';
-			
-			//We have to decide which array we're going to use
-			var tmpWPref = beqTalk.wordType1.split(':')[0];
+
 			var tmpWord = null;
 			var useArray = null;
+
+			//Multiple categories can be combined via |
+			var allCat = beqTalk.wordType1.split('|');
+			allCat.foreach(function(itemCat)
+			{			
+			//We have to decide which array we're going to use
+			var tmpWPref = itemCat.split(':')[0];
 			
 			if (tmpWPref == 'sen')
-			   useArray = module.exports.KDBPHJSon;
-			else if (tmpWPref == 'vs' || beqTalk.wordType1 == 'v:suff')
-			   useArray = module.exports.KDBVSJSon;
-			else if (tmpWPref == 'vp' || beqTalk.wordType1 == 'v:pref')
-			   useArray = module.exports.KDBVPJSon;
-			else if (tmpWPref == 'ns' || beqTalk.wordType1 == 'n:suff')
-			   useArray = module.exports.KDBNSJSon;
+			   useArray = useArray.concat(module.exports.KDBPHJSon);
+			else if (tmpWPref == 'vs' || itemCat == 'v:suff')
+			   useArray = useArray.concat(module.exports.KDBVSJSon);
+			else if (tmpWPref == 'vp' || itemCat == 'v:pref')
+			   useArray = useArray.concat(module.exports.KDBVPJSon);
+			else if (tmpWPref == 'ns' || itemCat == 'n:suff')
+			   useArray = useArray.concat(module.exports.KDBNSJSon);
 			else if (tmpWPref == 'n' || tmpWPref == 'v')
-			   useArray = module.exports.KDBJSon;
+			   useArray = useArray.concat(module.exports.KDBJSon);
 			
 			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
 			if (tmpWPref == 'vs')
@@ -121,6 +126,7 @@ module.exports.Engine = function(beqTalk)
 			   tmpWPref = 'v:pref';
 			else if (tmpWPref == 'ns')
 			   tmpWPref = 'n:suff';
+			});  //allCat forEach
 
 			//We look in KDBPHJSon - which only contains phrases/sentences
 			for (i = 0; i < useArray.length; i++)			
