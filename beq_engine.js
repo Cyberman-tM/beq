@@ -99,7 +99,7 @@ module.exports.Engine = function(beqTalk)
 			   beqTalk.wordType1 = 'sen:rp';
 
 			var tmpWord = null;
-			var useArray = null;
+			var useArray = new Array();
 
 			//Multiple categories can be combined via |
 			var allCat = beqTalk.wordType1.split('|');
