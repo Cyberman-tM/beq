@@ -8,9 +8,12 @@ var request = require('request');
 //For testing
 var logger = require('winston');
 
+//We have partial asynchronous behaviour, we need a global variable to check progress
+var weatherResponse = null;
 module.exports.getWeather = function(cityIDs)
 {	
-	var weatherResponse = null;
+	//Initialize for this run
+	weatherResponse = null;
 	var weatherErr = null;
 	var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=cityID&appid=_APPID_';
 	
@@ -29,7 +32,7 @@ module.exports.getWeather = function(cityIDs)
 	});	
 	
 	//Set body to ANY value after 1 second
-	setTimeout(function(weatherResponse, logger){logger.info("test!"); if (weatherResponse == null) weatherResponse="nope";}, 1000);
+	setTimeout(function(){logger.info("test!"); if (weatherResponse == null) weatherResponse="nope";}, 1000);
 	while(weatherResponse == null)
 	{
 		//Yup, we're blocking the whole bot until we get a result...
