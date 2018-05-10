@@ -13,6 +13,9 @@ module.exports.getWeather = function(cityIDs)
 	var weatherResponse = null;
 	var weatherErr = null;
 	var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=cityID&appid=_APPID_';
+	
+	logger.info("wetter");
+	
 	weatherURL = weatherURL.replace('cityID', cityIDs);
 	weatherURL = weatherURL.replace('_APPID', TDData.openWeatherMap);
 	
