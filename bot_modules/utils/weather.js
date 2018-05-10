@@ -4,7 +4,7 @@
 */
 
 var TDData  = require('./../external/discord_data.js');
-var request = require(request);
+var request = require('request');
 //For testing
 var logger = require('winston');
 
