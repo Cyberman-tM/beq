@@ -12,6 +12,8 @@ var logger = require('winston');
 var weatherResponse = null;
 module.exports.getWeather = function(cityIDs)
 {	
+	setTimeout(function(){logger.info("1st");},1000);
+	
 	//Initialize for this run
 	weatherResponse = null;
 	var weatherErr = null;
