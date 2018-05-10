@@ -29,7 +29,7 @@ module.exports.getWeather = function(cityIDs)
 	});	
 	
 	//Set body to ANY value after 1 second
-	setTimeout(function(body){if (body == null) body="nope";}, 1000);
+	setTimeout(function(body, logger){logger.info("test!"); if (body == null) body="nope";}, 1000);
 	while(body == null)
 	{
 		//Yup, we're blocking the whole bot until we get a result...
