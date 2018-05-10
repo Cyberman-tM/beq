@@ -3,8 +3,8 @@
    
 */
 
-var TDData   = require('./../external/discord_data.js');
-
+var TDData  = require('./../external/discord_data.js');
+var request = requite(request);
 //For testing
 var logger = require('winston');
 
