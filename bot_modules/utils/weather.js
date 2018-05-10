@@ -15,10 +15,11 @@ module.exports.getWeather = function(cityIDs)
 	var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=cityID&appid=_APPID_';
 	
 	logger.info("wetter");
-	logger.info(weatherURL);
-	
+
 	weatherURL = weatherURL.replace('cityID', cityIDs);
-	weatherURL = weatherURL.replace('_APPID', TDData.openWeatherMap);
+	weatherURL = weatherURL.replace('_APPID_', TDData.openWeatherMap);
+	
+	logger.info(weatherURL);
 	
 	request(weatherURL, {json: true}, (err, res, body) => 
 	{
