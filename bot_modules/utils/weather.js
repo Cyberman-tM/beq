@@ -2,7 +2,7 @@
    Weather forecast, translated into klingon
    
 */
-var request = require('request');
+
 var TDData   = require('./../external/discord_data.js');
 
 //For testing
@@ -26,7 +26,14 @@ module.exports.getWeather = function(cityIDs)
 		weatherErr = err;
 		weatherResponse = body;
 		logger.info(body);
-	});
+	});	
+	
+	//Set body to ANY value after 1 second
+	setTimeout(function(body){if (body == null) body="nope";}, 1000);
+	while(body == null)
+	{
+		//Yup, we're blocking the whole bot until we get a result...
+	}
 	
 	logger.info(weatherErr);
 	logger.info(weatherResponse);

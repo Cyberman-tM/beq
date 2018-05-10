@@ -7,7 +7,6 @@
     "discord.io": "github:woor/discord.io#gateway_v6",
     "discord.js": "^11.3.2",
     "dom-parser": "^0.1.5",
-    "request": "^2.85.0",
     "restify": "^6.4.0",
     "winston": "^2.4.2",
     "xmldoc": "^1.1.0"
