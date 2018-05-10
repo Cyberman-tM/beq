@@ -15,7 +15,7 @@ var myBot       = null;
 var myChannel   = null;
 var myTestFlag  = false;
 
-//Testing
+//For testing
 var logger = require('winston');
 
 module.exports.KWOTDInit = function(beqEngine, bot, mesChan, devTest)

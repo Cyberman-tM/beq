@@ -14,6 +14,7 @@ var tmpbTChan = '';     //Channel for beqTalk - system messages should go there
 var tmpdevBuild = '';   //Flag that tells us if this bot runs as developer toy or productive assistant
 var tmpKWOTDChan = '';  //Which channel should we post the KWOTD message to?
 var tmpnoPulse   = '';  //Disable Event-Timer pulse during testing
+var tmpWeatherMap = ''; //ID for openWeatherMap
 
 
 var useHeroku = true;   //Change this to false if you don't use Heroku, so we won't try to get the Heroku data
@@ -31,6 +32,8 @@ if (useHeroku === true)
 	
 	tmpdevBuild = process.env.devBuild;        //Dev build, enable special checks
 	tmpnoPulse  = process.env.noPulse;         //Don't write into the log once per event timer
+	
+	tmpWeatherMap = process.env.openWeatherMap;
 }
 else
 {
@@ -45,6 +48,6 @@ module.exports.noPulse = tmpnoPulse;
 module.exports.clipChan = tmpclipChan;
 module.exports.bTChan = tmpbTChan;
 module.exports.KWOTDChan = tmpKWOTDChan;
-
+module.exports.openWeatherMap = tmpWeatherMap;
 
 

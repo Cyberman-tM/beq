@@ -9,6 +9,7 @@ var games = require('./bot_modules/games/games.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 var evTimer = require('./bot_modules/utils/event_timer.js');
+var weather = require('./bot_modules/utils/weather.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -129,6 +130,14 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		
 		switch (cmd)
 		{
+		//This is only usable with devBeq, not the production version!
+		case 'specTest':
+		   if (DData.devBuild == "true")
+		   {
+			   weather.getWeather(3249068);
+		   }		   
+		break;
+			
 		case 'testing':
 		   //sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
 		   if (args[1] == 'on')
