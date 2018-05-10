@@ -18,13 +18,14 @@ module.exports.getWeather = function(cityIDs)
 
 	weatherURL = weatherURL.replace('cityID', cityIDs);
 	weatherURL = weatherURL.replace('_APPID_', TDData.openWeatherMap);
-	
 	logger.info(weatherURL);
+	
 	
 	request(weatherURL, {json: true}, (err, res, body) => 
 	{
 		weatherErr = err;
 		weatherResponse = body;
+		logger.info(body);
 	});
 	
 	logger.info(weatherErr);
