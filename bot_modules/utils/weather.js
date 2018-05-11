@@ -36,11 +36,7 @@ module.exports.getWeather = function(cityIDs)
 	
 	//Set body to ANY value after 1 second
 	setTimeout(function(){logger.info("test!"); if (weatherResponse == null) weatherResponse="nope";}, 1000);
-	while(weatherResponse == null)
-	{
-		//logger.info(weatherResponse);
-		//Yup, we're blocking the whole bot until we get a result...
-	}
+
 	logger.info('end');
 	logger.info(weatherErr);
 	logger.info(weatherResponse);
