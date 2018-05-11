@@ -31,14 +31,14 @@ module.exports.getWeather = function(cityIDs)
 		weatherErr = err;
 		weatherResponse = body;
 		logger.info(body);
+		logger.info("GotData");
 	});	
 	
 	//Set body to ANY value after 1 second
 	setTimeout(function(){logger.info("test!"); if (weatherResponse == null) weatherResponse="nope";}, 1000);
 	while(weatherResponse == null)
 	{
-		var x = 0;
-		logger.info(++x);
+		logger.info(weatherResponse);
 		//Yup, we're blocking the whole bot until we get a result...
 	}
 	logger.info('end');
