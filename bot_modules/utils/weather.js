@@ -12,8 +12,7 @@ var logger = require('winston');
 var weatherResponse = null;
 module.exports.getWeather = function(cityIDs)
 {	
-	setTimeout(function(){logger.info("1st");},1000);
-	
+
 	//Initialize for this run
 	weatherResponse = null;
 	var weatherErr = null;
@@ -25,18 +24,15 @@ module.exports.getWeather = function(cityIDs)
 	weatherURL = weatherURL.replace('_APPID_', TDData.openWeatherMap);
 	logger.info(weatherURL);
 	
-	
+	async () => { await
 	request(weatherURL, {json: true}, (err, res, body) => 
 	{
 		weatherErr = err;
 		weatherResponse = body;
 		logger.info(body);
 		logger.info("GotData");
-	});	
+	});};
 	
-	//Set body to ANY value after 1 second
-	setTimeout(function(){logger.info("test!"); if (weatherResponse == null) weatherResponse="nope";}, 1000);
-
 	logger.info('end');
 	logger.info(weatherErr);
 	logger.info(weatherResponse);
