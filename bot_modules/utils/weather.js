@@ -39,7 +39,7 @@ module.exports.getWeather = function(cityIDs)
 	{
 		//Yup, we're blocking the whole bot until we get a result...
 	}
-	
+	logger.info('end');
 	logger.info(weatherErr);
 	logger.info(weatherResponse);
 	
