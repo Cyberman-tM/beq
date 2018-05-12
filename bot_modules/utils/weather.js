@@ -22,9 +22,9 @@ module.exports.getWeather = function(cityIDs)
 	weatherURL = weatherURL.replace('cityID', cityIDs);
 	weatherURL = weatherURL.replace('_APPID_', TDData.openWeatherMap);
 	logger.info(weatherURL);
-	
-	async function readWeather()
-      	{ var resp = await request(weatherURL, function (err, resp, body)
+	/*
+	const response = await fetch('https://api.com/values/1');
+	const resp = await request(weatherURL, function (err, resp, body)
 			{	weatherErr = err;
 				weatherResponse = body;
 				logger.info(body);
@@ -32,10 +32,19 @@ module.exports.getWeather = function(cityIDs)
 				return body;
 			});
 	logger.info(resp);
-	return resp;
-	};
 	
 	readWeather();
+	*/
+	
+	logger.info("x");
+	const request = async () => {
+    const response = await fetch('https://api.com/values/1');
+    const json = await response.json();
+    logger.info(json);
+}
+
+request();
+logger.info("y");
 	
 	logger.info('end');
 	logger.info(weatherErr);
