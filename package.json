@@ -5,6 +5,7 @@
   "author": "Rejutka Lupex",
   "dependencies": {
     "discord.io": "^2.5.3",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "xmldoc": "^1.1.0"
   }
 }

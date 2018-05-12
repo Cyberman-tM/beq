@@ -50,9 +50,12 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
+var kTranscode = require('./bot_modules/utils/recode.js');
+var fs = require('fs');
+var xmldoc = require('xmldoc');
+
 //Testing
 var logger = require('winston');
-var kTranscode = require('./bot_modules/utils/recode.js');
 
 module.exports.Engine = function(beqTalk)
 {
@@ -589,8 +592,6 @@ function getSType(wType, tranLang)
 
 function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 {
-	var fs = require('fs');
-	var xmldoc = require('xmldoc');
 	//Read boQwI' xml files to build up internal JSON database
 	var xmlFiles = fs.readdirSync('./KDB/');
 	var xml = '';
