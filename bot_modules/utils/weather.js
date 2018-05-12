@@ -35,6 +35,7 @@ module.exports.getWeather = function(cityIDs)
 	return resp;
 	};
 	
+	readWeather();
 	
 	logger.info('end');
 	logger.info(weatherErr);
