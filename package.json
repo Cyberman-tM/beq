@@ -4,7 +4,7 @@
   "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
-    "discord.io": "^2.5.3",
+    "discord.io": "github:Woor/discord.io#gateway_v6",
     "discord.io-gateway6": "^2.5.3",
     "discord.js": "^11.3.2",
     "dom-parser": "^0.1.5",
