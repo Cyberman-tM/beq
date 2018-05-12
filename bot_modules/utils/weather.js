@@ -30,6 +30,7 @@ module.exports.getWeather = function(cityIDs)
 		weatherResponse = body;
 		logger.info(body);
 		logger.info("GotData");
+		return body;
 	});
 	logger.info(resp);
 	};
