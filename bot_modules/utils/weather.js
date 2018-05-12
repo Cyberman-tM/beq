@@ -24,14 +24,13 @@ module.exports.getWeather = function(cityIDs)
 	logger.info(weatherURL);
 	
 	async function readWeather()
-      	{ var resp = await request(weatherURL, {json: true}, (err, res, body) => 
-	{
-		weatherErr = err;
-		weatherResponse = body;
-		logger.info(body);
-		logger.info("GotData");
-		return body;
-	});
+      	{ var resp = await request(weatherURL, function (err, resp, body)
+			{	weatherErr = err;
+				weatherResponse = body;
+				logger.info(body);
+				logger.info("GotData");
+				return body;
+			});
 	logger.info(resp);
 	};
 	
