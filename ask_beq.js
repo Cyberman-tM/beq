@@ -126,8 +126,8 @@ function respond(req, res, next) {
 
 var server = restify.createServer();
 
-server.get('ask_beq', respond);
-server.head('ask_beq', respond);
+server.get('/ask_beq', respond);
+server.head('/ask_beq', respond);
 
 server.listen(process.env.PORT || 5000, function()
 {
