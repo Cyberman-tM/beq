@@ -5,6 +5,7 @@
   "author": "Rejutka Lupex",
   "dependencies": {
     "discord.io": "^2.5.3",
+    "discord.js": "^11.3.2",
     "dom-parser": "^0.1.5",
     "fs": "0.0.1-security",
     "restify": "^7.1.1",
