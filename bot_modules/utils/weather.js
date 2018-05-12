@@ -4,7 +4,7 @@
 */
 
 var TDData  = require('./../external/discord_data.js');
-var request = require('request');
+var request = require('request-promise');
 var logger = require('winston');
 
 //We have partial asynchronous behaviour, we need a global variable to check progress
