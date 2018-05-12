@@ -4,7 +4,7 @@
 */
 
 var TDData  = require('./../external/discord_data.js');
-var request = require('request');
+var request = require('request-promise');
 //For testing
 var logger = require('winston');
 
@@ -24,8 +24,8 @@ module.exports.getWeather = function(cityIDs)
 	weatherURL = weatherURL.replace('_APPID_', TDData.openWeatherMap);
 	logger.info(weatherURL);
 	
-	async () => { await
-	request(weatherURL, {json: true}, (err, res, body) => 
+	async function readWeather()
+      	{ var resp = await request(weatherURL, {json: true}, (err, res, body) => 
 	{
 		weatherErr = err;
 		weatherResponse = body;
@@ -33,6 +33,7 @@ module.exports.getWeather = function(cityIDs)
 		logger.info("GotData");
 	});};
 	
+	logger.info(resp);
 	logger.info('end');
 	logger.info(weatherErr);
 	logger.info(weatherResponse);
