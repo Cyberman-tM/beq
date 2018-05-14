@@ -37,7 +37,7 @@ module.exports.boredLines = JSON.stringify(
 //Something along "Here's a word, now learn it!" or so
 module.exports.KWOTDLines = JSON.stringify(
 	[
-		"toH. yIbuDbe'choH. yIlaD, yIghoj! SIbI'Ha' vI'ol! :-)",
+		"toH. yIbuDQo'choH. yIlaD, yIghoj! SIbI'Ha' vI'ol! :-)",
 		"latlh mu', latlh mu'tlhegh, SaH 'Iv?",
 		"yIghoj!",
 		"yIlaD!",
