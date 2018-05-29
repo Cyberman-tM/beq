@@ -20,7 +20,10 @@ function respond(req, res, next) {
   parAr = url.parse(URLParam, true).query;
 
   //Common parameters
-  beqTalk.newline = '<br />';
+  if (parAr.newLineText == undefined)
+  	beqTalk.newline = '<br />';
+  else
+	beqTalk.newline = '\n';
   beqTalk.limitRes = 999;           //No reason for a limit, is there?
   
   beqTalk.transLang = parAr.transLang;
