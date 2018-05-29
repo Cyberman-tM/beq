@@ -115,7 +115,10 @@ function respond(req, res, next) {
 	if (parAr.getJSON != undefined)
 		retMes = talkBeq;
 	else
-		retMes = beq.createTranslation(talkBeq);
+	   if (parAr.getList != undefined)
+		  retMes = beq.createTranslationList(talkBeq);
+	   else
+	  	  retMes = beq.createTranslation(talkBeq);
 	
 	res.send(retMes);
   }
