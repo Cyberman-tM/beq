@@ -483,7 +483,9 @@ module.exports.createTranslationList = function(beqTalk)
 		listLang = 'en';
 
 	beqTalk.result.forEach(function (item)
+			       {
 		sndMessage += item.tlh + '\t' + getWType(item.type, listLang) + ': ' + item.en + beqTalk.newline;
+	});
 
 		return sndMessage;
 }
