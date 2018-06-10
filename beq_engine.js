@@ -50,9 +50,12 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
+var kTranscode = require('./bot_modules/utils/recode.js');
+var fs = require('fs');
+var xmldoc = require('xmldoc');
+
 //Testing
 var logger = require('winston');
-var kTranscode = require('./bot_modules/utils/recode.js');
 
 module.exports.Engine = function(beqTalk)
 {
@@ -155,9 +158,9 @@ module.exports.Engine = function(beqTalk)
 									   "slang": isSlang,
 									   "deriv": isDeriv,
 									   
-									   "notes":tmpWord.notes,
-									   "notes_de":tmpWord.notes_de,
-									   "hidden_notes":tmpWord.hidden_notes});
+									   "notes":tmpWord.notes.replace("-nolink", ""),
+									   "notes_de":tmpWord.notes_de.replace("-nolink", ""),
+									   "hidden_notes":tmpWord.hidden_notes.replace("-nolink", "")});
 				beqTalk.gotResult = true;
 			}
 			break;
@@ -467,6 +470,26 @@ module.exports.createTranslation = function(beqTalk)
 	return sndMessage;
 }
 
+module.exports.createTranslationList = function(beqTalk)
+{
+	if (beqTalk.gotResult == false)
+		return "Nothing found." + beqTalk.newline;
+	
+	var sndMessage = '';
+	
+	//We need either DE or EN as language for the word types
+	var listLang = beqTalk.transLang;
+	if (listLang == 'tlh')
+		listLang = 'en';
+
+	beqTalk.result.forEach(function (item)
+			       {
+		sndMessage += item.tlh + '\t' + getWType(item.type, listLang) + ': ' + item.en + beqTalk.newline;
+	});
+
+		return sndMessage;
+}
+
 //Check if the word is actually a derived definition
 function isDerived(wType)
 {
@@ -589,8 +612,6 @@ function getSType(wType, tranLang)
 
 function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 {
-	var fs = require('fs');
-	var xmldoc = require('xmldoc');
 	//Read boQwI' xml files to build up internal JSON database
 	var xmlFiles = fs.readdirSync('./KDB/');
 	var xml = '';
