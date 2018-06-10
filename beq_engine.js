@@ -158,9 +158,9 @@ module.exports.Engine = function(beqTalk)
 									   "slang": isSlang,
 									   "deriv": isDeriv,
 									   
-									   "notes":tmpWord.notes.replace(",nolink", ""),
-									   "notes_de":tmpWord.notes_de.replace(",nolink", ""),
-									   "hidden_notes":tmpWord.hidden_notes.replace(",nolink", "")});
+									   "notes":tmpWord.notes,
+									   "notes_de":tmpWord.notes_de,
+									   "hidden_notes":tmpWord.hidden_notes});
 				beqTalk.gotResult = true;
 			}
 			break;
@@ -710,6 +710,11 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
+		
+		var regClean2 = ",nolink";
+		emptyStruct.notes        = emptyStruct.notes.replace(regClean2, '');
+		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean2, '');
+		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean2, '');
 		
 		//Now we replace the paranthesis with stars, so we have a nice italic font in Discord, and mark the words in other cases
 		var regMark = /{|}/g;
