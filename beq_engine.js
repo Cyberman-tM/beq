@@ -158,9 +158,9 @@ module.exports.Engine = function(beqTalk)
 									   "slang": isSlang,
 									   "deriv": isDeriv,
 									   
-									   "notes":tmpWord.notes.replace("-nolink", ""),
-									   "notes_de":tmpWord.notes_de.replace("-nolink", ""),
-									   "hidden_notes":tmpWord.hidden_notes.replace("-nolink", "")});
+									   "notes":tmpWord.notes.replace(",nolink", ""),
+									   "notes_de":tmpWord.notes_de.replace(",nolink", ""),
+									   "hidden_notes":tmpWord.hidden_notes.replace(",nolink", "")});
 				beqTalk.gotResult = true;
 			}
 			break;
