@@ -4,11 +4,12 @@
   "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
-    "discord.io": "github:woor/discord.io#gateway_v6",
+    "discord.io": "github:Woor/discord.io#gateway_v6",
+    "discord.io-gateway6": "^2.5.3",
     "discord.js": "^11.3.2",
     "dom-parser": "^0.1.5",
-    "request": "^2.85.0",
-    "restify": "^6.4.0",
+    "fs": "0.0.1-security",
+    "restify": "^7.1.1",
     "winston": "^2.4.2",
     "xmldoc": "^1.1.0"
   }

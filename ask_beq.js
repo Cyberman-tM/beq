@@ -20,7 +20,10 @@ function respond(req, res, next) {
   parAr = url.parse(URLParam, true).query;
 
   //Common parameters
-  beqTalk.newline = '<br />';
+  if (parAr.newLineText == undefined)
+  	beqTalk.newline = '<br />';
+  else
+	beqTalk.newline = '\n';
   beqTalk.limitRes = 999;           //No reason for a limit, is there?
   
   beqTalk.transLang = parAr.transLang;
@@ -115,7 +118,10 @@ function respond(req, res, next) {
 	if (parAr.getJSON != undefined)
 		retMes = talkBeq;
 	else
-		retMes = beq.createTranslation(talkBeq);
+	   if (parAr.getList != undefined)
+		  retMes = beq.createTranslationList(talkBeq);
+	   else
+	  	  retMes = beq.createTranslation(talkBeq);
 	
 	res.send(retMes);
   }
@@ -126,8 +132,8 @@ function respond(req, res, next) {
 
 var server = restify.createServer();
 
-server.get('ask_beq', respond);
-server.head('ask_beq', respond);
+server.get('/ask_beq', respond);
+server.head('/ask_beq', respond);
 
 server.listen(process.env.PORT || 5000, function()
 {
