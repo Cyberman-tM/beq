@@ -108,6 +108,9 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Secret proverb';
 		else if (wTypeS == 'phr')
 			tmpRet = 'Phrase';
+		else if (wTypeS == 'eu')
+			tmpRet = 'Empire Union Day expression';
+		//TODO: MORE
 		else
 			tmpRet = wTypeS;
 	}
@@ -119,6 +122,8 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Geheimnissprichwort';
 		else if (wTypeS == 'phr')
 			tmpRet = 'Phrase';
+		else if (wTypeS == 'eu')
+			tmpRet = 'Empire Union Day Ausdruck';
 		else
 			tmpRet = wTypeS;
 	}
