@@ -110,7 +110,7 @@ module.exports.Engine = function(beqTalk)
 			var lookSource = beqTalk.lookSource;
 			
 			//Default case, look through specific arrays
-			if (lookSource == undefined || lookSource = "")
+			if (lookSource == undefined || lookSource == "")
 			{
 				//Multiple categories can be combined via |
 				var allCat = beqTalk.wordType1.split('|');
