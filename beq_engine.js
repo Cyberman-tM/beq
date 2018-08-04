@@ -38,6 +38,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	            "tlh":"",         // the klingon word
 				"en":"",          // the english word
 				"de":""           // the german word
+				"ru":""           // the russian word
 				"slang":""        // Flag, is this is slang word? => true/false
 				"deriv":""        // Flag, is this entry derived from other words? => true/false
 				"notes":""        // Notes to the word (slang, where from, etc..)
@@ -153,6 +154,7 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.result.push( {"tlh":tmpWord.tlh,
 									   "en":tmpWord.en,
 									   "de":tmpWord.de,
+						                           "ru":tmpWord.ru,
 
 									   "type": tmpWord.type,
 									   "slang": isSlang,
@@ -320,7 +322,7 @@ module.exports.Engine = function(beqTalk)
 					if (item.type.indexOf("slang") >= 0)
 						isSlang = true;
 
-					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "slang": isSlang, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
+					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de,"ru":item.ru, "type": item.type, "slang": isSlang, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
 				});
 			}
 			else
@@ -354,9 +356,11 @@ module.exports.beqTalkDef = JSON.stringify(
 	            "tlh":"",
 				"en":"",
 				"de":"",
+		                "ru":"",
 				"notes":"",
 				"notes_de":"",
-				"hidden_notes":""
+				"hidden_notes":"",
+		                "source":""
 			  }],
     "message": "",
 	"gotResult": false,
@@ -632,6 +636,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		tlh: 'tlhIngan',
 		en: 'klingon',
 		de: 'Klingone',
+		ru: '',
 		type: 'n',
 		notes: 'notes',
 		notes_de: 'notes_de',
@@ -646,6 +651,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				tlh: '',
 				en: '',
 				de: '',
+				ru: '',
 				type: '',
 				notes: '',
 				notes_de: '',
@@ -673,6 +679,9 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				case 'definition_de':
 					emptyStruct.de = item.firstChild.text;
 					break;
+				case 'definition_ru':
+					emptyStruct.ru = item.firstChild.text;
+					break;
 				case 'notes':
 					emptyStruct.notes = item.firstChild.text;
 					break;
@@ -698,12 +707,16 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 			emptyStruct.en = '';
 		if (emptyStruct.tlh == undefined)
 			emptyStruct.tlh = '';
+		if (emptyStruct.ru == undefined)
+			emptyStruct.ru = '';
 		if (emptyStruct.notes == undefined)
 			emptyStruct.notes = '';
 		if (emptyStruct.notes_de == undefined)
 			emptyStruct.notes_de = '';
 		if (emptyStruct.hidden_notes == undefined)
 			emptyStruct.hidden_notes = '';
+		if (emptyStruct.source == undefined)
+			emptyStruct.source = '';
 		
 		//Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
 		var regClean = /(\:[a-zA-Z0-9]*)/g;
