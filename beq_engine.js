@@ -24,6 +24,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"remPref": false,             // Remove prefix if no result is found otherwise
 	"lookLang": "",               // the language the word you want translated is in  (or the type of source)
 	"lookWord": "",               // the word you are looking for                     (or the source value)
+	"lookSource": "",             // sources you're looking in (TKD, qep'a', 2018, etc...) - KWTOD for now!
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
 	"special": "",                // special commands, untested, unlisted, etc...
@@ -104,41 +105,63 @@ module.exports.Engine = function(beqTalk)
 
 			var tmpWord = null;
 			var useArray = new Array();
-
-			//Multiple categories can be combined via |
-			var allCat = beqTalk.wordType1.split('|');
-			allCat.forEach(function(itemCat)
-			{			
-			//We have to decide which array we're going to use
-			var tmpWPref = itemCat.split(':')[0];
 			
-			if (tmpWPref == 'sen')
-			   useArray = useArray.concat(module.exports.KDBPHJSon);
-			else if (tmpWPref == 'vs' || itemCat == 'v:suff')
-			   useArray = useArray.concat(module.exports.KDBVSJSon);
-			else if (tmpWPref == 'vp' || itemCat == 'v:pref')
-			   useArray = useArray.concat(module.exports.KDBVPJSon);
-			else if (tmpWPref == 'ns' || itemCat == 'n:suff')
-			   useArray = useArray.concat(module.exports.KDBNSJSon);
-			else if (tmpWPref == 'n' || tmpWPref == 'v')
-			   useArray = useArray.concat(module.exports.KDBJSon);
+			//Sources we're looking in
+			var lookSource = beqTalk.lookSource;
 			
-			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
-			if (tmpWPref == 'vs')
-			   tmpWPref = 'v:suff';
-			else if (tmpWPref == 'vp')
-			   tmpWPref = 'v:pref';
-			else if (tmpWPref == 'ns')
-			   tmpWPref = 'n:suff';
-			});  //allCat forEach
-			
-			for (i = 0; i < useArray.length; i++)			
+			//Default case, look through specific arrays
+			if (lookSource == undefined || lookSource = "")
 			{
-				//We already preselected the array, so can we go wrong by taking any entry?
-				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
-				if (tmpWord != null && isHyp(tmpWord.type) == false)
-					break;
-				tmpWord = null;
+				//Multiple categories can be combined via |
+				var allCat = beqTalk.wordType1.split('|');
+				allCat.forEach(function(itemCat)
+				{			
+				//We have to decide which array we're going to use
+				var tmpWPref = itemCat.split(':')[0];
+
+				if (tmpWPref == 'sen')
+				   useArray = useArray.concat(module.exports.KDBPHJSon);
+				else if (tmpWPref == 'vs' || itemCat == 'v:suff')
+				   useArray = useArray.concat(module.exports.KDBVSJSon);
+				else if (tmpWPref == 'vp' || itemCat == 'v:pref')
+				   useArray = useArray.concat(module.exports.KDBVPJSon);
+				else if (tmpWPref == 'ns' || itemCat == 'n:suff')
+				   useArray = useArray.concat(module.exports.KDBNSJSon);
+				else if (tmpWPref == 'n' || tmpWPref == 'v')
+				   useArray = useArray.concat(module.exports.KDBJSon);
+
+				//boQwI' uses different notation, but vp is easier to write than v:pref :-)
+				if (tmpWPref == 'vs')
+				   tmpWPref = 'v:suff';
+				else if (tmpWPref == 'vp')
+				   tmpWPref = 'v:pref';
+				else if (tmpWPref == 'ns')
+				   tmpWPref = 'n:suff';
+				});  //allCat forEach
+
+				for (i = 0; i < useArray.length; i++)			
+				{
+					//We already preselected the array, so can we go wrong by taking any entry?
+					tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
+					if (tmpWord != null && isHyp(tmpWord.type) == false)
+						break;
+					tmpWord = null;
+				}
+			}  //lookSource != undefined
+			else
+			{
+			   //We are looking for a word in a specific source
+			   var allWordsNum = module.exports.KDBJSon.length;
+
+			   //Try it 500 times at most
+			   for (i = 0; i < 500; i++)
+			   {
+				   tmpWord = module.exports.KDBJSon[Math.floor(Math.random() * (allWordsNum + 1))];
+				   if (tmpWord != null && tmpWord.source.containsString(lookSource))
+					   break;
+				   tmpWord = null;
+			   }
+				
 			}
 
 			if (tmpWord != null)
@@ -166,6 +189,7 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = true;
 			}
 			break;
+			
 		case "recode":
 		  var tmpText = '';
 		  var encoding = '';
