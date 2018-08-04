@@ -157,7 +157,7 @@ module.exports.Engine = function(beqTalk)
 			   for (i = 0; i < 500; i++)
 			   {
 				   tmpWord = module.exports.KDBJSon[Math.floor(Math.random() * (allWordsNum + 1))];
-				   if (tmpWord != null && tmpWord.source.containsString(lookSource))
+				   if (tmpWord != null && tmpWord.source.includes(lookSource))
 					   break;
 				   tmpWord = null;
 			   }
