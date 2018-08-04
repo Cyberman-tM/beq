@@ -278,11 +278,17 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var tmpWord = '';
 			beqTalk.wordType1 = null;
 			beqTalk.wordType2 = null;
-
+			
+			if (args[1].startsWith("source"))
+			{
+				beqTalk.lookSource = args[1].split('=')[1];
+				args[1) = null;
+			}
+				     
 			if (args[1] == null)
 				beqTalk.wordType1 = 'sen:rp';
 			else
-				beqTalk.wordType1 = args[1];
+ 			   beqTalk.wordType1 = args[1];
 			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
