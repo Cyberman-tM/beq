@@ -282,7 +282,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			if (args[1].startsWith("source"))
 			{
 				beqTalk.lookSource = args[1].split('=')[1];
-				args[1) = null;
+				args[1] = null;
 			}
 				     
 			if (args[1] == null)
