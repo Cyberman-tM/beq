@@ -143,7 +143,7 @@ module.exports.Engine = function(beqTalk)
 				{
 					//We already preselected the array, so can we go wrong by taking any entry?
 					tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
-					if (tmpWord != null && isHyp(tmpWord.type) == false)
+					if (tmpWord != null && isHyp(tmpWord.type) == false && isAlt(tmpWord.type) == false)
 						break;
 					tmpWord = null;
 				}
@@ -161,7 +161,6 @@ module.exports.Engine = function(beqTalk)
 					   break;
 				   tmpWord = null;
 			   }
-				
 			}
 
 			if (tmpWord != null)
@@ -535,6 +534,15 @@ function isDerived(wType)
 function isHyp(wType)
 {
 	if (wType.indexOf("hyp") != -1)
+		return true;
+	else
+		return false;
+}
+
+//Check if entry is alternate spelling
+function isAlt(wType)
+{
+	if (wtype.indexOf("alt") != -1)
 		return true;
 	else
 		return false;
