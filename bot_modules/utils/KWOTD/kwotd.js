@@ -62,7 +62,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
  	      //beqTalk.result.forEach(function (item)
 	      talkBeq.result.forEach(function (item)
 	      {
-		      sndMessage = module.exports.KWOTDTranslate(beqTalk, beq, item);
+		      sndMessage = module.exports.KWOTDTranslate(talkBeq, beq, item);
 	      });
 //	      logger.info(sndMessage);
 
