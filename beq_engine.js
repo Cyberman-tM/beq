@@ -396,7 +396,7 @@ module.exports.createTranslation = function(beqTalk)
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
 	
-	if (beqTalk.lookSource == true)
+	if (beqTalk.lookSource != undefined && beqTalk.lookSource != null)
 	   beqTalk.showSource = true;
 	
 	var sndMessage = '';
