@@ -14,7 +14,7 @@ module.exports.idleLines = JSON.stringify(
 	"jIvum, jIbech, 'ach SaH pagh.",
 	"Dal 'oH. qaD 'oHbe'...",
 	"pItlh",
-	"",
+	"chaq qepHomDaq maghom'a'?",
 	"",
 	"",
 	"",
