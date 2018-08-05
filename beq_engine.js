@@ -542,7 +542,7 @@ function isHyp(wType)
 //Check if entry is alternate spelling
 function isAlt(wType)
 {
-	if (wtype.indexOf("alt") != -1)
+	if (wType.indexOf("alt") != -1)
 		return true;
 	else
 		return false;
