@@ -83,6 +83,8 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 			sndMessage += 'Notes de: ' + item.notes_de + beqTalk.newline;
 		if (item.hidden_notes != '')
 			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
+		if (item.source != '')
+			sndMessage += 'Source: ' + item.hidden_notes + beqTalk.newline;
 	      });
 //	      logger.info(sndMessage);
 
