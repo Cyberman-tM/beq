@@ -100,6 +100,6 @@ module.exports.KWOTDTranslate = function(beqTalk, item)
 		if (item.hidden_notes != '')
 			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 		if (item.source != '')
-			sndMessage += 'Source: ' + item.hidden_notes + beqTalk.newline;
+			sndMessage += 'Source: ' + item.source + beqTalk.newline;
 	return sndMessage;
 }
