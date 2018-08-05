@@ -303,7 +303,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 		        talkBeq.result.forEach(function (item)
 			{
 			   sndMessage = KWOTD.exports.KWOTDTranslate(beqTalk, item);
-			}
+			});
 			break;
 		case "yIcha'":
 			var talkBeq = JSON.parse(beq.beqTalkDef);
