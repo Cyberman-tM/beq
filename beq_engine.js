@@ -759,17 +759,20 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
+		emptyStruct.source       = emptyStruct.source.replace(regClean, '');
 		
 		var regClean2 = ",nolink";
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean2, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean2, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean2, '');
+		emptyStruct.source       = emptyStruct.source.replace(regClean2, '');
 		
 		//Now we replace the paranthesis with stars, so we have a nice italic font in Discord, and mark the words in other cases
 		var regMark = /{|}/g;
 		emptyStruct.notes        = emptyStruct.notes.replace(regMark, '*');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regMark, '*');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regMark, '*');
+		emptyStruct.source       = emptyStruct.source.replace(regMark, '*');
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
