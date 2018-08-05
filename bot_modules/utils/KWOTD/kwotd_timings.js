@@ -16,4 +16,5 @@
 
 module.exports.KWOTDTimings = JSON.stringify(
 [
+    { "time": "17:1", "source": "2018" } 
 ]);
