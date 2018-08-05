@@ -62,7 +62,23 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
  	      //beqTalk.result.forEach(function (item)
 	      talkBeq.result.forEach(function (item)
 	      {
+		      sndMessage = module.exports.KWOTDTranslate(beqTalk, beq, item);
+	      });
+//	      logger.info(sndMessage);
+
+		myBot.sendMessage({
+			to: myChannel,
+			message: sndMessage
+		});		
+	   }
+	});	
+}
+
+module.exports.KWOTDTranslate(beqTalk, item)
+{
+	var sndMessage = "";
 	         sndMessage  = beqTalk.newline + '**KWOTD** - Klingon Word Of The Day - *beq edition*' + beqTalk.newline;
+	//Get a little bit of smalltalk :-)
 		 sndMessage += beq.getLine(3, true, true, beqTalk.newline) + beqTalk.newline;
 
 		 var wordType = '';
@@ -85,13 +101,5 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 		if (item.source != '')
 			sndMessage += 'Source: ' + item.hidden_notes + beqTalk.newline;
-	      });
-//	      logger.info(sndMessage);
-
-		myBot.sendMessage({
-			to: myChannel,
-			message: sndMessage
-		});		
-	   }
-	});	
+	return sndMessage;
 }
