@@ -17,7 +17,7 @@
 
 module.exports.KWOTDTimings = JSON.stringify(
 [
-   { "time": "6:1", "type": "n|v" },
+   //{ "time": "6:1", "type": "n|v" },
    //Disabled for now, in favor of "new" words
    //{ "time": "17:1", "type": "v:pref|v:suff|n:suff" }
     { "time": "17:1", source:"2018" }
