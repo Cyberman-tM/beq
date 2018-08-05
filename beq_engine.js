@@ -733,10 +733,14 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				}
 			}
 		}
-		);		
+		);
+		logger.info(emptyStruct.source);
 		//Make sure everything's here (sometimes the german is missing)
 		if (emptyStruct.de == '' || emptyStruct.de == undefined)
 			emptyStruct.de = emptyStruct.en;
+		//New languages are definitely sometimes missing
+		if (emptyStruct.ru == '' || emptyStruct.ru == undefined)
+			emptyStruct.ru = emptyStruct.en;
 
 		//Just to be sure...
 		if (emptyStruct.en == undefined)
