@@ -185,7 +185,8 @@ module.exports.Engine = function(beqTalk)
 									   
 									   "notes":tmpWord.notes,
 									   "notes_de":tmpWord.notes_de,
-									   "hidden_notes":tmpWord.hidden_notes});
+									   "hidden_notes":tmpWord.hidden_notes,
+									   "source":tmpWord.source});
 				beqTalk.gotResult = true;
 			}
 			break;
