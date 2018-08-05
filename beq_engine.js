@@ -396,6 +396,9 @@ module.exports.createTranslation = function(beqTalk)
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
 	
+	if (beqTalk.lookSource == true)
+	   beqTalk.showSource = true;
+	
 	var sndMessage = '';
 	var infTips = "";
 	//Maybe we can use this for multi-language?
