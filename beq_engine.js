@@ -150,6 +150,8 @@ module.exports.Engine = function(beqTalk)
 			}  //lookSource != undefined
 			else
 			{
+			   //lookSource might have spaces, which are replaced with _
+			   lookSource = lookSource.replace(/_/g, ' ');
 			   //We are looking for a word in a specific source
 			   var allWordsNum = module.exports.KDBJSon.length;
 
