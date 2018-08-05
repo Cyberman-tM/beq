@@ -110,7 +110,7 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Phrase';
 		else if (wTypeS == 'eu')
 			tmpRet = 'Empire Union Day expression';
-		else if (wTypeS == 'alt)
+		else if (wTypeS == 'alt')
 			 tmpRet = 'Alternate spelling! Treat carefully!';
 		//TODO: MORE
 		else
