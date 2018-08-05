@@ -52,6 +52,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      beqTalk.command = 'KWOTD';
               beqTalk.wordType1 = beqTalk.wordType2 = item.type;
 	      beqTalk.lookLang = 'tlh';
+	      beqTalk.lookSource = item.source;
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
