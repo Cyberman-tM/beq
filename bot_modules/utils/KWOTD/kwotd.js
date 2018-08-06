@@ -50,9 +50,13 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	   {
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
 	      beqTalk.command = 'KWOTD';
-              beqTalk.wordType1 = beqTalk.wordType2 = item.type;
 	      beqTalk.lookLang = 'tlh';
-	      beqTalk.lookSource = item.source;
+		  
+	      //Either item type, or source - not both, for now
+	      if (item.type != undefined)
+		   beqTalk.wordType1 = beqTalk.wordType2 = item.type;
+	      else if (item.source != undefined)
+		      beqTalk.lookSource = item.source;
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
