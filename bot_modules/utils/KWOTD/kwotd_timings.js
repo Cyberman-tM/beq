@@ -21,5 +21,5 @@ module.exports.KWOTDTimings = JSON.stringify(
    //Disabled for now, in favor of "new" words
    //{ "time": "17:1", "type": "v:pref|v:suff|n:suff" }
     { "time": "17:1", source:"2018" },
-    { "time": "19:5", source:"2018" }
+    { "time": "19:9", source:"2018" }
 ]);
