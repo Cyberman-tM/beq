@@ -14,7 +14,7 @@ var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.2 - Beq engine forever!';
+var versInt = '2.1.3 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -308,6 +308,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			//No KWOTD? Special message:
 			if (sndMessage == "")
 			{
+			   sndMessage += "no result" + beqTalk.newline + beqTalk.newline;
 			   sndMessage += beqTalk.newline + beqPerson.getLine(4, true, true, beqTalk.newline);
 			}
 			break;
