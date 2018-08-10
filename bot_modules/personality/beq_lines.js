@@ -48,7 +48,7 @@ module.exports.KWOTDLines = JSON.stringify(
 //KWOTD failed - shouldn't happen, but might
 module.exports.KWOTDFailure = JSON.stringify(
 	[
-		"pagh! chay'? 'e' vIyajbe'! ",
+		"pagh! chay'? 'e' vIyajbe'!",
 		"... Qu'vatlh!",
 		"jIQapbe'? qatlh DuH?"
 	]);
