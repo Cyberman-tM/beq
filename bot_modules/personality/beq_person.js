@@ -43,7 +43,7 @@ module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, ital
 		myLines = JSON.parse(beqLines.boredLines);
 	else if (lineType == 3)
 		myLines = JSON.parse(beqLines.KWOTDLines);
-	else if (lineType == 3)
+	else if (lineType == 4)
 		myLines = JSON.parse(beqLines.KWOTDFailure);
 	
 	if (myLines.length == 0)
