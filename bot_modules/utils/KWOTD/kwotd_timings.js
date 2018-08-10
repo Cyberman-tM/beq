@@ -8,6 +8,7 @@
     
     Meaning of time: at this time the KWOTD should run - note JavaScript notation: 0-23, 0-59
     Meaning of type: type of word like in boQwI', separate multiple choices with a |
+    Meaning of source: (new! beta!) Only look at words that have this string in their source
     
     The KWOTD event will check the time, and if it's less than a minute after it, it'll run
     A note for Heroku: currently Heroku is 2 hours behind my time (Vienna time).
@@ -17,6 +18,7 @@
 module.exports.KWOTDTimings = JSON.stringify(
 [
    { "time": "6:1", "type": "n|v" },
-    //Disabled because we're using DevBeq for a while, to check the new source feature
-   //{ "time": "17:1", "type": "v:pref|v:suff|n:suff" }   
+    //Disabled because for now we're using new words
+    //{ "time": "17:1", "type": "v:pref|v:suff|n:suff" }   
+  { "time": "17:1", source:"2018" }
 ]);

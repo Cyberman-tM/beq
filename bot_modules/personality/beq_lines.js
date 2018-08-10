@@ -14,9 +14,8 @@ module.exports.idleLines = JSON.stringify(
 	"jIvum, jIbech, 'ach SaH pagh.",
 	"Dal 'oH. qaD 'oHbe'...",
 	"pItlh",
-	"",
-	"",
-	"",
+	"chaq qepHomDaq maghom'a'?",
+	"mu'mey Doy'? chatlh! SuvnIS mu'meymaj! mu'qaD veS matIv!",
 	"",
 	""
 ]);
@@ -42,6 +41,14 @@ module.exports.KWOTDLines = JSON.stringify(
 		"yIghoj!",
 		"yIlaD!",
 		"DaSov'a'?",
+		"mu'mey chu', mu'mey ngo' - SaH 'Iv? Hoch DaghojnIS...",
 		"",
 	]);
-	
+
+//KWOTD failed - shouldn't happen, but might
+module.exports.KWOTDFailure = JSON.stringify(
+	[
+		"pagh! chay'? 'e' vIyajbe'!",
+		"... Qu'vatlh!",
+		"jIQapbe'? qatlh DuH?"
+	]);

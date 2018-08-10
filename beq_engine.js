@@ -24,6 +24,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"remPref": false,             // Remove prefix if no result is found otherwise
 	"lookLang": "",               // the language the word you want translated is in  (or the type of source)
 	"lookWord": "",               // the word you are looking for                     (or the source value)
+	"lookSource": "",             // sources you're looking in (TKD, qep'a', 2018, etc...) - KWTOD for now!
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
 	"special": "",                // special commands, untested, unlisted, etc...
@@ -38,6 +39,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	            "tlh":"",         // the klingon word
 				"en":"",          // the english word
 				"de":""           // the german word
+				"ru":""           // the russian word
 				"slang":""        // Flag, is this is slang word? => true/false
 				"deriv":""        // Flag, is this entry derived from other words? => true/false
 				"notes":""        // Notes to the word (slang, where from, etc..)
@@ -103,41 +105,64 @@ module.exports.Engine = function(beqTalk)
 
 			var tmpWord = null;
 			var useArray = new Array();
-
-			//Multiple categories can be combined via |
-			var allCat = beqTalk.wordType1.split('|');
-			allCat.forEach(function(itemCat)
-			{			
-			//We have to decide which array we're going to use
-			var tmpWPref = itemCat.split(':')[0];
 			
-			if (tmpWPref == 'sen')
-			   useArray = useArray.concat(module.exports.KDBPHJSon);
-			else if (tmpWPref == 'vs' || itemCat == 'v:suff')
-			   useArray = useArray.concat(module.exports.KDBVSJSon);
-			else if (tmpWPref == 'vp' || itemCat == 'v:pref')
-			   useArray = useArray.concat(module.exports.KDBVPJSon);
-			else if (tmpWPref == 'ns' || itemCat == 'n:suff')
-			   useArray = useArray.concat(module.exports.KDBNSJSon);
-			else if (tmpWPref == 'n' || tmpWPref == 'v')
-			   useArray = useArray.concat(module.exports.KDBJSon);
+			//Sources we're looking in
+			var lookSource = beqTalk.lookSource;
 			
-			//boQwI' uses different notation, but vp is easier to write than v:pref :-)
-			if (tmpWPref == 'vs')
-			   tmpWPref = 'v:suff';
-			else if (tmpWPref == 'vp')
-			   tmpWPref = 'v:pref';
-			else if (tmpWPref == 'ns')
-			   tmpWPref = 'n:suff';
-			});  //allCat forEach
-			
-			for (i = 0; i < useArray.length; i++)			
+			//Default case, look through specific arrays
+			if (lookSource == undefined || lookSource == "")
 			{
-				//We already preselected the array, so can we go wrong by taking any entry?
-				tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
-				if (tmpWord != null && isHyp(tmpWord.type) == false)
-					break;
-				tmpWord = null;
+				//Multiple categories can be combined via |
+				var allCat = beqTalk.wordType1.split('|');
+				allCat.forEach(function(itemCat)
+				{			
+				//We have to decide which array we're going to use
+				var tmpWPref = itemCat.split(':')[0];
+
+				if (tmpWPref == 'sen')
+				   useArray = useArray.concat(module.exports.KDBPHJSon);
+				else if (tmpWPref == 'vs' || itemCat == 'v:suff')
+				   useArray = useArray.concat(module.exports.KDBVSJSon);
+				else if (tmpWPref == 'vp' || itemCat == 'v:pref')
+				   useArray = useArray.concat(module.exports.KDBVPJSon);
+				else if (tmpWPref == 'ns' || itemCat == 'n:suff')
+				   useArray = useArray.concat(module.exports.KDBNSJSon);
+				else if (tmpWPref == 'n' || tmpWPref == 'v')
+				   useArray = useArray.concat(module.exports.KDBJSon);
+
+				//boQwI' uses different notation, but vp is easier to write than v:pref :-)
+				if (tmpWPref == 'vs')
+				   tmpWPref = 'v:suff';
+				else if (tmpWPref == 'vp')
+				   tmpWPref = 'v:pref';
+				else if (tmpWPref == 'ns')
+				   tmpWPref = 'n:suff';
+				});  //allCat forEach
+
+				for (i = 0; i < useArray.length; i++)			
+				{
+					//We already preselected the array, so can we go wrong by taking any entry?
+					tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];				
+					if (tmpWord != null && isHyp(tmpWord.type) == false && isAlt(tmpWord.type) == false)
+						break;
+					tmpWord = null;
+				}
+			}  //lookSource != undefined
+			else
+			{
+			   //lookSource might have spaces, which are replaced with _
+			   lookSource = lookSource.replace(/_/g, ' ');
+			   //We are looking for a word in a specific source
+			   var allWordsNum = module.exports.KDBJSon.length;
+
+			   //Try it 500 times at most
+			   for (i = 0; i < 500; i++)
+			   {
+				   tmpWord = module.exports.KDBJSon[Math.floor(Math.random() * (allWordsNum + 1))];
+				   if (tmpWord != null && tmpWord.source.includes(lookSource))
+					   break;
+				   tmpWord = null;
+			   }
 			}
 
 			if (tmpWord != null)
@@ -153,6 +178,7 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.result.push( {"tlh":tmpWord.tlh,
 									   "en":tmpWord.en,
 									   "de":tmpWord.de,
+						                           "ru":tmpWord.ru,
 
 									   "type": tmpWord.type,
 									   "slang": isSlang,
@@ -160,10 +186,12 @@ module.exports.Engine = function(beqTalk)
 									   
 									   "notes":tmpWord.notes,
 									   "notes_de":tmpWord.notes_de,
-									   "hidden_notes":tmpWord.hidden_notes});
+									   "hidden_notes":tmpWord.hidden_notes,
+									   "source":tmpWord.source});
 				beqTalk.gotResult = true;
 			}
 			break;
+			
 		case "recode":
 		  var tmpText = '';
 		  var encoding = '';
@@ -320,7 +348,7 @@ module.exports.Engine = function(beqTalk)
 					if (item.type.indexOf("slang") >= 0)
 						isSlang = true;
 
-					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de, "type": item.type, "slang": isSlang, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
+					beqTalk.result.push( {"tlh":item.tlh, "en":item.en,"de":item.de,"ru":item.ru, "type": item.type, "slang": isSlang, "notes":item.notes, "notes_de":item.notes_de, "hidden_notes":item.hidden_notes});
 				});
 			}
 			else
@@ -354,9 +382,11 @@ module.exports.beqTalkDef = JSON.stringify(
 	            "tlh":"",
 				"en":"",
 				"de":"",
+		                "ru":"",
 				"notes":"",
 				"notes_de":"",
-				"hidden_notes":""
+				"hidden_notes":"",
+		                "source":""
 			  }],
     "message": "",
 	"gotResult": false,
@@ -367,6 +397,9 @@ module.exports.createTranslation = function(beqTalk)
 {
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
+	
+	if (beqTalk.lookSource != undefined && beqTalk.lookSource != null)
+	   beqTalk.showSource = true;
 	
 	var sndMessage = '';
 	var infTips = "";
@@ -508,6 +541,15 @@ function isHyp(wType)
 		return false;
 }
 
+//Check if entry is alternate spelling
+function isAlt(wType)
+{
+	if (wType.indexOf("alt") != -1)
+		return true;
+	else
+		return false;
+}
+
 //Get (translate) word Type
 function getWType(wType, tranLang)
 {
@@ -632,6 +674,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		tlh: 'tlhIngan',
 		en: 'klingon',
 		de: 'Klingone',
+		ru: '',
 		type: 'n',
 		notes: 'notes',
 		notes_de: 'notes_de',
@@ -646,6 +689,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				tlh: '',
 				en: '',
 				de: '',
+				ru: '',
 				type: '',
 				notes: '',
 				notes_de: '',
@@ -673,6 +717,9 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				case 'definition_de':
 					emptyStruct.de = item.firstChild.text;
 					break;
+				case 'definition_ru':
+					emptyStruct.ru = item.firstChild.text;
+					break;
 				case 'notes':
 					emptyStruct.notes = item.firstChild.text;
 					break;
@@ -688,39 +735,50 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 				}
 			}
 		}
-		);		
+		);
+
 		//Make sure everything's here (sometimes the german is missing)
 		if (emptyStruct.de == '' || emptyStruct.de == undefined)
 			emptyStruct.de = emptyStruct.en;
+		//New languages are definitely sometimes missing
+		if (emptyStruct.ru == '' || emptyStruct.ru == undefined)
+			emptyStruct.ru = emptyStruct.en;
 
 		//Just to be sure...
 		if (emptyStruct.en == undefined)
 			emptyStruct.en = '';
 		if (emptyStruct.tlh == undefined)
 			emptyStruct.tlh = '';
+		if (emptyStruct.ru == undefined)
+			emptyStruct.ru = '';
 		if (emptyStruct.notes == undefined)
 			emptyStruct.notes = '';
 		if (emptyStruct.notes_de == undefined)
 			emptyStruct.notes_de = '';
 		if (emptyStruct.hidden_notes == undefined)
 			emptyStruct.hidden_notes = '';
+		if (emptyStruct.source == undefined)
+			emptyStruct.source = '';
 		
 		//Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
 		var regClean = /(\:[a-zA-Z0-9]*)/g;
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
+		emptyStruct.source       = emptyStruct.source.replace(regClean, '');
 		
 		var regClean2 = ",nolink";
 		emptyStruct.notes        = emptyStruct.notes.replace(regClean2, '');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regClean2, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean2, '');
+		emptyStruct.source       = emptyStruct.source.replace(regClean2, '');
 		
 		//Now we replace the paranthesis with stars, so we have a nice italic font in Discord, and mark the words in other cases
 		var regMark = /{|}/g;
 		emptyStruct.notes        = emptyStruct.notes.replace(regMark, '*');
 		emptyStruct.notes_de     = emptyStruct.notes_de.replace(regMark, '*');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regMark, '*');
+		emptyStruct.source       = emptyStruct.source.replace(regMark, '*');
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);

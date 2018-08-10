@@ -50,8 +50,13 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	   {
 	      var beqTalk = JSON.parse(mybeqEngine.beqTalkDef);
 	      beqTalk.command = 'KWOTD';
-              beqTalk.wordType1 = beqTalk.wordType2 = item.type;
 	      beqTalk.lookLang = 'tlh';
+		  
+	      //Either item type, or source - not both, for now
+	      if (item.type != undefined)
+		   beqTalk.wordType1 = beqTalk.wordType2 = item.type;
+	      else if (item.source != undefined)
+		      beqTalk.lookSource = item.source;
 		   
 	      //Let the engine do its magic :-)
 	      var talkBeq = mybeqEngine.Engine(beqTalk);			
@@ -61,7 +66,23 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
  	      //beqTalk.result.forEach(function (item)
 	      talkBeq.result.forEach(function (item)
 	      {
+		      sndMessage = module.exports.KWOTDTranslate(talkBeq, item);
+	      });
+//	      logger.info(sndMessage);
+
+		myBot.sendMessage({
+			to: myChannel,
+			message: sndMessage
+		});		
+	   }
+	});	
+}
+
+module.exports.KWOTDTranslate = function(beqTalk, item)
+{
+	var sndMessage = "";
 	         sndMessage  = beqTalk.newline + '**KWOTD** - Klingon Word Of The Day - *beq edition*' + beqTalk.newline;
+	//Get a little bit of smalltalk :-)
 		 sndMessage += beq.getLine(3, true, true, beqTalk.newline) + beqTalk.newline;
 
 		 var wordType = '';
@@ -82,13 +103,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 			sndMessage += 'Notes de: ' + item.notes_de + beqTalk.newline;
 		if (item.hidden_notes != '')
 			sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
-	      });
-//	      logger.info(sndMessage);
-
-		myBot.sendMessage({
-			to: myChannel,
-			message: sndMessage
-		});		
-	   }
-	});	
+		if (item.source != '')
+			sndMessage += 'Source: ' + item.source + beqTalk.newline;
+	return sndMessage;
 }

@@ -1,19 +1,20 @@
 var Discord = require('discord.io');
-var logger = require('winston');
+var logger  = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');
 var extCmds = require('./bot_modules/external/ext_commands.js');
 var cmdList = require('./bot_modules/cmdlist.js');
 var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
-var NumWords = require('./bot_modules/utils/number_translate.js');
+var NumWords  = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 var evTimer = require('./bot_modules/utils/event_timer.js');
 var weather = require('./bot_modules/utils/weather.js');
+var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.1 - Beq engine forever!';
+var versInt = '2.1.3 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -278,11 +279,17 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			var tmpWord = '';
 			beqTalk.wordType1 = null;
 			beqTalk.wordType2 = null;
-
+			
+				     
 			if (args[1] == null)
 				beqTalk.wordType1 = 'sen:rp';
+			else if (args[1].startsWith("source"))
+			{
+				beqTalk.lookSource = args[1].split('=')[1];
+				args[1] = null;
+			}
 			else
-				beqTalk.wordType1 = args[1];
+ 			   beqTalk.wordType1 = args[1];
 			
 			beqTalk.lookLang = 'tlh';
 			if (userTLang == null)
@@ -293,7 +300,17 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
 			
-			sndMessage = beq.createTranslation(talkBeq);	
+		        talkBeq.result.forEach(function (item)
+			{
+			   sndMessage = KWOTD.KWOTDTranslate(beqTalk, item);
+			});
+				
+			//No KWOTD? Special message:
+			if (sndMessage == "")
+			{
+			   sndMessage += "no result" + beqTalk.newline + beqTalk.newline;
+			   sndMessage += beqTalk.newline + beqPerson.getLine(4, true, true, beqTalk.newline);
+			}
 			break;
 		case "yIcha'":
 			var talkBeq = JSON.parse(beq.beqTalkDef);
@@ -421,7 +438,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = beq.createTranslation(talkBeq);		
 			//Add some personality:
 			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
-
 		
 			break;
 		default:

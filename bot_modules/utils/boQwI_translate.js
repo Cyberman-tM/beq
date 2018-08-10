@@ -110,6 +110,8 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Phrase';
 		else if (wTypeS == 'eu')
 			tmpRet = 'Empire Union Day expression';
+		else if (wTypeS == 'alt')
+			 tmpRet = 'Alternate spelling! Treat carefully!';
 		//TODO: MORE
 		else
 			tmpRet = wTypeS;
@@ -124,6 +126,8 @@ module.exports.getSType = function(wType, tranLang)
 			tmpRet = 'Phrase';
 		else if (wTypeS == 'eu')
 			tmpRet = 'Empire Union Day Ausdruck';
+		else if (wTypeS == 'alt')
+			tmpRet = 'Alternative Schreibweise! Vorsicht!';
 		else
 			tmpRet = wTypeS;
 	}
