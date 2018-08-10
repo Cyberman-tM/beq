@@ -304,6 +304,12 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			{
 			   sndMessage = KWOTD.KWOTDTranslate(beqTalk, item);
 			});
+				
+			//No KWOTD? Special message:
+			if (sndMessage == "")
+			{
+			   sndMessage += beqTalk.newline + beqPerson.getLine(4, true, true, beqTalk.newline);
+			}
 			break;
 		case "yIcha'":
 			var talkBeq = JSON.parse(beq.beqTalkDef);
@@ -431,7 +437,6 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			sndMessage = beq.createTranslation(talkBeq);		
 			//Add some personality:
 			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
-
 		
 			break;
 		default:
