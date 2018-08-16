@@ -69,12 +69,16 @@ bot.on('ready', function (evt)
 }
 );
 
-bot.on('message', function (user, userID, channelID, message, evt)
+bot.on('message', function (messageDJS)
 {
 	var sndMessage = '';
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	var cmdFound = true;
+	var user = messageDJS.author.username;
+	var userID = messageDJS.author.id;
+	var channelID = messageDJS.channel.id;
+	var message = messageDJS.content;
 		
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
