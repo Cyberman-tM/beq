@@ -56,7 +56,7 @@ bot.on('ready', function (evt)
 {
 	logger.info('Connected');
 	logger.info('Logged in as: ');
-	logger.info(bot.username + ' - (' + bot.id + ')');
+	logger.info(bot.user.username + ' - (' + bot.user.id + ')');
 	logger.info('Version:' + versInt);
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
