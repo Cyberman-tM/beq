@@ -47,11 +47,8 @@ logger.add(logger.transports.Console,
 );
 logger.level = 'debug';
 // Initialize Discord Bot
-var bot = new Discord.Client(
-	{
-	}
-	);
-	bot.token = DData.token;
+var bot = new Discord.Client();
+bot.token = DData.token;
 //		autorun: true
 
 
