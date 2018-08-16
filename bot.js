@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+var Discord = require('discord.js');
 var logger  = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');

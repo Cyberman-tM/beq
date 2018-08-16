@@ -5,7 +5,7 @@
   "author": "Rejutka Lupex",
   "dependencies": {
     "discord.io": "github:woor/discord.io#gateway_v6",
-    "discord.js": "^11.3.2",
+    "discord.js": "^11.4.2",
     "dom-parser": "^0.1.5",
     "request": "^2.85.0",
     "restify": "^6.4.0",
