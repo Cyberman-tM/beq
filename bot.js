@@ -49,10 +49,11 @@ logger.level = 'debug';
 // Initialize Discord Bot
 var bot = new Discord.Client(
 	{
-		token: DData.token,
-		autorun: true
 	}
 	);
+	bot.token = DData.token;
+//		autorun: true
+
 
 bot.on('ready', function (evt)
 {
