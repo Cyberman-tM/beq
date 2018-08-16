@@ -471,13 +471,7 @@ bot.on('message', function (messageDJS)
 			
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
-		
-		bot.sendMessage(
-		{
-			to: channelID,
-			message: sndMessage
-		}
-		);
+		messageDJS.channel.send(sndMessage);
 	}
 }
 );
