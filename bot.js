@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+var Discord = require('discord.js');
 var logger  = require('winston');
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');
@@ -47,18 +47,16 @@ logger.add(logger.transports.Console,
 );
 logger.level = 'debug';
 // Initialize Discord Bot
-var bot = new Discord.Client(
-	{
-		token: DData.token,
-		autorun: true
-	}
-	);
+var bot = new Discord.Client();
+bot.login(DData.token);
+//		autorun: true
+
 
 bot.on('ready', function (evt)
 {
 	logger.info('Connected');
 	logger.info('Logged in as: ');
-	logger.info(bot.username + ' - (' + bot.id + ')');
+	logger.info(bot.user.username + ' - (' + bot.user.id + ')');
 	logger.info('Version:' + versInt);
 	
 	var beqTalk = JSON.parse(beq.beqTalkDef);
@@ -71,12 +69,16 @@ bot.on('ready', function (evt)
 }
 );
 
-bot.on('message', function (user, userID, channelID, message, evt)
+bot.on('message', function (messageDJS)
 {
 	var sndMessage = '';
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
 	var cmdFound = true;
+	var user = messageDJS.author.username;
+	var userID = messageDJS.author.id;
+	var channelID = messageDJS.channel.id;
+	var message = messageDJS.content;
 		
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
@@ -469,13 +471,7 @@ bot.on('message', function (user, userID, channelID, message, evt)
 			
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
-		
-		bot.sendMessage(
-		{
-			to: channelID,
-			message: sndMessage
-		}
-		);
+		messageDJS.channel.send(sndMessage);
 	}
 }
 );
