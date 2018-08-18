@@ -71,7 +71,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      });
 //	      logger.info(sndMessage);
 
-		botSendMessageT(1, myBot, myChannel, sndMessage);
+		botSendMessage(1, myBot, myChannel, sndMessage);
 		//myBot.sendMessage({
 			//to: myChannel,
 			//message: sndMessage
