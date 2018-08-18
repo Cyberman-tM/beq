@@ -75,7 +75,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 		//myBot.sendMessage({
 			//to: myChannel,
 			//message: sndMessage
-		});		
+		//});		
 	   }
 	});	
 }
