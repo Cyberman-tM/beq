@@ -9,7 +9,7 @@
 var boQwITranslate = require('./../boQwI_translate.js');
 var KWOTDTimings = require('./kwotd_timings.js');
 var beq = require ('./../../personality/beq_person.js');
-var botSendMessageText = require ('./../sendMessage.js');
+var botSendMessage = require ('./../sendMessage.js');
 var myTimings   = null;
 var mybeqEngine = null;
 var myBot       = null;
@@ -71,7 +71,7 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 	      });
 //	      logger.info(sndMessage);
 
-		botSendMessage(myBot, myChannel, sndMessage);
+		botSendMessageT(1, myBot, myChannel, sndMessage);
 		//myBot.sendMessage({
 			//to: myChannel,
 			//message: sndMessage
