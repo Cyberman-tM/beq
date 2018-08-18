@@ -11,6 +11,7 @@ var beqPerson = require('./bot_modules/personality/beq_person.js');
 var evTimer = require('./bot_modules/utils/event_timer.js');
 var weather = require('./bot_modules/utils/weather.js');
 var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
+var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -471,7 +472,8 @@ bot.on('message', function (messageDJS)
 			
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
-		messageDJS.channel.send(sndMessage);
+		//messageDJS.channel.send(sndMessage);
+		botSendMessage(1, this, messageDJS.channel.id, sndMessage);
 	}
 }
 );
