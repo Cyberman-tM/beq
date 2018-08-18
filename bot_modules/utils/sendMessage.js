@@ -4,7 +4,8 @@ module.exports.botSendMailText = function(messageType, bot, channelID, messageSt
 {
    //This should work in discord.js
    if (messageType == 1)
-      bot.channels[channelID].send(messagestring);   
+      bot.channels[channelID].send(messageString);   
    else
       //Die silently...
-}
+      return;
+};
