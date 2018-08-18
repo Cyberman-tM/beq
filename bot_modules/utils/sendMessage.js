@@ -8,7 +8,7 @@ module.exports = function(messageType, bot, channelID, messageString)
    logger.info(bot.channels);
    //This should work in discord.js
    if (messageType == 1)
-      bot.channels[channelID].send(messageString);   
+      bot.channels.get(channelID).send(messageString);   
    else
       //Die silently...
       return;
