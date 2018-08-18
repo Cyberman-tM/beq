@@ -473,7 +473,7 @@ bot.on('message', function (messageDJS)
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
 		//messageDJS.channel.send(sndMessage);
-		botSendMessage(1, this, messageDJS.channel.ID, sndMessage);
+		botSendMessage(1, this, messageDJS.channel.id, sndMessage);
 	}
 }
 );
