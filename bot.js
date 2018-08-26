@@ -6,6 +6,7 @@ var extCmds = require('./bot_modules/external/ext_commands.js');
 var cmdList = require('./bot_modules/cmdlist.js');
 var rules = require('./rules.js');
 var games = require('./bot_modules/games/games.js');
+var gameTalk = require('./bot_modules/games/gameTalkDef.js');
 var NumWords  = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 var evTimer = require('./bot_modules/utils/event_timer.js');
@@ -459,7 +460,7 @@ bot.on('message', function (messageDJS)
 	}
 	else if (message.substring(0, 1) == '%')
 	{
-		var gameTalk = JSON.parse(games.gameTalkDef);
+		var gameTalk = JSON.parse(gameTalkDef);
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
 	}
