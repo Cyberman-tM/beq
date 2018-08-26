@@ -459,9 +459,10 @@ bot.on('message', function (messageDJS)
 		}
 	}
 	else if (message.substring(0, 1) == '%')
-	{
-		logger.info(gameTalkDef);
-		var gameTalk = JSON.parse(gameTalkDef);
+	{		
+		//var gameTalk = JSON.parse(gameTalkDef);
+		var gameTalk =gameTalkDef;
+		logger.info("gt");
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
 	}
