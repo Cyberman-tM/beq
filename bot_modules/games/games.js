@@ -1,4 +1,7 @@
+var logger = require('winston');
+
 var wamaH = require('./wamaH.js');
+var gameTalkDef = require('./gameTalkDef.js');
 
 /*
   Generic game interface
@@ -6,20 +9,7 @@ var wamaH = require('./wamaH.js');
 
 module.exports.verGame = "Game Engine 0.0.1 - the beginning\n";
 module.exports.verGame += wamaH.gameInfo;
-
-//This structure is used for the bot to talk with the GAme Engine and vice versa
-//It is NOT used by the game internally
-module.exports.gameTalkDef = JSON.stringify(
-{
-	"userID": "",         //Current user
-	"playGame": "",       //Game he wants to play
-	"cmd": "",            //command or parameters to the game
-	"message": "",        //Return message of the game (current score, you win, etc...)
-	"noGame": false,      //No game was requested, error
-	"newline": "\n",      //newline character - \n for text, or <br> for web, or whatever
-	"reserved": "nothing" //There may be more to come	
-});
-
+//gameTalkDef = JSON.stringify(gameTalkDef);
 
 var userGameList = new Array();
 var aIdx = null;
@@ -28,11 +18,10 @@ module.exports.runGames = function(bot, userID, message)
 {
 	var args = message.substring(1).split(' ');
 	var cmd = args[0];
-	var gameTalk = JSON.parse(module.exports.gameTalkDef);
+	var gameTalk = gameTalkDef;
 	gameTalk.userID = userID;
 	
 	gameTalk.message = "You should never see this! Something went wrong...";
-		//This also sets aIdx!
 	aIdx = null;
 	var userGame = getUGL(userID);
 	if (aIdx == null)
@@ -46,7 +35,7 @@ module.exports.runGames = function(bot, userID, message)
 		}
 		else
 		{
-			var gameRun = wamaH.init(module.exports.gameTalkDef);
+			var gameRun = wamaH.init(gameTalkDef);
 			//Noch kein aktives Spiel, User will Spiel XY aktivieren:
 			userGameList.push(
 			{
