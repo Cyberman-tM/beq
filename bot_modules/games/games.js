@@ -18,7 +18,7 @@ module.exports.runGames = function(bot, userID, message)
 {
 	var args = message.substring(1).split(' ');
 	var cmd = args[0];
-	var gameTalk = JSON.parse(gameTalkDef);
+	var gameTalk = gameTalkDef;
 	gameTalk.userID = userID;
 	
 	gameTalk.message = "You should never see this! Something went wrong...";
