@@ -26,7 +26,6 @@ module.exports.runGames = function(bot, userID, message)
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
-		logger.info("null");
 		//Kein aktives Spiel gefunden => Liste der Spiele
 		//Momentan das einzige Spiel
 		if (cmd == undefined || cmd != 'wa\'maH')
