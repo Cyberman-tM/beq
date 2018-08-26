@@ -460,7 +460,6 @@ bot.on('message', function (messageDJS)
 	}
 	else if (message.substring(0, 1) == '%')
 	{		
-		//var gameTalk = JSON.parse(gameTalkDef);
 		var gameTalk =gameTalkDef;
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
