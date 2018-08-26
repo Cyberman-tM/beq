@@ -462,7 +462,6 @@ bot.on('message', function (messageDJS)
 	{		
 		//var gameTalk = JSON.parse(gameTalkDef);
 		var gameTalk =gameTalkDef;
-		logger.info("gt");
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
 	}
