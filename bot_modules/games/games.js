@@ -1,3 +1,5 @@
+var logger = require('winston');
+
 var wamaH = require('./wamaH.js');
 var gameTalkDef = require('./gameTalkDef.js');
 
@@ -7,7 +9,7 @@ var gameTalkDef = require('./gameTalkDef.js');
 
 module.exports.verGame = "Game Engine 0.0.1 - the beginning\n";
 module.exports.verGame += wamaH.gameInfo;
-gameTalkDef = JSON.stringify(gameTalkDef);
+//gameTalkDef = JSON.stringify(gameTalkDef);
 
 var userGameList = new Array();
 var aIdx = null;
@@ -20,11 +22,11 @@ module.exports.runGames = function(bot, userID, message)
 	gameTalk.userID = userID;
 	
 	gameTalk.message = "You should never see this! Something went wrong...";
-		//This also sets aIdx!
 	aIdx = null;
 	var userGame = getUGL(userID);
 	if (aIdx == null)
 	{
+		logger.info("null");
 		//Kein aktives Spiel gefunden => Liste der Spiele
 		//Momentan das einzige Spiel
 		if (cmd == undefined || cmd != 'wa\'maH')
