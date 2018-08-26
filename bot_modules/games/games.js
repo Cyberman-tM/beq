@@ -15,7 +15,7 @@ module.exports.runGames = function(bot, userID, message)
 {
 	var args = message.substring(1).split(' ');
 	var cmd = args[0];
-	var gameTalk = JSON.parse(module.exports.gameTalkDef);
+	var gameTalk = JSON.parse(gameTalkDef);
 	gameTalk.userID = userID;
 	
 	gameTalk.message = "You should never see this! Something went wrong...";
@@ -33,7 +33,7 @@ module.exports.runGames = function(bot, userID, message)
 		}
 		else
 		{
-			var gameRun = wamaH.init(module.exports.gameTalkDef);
+			var gameRun = wamaH.init(gameTalkDef);
 			//Noch kein aktives Spiel, User will Spiel XY aktivieren:
 			userGameList.push(
 			{
