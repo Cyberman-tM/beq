@@ -7,6 +7,7 @@ var gameTalkDef = require('./gameTalkDef.js');
 
 module.exports.verGame = "Game Engine 0.0.1 - the beginning\n";
 module.exports.verGame += wamaH.gameInfo;
+gameTalkDef = JSON.stringify(gameTalkDef);
 
 var userGameList = new Array();
 var aIdx = null;
