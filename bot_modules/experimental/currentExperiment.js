@@ -9,12 +9,10 @@ module.exports = (bot, args, messageDJS) =>
   LMChannel.fetchPinnedMessages()
   .then(function(messages)
   {
-    logger.info(messages[0].content);
-    logger.info(messageDJS.content);
     //Derzeit kann es nur eine geben!
-    var newMessage = messages[0].content + messageDJS.content;    
+    var newMessage = messages.array()[0].content + messageDJS.content;    
     logger.info(newMessage);
-    messages[0].edit(newMessage)
+    messages.array()[0].edit(newMessage)
   .then(msg => console.log(`New message content: ${msg}`))
   .catch(console.error);
   })
