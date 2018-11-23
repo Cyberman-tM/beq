@@ -7,7 +7,7 @@ module.exports = (args, messageDJS) =>
     .then(function(messages)
           {
           logger.info(`Received ${messages.size} messages`);
-          logger.info(messages[0]);
+          logger.info(messages[0].content);
           })    
     .catch(console.error);
 }
