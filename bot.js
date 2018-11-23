@@ -13,7 +13,7 @@ var evTimer = require('./bot_modules/utils/event_timer.js');
 var weather = require('./bot_modules/utils/weather.js');
 var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
-var experimentalFunc = require ('/bot_modules/experimental/currentExperiment.js');
+var experimentalFunc = require ('./bot_modules/experimental/currentExperiment.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
