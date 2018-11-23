@@ -3,6 +3,15 @@ var DData = require('./../external/discord_data.js');
 
 module.exports = (bot, args, messageDJS) => 
 {
+  var LMChannel = bot.channels.get(DData.LMChan);
+  
+  //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
+  LMChannel.fetchPinnedMessages()
+  .then(function(messages)
+  {
+    messages[0].content += "testing123";
+  }
+  /*
   messageDJS.channel.fetchPinnedMessages()
     .then(function(messages)
           {
@@ -10,10 +19,9 @@ module.exports = (bot, args, messageDJS) =>
           logger.info(messages.array()[0].content);
           })    
     .catch(console.error);
+  */
   
-  logger.info(DData.LMChan);
-  logger.info(bot.channels.get(DData.LMChan));
-  logger.info("---------------------");
-   //logger.info(bot.channels);
-   logger.info(bot.channels[DData.LMChan]);
+  
+  
+  
 }
