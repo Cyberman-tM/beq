@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
   .then(function(messages)
   {
     messages[0].content += "testing123";
-  }
+  })
   /*
   messageDJS.channel.fetchPinnedMessages()
     .then(function(messages)
