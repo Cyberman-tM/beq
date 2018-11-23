@@ -9,7 +9,9 @@ module.exports = (bot, args, messageDJS) =>
   LMChannel.fetchPinnedMessages()
   .then(function(messages)
   {
-    messages[0].content += "testing123";
+    //Derzeit kann es nur eine geben!
+    var newMessage = messages[0].content + messageDJS.content;    
+    messages[0].edit(newMessage);
   })
   /*
   messageDJS.channel.fetchPinnedMessages()
