@@ -11,7 +11,10 @@ module.exports = (bot, args, messageDJS) =>
   {
     //Derzeit kann es nur eine geben!
     var newMessage = messages[0].content + messageDJS.content;    
-    messages[0].edit(newMessage);
+    logger.info(newMessage);
+    messages[0].edit(newMessage)
+  .then(msg => console.log(`New message content: ${msg}`))
+  .catch(console.error);
   })
   /*
   messageDJS.channel.fetchPinnedMessages()
