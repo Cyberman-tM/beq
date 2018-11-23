@@ -361,7 +361,7 @@ bot.on('message', function (messageDJS)
 		break;
 			//Übersetzungen
 		case 'experiment':
-			experimentalFunc(args);
+			experimentalFunc(args, messageDJS);
 		break;
 		case 'mugh':
 			var talkBeq = JSON.parse(beq.beqTalkDef);
