@@ -12,6 +12,7 @@ module.exports = (bot, args, messageDJS) =>
     .catch(console.error);
   
   logger.info(bot.channels.get(DData.LMChannel));
-   logger.info(bot.channels);
+  logger.info("---------------------");
+   //logger.info(bot.channels);
    logger.info(bot.channels[DData.LMChannel]);
 }
