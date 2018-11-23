@@ -1,5 +1,5 @@
 var logger = require('winston');
-var DData = require('./bot_modules/external/discord_data.js');
+var DData = require('./../external/discord_data.js');
 
 module.exports = (args, messageDJS) => 
 {
