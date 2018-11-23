@@ -1,8 +1,8 @@
 var logger = require('winston');
+var DData = require('./bot_modules/external/discord_data.js');
 
 module.exports = (args, messageDJS) => 
 {
-  logger.info(args[0]);
   messageDJS.channel.fetchPinnedMessages()
     .then(function(messages)
           {
@@ -10,4 +10,6 @@ module.exports = (args, messageDJS) =>
           logger.info(messages.array()[0].content);
           })    
     .catch(console.error);
+  
+  logger.info(bot.channels.get(LMChannel));
 }
