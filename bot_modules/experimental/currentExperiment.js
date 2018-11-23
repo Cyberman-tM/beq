@@ -22,7 +22,7 @@ module.exports = (bot, args, messageDJS) =>
     {
       //New message
       // Send a basic message
-channel.send(messageDJS.content)
+LMChannel.send(messageDJS.content)
   .then(function(message)
         {
       message.pin();
