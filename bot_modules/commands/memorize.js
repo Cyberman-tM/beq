@@ -9,7 +9,7 @@ module.exports = (bot, args, messageDJS) =>
   //var curMessage = messageDJS.content;
   //Probieren wirs so:
   args[0] = "";
-  args[1] == "";
+  args[1] = "";
   var curMessage = args.join();
   
   //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
