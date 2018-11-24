@@ -5,8 +5,12 @@ module.exports = (bot, args, messageDJS) =>
 {
   var LMChannel = bot.channels.get(DData.LMChan);
   
-  //curMessage hat noch den Befehl - wie werden wir den los?
-  var curMessage = messageDJS.content;
+  ////curMessage hat noch den Befehl - wie werden wir den los?
+  //var curMessage = messageDJS.content;
+  //Probieren wirs so:
+  args[0] = "";
+  args[1] == "";
+  var curMessage = args.join();
   
   //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
   LMChannel.fetchPinnedMessages()
