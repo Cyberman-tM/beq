@@ -21,7 +21,8 @@ module.exports = (bot, args, messageDJS) =>
     if (messages.size > 0)
     {
 		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		var newMessage = messages.array()[0].content + '\n' + '\n' + curMessage;
+		var newMessage = messages.array()[0].content + '\n';
+	        newMessage = "Asked by:" + messageDJS.author + '\n' + curMessage;
 		
 		//Bestehende Nachricht editieren
 		messages.array()[0].edit(newMessage)
