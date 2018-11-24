@@ -45,6 +45,8 @@ module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, ital
 		myLines = JSON.parse(beqLines.KWOTDLines);
 	else if (lineType == 4)
 		myLines = JSON.parse(beqLines.KWOTDFailure);
+	else if (lineType == 5)
+		myLines = JSON.parse(beqLines.MemorizeDone);
 	
 	if (myLines.length == 0)
 		oneLine = "";
