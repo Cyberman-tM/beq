@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
   //Probieren wirs so:
   args[0] = "";
   args[1] = "";
-  var curMessage = args.join();
+  var curMessage = args.join('');
   
   //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
   LMChannel.fetchPinnedMessages()
@@ -20,7 +20,7 @@ module.exports = (bot, args, messageDJS) =>
     if (messages.size > 0)
     {
 		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		var newMessage = messages.array()[0].content + '\n' + curMessage;
+		var newMessage = messages.array()[0].content + '\n' + '\n' + curMessage;
 		
 		//Bestehende Nachricht editieren
 		messages.array()[0].edit(newMessage)
