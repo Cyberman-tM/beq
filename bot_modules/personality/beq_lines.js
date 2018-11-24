@@ -52,3 +52,12 @@ module.exports.KWOTDFailure = JSON.stringify(
 		"... Qu'vatlh!",
 		"jIQapbe'? qatlh DuH?"
 	]);
+
+//Acknowledge memorize command
+module.exports.MemorizeDone = JSON.stringify(
+	[
+		"I have memorized it.",
+		"Hmp. I've forgotten more things than you ever knew. I will remember this bit, rest assured.",
+		"pItlh",
+		"Memorized."
+		]);
