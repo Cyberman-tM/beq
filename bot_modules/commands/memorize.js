@@ -32,10 +32,7 @@ module.exports = (bot, args, messageDJS) =>
     else		
     {
       //New pinned message
-	    //Kopie von oben!
-		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		newMessage = messages.array()[0].content + '\n';
-	        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
+        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
 	  LMChannel.send(newMessage)
 	  .then(function(message)
       {message.pin();})
