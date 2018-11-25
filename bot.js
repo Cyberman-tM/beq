@@ -13,6 +13,8 @@ var evTimer = require('./bot_modules/utils/event_timer.js');
 var weather = require('./bot_modules/utils/weather.js');
 var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
+var experimentalFunc = require ('./bot_modules/experimental/currentExperiment.js');
+var memorize = require ('./bot_modules/commands/memorize.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -357,8 +359,15 @@ bot.on('message', function (messageDJS)
 		//Word to Number
 		case 'w2n':
 		   sndMessage = NumWords.Word2Num(onePar);
+		break;			
+		case 'experiment':
+			experimentalFunc(bot, args, messageDJS);
 		break;
-			//Übersetzungen
+		case 'yIqaw':
+			memorize(bot, args, messageDJS);
+			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
+		break;
+		//Übersetzungen
 		case 'mugh':
 			var talkBeq = JSON.parse(beq.beqTalkDef);
 		
