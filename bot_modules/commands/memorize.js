@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
   //Probieren wirs so:
   args[0] = "";
   var curMessage = args.join(' ');
-	
+  var newMessage = "";
   curMessage = curMessage.replace("\n", '\n');
   
   //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
@@ -21,7 +21,7 @@ module.exports = (bot, args, messageDJS) =>
     if (messages.size > 0)
     {
 		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		var newMessage = messages.array()[0].content + '\n';
+		newMessage = messages.array()[0].content + '\n';
 	        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
 		
 		//Bestehende Nachricht editieren
@@ -32,7 +32,11 @@ module.exports = (bot, args, messageDJS) =>
     else		
     {
       //New pinned message
-	  LMChannel.send(messageDJS.content)
+	    //Kopie von oben!
+		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
+		newMessage = messages.array()[0].content + '\n';
+	        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
+	  LMChannel.send(newMessage)
 	  .then(function(message)
       {message.pin();})
 	  .catch(console.error);
