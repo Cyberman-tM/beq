@@ -256,6 +256,7 @@ module.exports.Engine = function(beqTalk)
 			//Klingon usually uses the straight apostrophe, ', but sometimes a ´ or ` is used
 			beqTalk.lookWord = beqTalk.lookWord.replace(/\´/g, '\'');
   		        beqTalk.lookWord = beqTalk.lookWord.replace(/\`/g, '\'');
+			beqTalk.lookWord = beqTalk.lookWord.replace(/\‘/g, '\'');			
 
 			//Maybe we are looking for multiple words at once?
 			var multiWord = beqTalk.lookWord.split('|');
