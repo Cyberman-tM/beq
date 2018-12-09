@@ -6,7 +6,7 @@
 module.exports.cmdlist = 'ping - simple response test, replies "pong"<BR>'
 + 'tlhIngan - replies "maH!"<BR>'
 + 'yIngu\' - Name and version of the bot & database version<BR>'
-+ 'CMDLIST - this here<BR>'
++ 'CMDLIST - this here (also called when you use "help")<BR>'
 + 'Le\'rat<BR>'
 + '<BR>'
 + 'setTLang - set your translation language to the argument, i.e. "setTLang en" for english translations<BR>'
@@ -27,4 +27,8 @@ module.exports.cmdlist = 'ping - simple response test, replies "pong"<BR>'
 + '       [case] - by default, case is NOT ignored. If you want to ignore case, add this keyboard. Not applicable to klingon<BR>'
 + '       [startRes=nn] - the number of results is limited to 20, if you had a previous search and want to see the next 20 entries,<BR>'
 + '                       add this parameter with the number or results you want to skip<BR>'
-+ '       [type=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'<BR>';
++ '       [type=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'<BR>'
++ '<BR>'
++ 'yIqaw - Remember! Adds a note in the "Letter to Maltz" channel, so we can ask for clarification/words when the opportunity shows itself.<BR>'
++ '<BR>'
++'<BR>';
