@@ -30,5 +30,5 @@ module.exports.cmdlist = 'ping - simple response test, replies "pong"<BR>'
 + '       [type=(n,v,adv,sen,ques,...)] - the program will look for ANY word that fits your search term, with this you can limit it. Uses the notation of boQwI\'<BR>'
 + '<BR>'
 + 'yIqaw - Remember! Adds a note in the "Letter to Maltz" channel, so we can ask for clarification/words when the opportunity shows itself.<BR>'
-+ '<BR>'
++ '        Anything after the keyword will be stored! No parameters.<BR>'
 +'<BR>';
