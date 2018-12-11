@@ -1602,10 +1602,10 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">have a temperature of</column>
       <column name="definition_de">eine Temperatur haben von</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">درجه حرارت [AUTOTRANSLATED]</column>
+      <column name="definition_sv">ha en temperatur på [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">溫度為 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SImyon:n}, {Hat:n}, {juv:v}</column>
@@ -1644,15 +1644,13 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tlhob:v}, {yu':v}, {jang:v}</column>
-      <column name="notes">This verb is used to ask a question, whereas {tlhob:v} is used for making a request.[2]
-
-The object of this verb is the question asked.</column>
+      <column name="notes">This verb is used to ask a question, whereas {tlhob:v} is used for making a request.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">It's implied that {ghel:v:nolink} works in a similar manner to {tlhob:v:nolink}, but this isn't explicitly stated.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1709,10 +1707,10 @@ The object of this verb is the question asked.</column>
       <column name="part_of_speech">n</column>
       <column name="definition">orchestra</column>
       <column name="definition_de">Orchester</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">ارکستر [AUTOTRANSLATED]</column>
+      <column name="definition_sv">orkester [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">管弦樂隊</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -1869,8 +1867,8 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {DaH yaS wa'DIch vIgheS} "I now take my place as first officer", or literally, "Now I assume the responsibilities of first officer"[1, p.182]
-▶ {juDev 'ej Dujvam ra'wI' DagheS 'e' vItlhob} "I ask you to lead us as commander of this ship", or literally, "I request that you lead us and that you assume the duties of commander of this ship"[1, p.184]</column>
+▶ {DaH yaS wa'DIch vIgheS@@DaH:adv, yaS:n, wa'DIch:n, vI-:v, gheS:v} "I now take my place as first officer", or literally, "Now I assume the responsibilities of first officer"[1, p.182]
+▶ {juDev 'ej Dujvam ra'wI' DagheS 'e' vItlhob:sen@@ju-:v, Dev:v, 'ej:conj, Duj:n:1, ra'wI':n, Da-:v, gheS:v, 'e':n, vI-:v, tlhob:v} "I ask you to lead us as commander of this ship", or literally, "I request that you lead us and that you assume the duties of commander of this ship"[1, p.184]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4935,7 +4933,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="definition">meet, encounter, assemble, rendezvous</column>
       <column name="definition_de">treffen, begegnen</column>
       <column name="definition_fa">ملاقات، برخورد، ملاقات، ملاقات [AUTOTRANSLATED]</column>
-      <column name="definition_sv">möta, träffa, samlas</column>
+      <column name="definition_sv">möta, träffa, samlas, stöta på</column>
       <column name="definition_ru">встречать, сталкиваться, встретиться неожиданно, собираться</column>
       <column name="definition_zh_HK">相遇、相遇、聚會、約會 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
@@ -6296,10 +6294,10 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="part_of_speech">v:i_c</column>
       <column name="definition">growl</column>
       <column name="definition_de">knurren</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">خندیدن [AUTOTRANSLATED]</column>
+      <column name="definition_sv">morra [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">吠聲 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghugh:v}</column>
@@ -6404,7 +6402,7 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="definition">alert, warn</column>
       <column name="definition_de">alarmieren, warnen</column>
       <column name="definition_fa">هشدار، هشدار [AUTOTRANSLATED]</column>
-      <column name="definition_sv">varna</column>
+      <column name="definition_sv">varna, förvarna</column>
       <column name="definition_ru">предупреждать, предостерегать</column>
       <column name="definition_zh_HK">警告</column>
       <column name="synonyms"></column>
@@ -6776,15 +6774,14 @@ See also the suffixes {-rup:v} and {-beH:v} for indicating preparation or readin
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Even though the definition starts with "be", this is not a stative verb. The subject is a person getting ready to use a device to launch something, not the device itself.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {cha yIghuS!:sen}[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">
-▶ {cha yIghuS!:sen}[2]</column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -6792,7 +6789,7 @@ See also the suffixes {-rup:v} and {-beH:v} for indicating preparation or readin
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Star Trek I:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6959,7 +6956,7 @@ See also the suffixes {-rup:v} and {-beH:v} for indicating preparation or readin
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">{ghuy' po'qu'!:sen}</column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -7065,8 +7062,7 @@ See also the suffixes {-rup:v} and {-beH:v} for indicating preparation or readin
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">
-▶ {ghu' Dachupbogh vIlaj.:sen}</column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>

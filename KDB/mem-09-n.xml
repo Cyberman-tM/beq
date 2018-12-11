@@ -2485,7 +2485,7 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{neb:n:1}</column>
-      <column name="notes">This word refers to nozzles on rockets, hoses, etc., and takes the plural suffix {-mey:n}.</column>
+      <column name="notes">This word refers to nozzles on rockets, hoses, etc., and takes the plural suffix {-mey:n}, as the connection to the body part has been lost.[1] (This is an exception to the general pattern of words for body part retaining the suffix {-Du':n} when they are used to refer to other things, as the non-body-part meaning of this word has become lexicalized.[2])</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2505,7 +2505,7 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 2016:src}, [2] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2975,13 +2975,15 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/JyeePTUXVa8}</co
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{rap:v}, {nIb:v}</column>
-      <column name="notes">This might be used if fingerprints match up (see {nItlh Su'nIm:n} and {nItlh Su'nIm vem:n}).</column>
+      <column name="notes">This might be used if fingerprints match up (see {nItlh Su'nIm:n} and {nItlh Su'nIm vem:n}).[1]
+
+Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B matches A", or {nelchuq A B je:sen:nolink} "A and B match each other".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Nell Carter was a regular panelist on the TV show "Match Game".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2995,7 +2997,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/JyeePTUXVa8}</co
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 2018:src}, [2] {KLI mailing list 2018.11.20:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3003,10 +3005,10 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/JyeePTUXVa8}</co
       <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">fit in perfectly, fit perfectly</column>
       <column name="definition_de">perfekt passen</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">کاملا مناسب است، کاملا مناسب است [AUTOTRANSLATED]</column>
+      <column name="definition_sv">passa perfekt och passa perfekt [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">完美貼合、完美貼合 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Qay'mol teSra':n}</column>
@@ -5035,10 +5037,10 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">trumpet</column>
       <column name="definition_de">Trompete</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">شیپور [AUTOTRANSLATED]</column>
+      <column name="definition_sv">trumpet [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">喇叭</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -5111,7 +5113,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="definition_zh_HK">指紋（指尖上的脊） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nItlh Su'nIm vem:n}</column>
+      <column name="see_also">{nItlh Su'nIm vem:n}, {nel:v}</column>
       <column name="notes">See under {Su'nIm:n} for an explanation.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5146,7 +5148,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="definition_zh_HK">指紋（觸摸標記） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nItlh Su'nIm:n}, {bo'DIj nompuq:n}</column>
+      <column name="see_also">{nItlh Su'nIm:n}, {nel:v}, {bo'DIj nompuq:n}</column>
       <column name="notes">See under {vem:n} for an explanation.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5176,7 +5178,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="definition">keyboard (computer device)</column>
       <column name="definition_de">Computer-Tastatur</column>
       <column name="definition_fa">صفحه کلید</column>
-      <column name="definition_sv">tangentbord (dator enhet) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">tangentbord (datortillbehör)</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">鍵盤</column>
       <column name="synonyms"></column>
@@ -6313,7 +6315,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{noq:n:1}, {bal:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This word takes the suffix {-Du':n}, as it's an extension of the meaning of the anatomical term.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>

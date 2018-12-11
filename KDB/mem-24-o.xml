@@ -180,20 +180,22 @@
       <column name="part_of_speech">n:anim</column>
       <column name="definition">scorpion-like creature</column>
       <column name="definition_de">Skorpionähnliches Ding</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">مخلوق مانند عقرب [AUTOTRANSLATED]</column>
+      <column name="definition_sv">skorpionliknande varelse [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">蝎子般的生物</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is a creature which runs really fast in a seemingly haphazard way and has a dangerous (sharp and poisonous) tail.</column>
+      <column name="notes">This is a creature which runs really fast in a seemingly haphazard way and has a dangerous (sharp and venomous) tail.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">Walter O'Brien is the main character of the TV series Scorpion.</column>
+      <column name="hidden_notes">Walter O'Brien is the main character of the TV series Scorpion.
+
+The original description said "sharp and poisonous", but it was clarified that Maltz meant venomous.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -620,10 +622,10 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
       <column name="part_of_speech">n</column>
       <column name="definition">drop (of liquid)</column>
       <column name="definition_de">Tropfen</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">قطره (از مایع) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">droppe (av vätska) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">掉落（液體） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SIS:v}</column>
@@ -635,7 +637,7 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">{mIn 'onroS:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -655,10 +657,10 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Ontario</column>
       <column name="definition_de">Ontario</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">انتاریو [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Ontario [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">安大略省</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>

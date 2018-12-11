@@ -717,7 +717,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="definition_de">Und das Blut war knöcheltief (Trinklied)</column>
       <column name="definition_fa">و خون مچ پا عمیق بود (آهنگ نوشیدنی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">Och blodet var fotled djupt (dricka sång) [AUTOTRANSLATED]</column>
-      <column name="definition_ru"></column>
+      <column name="definition_ru">И кровь была по колено (застольная песня)</column>
       <column name="definition_zh_HK">踝深的血（飲酒歌）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1075,10 +1075,10 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="part_of_speech">n:body</column>
       <column name="definition">bladder</column>
       <column name="definition_de">Blase</column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
+      <column name="definition_fa">مثانه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">blåsa [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
+      <column name="definition_zh_HK">膀胱 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{HuH:n}</column>
@@ -1088,7 +1088,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word takes the suffix {-Du':n} even when used metaphorically.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {turmIq 'enDeq:n}</column>
@@ -1393,7 +1393,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="definition">mouse (computer device)</column>
       <column name="definition_de">Maus (Computergerät)</column>
       <column name="definition_fa">موس (دستگاه رایانه) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">mus (datoranordning) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">mus (datortillbehör)</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">滑鼠</column>
       <column name="synonyms"></column>
