@@ -27,6 +27,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"lookSource": "",             // sources you're looking in (TKD, qep'a', 2018, etc...) - KWTOD for now!
 	"transLang": "",              // the language you want as result
 	"command": "",                // the actual command, like "mugh"
+	"simple": "",                 // true/false -> Keep the output simple, no personality, no fluff
 	"special": "",                // special commands, untested, unlisted, etc...
 	"showNotes": ""               // Show notes, if available? => true/false
 	"showSource": ""              // Show source, if available => true/false
@@ -376,6 +377,7 @@ module.exports.beqTalkDef = JSON.stringify(
 	"lookWord": "",
 	"transLang": "",
 	"command": "",
+	"simple": "",
 	"special": "",
 	"showNotes": false,
 	"wordType1": null,
@@ -425,16 +427,19 @@ module.exports.createTranslation = function(beqTalk)
 	
 	if (beqTalk.command == "mugh")
 	{
-		sndMessage = intText.resStart;
-		sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
-		sndMessage = sndMessage.replace("&2", beqTalk.result.length);
-		if (beqTalk.fuzzy == true)
-			sndMessage += intText.resFuzz;
-		if (beqTalk.wCase == true)
-			sndMessage += intText.resCase;
-		if (beqTalk.remPref == true)
-			sndMessage += intText.remPref;
-		sndMessage += beqTalk.newline + beqTalk.newline;
+		if (beqTalk.simple != true)
+		{
+			sndMessage = intText.resStart;
+			sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
+			sndMessage = sndMessage.replace("&2", beqTalk.result.length);
+			if (beqTalk.fuzzy == true)
+				sndMessage += intText.resFuzz;
+			if (beqTalk.wCase == true)
+				sndMessage += intText.resCase;
+			if (beqTalk.remPref == true)
+				sndMessage += intText.remPref;
+			sndMessage += beqTalk.newline + beqTalk.newline;
+		}
 	}
 
 	var count = 0;
