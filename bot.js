@@ -389,13 +389,14 @@ bot.on('message', function (messageDJS)
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
 			var p_showNotes = args[8];  //show notes, if available
-			var p_special   = args[9];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
+			var p_beSimple  = args[9];  //Simple output - no frills
+			var p_special   = args[10];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 	
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 				
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
-			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special;
+			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple;
 			if (dynArg.indexOf('case') >= 0)
 				beqTalk.wCase = true;
 
@@ -417,6 +418,9 @@ bot.on('message', function (messageDJS)
 			
 			if ((dynArg).indexOf('nofuzz') >= 0)
 				beqTalk.fuzzy = false;
+				
+			if ((dynArg).indexOf('simple') >= 0)
+				beqTalk.simple = true;
 		
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
@@ -451,8 +455,12 @@ bot.on('message', function (messageDJS)
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);		
-			//Add some personality:
-			sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
+			
+			if (beqTalk.simple != true)
+			{
+				//Add some personality if requested:
+				sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
+			}
 		
 			break;
 		default:
