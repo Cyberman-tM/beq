@@ -118,12 +118,10 @@ bot.on('message', function (messageDJS)
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (message.substring(0, 1) == '?')
 		{
-			logger.info(message);
-			logger.info(message.substring(1,3));
 			if (channelID == DData.clipChan)
 			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
-				if (message.substring(1,3) == 'tlh')
+				if (message.substring(2,5) == 'tlh')
 				   beqTalk.showNotes = true;
 				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
