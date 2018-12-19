@@ -115,6 +115,7 @@ bot.on('message', function (messageDJS)
 	// That is: command (translate) language (klingon) word (Suv)
 	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
 	{		
+		logger.info(message.substring(2,5));
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (message.substring(0, 1) == '?')
 		{
