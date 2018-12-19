@@ -120,9 +120,13 @@ bot.on('message', function (messageDJS)
 		{
 			if (channelID == DData.clipChan)
 			{
+				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
+				if (message.substring(1,3) == 'tlh')
+				   beqTalk.showNotes = true;
+				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
 				//So we can simply replace the ? with "!mugh " and the rest will work normally
-				message = message.replace('?', "!mugh ");
+				message = message.replace('?', "!mugh ");			
 			}
 			else
 				message = '!noShort';
