@@ -16,6 +16,7 @@ var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
 var experimentalFunc = require ('./bot_modules/experimental/currentExperiment.js');
 var memorize = require ('./bot_modules/commands/memorize.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
+var searchMList = require('./bot_modules/commands/search_mlist.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -377,6 +378,10 @@ bot.on('message', function (messageDJS)
 		//Search canon
 		case 'canon':
 			sndMessage = searchCanon(bot, args, messageDJS);
+		break;
+	        //Search Mailing list
+		case 'mlist':
+			sndMessage = searchMList(bot, args, messageDJS);
 		break;
 		//Übersetzungen
 		case 'mugh':
