@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
    var lang = args[1].toLowerCase();
    lang.substring(0,1) = lang.substring(0,1).toUpperCase();
    
-   tmpRet = wikiLink + lang + '/' args[2];
+   tmpRet = wikiLink + lang + '/' + args[2];
    
    return tmpRet;
 }
