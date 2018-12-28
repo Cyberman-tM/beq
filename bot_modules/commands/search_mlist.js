@@ -1,4 +1,4 @@
-ar logger = require('winston');
+var logger = require('winston');
 var DData = require('./../external/discord_data.js');
 var oldKLIMailList = "https://www.kli.org/sphider/search.php?query=[query]&search=1";
 var newKLIMailList = "lists.kli.org/mmsearch.cgi/tlhingan-hol-kli.org?config=tlhingan-hol-kli.org&restrict=&exclude=&method=and&format=short&sort=score&words=[query]";
