@@ -377,6 +377,7 @@ bot.on('message', function (messageDJS)
 		//Search canon
 		case 'canon':
 			sndMessage = searchCanon(bot, args, messageDJS);
+		break;
 		//Übersetzungen
 		case 'mugh':
 			var talkBeq = JSON.parse(beq.beqTalkDef);
