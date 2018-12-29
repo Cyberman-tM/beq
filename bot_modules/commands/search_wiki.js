@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
    if (lang != 'de' && lang != 'en' && lang != 'fr' && lang != 'nl' && lang != 'es')
    {
       lang = 'de';
-      args[1] = args[2];
+      args[2] = args[1];
    }
    
    lang = lang.substring(0,1).toUpperCase() + lang.substring(1,lang.length);
