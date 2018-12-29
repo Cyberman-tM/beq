@@ -10,7 +10,7 @@ module.exports = (bot, args, messageDJS) =>
    if (lang != 'de' && lang != 'en' && lang != 'fr' && lang != 'nl' && lang != 'es')
       lang = 'de';
    
-   lang.substring(0,1) = lang.substring(0,1).toUpperCase();
+   lang = lang.substring(0,1).toUpperCase() + lang.substring(1,lang.length);
    
    tmpRet = wikiLink + lang + '/' + args[2];
    
