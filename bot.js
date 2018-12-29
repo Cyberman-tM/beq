@@ -92,12 +92,6 @@ bot.on('message', function (messageDJS)
 	if (message.length < 3)
 	   return;
 	
-	
-	aIdx = null;
-	var ULang = getUserTranLang(userID);
-	if (aIdx != null)
-		userTLang = ULang[0].lang;
-	
 	//Dev build	only
 	if ( DData.devBuild == "true" )
 	{
@@ -206,56 +200,6 @@ bot.on('message', function (messageDJS)
 			
 				if ( DData.devBuild == "true" )
 					sndMessage += "(Development edition)";
-			break;
-
-		case 'showMySettings':
-			aIdx = null;
-			var ULang = getUserTranLang(userID);
-			if (aIdx != null)
-				sndMessage += 'Your translation language is set to \'' + ULang[0].lang + '\'\n';
-			else
-				sndMessage += 'You do not have a default translation language, so the default of \'' + defaultTranslation + '\' is used.\n';
-
-			aIdx = null;
-			var uFuzz = getUserFuzzy(userID);
-			if (aIdx != null)
-				sndMessage += 'Fuzzy search for translation is set to: \'' + uFuzz[0].fuzzy + '\'\n';
-			else
-				//Maybe later it'll be true as default? Make it a variable some time
-				sndMessage += 'Fuzzy search for translation is set to system default: \'' + false + '\'\n';
-
-			break;
-
-		case 'setDefaultTLang':
-			if (args[1] != null && langKnown(args[1]) == true)
-				defaultTranslation = args[1];
-			else
-				defaultTranslation = 'en';
-
-			sndMessage += 'Default language is now \'' + defaultTranslation + '\'';
-			break;
-
-		case 'setTLang':
-			var workLang = args[1];
-			if (workLang != null && langKnown(workLang) == true)
-			{
-				aIdx = null;
-				var ULang = getUserTranLang(userID);
-
-				if (aIdx != null)
-					userTranLang[aIdx].lang = workLang;
-				else
-					userTranLang.push(
-					{
-						userID: userID,
-						lang: workLang
-					}
-					);
-
-				sndMessage += 'Translation language is set to \'' + workLang + '\' for ' + user + '\n';
-			}
-			else
-				sndMessage += 'nuqjatlh? Hol \'oHbe\' ' + args[1] + '!\n';
 			break;
 
 		case 'setFuzzy':
