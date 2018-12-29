@@ -295,7 +295,7 @@ bot.on('message', function (messageDJS)
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
 
-			sndMessage = beq.createTranslation(talkBeq);	
+			sndMessage = talkBeq.message;
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
