@@ -8,7 +8,10 @@ module.exports = (bot, args, messageDJS) =>
    
    var lang = args[1].toLowerCase();
    if (lang != 'de' && lang != 'en' && lang != 'fr' && lang != 'nl' && lang != 'es')
+   {
       lang = 'de';
+      args[1] = args[2];
+   }
    
    lang = lang.substring(0,1).toUpperCase() + lang.substring(1,lang.length);
    
