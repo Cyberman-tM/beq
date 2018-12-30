@@ -18,6 +18,7 @@ var memorize = require ('./bot_modules/commands/memorize.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
+var showAffixes = require('./bot_modules/commands/show_affixes.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -242,30 +243,7 @@ bot.on('message', function (messageDJS)
 			}
 			break;
 		case "yIcha'":
-			var talkBeq = JSON.parse(beq.beqTalkDef);
-			beqTalk.command = "yIcha'";			
-			beqTalk.lookLang = 'tlh';
-			if (userTLang == null)
-				beqTalk.transLang = defaultTranslation;
-			else
-				beqTalk.transLang = userTLang;
-			
-			//No use in limiting the number of results...
-			beqTalk.limitRes = 50;
-			
-			switch (args[1])
-			{
-				case 'prefix':
-				case 'moHaq':
-				case 'type=v:pref':
-				   beqTalk.wordType1 = 'v:pref';
-				break;				
-			}
-			
-			//Let the engine do its magic :-)
-			talkBeq = beq.Engine(beqTalk);
-
-			sndMessage = talkBeq.message;
+			sndMessage = searchAffixes(bot, args, messageDJS, KDBVPJson, KDBVSJson, KDBNSJson);			
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
@@ -425,33 +403,6 @@ bot.on('message', function (messageDJS)
 	}
 }
 );
-
-/*
-//I don't trust this - it doesn't trigger often enough, maybe the heartbeat rate for the servers
-//has to be changed?
-bot.on('any', function(event)
-{
-	if (devTest == true)
-	{
-	   bot.sendMessage({to: DData.bTChan, message: event.t});
-	   if (event.t != 'MESSAGE_CREATE' || event.d.author.bot == false)
-	      bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});
-	}
-	
-});
-*/
-function getUserTranLang(userID)
-{
-	return userTranLang.filter(function (UT, iIdx)
-	{
-		if (UT.userID == userID)
-		{
-			aIdx = iIdx;
-			return UT
-		}
-	}
-	);
-}
 
 function langKnown(language)
 {
