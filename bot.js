@@ -29,9 +29,6 @@ var defaultTranslation = 'en';
 //Keep track of the language the user wants us to use
 var userTranLang = new Array();
 
-//Keep track of the fuzzy/non-fuzzy search settings for the users
-var userFuzzy = new Array();
-
 //Generic index for search/replace in array
 var aIdx = null;
 
@@ -201,33 +198,6 @@ bot.on('message', function (messageDJS)
 				if ( DData.devBuild == "true" )
 					sndMessage += "(Development edition)";
 			break;
-
-		case 'setFuzzy':
-			var newFuzz = null;
-
-			if (args[1] == 'on')
-				newFuzz = true;
-			else if (args[1] == 'off')
-				newFuzz = false;
-
-			aIdx = null;
-			var uFuzz = getUserFuzzy(userID);
-			if (aIdx != null)
-				userFuzzy[aIdx].fuzzy = newFuzz;
-			else
-				userFuzzy.push(
-				{
-					userID: userID,
-					fuzzy: newFuzz
-				}
-				);
-
-			if (newFuzz == true)
-				sndMessage += 'Translation search will use fuzzy search from now on.';
-			else if (newFuzz == false)
-				sndMessage += 'Translation search will use strict search from now on.';
-			break;
-
 			//"Lustige" Meldungen
 		case 'tlhIngan':
 			sndMessage += 'maH!\n';
@@ -366,12 +336,7 @@ bot.on('message', function (messageDJS)
 			if (dynArg.indexOf('fuzzy') >= 0)
 				beqTalk.fuzzy = true;
 			else
-			{
-				aIdx = null;
-				var uFuzz = getUserFuzzy(userID);
-				if (aIdx != null)
-					beqTalk.fuzzy = uFuzz[0].fuzzy;
-			}
+				beqTalk.fuzzy = false;
 			
 			if (dynArg.indexOf('notes') >= 0)
 				beqTalk.showNotes = true;
@@ -379,7 +344,7 @@ bot.on('message', function (messageDJS)
 			if (dynArg.indexOf('spec=') >= 0)
 				beqTalk.special = dynArg.split('spec=')[1].split('|')[0];
 			
-			if ((dynArg).indexOf('nofuzz') >= 0)
+			if ((dynArg).indexOf('nofuzzy') >= 0)
 				beqTalk.fuzzy = false;
 				
 			if ((dynArg).indexOf('simple') >= 0)
@@ -483,19 +448,6 @@ function getUserTranLang(userID)
 		{
 			aIdx = iIdx;
 			return UT
-		}
-	}
-	);
-}
-
-function getUserFuzzy(userID)
-{
-	return userFuzzy.filter(function (item, iIdx)
-	{
-		if (item.userID == userID)
-		{
-			aIdx = iIdx;
-			return item
 		}
 	}
 	);
