@@ -243,7 +243,7 @@ bot.on('message', function (messageDJS)
 			}
 			break;
 		case "yIcha'":
-			sndMessage = showAffixes(bot, args, messageDJS, beq.engine.KDBVPJson, beq.engine.KDBVSJson, beq.engine.KDBNSJson);			
+			sndMessage = showAffixes(bot, args, messageDJS, beq.KDBVPJson, beq.KDBVSJson, beq.KDBNSJson);			
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
