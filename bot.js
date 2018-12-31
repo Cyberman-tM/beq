@@ -278,7 +278,11 @@ bot.on('message', function (messageDJS)
 			showNumRange = args[4];
 			beqTalk.wordType1 = showAType;
 			beqTalk.wordType2 = showNumRange;
-			
+				
+			beqTalk.command = "yIcha'";
+				
+			//Let the engine do its magic :-)
+			talkBeq = beq.Engine(beqTalk);			
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
