@@ -276,6 +276,8 @@ bot.on('message', function (messageDJS)
 				args[4] = args[3];
 			}
 			showNumRange = args[4];
+			beqTalk.wordType1 = showAType;
+			beqTalk.wordType2 = showNumRange;
 			
 		break;			
 		case 'linkMe':
