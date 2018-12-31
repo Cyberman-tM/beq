@@ -242,6 +242,13 @@ bot.on('message', function (messageDJS)
 			}
 			break;
 		case "yIcha'":
+			//The XML data is only in the beg-engine, so we can't really access it. Or can we?
+			//We have to pre-sort the parameters - and find a way to communicate them through beqTalk.
+			//Parameters:
+			//Example call: !yIcha' moHaq de
+			//Expected result: show all prefixes, translated to german
+			//Other example: !yIcha' verbsuffix en 2
+			//Expected result: show all type 2 verb suffixes in english
 
 			
 		break;			
