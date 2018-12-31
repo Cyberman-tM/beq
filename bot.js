@@ -242,6 +242,9 @@ bot.on('message', function (messageDJS)
 			}
 			break;
 		case "yIcha'":
+			var showAType = "";
+			var showNumRange = 0;
+				
 			//The XML data is only in the beg-engine, so we can't really access it. Or can we?
 			//We have to pre-sort the parameters - and find a way to communicate them through beqTalk.
 			//Parameters:
@@ -249,7 +252,30 @@ bot.on('message', function (messageDJS)
 			//Expected result: show all prefixes, translated to german
 			//Other example: !yIcha' verbsuffix en 2
 			//Expected result: show all type 2 verb suffixes in english
-
+				
+			//First parameter will always be yIcha' (by definition)
+			//Second and third parameter SHOULD be type of affix and language
+			//the fourth parameter could be the number (for suffixes)
+				
+			//TODO: more synonyms
+			showAType = args[2];
+			if (showAType == "moHaq" || showAType == "prefixes")
+			   showAType = "prefix";
+			else if (showAType == "mojaq" || showAType == "suffixes")
+			   showAType = "suffix"
+			else if (showAType == "verbsuffix" || showAType == "verb-suffix" || showAType == "vs" )
+			   showAType = "verbSuffix";
+			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns" )
+			   showAType = "nounSuffix";
+				
+			beqTalk.transLang = args[3];
+			if (langKnown(args[3]) == false)
+			{
+				beqTalk.transLang = 'en';   //Use EN as default
+				//Since 3 isn't the language, it's probably the number
+				args[4] = args[3];
+			}
+			showNumRange = args[4];
 			
 		break;			
 		case 'linkMe':
