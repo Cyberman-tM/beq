@@ -253,12 +253,12 @@ bot.on('message', function (messageDJS)
 			//Other example: !yIcha' verbsuffix en 2
 			//Expected result: show all type 2 verb suffixes in english
 				
-			//First parameter will always be yIcha' (by definition)
-			//Second and third parameter SHOULD be type of affix and language
-			//the fourth parameter could be the number (for suffixes)
+			//Zeroeth parameter will always be yIcha' (by definition)
+			//First and second parameter SHOULD be type of affix and language
+			//the third parameter could be the number (for suffixes)
 				
 			//TODO: more synonyms
-			showAType = args[2];
+			showAType = args[1];
 			if (showAType == "moHaq" || showAType == "prefixes")
 			   showAType = "prefix";
 			else if (showAType == "mojaq" || showAType == "suffixes")
@@ -268,14 +268,14 @@ bot.on('message', function (messageDJS)
 			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns" )
 			   showAType = "nounSuffix";
 				
-			beqTalk.transLang = args[3];
-			if (langKnown(args[3]) == false)
+			beqTalk.transLang = args[2];
+			if (langKnown(args[2]) == false)
 			{
 				beqTalk.transLang = 'en';   //Use EN as default
 				//Since 3 isn't the language, it's probably the number
-				args[4] = args[3];
+				args[3] = args[2];
 			}
-			showNumRange = args[4];
+			showNumRange = args[3];
 			beqTalk.wordType1 = showAType;
 			beqTalk.wordType2 = showNumRange;
 				
