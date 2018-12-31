@@ -282,7 +282,11 @@ bot.on('message', function (messageDJS)
 			beqTalk.command = "yIcha'";
 				
 			//Let the engine do its magic :-)
-			talkBeq = beq.Engine(beqTalk);			
+			talkBeq = beq.Engine(beqTalk);
+				
+			botSendMessage(1, bot, DData.bTChan, beqTalk.wordType1+beqTalk.wordType2);
+				
+			sndMessage = 'Incomplete yet';
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
