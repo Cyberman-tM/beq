@@ -371,6 +371,7 @@ module.exports.Engine = function(beqTalk)
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
+				beqTalk.startRes = 0;
 			}
 			else if (beqTalk.wordType1 == "verbsuffix")
 			{
