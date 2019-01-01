@@ -363,23 +363,25 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = false;
 		break;
 		case "yIcha'":
+			beqTalk.result = new Array();
 			if (beqTalk.wordType1 == "prefix")
 			{
-				var ycount = 0;
-				beqTalk.result = new Array();
-				logger.info(beqTalk.result.length);
 				//Simply export all prefixes
 				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
 				module.exports.KDBVPJSon.forEach(function(onePref)
 				{
-					logger.info(ycount++ + onePref.tlh);
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
-				logger.info(beqTalk.result.length);
 			}
 			else if (beqTalk.wordType1 == "verbsuffix")
 			{
+				//TODO: Check requested tiers
+				module.exports.KDBVSJSon.forEach(function(oneSuff)
+				{
+					beqTalk.result.push(oneSuff);
+				});
+				beqTalk.gotResult = true;
 			}
 		break;
 	default:
@@ -513,7 +515,7 @@ module.exports.createTranslation = function(beqTalk)
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
 				}				
-				sndMessage += item[beqTalk.lookLang] + "==>" + item[beqTalk.transLang] + beqTalk.newline;
+				sndMessage += item[beqTalk.lookLang] + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
 			}
 			
 			//Special case (stupid case, but nonetheless)
