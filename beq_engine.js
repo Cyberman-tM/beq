@@ -531,7 +531,7 @@ module.exports.createTranslation = function(beqTalk)
 				if (oldNum != item.suffixNum)
 				{
 					oldNum = item.suffixNum;
-					sndMessage += getSuffNum(item.type, item.suffixNum, beqTalk.transLang) + beqTalk.newline + beqTalk.newline;
+					sndMessage += beqTalk.newline + beqTalk.newline + getSuffNum(item.type, item.suffixNum, beqTalk.transLang);
 				}
 				sndMessage += item[beqTalk.lookLang].padEnd(7) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
 			}
