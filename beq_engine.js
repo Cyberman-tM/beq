@@ -710,25 +710,38 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 	   switch(itemSuffixNum)
 	   {
 		   case "1":
+			   tmpRet = VerbSuffixes[tranLang].one;
 		   break;
 		   case "2":
+			   tmpRet = VerbSuffixes[tranLang].two;
 		   break;
 		   case "3":
+			   tmpRet = VerbSuffixes[tranLang].three;
 		   break;
 		   case "4":
+			   tmpRet = VerbSuffixes[tranLang].four;
 		   break;
 		   case "5":
+			   tmpRet = VerbSuffixes[tranLang].five;
 		   break;
 		   case "6":
+			   tmpRet = VerbSuffixes[tranLang].six;
 		   break;
 		   case "7":
+			   tmpRet = VerbSuffixes[tranLang].seven;
 		   break;
 		   case "8":
+			   tmpRet = VerbSuffixes[tranLang].eight;
 		   break;
 		   case "9":
+			   tmpRet = VerbSuffixes[tranLang].nine;
+		   break;
+		   case "R":
+			   tmpRet = VerbSuffixes[tranLang].rover;
 		   break;
 	   }
    }
+   return tmpRet;
 }
 
 //Get (translate) word Type
