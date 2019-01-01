@@ -682,6 +682,8 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    VerbSuffixes["en"].nine  = "Syntactic markers";
    VerbSuffixes["en"].rover = "Rovers";	
 		
+	logger.info(itemSuffixNum);
+	
    //Noun or verb?
    if (itemType.split(':')[0] == "n")
    {
@@ -740,10 +742,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		   break;
 	   }
    }
-	
-logger.info(tmpRet);
-	logger.info(NounSuffixes["en"].one);
-	logger.info(NounSuffixes[tranLang].one);
+	info.logger(tmpRet);
    return tmpRet;
 }
 
