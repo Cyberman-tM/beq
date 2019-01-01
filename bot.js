@@ -268,6 +268,7 @@ bot.on('message', function (messageDJS)
 			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns" )
 			   showAType = "nounSuffix";
 				
+			beqTalk.lookLang = "tlh";
 			beqTalk.transLang = args[2];
 			if (langKnown(args[2]) == false)
 			{
