@@ -424,6 +424,9 @@ module.exports.beqTalkDef = JSON.stringify(
 
 module.exports.createTranslation = function(beqTalk)
 {
+	var oldType = "";
+	var tmpText = "";
+	
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
 	
@@ -463,6 +466,13 @@ module.exports.createTranslation = function(beqTalk)
 			sndMessage += beqTalk.newline + beqTalk.newline;
 		}
 	}
+	else if (beqTalk.command == "yIcha'")
+	{
+		//No need to show anything but the actual words
+		beqTalk.simple = true;
+		beqTalk.showNotes = false;
+		beqTalk.showSource = false;
+	}
 
 	var count = 0;
 	var startCount = beqTalk.startRes;
@@ -483,20 +493,28 @@ module.exports.createTranslation = function(beqTalk)
 	if (listLang == 'tlh')
 		listLang = 'en';
 	
-	logger.info(beqTalk.result.length);
-var xcount = 0;
 	beqTalk.result.forEach(function (item)
 	{
-		logger.info(xcount++ + item.tlh);
 		startCount--;
 		
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-			
-			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
-			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+			if (beqTalk.command != "yIcha'")
+			{
+				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+			}
+			else
+			{
+				if (oldType != item.type)
+				{
+					oldType = item.type;
+					sndMessage += getWType(item.type, listLang);					
+				}				
+				sndMessage += item[beqTalk.lookLang] + "==>" + item[beqTalk.transLang];				
+			}
 			
 			//Special case (stupid case, but nonetheless)
 			if ( (beqTalk.lookLang == 'en' && beqTalk.transLang == 'de') ||
@@ -517,18 +535,21 @@ var xcount = 0;
 			
 			//Tips about the word, is it slang, is it derived, are there notes, etc...
 			infTips = "";			
-			if (item.slang == true)
-				infTips = '(slang)';				
-			if (item.deriv == true)
-				infTips += '(deriv)';
-			if (isHyp(item.type))
-				infTips += '(hyp)';
-			if (beqTalk.showNotes != true &&
-			   ( item.notes != "" || item.notes_de != "" || item.hidden_notes != "" ))
-				infTips += '(notes)';
-			
-			if (infTips != "")
-			   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
+			if (beqTalk.simple == false)
+			{
+				if (item.slang == true)
+					infTips = '(slang)';				
+				if (item.deriv == true)
+					infTips += '(deriv)';
+				if (isHyp(item.type))
+					infTips += '(hyp)';
+				if (beqTalk.showNotes != true &&
+				   ( item.notes != "" || item.notes_de != "" || item.hidden_notes != "" ))
+					infTips += '(notes)';
+
+				if (infTips != "")
+				   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
+			}
 		}
 	}
 	)
