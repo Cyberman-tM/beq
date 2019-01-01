@@ -373,6 +373,7 @@ module.exports.Engine = function(beqTalk)
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
+				logger.info(beqTalk.result.length);
 			}
 			else if (beqTalk.wordType1 == "verbsuffix")
 			{
@@ -478,6 +479,8 @@ module.exports.createTranslation = function(beqTalk)
 	var listLang = beqTalk.transLang;
 	if (listLang == 'tlh')
 		listLang = 'en';
+	
+	logger.info(beqTalk.result.length);
 
 	beqTalk.result.forEach(function (item)
 	{
