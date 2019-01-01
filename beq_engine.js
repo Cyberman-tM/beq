@@ -365,7 +365,7 @@ module.exports.Engine = function(beqTalk)
 			{
 				//Simply export all prefixes
 				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
-				module.exports.KDBVPJSon.foreach(function(onePref)
+				module.exports.KDBVPJSon.forEach(function(onePref)
 				{
 					beqTalk.result.push(onePref);
 				});
