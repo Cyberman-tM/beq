@@ -439,6 +439,7 @@ module.exports.createTranslation = function(beqTalk)
 	var oldType = "";
 	var tmpText = "";
 	var oldNum = "";
+	var tmpSuffixText = "";
 	
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
@@ -527,11 +528,13 @@ module.exports.createTranslation = function(beqTalk)
 				{
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
-				}
+				}				
 				if (oldNum != item.suffixNum)
 				{
 					oldNum = item.suffixNum;
-					sndMessage += beqTalk.newline + beqTalk.newline + getSuffNum(item.type, item.suffixNum, beqTalk.transLang) + beqTalk.newline;
+					tmpSuffixText = getSuffNum(item.type, item.suffixNum, beqTalk.transLang);
+					if (tmpSuffixText != "")
+						sndMessage += beqTalk.newline + beqTalk.newline + tmpSuffixText + beqTalk.newline;
 				}
 				sndMessage += item[beqTalk.lookLang].padEnd(7) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
 			}
