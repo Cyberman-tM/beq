@@ -633,14 +633,55 @@ function isAlt(wType)
 function getSuffNum(itemType, itemSuffixNum, tranLang)
 {
    var tmpRet = "";
+   var tmpLang = tranLang;
+	
+   //Vorerst nur EN/DE
+   if (tmpLang != 'de' && tmpLang != 'en')
+	   tmpLang = 'en';
+	
    var NounSuffixes = new Array();
    NounSuffixes["de"] = new Array();
-   NounSuffixes["de"].one = "1";
-   NounSuffixes["de"].two = "2";
-   NounSuffixes["de"].three = "3";
+   NounSuffixes["de"].one   = "";
+   NounSuffixes["de"].two   = "";
+   NounSuffixes["de"].three = "";
+   NounSuffixes["de"].four  = "";
+   NounSuffixes["de"].five  = "";
+	
+   var VerbSuffixes = new Array();
+   VerbSuffixes["de"] = new Array();
+   VerbSuffixes["de"].one   = "sich selbst / sich gegenseitig";
+   VerbSuffixes["de"].two   = "Bereitschaft/Neigung";
+   VerbSuffixes["de"].three = "Veränderung";
+   VerbSuffixes["de"].four  = "Anlass";
+   VerbSuffixes["de"].five  = "undefiniertes Subjekt / Fähigkeit";
+   VerbSuffixes["de"].six   = "Qualifikation";
+   VerbSuffixes["de"].seven = "Aspekt";
+   VerbSuffixes["de"].eight = "Ehrung";
+   VerbSuffixes["de"].nine  = "Syntaktische Marker";
+   VerbSuffixes["de"].rover = "wandernde Suffixe";
+	
+   NounSuffixes["en"] = new Array();
+   NounSuffixes["en"].one   = "";
+   NounSuffixes["en"].two   = "";
+   NounSuffixes["en"].three = "";
+   NounSuffixes["en"].four  = "";
+   NounSuffixes["en"].five  = "";
+	
+   VerbSuffixes["en"] = new Array();
+   VerbSuffixes["en"].one   = "";
+   VerbSuffixes["en"].two   = "";
+   VerbSuffixes["en"].three = "";
+   VerbSuffixes["en"].four  = "";
+   VerbSuffixes["en"].five  = "";
+   VerbSuffixes["en"].six   = "";
+   VerbSuffixes["en"].seven = "";
+   VerbSuffixes["en"].eight = "";
+   VerbSuffixes["en"].nine  = "";
+   VerbSuffixes["en"].rover = "";
+	
 		
    //Noun or verb?
-   if (wType.split(':')[0] == "n")
+   if (itemType.split(':')[0] == "n")
    {
 	   switch(itemSuffixNum)
 	   {
@@ -659,7 +700,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		   break;
 	   }
    }
-   else if (wType.split(':')[0] == "v")
+   else if (itemType.split(':')[0] == "v")
    {
 	   switch(itemSuffixNum)
 	   {
