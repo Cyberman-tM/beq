@@ -511,9 +511,9 @@ module.exports.createTranslation = function(beqTalk)
 				if (oldType != item.type)
 				{
 					oldType = item.type;
-					sndMessage += getWType(item.type, listLang);					
+					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
 				}				
-				sndMessage += item[beqTalk.lookLang] + "==>" + item[beqTalk.transLang];				
+				sndMessage += item[beqTalk.lookLang] + "==>" + item[beqTalk.transLang] + beqTalk.newline;
 			}
 			
 			//Special case (stupid case, but nonetheless)
