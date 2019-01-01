@@ -635,6 +635,10 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    var tmpRet = "";
    var tmpLang = tranLang;
 	
+	logger.info(itemType);
+	logger.info(itemSuffixNum);
+	logger.info(tranLang);
+	
    //Vorerst nur EN/DE
    if (tmpLang != 'de' && tmpLang != 'en')
 	   tmpLang = 'en';
@@ -694,8 +698,10 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		      tmpRet = NounSuffixes[tranLang].three;
 		   break;
 		   case "4":
+			   tmpRet = NounSuffixes[tranLang].four;
 		   break;
 		   case "5":
+			   tmpRet = NounSuffixes[tranLang].five;
 		   break;
 	   }
    }
