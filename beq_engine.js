@@ -504,6 +504,8 @@ module.exports.createTranslation = function(beqTalk)
 	var listLang = beqTalk.transLang;
 	if (listLang == 'tlh')
 		listLang = 'en';
+	if (beqTalk.command == "yIcha'")
+		sndMessage += "```";
 	
 	beqTalk.result.forEach(function (item)
 	{
@@ -565,6 +567,8 @@ module.exports.createTranslation = function(beqTalk)
 		}
 	}
 	)
+	if (beqTalk.command == "yIcha'")
+		sndMessage += "```";
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 
