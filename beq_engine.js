@@ -527,7 +527,7 @@ module.exports.createTranslation = function(beqTalk)
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
 				}				
-				sndMessage += item[beqTalk.lookLang].padEnd(10) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
+				sndMessage += item[beqTalk.lookLang].padEnd(7) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
 			}
 			
 			//Special case (stupid case, but nonetheless)
