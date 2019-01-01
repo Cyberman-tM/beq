@@ -284,7 +284,7 @@ bot.on('message', function (messageDJS)
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
 				
-			botSendMessage(1, bot, DData.bTChan, beqTalk.wordType1+beqTalk.wordType2);
+			botSendMessage(1, bot, DData.bTChan, talkBeq.result);
 				
 			sndMessage = 'Incomplete yet';
 		break;			
