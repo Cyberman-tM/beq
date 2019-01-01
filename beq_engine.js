@@ -742,6 +742,8 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    }
 	
 logger.info(tmpRet);
+	logger.info(NounSuffixes["en"].one);
+	logger.info(NounSuffixes[tranLang].one);
    return tmpRet;
 }
 
