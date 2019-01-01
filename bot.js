@@ -21,7 +21,7 @@ var searchWiki = require('./bot_modules/commands/search_wiki.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.3 - Beq engine forever!';
+var versInt = '2.1.4 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -283,10 +283,9 @@ bot.on('message', function (messageDJS)
 				
 			//Let the engine do its magic :-)
 			talkBeq = beq.Engine(beqTalk);
+			sndMessage = beq.createTranslation(talkBeq);		
 				
-			botSendMessage(1, bot, DData.bTChan, talkBeq.result);
-				
-			sndMessage = 'Incomplete yet';
+			//botSendMessage(1, bot, DData.bTChan, talkBeq.result);				
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
