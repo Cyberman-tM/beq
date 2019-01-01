@@ -33,7 +33,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"showSource": ""              // Show source, if available => true/false
 	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
 	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
-	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
+	"startRes": '0',              // used in 
+	lation, if you know there are more than "limitRes" results, you can specify a starting number
 	"limitRes": '20',             // in some cases (Discord) you may not want to get ALL the results, but only up to "limitRes"
 	"newline": "\n",              // When formatted text is returned, this will be used as newline - i.e. Text output or HTML output
 	"result": [{ "type":"",       // the translation results are returned in this JSON array. Type is the word type, see boQwI'
@@ -372,7 +373,6 @@ module.exports.Engine = function(beqTalk)
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
-				beqTalk.startRes = 0;
 			}
 			else if (beqTalk.wordType1 == "verbsuffix")
 			{
