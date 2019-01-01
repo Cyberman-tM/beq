@@ -641,11 +641,11 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 	
    var NounSuffixes = new Array();
    NounSuffixes["de"] = new Array();
-   NounSuffixes["de"].one   = "";
-   NounSuffixes["de"].two   = "";
-   NounSuffixes["de"].three = "";
-   NounSuffixes["de"].four  = "";
-   NounSuffixes["de"].five  = "";
+   NounSuffixes["de"].one   = "Größe/Bedeutung";
+   NounSuffixes["de"].two   = "Mehrzahl";
+   NounSuffixes["de"].three = "Qualifikation";
+   NounSuffixes["de"].four  = "Besitz/Spezifizierung";
+   NounSuffixes["de"].five  = "Syntaktische Marker";
 	
    var VerbSuffixes = new Array();
    VerbSuffixes["de"] = new Array();
@@ -661,24 +661,23 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    VerbSuffixes["de"].rover = "wandernde Suffixe";
 	
    NounSuffixes["en"] = new Array();
-   NounSuffixes["en"].one   = "";
-   NounSuffixes["en"].two   = "";
-   NounSuffixes["en"].three = "";
-   NounSuffixes["en"].four  = "";
-   NounSuffixes["en"].five  = "";
+   NounSuffixes["en"].one   = "Size/Importance";
+   NounSuffixes["en"].two   = "Number";
+   NounSuffixes["en"].three = "Qualification";
+   NounSuffixes["en"].four  = "Possession/Specification";
+   NounSuffixes["en"].five  = "Syntactic Markers";
 	
    VerbSuffixes["en"] = new Array();
-   VerbSuffixes["en"].one   = "";
-   VerbSuffixes["en"].two   = "";
-   VerbSuffixes["en"].three = "";
-   VerbSuffixes["en"].four  = "";
-   VerbSuffixes["en"].five  = "";
-   VerbSuffixes["en"].six   = "";
-   VerbSuffixes["en"].seven = "";
-   VerbSuffixes["en"].eight = "";
-   VerbSuffixes["en"].nine  = "";
-   VerbSuffixes["en"].rover = "";
-	
+   VerbSuffixes["en"].one   = "Oneself/one another";
+   VerbSuffixes["en"].two   = "Volition/predisposition";
+   VerbSuffixes["en"].three = "Change";
+   VerbSuffixes["en"].four  = "Cause";
+   VerbSuffixes["en"].five  = "Indefinite subject/ability";
+   VerbSuffixes["en"].six   = "Qualification";
+   VerbSuffixes["en"].seven = "Aspect";
+   VerbSuffixes["en"].eight = "Honorific";
+   VerbSuffixes["en"].nine  = "Syntactic markers";
+   VerbSuffixes["en"].rover = "Rovers";	
 		
    //Noun or verb?
    if (itemType.split(':')[0] == "n")
