@@ -686,16 +686,16 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		   case 1:
 		     tmpRet = NounSuffixes[tranLang].one;
 		   break;
-		   case "2":
+		   case 2:
    		      tmpRet = NounSuffixes[tranLang].two;
 		   break;
-		   case "3":
+		   case 3:
 		      tmpRet = NounSuffixes[tranLang].three;
 		   break;
-		   case "4":
+		   case 4:
 			   tmpRet = NounSuffixes[tranLang].four;
 		   break;
-		   case "5":
+		   case 5:
 			   tmpRet = NounSuffixes[tranLang].five;
 		   break;
 	   }
@@ -704,31 +704,31 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    {
 	   switch(itemSuffixNum)
 	   {
-		   case "1":
+		   case 1:
 			   tmpRet = VerbSuffixes[tranLang].one;
 		   break;
-		   case "2":
+		   case 2:
 			   tmpRet = VerbSuffixes[tranLang].two;
 		   break;
-		   case "3":
+		   case 3:
 			   tmpRet = VerbSuffixes[tranLang].three;
 		   break;
-		   case "4":
+		   case 4:
 			   tmpRet = VerbSuffixes[tranLang].four;
 		   break;
-		   case "5":
+		   case 5:
 			   tmpRet = VerbSuffixes[tranLang].five;
 		   break;
-		   case "6":
+		   case 6:
 			   tmpRet = VerbSuffixes[tranLang].six;
 		   break;
-		   case "7":
+		   case 7:
 			   tmpRet = VerbSuffixes[tranLang].seven;
 		   break;
-		   case "8":
+		   case 8:
 			   tmpRet = VerbSuffixes[tranLang].eight;
 		   break;
-		   case "9":
+		   case 9:
 			   tmpRet = VerbSuffixes[tranLang].nine;
 		   break;
 		   case "R":
@@ -736,7 +736,6 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		   break;
 	   }
    }
-	logger.info(tmpRet);
    return tmpRet;
 }
 
