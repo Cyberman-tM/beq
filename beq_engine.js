@@ -634,6 +634,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 {
    var tmpRet = "";
    var NounSuffixes = new Array();
+   NounSuffixes["de"] = new Array();
    NounSuffixes["de"].one = "1";
    NounSuffixes["de"].two = "2";
    NounSuffixes["de"].three = "3";
