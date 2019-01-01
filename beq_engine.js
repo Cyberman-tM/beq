@@ -365,11 +365,12 @@ module.exports.Engine = function(beqTalk)
 		case "yIcha'":
 			if (beqTalk.wordType1 == "prefix")
 			{
+				var ycount = 0;
 				//Simply export all prefixes
 				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
 				module.exports.KDBVPJSon.forEach(function(onePref)
 				{
-					//logger.info(onePref.tlh);
+					logger.info(ycount++ + onePref.tlh);
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
@@ -481,10 +482,10 @@ module.exports.createTranslation = function(beqTalk)
 		listLang = 'en';
 	
 	logger.info(beqTalk.result.length);
-
+var xcount = 0;
 	beqTalk.result.forEach(function (item)
 	{
-		logger.info(item.tlh);
+		logger.info(xcount++ + item.tlh);
 		startCount--;
 		
 		if (startCount <= 0 && count < beqTalk.limitRes)
