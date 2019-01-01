@@ -360,6 +360,20 @@ module.exports.Engine = function(beqTalk)
 			else
 				beqTalk.gotResult = false;
 		break;
+		case "yIcha'":
+			if (beqTalk.wordType1 == "prefix")
+			{
+				//Simply export all prefixes
+				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
+				module.exports.KDBVPJSon.foreach(function(onePref)
+				{
+					beqTalk.result.push(onePref);
+				});
+			}
+			else if (beqTalk.wordType1 == "verbsuffix")
+			{
+			}
+		break;
 	default:
 	   beqTalk.gotResult = false;
 	   beqTalk.failure = true;
