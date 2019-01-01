@@ -634,10 +634,6 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    var tmpRet = "";
    var tmpLang = tranLang;
 	
-	logger.info(itemType);
-	logger.info(itemSuffixNum);
-	logger.info(tranLang);
-	
    //Vorerst nur EN/DE
    if (tmpLang != 'de' && tmpLang != 'en')
 	   tmpLang = 'en';
@@ -682,14 +678,12 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
    VerbSuffixes["en"].nine  = "Syntactic markers";
    VerbSuffixes["en"].rover = "Rovers";	
 		
-	logger.info(itemSuffixNum);
-	
    //Noun or verb?
    if (itemType.split(':')[0] == "n")
    {
 	   switch(itemSuffixNum)
 	   {
-		   case "1":
+		   case 1:
 		     tmpRet = NounSuffixes[tranLang].one;
 		   break;
 		   case "2":
@@ -742,7 +736,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 		   break;
 	   }
    }
-	info.logger(tmpRet);
+	logger.info(tmpRet);
    return tmpRet;
 }
 
