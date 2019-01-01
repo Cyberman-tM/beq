@@ -438,6 +438,7 @@ module.exports.createTranslation = function(beqTalk)
 {
 	var oldType = "";
 	var tmpText = "";
+	var sufType = "";
 	
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
@@ -859,7 +860,12 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		if (emptyStruct.type.startsWith('sen'))
 			KDBPHJSon.push(emptyStruct);
 		else if (emptyStruct.type.startsWith('v:pref'))
-			KDBVPJSon.push(emptyStruct);
+		{
+			//emptyStruct wird in jedem Durchlauf neu angelegt, es sollte daher kein Problem
+			//sein jetzt ein Feld einzufügen, oder?
+			emptyStruct.suffixNum = 999;
+			KDBVPJSon.push(emptyStruct);			
+		}
 		else if (emptyStruct.type.startsWith('v:suff'))
 			KDBVSJSon.push(emptyStruct);
 		else if (emptyStruct.type.startsWith('n:suff'))
