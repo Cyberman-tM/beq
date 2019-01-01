@@ -286,7 +286,7 @@ bot.on('message', function (messageDJS)
 			talkBeq = beq.Engine(beqTalk);
 			sndMessage = beq.createTranslation(talkBeq);		
 				
-			//botSendMessage(1, bot, DData.bTChan, talkBeq.result);				
+			botSendMessage(1, bot, DData.bTChan, talkBeq.result[0]);
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
