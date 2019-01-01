@@ -438,7 +438,7 @@ module.exports.createTranslation = function(beqTalk)
 {
 	var oldType = "";
 	var tmpText = "";
-	var sufType = "";
+	var oldNum = "";
 	
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
@@ -527,7 +527,12 @@ module.exports.createTranslation = function(beqTalk)
 				{
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
-				}				
+				}
+				if (oldNum != item.suffixNum)
+				{
+					oldNum = item.suffixNum;
+					sndMessage += getSuffNum(item.type, item.suffixNum, beqTalk.transLang) + beqTalk.newline;
+				}
 				sndMessage += item[beqTalk.lookLang].padEnd(7) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
 				sndMessage += item.suffixNum;
 			}
@@ -622,6 +627,61 @@ function isAlt(wType)
 		return true;
 	else
 		return false;
+}
+
+//get (translate) suffix number/type
+function getSuffNum(itemType, itemSuffixNum, tranLang)
+{
+   var tmpRet = "";
+   var NounSuffixes = new Array();
+   NounSuffixes["de"].one = "1";
+   NounSuffixes["de"].two = "2";
+   NounSuffixes["de"].three = "3";
+		
+   //Noun or verb?
+   if (wType.split(':')[0] == "n")
+   {
+	   switch(itemSuffixNum)
+	   {
+		   case "1":
+		     tmpRet = NounSuffixes[tranLang].one;
+		   break;
+		   case "2":
+   		      tmpRet = NounSuffixes[tranLang].two;
+		   break;
+		   case "3":
+		      tmpRet = NounSuffixes[tranLang].three;
+		   break;
+		   case "4":
+		   break;
+		   case "5":
+		   break;
+	   }
+   }
+   else if (wType.split(':')[0] == "v")
+   {
+	   switch(itemSuffixNum)
+	   {
+		   case "1":
+		   break;
+		   case "2":
+		   break;
+		   case "3":
+		   break;
+		   case "4":
+		   break;
+		   case "5":
+		   break;
+		   case "6":
+		   break;
+		   case "7":
+		   break;
+		   case "8":
+		   break;
+		   case "9":
+		   break;
+	   }
+   }
 }
 
 //Get (translate) word Type
@@ -861,16 +921,131 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		if (emptyStruct.type.startsWith('sen'))
 			KDBPHJSon.push(emptyStruct);
 		else if (emptyStruct.type.startsWith('v:pref'))
+			KDBVPJSon.push(emptyStruct);			
+		else if (emptyStruct.type.startsWith('v:suff'))
 		{
 			//emptyStruct wird in jedem Durchlauf neu angelegt, es sollte daher kein Problem
 			//sein jetzt ein Feld einzufügen, oder?
-			emptyStruct.suffixNum = 999;
-			KDBVPJSon.push(emptyStruct);			
-		}
-		else if (emptyStruct.type.startsWith('v:suff'))
+			switch(emptyStruct.tlh)
+			{
+				case "-'egh":
+				case "-chuq":
+				emptyStruct.suffixNum = 1;
+				break;
+
+				case "-nIS":
+				case "-qang":
+				case "-rup":
+				case "-beH":
+				case "-vIp":
+				emptyStruct.suffixNum = 2;
+				break;
+
+				case "-choH":
+				case "-qa'":
+				emptyStruct.suffixNum = 3;
+				break;
+
+				case "-moH":
+				emptyStruct.suffixNum = 4;
+				break;
+
+				case "-lu'":
+				case "-laH":
+				emptyStruct.suffixNum = 5;
+				break;
+
+				case "-chu'":
+				case "-bej":
+				case "-ba'":
+				case "-law'":
+				emptyStruct.suffixNum = 6;
+				break;
+
+				case "-pu'":
+				case "-ta'":
+				case "-taH":
+				case "-lI'":
+				emptyStruct.suffixNum = 7;
+				break;
+
+				case "-neS":
+				emptyStruct.suffixNum = 8;
+				break;
+
+				case "-DI'":
+				case "-chugh":
+				case "-pa'":
+				case "-vIS":
+				case "-mo'":
+				case "-bogh":
+				case "-meH":
+				case "-'a'":
+				case "-jaj":
+				case "-wI'":
+				case "-ghach":
+				emptyStruct.suffixNum = 9;
+				break;
+
+				case "-be'":
+				case "-Qo'":
+				case "-Ha'":
+				case "-qu'":
+				emptyStruct.suffixNum = "R";
+				break;
+			}
+				
 			KDBVSJSon.push(emptyStruct);
+		}
 		else if (emptyStruct.type.startsWith('n:suff'))
+		{
+			//emptyStruct wird in jedem Durchlauf neu angelegt, es sollte daher kein Problem
+			//sein jetzt ein Feld einzufügen, oder?
+			switch(emptyStruct.tlh)
+			{
+				case "-'a'":
+				case "-Hom":
+				case "-oy":
+				emptyStruct.suffixNum = 1;
+				break;
+
+				case "-pu'":
+				case "-Du'":
+				case "-mey":
+				emptyStruct.suffixNum = 2;
+				break;
+
+				case "-qoq":
+				case "-Hey":
+				case "-na'":
+				emptyStruct.suffixNum = 3;
+				break;
+
+				case "-wIj":
+				case "-wI'":
+				case "-maj":
+				case "-ma'":
+				case "-lIj":
+				case "-lI'":
+				case "-raj":
+				case "-ra'":
+				case "-Daj":
+				case "-chaj":
+				case "-vam":
+				case "-vetlh":
+				emptyStruct.suffixNum = 4;
+				break;
+
+				case "-Daq":
+				case "-vo'":
+				case "-mo'":
+				case "-vaD":
+				case "-'e'":
+				emptyStruct.suffixNum = 5;
+				break;
+			}
 			KDBNSJSon.push(emptyStruct);
+		}
 	}
 	);
 
