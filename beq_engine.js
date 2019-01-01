@@ -54,6 +54,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 */
 var kTranscode = require('./bot_modules/utils/recode.js');
+
 var fs = require('fs');
 var xmldoc = require('xmldoc');
 
