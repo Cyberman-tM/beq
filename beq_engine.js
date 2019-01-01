@@ -366,6 +366,7 @@ module.exports.Engine = function(beqTalk)
 			if (beqTalk.wordType1 == "prefix")
 			{
 				var ycount = 0;
+				beqTalk.result = new Array();
 				logger.info(beqTalk.result.length);
 				//Simply export all prefixes
 				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
