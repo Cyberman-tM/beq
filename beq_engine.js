@@ -387,7 +387,8 @@ module.exports.Engine = function(beqTalk)
 				});
 				beqTalk.gotResult = true;
 			}
-			else if (beqTalk.wordType1 == "verbSuffix")
+			else
+			if (beqTalk.wordType1 == "verbSuffix" || beqTalk.wordType1 == "suffix")
 			{
 				//TODO: Check requested tiers
 				module.exports.KDBVSJSon.forEach(function(oneSuff)
@@ -397,7 +398,7 @@ module.exports.Engine = function(beqTalk)
 				});
 				beqTalk.gotResult = true;
 			}
-			else if (beqTalk.wordType1 == "nounSuffix")
+			else if (beqTalk.wordType1 == "nounSuffix" || beqTalk.wordType1 == "suffix")
 			{
 				//TODO: Check requested tiers
 				module.exports.KDBNSJSon.forEach(function(oneSuff)
