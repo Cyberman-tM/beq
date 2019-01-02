@@ -21,16 +21,13 @@ var searchWiki = require('./bot_modules/commands/search_wiki.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.3 - Beq engine forever!';
+var versInt = '2.1.4 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
 
 //Keep track of the language the user wants us to use
 var userTranLang = new Array();
-
-//Keep track of the fuzzy/non-fuzzy search settings for the users
-var userFuzzy = new Array();
 
 //Generic index for search/replace in array
 var aIdx = null;
@@ -201,33 +198,6 @@ bot.on('message', function (messageDJS)
 				if ( DData.devBuild == "true" )
 					sndMessage += "(Development edition)";
 			break;
-
-		case 'setFuzzy':
-			var newFuzz = null;
-
-			if (args[1] == 'on')
-				newFuzz = true;
-			else if (args[1] == 'off')
-				newFuzz = false;
-
-			aIdx = null;
-			var uFuzz = getUserFuzzy(userID);
-			if (aIdx != null)
-				userFuzzy[aIdx].fuzzy = newFuzz;
-			else
-				userFuzzy.push(
-				{
-					userID: userID,
-					fuzzy: newFuzz
-				}
-				);
-
-			if (newFuzz == true)
-				sndMessage += 'Translation search will use fuzzy search from now on.';
-			else if (newFuzz == false)
-				sndMessage += 'Translation search will use strict search from now on.';
-			break;
-
 			//"Lustige" Meldungen
 		case 'tlhIngan':
 			sndMessage += 'maH!\n';
@@ -272,30 +242,65 @@ bot.on('message', function (messageDJS)
 			}
 			break;
 		case "yIcha'":
-			var talkBeq = JSON.parse(beq.beqTalkDef);
-			beqTalk.command = "yIcha'";			
-			beqTalk.lookLang = 'tlh';
-			if (userTLang == null)
-				beqTalk.transLang = defaultTranslation;
-			else
-				beqTalk.transLang = userTLang;
-			
-			//No use in limiting the number of results...
-			beqTalk.limitRes = 50;
-			
-			switch (args[1])
+			var showAType = "";
+			var showNumRange = 0;
+				
+			//The XML data is only in the beg-engine, so we can't really access it. Or can we?
+			//We have to pre-sort the parameters - and find a way to communicate them through beqTalk.
+			//Parameters:
+			//Example call: !yIcha' moHaq de
+			//Expected result: show all prefixes, translated to german
+			//Other example: !yIcha' verbsuffix en 2
+			//Expected result: show all type 2 verb suffixes in english
+				
+			//Zeroeth parameter will always be yIcha' (by definition)
+			//First and second parameter SHOULD be type of affix and language
+			//the third parameter could be the number (for suffixes)
+				
+			//TODO: more synonyms
+			showAType = args[1];
+			if (showAType == "moHaq" || showAType == "prefixes")
+			   showAType = "prefix";
+			else if (showAType == "mojaq" || showAType == "suffix")
 			{
-				case 'prefix':
-				case 'moHaq':
-				case 'type=v:pref':
-				   beqTalk.wordType1 = 'v:pref';
-				break;				
+			   sndMessage += "Hrmp. Discord doesn't allow a list of ALL suffixes. Ask for verb or noun suffixes.";
+			   args[1] = "ERROR";
 			}
-			
-			//Let the engine do its magic :-)
-			talkBeq = beq.Engine(beqTalk);
+			else if (showAType == "verbsuffix" || showAType == "verb-suffix" || showAType == "vs"  || showAType == "DIp-mojaq")
+			   showAType = "verbSuffix";
+			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns"  || showAType == "wot-mojaq")
+			   showAType = "nounSuffix";
+			else
+			{
+				sndMessage = "nuqjatlh?";
+				args[1] = "ERROR";
+			}
+				
+			if (args[1] != "ERROR")
+			{
+				beqTalk.limitRes = 999;
+				beqTalk.startRes = 0;
+				beqTalk.lookLang = "tlh";
+				beqTalk.transLang = args[2];
+				if (langKnown(args[2]) == false)
+				{
+					beqTalk.transLang = 'en';   //Use EN as default
+					//Since 3 isn't the language, it's probably the number
+					args[3] = args[2];
+				}
+				showNumRange = args[3];
+				if (showNumRange == undefined || showNumRange == "")
+					showNumRange = "0-9";
 
-			sndMessage = talkBeq.message;
+				beqTalk.wordType1 = showAType;
+				beqTalk.wordType2 = showNumRange;
+
+				beqTalk.command = "yIcha'";
+
+				//Let the engine do its magic :-)
+				talkBeq = beq.Engine(beqTalk);
+				sndMessage = beq.createTranslation(talkBeq);
+			}
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
@@ -366,12 +371,7 @@ bot.on('message', function (messageDJS)
 			if (dynArg.indexOf('fuzzy') >= 0)
 				beqTalk.fuzzy = true;
 			else
-			{
-				aIdx = null;
-				var uFuzz = getUserFuzzy(userID);
-				if (aIdx != null)
-					beqTalk.fuzzy = uFuzz[0].fuzzy;
-			}
+				beqTalk.fuzzy = false;
 			
 			if (dynArg.indexOf('notes') >= 0)
 				beqTalk.showNotes = true;
@@ -379,7 +379,7 @@ bot.on('message', function (messageDJS)
 			if (dynArg.indexOf('spec=') >= 0)
 				beqTalk.special = dynArg.split('spec=')[1].split('|')[0];
 			
-			if ((dynArg).indexOf('nofuzz') >= 0)
+			if ((dynArg).indexOf('nofuzzy') >= 0)
 				beqTalk.fuzzy = false;
 				
 			if ((dynArg).indexOf('simple') >= 0)
@@ -460,46 +460,6 @@ bot.on('message', function (messageDJS)
 	}
 }
 );
-
-/*
-//I don't trust this - it doesn't trigger often enough, maybe the heartbeat rate for the servers
-//has to be changed?
-bot.on('any', function(event)
-{
-	if (devTest == true)
-	{
-	   bot.sendMessage({to: DData.bTChan, message: event.t});
-	   if (event.t != 'MESSAGE_CREATE' || event.d.author.bot == false)
-	      bot.sendMessage({to: DData.bTChan, message: JSON.stringify(event)});
-	}
-	
-});
-*/
-function getUserTranLang(userID)
-{
-	return userTranLang.filter(function (UT, iIdx)
-	{
-		if (UT.userID == userID)
-		{
-			aIdx = iIdx;
-			return UT
-		}
-	}
-	);
-}
-
-function getUserFuzzy(userID)
-{
-	return userFuzzy.filter(function (item, iIdx)
-	{
-		if (item.userID == userID)
-		{
-			aIdx = iIdx;
-			return item
-		}
-	}
-	);
-}
 
 function langKnown(language)
 {

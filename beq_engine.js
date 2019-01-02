@@ -33,7 +33,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"showSource": ""              // Show source, if available => true/false
 	"wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
 	"wordType2": null,            // use the word types as defined by boQwI', i.e. "sen:sp" for "sentence, secret proverb"
-	"startRes": '0',              // used in createTranslation, if you know there are more than "limitRes" results, you can specify a starting number
+	"startRes": '0',              // used in 
+	lation, if you know there are more than "limitRes" results, you can specify a starting number
 	"limitRes": '20',             // in some cases (Discord) you may not want to get ALL the results, but only up to "limitRes"
 	"newline": "\n",              // When formatted text is returned, this will be used as newline - i.e. Text output or HTML output
 	"result": [{ "type":"",       // the translation results are returned in this JSON array. Type is the word type, see boQwI'
@@ -54,6 +55,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 */
 var kTranscode = require('./bot_modules/utils/recode.js');
+
 var fs = require('fs');
 var xmldoc = require('xmldoc');
 
@@ -66,7 +68,7 @@ module.exports.Engine = function(beqTalk)
 	if (module.exports.versInt == undefined)
 	{
 		var fs = require('fs');
-		module.exports.versInt = '1.1.2	- The beq Engine lives!';
+		module.exports.versInt = '1.1.3	- The beq Engine lives!';
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 		
@@ -360,6 +362,55 @@ module.exports.Engine = function(beqTalk)
 			else
 				beqTalk.gotResult = false;
 		break;
+		case "yIcha'":
+			var startSuffNum = 1;
+			var endSuffNum = 9;
+			
+			if (beqTalk.wordType2.substring(1,2) == '+')
+				startSuffNum = beqTalk.wordType2.substring(0,1)
+			else if (beqTalk.wordType2.substring(1,2) == '-')
+			{
+				startSuffNum = beqTalk.wordType2.substring(0,1)
+				endSuffNum   = beqTalk.wordType2.substring(2,3)
+			}
+			else
+				startSuffNum = endSuffNum = beqTalk.wordType2;
+			
+			beqTalk.result = new Array();
+			if (beqTalk.wordType1 == "prefix")
+			{
+				//Simply export all prefixes
+				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
+				module.exports.KDBVPJSon.forEach(function(onePref)
+				{			
+					beqTalk.result.push(onePref);
+				});
+				beqTalk.gotResult = true;
+			}
+			else
+			{
+				if (beqTalk.wordType1 == "verbSuffix" || beqTalk.wordType1 == "suffix")
+				{
+					//TODO: Check requested tiers
+					module.exports.KDBVSJSon.forEach(function(oneSuff)
+					{
+						if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+							beqTalk.result.push(oneSuff);
+					});
+					beqTalk.gotResult = true;
+				}
+				if (beqTalk.wordType1 == "nounSuffix" || beqTalk.wordType1 == "suffix")
+				{
+					//TODO: Check requested tiers
+					module.exports.KDBNSJSon.forEach(function(oneSuff)
+					{
+						if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+							beqTalk.result.push(oneSuff);
+					});
+					beqTalk.gotResult = true;
+				}
+			}
+		break;
 	default:
 	   beqTalk.gotResult = false;
 	   beqTalk.failure = true;
@@ -402,6 +453,11 @@ module.exports.beqTalkDef = JSON.stringify(
 
 module.exports.createTranslation = function(beqTalk)
 {
+	var oldType = "";
+	var tmpText = "";
+	var oldNum = "";
+	var tmpSuffixText = "";
+	
 	if (beqTalk.gotResult == false)
 		return "Nothing found." + beqTalk.newline;
 	
@@ -441,6 +497,13 @@ module.exports.createTranslation = function(beqTalk)
 			sndMessage += beqTalk.newline + beqTalk.newline;
 		}
 	}
+	else if (beqTalk.command == "yIcha'")
+	{
+		//No need to show anything but the actual words
+		beqTalk.simple = true;
+		beqTalk.showNotes = false;
+		beqTalk.showSource = false;
+	}
 
 	var count = 0;
 	var startCount = beqTalk.startRes;
@@ -460,7 +523,9 @@ module.exports.createTranslation = function(beqTalk)
 	var listLang = beqTalk.transLang;
 	if (listLang == 'tlh')
 		listLang = 'en';
-
+	if (beqTalk.command == "yIcha'")
+		sndMessage += "```";
+	
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
@@ -468,10 +533,28 @@ module.exports.createTranslation = function(beqTalk)
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
-			sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-			
-			sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
-			sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+			if (beqTalk.command != "yIcha'")
+			{
+				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
+			}
+			else
+			{
+				if (oldType != item.type)
+				{
+					oldType = item.type;
+					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
+				}				
+				if (oldNum != item.suffixNum)
+				{
+					oldNum = item.suffixNum;
+					tmpSuffixText = getSuffNum(item.type, item.suffixNum, beqTalk.transLang);
+					if (tmpSuffixText != "")
+						sndMessage += beqTalk.newline + beqTalk.newline + tmpSuffixText + beqTalk.newline;
+				}
+				sndMessage += item[beqTalk.lookLang].padEnd(7) + " ==> " + item[beqTalk.transLang] + beqTalk.newline;
+			}
 			
 			//Special case (stupid case, but nonetheless)
 			if ( (beqTalk.lookLang == 'en' && beqTalk.transLang == 'de') ||
@@ -492,21 +575,26 @@ module.exports.createTranslation = function(beqTalk)
 			
 			//Tips about the word, is it slang, is it derived, are there notes, etc...
 			infTips = "";			
-			if (item.slang == true)
-				infTips = '(slang)';				
-			if (item.deriv == true)
-				infTips += '(deriv)';
-			if (isHyp(item.type))
-				infTips += '(hyp)';
-			if (beqTalk.showNotes != true &&
-			   ( item.notes != "" || item.notes_de != "" || item.hidden_notes != "" ))
-				infTips += '(notes)';
-			
-			if (infTips != "")
-			   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
+			if (beqTalk.simple == false)
+			{
+				if (item.slang == true)
+					infTips = '(slang)';				
+				if (item.deriv == true)
+					infTips += '(deriv)';
+				if (isHyp(item.type))
+					infTips += '(hyp)';
+				if (beqTalk.showNotes != true &&
+				   ( item.notes != "" || item.notes_de != "" || item.hidden_notes != "" ))
+					infTips += '(notes)';
+
+				if (infTips != "")
+				   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
+			}
 		}
 	}
 	)
+	if (beqTalk.command == "yIcha'")
+		sndMessage += "```";
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 
@@ -558,6 +646,117 @@ function isAlt(wType)
 		return true;
 	else
 		return false;
+}
+
+//get (translate) suffix number/type
+function getSuffNum(itemType, itemSuffixNum, tranLang)
+{
+   var tmpRet = "";
+   var tmpLang = tranLang;
+	
+   //Vorerst nur EN/DE
+   if (tmpLang != 'de' && tmpLang != 'en')
+	   tmpLang = 'en';
+	
+   var NounSuffixes = new Array();
+   NounSuffixes["de"] = new Array();
+   NounSuffixes["de"].one   = "Größe/Bedeutung";
+   NounSuffixes["de"].two   = "Mehrzahl";
+   NounSuffixes["de"].three = "Qualifikation";
+   NounSuffixes["de"].four  = "Besitz/Spezifizierung";
+   NounSuffixes["de"].five  = "Syntaktische Marker";
+	
+   var VerbSuffixes = new Array();
+   VerbSuffixes["de"] = new Array();
+   VerbSuffixes["de"].one   = "sich selbst / sich gegenseitig";
+   VerbSuffixes["de"].two   = "Bereitschaft/Neigung";
+   VerbSuffixes["de"].three = "Veränderung";
+   VerbSuffixes["de"].four  = "Anlass";
+   VerbSuffixes["de"].five  = "undefiniertes Subjekt / Fähigkeit";
+   VerbSuffixes["de"].six   = "Qualifikation";
+   VerbSuffixes["de"].seven = "Aspekt";
+   VerbSuffixes["de"].eight = "Ehrung";
+   VerbSuffixes["de"].nine  = "Syntaktische Marker";
+   VerbSuffixes["de"].rover = "wandernde Suffixe";
+	
+   NounSuffixes["en"] = new Array();
+   NounSuffixes["en"].one   = "Size/Importance";
+   NounSuffixes["en"].two   = "Number";
+   NounSuffixes["en"].three = "Qualification";
+   NounSuffixes["en"].four  = "Possession/Specification";
+   NounSuffixes["en"].five  = "Syntactic Markers";
+	
+   VerbSuffixes["en"] = new Array();
+   VerbSuffixes["en"].one   = "Oneself/one another";
+   VerbSuffixes["en"].two   = "Volition/predisposition";
+   VerbSuffixes["en"].three = "Change";
+   VerbSuffixes["en"].four  = "Cause";
+   VerbSuffixes["en"].five  = "Indefinite subject/ability";
+   VerbSuffixes["en"].six   = "Qualification";
+   VerbSuffixes["en"].seven = "Aspect";
+   VerbSuffixes["en"].eight = "Honorific";
+   VerbSuffixes["en"].nine  = "Syntactic markers";
+   VerbSuffixes["en"].rover = "Rovers";	
+		
+   //Noun or verb?
+   if (itemType.split(':')[0] == "n")
+   {
+	   switch(itemSuffixNum)
+	   {
+		   case 1:
+		     tmpRet = "1) " + NounSuffixes[tranLang].one;
+		   break;
+		   case 2:
+   		      tmpRet = "2) " + NounSuffixes[tranLang].two;
+		   break;
+		   case 3:
+		      tmpRet = "3) " + NounSuffixes[tranLang].three;
+		   break;
+		   case 4:
+			   tmpRet = "4) " + NounSuffixes[tranLang].four;
+		   break;
+		   case 5:
+			   tmpRet = "5) " + NounSuffixes[tranLang].five;
+		   break;
+	   }
+   }
+   else if (itemType.split(':')[0] == "v")
+   {
+	   switch(itemSuffixNum)
+	   {
+		   case 1:
+			   tmpRet = "1) " + VerbSuffixes[tranLang].one;
+		   break;
+		   case 2:
+			   tmpRet = "2) " +  VerbSuffixes[tranLang].two;
+		   break;
+		   case 3:
+			   tmpRet = "3) " + VerbSuffixes[tranLang].three;
+		   break;
+		   case 4:
+			   tmpRet = "4) " + VerbSuffixes[tranLang].four;
+		   break;
+		   case 5:
+			   tmpRet = "5) " + VerbSuffixes[tranLang].five;
+		   break;
+		   case 6:
+			   tmpRet = "6) " + VerbSuffixes[tranLang].six;
+		   break;
+		   case 7:
+			   tmpRet = "7) " + VerbSuffixes[tranLang].seven;
+		   break;
+		   case 8:
+			   tmpRet = "8) " + VerbSuffixes[tranLang].eight;
+		   break;
+		   case 9:
+			   tmpRet = "9) " + VerbSuffixes[tranLang].nine;
+		   break;
+		   case "R":
+			   tmpRet = "R) " + VerbSuffixes[tranLang].rover;
+		   break;
+	   }
+   }
+   return tmpRet;
 }
 
 //Get (translate) word Type
@@ -797,11 +996,131 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		if (emptyStruct.type.startsWith('sen'))
 			KDBPHJSon.push(emptyStruct);
 		else if (emptyStruct.type.startsWith('v:pref'))
-			KDBVPJSon.push(emptyStruct);
+			KDBVPJSon.push(emptyStruct);			
 		else if (emptyStruct.type.startsWith('v:suff'))
+		{
+			//emptyStruct wird in jedem Durchlauf neu angelegt, es sollte daher kein Problem
+			//sein jetzt ein Feld einzufügen, oder?
+			switch(emptyStruct.tlh)
+			{
+				case "-'egh":
+				case "-chuq":
+				emptyStruct.suffixNum = 1;
+				break;
+
+				case "-nIS":
+				case "-qang":
+				case "-rup":
+				case "-beH":
+				case "-vIp":
+				emptyStruct.suffixNum = 2;
+				break;
+
+				case "-choH":
+				case "-qa'":
+				emptyStruct.suffixNum = 3;
+				break;
+
+				case "-moH":
+				emptyStruct.suffixNum = 4;
+				break;
+
+				case "-lu'":
+				case "-laH":
+				emptyStruct.suffixNum = 5;
+				break;
+
+				case "-chu'":
+				case "-bej":
+				case "-ba'":
+				case "-law'":
+				emptyStruct.suffixNum = 6;
+				break;
+
+				case "-pu'":
+				case "-ta'":
+				case "-taH":
+				case "-lI'":
+				emptyStruct.suffixNum = 7;
+				break;
+
+				case "-neS":
+				emptyStruct.suffixNum = 8;
+				break;
+
+				case "-DI'":
+				case "-chugh":
+				case "-pa'":
+				case "-vIS":
+				case "-mo'":
+				case "-bogh":
+				case "-meH":
+				case "-'a'":
+				case "-jaj":
+				case "-wI'":
+				case "-ghach":
+				emptyStruct.suffixNum = 9;
+				break;
+
+				case "-be'":
+				case "-Qo'":
+				case "-Ha'":
+				case "-qu'":
+				emptyStruct.suffixNum = "R";
+				break;
+			}
+				
 			KDBVSJSon.push(emptyStruct);
+		}
 		else if (emptyStruct.type.startsWith('n:suff'))
+		{
+			//emptyStruct wird in jedem Durchlauf neu angelegt, es sollte daher kein Problem
+			//sein jetzt ein Feld einzufügen, oder?
+			switch(emptyStruct.tlh)
+			{
+				case "-'a'":
+				case "-Hom":
+				case "-oy":
+				emptyStruct.suffixNum = 1;
+				break;
+
+				case "-pu'":
+				case "-Du'":
+				case "-mey":
+				emptyStruct.suffixNum = 2;
+				break;
+
+				case "-qoq":
+				case "-Hey":
+				case "-na'":
+				emptyStruct.suffixNum = 3;
+				break;
+
+				case "-wIj":
+				case "-wI'":
+				case "-maj":
+				case "-ma'":
+				case "-lIj":
+				case "-lI'":
+				case "-raj":
+				case "-ra'":
+				case "-Daj":
+				case "-chaj":
+				case "-vam":
+				case "-vetlh":
+				emptyStruct.suffixNum = 4;
+				break;
+
+				case "-Daq":
+				case "-vo'":
+				case "-mo'":
+				case "-vaD":
+				case "-'e'":
+				emptyStruct.suffixNum = 5;
+				break;
+			}
 			KDBNSJSon.push(emptyStruct);
+		}
 	}
 	);
 
