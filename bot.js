@@ -279,6 +279,9 @@ bot.on('message', function (messageDJS)
 				args[3] = args[2];
 			}
 			showNumRange = args[3];
+			if (showNumRange == undefined || showNumRange == "")
+				showNumRnage = "0-10";
+				
 			beqTalk.wordType1 = showAType;
 			beqTalk.wordType2 = showNumRange;
 				
