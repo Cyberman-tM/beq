@@ -259,7 +259,7 @@ bot.on('message', function (messageDJS)
 				
 			//TODO: more synonyms
 			showAType = args[1];
-			if (showAType == "moHaq" || showAType == "prefixes")
+			if (showAType == "moHaq" || showAType == "prefixes" || showAType == "prefix")
 			   showAType = "prefix";
 			else if (showAType == "mojaq" || showAType == "suffix")
 			{
