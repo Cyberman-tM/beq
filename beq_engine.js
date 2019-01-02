@@ -363,8 +363,8 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = false;
 		break;
 		case "yIcha'":
-			var startSuffNum = 0;
-			var endSuffNum = 10;
+			var startSuffNum = 1;
+			var endSuffNum = 9;
 			
 			if (beqTalk.wordType2.substring(1,2) == '+')
 				startSuffNum = beqTalk.wordType2.substring(0,1)
@@ -700,19 +700,19 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 	   switch(itemSuffixNum)
 	   {
 		   case 1:
-		     tmpRet = NounSuffixes[tranLang].one;
+		     tmpRet = "1) " + NounSuffixes[tranLang].one;
 		   break;
 		   case 2:
-   		      tmpRet = NounSuffixes[tranLang].two;
+   		      tmpRet = "2) " + NounSuffixes[tranLang].two;
 		   break;
 		   case 3:
-		      tmpRet = NounSuffixes[tranLang].three;
+		      tmpRet = "3) " + NounSuffixes[tranLang].three;
 		   break;
 		   case 4:
-			   tmpRet = NounSuffixes[tranLang].four;
+			   tmpRet = "4) " + NounSuffixes[tranLang].four;
 		   break;
 		   case 5:
-			   tmpRet = NounSuffixes[tranLang].five;
+			   tmpRet = "5) " + NounSuffixes[tranLang].five;
 		   break;
 	   }
    }
@@ -721,34 +721,34 @@ function getSuffNum(itemType, itemSuffixNum, tranLang)
 	   switch(itemSuffixNum)
 	   {
 		   case 1:
-			   tmpRet = VerbSuffixes[tranLang].one;
+			   tmpRet = "1) " + VerbSuffixes[tranLang].one;
 		   break;
 		   case 2:
-			   tmpRet = VerbSuffixes[tranLang].two;
+			   tmpRet = "2) " +  VerbSuffixes[tranLang].two;
 		   break;
 		   case 3:
-			   tmpRet = VerbSuffixes[tranLang].three;
+			   tmpRet = "3) " + VerbSuffixes[tranLang].three;
 		   break;
 		   case 4:
-			   tmpRet = VerbSuffixes[tranLang].four;
+			   tmpRet = "4) " + VerbSuffixes[tranLang].four;
 		   break;
 		   case 5:
-			   tmpRet = VerbSuffixes[tranLang].five;
+			   tmpRet = "5) " + VerbSuffixes[tranLang].five;
 		   break;
 		   case 6:
-			   tmpRet = VerbSuffixes[tranLang].six;
+			   tmpRet = "6) " + VerbSuffixes[tranLang].six;
 		   break;
 		   case 7:
-			   tmpRet = VerbSuffixes[tranLang].seven;
+			   tmpRet = "7) " + VerbSuffixes[tranLang].seven;
 		   break;
 		   case 8:
-			   tmpRet = VerbSuffixes[tranLang].eight;
+			   tmpRet = "8) " + VerbSuffixes[tranLang].eight;
 		   break;
 		   case 9:
-			   tmpRet = VerbSuffixes[tranLang].nine;
+			   tmpRet = "9) " + VerbSuffixes[tranLang].nine;
 		   break;
 		   case "R":
-			   tmpRet = VerbSuffixes[tranLang].rover;
+			   tmpRet = "R) " + VerbSuffixes[tranLang].rover;
 		   break;
 	   }
    }
