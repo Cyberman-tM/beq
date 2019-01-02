@@ -363,13 +363,24 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = false;
 		break;
 		case "yIcha'":
+			var startSuffNum = 0;
+			var endSuffNum = 10;
+			
+			if (beqTalk.wordType2.substring(1,2) == '+')
+				startSuffNum = beqTalk.wordType2.substring(0,1)
+			else if (beqTalk.wordType2.substring(1,2) == '-')
+			{
+				startSuffNum = beqTalk.wordType2.substring(0,1)
+				endSuffNum   = beqTalk.wordType2.substring(2,3)
+			}
+			
 			beqTalk.result = new Array();
 			if (beqTalk.wordType1 == "prefix")
 			{
 				//Simply export all prefixes
 				//Do a loop because we might want to limit it some day (i.e. all prefixes using "he", for example)
 				module.exports.KDBVPJSon.forEach(function(onePref)
-				{
+				{			
 					beqTalk.result.push(onePref);
 				});
 				beqTalk.gotResult = true;
@@ -379,7 +390,8 @@ module.exports.Engine = function(beqTalk)
 				//TODO: Check requested tiers
 				module.exports.KDBVSJSon.forEach(function(oneSuff)
 				{
-					beqTalk.result.push(oneSuff);
+					if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+						beqTalk.result.push(oneSuff);
 				});
 				beqTalk.gotResult = true;
 			}
@@ -388,7 +400,8 @@ module.exports.Engine = function(beqTalk)
 				//TODO: Check requested tiers
 				module.exports.KDBNSJSon.forEach(function(oneSuff)
 				{
-					beqTalk.result.push(oneSuff);
+					if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+						beqTalk.result.push(oneSuff);
 				});
 				beqTalk.gotResult = true;
 			}
