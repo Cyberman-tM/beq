@@ -543,7 +543,6 @@ module.exports.createTranslation = function(beqTalk)
 			{
 				if (oldType != item.type)
 				{
-					logger.info(item.type);
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
 				}				
