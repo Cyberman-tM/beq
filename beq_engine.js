@@ -373,6 +373,8 @@ module.exports.Engine = function(beqTalk)
 				startSuffNum = beqTalk.wordType2.substring(0,1)
 				endSuffNum   = beqTalk.wordType2.substring(2,3)
 			}
+			else
+				startSuffNum = endSuffNum = beqTalk.wordType2;
 			
 			beqTalk.result = new Array();
 			if (beqTalk.wordType1 == "prefix")
