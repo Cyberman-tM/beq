@@ -389,10 +389,8 @@ module.exports.Engine = function(beqTalk)
 			}
 			else
 			{
-				logger.info("suffix");
 				if (beqTalk.wordType1 == "verbSuffix" || beqTalk.wordType1 == "suffix")
 				{
-					logger.info("verb");
 					//TODO: Check requested tiers
 					module.exports.KDBVSJSon.forEach(function(oneSuff)
 					{
@@ -403,7 +401,6 @@ module.exports.Engine = function(beqTalk)
 				}
 				if (beqTalk.wordType1 == "nounSuffix" || beqTalk.wordType1 == "suffix")
 				{
-					logger.info("noun");
 					//TODO: Check requested tiers
 					module.exports.KDBNSJSon.forEach(function(oneSuff)
 					{
@@ -546,6 +543,7 @@ module.exports.createTranslation = function(beqTalk)
 			{
 				if (oldType != item.type)
 				{
+					logger.info(item.type);
 					oldType = item.type;
 					sndMessage += getWType(item.type, listLang) + beqTalk.newline;
 				}				
