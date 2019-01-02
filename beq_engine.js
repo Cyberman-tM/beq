@@ -388,27 +388,28 @@ module.exports.Engine = function(beqTalk)
 				beqTalk.gotResult = true;
 			}
 			else
-			if (beqTalk.wordType1 == "verbSuffix" || beqTalk.wordType1 == "suffix")
 			{
-				//TODO: Check requested tiers
-				module.exports.KDBVSJSon.forEach(function(oneSuff)
+				if (beqTalk.wordType1 == "verbSuffix" || beqTalk.wordType1 == "suffix")
 				{
-					if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
-						beqTalk.result.push(oneSuff);
-				});
-				beqTalk.gotResult = true;
-			}
-			else if (beqTalk.wordType1 == "nounSuffix" || beqTalk.wordType1 == "suffix")
-			{
-				//TODO: Check requested tiers
-				module.exports.KDBNSJSon.forEach(function(oneSuff)
+					//TODO: Check requested tiers
+					module.exports.KDBVSJSon.forEach(function(oneSuff)
+					{
+						if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+							beqTalk.result.push(oneSuff);
+					});
+					beqTalk.gotResult = true;
+				}
+				if (beqTalk.wordType1 == "nounSuffix" || beqTalk.wordType1 == "suffix")
 				{
-					if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
-						beqTalk.result.push(oneSuff);
-				});
-				beqTalk.gotResult = true;
+					//TODO: Check requested tiers
+					module.exports.KDBNSJSon.forEach(function(oneSuff)
+					{
+						if (oneSuff.suffixNum >= startSuffNum && oneSuff.suffixNum <= endSuffNum)
+							beqTalk.result.push(oneSuff);
+					});
+					beqTalk.gotResult = true;
+				}
 			}
-
 		break;
 	default:
 	   beqTalk.gotResult = false;
