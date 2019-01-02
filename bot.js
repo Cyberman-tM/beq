@@ -261,37 +261,41 @@ bot.on('message', function (messageDJS)
 			showAType = args[1];
 			if (showAType == "moHaq" || showAType == "prefixes")
 			   showAType = "prefix";
-			else if (showAType == "mojaq" || showAType == "suffixes")
-			   showAType = "suffix"
-			else if (showAType == "verbsuffix" || showAType == "verb-suffix" || showAType == "vs" )
+			else if (showAType == "mojaq")
+			{
+			   sndMessage += "Hrmp. Discord doesn't allow a list of ALL suffixes. Ask for verb or noun suffixes.";
+			   args[1] = "ERROR";
+			}
+			else if (showAType == "verbsuffix" || showAType == "verb-suffix" || showAType == "vs"  || showAType == "DIp-mojaq")
 			   showAType = "verbSuffix";
-			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns" )
+			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns"  || showAType == "wot-mojaq")
 			   showAType = "nounSuffix";
 				
-			beqTalk.limitRes = 999;
-			beqTalk.startRes = 0;
-			beqTalk.lookLang = "tlh";
-			beqTalk.transLang = args[2];
-			if (langKnown(args[2]) == false)
+			if (args[1] != "ERROR")
 			{
-				beqTalk.transLang = 'en';   //Use EN as default
-				//Since 3 isn't the language, it's probably the number
-				args[3] = args[2];
+				beqTalk.limitRes = 999;
+				beqTalk.startRes = 0;
+				beqTalk.lookLang = "tlh";
+				beqTalk.transLang = args[2];
+				if (langKnown(args[2]) == false)
+				{
+					beqTalk.transLang = 'en';   //Use EN as default
+					//Since 3 isn't the language, it's probably the number
+					args[3] = args[2];
+				}
+				showNumRange = args[3];
+				if (showNumRange == undefined || showNumRange == "")
+					showNumRange = "0-9";
+
+				beqTalk.wordType1 = showAType;
+				beqTalk.wordType2 = showNumRange;
+
+				beqTalk.command = "yIcha'";
+
+				//Let the engine do its magic :-)
+				talkBeq = beq.Engine(beqTalk);
+				sndMessage = beq.createTranslation(talkBeq);
 			}
-			showNumRange = args[3];
-			if (showNumRange == undefined || showNumRange == "")
-				showNumRange = "0-9";
-				
-			beqTalk.wordType1 = showAType;
-			beqTalk.wordType2 = showNumRange;
-			
-			beqTalk.command = "yIcha'";
-				
-			//Let the engine do its magic :-)
-			talkBeq = beq.Engine(beqTalk);
-			sndMessage = beq.createTranslation(talkBeq);		
-				
-			//botSendMessage(1, bot, DData.bTChan, talkBeq.result[0]);
 		break;			
 		case 'linkMe':
 		   var ListLink1 = args[1];
