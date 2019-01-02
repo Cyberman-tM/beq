@@ -261,7 +261,7 @@ bot.on('message', function (messageDJS)
 			showAType = args[1];
 			if (showAType == "moHaq" || showAType == "prefixes")
 			   showAType = "prefix";
-			else if (showAType == "mojaq")
+			else if (showAType == "mojaq" || showAType == "suffix")
 			{
 			   sndMessage += "Hrmp. Discord doesn't allow a list of ALL suffixes. Ask for verb or noun suffixes.";
 			   args[1] = "ERROR";
@@ -270,6 +270,11 @@ bot.on('message', function (messageDJS)
 			   showAType = "verbSuffix";
 			else if (showAType == "nounsuffix" || showAType == "noun-suffix" || showAType == "ns"  || showAType == "wot-mojaq")
 			   showAType = "nounSuffix";
+			else
+			{
+				sndMessage = "nuqjatlh?";
+				args[1] = "ERROR";
+			}
 				
 			if (args[1] != "ERROR")
 			{
