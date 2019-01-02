@@ -284,9 +284,7 @@ bot.on('message', function (messageDJS)
 				
 			beqTalk.wordType1 = showAType;
 			beqTalk.wordType2 = showNumRange;
-				logger.info(showNumRange);
-				logger.info(beqTalk.wordType2);
-				
+			
 			beqTalk.command = "yIcha'";
 				
 			//Let the engine do its magic :-)
