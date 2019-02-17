@@ -1087,7 +1087,7 @@ This word is not used for sort order.[3]</column>
       <column name="definition_zh_HK">各種各樣的 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{pIm:v}, {law':v}, {rap:v}, {nIb:v}, {Sar:n}</column>
+      <column name="see_also">{pIm:v}, {ngang:v}, {law':v}, {rap:v}, {nIb:v}, {Sar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1126,8 +1126,8 @@ This word is not used for sort order.[3]</column>
       <column name="definition_zh_HK">品種 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sar:v}, {tlhoQ:n}</column>
-      <column name="notes"></column>
+      <column name="see_also">{Sar:v}, {Segh:n}, {tlhoQ:n}</column>
+      <column name="notes">This means "variety" in the sense of "an interesting variety of tea", not "variety is the spice of life".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1150,7 +1150,7 @@ This word is not used for sort order.[3]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.01.16:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1708,12 +1708,12 @@ This word is not used for sort order.[3]</column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
-      <!-- This was qep'a' wa'maHDIch, and not HutDIch as the KLI website says in its entry for {Sa'Hut} in the list of new words. -->
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
+      <!-- This was qep'a' wa'maHDIch, and not HutDIch as the KLI website says in its entry for {Sa'Hut} in the list of new words. -->
       <column name="source">[1] {qep'a' 2003:src}</column>
     </table>
     <table name="mem">
@@ -1831,7 +1831,7 @@ This word appears only in the body of {KGT:src} and not in the glossary.</column
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">drive (a land vehicle)</column>
       <column name="definition_de">fahren (ein Bodenfahrzeug)</column>
-      <column name="definition_fa">رانندگی (یک وسیله نقلیه زمینی) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">راندن، رانندگی کردن (یک وسیله نقلیه زمینی)</column>
       <column name="definition_sv">enhet (ett landfordon) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">駕駛（陸地車輛） [AUTOTRANSLATED]</column>
@@ -1907,7 +1907,7 @@ This word appears only in the body of {KGT:src} and not in the glossary.</column
       <column name="definition_zh_HK">種族（類型、排序、類） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mut:n}, {buv:n}, {yagh:n}, {chovnatlh:n}</column>
+      <column name="see_also">{mut:n}, {buv:n}, {yagh:n}, {chovnatlh:n}, {Sar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2057,7 +2057,7 @@ This can be used for a "settings" or "preferences" page in software, but not ind
       <column name="definition_zh_HK">用拇指（成人） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes">Small children, or adults talking to or about small children, use {rIl:v:1} instead.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2092,7 +2092,7 @@ This can be used for a "settings" or "preferences" page in software, but not ind
       <column name="definition_zh_HK">拇指（成人） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes">Small children, or adults talking to or about small children, use {rIlwI':n} instead.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2752,7 +2752,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The existence of the homophonous verb {Sev:v} may suggest that Klingons view the containment of wounds as being analogous to the containment of an enemy.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2787,7 +2787,9 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.
+
+The existence of the homophonous noun {Sev:n} may suggest that Klingons view the containment of wounds as being analogous to the containment of an enemy.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3057,7 +3059,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">radio</column>
       <column name="definition_de">Radio</column>
-      <column name="definition_fa">رادیو [AUTOTRANSLATED]</column>
+      <column name="definition_fa">رادیو</column>
       <column name="definition_sv">radio [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">無線電 [AUTOTRANSLATED]</column>
@@ -3556,7 +3558,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{gheH:v}, {Hat:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This is a unit of temperature on a specific scale, not the generic word for a unit of temperature.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3625,7 +3627,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="definition_zh_HK">用食指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes">When used with nouns marked with {-Daq:n}, the finger verbs mean "point (with that finger) at or towards" the object indicated by that noun.
 
 There are some special cases of the reflexive (with {-'egh:v}) forms of the finger verbs. See the example below, and also under {rIl:v:1}.
@@ -3740,7 +3742,7 @@ If an implement is used for an activity typically performed by a finger, a finge
       <column name="definition_zh_HK">食指、第一根手指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4703,7 +4705,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">haute cuisine</column>
       <column name="definition_de">Haute Cuisine</column>
-      <column name="definition_fa">غذاهای عالی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">غذاهای عالی</column>
       <column name="definition_sv">haute cuisine, fin mat, restaurangmat</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">高級美食 [AUTOTRANSLATED]</column>
@@ -5161,7 +5163,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">dining room, eating room</column>
       <column name="definition_de">Speisesaal</column>
-      <column name="definition_fa">اتاق غذاخوری، اتاق غذا خوردن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اتاق غذاخوری</column>
       <column name="definition_sv">matsal, matrum [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">餐廳、吃飯的房間 [AUTOTRANSLATED]</column>
@@ -5793,13 +5795,13 @@ This word can also refer to the "club" suit in a deck of playing cards (see {Deg
       <column name="part_of_speech">n:being</column>
       <column name="definition">grandmother</column>
       <column name="definition_de">Großmutter</column>
-      <column name="definition_fa">مادر بزرگ [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مادر بزرگ</column>
       <column name="definition_sv">mormor, farmor</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">祖母 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{vavnI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6965,9 +6967,9 @@ The expression {jISum:sen:nolink} has an idiomatic philosophical meaning, "I'm i
       <column name="part_of_speech">n:inhps</column>
       <column name="definition">resource</column>
       <column name="definition_de">Ressource</column>
-      <column name="definition_fa">منابع [AUTOTRANSLATED]</column>
+      <column name="definition_fa">منابع</column>
       <column name="definition_sv">resurs</column>
-      <column name="definition_ru"></column>
+      <column name="definition_ru">ресурс</column>
       <column name="definition_zh_HK">資源（單數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>

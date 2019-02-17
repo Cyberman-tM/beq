@@ -163,7 +163,7 @@
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Despite the fact that {KGT:src} says the suffixes {-'egh:v} and {-moH:v} are generally used when giving commands with a verb describing a state, {yItamchoH!:sen} is in {TKD:src}, and MO has written {yIpIv!:sen} in a letter. Also, the KLI lists {yIDoghQo'!:sen} among its example Klingon phrases.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1036,7 +1036,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="definition_zh_HK">塔拉里安（人） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{ngan:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1044,7 +1044,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">Presumably, there is a place called {talar:n:place,fic,nolink}.</column>
-      <column name="components">{ngan:n}</column>
+      <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1080,7 +1080,8 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {yItamchoH!:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3006,7 +3007,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tellarngan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Tellarite</column>
       <column name="definition_de">Tellarit</column>
       <column name="definition_fa">تلاریت [AUTOTRANSLATED]</column>
@@ -3023,7 +3024,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tellar wa':n}, {ngan:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5481,7 +5482,7 @@ His supporters include {lIr'el:n:name} and {voq:n:name}. His flagship is a sarco
       <column name="part_of_speech">v:is</column>
       <column name="definition">be light (weight)</column>
       <column name="definition_de">leicht (ohne Gewicht)</column>
-      <column name="definition_fa">سبک (وزن) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">سبک وزن بودن</column>
       <column name="definition_sv">vara lätt (om vikt)</column>
       <column name="definition_ru">быть легким</column>
       <column name="definition_zh_HK">輕（重量）</column>
@@ -5837,7 +5838,7 @@ This verb can be used reflexively to mean "enjoy oneself", "have a good time".[3
       <column name="part_of_speech">n:body</column>
       <column name="definition">palm (of hand)</column>
       <column name="definition_de">Handfläche, -Teller</column>
-      <column name="definition_fa">کف دست (از دست) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کف دست</column>
       <column name="definition_sv">handflata</column>
       <column name="definition_ru">ладонь</column>
       <column name="definition_zh_HK">手掌</column>
@@ -7108,7 +7109,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="part_of_speech">n</column>
       <column name="definition">tactics</column>
       <column name="definition_de">Taktik, Vorgehensweise</column>
-      <column name="definition_fa">تاکتیک ها [AUTOTRANSLATED]</column>
+      <column name="definition_fa">تدابیر جنگی</column>
       <column name="definition_sv">taktik</column>
       <column name="definition_ru">тактика</column>
       <column name="definition_zh_HK">戰術、策略</column>
@@ -7321,7 +7322,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">forbid</column>
       <column name="definition_de">verbieten</column>
-      <column name="definition_fa">ممنوع [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ممنوع کردن</column>
       <column name="definition_sv">förbjuda</column>
       <column name="definition_ru">запрещать</column>
       <column name="definition_zh_HK">禁止</column>
@@ -7356,7 +7357,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="part_of_speech">n</column>
       <column name="definition">the future (as a whole)</column>
       <column name="definition_de">Zukunft (als Ganzes)</column>
-      <column name="definition_fa">آینده (به طور کلی) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">آینده (به طور کلی)</column>
       <column name="definition_sv">framtiden (som helhet) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">未來（整體而言） [AUTOTRANSLATED]</column>
@@ -7369,7 +7370,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">In {Star Trek VI:src}, Chancellor Gorkon makes a toast to "the undiscovered country... the future". The phrase "The Undiscovered Country" (TUC) comes from Hamlet's soliloquy and is also the name of the film.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7580,7 +7581,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {Dujeychugh jagh nIv yItuHQo'.:sen}</column>
@@ -7674,7 +7675,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be hot</column>
       <column name="definition_de">heiß, warm</column>
-      <column name="definition_fa">داغ شود [AUTOTRANSLATED]</column>
+      <column name="definition_fa">داغ بودن</column>
       <column name="definition_sv">vara het</column>
       <column name="definition_ru">быть горячим</column>
       <column name="definition_zh_HK">熱</column>
@@ -9200,7 +9201,7 @@ A prism with a three-sided base is a {ra'Duch tut:n@@ra'Duch:n, tut:n:2}, and so
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the verb {tu':v} with the suffix {-lu':v}, the combination of which is often translated as "there is" in English.[1] Note that the third-person singular prefix is used, even if the object is plural (when one might expect the prefix {lu-:v:pref}).[1; 3; 4]</column>
+      <column name="notes">This is the verb {tu':v} with the suffix {-lu':v}, the combination of which is often translated as "there is" in English.[1] Note that the third-person singular prefix is used, even if the object is plural (when one might expect the prefix {lu-:v:pref}, i.e., {lutu'lu':sen:nolink}).[1; 3; 4]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -9228,6 +9229,41 @@ A prism with a three-sided base is a {ra'Duch tut:n@@ra'Duch:n, tut:n:2}, and so
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}, [2] {CK:src}, [3] {KGT p.127,168-172:src}, [4] {KLI mailing list 2014.09.03:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tu'mI'</column>
+      <column name="part_of_speech">n:inhps</column>
+      <column name="definition">sock</column>
+      <column name="definition_de">Socke</column>
+      <column name="definition_fa">جوراب</column>
+      <column name="definition_sv">strumpa</column>
+      <column name="definition_ru">носок</column>
+      <column name="definition_zh_HK">襪（單數）</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Sock it to me" was a frequent catchphrase on the sketch comedy television show "Laugh-In".</column>
+      <column name="components">{paSlogh:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

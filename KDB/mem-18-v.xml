@@ -1617,13 +1617,13 @@ The original line was to have been {logh veQDaq bachchugh, yoH 'e' toblaHbe' Suv
       <column name="part_of_speech">n:being</column>
       <column name="definition">grandfather</column>
       <column name="definition_de">Großvater</column>
-      <column name="definition_fa">بابا بزرگ [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پدر بزرگ</column>
       <column name="definition_sv">farfar, morfar</column>
       <column name="definition_ru">дед</column>
       <column name="definition_zh_HK">祖父 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{SoSnI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1659,13 +1659,15 @@ The original line was to have been {logh veQDaq bachchugh, yoH 'e' toblaHbe' Suv
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">Note that this can refer to an ambitious person, but not an ambitious task.</column>
+      <column name="notes">Note that this can refer to an ambitious person, but not an ambitious task.
+
+In contrast to {pIl:v}, this refers to self-motivation.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">A determined person is one who "vow"s to do something.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2367,7 +2369,7 @@ This verb is used to describe the laying of a carpet. The person who lays a carp
       <column name="part_of_speech">v:i</column>
       <column name="definition">wake up, cease sleeping</column>
       <column name="definition_de">aufwachen</column>
-      <column name="definition_fa">بیدار شدم، خوابم بکشید [AUTOTRANSLATED]</column>
+      <column name="definition_fa">بیدار شدم</column>
       <column name="definition_sv">vakna, sluta sova</column>
       <column name="definition_ru">проснуться</column>
       <column name="definition_zh_HK">醒來、停止睡覺 [AUTOTRANSLATED]</column>
@@ -3115,7 +3117,7 @@ A more common term for this is {qatru':n:nolink}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">verengan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Ferengi</column>
       <column name="definition_de">Ferengi</column>
       <column name="definition_fa">فرنگی [AUTOTRANSLATED]</column>
@@ -3410,7 +3412,7 @@ In {Klingon Monopoly:src}, "Free Parking" is translated as {vergh 'ach DIlnISbe'
       <column name="definition_zh_HK">曱甴、蟑螂</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghew:n}</column>
+      <column name="see_also">{ghew:n}, {'I' ghew:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4278,7 +4280,7 @@ For an idiomatic expression used to tell someone not to move, see {taD:v}.</colu
       <column name="hidden_notes">The example sentence is a lip-match for {'ej DochmeywIj vItlhapqa'meH}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {'ej Dojmey wID, vInDa'ma' peq.} "He has killed many of our people."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5216,7 +5218,7 @@ A large spider on Earth would be a {tera' voDchuch:n@@tera':n, voDchuch:n}, but 
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">emperor's meat</column>
       <column name="definition_de">Fleisch des Imperators</column>
-      <column name="definition_fa">گوشت امپراتور [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گوشت امپراتور</column>
       <column name="definition_sv">kejsarens kött [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">皇帝的肉 [AUTOTRANSLATED]</column>
@@ -5251,7 +5253,7 @@ A large spider on Earth would be a {tera' voDchuch:n@@tera':n, voDchuch:n}, but 
       <column name="part_of_speech">n</column>
       <column name="definition">somewhere</column>
       <column name="definition_de">irgendwo</column>
-      <column name="definition_fa">جایی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">جایی</column>
       <column name="definition_sv">någonstans, någon plats</column>
       <column name="definition_ru">где-нибудь, где-то</column>
       <column name="definition_zh_HK">某處 [AUTOTRANSLATED]</column>
@@ -5692,7 +5694,7 @@ A large spider on Earth would be a {tera' voDchuch:n@@tera':n, voDchuch:n}, but 
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">Based on the similarity to {voQ:v:nolink}, this appears not to take an object.</column>
+      <column name="hidden_notes">Based on the similarity to {vIQ:v:nolink}, this appears not to take an object.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5749,7 +5751,7 @@ A large spider on Earth would be a {tera' voDchuch:n@@tera':n, voDchuch:n}, but 
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">cure</column>
       <column name="definition_de">heilen</column>
-      <column name="definition_fa">درمان [AUTOTRANSLATED]</column>
+      <column name="definition_fa">درمان کردن</column>
       <column name="definition_sv">hela, bota</column>
       <column name="definition_ru">исцелять</column>
       <column name="definition_zh_HK">治愈</column>
@@ -5969,7 +5971,7 @@ This region has some vocabulary differences from {ta' Hol:n}. Terms which have a
       <column name="part_of_speech">n</column>
       <column name="definition">hostage</column>
       <column name="definition_de">Geisel</column>
-      <column name="definition_fa">گروگان [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گروگان</column>
       <column name="definition_sv">gisslan</column>
       <column name="definition_ru">заложник</column>
       <column name="definition_zh_HK">人質</column>
@@ -6039,7 +6041,7 @@ This region has some vocabulary differences from {ta' Hol:n}. Terms which have a
       <column name="part_of_speech">n</column>
       <column name="definition">opinion</column>
       <column name="definition_de">Meinung</column>
-      <column name="definition_fa">نظر [AUTOTRANSLATED]</column>
+      <column name="definition_fa">نظر</column>
       <column name="definition_sv">åsikt</column>
       <column name="definition_ru">мнение</column>
       <column name="definition_zh_HK">意見</column>
@@ -6218,7 +6220,7 @@ This region has some vocabulary differences from {ta' Hol:n}. Terms which have a
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vulqangan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Vulcan (person)</column>
       <column name="definition_de">Vulkanier</column>
       <column name="definition_fa">ولکان (شخص)</column>

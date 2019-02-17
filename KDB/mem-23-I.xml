@@ -354,7 +354,7 @@
       <column name="part_of_speech">v:is</column>
       <column name="definition">be beautiful, handsome</column>
       <column name="definition_de">schön, hübsch</column>
-      <column name="definition_fa">زیبا, خوشگل, خوشتیپ</column>
+      <column name="definition_fa">زیبا، خوشگل، خوشتیپ</column>
       <column name="definition_sv">vara vacker, vara stilig</column>
       <column name="definition_ru">быть красивой</column>
       <column name="definition_zh_HK">美麗、英俊</column>
@@ -602,7 +602,7 @@
       <column name="part_of_speech">n:body</column>
       <column name="definition">penis</column>
       <column name="definition_de">Penis</column>
-      <column name="definition_fa">آلت تناسلی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">الت‌ مردی‌، کیر</column>
       <column name="definition_sv">penis [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">陰莖 [AUTOTRANSLATED]</column>
@@ -623,6 +623,7 @@
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
+      <!-- Note: Vulgar search terms have been deliberately left out. -->
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
@@ -1945,14 +1946,14 @@ See {rav:n:1} for an idiom related to sadness.</column>
       <column name="definition_zh_HK">一种甲虫般的昆虫</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{vetlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The name of the star Betelgeuse (popularly pronounced "beetle juice") was incorrectly thought to mean "the armpit of Orion".</column>
       <column name="components">{'I':n}, {ghew:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>

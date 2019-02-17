@@ -1634,7 +1634,7 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="part_of_speech">n:1</column>
       <column name="definition">meat, animal</column>
       <column name="definition_de">Fleisch, Tier</column>
-      <column name="definition_fa">گوشت، حیوانات [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گوشت، حیوان</column>
       <column name="definition_sv">djur, kött</column>
       <column name="definition_ru">мясо, животное</column>
       <column name="definition_zh_HK">肉、動物</column>
@@ -2151,7 +2151,9 @@ A physical path would be a {taw:n}.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">"Head" off.</column>
+      <column name="hidden_notes">"Head" off.
+
+This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4296,7 +4298,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/KArQlviVXMk}</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {HIvbe' qoHpu' neH.:sen}
@@ -4461,7 +4463,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/KArQlviVXMk}</column>
       <column name="part_of_speech">n</column>
       <column name="definition">glass (tumbler)</column>
       <column name="definition_de">Glas, Trinkgefäß</column>
-      <column name="definition_fa">شیشه (شیشه ای) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">لیوان</column>
       <column name="definition_sv">glas (dryckeskärl), mugg</column>
       <column name="definition_ru">стекло тумблера</column>
       <column name="definition_zh_HK">杯</column>
@@ -4741,7 +4743,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/KArQlviVXMk}</column>
       <column name="part_of_speech">n</column>
       <column name="definition">everyone, all, everything, each</column>
       <column name="definition_de">jede/r/s, alle/s</column>
-      <column name="definition_fa">همه، همه، همه چیز، هر کدام [AUTOTRANSLATED]</column>
+      <column name="definition_fa">همه، همه چیز، هر کدام</column>
       <column name="definition_sv">alla, allihop, allt, allting, varje, varenda</column>
       <column name="definition_ru">все, каждый, всякий</column>
       <column name="definition_zh_HK">所有、一切、每個</column>
@@ -5091,7 +5093,7 @@ If {Hoch:n:nolink} follows a noun, it means "all of X".[3; 4] Note that this is 
       <column name="part_of_speech">n:being</column>
       <column name="definition">captain</column>
       <column name="definition_de">Kapitän, Captain</column>
-      <column name="definition_fa">کاپیتان, ناخدا</column>
+      <column name="definition_fa">کاپیتان، ناخدا</column>
       <column name="definition_sv">kapten (rang)</column>
       <column name="definition_ru">Капитан</column>
       <column name="definition_zh_HK">艦長</column>
@@ -5682,7 +5684,7 @@ The identifier is usually a country, region, or political unit of some kind. For
       <column name="definition_zh_HK">使用第二個腳趾 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{yaD:n:1}</column>
       <column name="notes">Due to the homophony with {Hom:n:2}, to point one's second toe at someone (typically an opponent or an enemy), while the other toes point downwards, is considered an insulting gesture. It signifies that one considers the other person to be weak.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6163,7 +6165,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">"Horse" power.</column>
+      <column name="hidden_notes">"Horse" power. The character of Eric "Hoss" Cartwright on the TV show "Bonanza" has a reputation for being strong.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {Suvlu'taHvIS yapbe' HoS neH.:sen}
@@ -7223,13 +7225,13 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This word takes the plural suffix {-Du':n:suff}, even though it's not a body part.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This is obviously related to {Ho':n:1}, but it's unclear which suffix it takes in the plural. However, given the precedent of {Ho':n:2}, it's probable that this takes {-Du':n:suff}.</column>
+      <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7243,7 +7245,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 2018:src}, [2] {KLI mailing list 2018.12.02:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7546,7 +7548,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7581,7 +7583,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {'entepray' Hub patmey luchu'be'lu'pu'.:sen}</column>
@@ -8639,7 +8641,7 @@ Types of {HurDagh:n:nolink} include the {Supghew:n} (small), the {leSpal:n} (med
       <column name="definition_zh_HK">赫爾克（人） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Hur'Iq:n}</column>
+      <column name="see_also">{Hur'Iq:n}, {ngan:n}</column>
       <column name="notes">There is an idiom, {wIH; Hur'Iqngan rur}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

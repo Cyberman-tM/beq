@@ -1042,7 +1042,7 @@ There is an idiom, {ghung; qagh rur}.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This sentence was one of the most significant in the development of the Klingon language. It was originally supposed to mean "I told you, engines only." It was changed in the subtitles to say "I wanted prisoners." This led to the invention of the plural suffix for beings {-pu':n}, the accomplishment suffix {-ta':v}, the verb {neH:v} and the idea of clipped Klingon which was needed to explain its lack of any prefix, as well as a change in the meaning of the verb {ma':v} to mean "accommodate". </column>
+      <column name="hidden_notes">This sentence was one of the most significant in the development of the Klingon language. It was originally supposed to mean "I told you, engines only." It was changed in the subtitles to say "I wanted prisoners." This led to the invention of the plural suffix for beings {-pu':n}, the accomplishment suffix {-ta':v}, the verb {neH:v} and the idea of clipped Klingon which was needed to explain its lack of any prefix, as well as a change in the meaning of the verb {ma':v} to mean "accommodate" (its original meaning being assigned to the new verb {ja':v}).</column>
       <column name="components">{qama':n}, {-pu':n}, {jon:v}, {-ta':v}, {neH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1208,7 +1208,7 @@ Contrary to some unreliable sources, the phrase "Urkuk lu Stalga" does not mean 
       <column name="part_of_speech">v:1,is</column>
       <column name="definition">be old (not young)</column>
       <column name="definition_de">alt (nicht jung)</column>
-      <column name="definition_fa">پیر, مسن</column>
+      <column name="definition_fa">پیر، مسن</column>
       <column name="definition_sv">vara gammal (inte ung)</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">老（不年輕）</column>
@@ -1253,7 +1253,7 @@ This word is applied to people and animals.[2]</column>
       <column name="definition_zh_HK">用小指、小指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes">An idiomatic gesture (due to homophony with {qan:v:1}): to point your pinkie at someone is to comment that you believe they are old.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1429,7 +1429,7 @@ This word is applied to people and animals.[2]</column>
       <column name="definition_zh_HK">小指</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes">Note that {qanwI':n:nolink} can also mean "old person". An idiomatic gesture: to point your pinkie at someone is to comment that you believe they are old.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1808,7 +1808,7 @@ This word is applied to people and animals.[2]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qarDaSngan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Cardassian (person)</column>
       <column name="definition_de">Cardassianer</column>
       <column name="definition_fa">کارداسی (شخص)</column>
@@ -2708,7 +2708,7 @@ More generally, it seems that when {-moH:v} is added to a verb {X:sen:nolink} wh
       <column name="definition_zh_HK">使用第二個（中間）手指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2743,7 +2743,7 @@ More generally, it seems that when {-moH:v} is added to a verb {X:sen:nolink} wh
       <column name="definition_zh_HK">中指、第二根手指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4248,7 +4248,7 @@ Do not confuse with {Qeq:v}.</column>
       <column name="part_of_speech">n</column>
       <column name="definition">fireplace</column>
       <column name="definition_de">Kamin</column>
-      <column name="definition_fa">بخاری [AUTOTRANSLATED]</column>
+      <column name="definition_fa">بخاری، اجاق، اتشگاه</column>
       <column name="definition_sv">öppen spis [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">壁爐 [AUTOTRANSLATED]</column>
@@ -4318,7 +4318,7 @@ Do not confuse with {Qeq:v}.</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">advise</column>
       <column name="definition_de">(be)raten</column>
-      <column name="definition_fa">توصیه [AUTOTRANSLATED]</column>
+      <column name="definition_fa">توصیه دادن</column>
       <column name="definition_sv">råda, ge råd</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">勸告 [AUTOTRANSLATED]</column>
@@ -4403,7 +4403,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">In Aesop's fables, the fox is known to give misleading advice.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4566,7 +4566,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="part_of_speech">n</column>
       <column name="definition">crowd</column>
       <column name="definition_de">Menschenmenge</column>
-      <column name="definition_fa">جمعیت [AUTOTRANSLATED]</column>
+      <column name="definition_fa">جمعیت</column>
       <column name="definition_sv">folksamling, folkmassa</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">人群、大眾</column>
@@ -4579,7 +4579,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">In its first appearance as a noun, in {HQ 4.4, Dec. 1995:src}, {qev:n:nolink} was described as "[among] those words already well-known for different types of groups". The noun {tlhach:n} was explicitly introduced as being a new word in the same article. This suggests that the verb {qev:v} was misread as a noun.</column>
+      <column name="hidden_notes">In its first appearance as a noun, in {HQ 4.4, Dec. 1995:src}, {qev:n:nolink} was listed as "[a]mong those words already well-known for different types of groups" and indicated to be a synonym for {ghom'a':n}. The noun {tlhach:n} was explicitly introduced as being a new word in the same article. This suggests that the verb {qev:v} was misread as a noun by Marc Okrand when he was preparing the article.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4677,7 +4677,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="definition_zh_HK">使用戒指（第三）手指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4712,7 +4712,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="definition_zh_HK">無名指、第三指 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{nItlh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4778,7 +4778,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="part_of_speech">n:body</column>
       <column name="definition">vagina</column>
       <column name="definition_de">Vagina</column>
-      <column name="definition_fa">واژن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مهبل</column>
       <column name="definition_sv">vagina [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">陰道 [AUTOTRANSLATED]</column>
@@ -4799,6 +4799,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
+      <!-- Note: Vulgar search terms have been deliberately left out. -->
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
@@ -5521,7 +5522,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">pay attention, concentrate</column>
       <column name="definition_de">aufpassen, konzentrieren</column>
-      <column name="definition_fa">توجه کن، تمرکز کردن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">توجه کردن، تمرکز کردن</column>
       <column name="definition_sv">vara uppmärksam, koncentrera sig</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">注意、集中註意力 [AUTOTRANSLATED]</column>
@@ -6213,7 +6214,7 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This refers to a person, and isn't the word to use when referring to the other half of a pair of socks or gloves or the like, for which see {nelwI':n}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -6233,7 +6234,7 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6629,6 +6630,42 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qol</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">pronounce</column>
+      <column name="definition_de">aussprechen</column>
+      <column name="definition_fa">تلفظ کردن</column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK">發音</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{QIch wab Ho'DoS:n}</column>
+      <column name="notes">This is used to refer to articulation, and does not have the sense of "proclaim, declare, decree".</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">The Hebrew word for "voice" is קוֹל.</column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {chay' mu'vam qollu'?:sen}</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.01.16:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">qol</column>
       <column name="part_of_speech">n:name,fic</column>
       <column name="definition">Kol</column>
       <column name="definition_de">Kol</column>
@@ -6808,7 +6845,7 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
       <column name="part_of_speech">n:name,fic</column>
       <column name="definition">Kotar</column>
       <column name="definition_de">Kotar</column>
-      <column name="definition_fa">کوتار [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کوتار</column>
       <column name="definition_sv">Kotar [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">塔爾 [AUTOTRANSLATED]</column>
@@ -7841,7 +7878,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="part_of_speech">n:deriv,fic</column>
       <column name="definition">the Great Tree of the World</column>
       <column name="definition_de">Der Große Baum der Welt</column>
-      <column name="definition_fa">درخت بزرگ جهان [AUTOTRANSLATED]</column>
+      <column name="definition_fa">درخت بزرگ جهان</column>
       <column name="definition_sv">världens stora träd [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">世界大樹</column>
@@ -8475,7 +8512,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">match</column>
       <column name="definition_de">Streichholz</column>
-      <column name="definition_fa">همخوانی داشتن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کبریت</column>
       <column name="definition_sv">tändsticka</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">比賽 [AUTOTRANSLATED]</column>
@@ -8650,7 +8687,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">governor</column>
       <column name="definition_de">Gouverneur, Regierungsinhaber</column>
-      <column name="definition_fa">فرماندار [AUTOTRANSLATED]</column>
+      <column name="definition_fa">فرماندار</column>
       <column name="definition_sv">styresman, härskare, ståthållare</column>
       <column name="definition_ru">правитель</column>
       <column name="definition_zh_HK">州長 [AUTOTRANSLATED]</column>
@@ -8757,7 +8794,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">scold</column>
       <column name="definition_de">ausschelten</column>
-      <column name="definition_fa">ترساندن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">سرزنش کردن</column>
       <column name="definition_sv">skälla ut, gräla på</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">罵 [AUTOTRANSLATED]</column>
@@ -9231,7 +9268,7 @@ This word can't be used for a hole in the ground (for which see {QemjIq:n}), but
       <column name="part_of_speech">n</column>
       <column name="definition">wig</column>
       <column name="definition_de">Perücke</column>
-      <column name="definition_fa">کلاه گیس [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کلاه گیس، موی مصنوعی</column>
       <column name="definition_sv">peruk [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">假髮</column>
@@ -9582,7 +9619,7 @@ This word can't be used for a hole in the ground (for which see {QemjIq:n}), but
       <column name="part_of_speech">v:is</column>
       <column name="definition">be cheap</column>
       <column name="definition_de">günstig, billig</column>
-      <column name="definition_fa">ارزان بودن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ارزان بودن</column>
       <column name="definition_sv">vara billig</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">便宜 [AUTOTRANSLATED]</column>
@@ -9902,7 +9939,7 @@ Note that {ghaj:v} and {Hutlh:v} can be used with this noun to indicate that som
       <column name="part_of_speech">n:name,fic</column>
       <column name="definition">Quark</column>
       <column name="definition_de">Quark</column>
-      <column name="definition_fa">کوارک [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کوارک</column>
       <column name="definition_sv">Quark [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">夸克 [AUTOTRANSLATED]</column>
@@ -9938,7 +9975,7 @@ Note that {ghaj:v} and {Hutlh:v} can be used with this noun to indicate that som
       <column name="part_of_speech">n</column>
       <column name="definition">vomit</column>
       <column name="definition_de">übergeben</column>
-      <column name="definition_fa">استفراغ [AUTOTRANSLATED]</column>
+      <column name="definition_fa">استفراغ کردن، بالا آوردن</column>
       <column name="definition_sv">kräkning, spya</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">嘔吐 [AUTOTRANSLATED]</column>

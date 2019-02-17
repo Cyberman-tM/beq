@@ -75,7 +75,7 @@
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">radio</column>
       <column name="definition_de">Radio</column>
-      <column name="definition_fa">رادیو [AUTOTRANSLATED]</column>
+      <column name="definition_fa">رادیو</column>
       <column name="definition_sv">radio</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">無線電 [AUTOTRANSLATED]</column>
@@ -251,7 +251,7 @@
       <column name="part_of_speech">v:is</column>
       <column name="definition">be expensive</column>
       <column name="definition_de">teuer sein</column>
-      <column name="definition_fa">گران است [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گران بودن</column>
       <column name="definition_sv">vara dyr</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">貴</column>
@@ -463,7 +463,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="part_of_speech">n:deriv,being</column>
       <column name="definition">hunter</column>
       <column name="definition_de">Jäger</column>
-      <column name="definition_fa">شکارچی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شکارچی</column>
       <column name="definition_sv">jägare</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">獵人</column>
@@ -498,7 +498,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">hunter's meat</column>
       <column name="definition_de">Fleisch des Jägers</column>
-      <column name="definition_fa">گوشت شکارچی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گوشت شکارچی</column>
       <column name="definition_sv">jägarens kött [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">獵人的肉 [AUTOTRANSLATED]</column>
@@ -1927,7 +1927,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word is listed among other militaristic terminology in the body of {KGT:src} on p.48.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2589,7 +2589,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="definition_zh_HK">失去、減少、減少 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chIl:v}</column>
+      <column name="see_also">{chIl:v}, {'anmoH:v}</column>
       <column name="notes">To say that someone has died, just use {Hegh:v}. Using {weS:v:nolink} implies that someone is lost, i.e., gone or missing, or severely injured and not expected to return (or to return anytime soon), but not necessarily dead.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2927,7 +2927,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="hidden_notes">The example sentence is a lip-match for {'ej DochmeywIj vItlhapqa'meH}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {'ej Dojmey wID, vInDa'ma' peq.} "He has killed many of our people."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3525,9 +3525,9 @@ The clipped Klingon form of this command would be {wIy cha'!:sen@@wIy:n, cha':v}
       <column name="definition_sv">kasta bort, kassera</column>
       <column name="definition_ru">выбрасывать</column>
       <column name="definition_zh_HK">扔掉、丟棄 [AUTOTRANSLATED]</column>
-      <column name="synonyms">{polHa':v}, {lon:v}</column>
+      <column name="synonyms">{polHa':v}</column>
       <column name="antonyms"></column>
-      <column name="see_also">{vo':v}, {jaD:v}</column>
+      <column name="see_also">{vo':v}, {jaD:v}, {lon:v}</column>
       <column name="notes">It is regrettable when this is applied to food.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4079,7 +4079,9 @@ See under {moHaq:n} for the verb prefixes.</column>
       <column name="synonyms">{wew:v}</column>
       <column name="antonyms">{Hurgh:v}</column>
       <column name="see_also">{tamghay:n}, {nguv:v}, {QIb:n}, {ghI'boj:n}, {chIS:v}, {'otlh:n}, {boch:v}</column>
-      <column name="notes">There is an idiom, {wov; ghI'boj Sech rur}.</column>
+      <column name="notes">There is an idiom, {wov; ghI'boj Sech rur}.
+
+This verb is also used to describe a sunny day.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4087,7 +4089,8 @@ See under {moHaq:n} for the verb prefixes.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {wa'leS wov jul 'e' vItul.:sen@@wa'leS:n, wov:v, jul:n, 'e':n:pro, vI-:v, tul:v} "I hope tomorrow will be sunny."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4099,7 +4102,7 @@ See under {moHaq:n} for the verb prefixes.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 2017:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

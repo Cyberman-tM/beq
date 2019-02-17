@@ -743,7 +743,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">librarian</column>
       <column name="definition_de">Bibliothekar</column>
-      <column name="definition_fa">کتابدار [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کتابدار</column>
       <column name="definition_sv">bibliotekarie [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">圖書管理員 [AUTOTRANSLATED]</column>
@@ -1240,24 +1240,24 @@ See also {tIq'ghob:n:hyp} for a hypothetical similar grammatical construction.</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">paSlogh</column>
-      <column name="part_of_speech">n:plural</column>
+      <column name="part_of_speech">n:inhpl</column>
       <column name="definition">socks</column>
       <column name="definition_de">Socken</column>
-      <column name="definition_fa">جوراب [AUTOTRANSLATED]</column>
+      <column name="definition_fa">جوراب‌ها</column>
       <column name="definition_sv">strumpor</column>
       <column name="definition_ru">носки</column>
-      <column name="definition_zh_HK">襪子 [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">襪（眾數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{waq:n}</column>
-      <column name="notes">The definition of this word is plural, but it's unclear whether it's grammatically singular or plural. It is also unknown if a singular form meaning "sock" exists.</column>
+      <column name="notes">The usual way to say "a pair of socks" is {paSlogh chang'eng:n@@paSlogh:n, chang'eng:n}; {tu'mI' chang'eng:n@@tu'mI':n, chang'eng:n} is odd, but would be understood.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Перевод слова приведен во множественном числе, но неясно, с точки зрения грамматики оно в единственном числе или во множественном. Также неясно, есть ли форма в единственном числе для данного слова.</column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tu'mI':n:inhps}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1270,7 +1270,7 @@ See also {tIq'ghob:n:hyp} for a hypothetical similar grammatical construction.</
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {TNK:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {TNK:src}, [3] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1851,7 +1851,7 @@ The {bIS'ub:n} of a {pa':n:1h,nolink} is its {rav:n:1}, and its {'aqroS:n:1} is 
       <column name="part_of_speech">n:2</column>
       <column name="definition">there, over there, thereabouts</column>
       <column name="definition_de">da, dort, drüben</column>
-      <column name="definition_fa">وجود دارد، در آنجا، وجود دارد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">آنجا</column>
       <column name="definition_sv">där, där borta, däromkring</column>
       <column name="definition_ru">здесь, там, вон там, около этого, поблизости, неподалёку, тут</column>
       <column name="definition_zh_HK">那裡、那邊</column>
@@ -1992,7 +1992,7 @@ The {bIS'ub:n} of a {pa':n:1h,nolink} is its {rav:n:1}, and its {'aqroS:n:1} is 
       <column name="part_of_speech">n</column>
       <column name="definition">the past (as a whole)</column>
       <column name="definition_de">Vergangenheit (als Ganzes)</column>
-      <column name="definition_fa">گذشته (به طور کلی) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گذشته (به طور کلی)</column>
       <column name="definition_sv">det förflutna (som helhet) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">過去（整體而言） [AUTOTRANSLATED]</column>
@@ -2572,7 +2572,7 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="part_of_speech">n:inhps</column>
       <column name="definition">torpedo</column>
       <column name="definition_de">Torpedo</column>
-      <column name="definition_fa">اژدر [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اژدر</column>
       <column name="definition_sv">torped, missil</column>
       <column name="definition_ru">торпеда</column>
       <column name="definition_zh_HK">魚雷（單數）</column>
@@ -2729,12 +2729,12 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="hidden_notes">The example sentence is a lip-match for {'ej DochmeywIj vItlhapqa'meH}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {'ej Dojmey wID, vInDa'ma' peq.} "He has killed many of our people."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
-▶ {'ej Dojmey wID, vInDa'ma' peq.} "Он убил много наших людей."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "Он убил много наших людей."</column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -4082,7 +4082,7 @@ The verb {roS:v:2} means "to use the third toe". It is also homophonous with a v
       <column name="synonyms"></column>
       <column name="antonyms">{pIlHa':v}</column>
       <column name="see_also">{Sey:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This refers to motivation by an external source, in contrast to {vaw:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4102,7 +4102,7 @@ The verb {roS:v:2} means "to use the third toe". It is also homophonous with a v
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {qep'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4250,7 +4250,7 @@ The verb {roS:v:2} means "to use the third toe". It is also homophonous with a v
       <column name="part_of_speech">v:is</column>
       <column name="definition">be different</column>
       <column name="definition_de">verschieden, andersartig</column>
-      <column name="definition_fa">مختلف, متفاوت بودن</column>
+      <column name="definition_fa">مختلف، متفاوت بودن</column>
       <column name="definition_sv">vara annorlunda, vara olika</column>
       <column name="definition_ru">быть различным, быть отличающимся от, быть другим, быть непохожим</column>
       <column name="definition_zh_HK">與眾不同 [AUTOTRANSLATED]</column>
@@ -5391,7 +5391,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="definition_zh_HK">早上</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jajlo':n}, {nIQ:n}, {pem:n}, {nIQ:n}</column>
+      <column name="see_also">{jajlo':n}, {nIQ:n}, {pem:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6599,7 +6599,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="part_of_speech">n</column>
       <column name="definition">consequential thing, something important</column>
       <column name="definition_de">Wichtiges, Bedeutsames</column>
-      <column name="definition_fa">چیزی مهم است، چیزی مهم است [AUTOTRANSLATED]</column>
+      <column name="definition_fa">چیزی مهم</column>
       <column name="definition_sv">betydelsefullt ting, något viktigt, viktig sak</column>
       <column name="definition_ru">обстоятельная вещь, что-то важное</column>
       <column name="definition_zh_HK">重要的事物、重要的事情</column>
@@ -7313,7 +7313,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">car, land vehicle</column>
       <column name="definition_de">Auto, Fahrzeug</column>
-      <column name="definition_fa">ماشین، وسایل نقلیه زمینی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ماشین، وسایل نقلیه زمینی</column>
       <column name="definition_sv">bil</column>
       <column name="definition_ru">автомобиль, автомашина</column>
       <column name="definition_zh_HK">汽車</column>

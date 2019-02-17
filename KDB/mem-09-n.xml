@@ -39,7 +39,7 @@
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">plan</column>
       <column name="definition_de">planen</column>
-      <column name="definition_fa">طرح [AUTOTRANSLATED]</column>
+      <column name="definition_fa">نقشه کشیدن، طرح ریزی کردن، برنامه ریزی کردن</column>
       <column name="definition_sv">planera</column>
       <column name="definition_ru">планировать</column>
       <column name="definition_zh_HK">計劃、預定</column>
@@ -75,7 +75,7 @@
       <column name="part_of_speech">n</column>
       <column name="definition">plan, procedure</column>
       <column name="definition_de">Plan, Prozedur</column>
-      <column name="definition_fa">برنامه ریزی، روش [AUTOTRANSLATED]</column>
+      <column name="definition_fa">برنامه، طرح، پروژه، گرته</column>
       <column name="definition_sv">plan, tillvägagångssätt, förfarande, procedur</column>
       <column name="definition_ru">план, процедура</column>
       <column name="definition_zh_HK">計劃、程序 [AUTOTRANSLATED]</column>
@@ -250,7 +250,7 @@
       <column name="part_of_speech">n</column>
       <column name="definition">here, hereabouts</column>
       <column name="definition_de">hier</column>
-      <column name="definition_fa">اینجا، اینجا [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اینجا</column>
       <column name="definition_sv">här, häromkring</column>
       <column name="definition_ru">здесь</column>
       <column name="definition_zh_HK">這裡、這邊</column>
@@ -647,13 +647,13 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{pel'aQ:n:1}</column>
-      <column name="notes"></column>
+      <column name="notes">This takes the plural suffix {-Du':n:suff}, whether the shell is still on the animal or not. But if the shell (off the animal) is broken up, and a piece or pieces of it are used for something, then the plural takes {-mey:n:suff}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">It is unclear if this is considered a body part (i.e., takes {-Du':n:suff}), but it probably works the same way as for {DIr:n}.</column>
+      <column name="hidden_notes"></column>
       <column name="components">{nagh:n}, {DIr:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -667,7 +667,7 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1064,7 +1064,7 @@ Do not confuse this word with {naQjej:n}.</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">lullaby</column>
       <column name="definition_de">Schlaflied</column>
-      <column name="definition_fa">لالایی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">لالایی</column>
       <column name="definition_sv">vaggvisa</column>
       <column name="definition_ru">колыбельная</column>
       <column name="definition_zh_HK">催眠曲</column>
@@ -1245,7 +1245,7 @@ Do not confuse this word with {naQjej:n}.</column>
       <column name="definition_zh_HK">使用第四個腳趾 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{yaD:n:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1309,7 +1309,7 @@ Do not confuse this word with {naQjej:n}.</column>
       <column name="part_of_speech">n:1,deriv</column>
       <column name="definition">chisel</column>
       <column name="definition_de">Meißel, Beitel</column>
-      <column name="definition_fa">اسکناس [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اسکنه</column>
       <column name="definition_sv">mejsel, huggjärn</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">鑿 [AUTOTRANSLATED]</column>
@@ -2583,10 +2583,10 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="part_of_speech">n:inhpl</column>
       <column name="definition">soldiers</column>
       <column name="definition_de">Soldaten</column>
-      <column name="definition_fa">سربازان [AUTOTRANSLATED]</column>
+      <column name="definition_fa">سربازان</column>
       <column name="definition_sv">soldater</column>
       <column name="definition_ru">солдаты</column>
-      <column name="definition_zh_HK">士兵 [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">士兵（眾數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mangghom:n}</column>
@@ -2974,10 +2974,12 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/JyeePTUXVa8}</co
       <column name="definition_zh_HK">匹配、配對、映射到 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{rap:v}, {nIb:v}</column>
+      <column name="see_also">{rap:v}, {nIb:v}, {mey:v}</column>
       <column name="notes">This might be used if fingerprints match up (see {nItlh Su'nIm:n} and {nItlh Su'nIm vem:n}).[1]
 
-Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B matches A", or {nelchuq A B je:sen:nolink} "A and B match each other".[2]</column>
+Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B matches A", or {nelchuq A B je:sen:nolink} "A and B match each other".[2]
+
+When used for objects which come in pairs, such as socks and gloves, the subject is one item of the pair, and the object is the other.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2997,7 +2999,7 @@ Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}, [2] {KLI mailing list 2018.11.20:src}</column>
+      <column name="source">[1] {qep'a' 2018:src}, [2] {KLI mailing list 2018.11.20:src}, [3] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3033,6 +3035,41 @@ Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">nelwI'</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">partner (for objects which come in matching pairs)</column>
+      <column name="definition_de">Gegenstück (eines von zwei gleichen Teilen in einem Paar)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This word is used to refer to the partner of objects which come in pairs, such as socks and gloves and the like.</column>
+      <column name="notes_de">Dieses Wort verwendet man für die Teile eines Paares wie Socken, oder Handschuhen usw.</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{nel:v}, {-wI':n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3180,7 +3217,7 @@ Grammatically, this verb works like {rur:v}. One can say {A nel B:sen:nolink} "B
       <!-- Not deriv because components uncertain. -->
       <column name="part_of_speech">n:fic</column>
       <column name="definition">Age of Ascension</column>
-      <column name="definition_de">Reifalter, Reife des Aufsteigens</column>
+      <column name="definition_de">Reifealter, Reife des Aufsteigens</column>
       <column name="definition_fa">عصر طلوع [AUTOTRANSLATED]</column>
       <column name="definition_sv">Uppstigandets ålder</column>
       <column name="definition_ru">Возраст взросления</column>
@@ -3778,7 +3815,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="entry_name">nIbpoH</column>
       <column name="part_of_speech">n</column>
       <column name="definition">déjà vu</column>
-      <column name="definition_de">Déjà vu</column>
+      <column name="definition_de">Déjà-vu</column>
       <column name="definition_fa">déjà vu [AUTOTRANSLATED]</column>
       <column name="definition_sv">déjà vu</column>
       <column name="definition_ru">Дежавю</column>
@@ -3919,7 +3956,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">steal</column>
       <column name="definition_de">stehlen</column>
-      <column name="definition_fa">سرقت کردن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">دزدیدن، سرقت کردن</column>
       <column name="definition_sv">stjäla</column>
       <column name="definition_ru">красть, воровать, выкрадывать, прокрадываться, угонять</column>
       <column name="definition_zh_HK">偷</column>
@@ -3954,7 +3991,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">thief</column>
       <column name="definition_de">Dieb</column>
-      <column name="definition_fa">دزد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">دزد</column>
       <column name="definition_sv">tjuv</column>
       <column name="definition_ru">вор, угонщик</column>
       <column name="definition_zh_HK">賊</column>
@@ -4094,7 +4131,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">butter</column>
       <column name="definition_de">Butter</column>
-      <column name="definition_fa">کره [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کره</column>
       <column name="definition_sv">smör</column>
       <column name="definition_ru">масло</column>
       <column name="definition_zh_HK">牛油</column>
@@ -4198,7 +4235,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="entry_name">nImbuS wej maghoS, He yInab.</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Plot course for Nimbus III.</column>
-      <column name="definition_de">Wir fliegen zu Nimbus III. Plan den Kurs.</column>
+      <column name="definition_de">Setze einen Kurs zu Nimbus III. Plan den Kurs.</column>
       <column name="definition_fa">قطعه قطعه برای Nimbus III. [AUTOTRANSLATED]</column>
       <column name="definition_sv">Plot kurs för Nimbus III. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Проложить курс на Нимбус 3</column>
@@ -4303,7 +4340,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="entry_name">nIn 'ar wIghaj?</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">How much fuel do we have?</column>
-      <column name="definition_de">Wieviel Treibstoff haben wir (noch)?</column>
+      <column name="definition_de">Wieviel Treibstoff haben wir?</column>
       <column name="definition_fa">چقدر سوخت ما داریم؟ [AUTOTRANSLATED]</column>
       <column name="definition_sv">Hur mycket bränsle har vi? [AUTOTRANSLATED]</column>
       <column name="definition_ru">Сколько топлива у нас есть?</column>
@@ -4478,7 +4515,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="entry_name">nIqHom mI'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">version number (major)</column>
-      <column name="definition_de">Hauptversionsnummer</column>
+      <column name="definition_de">Versionsnummer</column>
       <column name="definition_fa">شماره نسخه (اصلی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">versionsnummer (större) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -4814,7 +4851,7 @@ Watch Gowron say {nISwI'mey:n@@nISwI':n, -mey:n}: {YouTube video:url:http://yout
       <column name="part_of_speech">adv</column>
       <column name="definition">alone, acting alone</column>
       <column name="definition_de">alleine, einsam, auf sich selbst gestellt</column>
-      <column name="definition_fa">به تنهایی، اقدام به تنهایی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">تنها، به تنهایی</column>
       <column name="definition_sv">ensam, på egen hand</column>
       <column name="definition_ru">в одиночестве, наедине, единственно, действовать в одиночку</column>
       <column name="definition_zh_HK">獨自、單獨</column>
@@ -5106,7 +5143,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="entry_name">nItlh Su'nIm</column>
       <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">fingerprint (ridges on fingertip)</column>
-      <column name="definition_de">Fingerabdruck (auf Fingerspitze)</column>
+      <column name="definition_de">Fingerabdruck (Rillen auf der Fingerkuppe)</column>
       <column name="definition_fa">اثر انگشت (رگی در نوک انگشت) [AUTOTRANSLATED]</column>
       <column name="definition_sv">fingeravtryck (åsar på fingertoppen) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -5115,7 +5152,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="antonyms"></column>
       <column name="see_also">{nItlh Su'nIm vem:n}, {nel:v}</column>
       <column name="notes">See under {Su'nIm:n} for an explanation.</column>
-      <column name="notes_de"></column>
+      <column name="notes_de">Siehe {Su'nIm:n} für Eklärungen</column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
@@ -5141,7 +5178,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="entry_name">nItlh Su'nIm vem</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">fingerprint (mark left by touching)</column>
-      <column name="definition_de">Fingerabdruck (Spur das beim Berühren hinterlassen wurde)</column>
+      <column name="definition_de">Fingerabdruck (Bild das beim Berühren hinterlassen wird)</column>
       <column name="definition_fa">اثر انگشت (علامت گذاری به سمت چپ با لمس کردن) [AUTOTRANSLATED]</column>
       <column name="definition_sv">fingeravtryck (markera vänster genom att trycka på) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -6286,7 +6323,9 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">In vulgar English slang, breasts are called "knockers".
+
+It's probably a coincidence, but نوک is also the Persian word for "nipple".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7805,8 +7844,8 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="hidden_notes">The "Friend of Maltz" certificates are considered by some to be non-canon (since it's unclear which parts of the text came from the KLI and which were provided by Marc Okrand), but the Pop Culture Hero Coalition announcement (which was translated by Marc Okrand) uses {num:v:nolink} with the same meaning.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {tlhIngan Hol Danummo' pIquvmoH.} "Because you promote the Klingon language, we honor you."[2]
-▶ {Danumlu'. Sa' Damoj.} "Promoted to General."[3]
+▶ {tlhIngan Hol Danummo' pIquvmoH.:sen@@tlhIngan Hol:n, Da-:v, num:v, -mo':v, pI-:v, quv:v, -moH:v} "Because you promote the Klingon language, we honor you."[2]
+▶ {Danumlu'. Sa' Damoj.:sen@@Da-:v, num:v, -lu':v, Sa':n, Da-:v, moj:v} "Promoted to General."[3]
 ▶ {qum DuSaQmeyDaq 'Irghbe'meH ghotpu' nabmey ghojmoH, 'ej pIj tay'taH Doch pIm num.:sen:nolink} "In public schools, it teaches procedures so that people don't bully, and it promotes Infinite Diversity in Infinite Combinations."[4]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7816,7 +7855,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
 ▶ {Danumlu'. Sa' Damoj.} "Продвинутый генералом."[3]
 ▶ {qum DuSaQmeyDaq 'Irghbe'meH ghotpu' nabmey ghojmoH, 'ej pIj tay'taH Doch pIm num.:sen:nolink} "В общих школах, это учит процедурам, чтобы людей не запугивали, и это пропагандирует бесконечное многообразие в бесконечных комбинациях."[4]</column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">advertise</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -8595,7 +8634,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuralngan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Neuralese</column>
       <column name="definition_de">Neuralese</column>
       <column name="definition_fa">عصبی [AUTOTRANSLATED]</column>

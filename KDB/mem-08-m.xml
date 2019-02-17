@@ -296,7 +296,7 @@ René Magritte painted "La Trahison des images".</column>
       <column name="part_of_speech">n</column>
       <column name="definition">grass</column>
       <column name="definition_de">Gras</column>
-      <column name="definition_fa">چمن, علف</column>
+      <column name="definition_fa">چمن، علف</column>
       <column name="definition_sv">gräs [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">草</column>
@@ -862,7 +862,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
       <column name="definition_fa">سرباز</column>
       <column name="definition_sv">soldat (en krigare i en grupp om flera)</column>
       <column name="definition_ru">солдат</column>
-      <column name="definition_zh_HK">士兵</column>
+      <column name="definition_zh_HK">士兵（單數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{QaS:n:1h}</column>
@@ -1159,7 +1159,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition_zh_HK">用大腳趾 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{yaD:n:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1870,7 +1870,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="part_of_speech">n:reg,body</column>
       <column name="definition">liver</column>
       <column name="definition_de">Leber</column>
-      <column name="definition_fa">کبد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کبد، جگر</column>
       <column name="definition_sv">lever</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">肝</column>
@@ -2023,7 +2023,9 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">"My Fair Lady" or "Mayfair".</column>
+      <column name="hidden_notes">"My Fair Lady" or "Mayfair".
+
+It's unclear what sense of "fair" is meant by this word.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3939,6 +3941,47 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT p.113:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mey</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">match, fit onto, interlock with, interlace with, mesh with</column>
+      <column name="definition_de">passen, mit etwas verzahnen, übereinstimmen</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{nel:v}</column>
+      <column name="notes">This is used for a sock, glove, etc., fitting onto a foot, hand, or whatever is appropriate.</column>
+      <column name="notes_de">Dies verwendet man z.B. wenn eine Socke oder ein Handschuh genau auf den Fuß bzw. die Hand passt.</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {mumey waqmeywIj:sen@@mu-:v, mey:v, waq:n, -mey:n, -wIj:n} "my shoes fit" (literally, "my shoes fit me")
+▶ {torgh lumey waqmey:sen@@torgh:n:name, lu-:v, mey:v, waq:n, -mey:n} "the shoes fit Torg"
+▶ {waqmeywIj vImey:sen@@waq:n, -mey:n, -wIj:n, vI-:v, mey:v} "I fit my shoes"</column>
+      <column name="examples_de">
+▶ {mumey waqmeywIj:sen@@mu-:v, mey:v, waq:n, -mey:n, -wIj:n} "meine Schuhe passen" (wörtlich: "meine Schuhe passen mir")
+▶ {torgh lumey waqmey:sen@@torgh:n:name, lu-:v, mey:v, waq:n, -mey:n} "die Schuhe passen Torg"
+▶ {waqmeywIj vImey:sen@@waq:n, -mey:n, -wIj:n, vI-:v, mey:v} "ich passe in meine Schuhe"</column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.01.22:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7679,13 +7722,12 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="antonyms"></column>
       <column name="see_also">{ghuS:v:1}</column>
       <column name="notes"></column>
-      <!-- "MYOB - mind your own business"? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">"Moebius strip".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8198,7 +8240,7 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">airplane</column>
       <column name="definition_de">Flugzeug</column>
-      <column name="definition_fa">هواپیما [AUTOTRANSLATED]</column>
+      <column name="definition_fa">هواپیما</column>
       <column name="definition_sv">flygplan</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">飛機</column>
@@ -8479,7 +8521,7 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="part_of_speech">n:deriv,being</column>
       <column name="definition">executioner</column>
       <column name="definition_de">Henker</column>
-      <column name="definition_fa">جلاد, دژخیم, سیاف</column>
+      <column name="definition_fa">جلاد، دژخیم، سیاف</column>
       <column name="definition_sv">bödel [AUTOTRANSLATED]</column>
       <column name="definition_ru">палач</column>
       <column name="definition_zh_HK">劊子手</column>
@@ -9281,7 +9323,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="part_of_speech">n</column>
       <column name="definition">word</column>
       <column name="definition_de">Wort</column>
-      <column name="definition_fa">کلمه [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کلمه</column>
       <column name="definition_sv">ord</column>
       <column name="definition_ru">слово</column>
       <column name="definition_zh_HK">字</column>

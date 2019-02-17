@@ -39,7 +39,7 @@
       <column name="part_of_speech">n:inhpl</column>
       <column name="definition">torpedoes</column>
       <column name="definition_de">Torpedos</column>
-      <column name="definition_fa">اژدر [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اژدرها</column>
       <column name="definition_sv">torpeder</column>
       <column name="definition_ru">Торпеды</column>
       <column name="definition_zh_HK">魚雷（眾數）</column>
@@ -653,7 +653,7 @@ The imperative verb prefix when {chaH:n:nolink} is the object is {tI-:v:pref}.</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">chalqach</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:deriv</column>
       <column name="definition">tower</column>
       <column name="definition_de">Turm</column>
       <column name="definition_fa">برج</column>
@@ -942,7 +942,7 @@ The imperative verb prefix when {chaH:n:nolink} is the object is {tI-:v:pref}.</
       <column name="part_of_speech">n</column>
       <column name="definition">back (of hand)</column>
       <column name="definition_de">Handrücken</column>
-      <column name="definition_fa">پشت (از دست) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پشت دست</column>
       <column name="definition_sv">handrygg</column>
       <column name="definition_ru">Задняя сторона (руки)</column>
       <column name="definition_zh_HK">手背</column>
@@ -1681,6 +1681,41 @@ A {chaw':n:nolink} shows that you are officially or legally allowed to do or get
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Star Trek III:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">chay' mu'vam qollu'?</column>
+      <column name="part_of_speech">sen:phr</column>
+      <column name="definition">How is this word pronounced?</column>
+      <column name="definition_de">Wie wird dieses Wort ausgesprochen?</column>
+      <column name="definition_fa">این کلمه چگونه تلفظ می‌شود؟</column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK">這個詞怎麼發音？</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.01.16:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2813,7 +2848,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="part_of_speech">n:body</column>
       <column name="definition">liver</column>
       <column name="definition_de">Leber</column>
-      <column name="definition_fa">کبد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کبد، جگر</column>
       <column name="definition_sv">lever</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">肝臟</column>
@@ -3206,7 +3241,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mIp:v}, {Huch:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This verb is not used for plant growth.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3214,7 +3249,8 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {yIn nI' yISIQ 'ej yIchep!:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3226,7 +3262,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2018.02.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6004,7 +6040,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">recommend, suggest</column>
       <column name="definition_de">empfehlen, vorschlagen</column>
-      <column name="definition_fa">توصیه، پیشنهاد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پیشنهاد کردن</column>
       <column name="definition_sv">rekommendera, föreslå</column>
       <column name="definition_ru">рекомендовать, предлагать</column>
       <column name="definition_zh_HK">推薦、建議、提議</column>
@@ -6110,7 +6146,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">space telescope</column>
       <column name="definition_de">Weltraum-Teleskop</column>
-      <column name="definition_fa">تلسکوپ فضایی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">تلسکوپ فضایی</column>
       <column name="definition_sv">rymdteleskop [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">太空望遠鏡</column>
@@ -6158,7 +6194,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="notes_sv"></column>
       <column name="notes_ru">Это слово упоминает класс людей.</column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">That this word refers to a class of people, rather than to an abstract concept, is supported by the script of "Elaan of Troyius", the only TOS episode with both Klingons and dialogue referring to nobility. The words {Doy'yuS:n}, {'elaS:n}, {telun Hovtay':n}, and {Dom:n} likewise appear only in this episode.</column>
+      <column name="hidden_notes">That this word refers to a class of people, rather than to an abstract concept, is supported by the script of {TOS - Elaan of Troyius:src}, the only TOS episode with both Klingons and dialogue referring to nobility. The words {Doy'yuS:n}, {'elaS:n}, {telun Hovtay':n}, and {Dom:n} likewise appear only in this episode.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>

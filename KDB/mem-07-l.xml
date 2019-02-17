@@ -1106,7 +1106,7 @@ Examples of similes (all from [3]):
 
 Examples of quantified comparisons (both from [5]):
 ▶ {cha' DISmo' jIH qan law' SoH qan puS:sen:nolink} "I'm two years older than you."
-▶ {cha' 'ujmo' jIH woch law' SoH woch puS:sen:nolink} "I'm two {'uj:sen}es taller than you."
+▶ {cha' 'ujmo' jIH woch law' SoH woch puS:sen:nolink} "I'm two {'uj:sen:nolink}es taller than you."
 
 The following example shows that the verb of quality can take a suffix:
 ▶ {SoH rallaw' law' Hoch rallaw' puS.:sen:nolink}[4]</column>
@@ -1141,7 +1141,7 @@ The following example shows that the verb of quality can take a suffix:
 
 Примеры количественных сравнений:
 ▶ {cha' DISmo' jIH qan law' SoH qan puS:sen:nolink} "Я на два года старше тебя."
-▶ {cha' 'ujmo' jIH woch law' SoH woch puS:sen:nolink} "Я на {'uj:sen} выше тебя."
+▶ {cha' 'ujmo' jIH woch law' SoH woch puS:sen:nolink} "Я на {'uj:sen:nolink} выше тебя."
 
 Следующие примеры показывают, что количественный глагол может принимать суффикс:
 ▶ {SoH rallaw' law' Hoch rallaw' puS.:sen:nolink}[4]</column>
@@ -3158,7 +3158,7 @@ This word can be used figuratively. There is an idiom, {let mInDu'Daj; Separmey 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lIghonngan</column>
-      <column name="part_of_speech">n:being,fic</column>
+      <column name="part_of_speech">n:being,fic,deriv</column>
       <column name="definition">Ligonian</column>
       <column name="definition_de">Ligonianer</column>
       <column name="definition_fa">لژیون [AUTOTRANSLATED]</column>
@@ -4083,7 +4083,7 @@ This was used to refer to "variables" (a memory location used for storing data i
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">obey</column>
       <column name="definition_de">gehorchen</column>
-      <column name="definition_fa">اطاعت کردن, فرمانبرداری کردن</column>
+      <column name="definition_fa">اطاعت کردن، فرمانبرداری کردن</column>
       <column name="definition_sv">lyda</column>
       <column name="definition_ru">подчиняться, повиноваться</column>
       <column name="definition_zh_HK">遵守、服從</column>
@@ -4188,7 +4188,7 @@ This was used to refer to "variables" (a memory location used for storing data i
       <column name="part_of_speech">n</column>
       <column name="definition">male, man</column>
       <column name="definition_de">Mann</column>
-      <column name="definition_fa">مرد، مرد [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مرد، نر</column>
       <column name="definition_sv">man, hane</column>
       <column name="definition_ru">мужчина, самец</column>
       <column name="definition_zh_HK">男性、男人</column>

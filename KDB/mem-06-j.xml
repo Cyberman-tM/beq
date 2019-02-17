@@ -2606,7 +2606,7 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="part_of_speech">n</column>
       <column name="definition">castle, fortress</column>
       <column name="definition_de">Schloss, Burg, Festung</column>
-      <column name="definition_fa">قلعه، قلعه [AUTOTRANSLATED]</column>
+      <column name="definition_fa">قلعه، قصر</column>
       <column name="definition_sv">slott, fästning [AUTOTRANSLATED]</column>
       <column name="definition_ru">замок, крепость</column>
       <column name="definition_zh_HK">城堡、堡壘</column>
@@ -2713,10 +2713,10 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="part_of_speech">n:inhps</column>
       <column name="definition">plate (for eating)</column>
       <column name="definition_de">Teller (Geschirr)</column>
-      <column name="definition_fa">بشقاب (برای غذا خوردن) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">بشقاب</column>
       <column name="definition_sv">tallrik, platta, skiva</column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK">盤子（吃） [AUTOTRANSLATED]</column>
+      <column name="definition_ru">тарелка для еды</column>
+      <column name="definition_zh_HK">碟（單數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{De' jengva':n}, {Huch jengva':n}</column>
@@ -2747,7 +2747,7 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="entry_name">jeq</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">protrude from</column>
-      <column name="definition_de">hervorragen, hervorstehen</column>
+      <column name="definition_de">hervorragen aus (etwas), hervorstehen von (etwas)</column>
       <column name="definition_fa">از استقرار [AUTOTRANSLATED]</column>
       <column name="definition_sv">sticka ut från, skjuta ut ur</column>
       <column name="definition_ru"></column>
@@ -4524,7 +4524,7 @@ The first half of the example sentence was a lip-match for {ghaH vISammeH}.</col
       <column name="part_of_speech">n:inhpl</column>
       <column name="definition">resources</column>
       <column name="definition_de">Ressourcen, Hilfsquellen</column>
-      <column name="definition_fa">منابع [AUTOTRANSLATED]</column>
+      <column name="definition_fa">منابع‌ها</column>
       <column name="definition_sv">resurser</column>
       <column name="definition_ru">ресурсы</column>
       <column name="definition_zh_HK">資源（眾數）</column>
@@ -6653,7 +6653,7 @@ If {-Daq:n} is used, it implies a miss: air was blown towards the object, but by
       <column name="synonyms">{Hov:n}</column>
       <column name="antonyms"></column>
       <column name="see_also">{muD Dotlh:n}, {DIS:n:2}, {bav:v}, {yuQ:n}, {maS:n}</column>
-      <column name="notes"></column>
+      <column name="notes">See {wov:v} for how to describe a sunny day.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>

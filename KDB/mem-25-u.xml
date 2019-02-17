@@ -146,7 +146,7 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="part_of_speech">n</column>
       <column name="definition">laser</column>
       <column name="definition_de">Laser</column>
-      <column name="definition_fa">لیزر [AUTOTRANSLATED]</column>
+      <column name="definition_fa">لیزر</column>
       <column name="definition_sv">laser</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">激光</column>
@@ -216,7 +216,7 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="part_of_speech">v:is</column>
       <column name="definition">be heavy</column>
       <column name="definition_de">schwer</column>
-      <column name="definition_fa">سنگین</column>
+      <column name="definition_fa">سنگین بودن</column>
       <column name="definition_sv">vara tung</column>
       <column name="definition_ru">быть тяжелым</column>
       <column name="definition_zh_HK">重</column>
@@ -544,7 +544,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">flashlight</column>
       <column name="definition_de">Taschenlampe</column>
-      <column name="definition_fa">چراغ قوه [AUTOTRANSLATED]</column>
+      <column name="definition_fa">چراغ‌قوه</column>
       <column name="definition_sv">ficklampa</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">電筒</column>
@@ -1007,7 +1007,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">banquet, feast</column>
       <column name="definition_de">Bankett, Festmahl</column>
-      <column name="definition_fa">جشن, ضیافت, عید, مهمانی</column>
+      <column name="definition_fa">جشن، ضیافت، عید، مهمانی</column>
       <column name="definition_sv">bankett, fest</column>
       <column name="definition_ru">банкет, пир</column>
       <column name="definition_zh_HK">宴會、饗宴</column>
