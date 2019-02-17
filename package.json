@@ -9,7 +9,7 @@
     "fs": "0.0.1-security",
     "request": "^2.88.0",
     "restify": "^6.4.0",
-    "winston": "^2.4.3",
+    "winston": "^2.4.4",
     "xmldoc": "^1.1.2"
   }
 }
