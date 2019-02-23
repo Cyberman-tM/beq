@@ -387,7 +387,7 @@ bot.on('message', function (messageDJS)
 				beqTalk.simple = true;
 				
 				//Delete original message, we don't need it.
-				message.delete();
+				messageDJS.delete();
 			}
 		
 			//These parameters have parameters in themselves
