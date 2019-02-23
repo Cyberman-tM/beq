@@ -357,7 +357,7 @@ bot.on('message', function (messageDJS)
 			var p_startRes = args[6];
 			var p_filtWord = args[7];
 			var p_showNotes = args[8];  //show notes, if available
-			var p_beSimple  = args[9];  //Simple output - no frills
+			var p_beSimple  = args[9];  //Simple output - no frills, delete command message
 			var p_special   = args[10];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 	
 			if (beqTalk.transLang == undefined)
@@ -383,7 +383,12 @@ bot.on('message', function (messageDJS)
 				beqTalk.fuzzy = false;
 				
 			if ((dynArg).indexOf('simple') >= 0)
+			{
 				beqTalk.simple = true;
+				
+				//Delete original message, we don't need it.
+				message.delete();
+			}
 		
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
