@@ -6916,7 +6916,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">{bom:n}, {much:v}, {wup:v}, {QoQ:n}, {'uq:v}, {Huy:v}</column>
+      <column name="notes">{bom:n}, {much:v:2}, {wup:v}, {QoQ:n}, {'uq:v}, {Huy:v}</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -8492,7 +8492,7 @@ This word is used in the idioms {bo'Dagh'a' lo':sen} and {bo'DaghHom lo':sen}.</
       <column name="definition_zh_HK">山坡、山陂</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HuD:n}, {janbI':n}</column>
+      <column name="see_also">{HuD:n}, {janbI':n}, {lav:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
