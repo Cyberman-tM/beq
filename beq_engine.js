@@ -823,6 +823,9 @@ function getWType(wType, tranLang)
 		else
 			wTypeL = 'unsupported yet';
 	}
+	//Override: Names
+	if (wType.indexOf(":name") >= 0)
+	   wTypeL = 'Name';
 
 	return wTypeL;
 }
