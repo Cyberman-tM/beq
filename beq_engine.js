@@ -540,15 +540,15 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
 				var inTrans = item.type.split(':')[1];
 				if ( inTrans == 'i')
-					sndMessage += '===> intransitive';
+					sndMessage += '===> intransitive'+ beqTalk.newline;
 				else if ( inTrans == 'is')
-					sndMessage += '===> intransitive/stative';
+					sndMessage += '===> intransitive/stative'+ beqTalk.newline;
 				else if ( inTrans == 'i_c')
-					sndMessage += '===> intransitive (confirmed)';
+					sndMessage += '===> intransitive (confirmed)'+ beqTalk.newline;
 				else if ( inTrans == 't_c')
-					sndMessage += '===> transitive (confirmed)';
+					sndMessage += '===> transitive (confirmed)'+ beqTalk.newline;
 				else if ( inTrans == 't')
-					sndMessage += '===> transitive';
+					sndMessage += '===> transitive'+ beqTalk.newline;
 				
 			}
 			else
