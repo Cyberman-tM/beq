@@ -538,8 +538,18 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
-				if (item.type.split(':')[1] == 'i')
+				var inTrans = item.type.split(':')[1];
+				if ( inTrans == 'i')
 					sndMessage += '===> intransitive';
+				else if ( inTrans == 'is')
+					sndMessage += '===> intransitive/stative';
+				else if ( inTrans == 'i_c')
+					sndMessage += '===> intransitive (confirmed)';
+				else if ( inTrans == 't_c')
+					sndMessage += '===> transitive (confirmed)';
+				else if ( inTrans == 't')
+					sndMessage += '===> transitive';
+				
 			}
 			else
 			{
