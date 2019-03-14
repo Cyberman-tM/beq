@@ -548,9 +548,11 @@ module.exports.createTranslation = function(beqTalk)
 				else if ( inTrans == 't')
 					transText = 'transitive';
 				
-				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-				sndMessage += '*(' + transText + ')*';
+				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';				
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+				if (transText <> '')
+				   sndMessage += '*(' + transText + ')*' + beqTalk.newline;
+				
 				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;				
 			}
 			else
