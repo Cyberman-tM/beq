@@ -535,21 +535,23 @@ module.exports.createTranslation = function(beqTalk)
 			count++;
 			if (beqTalk.command != "yIcha'")
 			{
-				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
-				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
-				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;
 				var inTrans = item.type.split(':')[1];
+				var transText = '';
 				if ( inTrans == 'i')
-					sndMessage += '===> intransitive'+ beqTalk.newline;
+					transText = 'intransitive';
 				else if ( inTrans == 'is')
-					sndMessage += '===> intransitive/stative'+ beqTalk.newline;
+					transText = 'intransitive/stative';
 				else if ( inTrans == 'i_c')
-					sndMessage += '===> intransitive (confirmed)'+ beqTalk.newline;
+					transText = 'intransitive (confirmed)';
 				else if ( inTrans == 't_c')
-					sndMessage += '===> transitive (confirmed)'+ beqTalk.newline;
+					transText = 'transitive (confirmed)';
 				else if ( inTrans == 't')
-					sndMessage += '===> transitive'+ beqTalk.newline;
+					transText = 'transitive';
 				
+				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+				sndMessage += '*(' + transText + ')*';
+				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
+				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;				
 			}
 			else
 			{
