@@ -550,7 +550,7 @@ module.exports.createTranslation = function(beqTalk)
 				
 				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';				
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
-				if (transText <> '')
+				if (transText != '')
 				   sndMessage += '*(' + transText + ')*' + beqTalk.newline;
 				
 				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;				
