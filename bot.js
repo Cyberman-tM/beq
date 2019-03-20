@@ -317,7 +317,16 @@ bot.on('message', function (messageDJS)
 		//Word to Number
 		case 'w2n':
 		   sndMessage = NumWords.Word2Num(onePar);
-		break;			
+		break;
+		//tlhIngan->xifan etc...
+		case 'recode':
+		   beqTalk.transLang = args[1];
+		   beqTalk.lookLang = args[2];
+		   beqTalk.lookWord = args.slice(3,999).join();
+		   beqTalk.command = 'recode';
+		   talkBeq = beq.Engine(beqTalk);
+		   sndMessage = talkBeq.message;
+		break,
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
 		break;
