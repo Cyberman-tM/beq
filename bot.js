@@ -325,7 +325,7 @@ bot.on('message', function (messageDJS)
 		   beqTalk.lookWord = args.slice(3,999).join();
 		   beqTalk.command = 'recode';
 		   talkBeq = beq.Engine(beqTalk);
-		   sndMessage = talkBeq.message;
+		   sndMessage = beq.createTranslation(talkBeq);
 		break;
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
