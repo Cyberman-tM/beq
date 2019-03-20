@@ -242,6 +242,8 @@ module.exports.Engine = function(beqTalk)
 			  beqTalk.message += 'tlhIngan <> uhmal' + beqTalk.newline;
 			  beqTalk.message += 'tlhIngan <> TIxan' + beqTalk.newline;
 		  }
+	          beqTalk.lookLang = 'tlh';
+		  beqTalk.transLang = 'en';
 		break;		
 		case 'mugh':
 			var results = null;
