@@ -326,7 +326,7 @@ bot.on('message', function (messageDJS)
 		   beqTalk.command = 'recode';
 		   talkBeq = beq.Engine(beqTalk);
 		   sndMessage = talkBeq.message;
-		break,
+		break;
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
 		break;
