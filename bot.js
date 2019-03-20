@@ -329,6 +329,8 @@ bot.on('message', function (messageDJS)
 			sndMessage = beq.message;
 		   else
 		   	sndMessage = beq.createTranslation(talkBeq);
+				
+		   logger.info(talkBeq);
 		break;
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
