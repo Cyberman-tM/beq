@@ -16,7 +16,7 @@ module.exports.RCtlh2x = function(orig_text, upper_case)
 {
 	var tmpText = "";
 	//Is there a better way?
-	tmpText = beqTalk.lookWord.replace(/tlh/g, 'x');
+	tmpText = orig_text.replace(/tlh/g, 'x');
 	tmpText = tmpText.replace(/ch/g, 'c');
 	tmpText = tmpText.replace(/q/g, 'k');
 	tmpText = tmpText.replace(/ng/g, 'f');
