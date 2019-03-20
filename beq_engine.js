@@ -529,7 +529,7 @@ module.exports.createTranslation = function(beqTalk)
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
-		
+		logger.info(item);
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
