@@ -322,6 +322,7 @@ bot.on('message', function (messageDJS)
 		case 'recode':
 		   beqTalk.transLang = args[1];
 		   //beqTalk.lookLang = args[2];
+		   beqTalk.lookLang = 'tlhIngan';  //Kann nichts anderes sein
 		   beqTalk.lookWord = args.slice(2,999).join(' ');
 		   beqTalk.command = 'recode';
 		   talkBeq = beq.Engine(beqTalk);
