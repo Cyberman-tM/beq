@@ -325,7 +325,6 @@ bot.on('message', function (messageDJS)
 		   beqTalk.lookWord = args.slice(3,999).join(' ');
 		   beqTalk.command = 'recode';
 		   talkBeq = beq.Engine(beqTalk);
-				logger.info(talkBeq.messsage);
 		   if (talkBeq.failure == true)
 			sndMessage = talkBeq.message;
 		   else
