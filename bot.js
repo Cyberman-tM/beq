@@ -322,7 +322,7 @@ bot.on('message', function (messageDJS)
 		case 'recode':
 		   beqTalk.transLang = args[1];
 		   beqTalk.lookLang = args[2];
-		   beqTalk.lookWord = args.slice(3,999).join();
+		   beqTalk.lookWord = args.slice(3,999).join(' ');
 		   beqTalk.command = 'recode';
 		   talkBeq = beq.Engine(beqTalk);
 				logger.info(talkBeq.messsage);
