@@ -77,6 +77,63 @@ module.exports.RCtlh2u = function(orig_text)
 	  tmpText = tmpText.toLowerCase();
 	 return tmpText;
 }
+//tlhIngan => uhmal with numbers instead of vocals
+module.exports.RCtlh2u2 = function(orig_text)
+{
+	var tmpText = "";
+	  tmpText = orig_text;
+	  tmpText = tmpText.replace(/w'/g, 'x');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y'/g, 'y');
+	  tmpText = tmpText.replace(/'/g, 'z');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/I/g, '3');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/j/g, 'i');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/gh/g, 'f');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/m/g, 'k');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/v/g, 'w');
+	  tmpText = tmpText.replace(/u/g, '5');
+	  tmpText = tmpText.replace(/tlh/g, 'u');
+	  tmpText = tmpText.replace(/ch/g, 'c');
+	  tmpText = tmpText.replace(/ng/g, 'm');
+	  tmpText = tmpText.replace(/H/g, 'g');
+	  tmpText = tmpText.replace(/l/g, 'j');
+	  tmpText = tmpText.replace(/n/g, 'l');
+	  tmpText = tmpText.replace(/o/g, '4');
+	  tmpText = tmpText.replace(/p/g, 'o');
+	  tmpText = tmpText.replace(/a/g, '1');
+	  tmpText = tmpText.replace(/e/g, '2');
+	  
+	  tmpText = tmpText.toLowerCase();
+	 return tmpText;
+}
+
+//uhmal2 => tlhIngan
+module.exports.RCu22tlh = function(orig_text)
+{
+	var tmpText = "";
+	  tmpText = orig_text;
+	  tmpText = tmpText.replace(/o/g, 'p');
+	  tmpText = tmpText.replace(/4/g, 'o');
+	  tmpText = tmpText.replace(/l/g, 'n');	
+	  tmpText = tmpText.replace(/j/g, 'l');
+	  tmpText = tmpText.replace(/g/g, 'H');
+	  tmpText = tmpText.replace(/m/g, 'ng');			  
+	  tmpText = tmpText.replace(/3/g, 'I');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/c/g, 'ch');
+	  tmpText = tmpText.replace(/u/g, 'tlh');
+	  tmpText = tmpText.replace(/5/g, 'u');
+	  tmpText = tmpText.replace(/w/g, 'v');
+	  tmpText = tmpText.replace(/k/g, 'm');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/f/g, 'gh');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/i/g, 'j');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y/g, 'y\'');
+	  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/d/g, 'D');
+	  tmpText = tmpText.replace(/1/g, 'a');
+	  tmpText = tmpText.replace(/2/g, 'e');
+	return tmpText;
+}
+
 
 //uhmal => tlhIngan
 module.exports.RCu2tlh = function(orig_text)
