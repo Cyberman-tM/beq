@@ -324,18 +324,12 @@ bot.on('message', function (messageDJS)
 		   beqTalk.lookLang = args[2];
 		   beqTalk.lookWord = args.slice(3,999).join();
 		   beqTalk.command = 'recode';
-				logger.info(beqTalk.transLang);
-				logger.info(beqTalk.lookLang);
-				logger.info(beqTalk.lookWord);
 		   talkBeq = beq.Engine(beqTalk);
 				logger.info(talkBeq.messsage);
 		   if (talkBeq.failure == true)
 			sndMessage = talkBeq.message;
 		   else
 		   	sndMessage = beq.createTranslation(talkBeq);
-				
-				logger.info(sndMessage);
-		
 		break;
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
