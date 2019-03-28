@@ -845,7 +845,7 @@ function getWType(wType, tranLang)
 	if (wType.indexOf(":name") >= 0)
 	   wTypeL = 'Name';
 	else if (wType == 'RECODE')
-	   wTypeL = 'Recoding:';
+	   wTypeL = 'Recoding';
 
 	return wTypeL;
 }
