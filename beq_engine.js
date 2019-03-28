@@ -219,6 +219,10 @@ module.exports.Engine = function(beqTalk)
 			  tmpText = kTranscode.RCtlh2u(beqTalk.lookWord);
 		  else if (beqTalk.lookLang == 'uhmal' && beqTalk.transLang == 'tlhIngan')
 			  tmpText = kTranscode.RCu2tlh(beqTalk.lookWord);
+		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal2')
+			  tmpText = kTranscode.RCtlh2u2(beqTalk.lookWord);
+		  else if (beqTalk.lookLang == 'uhmal2' && beqTalk.transLang == 'tlhIngan')
+			  tmpText = kTranscode.RCu22tlh(beqTalk.lookWord);
 		  else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'TIxan')
 			  tmpText = kTranscode.RCtlh2T(beqTalk.lookWord);
   		  else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
