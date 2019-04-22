@@ -58,6 +58,8 @@ var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 
+module.exports.beqTalkDef = beqTalkDef;
+
 var fs = require('fs');
 var xmldoc = require('xmldoc');
 
