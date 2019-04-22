@@ -55,6 +55,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 
 */
 var kTranscode = require('./bot_modules/utils/recode.js');
+var kSplit = require('./bot_modules/kSplit.js');
+var beqTalkDef  = require('./beqTalk_raw.js');
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -417,45 +419,15 @@ module.exports.Engine = function(beqTalk)
 				}
 			}
 		break;
+		case "split":
+		
+		break;
 	default:
 	   beqTalk.gotResult = false;
 	   beqTalk.failure = true;
 	}
 	return beqTalk;
 };
-
-//Declarations have to be at the end?
-module.exports.beqTalkDef = JSON.stringify(
-{
-	"fuzzy": false,
-	"wCase": false,
-	"remPref": false,
-	"lookLang": "",
-	"lookWord": "",
-	"transLang": "",
-	"command": "",
-	"simple": "",
-	"special": "",
-	"showNotes": false,
-	"wordType1": null,
-	"wordType2": null,
-	"startRes": '0',
-	"limitRes": '20',
-	"newline": "\n",
-	"result": [{ "type":"",
-	            "tlh":"",
-				"en":"",
-				"de":"",
-		                "ru":"",
-				"notes":"",
-				"notes_de":"",
-				"hidden_notes":"",
-		                "source":""
-			  }],
-    "message": "",
-	"gotResult": false,
-	"failure":false
-});
 
 module.exports.createTranslation = function(beqTalk)
 {
