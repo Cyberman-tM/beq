@@ -54,8 +54,8 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
-var kTranscode = require('./bot_modules/utils/recode.js');
-var kSplit = require('./bot_modules/kSplit.js');
+var kTranscode  = require('./bot_modules/utils/recode.js');
+var kSplit      = require('./bot_modules/utils/kSplit.js');
 var beqTalkDef  = require('./beqTalk_raw.js');
 
 var fs = require('fs');
