@@ -9,7 +9,7 @@
 module.exports.versInt = '0.1';
 module.exports.nameInt = 'Klingon text split';
 
-module.exports.RCtlh2x = function(raw_text, split_syls)
+module.exports.kSplit = function(raw_text, split_syls)
 {
 
 }
