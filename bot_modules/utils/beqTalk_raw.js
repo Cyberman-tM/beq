@@ -1,0 +1,31 @@
+module.exports.beqTalkDef = JSON.stringify(
+{
+	"fuzzy": false,
+	"wCase": false,
+	"remPref": false,
+	"lookLang": "",
+	"lookWord": "",
+	"transLang": "",
+	"command": "",
+	"simple": "",
+	"special": "",
+	"showNotes": false,
+	"wordType1": null,
+	"wordType2": null,
+	"startRes": '0',
+	"limitRes": '20',
+	"newline": "\n",
+	"result": [{ "type":"",
+	            "tlh":"",
+				"en":"",
+				"de":"",
+		                "ru":"",
+				"notes":"",
+				"notes_de":"",
+				"hidden_notes":"",
+		                "source":""
+			  }],
+    "message": "",
+	"gotResult": false,
+	"failure":false
+});
