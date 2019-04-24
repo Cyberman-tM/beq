@@ -21,6 +21,13 @@ module.exports.kSplit = function(raw_text, split_syls)
   var wordsOnly = sourcestring.replace(onlyWordsRE, ' ');
   var wordList = wordsOnly.split(' ');
   
+  wordList = arrayUnique(wordList);  
 
 
 }
+
+var arrayUnique = function (arr) {
+	return arr.filter(function(item, index){
+		return arr.indexOf(item) >= index;
+	});
+};
