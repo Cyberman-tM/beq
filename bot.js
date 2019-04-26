@@ -68,8 +68,9 @@ bot.on('ready', function (evt)
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
 	
-	//Timer runs once a minute
-	evTimer.startEventTimer(beq, bot);
+	//Timer runs once a minute, unless we're in dev-build
+	if (DData.tmpdevBuild != true)
+		evTimer.startEventTimer(beq, bot);
 }
 );
 
