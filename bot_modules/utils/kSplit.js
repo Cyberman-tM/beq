@@ -20,7 +20,7 @@ module.exports.kSplit = function(raw_text, split_syls)
   
   var wordsOnly = raw_text.replace(onlyWordsRE, ' ');
 	
-  wordsOnly = kTranscode.RCu22tlh(wordsOnly);
+  wordsOnly = kTranscodeX.RCu22tlh(wordsOnly);
 	
   //Split into obvious separate words and remove duplicates
   var wordList = wordsOnly.split(' ');  
