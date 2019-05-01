@@ -422,6 +422,7 @@ module.exports.Engine = function(beqTalk)
 			}
 		break;
 		case "split":
+			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
 		
 		break;
 	default:
