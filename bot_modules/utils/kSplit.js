@@ -22,6 +22,8 @@ module.exports.kSplit = function(raw_text, split_syls)
   var wordList = wordsOnly.split(' ');
   
   wordList = arrayUnique(wordList);  
+	
+ return wordList.join();
 
 
 }
