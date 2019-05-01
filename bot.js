@@ -69,7 +69,7 @@ bot.on('ready', function (evt)
 	logger.info(beqTalk.message);
 	
 	//Timer runs once a minute, unless we're in dev-build
-	if (DData.tmpdevBuild != true)
+	if (DData.devBuild != true)
 		evTimer.startEventTimer(beq, bot);
 }
 );
