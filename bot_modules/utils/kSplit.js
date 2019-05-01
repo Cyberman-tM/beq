@@ -17,10 +17,10 @@ module.exports.kSplit = function(raw_text, split_syls)
   
   //Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
   var onlyWordsRE = new RegExp(/[^a-zA-Z0-9]/, 'g');
-  
   var wordsOnly = raw_text.replace(onlyWordsRE, ' ');
-	
-  wordsOnly = kTranscodeX.RCu22tlh(wordsOnly);
+
+  //tlhIngan nach umahl2 umwandeln
+  wordsOnly = kTranscodeX.RCtlh2u2(wordsOnly);
 	
   //Split into obvious separate words and remove duplicates
   var wordList = wordsOnly.split(' ');  
