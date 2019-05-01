@@ -447,7 +447,7 @@ bot.on('message', function (messageDJS)
 			break;
 			case 'split':
 				//No parameters possible!
-				var splitRaw = message.substring(6);  /!split
+				var splitRaw = message.substring(6);  //!split
 				var beqTalk = JSON.parse(beq.beqTalkDef);
 				beqTalk.command = 'split';
 				beqTalk.lookWord = splitRaw;
