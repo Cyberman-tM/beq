@@ -445,6 +445,15 @@ bot.on('message', function (messageDJS)
 			}
 		
 			break;
+			case 'split':
+				//No parameters possible!
+				var splitRaw = message.substring(6);  /!split
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'split';
+				beqTalk.lookWord = splitRaw;
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+			break;
 		default:
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
