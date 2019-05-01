@@ -19,9 +19,12 @@ module.exports.kSplit = function(raw_text, split_syls)
   var onlyWordsRE = new RegExp(/[^a-zA-Z0-9]/, 'g');
   
   var wordsOnly = raw_text.replace(onlyWordsRE, ' ');
-  var wordList = wordsOnly.split(' ');
-  
-  wordList = arrayUnique(wordList);  
+	
+  wordsOnly = kTranscode.RCu22tlh(wordsOnly);
+	
+  //Split into obvious separate words and remove duplicates
+  var wordList = wordsOnly.split(' ');  
+  wordList = arrayUnique(wordList);
 	
  return wordList.join();
 
