@@ -18,7 +18,7 @@ module.exports.kSplit = function(raw_text, split_syls)
   //Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
   var onlyWordsRE = new RegExp(/[^a-zA-Z0-9]/, 'g');
   
-  var wordsOnly = sourcestring.replace(onlyWordsRE, ' ');
+  var wordsOnly = raw_text.replace(onlyWordsRE, ' ');
   var wordList = wordsOnly.split(' ');
   
   wordList = arrayUnique(wordList);  
