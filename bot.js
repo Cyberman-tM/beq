@@ -54,7 +54,6 @@ logger.level = 'debug';
 var bot = new Discord.Client();
 bot.login(DData.token);
 devTest = DData.devBuild;
-logger.info(DData.devBuild);
 //		autorun: true
 
 
@@ -71,7 +70,7 @@ bot.on('ready', function (evt)
 	logger.info(beqTalk.message);
 	logger.info(DData);
 	//Timer runs once a minute, unless we're in dev-build
-	if (DData.devBuild != true)
+	if (DData.devBuild != "true")
 	{
 		logger.info("no Devbuild -> timer");
 		evTimer.startEventTimer(beq, bot);
