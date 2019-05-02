@@ -53,6 +53,8 @@ logger.level = 'debug';
 // Initialize Discord Bot
 var bot = new Discord.Client();
 bot.login(DData.token);
+devTest = DData.devBuild;
+logger.info(DData.devBuild);
 //		autorun: true
 
 
@@ -67,7 +69,7 @@ bot.on('ready', function (evt)
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
-	
+	logger.info(DData);
 	//Timer runs once a minute, unless we're in dev-build
 	if (DData.devBuild != true)
 	{
