@@ -70,7 +70,10 @@ bot.on('ready', function (evt)
 	
 	//Timer runs once a minute, unless we're in dev-build
 	if (DData.devBuild != true)
+	{
+		logger.info("no Devbuild -> timer");
 		evTimer.startEventTimer(beq, bot);
+	}
 }
 );
 
