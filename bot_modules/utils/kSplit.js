@@ -26,16 +26,20 @@ module.exports.kSplit = function(raw_text, split_syls)
   var wordList = wordsOnly.split(' ');  
   wordList = arrayUnique(wordList);
 	
+//Sort through the wordlist:
+var nounList = [];
+	
 wordList.forEach(function(oneWord)
 {
   //Check if the first letter CANNOT be a prefix:
   if (oneWord.substring(0,1) == "u" || 
       oneWord.substring(0,1) == "Q")
   {
+      nounList.push(oneWord);
   }
 });
 	
- return wordList.join();
+ return nounList.join();
 
 
 }
