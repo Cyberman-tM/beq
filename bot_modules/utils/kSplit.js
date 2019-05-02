@@ -26,6 +26,15 @@ module.exports.kSplit = function(raw_text, split_syls)
   var wordList = wordsOnly.split(' ');  
   wordList = arrayUnique(wordList);
 	
+wordList.forEach(function(oneWord)
+{
+  //Check if the first letter CANNOT be a prefix:
+  if (oneWord.substring(0,1) == "u" || 
+      oneWord.substring(0,1) == "Q")
+  {
+  }
+});
+	
  return wordList.join();
 
 
