@@ -68,11 +68,10 @@ bot.on('ready', function (evt)
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
-	logger.info(DData);
+
 	//Timer runs once a minute, unless we're in dev-build
 	if (DData.devBuild != "true")
 	{
-		logger.info("no Devbuild -> timer");
 		evTimer.startEventTimer(beq, bot);
 	}
 }
