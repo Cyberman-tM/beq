@@ -37,9 +37,9 @@ wordList.forEach(function(oneWord)
       //Whatever it is, it cannot have affixes, so we don't know if it's noun or verb or whatever
       undefList.push(oneWord);	  
   }
-        //Check if the first letter CANNOT be a prefix:
-  elseif (oneWord.substring(0,1) == "u" || 
-          oneWord.substring(0,1) == "Q")
+         //Check if the first letter CANNOT be a prefix:
+  else if (oneWord.substring(0,1) == "u" || 
+           oneWord.substring(0,1) == "Q")
   {
       //Might be a noun, might be a verb - we don't know
   }
