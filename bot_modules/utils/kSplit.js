@@ -5,6 +5,7 @@
   ->tlhINgan vI- jatlh neH
   
 */
+var logger = require('winston');
 //Local copy of transcoder
 var kTranscodeX  = require('./recode.js');
 
