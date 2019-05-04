@@ -47,15 +47,11 @@ wordList.forEach(function(oneWord)
   else
   {
       //Longer than 3 characters, might have a prefix
-      if (oneWord.substring(3,1) > 0)
+      if (oneWord.substring(3,4) > 0)
       {
 	  //Quite likely a prefix, therefore verb
 	  verbList.push(oneWord);
       }
-	  else
-	  {
-		  logger.info(oneWord.substring(3,1));
-	  }
   }
  });
 	
