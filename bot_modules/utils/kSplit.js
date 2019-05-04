@@ -27,16 +27,19 @@ module.exports.kSplit = function(raw_text, split_syls)
   wordList = arrayUnique(wordList);
 	
 //Sort through the wordlist:
-var nounList = [];
+var undefList = [];
 	
 wordList.forEach(function(oneWord)
 {
-  //Check if the first letter CANNOT be a prefix:
-  if (oneWord.substring(0,1) == "u" || 
-      oneWord.substring(0,1) == "Q")
+     //Check if the first letter CANNOT be a prefix:
+  if ( (oneWord.substring(0,1) == "u" || 
+        oneWord.substring(0,1) == "Q") )
+     //Anything below 3 characters also can't have a prefix
+     || oneWord.length <= 3 )
   {
-      nounList.push(oneWord);
+      //Might be a noun, might be a verb - we don't know
   }
+
 });
 	
  return nounList.join();
