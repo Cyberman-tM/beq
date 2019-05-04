@@ -51,6 +51,10 @@ wordList.forEach(function(oneWord)
 	  //Quite likely a prefix, therefore verb
 	  verbList.push(oneWord);
       }
+	  else
+	  {
+		  logger.info(oneWord.substring(3,1));
+	  }
   }
  });
 	
