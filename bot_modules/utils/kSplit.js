@@ -80,7 +80,7 @@ wordList.forEach(function(oneWord)
 		case 't3':
 		case 't5':
 		case 'w3':
-		case 'w3':
+		case 'x3':
 		case 'y3':
 		   prefList.push(oneWord.substring(0,1));
 		   oneWord = oneWord.substring(1);
