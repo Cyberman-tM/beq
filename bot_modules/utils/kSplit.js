@@ -49,10 +49,9 @@ wordList.forEach(function(oneWord)
  //Longer than 3 characters, might have a prefix, which means 4th place must be a number
  else if (oneWord.substring(3,4) > 0)
   {
-	  logger.info(oneWord.substring(0,1));
 	  //Quite likely a prefix, therefore verb (or a nounified verb)
 	  //We already will check the whole word, so lets see if we find a verb prefix:
-	  switch (oneWord.substring(0,1))
+	  switch (oneWord.substring(0,2))
 	  {
 		//Prefixes in Uhmal 2
 		case 'b3':
