@@ -5,6 +5,9 @@
   tlhIngan Hol => xifan hol
   
   This is useful for the various pIqaD fonts that use "normal" letters for klingon glyphs
+  
+  uhmal gnj by Philip Newton
+  https://metacpan.org/pod/Lingua::Klingon::Recode
 
 */
 
