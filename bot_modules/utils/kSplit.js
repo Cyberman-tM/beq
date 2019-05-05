@@ -82,7 +82,7 @@ wordList.forEach(function(oneWord)
 		case 'w3':
 		case 'x3':
 		case 'y3':
-		   prefList.push(oneWord.substring(0,1));
+		   prefList.push(oneWord.substring(0,2));
 		   oneWord = oneWord.substring(1);
 		  break;
 	  }
