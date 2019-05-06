@@ -32,6 +32,26 @@ var undefList = [];
 var verbList = [];
 var prefList = [];
 var checkSuff = false;
+
+//fullWord == current word
+//removedPrefix/removedSuffix == affixes that have been removed this time
+//example:
+//first entry: yIcha'nIS
+//secnd entry: yI- cha'nIS
+//third entry: yIcha' -nIS
+//forth entry: yI- cha'
+//fifth entry: cha' -nIS
+//?
+	
+var splitWords = JSON.parse(
+[
+	{
+		"fullWord": "",
+		"removedPrefix": "",
+		"removedSuffix": "",
+	}
+]
+);
 	
 wordList.forEach(function(oneWord)
 {
