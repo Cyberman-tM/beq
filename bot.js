@@ -344,6 +344,7 @@ bot.on('message', function (messageDJS)
 			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
 		case 'yImaq':
 			proclaim(bot, args, messageDJS);
+			sndMessage += beqTalk.newline + beqPerson.getLine(6, true, true, beqTalk.newline);
 		break;
 		//Search canon
 		case 'canon':
