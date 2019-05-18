@@ -22,9 +22,9 @@ module.exports = (bot, args, messageDJS) =>
   curMessage = curMessage.replace("\n", '\n');
   
 if (isLink)
-	newMessage += messageDJS.author + 'recommends: \n' + curMessage;
+	newMessage += messageDJS.author + ' recommends: \n' + curMessage;
 else
-	newMessage += messageDJS.author + 'says: \n' + curMessage;
+	newMessage += messageDJS.author + ' says: \n' + curMessage;
 	
 //neue Nachricht senden und anpinnen:
 ANChannel.send(newMessage)
