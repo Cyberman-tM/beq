@@ -342,7 +342,7 @@ bot.on('message', function (messageDJS)
 		case 'yIqaw':
 			memorize(bot, args, messageDJS);
 			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
-		case 'yImaq:
+		case 'yImaq':
 			proclaim(bot, args, messageDJS);
 		break;
 		//Search canon
