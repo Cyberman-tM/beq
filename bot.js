@@ -15,6 +15,7 @@ var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
 var experimentalFunc = require ('./bot_modules/experimental/currentExperiment.js');
 var memorize = require ('./bot_modules/commands/memorize.js');
+var proclaim = require ('./bot_modules/commands/proclaim.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
@@ -341,6 +342,8 @@ bot.on('message', function (messageDJS)
 		case 'yIqaw':
 			memorize(bot, args, messageDJS);
 			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
+		case 'yImaq:
+			proclaim(bot, args, messageDJS);
 		break;
 		//Search canon
 		case 'canon':
