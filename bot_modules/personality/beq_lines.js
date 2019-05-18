@@ -61,3 +61,11 @@ module.exports.MemorizeDone = JSON.stringify(
 		"pItlh",
 		"Memorized."
 		]);
+
+//Acknowledge proclaim command
+module.exports.ProclaimDone = JSON.stringify(
+	[
+		"rIn",
+		"'e' jatlh ghaH. not jIH...",
+		"toH. SaH 'Iv?"
+		]);
