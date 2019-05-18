@@ -5,10 +5,13 @@
   tlhIngan Hol => xifan hol
   
   This is useful for the various pIqaD fonts that use "normal" letters for klingon glyphs
+  
+  uhmal gnj by Philip Newton
+  https://metacpan.org/pod/Lingua::Klingon::Recode
 
 */
 
-module.exports.versInt = '0.6';
+module.exports.versInt = '0.7';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
@@ -56,8 +59,8 @@ module.exports.RCtlh2u = function(orig_text)
 {
 	var tmpText = "";
 	  tmpText = orig_text;
-	  tmpText = tmpText.replace(/w'/g, 'x');       //Kein klingonischer Buchstabe!
-	  tmpText = tmpText.replace(/y'/g, 'y');
+	  tmpText = tmpText.replace(/w/g, 'x');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y/g, 'y');
 	  tmpText = tmpText.replace(/'/g, 'z');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/I/g, 'h');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/j/g, 'i');       //Kein klingonischer Buchstabe!
@@ -82,8 +85,8 @@ module.exports.RCtlh2u2 = function(orig_text)
 {
 	var tmpText = "";
 	  tmpText = orig_text;
-	  tmpText = tmpText.replace(/w'/g, 'x');       //Kein klingonischer Buchstabe!
-	  tmpText = tmpText.replace(/y'/g, 'y');
+	  tmpText = tmpText.replace(/w/g, 'x');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y/g, 'y');
 	  tmpText = tmpText.replace(/'/g, 'z');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/I/g, '3');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/j/g, 'i');       //Kein klingonischer Buchstabe!
@@ -126,8 +129,8 @@ module.exports.RCu22tlh = function(orig_text)
 	  tmpText = tmpText.replace(/f/g, 'gh');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/i/g, 'j');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
-	  tmpText = tmpText.replace(/y/g, 'y\'');
-	  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y/g, 'y');
+	  tmpText = tmpText.replace(/x/g, 'w');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/d/g, 'D');
 	  tmpText = tmpText.replace(/1/g, 'a');
 	  tmpText = tmpText.replace(/2/g, 'e');
@@ -155,8 +158,8 @@ module.exports.RCu2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/f/g, 'gh');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/i/g, 'j');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/z/g, '\'');       //Kein klingonischer Buchstabe!
-	  tmpText = tmpText.replace(/y/g, 'y\'');
-	  tmpText = tmpText.replace(/x/g, 'w\'');       //Kein klingonischer Buchstabe!
+	  tmpText = tmpText.replace(/y/g, 'y');
+	  tmpText = tmpText.replace(/x/g, 'w');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/d/g, 'D');
 	return tmpText;
 }

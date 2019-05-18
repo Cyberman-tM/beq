@@ -15,6 +15,7 @@ var KWOTD   = require('./bot_modules/utils/KWOTD/kwotd.js');
 var botSendMessage = require ('./bot_modules/utils/sendMessage.js');
 var experimentalFunc = require ('./bot_modules/experimental/currentExperiment.js');
 var memorize = require ('./bot_modules/commands/memorize.js');
+var proclaim = require ('./bot_modules/commands/proclaim.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
@@ -53,6 +54,7 @@ logger.level = 'debug';
 // Initialize Discord Bot
 var bot = new Discord.Client();
 bot.login(DData.token);
+devTest = DData.devBuild;
 //		autorun: true
 
 
@@ -67,9 +69,12 @@ bot.on('ready', function (evt)
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
-	
-	//Timer runs once a minute
-	evTimer.startEventTimer(beq, bot);
+
+	//Timer runs once a minute, unless we're in dev-build
+	if (DData.devBuild != "true")
+	{
+		evTimer.startEventTimer(beq, bot);
+	}
 }
 );
 
@@ -337,6 +342,9 @@ bot.on('message', function (messageDJS)
 		case 'yIqaw':
 			memorize(bot, args, messageDJS);
 			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
+		case 'yImaq':
+			proclaim(bot, args, messageDJS);
+			sndMessage += beqTalk.newline + beqPerson.getLine(6, true, true, beqTalk.newline);
 		break;
 		//Search canon
 		case 'canon':
@@ -443,6 +451,15 @@ bot.on('message', function (messageDJS)
 				sndMessage += beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
 			}
 		
+			break;
+			case 'split':
+				//No parameters possible!
+				var splitRaw = message.substring(6);  //!split
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'split';
+				beqTalk.lookWord = splitRaw;
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
 			break;
 		default:
 		    //This MUST return false if nothing was done!

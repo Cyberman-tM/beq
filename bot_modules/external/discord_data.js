@@ -16,6 +16,7 @@ var tmpKWOTDChan = '';  //Which channel should we post the KWOTD message to?
 var tmpnoPulse   = '';  //Disable Event-Timer pulse during testing
 var tmpWeatherMap = ''; //ID for openWeatherMap
 var tmpLMChannel = '';  //Channel ID for Letter to Maltz
+var tmpANChannel = '';  //Channel ID for Announcements
 
 
 var useHeroku = true;   //Change this to false if you don't use Heroku, so we won't try to get the Heroku data
@@ -35,6 +36,7 @@ if (useHeroku === true)
 	tmpnoPulse  = process.env.noPulse;         //Don't write into the log once per event timer
 	
 	tmpLMChannel = process.env.LMChannel;      //Letter to Maltz channel
+	tmpANChannel = process.env.ANChannel;      //Announcements-Channel
 	
 	tmpWeatherMap = process.env.openWeatherMap;
 }
@@ -53,5 +55,6 @@ module.exports.bTChan = tmpbTChan;
 module.exports.KWOTDChan = tmpKWOTDChan;
 module.exports.openWeatherMap = tmpWeatherMap;
 module.exports.LMChan = tmpLMChannel;
+module.exports.ANChan = tmpANChannel;
 
 

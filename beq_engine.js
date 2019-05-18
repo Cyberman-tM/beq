@@ -54,7 +54,11 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
-var kTranscode = require('./bot_modules/utils/recode.js');
+var kTranscode  = require('./bot_modules/utils/recode.js');
+var kSplit      = require('./bot_modules/utils/kSplit.js');
+var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
+
+module.exports.beqTalkDef = beqTalkDef;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -417,45 +421,16 @@ module.exports.Engine = function(beqTalk)
 				}
 			}
 		break;
+		case "split":
+			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
+		
+		break;
 	default:
 	   beqTalk.gotResult = false;
 	   beqTalk.failure = true;
 	}
 	return beqTalk;
 };
-
-//Declarations have to be at the end?
-module.exports.beqTalkDef = JSON.stringify(
-{
-	"fuzzy": false,
-	"wCase": false,
-	"remPref": false,
-	"lookLang": "",
-	"lookWord": "",
-	"transLang": "",
-	"command": "",
-	"simple": "",
-	"special": "",
-	"showNotes": false,
-	"wordType1": null,
-	"wordType2": null,
-	"startRes": '0',
-	"limitRes": '20',
-	"newline": "\n",
-	"result": [{ "type":"",
-	            "tlh":"",
-				"en":"",
-				"de":"",
-		                "ru":"",
-				"notes":"",
-				"notes_de":"",
-				"hidden_notes":"",
-		                "source":""
-			  }],
-    "message": "",
-	"gotResult": false,
-	"failure":false
-});
 
 module.exports.createTranslation = function(beqTalk)
 {
