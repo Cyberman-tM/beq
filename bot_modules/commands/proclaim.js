@@ -1,42 +1,36 @@
 var logger = require('winston');
 var DData = require('./../external/discord_data.js');
 
+var isLink = false;
+
 module.exports = (bot, args, messageDJS) => 
 {
-  var LMChannel = bot.channels.get(DData.LMChan);
+  var ANChannel = bot.channels.get(DData.ANChan);
   
-  ////curMessage hat noch den Befehl - wie werden wir den los?
-  //var curMessage = messageDJS.content;
   //Probieren wirs so:
   args[0] = "";
+  if (args[1].toLowerCase() == 'link')
+  {
+	  isLink = true;
+	  args[1] = "";
+  }
+  else
+	  isLink = false;
+	
   var curMessage = args.join(' ');
   var newMessage = "";
   curMessage = curMessage.replace("\n", '\n');
   
-  //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
-  LMChannel.fetchPinnedMessages()
-  .then(function(messages)
-  {
-	//Wir haben schon Nachrichten, wir nehmen momentan nur die erste!
-    if (messages.size > 0)
-    {
-		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		newMessage = messages.array()[0].content + '\n';
-	        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
-		
-		//Bestehende Nachricht editieren
-		messages.array()[0].edit(newMessage)
-	    .then()
-	    .catch(console.error);
-    }
-    else		
-    {
-      //New pinned message
-        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
-	  LMChannel.send(newMessage)
-	  .then(function(message)
-      {message.pin();})
-	  .catch(console.error);
-    }
-  })
+if (isLink)
+	newMessage += messageDJS.author + 'recommends: \n' + curMessage;
+else
+	newMessage += messageDJS.author + 'says: \n' + curMessage;
+	
+//neue Nachricht senden und anpinnen:
+ANChannel.send(newMessage)
+  .then(function(message)
+   {message.pin();})
+  .catch(console.error);
+	
 }
+
