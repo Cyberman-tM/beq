@@ -510,7 +510,8 @@ module.exports.createTranslation = function(beqTalk)
 	beqTalk.result.forEach(function (item)
 	{
 		startCount--;
-		logger.info(item);
+		//Only for testing purposes - rework to use devbeq?
+		//logger.info(item);
 		if (startCount <= 0 && count < beqTalk.limitRes)
 		{
 			count++;
