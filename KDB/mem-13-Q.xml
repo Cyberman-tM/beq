@@ -80,8 +80,8 @@
       <column name="definition_zh_HK">使用或揮動（武器） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms">{chaQ:v}</column>
-      <column name="see_also">{'obmaQ:n}, {'aqleH:n}, {jeqqIj:n}</column>
-      <column name="notes">This verb is used for wielding or swinging an ax, a club, or the like.[1, p.64] It can also be applied to a {betleH:n}.[2]</column>
+      <column name="see_also">{'obmaQ:n}, {'aqleH:n}, {jeqqIj:n}, {Henjun:n}</column>
+      <column name="notes">This verb is used for wielding or swinging an ax, a club, or the like.[1, p.64] It can also be applied to a {betleH:n}[2] or a whip[3].</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -101,7 +101,7 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.158-159:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.158-159:src}, [3] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1281,9 +1281,9 @@ In {Klingon Monopoly:src}, {tlhIngan QaS:n:nolink} is the unit of currency used 
       <column name="definition_sv">vara sist, vara slutgiltig</column>
       <column name="definition_ru">быть последним, быть конечным, быть заключительным, быть окончательным, быть прошлым, быть крайним</column>
       <column name="definition_zh_HK">最後</column>
-      <column name="synonyms">{HochDIch:n}</column>
+      <column name="synonyms"></column>
       <column name="antonyms">{wa'DIch:n}</column>
-      <column name="see_also">{tagha':adv}</column>
+      <column name="see_also">{tagha':adv}, {HochDIch:n}, {natlIS:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1821,7 +1821,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/SIpF7Zak6CY}</column>
       <column name="definition_zh_HK">莖、稈</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'InSong:n}</column>
+      <column name="see_also">{'InSong:n}, {San'emDer:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1893,13 +1893,19 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/SIpF7Zak6CY}</column>
       <column name="antonyms"></column>
       <column name="see_also">{Qul:v}, {ngong:n}, {tej:n}, {cham:n}</column>
       <column name="notes">Klingon sciences include:
+▶ {DI'ruj QeD:n}
+▶ {HapQeD:n}
 ▶ {HolQeD:n}
 ▶ {HovQeD:n}
 ▶ {HuchQeD:n}
 ▶ {mI'QeD:n}
 ▶ {nughQeD:n}
+▶ {no'QeD:n}
+▶ {rayQeD:n}
+▶ {roSqa'QeD:n}
 ▶ {qunQeD:n}
 ▶ {porghQeD:n}
+▶ {tamlerQeD:n}
 ▶ {yuQQeD:n}
 ▶ {'otlhQeD:n}</column>
       <column name="notes_de"></column>
@@ -2581,7 +2587,7 @@ Do not confuse with {qeq:v}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Qey:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2952,41 +2958,6 @@ The names of the Klingon consonants consist of the sound followed by {ay:sen:nol
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KLI mailing list 2018.02.25:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">QIch lut</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">narrator style</column>
-      <column name="definition_de">Erzähler-Stil</column>
-      <column name="definition_fa">سبک راوی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">berättarstil [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Стиль повествования</column>
-      <column name="definition_zh_HK">敘述者風格 [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a type of literary style.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Это тип литературного стиля.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {paq'batlh p.xvii,xxii:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3399,7 +3370,7 @@ It is used to refer to the point on a (geometric) star ({DujtlhuQ:n}).[3]</colum
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{QIn:n:1}, {tum:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3434,7 +3405,7 @@ It is used to refer to the point on a (geometric) star ({DujtlhuQ:n}).[3]</colum
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{QIn tum:n}, {qach:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3469,7 +3440,7 @@ It is used to refer to the point on a (geometric) star ({DujtlhuQ:n}).[3]</colum
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{QIn:n:2}, {vagh:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4028,11 +3999,11 @@ There is no traditional Klingon way to say something like "Merry Christmas". An 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Suto'vo'qor:n}, {ghe'tor:n}</column>
-      <column name="notes">There are two idioms associated with {QI'tu':n:nolink}, both to do with its age: {ngo'; QI'tu' rur} and {qan; QI'tu' rur@@qan:v:1, QI'tu':n, rur:v}. The first might be applied to an object or idea which is very old, while the second would be applied to an old person.[3]</column>
+      <column name="notes">There are two idioms associated with {QI'tu':n:nolink}, both to do with its age: {ngo'; QI'tu' rur@@ngo':v, QI'tu':n, rur:v} and {qan; QI'tu' rur@@qan:v:1, QI'tu':n, rur:v}. The first might be applied to an object or idea which is very old, while the second would be applied to an old person.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Есть 2 идиомы, связанные с {QI'tu':n:nolink}, обе связаны с возрастом: {ngo'; QI'tu' rur} и {qan; QI'tu' rur@@qan:v:1, QI'tu':n, rur:v}. Первая может быть применена к объекту или идее, которая является очень старой, в то время как вторая может быть применена к старому человеку.[3]</column>
+      <column name="notes_ru">Есть 2 идиомы, связанные с {QI'tu':n:nolink}, обе связаны с возрастом: {ngo'; QI'tu' rur@@ngo':v, QI'tu':n, rur:v} и {qan; QI'tu' rur@@qan:v:1, QI'tu':n, rur:v}. Первая может быть применена к объекту или идее, которая является очень старой, в то время как вторая может быть применена к старому человеку.[3]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
@@ -4203,11 +4174,15 @@ There is no traditional Klingon way to say something like "Merry Christmas". An 
       <column name="synonyms"></column>
       <column name="antonyms">{Qochbe':v}</column>
       <column name="see_also"></column>
-      <column name="notes">Disagreement is also expressed by the idiomatic expression {cha' DoSmey DIqIp.:sen:idiom}</column>
+      <column name="notes">Disagreement is also expressed by the idiomatic expression {cha' DoSmey DIqIp.:sen:idiom}
+
+This verb can take {'e':n:pro} as its object.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Несогласие также выражено в Клингонской идиоме {cha' DoSmey DIqIp.:sen:idiom}</column>
+      <column name="notes_ru">Несогласие также выражено в Клингонской идиоме {cha' DoSmey DIqIp.:sen:idiom}
+
+This verb can take {'e':n:pro} as its object.[2]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">At {Saarbrücken qepHom'a' 2011:src}, MO accepted {maQoch 'e' wIQochbe':sen:nolink} as a way of expressing "we agree to disagree" in Klingon, though he did not compose the sentence.</column>
       <column name="components"></column>
@@ -4223,7 +4198,7 @@ There is no traditional Klingon way to say something like "Merry Christmas". An 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Saarbrücken qepHom'a' 2011:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4267,7 +4242,7 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {msn 1997.11.30:src}, [3] {s.k 1998.03.02:src}, [4] {msn 1996.08.06:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {msn 1997.11.30:src} (repeated in {s.k 1998.02.23:src}), [3] {s.k 1998.03.02:src}, [4] {msn 1996.08.06:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4386,7 +4361,7 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
       <column name="definition_zh_HK">哼 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{ghugh:v}</column>
       <column name="notes">This is like what a pig does, but it's not restricted to pigs or targs.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4517,7 +4492,8 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Qom</column>
-      <column name="part_of_speech">v:2,is,slang</column>
+      <!-- KGT p.163 says that this is not treated grammatically as a "be" verb. -->
+      <column name="part_of_speech">v:2,t,slang</column>
       <column name="definition">be hazardous, be perilous, be treacherous</column>
       <column name="definition_de">gewagt, gefährlich, riskant</column>
       <column name="definition_fa">خطرناک باشید، خطرناک باشید، خائن باشید [AUTOTRANSLATED]</column>
@@ -4535,7 +4511,10 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {Qom Qu':sen:nolink} "The mission is perilous."[1, p.161]
+▶ {Qom He:sen:nolink} "The route is treacherous."[1, p.161]
+▶ {Qompu' Duj:sen:nolink} "The ship is hazardous, has been left in a hazardous condition."[1, p.163]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4709,7 +4688,7 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{QongDaq:n}, {buq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4993,7 +4972,7 @@ Types of Klingon musical instruments include: percussion ({'In:n}), wind (no ove
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{QoQ:n}, {jan:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5456,7 +5435,7 @@ In the Krotmag region, speakers replace {b:sen:nolink} with {m:sen:nolink} and {
       <column name="notes_ru">Смотрите {qawmoH:v} для примера того, как использовать глагол, подобный этому.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This word does not appear in the word lists in {TKD:src}, but appears in the explanation of {-moH:v:suff} in {TKD 4.2.4:src}, where {chenmoH:v} also appears. This entry is here for ease of reference.</column>
-      <column name="components"></column>
+      <column name="components">{Qoy:v}, {-moH:v}</column>
       <column name="examples">
 ▶ {HIQoymoH:sen:nolink} "let me hear (something)"</column>
       <column name="examples_de"></column>
@@ -6083,7 +6062,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="definition_zh_HK">「克魯格」</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{qovIj:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6154,7 +6133,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{reH:v}, {ghet:v}, {Quj:n}</column>
-      <column name="notes">The difference between this and {reH:v} is that this refers to structured play, whereas {reH:v:nolink} refers to unstructured play.[2]</column>
+      <column name="notes">The difference between this and {reH:v} is that this refers to structured play, whereas {reH:v:nolink} refers to unstructured play. This verb does not take {'e':n:pro} as its object.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -6231,7 +6210,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Quj:v}, {-wI':v}, {lIw:n}</column>
       <column name="examples">
 ▶ {polmeH jav QujwI' lIwmey} "6 Collectible Tokens"</column>
       <column name="examples_de"></column>
@@ -6350,7 +6329,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {KGT p.160:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.159:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6388,7 +6367,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {BoP:src}, [2] {KGT p.160:src}</column>
+      <column name="source">[1] {BoP:src}, [2] {KGT p.159:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6528,7 +6507,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {KGT p.160:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.159:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

@@ -71,7 +71,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mab</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:1</column>
       <column name="definition">treaty, agreement, contract, commitment</column>
       <column name="definition_de">Übereinkommen, Vertrag, Zugeständnis</column>
       <column name="definition_fa">پیمان، قرارداد، کنترات</column>
@@ -80,12 +80,12 @@
       <column name="definition_zh_HK">條約、合同、承諾、協議</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qI':v}, {Sutlh:v}, {ngaQHa'moH:v}</column>
-      <column name="notes">This can also be used for an "account" that someone can sign up for to use a service.[3]</column>
+      <column name="see_also">{qI':v:1}, {Sutlh:v}</column>
+      <column name="notes">This word is also used when Klingons talk about an account that one signs up for to use a service, such as a computer accounts. See {mab:n:2}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Это также может использоваться для обозначения "аккаунта", который регистрируется для пользования какой-то услугой.[3]</column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is defined only as "treaty" in {TKD:src}. The additional definitions come from {Saarbrücken qepHom'a' 2016:src}.
 
@@ -97,13 +97,83 @@ Possibly a reference to the fairy Queen Mab in Romeo and Juliet, who is known fo
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">account</column>
+      <column name="search_tags"></column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {Saarbrücken qepHom'a' 2016:src}, [3] {KLI mailing list 2018.02.17:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Saarbrücken qepHom'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mab</column>
+      <column name="part_of_speech">n:2</column>
+      <column name="definition">account (for using a service)</column>
+      <column name="definition_de">Account, Konto (z.B. Computerkonto)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru">аккаунта</column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an extension of {mab:n:1} to mean an account that someone can sign up for to use a service, such as a computer account. The verb to sign up for an account is {qI':v:2}. To log in to an account is {ngaQHa'moH:v:2}, and to log off is {ngaQmoH:v:2}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">This was used in Netflix's Klingon language promotional material.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2018.02.17:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mabeb</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">toad-like or frog-like creature</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Michigan J. Frog is a cartoon character who sings "Hello, My Ragtime Gal", the first line of which is "Hello, my baby".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -116,8 +186,8 @@ Possibly a reference to the fairy Queen Mab in Romeo and Juliet, who is known fo
       <column name="definition_ru">быть маленьким, быть небольшим, быть малым, быть мелким</column>
       <column name="definition_zh_HK">小、細</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{tIn:v}, {muq:v}</column>
-      <column name="see_also"></column>
+      <column name="antonyms">{tIn:v}</column>
+      <column name="see_also">{nu':v}, {muq:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -359,6 +429,41 @@ René Magritte painted "La Trahison des images".</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maghpub</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">novel</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">A potboiler ({magh:n} + {pub:v}) is a work of dubious literary merit.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -837,7 +942,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is usually {malja' permey:n:nolink} in canon.</column>
-      <column name="components"></column>
+      <column name="components">{malja':n}, {per:n}</column>
       <column name="examples">
 ▶ Paramount Pictures {malja' permey bIH:sen:nolink} Star Trek {pong'e' Deghmey'e' je.:sen:nolink}[2]</column>
       <column name="examples_de"></column>
@@ -960,6 +1065,42 @@ The writers who came up with this apparently looked up words for "good" and "nig
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- Too obscure? The area near Tokyo's Shibuya train station is famous for its association with manga. -->
+      <column name="entry_name">manggha</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">station (train)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lupwI' mIr:n}</column>
+      <column name="notes">This is a place where medium/long range transport arrive and depart.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">maq</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">proclaim</column>
@@ -994,6 +1135,41 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2014.11.26:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maqlegh</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">priest, priestess</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lalDan:n}, {bulvar:n}</column>
+      <column name="notes">This word is gender-neutral. If a distinction is required, add {loD:n} or {be':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">This seems to consist of "proclaim" ({maq:v}) and "see" ({legh:v}).</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1168,6 +1344,41 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This little piggy went to market.</column>
       <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {HQ 10.2, Jun. 2001:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">marwI'</column>
+      <column name="part_of_speech">n:deriv,body</column>
+      <column name="definition">big toe, first toe</column>
+      <column name="definition_de">großer Zehe, erster Zehe</column>
+      <column name="definition_fa">انگشت پا، انگشت پا [AUTOTRANSLATED]</column>
+      <column name="definition_sv">stortå, förstatå</column>
+      <column name="definition_ru">большой палец, первый палец</column>
+      <column name="definition_zh_HK">大腳趾、第一個腳趾 [AUTOTRANSLATED]</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{yaD:n:1}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">This little piggy went to the market.</column>
+      <column name="components">{mar:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1359,25 +1570,25 @@ This was used to translate "print" or "output" (i.e., display something to the u
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">marwI'</column>
-      <column name="part_of_speech">n:deriv,body</column>
-      <column name="definition">big toe, first toe</column>
-      <column name="definition_de">großer Zehe, erster Zehe</column>
-      <column name="definition_fa">انگشت پا، انگشت پا [AUTOTRANSLATED]</column>
-      <column name="definition_sv">stortå, förstatå</column>
-      <column name="definition_ru">большой палец, первый палец</column>
-      <column name="definition_zh_HK">大腳趾、第一個腳趾 [AUTOTRANSLATED]</column>
+      <column name="entry_name">marvargh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">Klingon ballet</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{yaD:n:1}</column>
+      <column name="see_also">{mI':v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This little piggy went to the market.</column>
-      <column name="components">{mar:v}, {-wI':v}</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1390,7 +1601,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {HQ 10.2, Jun. 2001:src}</column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1500,6 +1711,41 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maSquwa'</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Moscow</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the capital city of {raSya':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3003,14 +3249,16 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="definition_zh_HK">藝術、文化</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{meHghem Qat:n}</column>
-      <column name="notes">According to {KGT p.79:src}, there is no single word for "art" or "artwork". This refers to visual art (painting, sculpture, etc.). {meHghem:n:nolink} is a bigger, more comprehensive term covering "the arts" or "art" as opposed to "science". It includes music, theater, dance, etc., as well as visual art. It's "culture" in this sense.</column>
+      <column name="see_also">{meHghem Qat:n}, {Hoy:v}</column>
+      <column name="notes">There is no single word for "art" or "artwork", in the sense of individual pieces of visual art (painting, sculpture, etc.).
+
+{meHghem:n:nolink} is a bigger, more comprehensive term covering "the arts" or "art" as opposed to "science". It includes music, theater, dance, etc., as well as visual art. It's "culture" in this sense.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The fact that there is no single word for "art" or "artwork" is stated on {KGT p.79:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3244,6 +3492,41 @@ To express leaving a person or object (rather than a location), consider {lon:v}
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">men</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">have an area of</column>
+      <column name="definition_de">eine Fläche haben von</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{morgh:n}, {mun'a':n}, {muq:v}, {'aD:v}, {juch:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3657,6 +3940,41 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mergh</column>
+      <column name="part_of_speech">v:i_c</column>
+      <column name="definition">be combined, be mixed together</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tIr:v}</column>
+      <column name="notes">This is also used in a physics context, where it refers to the phenomenon of quantum superposition.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Merge".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">superposition, superpose</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5125,15 +5443,13 @@ This word can also refer to the "diamond" suit in a deck of playing cards (see {
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{rel:v}, {mIS:n}, {mISmoH:v}, {DuD:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This refers to mental confusion.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">"Mish" mash.
-
-This was clarified to mean "mental confusion" at {qep'a' 2017:src}.</column>
+      <column name="hidden_notes">"Mish" mash.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5199,13 +5515,13 @@ This was clarified to mean "mental confusion" at {qep'a' 2017:src}.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This refers to mental confusion.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This was clarified to mean "mental confusion" at {qep'a' 2017:src}.</column>
+      <column name="hidden_notes"></column>
       <column name="components">{mIS:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5656,7 +5972,7 @@ A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is al
       <column name="_id"></column>
       <column name="entry_name">mIw</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">procedure, process, step, stage (in a process)</column>
+      <column name="definition">procedure, process, step, stage (in a process), recipe, formula</column>
       <column name="definition_de">Prozedur, Prozess, Ablauf; Schritt, Stadium (in einem Ablauf)</column>
       <column name="definition_fa">روش، فرآیند، مرحله، مرحله (در یک روند) [AUTOTRANSLATED]</column>
       <column name="definition_sv">delsteg, moment (i ett förlopp)</column>
@@ -5664,14 +5980,16 @@ A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is al
       <column name="definition_zh_HK">程序、過程、步驟、階段（在一個過程中） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nab:n}</column>
+      <column name="see_also">{nab:n}, {HIl'aD:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This was used to refer to a concept in computer programming, namely, a compartmentalized piece of computer code which has inputs and outputs and is used over and over, in Klingon Blockly.[3]</column>
+      <column name="hidden_notes">This was defined as "procedure, process" in {TKD:src}, as "step, stage (in a process)" in {KGT:src}, and expanded to include "recipe, formula (prodecure, process)" at {qep'a' 2019:src}.
+
+This was used to refer to a concept in computer programming, namely, a compartmentalized piece of computer code which has inputs and outputs and is used over and over, in Klingon Blockly.[3]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5685,7 +6003,7 @@ A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is al
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKDA:src}, [2] {KGT:src}, [3] {KLI mailing list 2014.11.26:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT:src}, [3] {KLI mailing list 2014.11.26:src}, [4] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5770,13 +6088,13 @@ A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is al
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{togh:v}, {mob:v:2}, {mobHa':v}</column>
-      <column name="notes">Number-forming elements include {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}.
+      <column name="notes">Number-forming elements include {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n}.
 
 When a number is used for numbering (labeling), as opposed to counting, it follows the noun. Ordinal numbers are formed with {-DIch:n:num,suff}. Repetitions are formed with {-logh:n:num,suff}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Элементы для формирования чисел, включают {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}.
+      <column name="notes_ru">Элементы для формирования чисел, включают {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n}.
 
 Когда число используется для нумерации чего-то, в отличие от счёта, оно следует за существительным. Порядковые номера сформированы с {-DIch:n:num,suff}. Повторы сформированы с помощью {-logh:n:num,suff}.</column>
       <column name="notes_zh_HK"></column>
@@ -5880,8 +6198,10 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="definition_zh_HK">骰子、色子</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ngutlh nagh:n}, {SuD:v:2}, {qeylIS mInDu':n}</column>
-      <column name="notes">In {Klingon Monopoly:src}, {mI' naghmey:n:nolink} refers to the playing dice. The verb {ronmoH:v@@ron:v:1, -moH:v} is used for the action of throwing or rolling the dice.</column>
+      <column name="see_also">{ngutlh nagh:n}, {SuD:v:2}, {qeylIS mInDu':n}, {Haw:v}</column>
+      <column name="notes">In {Klingon Monopoly:src}, {mI' naghmey:n:nolink} refers to the playing dice. The verb {ronmoH:v@@ron:v:1, -moH:v} is used for the action of throwing or rolling the dice.
+
+The verb {'al:v} is used for random numbers ({mI' 'al:n}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5952,7 +6272,7 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="definition_zh_HK">數學</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mI'tej:n}</column>
+      <column name="see_also">{mI'tej:n}, {ghIqtu':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6012,6 +6332,41 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">mI' 'al</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">random number</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms">{Du'Hom mI':n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{mI':n}, {'al:v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">mI'</column>
       <column name="part_of_speech">v:t</column>
       <column name="definition">dance, run in place, do calisthenics</column>
@@ -6022,7 +6377,7 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="definition_zh_HK">跳舞、跑到位、做健美操 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{moQbara':n}, {mI'wI':n}</column>
+      <column name="see_also">{moQbara':n}, {marvargh:n}, {mI'wI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6066,7 +6421,7 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components">{mI':v}, {-wI':v}</column>
-      <column name="examples"></column>
+      <column name="examples">{qul mI'wI':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6301,7 +6656,7 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="definition_ru">старший</column>
       <column name="definition_zh_HK">優越 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
-      <column name="antonyms"></column>
+      <column name="antonyms">{bay'eS:n}</column>
       <column name="see_also">{pIn:n:1}, {nIv:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -6721,7 +7076,7 @@ There are five types of noun suffixes and nine types of verb suffixes in Klingon
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">molHa'</column>
-      <column name="part_of_speech">v:deriv,t_c</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">dig up</column>
       <column name="definition_de">etw. aufgraben</column>
       <column name="definition_fa">حفاری کردن [AUTOTRANSLATED]</column>
@@ -6803,13 +7158,13 @@ There are five types of noun suffixes and nine types of verb suffixes in Klingon
       <column name="see_also"></column>
       <column name="notes">This is the evil tyrant ({HI''a':n}) defeated by {qeylIS'e' lIjlaHbe'bogh vay':n:name}, as recounted in the {paq'batlh:n}.
 
-There is an idiom, {mIgh; molor rur}.</column>
+There is an idiom, {mIgh; molor rur@@mIgh:v, molor:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru">Это злой тиран ({HI''a':n}) побежденный {qeylIS'e' lIjlaHbe'bogh vay':n:name}, как рассказано в {paq'batlh:n}.
 
-Есть идиома, {mIgh; molor rur}.</column>
+Есть идиома, {mIgh; molor rur@@mIgh:v, molor:n, rur:v}.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
@@ -6911,7 +7266,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="definition_zh_HK">頸部</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nach:n}, {volchaH:n}, {mong Ha'quj:n}, {mongDech:n}</column>
+      <column name="see_also">{nach:n}, {volchaH:n}, {mong Ha'quj:n}, {mongDech:n}, {'achler:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6954,7 +7309,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{mong:n}, {Ha'quj:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7016,7 +7371,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="definition_zh_HK">mong'em機動 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{way':v}</column>
+      <column name="see_also">{way':v}, {'achler:n}</column>
       <column name="notes">A parry where you thrust a sword or other edged weapon behind your neck in order to block an attack from the rear.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7273,7 +7628,7 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{moQ:n}, {bID:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7405,7 +7760,7 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="definition_zh_HK">面積單位（27平方{'ujmey:n@@'uj:n, -mey:n}） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'uj:n}</column>
+      <column name="see_also">{men:v}, {mun'a':n}, {'uj:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7554,11 +7909,15 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {motlh ray' luSamlaHmeH De' Qatlh cha' tlhIngan Duj jIH'a'. motlh pIm 'ejyo' Dujmey.:sen:nolink}
+  "Unlike most Starfleet vessels, the main viewer on a Klingon ship is usually overlaid with a complex target acquisition grid."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
+      <column name="examples_ru">
+▶ {motlh ray' luSamlaHmeH De' Qatlh cha' tlhIngan Duj jIH'a'. motlh pIm 'ejyo' Dujmey.:sen:nolink}
+  "В отличие от большинства судов Звездного флота, главный экран на Клингонском корабле обычно покрыт сложной прицельной сеткой."[2]</column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -7566,7 +7925,7 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {SkyBox 3:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7848,6 +8207,76 @@ Note that the verb used for a heartbeat is {joq:v}.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {DSC - Battle at the Binary Stars:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mo'rISqa'</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Morska</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qurbuSwI':n}, {-'e':n:suff}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mo'rISqa'ngan</column>
+      <column name="part_of_speech">n:being,deriv</column>
+      <column name="definition">Morskan (person)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{mo'rISqa':n}, {ngan:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8188,7 +8617,7 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{much:v:2}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8398,7 +8827,7 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{muD:n:1}, {-Daq:n}, {'eDSeHcha:n}, {lu-:v}, {laQ:v}, {-lu':v}, {-bogh:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8706,7 +9135,7 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="definition_zh_HK">品嚐（味道）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{wejwa':n}, {jat:n}, {tlhorgh:v}, {'ey:v}, {largh:v}</column>
+      <column name="see_also">{wejwa':n}, {jat:n}, {tlhorgh:v}, {'ey:v}, {largh:v}, {Huy:v:2}, {jIy:v}</column>
       <column name="notes">Do not confuse this with {waH:v:2}, which means "taste" in the sense of trying out food to see if it's been properly prepared or to determine if one likes it.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8763,6 +9192,41 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKDA:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mun'a'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">unit of area</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{men:v}, {morgh:n}</column>
+      <column name="notes">One {mun'a':n:nolink} is 729 {morghmey:n@@morgh:n, -mey:n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8936,7 +9400,7 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{mupwI':n}, {-Hom:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8963,7 +9427,7 @@ This verb is also used in music ({much:v:2}) and martial arts ({much:v:3}).</col
       <column name="definition_zh_HK">有一個量 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{juv:v}, {tlho'ren:n}, {tIn:v}, {mach:v}</column>
+      <column name="see_also">{juv:v}, {tlho'ren:n}, {tIn:v}, {mach:v}, {men:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9232,9 +9696,11 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The {paq'batlh:src} example suggests that the subject becomes a part or member of the object. The medical instrument example seems to suggest otherwise, but device names are often abbreviated.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {tuj muvwI':n}
+▶ {Qo'noS tuqmey muvchuqmoH qeylIS:sen:nolink} "Kahless united the tribes of Kronos"[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -9246,7 +9712,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.179:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9268,9 +9734,9 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{muv:v}, {-chuq:v}, {-moH:v}</column>
       <column name="examples">
-▶ {Qo'noS tuqmey muvchuqmoH qeylIS:sen:nolink} "Kahless united the tribes of Kronos"[1, p.179]</column>
+▶ {Qo'noS tuqmey muvchuqmoH qeylIS:sen:nolink} "Kahless united the tribes of Kronos"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -9282,7 +9748,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {paq'batlh:src}</column>
+      <column name="source">[1] {paq'batlh p.179:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9304,7 +9770,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="notes_ru">Смотрите {qawmoH:v} для примера того, как использовать глагол, подобный этому.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{muv:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -9403,7 +9869,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="definition_zh_HK">字</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{mu'mey Doy':n}, {mu'mey ghoQ:n}, {mu'mey qar:n}, {mu'mey ru':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9657,7 +10123,7 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{mu'qaD:n}, {veS:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -9741,4 +10207,39 @@ When applied to {tlhIm:n}, {mutlh:v:nolink} means to assemble the carpet. The ve
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mu'neqo</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Monaco</column>
+      <column name="definition_de">Monaco</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>

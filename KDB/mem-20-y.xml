@@ -123,7 +123,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ya:n}, {pat:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -194,7 +194,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yab:n}, {qoD:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -604,7 +604,7 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yajHa'</column>
-      <column name="part_of_speech">v:t,deriv</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">misinterpret</column>
       <column name="definition_de">misverstehen</column>
       <column name="definition_fa">اشتباه تفسیر [AUTOTRANSLATED]</column>
@@ -920,6 +920,41 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">yanwo'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">nest</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{bo'Degh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">yang</column>
       <column name="part_of_speech">n</column>
       <column name="definition">image from a (rubber) stamp</column>
@@ -1002,7 +1037,7 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'utlh:n}, {negh:n}, {QaS:n:1h}</column>
-      <column name="notes">There are nine ranks of officers:
+      <column name="notes">There are nine ranks ({patlh:n}) of officers[2]:
 ▶ {'aj:n} "admiral"
 ▶ {Sa':n} "general"
 ▶ {totlh:n} "commodore"
@@ -1013,7 +1048,7 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
 ▶ {lagh:n} "ensign"
 ▶ {ne':n} "yeoman"
 
-Someone of rank {Sogh:n} or higher can also be referred to as {ra'wI':n}.</column>
+The highest military officer, the head of the {ra'ghomquv:n}, is the {la'quv:n}. Someone of rank {Sogh:n} or higher can also be referred to as {ra'wI':n}. The special title {la''a':n} is used for officers in charge of certain specialized units within the military, regardless of their official ranks.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1033,7 +1068,7 @@ Someone of rank {Sogh:n} or higher can also be referred to as {ra'wI':n}.</colum
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.52:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1090,7 +1125,7 @@ Someone of rank {Sogh:n} or higher can also be referred to as {ra'wI':n}.</colum
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yaS:n}, {pa':n:1}, {-mey:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1338,7 +1373,7 @@ Someone of rank {Sogh:n} or higher can also be referred to as {ra'wI':n}.</colum
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yay:n:2}, {mIr:n:2}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1579,7 +1614,7 @@ Maltz thought there must have been, historically, a connection between this word
       <column name="definition_zh_HK">大會、會議</column>
       <column name="synonyms">{rIp:n}</column>
       <column name="antonyms"></column>
-      <column name="see_also">{yejquv:n}, {yejHaD:n}</column>
+      <column name="see_also">{yejquv:n}, {yejHaD:n}, {yej'an:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1615,14 +1650,14 @@ Maltz thought there must have been, historically, a connection between this word
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{DuSaQ:n}, {'ampaS:n}</column>
-      <column name="notes">This is an organization dedicated to scholastic pursuits or research. The distinction between {yejHaD:n:nolink} and {yej'an:n} is not clear, but {yejHaD:n:nolink} is usually used for larger organizations.[2]</column>
+      <column name="notes">This is an organization dedicated to scholastic pursuits or research. The distinction between {yejHaD:n:nolink} and {yej'an:n} is not clear, but {yejHaD:n:nolink} is usually used for larger organizations. It's not known whether the first syllable is the word {yej:n}, but there could be some historic connection.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{yej:n}, {HaD:v} or {HaD:n:hyp,nolink}</column>
+      <column name="components">{yej:n}?, {HaD:v} or {HaD:n:hyp,nolink}</column>
       <column name="examples">
 ▶ {tlhIngan Hol yejHaD:n}</column>
       <column name="examples_de"></column>
@@ -1721,7 +1756,7 @@ Maltz thought there must have been, historically, a connection between this word
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{DuSaQ:n}, {'ampaS:n}</column>
-      <column name="notes">This is an organization dedicated to scholastic pursuits or research. The distinction between {yej'an:n:nolink} and {yejHaD:n} is not clear, but {yejHaD:n:nolink} is usually used for larger organizations.[1]
+      <column name="notes">This is an organization dedicated to scholastic pursuits or research. The distinction between {yej'an:n:nolink} and {yejHaD:n} is not clear, but {yejHaD:n:nolink} is usually used for larger organizations. It's not known whether the first syllable is the word {yej:n}, but there could be some historic connection.[1]
 
 Do not confuse this with a society in the cultural sense, for which see {nugh:n}.[1]</column>
       <column name="notes_de"></column>
@@ -1730,7 +1765,7 @@ Do not confuse this with a society in the cultural sense, for which see {nugh:n}
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yej:n}?, {'an:v} or {'an:n:hyp,nolink} or a homophonous element</column>
       <column name="examples">
 ▶ {tlhIngan yej'an:n:nolink} would be "a group dedicated to the study of Klingons"[1]</column>
       <column name="examples_de"></column>
@@ -2277,7 +2312,7 @@ Generally, when a verb describing a state of being is used as an imperative, the
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIlo'meH:n:extcan}</column>
-      <column name="notes">There is an idiom, {'up; yIH rur}.</column>
+      <column name="notes">There is an idiom, {'up; yIH rur@@'up:v, yIH:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2692,7 +2727,7 @@ The lyrics are by Lawrence Schoen, and the accompanying music is by Rich Yampell
       <column name="definition_de">Pass auf!</column>
       <column name="definition_fa">توجه کن!</column>
       <column name="definition_sv">Var uppmärksam! [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Отпрати(те) внимание!</column>
+      <column name="definition_ru">Обрати(те) внимание!</column>
       <column name="definition_zh_HK">注意！</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3152,6 +3187,41 @@ An earlier translation of this phrase appears in UPN's Star Trek 25th Anniversar
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">yIn 'eSqa'</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">environmental suit</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{yIn:n}, {'eSqa':n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">yIpIv!</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Be healthy! Get well!</column>
@@ -3471,7 +3541,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/HVOJkR51lBU}</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yIt</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:i</column>
       <column name="definition">walk</column>
       <column name="definition_de">gehen</column>
       <column name="definition_fa">راه رفتن [AUTOTRANSLATED]</column>
@@ -3480,7 +3550,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/HVOJkR51lBU}</column>
       <column name="definition_zh_HK">步行</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qet:v}, {rIgh:v}</column>
+      <column name="see_also">{qet:v}, {rIgh:v}, {lID:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3834,7 +3904,7 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">以尊重或尊重的方式說話 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
-      <column name="antonyms"></column>
+      <column name="antonyms">{vaq:v}, {tIch:v}</column>
       <column name="see_also">{-neS:v:suff}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -4268,7 +4338,8 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {yIyong 'ej pa' yIQam.:sen@@yI-:v, yong:v, 'ej:conj, pa':n:2, yI-:v, Qam:v} "Get in and stand there!"[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4280,7 +4351,7 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {CK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4337,7 +4408,7 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yopwaH:n}, {bID:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4408,7 +4479,7 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yoq:n}, {yIn:n}, {yuQ:n}</column>
       <column name="examples">
 ▶ {tlhIngan wo' yuQmey chovlu'chugh Qo'noS potlh law' Hoch potlh puS. roD 'oHvaD juHqo' ponglu' neH. pa' 'oHtaH vaS'a''e'. tlhIngan qum waw' 'oH. yoq yIn yuQ 'oH Qo'noS'e'. yInSIp voQSIp je ngaS muDDaj.:sen:nolink}
   "The principal planet of the Klingon Empire, Qo'noS is usually referred to as simply "The Homeworld." This is where the Klingon Great Hall is located, the center of the Klingon government. Qo'noS is a class-M planet with an oxygen/nitrogen atmosphere."[1]</column>
@@ -4440,7 +4511,6 @@ In {TNK:src}, this word is used to translate "shirt", and {yIvbeH SeQHa':n:nolin
       <column name="see_also">{Dung:n}, {beb:n}, {bIS'ub:n}, {Hur:n}</column>
       <column name="notes">This word is not used for a removable top, which would be a {yuvtlhe':n} "lid". The other face of an object's {yor:n:nolink} is called its {'aqroS:n:1}.[1]</column>
       <column name="notes_de"></column>
-      <!-- Maybe a reference to Yorick {yorIq:n:name} from Hamlet? -->
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
@@ -4757,7 +4827,7 @@ Some of the known districts on {Qo'noS:n} are:
       <column name="definition_zh_HK">翻轉、反轉</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{DopmoH:v}</column>
       <column name="notes">The verb {yoy:v} does not appear with the suffix {-moH:v} in canon. However, MO approved of {yoymoHwI'} as a bit of technobabble meaning "inverter".[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4765,7 +4835,7 @@ Some of the known districts on {Qo'noS:n} are:
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{yoy:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5044,7 +5114,7 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="synonyms"></column>
       <column name="antonyms">{yuDHa':v}</column>
       <column name="see_also">{jey'naS:n}</column>
-      <column name="notes"></column>
+      <column name="notes">There is an idiom, {yuD; jey'naS rur@@yuD:v, jey'naS:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5111,9 +5181,9 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="definition_sv">omfatta, bestå av, bestå av [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">包括、由...組成 [AUTOTRANSLATED]</column>
-      <column name="synonyms">{'uch:v:2}</column>
+      <column name="synonyms">{'uch:v:3}</column>
       <column name="antonyms"></column>
-      <column name="see_also">{HeySel:n}, {tamler:n}, {'o'rIS:n}</column>
+      <column name="see_also">{HeySel:n}, {tamler:n}, {'o'rIS:n}, {tamlerQeD:n}, {loch:v}</column>
       <column name="notes">This is used for talking about chemistry.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5242,6 +5312,41 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">yup</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">pump</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5394,16 +5499,16 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="definition_sv">Förenade planeters federation (United Federation of Planets)</column>
       <column name="definition_ru">Объединённая федерация планет</column>
       <column name="definition_zh_HK">星際聯邦</column>
-      <column name="synonyms"></column>
+      <column name="synonyms">{yuQjIjQa':n}</column>
       <column name="antonyms"></column>
       <column name="see_also">{DIvI':n}</column>
-      <column name="notes">The United Federation of Planets is often simply called "the Federation" ({DIvI':n}). Another word for it is {yuQjIjQa':n}.</column>
+      <column name="notes">The United Federation of Planets is often simply called "the Federation" ({DIvI':n}). Another word for it is {yuQjIjQa':n:nolink}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is missing from the K-E side of {TKD:src}.</column>
       <column name="components">{yuQ:n}, {jIj:v}, {DIvI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5429,16 +5534,16 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="definition_sv">Förenade planeters federation (United Federation of Planets)</column>
       <column name="definition_ru">Объединённая федерация планет</column>
       <column name="definition_zh_HK">星際聯邦</column>
-      <column name="synonyms"></column>
+      <column name="synonyms">{yuQjIjDIvI':n}</column>
       <column name="antonyms"></column>
       <column name="see_also">{'amerI'qa' SepjIjQa':n}, {tuqjIjQa':n}</column>
-      <column name="notes">Another word for the United Federation of Planets is {yuQjIjDIvI':n} (often shortened to just {DIvI':n}).</column>
+      <column name="notes">Another word for the United Federation of Planets is {yuQjIjDIvI':n:nolink} (often shortened to just {DIvI':n}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is missing from the E-K side of {TKD:src}.</column>
       <column name="components">{yuQ:n}, {jIj:v}, {Qa':n:2,hyp}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>

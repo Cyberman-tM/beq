@@ -71,6 +71,43 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Sa</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">rhyme with</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{pa'jaH:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {B Sa A:sen:nolink} "A rhymes with B"
+▶ {Sachuq A B:sen:nolink} "A and B rhyme"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Sab</column>
       <column name="part_of_speech">v:i</column>
       <column name="definition">decline, deterioriate</column>
@@ -192,7 +229,7 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mI':n}, {vatlh:n:num}, {netlh:n:num}</column>
-      <column name="notes">This word is also spelled {SanID:n:nolink}.
+      <column name="notes">Another variant of this word which is used with roughly equal frequency is {SanID:n:nolink}.
 
 Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thousand" ({bIp:n:num}) which are independent of the word for "thousand".</column>
       <column name="notes_de"></column>
@@ -202,7 +239,20 @@ Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thou
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <!-- Check the linebreaks and page number of the {tlheDDI'...} stanza. -->
+      <column name="examples">
+▶ {ngIq tonSaw' lo':sen:nolink}
+   {SaD law' San chenmoH qeylIS:sen:nolink}
+   {wej boghbogh nuvpu' San chenmoH:sen:nolink}
+  "In one single move,
+   Kahless decided the fate
+   Of thousands, and those to come."[2, p.171]
+▶ {tlheDDI' quvmoHmeH:sen:nolink}
+   {veng HeHDaq lutlha':sen:nolink}
+   {SaD law' nuvpu':sen:nolink}
+  "Thousands followed him
+   to the edge of the city,
+   to bid him farewell."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -214,7 +264,7 @@ Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thou
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -285,6 +335,41 @@ Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thou
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Saghan</column>
+      <column name="part_of_speech">n:num</column>
+      <column name="definition">billion</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{mI':n}, {'uy':n}</column>
+      <column name="notes">This is a short-scale billion (i.e., one thousand million).</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">The astronomer Carl Sagan was famous for saying "billions and billions".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -360,7 +445,7 @@ Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thou
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SaHHa'</column>
-      <column name="part_of_speech">v:t,deriv</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">be unconcerned (about)</column>
       <column name="definition_de">unbekümmert</column>
       <column name="definition_fa">بی تردید (در مورد) [AUTOTRANSLATED]</column>
@@ -761,6 +846,111 @@ This word is not used for sort order.[3]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Santlhar</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">silicon</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Do'ol:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Silicon Valley is located in Santa Clara.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">San'emDer</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">plant</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tI:n}, {Qechjem:n}, {por:n}</column>
+      <column name="notes">This refers to an individual plant, typically with stems, leaves, etc. It is not used for fungi or algae.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">San'on</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">bit</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hut'on:n}</column>
+      <column name="notes">This is a unit of information in computer science.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Sang</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">obliterate</column>
@@ -851,7 +1041,8 @@ This word is not used for sort order.[3]</column>
       <column name="hidden_notes">Land "shark" from SNL.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {SaqtaHvIS toQDuj wa'vatlh loS vI' jav chorgh 'uj 'ab 'oH:sen:nolink} "Landing Formation Height: 36.46 M"[3]</column>
+▶ {SaqtaHvIS toQDuj wa'vatlh loS vI' jav chorgh 'uj 'ab 'oH:sen:nolink} "Landing Formation Height: 36.46 M"[3]
+▶ {tera' jar Soch, DIS wa' Hut jav Hut, maSDaq SaqmeH Qu' wa'DIch HochHom turlu'taHvIS, wej logh lengwI'pu' pa'mey 'oH Apollo wa'maH wa' ra'ghom bobcho' Columbia'e'.:sen:nolink} "The Apollo 11 Command Module, 'Columbia,' was the living quarters for the three-person crew during most of the first manned lunar landing mission in July 1969."[4]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -863,7 +1054,7 @@ This word is not used for sort order.[3]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {HQ 10.4, Dec. 2001:src}, [3] {BoP:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {HQ 10.4, Dec. 2001:src}, [3] {BoP:src}, [4] {Smithsonian GO FLIGHT app:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1119,7 +1310,7 @@ This word is not used for sort order.[3]</column>
       <column name="entry_name">Sar</column>
       <column name="part_of_speech">n</column>
       <column name="definition">variety</column>
-      <column name="definition_de">Vielfalt</column>
+      <column name="definition_de">Variante, Sorte</column>
       <column name="definition_fa">تنوع [AUTOTRANSLATED]</column>
       <column name="definition_sv">variation</column>
       <column name="definition_ru"></column>
@@ -1402,6 +1593,41 @@ This word is not used for sort order.[3]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Savvanwer</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">nonave</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{romta':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Saw</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">marry (husband does this)</column>
@@ -1434,6 +1660,42 @@ This word is not used for sort order.[3]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2017.07.13:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <!-- "手禮" but possibly a coincidence. -->
+      <column name="entry_name">Sawlay</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">gesture</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">To use a gesture is {Sawlay lo':sen@@Sawlay:n, lo':v} or else a specific gesture verb (such as {SIq:v}, {qay:v}, etc.).</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Maltz didn't know a generic verb for this.[1]</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1560,7 +1822,7 @@ This word is not used for sort order.[3]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Say':v}, {-moH:v}, {-wI':v}, {tlhagh:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1644,6 +1906,41 @@ This word is not used for sort order.[3]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {HQ 1.3, Sept. 1992:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Say'qIS</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">dust, powder</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Do'ol:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2028,7 +2325,7 @@ This can be used for a "settings" or "preferences" page in software, but not ind
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{SeH:v}, {-wI':v}, {pat:n}</column>
       <column name="examples">
 ▶ {leng Dotlh SeHwI' pat:n}
 ▶ {muD ngeb SeHwI' pat:n}</column>
@@ -2396,7 +2693,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
 ▶ {Sa'Qej Sep:n}
 ▶ {taq'ev Sep:n}
 ▶ {voSpegh Sep:n}
-▶ Morska</column>
+▶ {mo'rISqa':n}</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2431,7 +2728,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naghboch:n}</column>
-      <column name="notes">There is an idiom, {let mInDu'Daj; Separmey rur}.</column>
+      <column name="notes">There is an idiom, {let mInDu'Daj; Separmey rur@@let:v, mIn:n, -Du':n, -Daj:n, Separ:n, -mey:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2718,7 +3015,7 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{SeS:n}, {ghItwI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2732,6 +3029,41 @@ In {TNK:src}, the category title for "Countries" was translated {Sepmey tlhab:n:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2018:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SeSor</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">subject</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{'ovmay:n}, {vI'Hop:n}</column>
+      <column name="notes">This is a grammar term.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2860,7 +3192,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Sey:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3009,11 +3341,11 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
-      <!-- http://www.uitgeverij.cc/publications/paqbatlh/ -->
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
+      <!-- http://www.uitgeverij.cc/publications/paqbatlh/ -->
       <column name="source">[1] {paq'batlh website:src}, [2] {KLI mailing list 2011.10.24:src}</column>
     </table>
     <table name="mem">
@@ -3031,13 +3363,13 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="see_also">{Se'vIr:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
-      <!-- Confirmed from MO by 'ISqu'. -->
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
+      <!-- Confirmed from MO by 'ISqu'. -->
       <column name="hidden_notes">This is a pun on the name of a well-known Terran publishing house.</column>
-      <column name="components"></column>
+      <column name="components">{Se'vIr:n}, {malja':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3046,11 +3378,11 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
-      <!-- From a msg from Quvar. -->
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
+      <!-- From a msg from Quvar. -->
       <column name="source">[1] {paq'batlh:src}, [2] {KLI mailing list 2011.10.24:src}</column>
     </table>
     <table name="mem">
@@ -3073,7 +3405,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Se':n}, {HablI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3206,16 +3538,25 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="definition_zh_HK">達到 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Hot:v}</column>
+      <column name="see_also">{Hot:v}, {qubbID:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The example sentence from {DSC - Such Sweet Sorrow, Part 2:src} was composed by someone other than Okrand, most probably Robyn Stewart ({Qov:n:name}).</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {juSmeH qochpu'chaj:sen:nolink}
+   {jachtaHvIS je chal luSIch beychaj:sen:nolink}
+   {'ej Qo'noS yav luQonmoH:sen:nolink}
+  "They too started to shout to the heavens
+   For the passage of their comrades,
+   Their howls made Kronos's soil tremble."[2]
+▶ {paqvetlh DaSIchlaH'a'?:sen@@paq:n:1, -vetlh:n, Da-:v, SIch:v, -laH:v, -'a':v}[3]
+▶ {paq vISIch 'e' vInID:sen@@paq:n:1, vI-:v, SIch:v, 'e':n, vI-:v, nID:v} "I reached for the book."[3]
+▶ {tugh mayIttaHvIS qIvDu'maj SIch jaghpu'ma' pIgh.:sen@@tugh:adv, ma-:v, yIt:v, -taH:v, -vIS:v, qIv:n, -Du':n, -maj:n, SIch:v, jagh:n, -pu':n, -ma':n, pIgh:n} "We will wade knee-deep through the ruin of our enemies."[4]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3227,7 +3568,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {KLI mailing list 2019.04.09:src}, [4] {DSC - Such Sweet Sorrow, Part 2:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3425,7 +3766,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{SIj:v:1}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3558,7 +3899,20 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{gheH:v}, {Hat:n}</column>
-      <column name="notes">This is a unit of temperature on a specific scale, not the generic word for a unit of temperature.</column>
+      <column name="notes">This is a unit of temperature on a specific scale, not the generic word for a unit of temperature.
+
+Some reference temperatures for the {SImyon:n:nolink} scale are:
+   0 Simyon = -210°C Freezing Point of Nitrogen
+  96 SImyon = -100°C
+ 100 SImyon =  -95°C
+ 183 SImyon =    0°C Freezing point of water
+ 200 SImyon =   19°C
+ 215 SImyon =   37°C Body temperature (Human/Klingon)
+ 270 SImyon =  100°C Boiling point of water – Earth sea level
+ 273 SImyon =  103°C Boiling point of water – {Qo'noS:n} observatory
+ 300 SImyon =  134°C
+ 500 SImyon =  363°C
+1000 SImyon =  937°C Temperature of molten lava</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3662,6 +4016,76 @@ If an implement is used for an activity typically performed by a finger, a finge
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">SIqwI'</column>
+      <column name="part_of_speech">n:deriv,body</column>
+      <column name="definition">index finger, first finger</column>
+      <column name="definition_de">Zeigefinger</column>
+      <column name="definition_fa">انگشت اشاره، انگشت اول [AUTOTRANSLATED]</column>
+      <column name="definition_sv">pekfinger</column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK">食指、第一根手指 [AUTOTRANSLATED]</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{nItlh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{SIq:v}, {-wI':v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {HQ 10.2, Jun. 2001:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SIqenDInavya'</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Scandinavia</column>
+      <column name="definition_de">Scandinavia</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">SIqral</column>
       <column name="part_of_speech">n:place,fic,alt</column>
       <column name="definition">{SIqral bIQtIq:n}</column>
@@ -3732,41 +4156,6 @@ If an implement is used for an activity typically performed by a finger, a finge
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">SIqwI'</column>
-      <column name="part_of_speech">n:deriv,body</column>
-      <column name="definition">index finger, first finger</column>
-      <column name="definition_de">Zeigefinger</column>
-      <column name="definition_fa">انگشت اشاره، انگشت اول [AUTOTRANSLATED]</column>
-      <column name="definition_sv">pekfinger</column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK">食指、第一根手指 [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{nItlh:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{SIq:v}, {-wI':v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {HQ 10.2, Jun. 2001:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">SIQ</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">endure, bear</column>
@@ -3823,7 +4212,7 @@ If an implement is used for an activity typically performed by a finger, a finge
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{SIQ:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3943,6 +4332,41 @@ If an implement is used for an activity typically performed by a finger, a finge
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2018:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SIrIl</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">hook</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Cyril Ritchard played Captain Hook.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4290,7 +4714,7 @@ If an implement is used for an activity typically performed by a finger, a finge
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">7th</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4523,7 +4947,7 @@ Verb prefixes when {SoH:n:nolink} is the object:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Soj</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:1,food</column>
       <column name="definition">food, drink</column>
       <column name="definition_de">Essen, Getränk</column>
       <column name="definition_fa">غذا نوشیدنی [AUTOTRANSLATED]</column>
@@ -4533,9 +4957,9 @@ Verb prefixes when {SoH:n:nolink} is the object:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Sop:v}, {tlhutlh:v}, {'ep:v}, {vut:v}, {je':v:2}, {ngal:v}, {char:v}, {tlher:v}, {ghoQ:v}, {baQ:v:2}, {DeH:v}, {QaD:v:1}</column>
-      <column name="notes">This word applies to both food and beverages[2], or anything consumed for sustenance.[5] A single dish or course is called a {nay':n}.[2]
+      <column name="notes">This word applies to both food and beverages[2], or anything consumed for sustenance.[4] A single dish or course is called a {nay':n}.[2]
 
-This word carries the idiomatic meaning of "matter, concern, affair". For example, {tlhIngan Soj 'oH; not bIyaj:sen:nolink} means "It is a Klingon matter -- you'll never understand."[3]</column>
+This word carries the idiomatic meaning of "matter, concern, affair", for which see {Soj:n:2}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4545,19 +4969,55 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="components"></column>
       <column name="examples">
 ▶ {yIntaHbogh tlhIngan Soj tlhol jablu'DI' tIvqu'lu'. qagh, ro'qegh'Iwachab, targh tIq Sop 'e' lungIl Humanpu' puS.:sen:nolink}
-  "Klingon food is best when served fresh and live. Few humans dare to eat gagh, rokeg blood pie, or heart of targ."[4]</column>
+  "Klingon food is best when served fresh and live. Few humans dare to eat gagh, rokeg blood pie, or heart of targ."[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">nourishment, sustenance, matter, concern, affair</column>
+      <column name="search_tags">nourishment, sustenance</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKDA:src}, [2] {KGT p.83:src}, [3] {HQ 12.3, p.9, Sept. 2003:src}, [4] {SkyBox 21:src}, [5] {Saarbrücken qepHom'a' 2011:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT p.83:src}, [3] {SkyBox 21:src}, [4] {Saarbrücken qepHom'a' 2011:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Soj</column>
+      <column name="part_of_speech">n:2</column>
+      <column name="definition">matter, concern, affair</column>
+      <column name="definition_de">Angelegenheit, Interesse, Anliegen</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an idiomatic meaning of the word {Soj:n:1}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {tlhIngan Soj 'oH; not bIyaj:sen:nolink} "It is a Klingon matter -- you'll never understand."</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {HQ 12.3, p.9, Sept. 2003:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4579,7 +5039,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Soj:n}, {choH:v}, {-wI':v}</column>
+      <column name="components">{Soj:n:1}, {choH:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4614,7 +5074,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Soj:n:1}, {chuv:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4649,7 +5109,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Soj:n:1}, {naQ:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4684,7 +5144,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Soj:n:1}, {pol:v}, {-meH:v}, {pa':n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4719,7 +5179,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Soj:n}, {qub:v}</column>
+      <column name="components">{Soj:n:1}, {qub:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4754,7 +5214,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Soj:n}, {tetlh:n}</column>
+      <column name="components">{Soj:n:1}, {tetlh:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4789,7 +5249,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">The example appears to be missing a conjunction.</column>
-      <column name="components"></column>
+      <column name="components">{Soj:n:1}, {tlhol:v}</column>
       <column name="examples">
 ▶ {yIntaHbogh tlhIngan Soj tlhol jablu'DI' tIvqu'lu'. qagh, ro'qegh'Iwachab, targh tIq Sop 'e' lungIl Humanpu' puS.:sen:nolink}
   "Klingon food is best when served fresh and live. Few humans dare to eat gagh, rokeg blood pie, or heart of targ."[2]</column>
@@ -4826,7 +5286,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Soj:n}, {vut:v}, {-lu':v}, {-pu':v}, {-bogh:v}</column>
+      <column name="components">{Soj:n:1}, {vut:v}, {-lu':v}, {-pu':v}, {-bogh:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4862,7 +5322,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Soj:n}, {yI-:v}, {DIl:v}</column>
+      <column name="components">{Soj:n:1}, {yI-:v}, {DIl:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5099,7 +5559,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="definition_zh_HK">死亡儀式（領導者） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Heghtay:n}, {cho'tay:n:hyp}, {nol:n}, {'aQvoH:n}</column>
+      <column name="see_also">{Heghtay:n}, {cho'tay:n:hyp}, {'oy'naQ:n}, {nol:n}, {'aQvoH:n}</column>
       <column name="notes">This is a ceremony which either precedes or is the initial part of the Rite of Succession (see {cho'tay:n:hyp}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5134,7 +5594,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="definition_zh_HK">吃、食</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Soj:n}, {ghung:v}, {'ep:v}, {tlhutlh:v}, {je':v:2}</column>
+      <column name="see_also">{Soj:n:1}, {ghung:v}, {'ep:v}, {tlhutlh:v}, {je':v:2}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5352,7 +5812,7 @@ This word carries the idiomatic meaning of "matter, concern, affair". For exampl
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{SoQ:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5459,7 +5919,7 @@ This word can also refer to the "club" suit in a deck of playing cards (see {Deg
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Sor:v}, {-Ha':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5844,7 +6304,7 @@ This word can also refer to the "club" suit in a deck of playing cards (see {Deg
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is only spoken in Klingon in {KCD:src}, with no English translation. It is unclear whether it's one word or two.</column>
-      <column name="components"></column>
+      <column name="components">{SoS:n}, {taj:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -6197,7 +6657,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">On {SkyBox 33:src}, the last two Klingon sentences were not translated into English: "A cloaking device which didn't disrupt weaponry was installed in one experimental ship. This ship was demonstrated on Stardate 9521.6 but it was destroyed."</column>
-      <column name="components"></column>
+      <column name="components">{So':v}, {-wI':v}</column>
       <column name="examples">
 ▶ {So'wI':sen:nolink}
    {Hoch tlhIngan DujDaq So'wI' jomlu'. puvtaHbogh Duj ngabmoHlaw' So'wI'. boq lucherDI' tlhIngan wo' romuluS Hov wo' je So'wI' cham Suqpu' tlhIngan wo'. chaq tampu'. chaq romuluSnganpu'vaD pIvghor cham lunobpu' tlhInganpu'. HoS law'qu' natlhmo' So'wI' QaptaHvIS So'wI' QaplaHbe' nuHmey. ngongmeH wa' DujDaq nuHmey nISbe'bogh So'wI' jomlu'pu'. HovpoH Hut vagh cha' wa' vI' jav Dujvam 'aghlu'pu' 'ach Qaw'lu'pu'.:sen:nolink}
@@ -6236,7 +6696,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{So'wI':n}, {DaH:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -6474,7 +6934,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Se':n}</column>
-      <column name="notes">This can also be used to mean "frequency" in constructions such as {wanI' SubmaH:n} or {yay SubmaH:n}.</column>
+      <column name="notes">This can also be used to mean "frequency" in constructions such as {wanI' SubmaH:n} or {yay SubmaH:n}. See {pe''egh:v} for an explanation of how to say something like "4 out of 5 points".</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -6516,7 +6976,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Sub:n}, {-pu':n}, {vaS:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -6580,7 +7040,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="definition_zh_HK">綠色、藍色、黃色</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Doq:v}, {nguv:v}, {SuD:v:2}</column>
+      <column name="see_also">{Doq:v}, {nguv:v}, {SuD:v:2}, {Haw:v}, {'al:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6615,7 +7075,7 @@ This verb is also used for the encryption of data.[3]</column>
       <column name="definition_zh_HK">賭博、抓住機會、冒險 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mI' nagh:n}, {SuD:v:1}</column>
+      <column name="see_also">{mI' nagh:n}, {SuD:v:1}, {Haw:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7175,7 +7635,7 @@ The expression {jISum:sen:nolink} has an idiomatic philosophical meaning, "I'm i
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Surchem</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:deriv</column>
       <column name="definition">force field</column>
       <column name="definition_de">Kraftfeld</column>
       <column name="definition_fa">درست نیروی [AUTOTRANSLATED]</column>
@@ -7192,7 +7652,7 @@ The expression {jISum:sen:nolink} has an idiomatic philosophical meaning, "I'm i
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Sur:n:hyp}, {chem:n:hyp}</column>
+      <column name="components">{Surma':n}, {chem:n:hyp}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7241,6 +7701,111 @@ The expression {jISum:sen:nolink} has an idiomatic philosophical meaning, "I'm i
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SurIna'ma</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Suriname</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Surma'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">force (physics concept)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Surmen:n}, {wa'lay:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Based on back-derivation from {Surchem:n}, "force" would've been {Sur:n:hyp,nolink}. The other part is from "F = ma".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Surmen</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">pressure</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Surma':n}</column>
+      <column name="notes">This is a physics term.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Force ({Surma':n}) applied per unit area ({men:v}).</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7396,7 +7961,7 @@ This can also be used for blowing out a candle. Unlike with {jo':v}, air gets ou
       <column name="definition_zh_HK">服裝 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HIp:n}, {mop:n}, {jech:n}</column>
+      <column name="see_also">{HIp:n}, {mop:n}, {jech:n}, {rejghun:n}, {weSjech:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7606,7 +8171,7 @@ This can also be used for blowing out a candle. Unlike with {jo':v}, air gets ou
       <column name="definition_zh_HK">談判</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qI':v}, {mab:n}, {rojmab:n}, {rojmab qep:n}</column>
+      <column name="see_also">{qI':v:1}, {mab:n:1}, {rojmab:n}, {rojmab qep:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8117,7 +8682,7 @@ This can also be used for blowing out a candle. Unlike with {jo':v}, air gets ou
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">pig</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>

@@ -1018,7 +1018,7 @@ The imperative verb prefix when {chaH:n:nolink} is the object is {tI-:v:pref}.</
       <column name="definition_zh_HK">隨著蝙蝠的結束向上推 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms">{Qach:v}</column>
-      <column name="see_also">{betleH:n}, {jop:v}, {way':v}, {ngol:v}, {lev:v}, {DIj:v:1}, {jIrmoH:v}, {baQ:v:1}</column>
+      <column name="see_also">{betleH:n}, {jop:v:1}, {way':v}, {ngol:v}, {lev:v}, {DIj:v:1}, {jIrmoH:v}, {baQ:v:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1046,7 +1046,7 @@ The imperative verb prefix when {chaH:n:nolink} is the object is {tI-:v:pref}.</
       <column name="entry_name">char</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be slimy</column>
-      <column name="definition_de">schleimig</column>
+      <column name="definition_de">schleimig sein</column>
       <column name="definition_fa">باریک [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara slemmig, vara hal</column>
       <column name="definition_ru"></column>
@@ -1095,7 +1095,7 @@ The imperative verb prefix when {chaH:n:nolink} is the object is {tI-:v:pref}.</
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">There have been a number of conquerors named Charles.</column>
+        <column name="hidden_notes">There have been a number of conquerors named Charles. Also, "Charge!" is a common battle cry.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {charghbej vIt.:sen}
@@ -1853,7 +1853,7 @@ A {chaw':n:nolink} shows that you are officially or legally allowed to do or get
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">2nd</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -2561,7 +2561,7 @@ Also, in Spanish, "parpar" is the sound made by a duck.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{cha':n:num}, {qab:n}, {-Du':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2686,7 +2686,7 @@ Also, in Spanish, "parpar" is the sound made by a duck.</column>
       <column name="entry_name">chech</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be drunk, intoxicated</column>
-      <column name="definition_de">betrunken</column>
+      <column name="definition_de">betrunken sein</column>
       <column name="definition_fa">مست، مست شود [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara full, vara berusad</column>
       <column name="definition_ru">быть пьяным, быть одурманенным, страдать от интоксикации</column>
@@ -2896,9 +2896,11 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="notes_sv"></column>
       <column name="notes_ru">Для математической операции добавления, смотрите {boq:v}.</column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The example Klingon sentence was not written by Marc Okrand, but by an unknown staffer at Decipher. Only the Klingon sentence was published in the {HolQeD:src} article. The English translation comes from the card deck's rulebook.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {DuHIvchugh ghol vaj qaStaHvIS may'vetlh HoSDaq ghob luchel quv ghajbogh tlhInganpu'lI'. (vI'be'.):sen@@Du-:v, HIv:v, -chugh:v, ghol:n, vaj:adv, qaS:v, -taH:v, -vIS:v, may':n, -vetlh:n, HoS:n, -Daq:n, ghob:n, lu-:v, chel:v, quv:n, ghaj:v, -bogh:v, tlhIngan:n, -pu':n, -lI':n, vI':v, -be':v}
+  "If an opponent attacks you, during that battle your Klingons with Honor add INTEGRITY to STRENGTH. (Not cumulative.)"[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2910,7 +2912,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Star Trek Customizable Card Game - Fajo Collection:src} (reprinted in {HQ 9.4, p.16, Dec. 2000:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3073,7 +3075,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{chenmoH:v}, {-lu':v}, {-meH:v}, {Daq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3469,7 +3471,7 @@ The verb {ver:v:1} can also be used to talk about tornadoes and whirlwinds.</col
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Its capital city is {pIra'Ha:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3574,13 +3576,14 @@ The verb {ver:v:1} can also be used to talk about tornadoes and whirlwinds.</col
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chetvI':n:2}, {DuS:n}</column>
-      <column name="notes">There is an idiom, {lo'laHbe'; chetvI' chIm rur}.
+      <column name="notes">There is an idiom, {lo'laHbe'; chetvI' chIm rur@@lo'laHbe':v, chetvI':n:1, chIm:v, rur:v}.
+
 
 The distinction between a {chetvI':n:nolink} and a {DuS:n} has to do with how the projectile is loaded.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Есть идиома, {lo'laHbe'; chetvI' chIm rur}.
+      <column name="notes_ru">Есть идиома, {lo'laHbe'; chetvI' chIm rur@@lo'laHbe':v, chetvI':n:1, chIm:v, rur:v}.
 
 Различие между {chetvI':n:nolink} и {DuS:n} делается в связи с тем, как снаряд был загружен.[2]</column>
       <column name="notes_zh_HK"></column>
@@ -3912,7 +3915,7 @@ This word is defined in {TKD:src} as "rule, reign, run" and additionally in {KGT
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{chIj:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3971,7 +3974,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="entry_name">chIm</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be empty, deserted, uninhabited</column>
-      <column name="definition_de">leer, verwüstet, unbewohnt</column>
+      <column name="definition_de">leer sein, verwüstet sein, unbewohnt sein</column>
       <column name="definition_fa">خالی، بیابان، غیر مسکونی [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara tom, vara övergiven, vara obebodd, vara förbrukad, vara</column>
       <column name="definition_ru">Быть пустым, быть опустевшим, быть необитаемым</column>
@@ -4115,7 +4118,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="entry_name">chIS</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be white</column>
-      <column name="definition_de">weiß</column>
+      <column name="definition_de">weiß sein</column>
       <column name="definition_fa">سفید باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara vit</column>
       <column name="definition_ru">быть белым</column>
@@ -4164,7 +4167,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">The first part of the example sentence was a lip-match for {mughojmoH parmaqqaywI'}. The second part was a lip-match for a sentence beginning with {naDevvo'}.</column>
+      <column name="hidden_notes">The first part of the example sentence was a lip-match for {mughojmoH parmaqqaywI':sen@@mu-:v, ghojmoH:v, parmaqqay:n, -wI':n}. The second part was a lip-match for {'ej jIHvo' nIHDI' jIbup:sen@@'ej:conj, jIH:n:1h, -vo':n, nIH:v, -DI':v, jI-:v, bup:v}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {potlhmo' batlh, vIqawba', 'ej chIvo' neH chIw vum'e'.@@potlh:v, -mo':v, batlh:n, vI-:v, qaw:v, -ba':v, 'ej:conj, chIvo':n, neH:adv, chIw:v, vum:n, -'e':n} "Because you care about honor. And this man has none."</column>
@@ -4489,7 +4492,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{choH:n}, {lIS:v}, {-bogh:v}, {Hap:n}, {-'e':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4754,7 +4757,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="entry_name">chong</column>
       <column name="part_of_speech">v:1,is</column>
       <column name="definition">be vertical</column>
-      <column name="definition_de">vertikal, senkrecht</column>
+      <column name="definition_de">senkrecht sein</column>
       <column name="definition_fa">عمودی</column>
       <column name="definition_sv">vara vertikal</column>
       <column name="definition_ru">Быть вертикальным</column>
@@ -4789,7 +4792,7 @@ This verb can be used for misplacing your keys, but also for things like losing 
       <column name="entry_name">chong</column>
       <column name="part_of_speech">v:2,slang,is</column>
       <column name="definition">be profound, be thorough, be careful; be good, be excellent</column>
-      <column name="definition_de">gründlich, sorgfältig, vorsichtig; gut, ausgezeichnet</column>
+      <column name="definition_de">gründlich sein, sorgfältig sein, vorsichtig sein; gut sein, ausgezeichnet sein</column>
       <column name="definition_fa">عمیق باشید، کامل باشید، مراقب باشید خوب بودن، عالی بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara grundlig, vara ordentlig, vara omsorgsfull, vara noggrann</column>
       <column name="definition_ru"></column>
@@ -5177,7 +5180,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">8th</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -5260,7 +5263,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="entry_name">chorghSaD qelI'qam HIvchuq'e' vInoH.</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Estimating attack range in 8,000 kellicams.</column>
-      <column name="definition_de">Ich schätze, dass wir uns in 8000 Kellicams gegenseitig angreifen.</column>
+      <column name="definition_de">Ich schätze die Angriffsentfernung auf 8.000 Kellicams.</column>
       <column name="definition_fa">برآورد محدوده حمله در 8000 کلیشه. [AUTOTRANSLATED]</column>
       <column name="definition_sv">Beräkna attackområdet i 8 000 kellikamer. [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -5861,7 +5864,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="entry_name">chum</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be colourful</column>
-      <column name="definition_de">farbig, bunt</column>
+      <column name="definition_de">bunt sein</column>
       <column name="definition_fa">رنگارنگ بودن</column>
       <column name="definition_sv">vara färgstark [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -5897,7 +5900,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="entry_name">chun</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be innocent</column>
-      <column name="definition_de">unschuldig</column>
+      <column name="definition_de">unschuldig sein</column>
       <column name="definition_fa">بی گناه بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara oskyldig</column>
       <column name="definition_ru">быть невинным</column>
@@ -6160,7 +6163,7 @@ If the person you're speaking to is your superior, consider adding {-neS:v:suff}
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{chuq'a':n}, {legh:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -6468,7 +6471,7 @@ In the {TNG:src} novel {Power Hungry:src}, this was described as a four-stringed
       <column name="entry_name">chuv</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be left over</column>
-      <column name="definition_de">übrig</column>
+      <column name="definition_de">übrig bleiben</column>
       <column name="definition_fa">باقی مانده است [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara kvar, vara över, vara överbliven</column>
       <column name="definition_ru">быть оставленным</column>
@@ -6649,7 +6652,7 @@ Watch Gowron say {chuyDaH yIlaQ!:sen:nolink}: {YouTube video:url:http://youtu.be
       <column name="entry_name">chu'</column>
       <column name="part_of_speech">v:1,is</column>
       <column name="definition">be new</column>
-      <column name="definition_de">neu</column>
+      <column name="definition_de">neu sein</column>
       <column name="definition_fa">جدید</column>
       <column name="definition_sv">vara ny</column>
       <column name="definition_ru">Быть новым</column>

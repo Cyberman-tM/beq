@@ -45,10 +45,10 @@
       <column name="definition_zh_HK">抓</column>
       <column name="synonyms"></column>
       <column name="antonyms">{'uchHa':v}</column>
-      <column name="see_also">{DoS:n}</column>
-      <column name="notes">This verb can also be used to mean "lock" in the sense of locking on a target: {DoS 'uchta':sen@@DoS:n, 'uch:v:1, -ta':v} "he/she locked on the target".[2]
+      <column name="see_also"></column>
+      <column name="notes">When applied to weapons systems, this is used for locking on a target. See {'uch:v:2}.
 
-When the object of this verb is {'olQan:n}, it can often be translated "occupy" or "take up".</column>
+When the object of this verb is {'olQan:n}, it can often be translated "occupy" or "take up".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -62,18 +62,54 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">lock, target, occupy, take up</column>
+      <column name="search_tags">occupy, take up</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}, [2] {qep'a' 2017:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {qep'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'uch</column>
-      <column name="part_of_speech">v:2,t_c,slang</column>
+      <column name="part_of_speech">v:2,t_c</column>
+      <column name="definition">lock on (a target)</column>
+      <column name="definition_de">ausrichten (Ziel)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{DoS:n}, {buS:v}</column>
+      <column name="notes">This is an application of {'uch:v:1} to a weapons systems context.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {DoS 'uchta':sen@@DoS:n, 'uch:v:2, -ta':v} "he/she locked on the target"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2017:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'uch</column>
+      <column name="part_of_speech">v:3,t_c,slang</column>
       <column name="definition">include, consist of, be composed of</column>
       <column name="definition_de">enthalten, zusammengesetzt aus</column>
       <column name="definition_fa">شامل، شامل، تشکیل می شود [AUTOTRANSLATED]</column>
@@ -82,7 +118,7 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="definition_zh_HK">包括、由...組成 [AUTOTRANSLATED]</column>
       <column name="synonyms">{yugh:v}</column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{tamlerQeD:n}</column>
       <column name="notes">This is used for talking about chemistry.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -108,7 +144,7 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'uchHa'</column>
-      <column name="part_of_speech">v:t,deriv</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">let go of</column>
       <column name="definition_de">loslassen</column>
       <column name="definition_fa">بیایید [AUTOTRANSLATED]</column>
@@ -159,7 +195,9 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">The word {'uD'a':n:nolink} appears in {HQ 1.3, Sept. 1992:src}, where it is also defined as just "laser".</column>
+      <column name="hidden_notes">The word {'uD'a':n:nolink} appears in {HQ 1.3, Sept. 1992:src}, where it is also defined as just "laser".
+
+Shintaro Uda was a co-inventor of the beam antenna.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -195,7 +233,7 @@ When the object of this verb is {'olQan:n}, it can often be translated "occupy" 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'uD:n}, {Haqtaj:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -621,7 +659,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="definition_zh_HK">有資格</column>
       <column name="synonyms"></column>
       <column name="antonyms">{'umHa':v}</column>
-      <column name="see_also">{po':v}, {Han:v}</column>
+      <column name="see_also">{po':v}, {Han:v}, {Hen:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -722,6 +760,41 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'umber</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">ecosystem, environment</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{but:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Umberto Eco.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'un</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">pot (for food preparation) (general term)</column>
@@ -775,7 +848,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'un:n}, {naQ:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -810,7 +883,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'un:n}, {quD:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -908,7 +981,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'eyHa':v}, {yIH:n}, {ngIm:v}, {natlh:v:2}</column>
-      <column name="notes"></column>
+      <column name="notes">There is an idiom, {'up; yIH rur@@'up:v, yIH:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -942,7 +1015,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="definition_zh_HK">吹哨</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bom:v}, {bo'Degh:n}, {Huy:v}</column>
+      <column name="see_also">{bom:v}, {bo'Degh:n}, {Huy:v:1}</column>
       <column name="notes">If there's an object, it's the thing being whistled.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1126,7 +1199,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is missing from the K-E side of {TKDA:src}.</column>
-      <column name="components"></column>
+      <column name="components">{'ur:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1196,7 +1269,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'urgh:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1370,7 +1443,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">The "yuzu" plant is used in the creation of some sauces in Asian cuisine.</column>
+      <column name="hidden_notes">One type of lighter soy sauce is called "usukuchi shoyu" (薄口醤油) in Japanese. Also, the "yuzu" plant is used in the creation of some sauces in Asian cuisine. However, if this word is a pun, it wasn't due to Okrand, but the writers of {DS9 - Melora:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1610,7 +1683,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="definition_zh_HK">百萬</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bIp:n:num}</column>
+      <column name="see_also">{mI':n}, {bIp:n:num}, {Saghan:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1687,8 +1760,10 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">A "Doppelgänger" is the double of a person from the mirror universe.</column>
-      <column name="components">{'u':n}, {Dop:v}</column>
+      <column name="hidden_notes">A "Doppelgänger" is the double of a person from the mirror universe.
+
+At {qep'a' 2019:src}, the note expanding {Dop:v:1} to {Dop:v:2} alludes to {'u' Dop:n:nolink} being based on the "opposite" meaning.</column>
+      <column name="components">{'u':n}, {Dop:v:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1701,7 +1776,7 @@ Drei {'uj:n:nolink} sind etwa 3 Fuß 5 Zoll, fünf {'uj:n:nolink} sind etwa 5 Fu
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.01.08:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.01.08:src}, [2] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

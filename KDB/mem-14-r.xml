@@ -871,7 +871,7 @@ This verb can also be used to express the concept that two things have the same 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{rar:v}, {-chuq:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -890,7 +890,7 @@ This verb can also be used to express the concept that two things have the same 
       <column name="_id"></column>
       <column name="entry_name">rarwI'</column>
       <column name="part_of_speech">n:deriv</column>
-      <column name="definition">connector</column>
+      <column name="definition">connector, plug</column>
       <column name="definition_de">Verbinder</column>
       <column name="definition_fa">اتصال [AUTOTRANSLATED]</column>
       <column name="definition_sv">kontakt, uttag, stickpropp, koppling</column>
@@ -927,7 +927,7 @@ This verb can also be used to express the concept that two things have the same 
       <column name="part_of_speech">n</column>
       <column name="definition">table</column>
       <column name="definition_de">Tisch</column>
-      <column name="definition_fa">جدول [AUTOTRANSLATED]</column>
+      <column name="definition_fa">میز</column>
       <column name="definition_sv">bord</column>
       <column name="definition_ru">стол, таблица</column>
       <column name="definition_zh_HK">臺</column>
@@ -976,7 +976,7 @@ This verb can also be used to express the concept that two things have the same 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{raS:n}, {De'wI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1039,7 +1039,7 @@ This verb can also be used to express the concept that two things have the same 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Its capital city is {maSquwa':n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1182,7 +1182,7 @@ There is a Klingon idiom, {'IQ; rav rur@@'IQ:v, rav:n:1, rur:v}.[2]</column>
       <column name="definition_zh_HK">最低限度 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms">{'aqroS:n:2}</column>
-      <column name="see_also"></column>
+      <column name="see_also">{rav ...:sen}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1207,6 +1207,78 @@ There is a Klingon idiom, {'IQ; rav rur@@'IQ:v, rav:n:1, rur:v}.[2]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {BoP:src}, [2] {Klingon Monopoly:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rav ...</column>
+      <column name="part_of_speech">sen:alt</column>
+      <column name="definition">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_de">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_fa">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_sv">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_ru">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_zh_HK">{rav ... 'aqroS ...:sen}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rav ... 'aqroS ...</column>
+      <column name="part_of_speech">sen:phr</column>
+      <column name="definition">between ... and ...</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is used to express the idea of some (perhaps unknown) point between two ends of a range. To express the full stretch of the entire range, use {qubbID:n} instead.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {rav cha' 'uj(mey) 'aqroS loS 'uj(mey) 'ab:sen@@rav ...:sen, cha':n:num, 'uj:n, -mey:n, 'aqroS ...:sen, loS:n:1,num, 'uj:n, -mey:n, 'ab:v} "has a length between two and four ujes" (it's at least two ujes and no more than four)
+▶ {rav DaSjaj 'aqroS buqjaj maghom:sen@@rav:n:2, DaSjaj:n, 'aqroS:n:2, buqjaj:n, ma-:v, ghom;v} "we meet between Monday and Friday", "we meet at some point between Monday and Friday"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1299,7 +1371,7 @@ The first element of this word is {rav:n:1} "floor", but the second element is u
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Ducks in a "row".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1314,6 +1386,41 @@ The first element of this word is {rav:n:1} "floor", but the second element is u
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {HQ 10.4, Dec. 2001:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rayQeD</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">genetics</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{no'QeD:n}, {QeD:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1723,7 +1830,7 @@ For other polygons with equal sides/angles, {HoS:v} is used instead of {tIQ:v:no
       <column name="notes_ru">Относится к кому-то с рангом {Sogh:n} или выше.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ra':v:1}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2039,7 +2146,7 @@ For other polygons with equal sides/angles, {HoS:v} is used instead of {tIQ:v:no
       <column name="notes_ru">Туристический напиток</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{reghuluS:n}, {'Iw HIq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2067,14 +2174,14 @@ For other polygons with equal sides/angles, {HoS:v} is used instead of {tIQ:v:no
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">There is an idiom, {tun; reghuluS 'Iwghargh rur}.</column>
+      <column name="notes">There is an idiom, {tun; reghuluS 'Iwghargh rur@@tun:v, reghuluS 'Iwghargh:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Есть идиома, {tun; reghuluS 'Iwghargh rur}.</column>
+      <column name="notes_ru">Есть идиома, {tun; reghuluS 'Iwghargh rur@@tun:v, reghuluS 'Iwghargh:n, rur:v}.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{reghuluS:n}, {'Iwghargh:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2182,7 +2289,7 @@ For other polygons with equal sides/angles, {HoS:v} is used instead of {tIQ:v:no
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Quj:v}, {ghet:v}</column>
-      <column name="notes">The difference between this and {Quj:v} is that this refers to unstructured play, whereas {Quj:v:nolink} refers to structured play.[2]</column>
+      <column name="notes">The difference between this and {Quj:v} is that this refers to unstructured play, whereas {Quj:v:nolink} refers to structured play. This verb does not take {'e':n:pro} as its object.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2766,6 +2873,41 @@ o      <column name="definition_sv">Det är alltid de modiga som dör.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rejghun</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">undergarments, underwear</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Sut:n}</column>
+      <column name="notes">This refers to underwear in general. To be more specific, say {rejghun yopwaH bID:n@@rejghun:n, yopwaH bID:n}, etc.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rejmorgh</column>
       <column name="part_of_speech">n</column>
       <column name="definition">worrywart</column>
@@ -3263,6 +3405,41 @@ For other units of time, {ret:n:nolink} is used.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rev</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">quote</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is used for citing the speech or writing of someone else.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Reference".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rewbe'</column>
       <column name="part_of_speech">n:being</column>
       <column name="definition">citizen</column>
@@ -3400,6 +3577,41 @@ For other units of time, {ret:n:nolink} is used.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rIb</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be spread, spread out</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This means to be spread out like a deck of cans fanned on a table or peanut butter on a piece of bread.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">fanned</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3758,6 +3970,41 @@ The reflexive form of this verb has a special meaning. See the example below, an
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rImbey</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">hormone</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rIn</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be accomplished, finished</column>
@@ -3844,7 +4091,7 @@ This verb is used with the suffix {-taH:v} to form {rIntaH:v}, a construction us
       <column name="definition_zh_HK">理事會、大會 [AUTOTRANSLATED]</column>
       <column name="synonyms">{yej:n}</column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{quprIp:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3866,6 +4113,41 @@ This verb is used with the suffix {-taH:v} to form {rIntaH:v}, a construction us
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rIq</column>
+      <column name="part_of_speech">v:i</column>
+      <column name="definition">pioneer, break through, innovate</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{'ogh:v}</column>
+      <column name="notes">This would apply to a scientific breakthrough or discovery, but not to, say, setting a new record in a bat'leth twirling competition.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4022,7 +4304,7 @@ This verb is used with the suffix {-taH:v} to form {rIntaH:v}, a construction us
       <column name="definition_zh_HK">顏料、油漆、染料 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nguv:v}, {DIj:v:2}, {rItlh naQ:n}, {nagh beQ:n}, {vol:n}, {ngoH:v:2}, {chum:v}</column>
+      <column name="see_also">{nguv:v}, {DIj:v:2}, {rItlh naQ:n}, {nagh beQ:n}, {vol:n}, {ngoH:v:2}, {chum:v}, {qalmuS:n}</column>
       <column name="notes">There is no noun in Klingon meaning "color".[1, p.81]
 
 This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
@@ -4067,7 +4349,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{rItlh:n}, {naQ:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4102,7 +4384,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{rItlh:n}, {'echlet:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4329,6 +4611,41 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rob'agh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">hologram</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tojbogh pa':n}, {'otlh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">roD</column>
       <column name="part_of_speech">adv</column>
       <column name="definition">customarily, habitually, regularly</column>
@@ -4361,6 +4678,41 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">roDSer</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">dimension</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qIr'a':n}, {tlhey'at:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4584,7 +4936,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="definition_zh_HK">和平協議</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qI':v}, {mab:n}, {Sutlh:v}</column>
+      <column name="see_also">{qI':v:1}, {mab:n:1}, {Sutlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4592,7 +4944,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{roj:n}, {mab:n}</column>
+      <column name="components">{roj:n}, {mab:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4726,7 +5078,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="definition_zh_HK">符合 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qI':v}</column>
+      <column name="see_also">{qI':v:1}</column>
       <column name="notes">This word is also used by Klingon grammarians to refer to the rule that governs the use of pronominal prefixes, a rule Federation grammarians call "agreement".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4748,6 +5100,41 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="search_tags_ru">соглашение</column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}, [2] {KGT p.172:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">romta'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">octave</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Savvanwer:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4804,7 +5191,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="notes_ru">Считается слишком сильнодействующим для туристов</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{romuluS:n}, {HIq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4874,7 +5261,7 @@ This also refers to ink, as for a rubber stamp ({toqwIn:n}).[2]</column>
       <column name="notes_ru">Также назван {HoHwI':n} для краткости.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{romuluSngan:n}, {Sam:v}, {-bogh:v}, {'ej:conj}, {HoH:v}, {-bogh:v}, {nejwI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5200,7 +5587,7 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ropyaH:n}, {qach:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5319,6 +5706,41 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rorgh</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be fantasy</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lut:n}, {torSIv:n}</column>
+      <column name="notes">This is "be fantastic" in the fantasy sense; it does not mean "be wonderful, terrific".</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">fiction, fantastic</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5534,6 +5956,42 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- It's not clear what *{roSqa'} might mean. -->
+      <column name="entry_name">roSqa'QeD</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">archaeology</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">archeology</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rotlh</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be tough</column>
@@ -5711,7 +6169,7 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ruch</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t</column>
       <column name="definition">proceed, go ahead, do it</column>
       <column name="definition_de">vorgehen, loslegen, etwas tun</column>
       <column name="definition_fa">ادامه دهید، پیش بروید، انجام دهید [AUTOTRANSLATED]</column>
@@ -5727,15 +6185,16 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.[2]</column>
+      <column name="hidden_notes">This was used with an object in {Hamlet:src}.
+
+This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.[2]</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {targhlIj yIngagh, yIruch!:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">
-▶ {targhlIj yIngagh, yIruch!:sen} "Действуй, вступай в отношения со своим таргом!"</column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags">okay</column>
       <column name="search_tags_de"></column>
@@ -5863,7 +6322,7 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="definition_zh_HK">反氫</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bIQSIp 'ugh:n}</column>
+      <column name="see_also">{bIQSIp:n}, {bIQSIp 'ugh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5871,7 +6330,7 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{rugh:n}, {bIQSIp:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5888,6 +6347,41 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rugh tem</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">positron</column>
+      <column name="definition_de">Positron</column>
+      <column name="definition_fa">پوزیترون</column>
+      <column name="definition_sv">Positron</column>
+      <column name="definition_ru">Позитрон</column>
+      <column name="definition_zh_HK">正電子</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tem:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{rugh:n}, {tem:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">run</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be short (in stature)</column>
@@ -5897,7 +6391,7 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">做空（身材矮小） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{woch:v}</column>
+      <column name="antonyms">{woch:v}, {tIq:v}</column>
       <column name="see_also">{'ab:v}, {'eS:v}</column>
       <column name="notes">Don't confuse this word with {ngaj:v}.</column>
       <column name="notes_de"></column>
@@ -6124,41 +6618,41 @@ This verb can be applied to aircraft, for which see {ron:v:2}.</column>
 ▶ {boch; ghIch rur@@boch:v, ghIch:n, rur:v}
 ▶ {Dejpu'bogh Hov rur qablIj!:sen}
 ▶ {Dogh; tIghla' rur@@Dogh:v, tIghla':n, rur:v}
-▶ {lo'laHbe'; chetvI' chIm rur@@lo'laHbe':v, chetvI':n:1, chIm:v, rur:v}
 ▶ {ghung; qagh rur@@ghung:v, qagh:n, rur:v}
-▶ {Hem; tlhIngan rur}
-▶ {Hoj; tera'ngan rur}
+▶ {Hem; tlhIngan rur@@Hem:v, tlhIngan:n, rur:v}
+▶ {Hoj; tera'ngan rur@@Hoj:v, tera'ngan:n, rur:v}
 ▶ {HoS; 'Iw rur@@HoS:v, 'Iw:n, rur:v}
 ▶ {HoSghaj; mupwI' rur@@HoSghaj:v, mupwI':n, rur:v}
-▶ {jej; Daqtagh rur}
+▶ {jej; Daqtagh rur@@jej:v, Daqtagh:n, rur:v}
 ▶ {jejHa'; naH taj rur@@jejHa':v, naH taj:n, rur:v}
-▶ {jeD; ghevI' rur}
-▶ {let mInDu'Daj; Separmey rur}
+▶ {jeD; ghevI' rur@@jeD:v, ghevI':n, rur:v}
+▶ {let mInDu'Daj; Separmey rur@@let:v, mIn:n, -Du':n, -Daj:n, Separ:n, -mey:n, rur:v}
+▶ {lo'laHbe'; chetvI' chIm rur@@lo'laHbe':v, chetvI':n:1, chIm:v, rur:v}
 ▶ {lugh; Sor rur@@lugh:v, Sor:n, rur:v}
 ▶ {matlhHa'; romuluSngan rur@@matlhHa':v, romuluSngan:n, rur:v}
-▶ {mIgh; molor rur}
-▶ {naS; norgh rur}
-▶ {nong; vulqangan rur}
-▶ {ngo'; QI'tu' rur}
+▶ {mIgh; molor rur@@mIgh:v, molor:n, rur:v}
+▶ {naS; norgh rur@@naS:v, norgh:n, rur:v}
+▶ {nong; vulqangan rur@@nong:v, vulqangan:n, rur:v}
+▶ {ngo'; QI'tu' rur@@ngo':v, QI'tu':n, rur:v}
 ▶ {puj; bIQ rur@@puj:v, bIQ:n, rur:v}
 ▶ {qan; QI'tu' rur@@qan:v:1, QI'tu':n, rur:v}
-▶ {qej; veqlargh rur}
-▶ {qur; verengan rur}
+▶ {qej; veqlargh rur@@qej:v, veqlargh:n, rur:v}
+▶ {qur; verengan rur@@qur:v, verengan:n, rur:v}
 ▶ {quvHa'; ghe'tor ngan rur@@quvHa':v, ghe'tor:n, ngan:n, rur:v}
 ▶ {ram; ghIlab ghew rur@@ram:v, ghIlab ghew:n, rur:v}
-▶ {Sagh; Ho''oy' rur}
+▶ {Sagh; Ho''oy' rur@@Sagh:v, Ho''oy':n, rur:v}
 ▶ {tam; Hew rur@@tam:v:1, Hew:n, rur:v}
 ▶ {tun; reghuluS 'Iwghargh rur@@tun:v, reghuluS 'Iwghargh:n, rur:v}
 ▶ {tlhab; ngem Ha'DIbaH rur@@tlhab:v, ngem Ha'DIbaH:n, rur:v}
-▶ {tlhIb; toppa' rur}
-▶ {val; Huy' rur}
-▶ {wIH; Hur'Iqngan rur}
-▶ {wov; ghI'boj Sech rur}
-▶ {yuD; jey'naS rur}
+▶ {tlhIb; toppa' rur@@tlhIb:v, toppa':n, rur:v}
+▶ {val; Huy' rur@@val:v, Huy':n, rur:v}
+▶ {wIH; Hur'Iqngan rur@@wIH:v, Hur'Iqngan:n, rur:v}
+▶ {wov; ghI'boj Sech rur@@wov:v, ghI'boj:n, Sech:n, rur:v}
+▶ {yuD; jey'naS rur@@yuD:v, jey'naS:n, rur:v}
 ▶ {yuDHa'; ghIt rur@@yuDHa':v, ghIt:n:0, rur:v}
 ▶ {'IQ; rav rur@@'IQ:v, rav:n:1, rur:v}
 ▶ {'oj; bomwI' rur@@'oj:v, bomwI':n, rur:v}
-▶ {'up; yIH rur}</column>
+▶ {'up; yIH rur@@'up:v, yIH:n, rur:v}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>

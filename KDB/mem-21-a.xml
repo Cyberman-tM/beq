@@ -149,6 +149,41 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'achler</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">nape, scruff, back of neck</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">{mong:n}, {'em:n}, {mong'em:n}</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">nape</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'aD</column>
       <column name="part_of_speech">n</column>
       <column name="definition">vein, artery, blood vessel</column>
@@ -194,7 +229,7 @@
       <column name="definition_zh_HK">有一個長度、衡量 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'uj:n}, {juch:v}, {Saw':v}, {juv:v}</column>
+      <column name="see_also">{'uj:n}, {juch:v}, {Saw':v}, {juv:v}, {men:v}</column>
       <column name="notes">Both {'aD:v:nolink} and {'ab:v} mean "have a length of", but they are used slightly differently. For flat objects such as tabletops, {'aD:v:nolink} is used for one dimension while {juch:v} is used for the other. For long objects, and for height, {'ab:v:nolink} is used instead.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -339,7 +374,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'al</column>
-      <column name="part_of_speech">v:i_c</column>
+      <column name="part_of_speech">v:is</column>
       <column name="definition">float (in/on air)</column>
       <column name="definition_de">treiben, schweben (in/auf Luft)</column>
       <column name="definition_fa">شناور (در / در هوا) [AUTOTRANSLATED]</column>
@@ -349,27 +384,31 @@
       <column name="synonyms"></column>
       <column name="antonyms">{'oq:v}</column>
       <column name="see_also">{puv:v}, {'ay:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This is also used for random numbers, such as when throwing dice ({mI' nagh:n}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">Muhammad Ali said to "float like a butterfly and sting like a bee".</column>
+      <column name="hidden_notes">Muhammad Ali said to "float like a butterfly and sting like a bee".
+
+It's confirmed that this doesn't take an object, and can be used adjectivally (be floating).</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {'al mI':sen@@'al:v, mI':n} "the number is random"[2]
+▶ {mI' 'al:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">random</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}, [2] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -652,6 +691,41 @@
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}, [2] {HQ 4.4, p.11:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'amrI'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">balcony</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1150,6 +1224,41 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'angwIl</column>
+      <column name="part_of_speech">n:inhps,anim</column>
+      <column name="definition">Kos'Karii (single)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{qoSqa'rIy:n:inhpl}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'ap</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be dented</column>
@@ -1203,7 +1312,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'ap:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1300,7 +1409,7 @@
       <column name="definition_zh_HK">案例、容器 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ngaSwI':n}</column>
+      <column name="see_also">{ngaSwI':n}, {vey:n}</column>
       <column name="notes">This is the general term for a small container.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1477,6 +1586,7 @@ Man beachte dass es bei der Wettervorhersage (siehe {muD Dotlh:n}) üblich ist {
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- TODO: Add note about Greek word "across". -->
       <column name="entry_name">'aqroS</column>
       <column name="part_of_speech">n:1</column>
       <column name="definition">bottom surface of a table, ceiling</column>
@@ -1494,7 +1604,6 @@ Man beachte dass es bei der Wettervorhersage (siehe {muD Dotlh:n}) üblich ist {
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <!-- TODO: Add note about Greek word "across". -->
       <column name="hidden_notes">"Across".</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -1513,6 +1622,7 @@ Man beachte dass es bei der Wettervorhersage (siehe {muD Dotlh:n}) üblich ist {
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- TODO: Add note about Greek word "across". -->
       <column name="entry_name">'aqroS</column>
       <column name="part_of_speech">n:2</column>
       <column name="definition">maximum</column>
@@ -1523,7 +1633,7 @@ Man beachte dass es bei der Wettervorhersage (siehe {muD Dotlh:n}) üblich ist {
       <column name="definition_zh_HK">最大 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms">{rav:n:2}</column>
-      <column name="see_also">{vuS:v}</column>
+      <column name="see_also">{vuS:v}, {'aqroS ...:sen}</column>
       <column name="notes">This word is used to specify a limit or restriction.
 
 In other contexts, consider using the verb suffix {-qu':v}. For example: {nom yIghoSqu'!:sen}</column>
@@ -1532,7 +1642,6 @@ In other contexts, consider using the verb suffix {-qu':v}. For example: {nom yI
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <!-- TODO: Add note about Greek word "across". -->
       <column name="hidden_notes">"Across".</column>
       <column name="components"></column>
       <column name="examples">
@@ -1585,6 +1694,41 @@ In other contexts, consider using the verb suffix {-qu':v}. For example: {nom yI
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {BoP:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'aqroS ...</column>
+      <column name="part_of_speech">sen:alt</column>
+      <column name="definition">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_de">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_fa">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_sv">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_ru">{rav ... 'aqroS ...:sen}</column>
+      <column name="definition_zh_HK">{rav ... 'aqroS ...:sen}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2277,6 +2421,41 @@ The Federation's 24-hour system ({tera' poH:n}) is sometimes used in interplanet
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'avghanIStan</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Afghanistan</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'avrI'qa'</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Africa</column>
@@ -2309,6 +2488,41 @@ The Federation's 24-hour system ({tera' poH:n}) is sometimes used in interplanet
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'aw</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">go through, pass through (matter)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{vegh:v}, {tol:v}</column>
+      <column name="notes">This refers to passing through matter, as ghosts, phased lifeforms, or particles may do.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

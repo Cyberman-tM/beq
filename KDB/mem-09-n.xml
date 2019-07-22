@@ -400,9 +400,7 @@
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes"></column>
-      <!-- I read or heard somewhere that the producers of STIII asked for a
-           joke sentence where the English was simple and the Klingon had
-           complicated grammar. Source? -->
+      <!-- I read or heard somewhere that the producers of STIII asked for a joke sentence where the English was simple and the Klingon had complicated grammar. Source? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -514,7 +512,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{naD:v}, {-Ha':v}, {-ghach:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -549,7 +547,7 @@
       <column name="notes_ru">Это является актом отмены чьего-то осуждения ({naDHa'ghach:n}).</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{naD:v}, {-qa':v}, {-ghach:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -671,6 +669,41 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">nagh HeH</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">curb</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{taw:n}</column>
+      <column name="notes">This refers to the raised edge of a road or street.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{nagh:n}, {HeH:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">naghboch</column>
       <column name="part_of_speech">n</column>
       <column name="definition">gemstone</column>
@@ -759,7 +792,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{naH:n}, {jaj:n}, {-mey:n}</column>
       <column name="examples">
 ▶ {naH jajmeywIj betleH vIyanbe'.:sen:nolink} "In my vegetable days, I did not wield a bat'leth."</column>
       <column name="examples_de"></column>
@@ -795,7 +828,7 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{naH:n}, {taj:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1006,7 +1039,7 @@ Do not confuse this word with {naQjej:n}.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">The first half of the example sentence was a lip-match for {ghaH vISammeH}. This word may also have been a back-fit for a mispronunciation of {naS:v} or {natlh:v:2}.</column>
+      <column name="hidden_notes">The first half of the example sentence was a lip-match for the beginning of {'ej jIHvo' nIHDI' jIbup:sen@@'ej:conj, jIH:n:1h, -vo':n, nIH:v, -DI':v, jI-:v, bup:v}. The creation of this word may also have been influenced by its similarity to {naS:v} and {natlh:v:2}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.@@ghach:v, jIvvo':n, naH:v, DaH:adv, pIgh:n, -vam:n, -Daq:n, So':v, -'egh:v, -taH:v} "There is a criminal hiding in these ruins."</column>
@@ -1539,7 +1572,7 @@ Note that when {naQ:v:nolink} is used adjectivally, it means "a complete X". Com
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{naQ:n:1}, {-Hom:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1783,11 +1816,11 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wIH:v}, {naH:v}</column>
-      <column name="notes">There is an idiom, {naS; norgh rur}.[1, p.132]</column>
+      <column name="notes">There is an idiom, {naS; norgh rur@@naS:v, norgh:n, rur:v}.[1, p.132]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Есть идиома, {naS; norgh rur}.[1, p.132]</column>
+      <column name="notes_ru">Есть идиома, {naS; norgh rur@@naS:v, norgh:n, rur:v}.[1, p.132]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">"Nas"ty.</column>
       <column name="components"></column>
@@ -1815,10 +1848,10 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="definition_sv">sista posten i en lista, slutet på en lista</column>
       <column name="definition_ru">последний пункт в списке</column>
       <column name="definition_zh_HK">列表中的最後一項 [AUTOTRANSLATED]</column>
-      <column name="synonyms">{HochDIch:n}</column>
+      <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghu'lIS:n}, {tetlh:n}</column>
-      <column name="notes"></column>
+      <column name="see_also">{ghu'lIS:n}, {tetlh:n}, {HochDIch:n}, {Qav:v}</column>
+      <column name="notes">This is a special term for the last item in a list, which can be used in place of, e.g., {mu' HochDIch:n@@mu':n, HochDIch:n} for a list of words.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1967,7 +2000,7 @@ Do not confuse this word with {naHjej:n}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nav:n}, {HablI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3196,7 +3229,7 @@ When used for objects which come in pairs, such as socks and gloves, the subject
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nen:v}, {-choH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3547,7 +3580,7 @@ Sometimes, {'e':n:pro} with {-lu':v} is used instead of {net:n:pro,nolink}. It i
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">myriad</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3637,7 +3670,7 @@ Sometimes, {'e':n:pro} with {-lu':v} is used instead of {net:n:pro,nolink}. It i
       <column name="definition_zh_HK">石棺 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nebeylI':n}, {pel'aQ:n:2}, {jItuj'ep:n}, {'Impey':n}}</column>
+      <column name="see_also">{nebeylI':n}, {pel'aQ:n:2}, {jItuj'ep:n}, {'Impey':n}</column>
       <column name="notes">This refers to an everyday sarcophagus, which is strictly utilitarian.</column>
       <column name="notes_de">Dies ist der Begriff für einen normalen, alltäglichen Sarg.</column>
       <column name="notes_fa"></column>
@@ -3969,7 +4002,9 @@ This verb is used to express the concept that two things have the same amount of
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">In slang, to "nick" something is to steal it.</column>
+      <column name="hidden_notes">In slang, to "nick" something is to steal it.
+
+A line which was cut from {Star Trek Into Darkness:src} reveals that the person who is stolen from is marked with {-vo':n}: {'ej jIHvo' nIHDI' jIbup:sen@@'ej:conj, jIH:n:1h, -vo':n, nIH:v, -DI':v, jI-:v, bup:v}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4005,7 +4040,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nIH:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4060,7 +4095,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="entry_name">nIl</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be grassy, verdant</column>
-      <column name="definition_de">grasig, grasbedeckt, begrünt</column>
+      <column name="definition_de">grasig sein, grasbedeckt sein, begrünt</column>
       <column name="definition_fa">گیلاس، سیب زمینی [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara gräsbevuxna, gröna [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -4074,7 +4109,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Neil deGrasse Tyson is an American astrophysicist.</column>
       <column name="components"></column>
       <column name="examples">{puH nIl:n}</column>
       <column name="examples_de"></column>
@@ -4530,7 +4565,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nIqHom:n}, {mI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4759,7 +4794,7 @@ Watch Gowron say {nISwI'mey:n@@nISwI':n, -mey:n}: {YouTube video:url:http://yout
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nISwI':n}, {HIch:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4794,7 +4829,7 @@ Watch Gowron say {nISwI'mey:n@@nISwI':n, -mey:n}: {YouTube video:url:http://yout
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nISwI':n}, {tal:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5228,7 +5263,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{nItlh:n}, {'echlet:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5564,7 +5599,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nobHa'</column>
-      <column name="part_of_speech">v:t,deriv</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">give back, return</column>
       <column name="definition_de">zurückgeben</column>
       <column name="definition_fa">بازگشت، بازگشت [AUTOTRANSLATED]</column>
@@ -5687,7 +5722,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{noch:n}, {pat:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -6316,7 +6351,7 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="definition_zh_HK">乳頭（解剖學） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nIm:n}, {noq:n:2}</column>
+      <column name="see_also">{ngob'at:n}, {nIm:n}, {noq:n:2}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6424,13 +6459,13 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">There is an idiom, {naS; norgh rur}.[1, p.132]</column>
+      <column name="notes">There is an idiom, {naS; norgh rur@@naS:v, norgh:n, rur:v}.[1, p.132]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word first appeared in the novel {Sarek:src} by A. C. Crispin, and was only confirmed to have come from Okrand when it appeared three years later in {KGT:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6445,6 +6480,41 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">nortlham</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">descendant</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms">{nortlham:n}</column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">It was explicitly stated that this takes {-pu':n:suff}.[1]</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">posterity</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6990,7 +7060,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This refers to cultural or societal ancestors or forebearers (who are not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7032,7 +7102,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{no':n}, {DIr:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7067,7 +7137,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is defined as "ancient language" in the glossary of {KGT:src}, but glossed as "ancestors' language" on p.12.</column>
-      <column name="components"></column>
+      <column name="components">{no':n}, {Hol:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7081,6 +7151,77 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">no'QeD</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">genealogy</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{rayQeD:n}, {QeD:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{no':n}, {QeD:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <!-- The meaning of {no'laS} is unknown. -->
+      <column name="_id"></column>
+      <column name="entry_name">no'laS pa'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">sitting room, lounge, parlour</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{pa':n:1}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7561,7 +7702,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">There is also a picture of one on {TKW p.124:src}.</column>
-      <column name="components"></column>
+      <column name="components">{nuH:n:1}, {bey':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7615,7 +7756,6 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="_id"></column>
       <column name="entry_name">nuHHom</column>
       <column name="part_of_speech">n:deriv,weap</column>
-      <!-- plural? -->
       <column name="definition">small arms</column>
       <column name="definition_de">Handwaffen</column>
       <column name="definition_fa">اسلحه کوچک [AUTOTRANSLATED]</column>
@@ -7631,8 +7771,8 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="hidden_notes">Despite the English definition, this may not necessarily be plural in Klingon.</column>
+      <column name="components">{nuH:n:1}, {-Hom:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7932,6 +8072,41 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">nungmaH</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">hybrid</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8795,7 +8970,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
    Кейлес решил судьбу
    Тысяч, и тех, кто прийдет."[2, p.171]</column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">people</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -8837,6 +9012,41 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">nu'</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be particularly small</column>
+      <column name="definition_de">besonders klein</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{mach:v}</column>
+      <column name="notes">This is often used of things that are smaller than the usual or expected size.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">miniature</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

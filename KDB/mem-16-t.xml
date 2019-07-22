@@ -95,7 +95,7 @@
       <column name="examples">
 ▶ {tachDaq maghom.:sen}
 ▶ {HIq DaSammeH tach yI'el.:sen}
-▶ {quwargh tach Qe' je qoDDaq Hov leng Soj DatIv.:sen@@quwargh:n, tach:n, Qe':n, je:conj, qoD:n, -Daq:n, Hov leng:n, Soj:n, Da-:v, tIv:v} "Enjoy Star Trek themed food and drink at Quark's Bar and Restaurant."[2]</column>
+▶ {quwargh tach Qe' je qoDDaq Hov leng Soj DatIv.:sen@@quwargh:n, tach:n, Qe':n, je:conj, qoD:n, -Daq:n, Hov leng:n, Soj:n:1, Da-:v, tIv:v} "Enjoy Star Trek themed food and drink at Quark's Bar and Restaurant."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -204,7 +204,7 @@ Canon violations of this rule include:
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{taD:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -302,7 +302,7 @@ Canon violations of this rule include:
       <column name="synonyms"></column>
       <column name="antonyms">{rIn:v}</column>
       <column name="see_also">{bI'reS:n}</column>
-      <column name="notes">The subject of this verb is the person or thing starting the process, and the object is the process. For example: {Qu' DataghDI' 'aqtu' mellota' je tIqaw.:sen} "When you begin a mission, remember Aktuh and Mellota."[2]
+      <column name="notes">The subject of this verb is the person or thing starting the process, and the object is the process. For example: {Qu' DataghDI' 'aqtu' mellota' je tIqaw.:sen} "When you begin a mission, remember Aktuh and Melota."[2]
 
 If the starter of the process is unknown, unclear, or indefinite, the process becomes the subject of the verb (in which case it takes no object): {taghbej mu'qaD veS:sen:nolink} "Curse-warfare has definitely begun."[3]
 
@@ -415,7 +415,7 @@ Instead of using the verb {tagh:v:nolink}, consider using the verb suffix {-choH
       <column name="definition_zh_HK">處於負角度 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tor:v:2}, {lol:v:2}, {tom:v}</column>
+      <column name="see_also">{tor:v:2}, {lol:v:2}, {tom:v}, {Dop:v:2}</column>
       <column name="notes">This refers to a ship in space which has rotated its nose downwards. A rotation through a negative angle of 90 degrees would mean that the ship's nose was pointed straight down relative to its previous orientation.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -660,7 +660,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{taj:n}, {-Hom:n}</column>
       <column name="examples">
 ▶ {SuvwI' taj:sen:nolink}
    {lI'qu' tlhIngan may' taj. not Hub'eghrupHa' lo'wI'. taj DopmeyDaq nargh cha' tajHom. ghop luQan tajHommey. pe'laH je. moQDaq DuQwI'Hommey jej tu'lu'. pay' HIvDI' lo'wI' pagh mupDI' QIHchu' bIH.:sen:nolink}
@@ -944,7 +944,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tal:n}, {jo':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -979,7 +979,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tal:n}, {Qan:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1014,7 +1014,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tal:n}, {SeH:v}, {-wI':v}, {nguSDI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1156,7 +1156,7 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ta:n}, {-mey:n}, {ngo':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1288,6 +1288,41 @@ Watch a performance of these lines by {Brian Rivera:url:http://www.imdb.com/name
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2015:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tamlerQeD</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">chemistry</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tamler:n}, {QeD:n}, {HapQeD:n}, {yugh:v}, {'uch:v:3}, {ghIqtu':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{tamler:n}, {QeD:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1694,7 +1729,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="definition_zh_HK">《targ》（動物類型）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{namwech:n}, {welwelwel:excl}, {ghughugh:v}, {Qoghogh:v}, {Saj:n}, {qeSHoS:n}</column>
+      <column name="see_also">{namwech:n}, {welwelwel:excl}, {ghughugh:v}, {Qoghogh:v}, {Saj:n}, {qeSHoS:n}, {ngavyaw':n}, {qovIj:n}</column>
       <column name="notes">This is a kind of animal somewhat resembling a dog. It is popular as a pet, but its heart is also considered a delicacy.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1737,7 +1772,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{targh:n}, {tIq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1760,7 +1795,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="definition_de">Geh und paare dich mit deinem Targ!</column>
       <column name="definition_fa">برو با همسرت با هدف خودت! [AUTOTRANSLATED]</column>
       <column name="definition_sv">Gå kompis med din targ! [AUTOTRANSLATED]</column>
-      <column name="definition_ru"></column>
+      <column name="definition_ru">Действуй, вступай в отношения со своим таргом!</column>
       <column name="definition_zh_HK">與你的targ交配！ [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1983,7 +2018,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tatlh:v}, {-'egh:v}</column>
       <column name="examples">
 ▶ {pa'Daq jItatlh'egh.:sen:nolink} "I return to the room."  The implication here is that it is difficult or not desirable to return to the room.[1]</column>
       <column name="examples_de"></column>
@@ -2046,7 +2081,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="definition_zh_HK">道路、街道、路徑等 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chIq:v}</column>
+      <column name="see_also">{chIq:v}, {nagh HeH:n}</column>
       <column name="notes">This is the physical counterpart of {He:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2103,6 +2138,41 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tawI'yan</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">Tawi'Yan</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{yan:n}, {qelHay'ya:n}</column>
+      <column name="notes">Klingon counterpart (more or less) of the "best man" at a wedding. This is normally translated as "sword-bearer", but etymologically that's not quite right. It's a frozen and somewhat modified form of an old word which was apparently something like {taywI'yan:n:nolink}, having something to do with ceremony or ritual {tay:n:2} and sword {yan:n}, but the details of the old grammatical construction are unknown.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2237,7 +2307,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tay:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2632,7 +2702,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">{tebwI':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2701,7 +2771,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{teb:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2763,7 +2833,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="definition_zh_HK">是真實的 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ngeb:v}, {'ol:v}, {vIt:v}, {lugh:v}, {qar:v}</column>
+      <column name="see_also">{ngeb:v}, {'ol:v}, {vIt:v}, {vIt:n}, {lugh:v}, {qar:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2889,7 +2959,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tel:n}, {SeH:v}, {-wI':v}, {jo':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2924,7 +2994,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tel:n}, {vID'Ir:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3081,6 +3151,41 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">tel'em</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">mentor</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ghojmoHwI':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Tell 'em", also behind ({'em:n}) the wing ({tel:n}).</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">tem</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">deny</column>
@@ -3120,13 +3225,13 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="part_of_speech">n</column>
       <column name="definition">electron</column>
       <column name="definition_de">Elektron</column>
-      <column name="definition_fa">الکترون [AUTOTRANSLATED]</column>
-      <column name="definition_sv">elektron [AUTOTRANSLATED]</column>
-      <column name="definition_ru"></column>
+      <column name="definition_fa">الکترون</column>
+      <column name="definition_sv">Elektron</column>
+      <column name="definition_ru">Электрон</column>
       <column name="definition_zh_HK">電子</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HeySel:n}, {yomIj:n}, {valtIn:n}, {tat:n}, {ngIng:v}</column>
+      <column name="see_also">{HeySel:n}, {yomIj:n}, {valtIn:n}, {tat:n}, {ngIng:v}, {rugh tem:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3523,7 +3628,7 @@ The continents of Earth are:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tera':n}, {Human:n}</column>
-      <column name="notes">There is an idiom, {Hoj; tera'ngan rur}.
+      <column name="notes">There is an idiom, {Hoj; tera'ngan rur@@Hoj:v, tera'ngan:n, rur:v}.
 
 Note that a human ({Human:n}) is a member of the major indigenous language-capable species of Earth ({tera':n:place}), whereas Terran ({tera'ngan:n:nolink}) refers to any inhabitant of the planet.</column>
       <column name="notes_de"></column>
@@ -3567,7 +3672,7 @@ Note that a human ({Human:n}) is a member of the major indigenous language-capab
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tera':n}, {bIQ:n}, {lung:n}, {-'a':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3602,7 +3707,7 @@ Note that a human ({Human:n}) is a member of the major indigenous language-capab
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tera':n}, {nagh:n}, {DIr:n}, {char:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3833,7 +3938,7 @@ The Terran months are:
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tera':n}, {yav:n}, {'atlhqam:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3868,7 +3973,7 @@ The Terran months are:
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tera':n}, {'arDeH:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4005,7 +4110,7 @@ The Terran months are:
       <column name="definition_zh_HK">滾動、滾動、列表 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{gher:v}, {patlh:v}, {Dop:v}, {mem:n}, {HIDjolev:n}, {buv:n}, {ghu'lIS:n}, {natlIS:n}</column>
+      <column name="see_also">{gher:v}, {patlh:v}, {Dop:v:1}, {mem:n}, {HIDjolev:n}, {buv:n}, {ghu'lIS:n}, {natlIS:n}</column>
       <column name="notes">This word can be used for anything rolled up like a scroll, and has also commonly come to denote any kind of list, while {Qumran:n} refers to a more ceremonial kind of scroll.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4195,9 +4300,9 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tey:v:2}, {-be':v}</column>
       <column name="examples">
-▶ {teybe' yay:sen@@tey:v:2, -be':v, yay:n:2h} "the victory didn't scrape", "the victory was comfortable"</column>
+▶ {teybe' yay:sen@@teybe':v, yay:n:2h} "the victory didn't scrape", "the victory was comfortable"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4469,7 +4574,7 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="definition_zh_HK">植被、植物</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{lav:n}, {Sor:n}, {poch:v}, {tIr:n}, {'InSong:n}, {raS'IS:n}</column>
+      <column name="see_also">{lav:n}, {Sor:n}, {poch:v}, {tIr:n}, {'InSong:n}, {raS'IS:n}, {San'emDer:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4504,7 +4609,7 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="definition_ru">оскорблять</column>
       <column name="definition_zh_HK">侮辱 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
-      <column name="antonyms"></column>
+      <column name="antonyms">{yI':v}</column>
       <column name="see_also">{vaq:v}, {nuS:v}, {qaD:v}, {maw:v}, {tuHmoH:v}, {vuv:v}, {naD:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -4649,7 +4754,7 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naQjej:n}</column>
-      <column name="notes">This word has been adapted for modern weaponry; see {tIH:n:1} (energy beam).</column>
+      <column name="notes">This word has been adapted for modern weaponry; see {tIH:n:1} (energy beam). It's also used to talk about railroads, for which see {tIHmey:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4670,6 +4775,41 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tIHmey</column>
+      <column name="part_of_speech">n:deriv,plural</column>
+      <column name="definition">railroad tracks</column>
+      <column name="definition_de">Eisenbahnschienen</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lupwI' mIr:n}, {tlharwIl Duj:n}</column>
+      <column name="notes">This is based on {tIH:n:2}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">It's not clear whether a singular {tIH:n:nolink} would refer to a single rail (i.e., half a track), a single section of track, or something else.</column>
+      <column name="components">{tIH:n:2}, {-mey:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">train tracks</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4788,8 +4928,8 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="definition_ru">большой</column>
       <column name="definition_zh_HK">大</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{mach:v}, {muq:v}</column>
-      <column name="see_also"></column>
+      <column name="antonyms">{mach:v}</column>
+      <column name="see_also">{muq:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4839,7 +4979,7 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">embiggen</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4990,6 +5130,43 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- "Tip can"? -->
+      <!-- Note that since this is "inhpl" with no singular form, we have to leave components blank. -->
+      <column name="entry_name">tIpqan</column>
+      <column name="part_of_speech">n:inhpl</column>
+      <column name="definition">ash, ashes</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qul:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">tIq</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be long, lengthy (of an object)</column>
@@ -4999,7 +5176,7 @@ This word was used for the "list" variable type in Klingon Blockly.[4]</column>
       <column name="definition_ru">быть длинным</column>
       <column name="definition_zh_HK">長（尺寸）</column>
       <column name="synonyms"></column>
-      <column name="antonyms"></column>
+      <column name="antonyms">{run:v}</column>
       <column name="see_also">{woch:v}, {'ab:v}, {'aD:v}</column>
       <column name="notes">Don't confuse this word with {nI':v}.</column>
       <column name="notes_de"></column>
@@ -5466,7 +5643,7 @@ His supporters include {lIr'el:n:name} and {voq:n:name}. His flagship is a sarco
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tIr:n}, {ngogh:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5501,7 +5678,7 @@ His supporters include {lIr'el:n:name} and {voq:n:name}. His flagship is a sarco
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tIr ngogh:n}, {QaD:v:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5515,6 +5692,44 @@ His supporters include {lIr'el:n:name} and {voq:n:name}. His flagship is a sarco
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <!-- What is {lal:v} in the example? -->
+      <column name="entry_name">tIr</column>
+      <column name="part_of_speech">v:i</column>
+      <column name="definition">be arranged in a stack, be superimposed</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{mergh:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {A B je tIrmoHchu':sen:nolink} "Superimpose A and B"
+▶ {B-Daq A lalchu':sen:nolink} "superimpose A on(to) B"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6241,7 +6456,7 @@ This verb can be used reflexively to mean "enjoy oneself", "have a good time".[3
       <column name="definition_zh_HK">全息甲板 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DI'ruj velqa':n}</column>
+      <column name="see_also">{DI'ruj velqa':n}, {rob'agh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6298,6 +6513,41 @@ This verb can be used reflexively to mean "enjoy oneself", "have a good time".[3
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {STC 104:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tol</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">go through, pass through, pass among</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{vegh:v}, {'aw:v}</column>
+      <column name="notes">This is used for traveling through an undifferentiated mass or collection of objects using the space between them (a forest, a crowd, water, soil, space).</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Toll" booth.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6883,6 +7133,41 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">torSIv</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">fiction</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lut:n}, {rorgh:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">toS</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">climb</column>
@@ -7096,7 +7381,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{toy':v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7131,7 +7416,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{toy':v}, {-wI':v}, {-'a':n}</column>
       <column name="examples">
 ▶ {DIHIvbe'chugh qo'chajDaq toy'wI''a' DImoj!:sen}</column>
       <column name="examples_de"></column>
@@ -7698,7 +7983,7 @@ Pitching downwards is indicated using a negative angle (see {taH:v:2}).</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tuH:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8563,7 +8848,7 @@ If the people you're speaking to are your superiors, consider adding {-neS:v:suf
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tuQ:v}, {-Ha':v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8600,7 +8885,7 @@ The slang expression {qogh tuQmoHHa':sen}, literally "to take off one's belt", m
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tuQ:v}, {-moH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8672,7 +8957,7 @@ The slang expression {qogh tuQmoHHa':sen}, literally "to take off one's belt", m
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tur:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>

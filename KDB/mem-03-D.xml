@@ -226,7 +226,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="entry_name">Dach</column>
       <column name="part_of_speech">v:1,i</column>
       <column name="definition">be absent</column>
-      <column name="definition_de">abwesend</column>
+      <column name="definition_de">abwesend sein</column>
       <column name="definition_fa">غایب بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara frånvarande</column>
       <column name="definition_ru">отсутствовать</column>
@@ -261,7 +261,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="entry_name">Dach</column>
       <column name="part_of_speech">v:2,i,slang</column>
       <column name="definition">be not attentive, be distracted, lack focus</column>
-      <column name="definition_de">unaufmerksam, abgelenkt, unkonzentriert</column>
+      <column name="definition_de">unaufmerksam sein, abgelenkt sein, unkonzentriert sein</column>
       <column name="definition_fa">توجه نکنید، ناراحت نشوید، تمرکز کمتری دارید [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara ouppmärksam, vara distraherad, sakna koncentration</column>
       <column name="definition_ru">быть невнимательным, быть отвлеченным, не уделять должного внимания</column>
@@ -739,7 +739,7 @@ As a time element, {DaHjaj:n} precedes any adverbials.[1, sec. 6.7]</column>
       <column name="entry_name">Daj</column>
       <column name="part_of_speech">v:1,is</column>
       <column name="definition">be interesting</column>
-      <column name="definition_de">interessant</column>
+      <column name="definition_de">interessant sein</column>
       <column name="definition_fa">جالب باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara intressant</column>
       <column name="definition_ru">Быть интересным</column>
@@ -845,7 +845,7 @@ As a time element, {DaHjaj:n} precedes any adverbials.[1, sec. 6.7]</column>
       <column name="entry_name">Dal</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be boring</column>
-      <column name="definition_de">langweilig</column>
+      <column name="definition_de">langweilig sein</column>
       <column name="definition_fa">خسته کننده بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara tråkig</column>
       <column name="definition_ru">быть скучным</column>
@@ -909,6 +909,43 @@ As a time element, {DaHjaj:n} precedes any adverbials.[1, sec. 6.7]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKW p.201:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Dam</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">regard as, view as, consider (treat somebody like)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">To "damn" someone as something.</column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {HumanvaD 'urwI' wIDam:sen@@Human:n, -vaD:n, 'urwI':n, wI-:v, Dam:v} "We treat the human as a traitor"
+▶ {'urwI' ghaH 'e' vIDam:sen@@'urwI':n, ghaH:n, 'e':n, vI-:v, Dam:v} "I consider him (to be) a traitor"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1547,7 +1584,7 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{Dargh:n}, {HIvje':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1581,7 +1618,7 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Someone on the show didn't like the sound of {DeQ:n} and added something to the middle to make a new word.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2390,7 +2427,7 @@ This verb can be applied to aircraft, for which see {Dav:v:2}.</column>
       <column name="entry_name">DeH</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be ripe, be overripe (fruit, vegetable)</column>
-      <column name="definition_de">reif, überreif (Obst und Gemüse)</column>
+      <column name="definition_de">reif sein, überreif sein (Obst und Gemüse)</column>
       <column name="definition_fa">رسیده، مرغ (میوه، سبزیجات) [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara mogen, vara övermogen (frukt, grönsak)</column>
       <column name="definition_ru">быть созревшим, быть перезревшим(фрукт, овощ)</column>
@@ -2566,7 +2603,7 @@ This verb can be applied to aircraft, for which see {Dav:v:2}.</column>
       <column name="entry_name">Dem</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be clear, transparent, colourless</column>
-      <column name="definition_de">klar, transparent, farblos</column>
+      <column name="definition_de">klar sein, transparent sein, farblos sein</column>
       <column name="definition_fa">روشن، شفاف، بی رنگ باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara klar, transparent, färglös [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -2931,7 +2968,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7qXuTn9HpP4}</column>
       <column name="definition_zh_HK">（以前）、前者、先前、前 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'utlh:n}, {mIl:v}, {nung:v}, {veb:v}</column>
+      <column name="see_also">{'utlh:n}, {mIl:v}, {nung:v}, {veb:v}, {'en:v}</column>
       <column name="notes">This verb is also used idiomatically, so that for example {Deq SuvwI'@@Deq:v, SuvwI':n} is similar to the English expression "That warrior is history".</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2966,7 +3003,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7qXuTn9HpP4}</column>
       <column name="definition_zh_HK">信貸（貨幣單位） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DarSeq:n}, {Huch:n}</column>
+      <column name="see_also">{DarSeq:n}, {Huch:n}, {'ewro:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4417,7 +4454,7 @@ This verb can be applied to aircraft, for which see {Der:v:2}.</column>
       <column name="definition_zh_HK">沿著對手的刀刃滑動劍刃 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{yan:n}, {jop:v}, {way':v}, {chaQ:v}, {ngol:v}, {lev:v}, {jIrmoH:v}, {baQ:v:1}, {DIj:v:2}</column>
+      <column name="see_also">{yan:n}, {jop:v:1}, {way':v}, {chaQ:v}, {ngol:v}, {lev:v}, {jIrmoH:v}, {baQ:v:1}, {DIj:v:2}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4455,7 +4492,7 @@ This verb can be applied to aircraft, for which see {Der:v:2}.</column>
       <column name="see_also">{wev:v}, {rItlh:n}, {DIjwI':n}, {ngoH:v:2}, {vol:n}, {DIj:v:1}</column>
       <column name="notes">The object of this verb is the thing which is touched by a {rItlh naQ:n}, for example a {nagh beQ:n}. Since {DIj:v:2,nolink} is already associated with {nagh beQ:n:nolink}, it can be left out. However, if painting or drawing on something other than a {nagh beQ:n:nolink}, it should be specified.[2]
 
-To specify the thing to be drawn, one can use the verbs {cha':v} or {nargh:v:0}. The latter means both "appear" and "escape", and similar to how {qon:v} is used for composing music or writing stories, its use suggests that the picture already exists and the {DIjwI':n} is somehow enabling it to escape and appear. Usually {nargh:v:0,nolink} is used with the suffix {-moH:v}, but it's also possible to use it without, thoguh this construction is heard less frequently. The {cha':v:nolink} version is more common in informal settings and the {nargh:v:nolink} (usually {narghmoH:v:nolink}) version is more common in literature or in discussions about art.[2]
+To specify the thing to be drawn, one can use the verbs {cha':v} or {nargh:v:0}. The latter means both "appear" and "escape", and similar to how {qon:v} is used for composing music or writing stories, its use suggests that the picture already exists and the {DIjwI':n} is somehow enabling it to escape and appear. Usually {nargh:v:0,nolink} is used with the suffix {-moH:v}, but it's also possible to use it without, though this construction is heard less frequently. The {cha':v:nolink} version is more common in informal settings and the {nargh:v:nolink} (usually {narghmoH:v:nolink}) version is more common in literature or in discussions about art.[2]
 
 This verb can be used for producing a visual image even if no paint or pigment stick is involved, for example with a pencil, or with a device or computer software.[2]</column>
       <column name="notes_de"></column>
@@ -4579,7 +4616,7 @@ This verb can be used for producing a visual image even if no paint or pigment s
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This word is not defined as such in canon, but appears in the example from {TKD p.171:src}. This entry is here for ease of reference only.</column>
-      <column name="components"></column>
+      <column name="components">{DIl:v}, {-meH:v}, {Huch:n}</column>
       <column name="examples">
 ▶ {Dochvetlh DIlmeH Huch 'ar DaneH?:sen}</column>
       <column name="examples_de"></column>
@@ -4594,6 +4631,41 @@ This verb can be used for producing a visual image even if no paint or pigment s
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD p.171:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">DIl'on</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">saltpeter</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is one of three key ingredients neede to make {ngat:n:1}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">In "Travels Through Spain" by Sir John Talbot Dillon, he describes various methods of making saltpeter.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4641,15 +4713,17 @@ This verb can be used for producing a visual image even if no paint or pigment s
       <column name="definition_ru">открытый проход (в коридор, тунель, трубопровод, Трубу Джеффри, ветвь коллектора)</column>
       <column name="definition_zh_HK">開放式入口通道（走廊、隧道、管道、杰弗里斯管、下水道分支） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{qa'rI':n}</column>
-      <column name="see_also">{chob:n}, {lojmIt:n}, {'och:n}, {megh'an:n}, {'er'In:n}</column>
-      <column name="notes">This is the open entryway of any enclosed space longer than wide in which people might find themselves. If there is a door that closes, this is not a {DIn:n:nolink}. It is merely a {lojmIt:n}.</column>
+      <column name="antonyms"></column>
+      <column name="see_also">{chob:n}, {lojmIt:n}, {'och:n}, {megh'an:n}, {'er'In:n}, {'ImSIng:n}</column>
+      <column name="notes">This refers to the open entryway leading into a longish enclosed space, or in other words a {qa'rI':n} at or from which one can enter or exit. If there's a door there, the door is referred to by the usual word, {lojmIt:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Это открытый проход любого замнкнутого пространства, которое больше вытянуто в длину, в которой люди могут себя найти. Если есть дверь, что закрывается, это не {DIn:n:nolink}. Это обычно {lojmIt:n}.</column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This is a private joke referring to a specific person.</column>
+      <column name="hidden_notes">This is a private joke referring to a specific person.
+
+The description given in the {KLI:src} New Klingon Words list says that if there is "a door that closes", then the entryway is "not a {DIn:n:nolink}" but "merely a {lojmIt:n:nolink}". However, this is an incorrect interpretation of the definition.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4663,7 +4737,7 @@ This verb can be used for producing a visual image even if no paint or pigment s
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {HQ 12.2, Jun. 2003:src}</column>
+      <column name="source">[1] {HQ 12.2, Jun. 2003:src}, [2] {KLI mailing list 2019.04.11:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4821,7 +4895,14 @@ Noun Type 5: Syntactic markers
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">"Deer" skin.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {Duran lung DIr:n}
+▶ {nagh DIr:n}
+▶ {no' DIr:n}
+▶ {qo'rIn DIr:n}
+▶ {qul DIr:n}
+▶ {QaDmoHwI' DIr:n}
+▶ {veDDIr:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5513,7 +5594,7 @@ Coincidentally or not, this words sounds similar to {DI vI':n:nolink} "it accumu
       <column name="entry_name">DIy</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be stuck (physically won't budge)</column>
-      <column name="definition_de">etw. klemmt</column>
+      <column name="definition_de">klemmen, feststecken, sich nicht mehr bewegen</column>
       <column name="definition_fa">گیر کرده (از لحاظ جسمی حرکت نمی کند) [AUTOTRANSLATED]</column>
       <column name="definition_sv">fastna (fysiskt kommer inte att springa) [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -5522,7 +5603,7 @@ Coincidentally or not, this words sounds similar to {DI vI':n:nolink} "it accumu
       <column name="antonyms"></column>
       <column name="see_also">{ngItlh:v}</column>
       <column name="notes">This means something is stuck like when you can't get a door or window open.</column>
-      <column name="notes_de"></column>
+      <column name="notes_de">Wenn zum Beispiel eine Tür oder ein Fenster klemmt und nicht aufgeht.</column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
@@ -5593,7 +5674,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_zh_HK">羊</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bolmaq:n:extcan}</column>
+      <column name="see_also">{gha'cher:n}, {bolmaq:n:extcan}</column>
       <column name="notes">This is a fluffy, woolly, shaggy Klingon animal. A ram would be a {DI'raq loD:n@@DI'raq:n, loD:n}, and an ewe would be a {DI'raq be':n@@DI'raq:n, be':n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5650,6 +5731,41 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">DI'ruj QeD</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">metaphysics</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{HapQeD:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{DI'ruj:n}, {QeD:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5769,7 +5885,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_zh_HK">快餐店</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tebwI':n}, {moD:v}, {Soj:n}</column>
+      <column name="see_also">{tebwI':n}, {moD:v}, {Soj:n:1}</column>
       <column name="notes">This is a {Qe':n} with a sign that says {moD Soj:sen:nolink}.[1, p.102]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5867,7 +5983,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">Doch</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be rude</column>
-      <column name="definition_de">unhöflich, schroff</column>
+      <column name="definition_de">unhöflich sein, schroff sein</column>
       <column name="definition_fa">بی ادب است [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara oförskämd</column>
       <column name="definition_ru">быть грубым</column>
@@ -5902,7 +6018,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">DochHa'</column>
       <column name="part_of_speech">v:is,deriv</column>
       <column name="definition">be polite, civil, courteous</column>
-      <column name="definition_de">höflich, freundlich</column>
+      <column name="definition_de">höflich sein, freundlich sein</column>
       <column name="definition_fa">مودبانه، مدنی، مودب باشید [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara artig, civil, artig [AUTOTRANSLATED]</column>
       <column name="definition_ru">быть вежливым, быть воспитанным, быть учтивым</column>
@@ -6187,7 +6303,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">Dogh</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be foolish, silly</column>
-      <column name="definition_de">albern</column>
+      <column name="definition_de">albern sein</column>
       <column name="definition_fa">احمقانه، احمقانه بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara fånig, vara löjlig</column>
       <column name="definition_ru">быть глупым</column>
@@ -6508,14 +6624,14 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">Don</column>
       <column name="part_of_speech">v:ambi</column>
       <column name="definition">be parallel, go parallel to</column>
-      <column name="definition_de">zu etwas parallel</column>
+      <column name="definition_de">parallel sein, zu etwas parallel verlaufen</column>
       <column name="definition_fa">به موازات موازی برو [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara parallell, röra sig parallellt med</column>
       <column name="definition_ru">быть параллельным, идти параллельно чему-то, идти параллельно кому-то</column>
       <column name="definition_zh_HK">並行、平行</column>
       <column name="synonyms"></column>
       <column name="antonyms">{leD:v}, {DonHa':v}</column>
-      <column name="see_also">{HeDon:n}, {Dop:v}, {neq:v}</column>
+      <column name="see_also">{HeDon:n}, {Dop:v:1}, {neq:v}</column>
       <column name="notes">To say that two or more things are parallel, this verb is used with a plural subject.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6576,9 +6692,9 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- Possibly means "face" in the geometric sense. -->
       <column name="entry_name">Dop</column>
       <column name="part_of_speech">n</column>
-      <!-- Possibly means "face" in the geometric sense. -->
       <column name="definition">side</column>
       <column name="definition_de">Seite</column>
       <column name="definition_fa">سمت [AUTOTRANSLATED]</column>
@@ -6617,9 +6733,9 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dop</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:1,is</column>
       <column name="definition">be opposite, antithetical, contradictory</column>
-      <column name="definition_de">gegenteilig, entgegengesetzt, umgekehrt</column>
+      <column name="definition_de">gegenteilig sein, entgegengesetzt sein, umgekehrt sein</column>
       <column name="definition_fa">مخالف، ضد تطبیقی، متناقض است [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara motsatta, antitetiska, motsägelsefulla [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -6627,7 +6743,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Don:v}, {leD:v}</column>
-      <column name="notes">The construction {DopmoH:v@@Dop:v, -moH:v} is used for reversing a list.[2]</column>
+      <column name="notes">The construction {DopmoH:v} is used for reversing a list.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -6648,7 +6764,78 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.01.08:src}, [2] {KLI mailing list 2018.02.10:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.01.08:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Dop</column>
+      <column name="part_of_speech">v:2,is</column>
+      <column name="definition">be negative (used in math)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{taH:v:2}, {boqHa':v}</column>
+      <column name="notes">This is just the verb {Dop:v:1} applied to numbers in mathematics.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+{wej Dop:sen@@wej:n:num, Dop:v:2} "minus three", "negative three"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">DopmoH</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
+      <column name="definition">reverse (e.g., a list)</column>
+      <column name="definition_de">umkehren (z.B. Liste)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{patlhmoH:v}, {yoymoH:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{Dop:v:1}, {-moH:v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2018.02.10:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6690,7 +6877,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">Doq</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be orange, red</column>
-      <column name="definition_de">orange, rot</column>
+      <column name="definition_de">orange sein, rot sein</column>
       <column name="definition_fa">نارنجی، قرمز بودن</column>
       <column name="definition_sv">vara orange, vara röd</column>
       <column name="definition_ru">быть оранжевым, быть красным</column>
@@ -6795,7 +6982,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="entry_name">Doq 'ej wovbe'</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">be brown</column>
-      <column name="definition_de">braun</column>
+      <column name="definition_de">braun sein</column>
       <column name="definition_fa">قهوه ای باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara brun</column>
       <column name="definition_ru"></column>
@@ -6893,7 +7080,13 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
 ▶ {chay' 'etlh DoQ nuch:sen:nolink}
    {QongtaHbogh qup 'etlh nIH :sen:nolink}
   "How does a coward claim a sword?
-   By taking it from his sleeping father."[2]</column>
+   By taking it from his sleeping father."[2, p.64-65]
+▶ {molor HoSghaj woQ:sen:nolink}
+   {luDoQ:sen:nolink}
+   {'el chaH 'e' lupoQ:sen:nolink}
+  "In the name
+   Of Molor the Mighty,
+   Demanding to get in."[2, p.130-131]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6901,7 +7094,13 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
 ▶ {chay' 'etlh DoQ nuch:sen:nolink}
    {QongtaHbogh qup 'etlh nIH :sen:nolink}
   "Как трус сумеет предъявить права на меч?
-   Он заберет его у его спящего отца."[2]</column>
+   Он заберет его у его спящего отца."[2, p.64-65]
+▶ {molor HoSghaj woQ:sen:nolink}
+   {luDoQ:sen:nolink}
+   {'el chaH 'e' lupoQ:sen:nolink}
+  "In the name
+   Of Molor the Mighty,
+   Demanding to get in."[2, p.130-131]</column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -6909,7 +7108,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.64-65:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7055,6 +7254,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- Allegedly, Marc Okrand didn't like working with PCs before Windows. -->
       <column name="entry_name">DoS</column>
       <column name="part_of_speech">n:inhps</column>
       <column name="definition">target</column>
@@ -7065,10 +7265,8 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_zh_HK">目標（單數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'uch:v:1}, {chIl:v}, {buS:v}, {ghoch:v}</column>
+      <column name="see_also">{'uch:v:2}, {chIl:v}, {buS:v}, {ghoch:v}</column>
       <column name="notes"></column>
-      <!-- See KGT p.106 for an explanation of the target idioms. -->
-      <!-- Allegedly, Marc Okrand didn't like working with PCs before Windows. -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7080,16 +7278,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
 ▶ {baHwI', DoS yIbuS. QuQ neH.:sen}
 ▶ {matHa', DoS jonta' neH.:sen}
 ▶ {wa' DoS neH yIbuS.:sen}
-▶ {wa' DoS wIqIp.:sen}</column>
+▶ {wa' DoS wIqIp.:sen}
+▶ {cha' DoSmey DIqIp.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">
-▶ {baHwI', DoS yIbuS. QuQ neH.:sen}
-▶ {matHa', DoS jonta' neH.:sen}
-▶ {wa' DoS neH yIbuS.:sen}
-▶ {wa' DoS wIqIp.:sen}
-      </column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -7241,6 +7435,41 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Dotrar</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">constellation</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hov:n}, {Hovtay':n}, {ghochwI':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Connect ({rar:v}) the dots.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Dotlh</column>
       <column name="part_of_speech">n</column>
       <column name="definition">status</column>
@@ -7322,7 +7551,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Its capital city is {berlIn:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7384,7 +7613,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">Doy'</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be tired</column>
-      <column name="definition_de">müde</column>
+      <column name="definition_de">müde sein</column>
       <column name="definition_fa">خسته بودن</column>
       <column name="definition_sv">vara trött</column>
       <column name="definition_ru">быть уставшим</column>
@@ -7460,7 +7689,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">быть благоприятным, быть счастливым, быть удачливым</column>
       <column name="definition_zh_HK">幸運</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{Do':v}</column>
+      <column name="antonyms">{Do'Ha':v}</column>
       <column name="see_also"></column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -7560,7 +7789,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">Do'Ha'</column>
       <column name="part_of_speech">v:is,deriv</column>
       <column name="definition">be unfortunate</column>
-      <column name="definition_de">unglücklich</column>
+      <column name="definition_de">kein Glück haben</column>
       <column name="definition_fa">مایه تاسف است [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara otursam, vara olycksdrabbad, ha otur</column>
       <column name="definition_ru">быть неблагоприятным, быть несчастливым</column>
@@ -7672,7 +7901,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_zh_HK">沙</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Do'ol raS'IS:n}, {Do'ol HuD:n}</column>
+      <column name="see_also">{Do'ol raS'IS:n}, {Do'ol HuD:n}, {Say'qIS:n}, {Santlhar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7715,7 +7944,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Do'ol:n}, {HuD:n}</column>
+      <column name="components">{Do'ol:n}, {HuD:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -8019,7 +8248,7 @@ This verb is used for improvement of a more abstract nature, such as in status, 
       <column name="entry_name">DuH</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be possible</column>
-      <column name="definition_de">möglich</column>
+      <column name="definition_de">möglich sein</column>
       <column name="definition_fa">ممکن بودن</column>
       <column name="definition_sv">vara möjlig</column>
       <column name="definition_ru">Быть возможным</column>
@@ -8186,8 +8415,7 @@ Known classes of Klingon ships include {neghvar:n}, {vorcha':n}, {qItI'nga':n}, 
       <column name="notes_ru">Грамматически корректно рассматривать это слово в единственном числе(набор инстинктов) или во множественном (индивидуальные инстинкты)</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <!-- Even though this word is an inherent plural/singular form of
-           itself, leave components empty so it won't be displayed. -->
+      <!-- Even though this word is an inherent plural/singular form of itself, leave components empty so it won't be displayed. -->
       <column name="components"></column>
       <column name="examples">
 ▶ {Duj tIvoqtaH.:sen}
@@ -8529,7 +8757,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="entry_name">Dun</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be wonderful, great</column>
-      <column name="definition_de">wunderbar, großartig, bewundernswert</column>
+      <column name="definition_de">wunderbar sein, großartig sein</column>
       <column name="definition_fa">فوق العاده، فوق العاده است [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara underbar, vara storslagen</column>
       <column name="definition_ru">быть чудесным, быть великим</column>
@@ -8706,7 +8934,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="entry_name">Duq</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be stunned</column>
-      <column name="definition_de">schockiert, erstaunt</column>
+      <column name="definition_de">schockiert sein, erstaunt sein</column>
       <column name="definition_fa">خشمگین شو [AUTOTRANSLATED]</column>
       <column name="definition_sv">bli bedövas [AUTOTRANSLATED]</column>
       <column name="definition_ru">быть оглушенным, быть остолбеневшим</column>
@@ -8916,6 +9144,7 @@ For a stand-alone spike such as a stake, see {wIl:n}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- Note that since this is "inhpl" with no singular form, we have to leave components blank. -->
       <column name="entry_name">Duran lung DIr</column>
       <column name="part_of_speech">n:inhpl,food,fic</column>
       <column name="definition">Durani lizard skins</column>
@@ -8934,7 +9163,6 @@ For a stand-alone spike such as a stake, see {wIl:n}.</column>
       <column name="notes_ru">Этот предмет употребляется в пищу. Он никогда не используется ни с какими суффиксами множественного числа</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <!-- Note that since this is "inhpl" with no singular form, we have to leave this blank. -->
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -9171,7 +9399,7 @@ The distinction between a {DuS:n:nolink} and a {chetvI':n:1} has to do with how 
       <column name="entry_name">Duy'</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be defective</column>
-      <column name="definition_de">defekt, unvollständig, nicht perfekt</column>
+      <column name="definition_de">defekt sein, unvollständig sein</column>
       <column name="definition_fa">معیوب باشید [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara defekt, vara trasig</column>
       <column name="definition_ru">быть дефектным</column>
@@ -9340,6 +9568,41 @@ The distinction between a {DuS:n:nolink} and a {chetvI':n:1} has to do with how 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Du'Hom mI'</column>
+      <column name="part_of_speech">n:slang,deriv</column>
+      <column name="definition">random number</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms">{mI' 'al:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This literally means "garden number".</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

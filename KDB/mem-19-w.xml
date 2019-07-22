@@ -141,6 +141,76 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">wab naQ</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">vowel</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wab poD:n}</column>
+      <column name="notes">This refers to sounds, not to letters or glyphs.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{wab:n}, {naQ:v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wab poD</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">consonant</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wab naQ:n}</column>
+      <column name="notes">This refers to sounds, not to letters or glyphs.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{wab:n}, {poD:v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">wab qoSta' 'aplo'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">cassette</column>
@@ -399,7 +469,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="definition_zh_HK">打獵</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chon:n}, {gheD:n}, {wamwI':n}</column>
+      <column name="see_also">{chon:n}, {gheD:n}, {wamwI':n}, {ghab:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -538,7 +608,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">直（不彎）</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{wanHa':v}, {job:v}</column>
+      <column name="antonyms">{wanHa':v}, {job:v}, {'ob:v}</column>
       <column name="see_also">{SIH:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -653,7 +723,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{wanI':n}, {SubmaH:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1077,7 +1147,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="definition_zh_HK">招架、偏轉弓步 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jop:v}, {baQ:v:1}, {chaQ:v}, {lev:v}, {ngol:v}, {jIrmoH:v}, {DIj:v:1}, {mong'em:n}</column>
+      <column name="see_also">{jop:v:1}, {baQ:v:1}, {chaQ:v}, {lev:v}, {ngol:v}, {jIrmoH:v}, {DIj:v:1}, {mong'em:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1514,7 +1584,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">original</column>
+      <column name="search_tags">original, 1st</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -1591,6 +1661,41 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wa'lay</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">mass (physics concept)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Surma':n}, {ngI':v}, {tlham:n:1}</column>
+      <column name="notes">This is distinct from an object's weight, which is dependent on gravitation.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1689,7 +1794,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">10th</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -2110,7 +2215,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">3rd</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -2211,7 +2316,9 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">{wel:v} is "owe" so {welwelwel:excl:nolink} is "oweoweowe". "Woof" is the sound a dog makes in English.</column>
+      <column name="hidden_notes">{wel:v} is "owe" so {welwelwel:excl:nolink} is "oweoweowe". "Wowowow" is one way to transliterate the sound a dog makes in English.
+
+"Well Well Well" is a song by John Lennon in which he screams the song's title. "Well, well, well" is also a stereotypical phrase associated with British police officers in film.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2614,6 +2721,41 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">weSjech</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">fabric, cloth, textile</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Sut:n}, {paSrIq:n}</column>
+      <column name="notes">This can be used for textiles or fabric in clothing, sheets, towels, and so on, but generally not for carpets or rugs (except for thin ones).[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">wev</column>
       <column name="part_of_speech">n</column>
       <column name="definition">row (in a table or spreadsheet)</column>
@@ -2989,7 +3131,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hur'Iqngan:n}, {naS:v}</column>
-      <column name="notes">There is an idiom, {wIH; Hur'Iqngan rur}.</column>
+      <column name="notes">There is an idiom, {wIH; Hur'Iqngan rur@@wIH:v, Hur'Iqngan:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3153,6 +3295,41 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">wIlle'</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">joint</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"I didn't inhale."</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">wIlpuq</column>
       <column name="part_of_speech">n</column>
       <column name="definition">pudding</column>
@@ -3225,6 +3402,41 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wItte'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">mathematical equation</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ghIqtu':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"The Whetstone of Witte" was a famous book on mathematics.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3308,7 +3520,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="definition_zh_HK">選擇</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{wuq:v}, {maS:v}, {wIv:n}</column>
+      <column name="see_also">{wuq:v}, {maS:v}, {wIv:n}, {lap:v}</column>
       <column name="notes">This verb is also used for clicking on a hyperlink on a computer.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3712,7 +3924,7 @@ The clipped Klingon form of this command would be {wIy cha'!:sen@@wIy:n, cha':v}
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{woj:n}, {choH:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3888,7 +4100,13 @@ The clipped Klingon form of this command would be {wIy cha'!:sen@@wIy:n, cha':v}
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {molor HoSghaj woQ:sen:nolink}
+   {luDoQ:sen:nolink}
+   {'el chaH 'e' lupoQ:sen:nolink}
+  "In the name
+   Of Molor the Mighty,
+   Demanding to get in."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3900,7 +4118,7 @@ The clipped Klingon form of this command would be {wIy cha'!:sen@@wIy:n, cha':v}
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.130-131:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4124,7 +4342,7 @@ This verb is also used to describe a sunny day.[2]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This word has appeared in canon only in the formation {wovmoHbogh janHommey:n:nolink}[1; 2], but the noun suffixes have been removed here for ease of reference.</column>
-      <column name="components"></column>
+      <column name="components">{wov:v}, {-moH:v}, {-bogh:v}, {jan:n:1}</column>
       <column name="examples">
 ▶ {Qapqu' wovmoHbogh janHommey!:sen:nolink} "It even has working lights!"[1]</column>
       <column name="examples_de"></column>
@@ -4160,7 +4378,7 @@ This verb is also used to describe a sunny day.[2]</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{wov:v}, {-moH:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4297,7 +4515,7 @@ This verb is also used to describe a sunny day.[2]</column>
       <column name="definition_zh_HK">聯合王國</column>
       <column name="synonyms">{tuqjIjQa':n}</column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'Inglan:n}</column>
       <column name="notes">{wo' tay':n:nolink} is an older name than {tuqjIjQa':n}. The Klingons who gave the country this name might have been thinking of the British Empire.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4509,7 +4727,7 @@ This verb is also used to describe a sunny day.[2]</column>
       <column name="definition_zh_HK">決定</column>
       <column name="synonyms"></column>
       <column name="antonyms">{wuqHa':v}</column>
-      <column name="see_also">{wIv:v}</column>
+      <column name="see_also">{wIv:v}, {lap:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4535,7 +4753,7 @@ This verb is also used to describe a sunny day.[2]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">wuqHa'</column>
-      <column name="part_of_speech">v:t,deriv</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">commute (a judicial sentence)</column>
       <column name="definition_de">(eine Entscheidung) zurückziehen</column>
       <column name="definition_fa">رفت و آمد (یک حکم قضائی) [AUTOTRANSLATED]</column>

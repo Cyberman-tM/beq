@@ -106,6 +106,41 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ghab</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">kill (when on a hunt)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wam:v}</column>
+      <column name="notes">The general word for kill is {HoH:v}. {ghab:v:nolink} means "kill" as a result of hunting (thus the hunt was a successful one), or when the killing is the result of a planned-out process.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ghach</column>
       <column name="part_of_speech">v:i_c</column>
       <column name="definition">lurk, lie in wait, lie low</column>
@@ -123,7 +158,7 @@
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">The first half of the example sentence was a lip-match for {ghaH vISammeH}.</column>
+      <column name="hidden_notes">The first half of the example sentence was a lip-match for the beginning of {'ej jIHvo' nIHDI' jIbup:sen@@'ej:conj, jIH:n:1h, -vo':n, nIH:v, -DI':v, jI-:v, bup:v}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.@@ghach:v, jIvvo':n, naH:v, DaH:adv, pIgh:n, -vam:n, -Daq:n, So':v, -'egh:v, -taH:v} "There is a criminal hiding in these ruins."</column>
@@ -442,7 +477,7 @@ The imperative verb prefix when {ghaH:n:nolink} is the object is {yI-:v:pref}.</
       <column name="definition_zh_HK">忙碌、非常活躍、活潑 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ghanHa':v}</column>
-      <column name="see_also">{legh:v}</column>
+      <column name="see_also"></column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -512,7 +547,7 @@ The imperative verb prefix when {ghaH:n:nolink} is the object is {yI-:v:pref}.</
       <column name="definition_zh_HK">瞥了一眼、快看一下 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{legh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -817,6 +852,42 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <!-- "Gape"...? -->
+      <column name="entry_name">ghapqa'</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">jaw</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This may also be used for things that resemble jaws, in which case the plural remains {ghapqa'Du':n@@ghapqa':n, -Du':n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1156,7 +1227,7 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ghav:n}, {'uSqan:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1419,6 +1490,41 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">gha'cher</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">goat-like creature</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{DI'raq:n}, {bolmaq:n:extcan}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1742,6 +1848,41 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ghep</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">hug, embrace</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Grip".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">gher</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">formulate, compile, pull together</column>
@@ -1903,7 +2044,8 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">"Get" a life.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶  {vulqangan jIH 'e' vIghet.:sen@@vulqangan:n, jIH:n:1, 'e':n, vI-:v, ghet:v}[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1915,7 +2057,7 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {HQ 12.3, Sept. 2003:src}</column>
+      <column name="source">[1] {HQ 12.3, Sept. 2003:src}, [2] {Saarbrücken qepHom'a' 2011:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2008,7 +2150,7 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This word appears only in the body of {KGT:src} and not in the glossary.</column>
-      <column name="components"></column>
+      <column name="components">{ghevchoq:n}, {Sep:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2036,7 +2178,7 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{qagh:n}, {qagh vIychorgh:n}, {Se'tu':n}</column>
-      <column name="notes">There is an idiom, {jeD; ghevI' rur}.</column>
+      <column name="notes">There is an idiom, {jeD; ghevI' rur@@jeD:v, ghevI':n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2150,8 +2292,8 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="hidden_notes">According to the novelisation of {Star Trek VI:src}, this is an idiom which is smugglers' slang for wishing someone good luck in avoiding border officials.</column>
+      <column name="components">{ghew:n}, {-mey:n}, {tI-:v}, {Suq:v}, {-Qo':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2165,6 +2307,41 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKW p.207:src}, [2] {Star Trek VI:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghewmey</column>
+      <column name="part_of_speech">n:slang,deriv</column>
+      <column name="definition">punctuation</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{ghew:n}, {-mey:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2251,7 +2428,7 @@ Ein allgemeiner Begriff für jede Musik spielende Gruppe (egal welcher Größe) 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{bom:n}, {may' ghe'naQ:n}, {ghe'naQ nIt:n}, {jachwI'na':n}</column>
-      <column name="notes">An example of Klingon opera is "Aktu and Mellota" (see {'aqtu':n:name} and {mellota':n:name}).</column>
+      <column name="notes">An example of Klingon opera is "Aktuh and Melota" (see {'aqtu':n:name} and {mellota':n:name}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2817,6 +2994,41 @@ There is also a regional word {ley':n} which means "nose".</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ghIl</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be the mean, be the average (arithmetic mean, used in math)</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{botlh:n:2}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">average</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ghIlab ghew</column>
       <column name="part_of_speech">n</column>
       <column name="definition">glob fly</column>
@@ -3012,7 +3224,7 @@ There is also a regional word {ley':n} which means "nose".</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">Some people believe this to be a mistake for {tlhuchwI':n:nolink} (see {tlhuch:v}). However, {tuj ghImwI':n} actually makes sense for a mechanism that dissipates heat.</column>
-      <column name="components"></column>
+      <column name="components">{ghIm:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3039,7 +3251,7 @@ There is also a regional word {ley':n} which means "nose".</column>
       <column name="definition_zh_HK">修道院、宗教社群建築物</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chIrgh:n}, {lat:n}, {ghIn pIn:n}</column>
+      <column name="see_also">{chIrgh:n}, {lat:n}, {ghIn pIn:n}, {bulvar:n}</column>
       <column name="notes">This refers to a building or group of buildings, including any accompanying grounds such as gardens. It does not refer to the group of people who live, work, or study there.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3074,7 +3286,7 @@ There is also a regional word {ley':n} which means "nose".</column>
       <column name="definition_zh_HK">修道院院長、住持</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghIn:n}</column>
+      <column name="see_also">{ghIn:n}, {bulvar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3174,7 +3386,7 @@ There is also a regional word {ley':n} which means "nose".</column>
       <column name="entry_name">ghIpDIj</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">court-martial</column>
-      <column name="definition_de">vor Kriegsgericht gestellt werden</column>
+      <column name="definition_de">jemanden vor Kriegsgericht stellen</column>
       <column name="definition_fa">دادگاه نظامی [AUTOTRANSLATED]</column>
       <column name="definition_sv">ställa inför krigsrätt</column>
       <column name="definition_ru">Военный трибунал</column>
@@ -3273,6 +3485,41 @@ There is also a regional word {ley':n} which means "nose".</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghIqtu'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">mathematical or chemical formula</column>
+      <column name="definition_de"></column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{mI'QeD:n}, {tamlerQeD:n}, {wItte':n}</column>
+      <column name="notes">This is written or represented using symbols.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3901,7 +4148,7 @@ In {TNK:src}, {ghItlhwI':n:nolink} is used for "pen" and {ghojmeH ghItlhwI':n:no
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Sech:n}</column>
-      <column name="notes">There is an idiom, {wov; ghI'boj Sech rur}.</column>
+      <column name="notes">There is an idiom, {wov; ghI'boj Sech rur@@wov:v, ghI'boj:n, Sech:n, rur:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3922,6 +4169,41 @@ In {TNK:src}, {ghItlhwI':n:nolink} is used for "pen" and {ghojmeH ghItlhwI':n:no
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghI'neS</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Guinness</column>
+      <column name="definition_de">Guinness</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is just the Klingon spelling for the company name.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4128,6 +4410,7 @@ There are 243 {lawmey:n:nolink} in a {gho:n:nolink}, or 360 {lawrI'mey:n:nolink}
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
+▶ {batlh ghob yIpab.:sen}
 ▶ {ghob tIvnISbe'lu'.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4377,7 +4660,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="definition_zh_HK">「追踪者」星座</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bo'retlh:n:place}, {Hov lat:n}</column>
+      <column name="see_also">{bo'retlh:n:place}, {Hov lat:n}, {Dotrar:n}</column>
       <column name="notes">{qeylIS'e' lIjlaHbe'bogh vay':n:name} prophesied he would return there.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4449,7 +4732,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="definition_zh_HK">語音 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{QIch:n}, {wab:n}, {Ham:v}, {pun:v}</column>
+      <column name="see_also">{QIch:n}, {wab:n}, {Ham:v}, {pun:v}, {ghugh:v}</column>
       <column name="notes">See under {QIch wab Ho'DoS:n} for the names of the Klingon consonants and vowels.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4492,7 +4775,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">Some people have taken to referring to mobile phones using {ghogh HablI' qenglu'bogh:n:nolink}. Context should make it clear if {ghogh HablI':n:nolink} refers to a mobile device.</column>
-      <column name="components"></column>
+      <column name="components">{ghogh:n}, {HablI':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4632,7 +4915,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="notes_ru">Это относится к уроку, наподобие того, что в тетради или в учебнике. Слово нельзя использовать в выражениях, наподобие "Пусть это будет тебе уроком!". Для подобных слов смотрите {ghuH:n}. Также может быть использовано, чтобы сказать "руководство о ..." {X ghojmeH mIw:n:nolink}.</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ghoj:v}, {-meH:v}, {mIw:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4730,7 +5013,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="definition_zh_HK">老師、教師</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'a'ghen:n}</column>
+      <column name="see_also">{'a'ghen:n}, {tel'em:n}</column>
       <column name="notes">A teacher held in high esteem, of higher rank than other teachers in the same institution, could be {ghojmoHwI' quv@@ghojmoHwI':n, quv:v} or {ghojmoHwI' Han@@ghojmoHwI':n, Han:v}. Probably the highest standing of all is a {'a'ghen:n:nolink}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4955,8 +5238,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
 ▶ {bInajtaHvIS qeylIS Daghomjaj.:sen}
 ▶ {rut yIHmey ghom Hoch.:sen}
 ▶ {tachDaq maghom.:sen}</column>
-      <!-- There is a hyphen in "rendez-vous" on p.86 of {TKD:src},
-           but only because it happens to coincide with a line-break. -->
+      <!-- There is a hyphen in "rendez-vous" on p.86 of {TKD:src}, but only because it happens to coincide with a line-break. -->
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5219,7 +5501,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="_id"></column>
       <column name="entry_name">ghong</column>
       <column name="part_of_speech">v:t_c</column>
-      <column name="definition">abuse</column>
+      <column name="definition">abuse, exploit</column>
       <column name="definition_de">missbrauchen</column>
       <column name="definition_fa">سو استفاده کردن [AUTOTRANSLATED]</column>
       <column name="definition_sv">missbruka</column>
@@ -5228,13 +5510,13 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghong:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This refers to abuse or exploitation, but does not refer to physical abuse.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as "abuse" in {TKD:src}, and expanded to include "exploit" at {qep'a' 2019:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5248,7 +5530,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5932,7 +6214,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/7_rXiSTQmAE}</column>
    В теле и мыслях,
    Связь жизни."[2]</column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">persons</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -6269,7 +6551,7 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="definition_zh_HK">發聲（動物）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jatlh:v}, {'Imyagh:excl}, {welwelwel:excl}, {ghughugh:v}</column>
+      <column name="see_also">{jatlh:v}, {'Imyagh:excl}, {welwelwel:excl}, {ghughugh:v}, {Qoghogh:v}, {ghogh:n}</column>
       <column name="notes">This refers to sound emitted by an animal, but not speech.</column>
       <column name="notes_de">Dies wird nur bei Tiergeräuschen verwendet, nicht bei Sprache.</column>
       <column name="notes_fa"></column>
@@ -6385,7 +6667,8 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="components"></column>
       <column name="examples">
 ▶ {tlhIngan quv DatIchDI' Seng yIghuH.:sen}
-▶ {may' yIghuH!:sen:nolink}</column>
+▶ {may' yIghuH!:sen}
+▶ {ropyaH yIghuHmoH!:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6624,11 +6907,15 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{bor:v}, {'oj:v}, {qagh:n}, {Sop:v}</column>
-      <column name="notes">There is an idiom {ghung; qagh rur}.</column>
+      <column name="notes">There is an idiom {ghung; qagh rur@@ghung:v, qagh:n, rur:v}.
+
+{ghungHa':v@@ghung:v, -Ha':v} would be something like "not hungry any more".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Есть идиома {ghung; qagh rur}.</column>
+      <column name="notes_ru">Есть идиома {ghung; qagh rur@@ghung:v, qagh:n, rur:v}.
+
+{ghungHa':v@@ghung:v, -Ha':v} would be something like "not hungry any more".[2]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
@@ -6644,7 +6931,7 @@ This word is alien in origin. The reason Klingons use an alien word for this is 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2011.11.15:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
