@@ -4,7 +4,6 @@
   "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
-    "A": "0.0.1",
     "discord.js": "^11.5.1",
     "dom-parser": "^0.1.6",
     "fs": "^0.0.2",
