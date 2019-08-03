@@ -210,6 +210,76 @@
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">vaghDIch</column>
+          <column name="part_of_speech">n:num,deriv</column>
+          <column name="definition">fifth</column>
+          <column name="definition_de">fünfte/r/s</column>
+          <column name="definition_fa">پنجمین</column>
+          <column name="definition_sv">femte</column>
+          <column name="definition_ru">пятый</column>
+          <column name="definition_zh_HK">第五</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{vagh:n:1} (number)</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{vagh:n:1,num}, {-DIch:n:num,suff}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="search_tags">5th</column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="source">[1] {TKD:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">vaghmaH</column>
+          <column name="part_of_speech">n:num,deriv</column>
+          <column name="definition">fifty</column>
+          <column name="definition_de">fünfzig</column>
+          <column name="definition_fa"></column>
+          <column name="definition_sv"></column>
+          <column name="definition_ru"></column>
+          <column name="definition_zh_HK"></column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{vagh:n:1,num}, {maH:n:2,num}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="source"></column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vagh</column>
@@ -244,41 +314,6 @@
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">vaghDIch</column>
-      <column name="part_of_speech">n:num,deriv</column>
-      <column name="definition">fifth</column>
-      <column name="definition_de">fünfte/r/s</column>
-      <column name="definition_fa">پنجمین</column>
-      <column name="definition_sv">femte</column>
-      <column name="definition_ru">пятый</column>
-      <column name="definition_zh_HK">第五</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{vagh:n:1} (number)</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{vagh:n:1,num}, {-DIch:n:num,suff}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags">5th</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1553,7 +1588,7 @@ The original line was to have been {logh veQDaq bachchugh, yoH 'e' toblaHbe' Suv
       <column name="definition_zh_HK">父親</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{SoS:n}, {vavoy:n}</column>
+      <column name="see_also">{SoS:n}, {vavoy:n}, {'emrIgh:n}</column>
       <column name="notes">The siblings of a {vav:n:nolink} are {tennuS:n} and {'e'mam:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1623,7 +1658,7 @@ The original line was to have been {logh veQDaq bachchugh, yoH 'e' toblaHbe' Suv
       <column name="definition_zh_HK">祖父 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{SoSnI':n}</column>
+      <column name="see_also">{SoSnI':n}, {'emrIgh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2589,41 +2624,6 @@ A more common term for this is {qatru':n:nolink}.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Festival of the Spoken Nerd DVD:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">veneSwe'la'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Venezuela</column>
-      <column name="definition_de">Venezuela</column>
-      <column name="definition_fa">ونزوئلا</column>
-      <column name="definition_sv">Venezuela</column>
-      <column name="definition_ru">Венесуэла</column>
-      <column name="definition_zh_HK">委內瑞拉</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3607,7 +3607,7 @@ In {Klingon Monopoly:src}, "Free Parking" is translated as {vergh 'ach DIlnISbe'
       <column name="hidden_notes">The example sentence is a lip-match for {DevwI' ghaH 'Iv'e'?@@DevwI':n, ghaH:n, 'Iv:ques:1h, -'e':n:suff}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {jIvuylaH. jIve'.} "I am here to help you."</column>
+▶ {jIvuylaH. jIve'.:sen@@jI-:v, vuy:v, -laH:v, jI-:v, ve':v} "I am here to help you."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3619,7 +3619,7 @@ In {Klingon Monopoly:src}, "Free Parking" is translated as {vergh 'ach DIlnISbe'
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4285,7 +4285,7 @@ For an idiomatic expression used to tell someone not to move, see {taD:v}.</colu
       <column name="hidden_notes">The example sentence is a lip-match for {'ej DochmeywIj vItlhapqa'meH}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4297,7 +4297,7 @@ For an idiomatic expression used to tell someone not to move, see {taD:v}.</colu
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4543,41 +4543,6 @@ For an idiomatic expression used to tell someone not to move, see {taD:v}.</colu
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">vIraS</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">France</column>
-      <column name="definition_de">Frankreich</column>
-      <column name="definition_fa">فرانسه</column>
-      <column name="definition_sv">Frankrike</column>
-      <column name="definition_ru">Франция</column>
-      <column name="definition_zh_HK">法國</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4975,14 +4940,14 @@ For an idiomatic expression used to tell someone not to move, see {taD:v}.</colu
       <column name="entry_name">vI'Hop</column>
       <column name="part_of_speech">n</column>
       <column name="definition">indirect object</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">indirektes (Dativ) Objekt</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'ovmay:n}, {SeSor:n}</column>
+      <column name="see_also">{'ovmay:n}, {SeSor:n}, {-vaD:n:suff}</column>
       <column name="notes">This is a grammar term.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5442,7 +5407,7 @@ A large spider on Earth would be a {tera' voDchuch:n@@tera':n, voDchuch:n}, but 
       <column name="definition_zh_HK">膊頭、肩膀</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DeS:n:1}, {mong:n}, {ro:n}</column>
+      <column name="see_also">{DeS:n:1}, {mong:n}, {ro:n}, {wIlle':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6353,7 +6318,7 @@ There is a Klingon idiom, {nong; vulqangan rur@@nong:v, vulqangan:n, rur:v}, whi
       <column name="hidden_notes">The first part of the example sentence was a lip-match for {mughojmoH parmaqqaywI':sen@@mu-:v, ghojmoH:v, parmaqqay:n, -wI':n}. The second part was a lip-match for {'ej jIHvo' nIHDI' jIbup:sen@@'ej:conj, jIH:n:1h, -vo':n, nIH:v, -DI':v, jI-:v, bup:v}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {potlhmo' batlh, vIqawba', 'ej chIvo' neH chIw vum'e'.@@potlh:v, -mo':v, batlh:n, vI-:v, qaw:v, -ba':v, 'ej:conj, chIvo':n, neH:adv, chIw:v, vum:n, -'e':n} "Because you care about honor. And this man has none."</column>
+▶ {potlhmo' batlh, vIqawba', 'ej chIvo' neH chIw vum'e'.@@potlh:v, -mo':v, batlh:n, vI-:v, qaw:v, -ba':v, 'ej:conj, chIvo':n, neH:adv, chIw:v, vum:n, -'e':n} "Because you care about honor. And this man has none."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6365,7 +6330,7 @@ There is a Klingon idiom, {nong; vulqangan rur@@nong:v, vulqangan:n, rur:v}, whi
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6852,7 +6817,7 @@ There is a Klingon idiom, {nong; vulqangan rur@@nong:v, vulqangan:n, rur:v}, whi
       <column name="hidden_notes">The example sentence is a lip-match for {DevwI' ghaH 'Iv'e'?@@DevwI':n, ghaH:n, 'Iv:ques:1h, -'e':n:suff}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {jIvuylaH. jIve'.} "I am here to help you."</column>
+▶ {jIvuylaH. jIve'.:sen@@jI-:v, vuy:v, -laH:v, jI-:v, ve':v} "I am here to help you."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6864,7 +6829,7 @@ There is a Klingon idiom, {nong; vulqangan rur@@nong:v, vulqangan:n, rur:v}, whi
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

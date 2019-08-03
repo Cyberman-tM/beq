@@ -248,7 +248,7 @@
       <column name="entry_name">tlhaghnay</column>
       <column name="part_of_speech">n</column>
       <column name="definition">Throgni</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Throgni</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -283,7 +283,7 @@
       <column name="entry_name">tlhaj</column>
       <column name="part_of_speech">v:i</column>
       <column name="definition">process, parade, march</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">marschieren</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -742,7 +742,7 @@
       <column name="entry_name">tlhar</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">be allergic, be allergic to</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">allergisch (auf etwas) sein</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -750,7 +750,7 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">{Suntay':n}, {'aw':v}, {Soj:n:1}, {chuy:v}, {lun:v}</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1024,7 +1024,7 @@
       <column name="entry_name">tlhavqop</column>
       <column name="part_of_speech">n:inhpl</column>
       <column name="definition">punctuation</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Zeichensetzung, Interpunktion</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1371,6 +1371,7 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- The components does not point to {jIrmoH:v}, because that entry is specifically for a martial arts move. -->
       <column name="entry_name">tlhegh jIrmoHwI'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">windlass</column>
@@ -1389,7 +1390,6 @@
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <!-- Not {jIrmoH:v}, because that entry is specifically for a martial arts move. -->
       <column name="components">{tlhegh:n}, {jIr:v}, {-moH:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1403,7 +1403,7 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.08.31:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1591,14 +1591,14 @@
       <column name="entry_name">tlher'aq</column>
       <column name="part_of_speech">n</column>
       <column name="definition">reef</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Riff</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'oqe':n}</column>
+      <column name="see_also">{'oqe':n}, {bIQ'a':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1696,7 +1696,7 @@
       <column name="entry_name">tlhey'at</column>
       <column name="part_of_speech">n</column>
       <column name="definition">spacetime</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Raumzeit</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1731,7 +1731,7 @@
       <column name="entry_name">tlhey'at qIr'a'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">spacetime continuum</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Raum-Zeit Kontinuum</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -2134,7 +2134,7 @@ Verb prefixes when {tlhIH:n:nolink} is the object:
       <column name="definition_zh_HK">地毯、地毯、毯子 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{veDDIr:n}, {QongDaq:n}</column>
+      <column name="see_also">{veDDIr:n}, {QongDaq:n}, {paSrIq:n}</column>
       <column name="notes">The verb for laying a carpet is {vel:v}. The verb {mutlh:v}, when applied to a carpet, means to assemble it.
 
 The word {tlhIm:n:nolink} is also used for a fabric wall hanging. A {tlhIm:n:nolink} has to cover something. A fabric displayed at the end of a pole would be a {joqwI':n}.
@@ -3539,7 +3539,7 @@ One can say either {B tlhogh A:sen:nolink} for "{A:sen:nolink} marries {B:sen:no
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tlhop:n:1}, {ghom:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This is just an extension of {tlhop:n:1} in a specific context. The idea is that a public area would be in front of some barrier used to keep the public out, while the private area would be on the other side.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3994,7 +3994,7 @@ The spelling of "klorn" comes from the script to {DS9 - Blood Oath:src}.[2]</col
       <column name="entry_name">tlhub</column>
       <column name="part_of_speech">n</column>
       <column name="definition">climax (literary term)</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Höhepunkt (einer Erzählung/Geschichte)</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -4277,13 +4277,13 @@ Some people believe that this word means "to expel exhaust", based on its simila
       <column name="entry_name">tlhur</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">catch</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">fangen (z.B. einen Ball)</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
-      <column name="antonyms"></column>
+      <column name="antonyms">{jaD:v}</column>
       <column name="see_also">{jon:v}</column>
       <column name="notes">This means to grab in midair, like catching a baseball.</column>
       <column name="notes_de"></column>

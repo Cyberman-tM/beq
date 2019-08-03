@@ -545,41 +545,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">balgharya'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Bulgaria</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">bam</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">face, have the prospect of having to deal with</column>
@@ -600,7 +565,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
       <column name="hidden_notes">The prefix in the example sentence is incorrect, as it should be {bo-:v:pref}. Possibly it was mixed up with {lI-:v:pref}, which forced {lIb:v} to be created.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {Qob lIb bam SoH chuDlI' je.@@Qob:n, lIb:v, bam:v, SoH:n, chuD:n, -lI':n, je:conj} "You and your people are in danger."</column>
+▶ {Qob lIb bam SoH chuDlI' je.@@Qob:n, lIb:v, bam:v, SoH:n, chuD:n, -lI':n, je:conj} "You and your people are in danger."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -612,42 +577,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">bama Hol</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">Burmese language</column>
-      <column name="definition_de">Birmanische Sprache</column>
-      <column name="definition_fa">زبان برمه</column>
-      <column name="definition_sv">burmesiska (språk)</column>
-      <column name="definition_ru">Бирманский язык</column>
-      <column name="definition_zh_HK">緬甸語</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{mIyama:n}, {Hol:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -753,41 +683,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">banan naH</column>
-      <column name="part_of_speech">n:food</column>
-      <column name="definition">banana</column>
-      <column name="definition_de">Banane</column>
-      <column name="definition_fa">موز</column>
-      <column name="definition_sv">banan</column>
-      <column name="definition_ru">Банан</column>
-      <column name="definition_zh_HK">香蕉</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is what Klingons would call the Terran fruit.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1077,7 +972,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
       <column name="entry_name">baQ</column>
       <column name="part_of_speech">v:3,i_c</column>
       <column name="definition">take turns</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">abwechseln</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1120,7 +1015,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</column>
       <column name="definition_zh_HK">一般粗口</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{bep:v}, {ghughugh:v}</column>
       <column name="notes">When used for booing, it is often preceded or followed by general grumbling and growling. Sometimes, just grumbling and growling alone can also expressed this sentiment.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1179,41 +1074,6 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">barat</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">India</column>
-      <column name="definition_de">Indien</column>
-      <column name="definition_fa">هندوستان</column>
-      <column name="definition_sv">Indien</column>
-      <column name="definition_ru">Индия</column>
-      <column name="definition_zh_HK">印度</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2157,7 +2017,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="entry_name">bay'eS</column>
       <column name="part_of_speech">n:being</column>
       <column name="definition">inferior, subordinate</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Untergebener</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -2171,7 +2031,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">{bay:n} "b" + {'eS:v} "low" = "below". Also "bias".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2227,21 +2087,21 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="entry_name">ba'qIn</column>
       <column name="part_of_speech">n</column>
       <column name="definition">saddle</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Sattel</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{Sargh:n}, {Hun:n}</column>
       <column name="notes">This refers to the seat strapped to the back of an animal.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">A "bakin" (ばきん, 馬巾) is a padded cover for a samurai saddle.</column>
+      <column name="hidden_notes">"Back in" the saddle.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2787,41 +2647,6 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">belghIya'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Belgium</column>
-      <column name="definition_de">Belgien</column>
-      <column name="definition_fa">بلژیک</column>
-      <column name="definition_sv">Belgien</column>
-      <column name="definition_ru">Бельгия</column>
-      <column name="definition_zh_HK">比利時</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">bem</column>
       <column name="part_of_speech">n:body</column>
       <column name="definition">sole of foot</column>
@@ -2983,7 +2808,7 @@ To say "when I was X years old", the construction is, for example, {qaStaHvIS DI
       <column name="definition_zh_HK">抱怨</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bep:n}, {vIng:v}, {boj:v}, {morgh:v}</column>
+      <column name="see_also">{bep:n}, {vIng:v}, {boj:v}, {morgh:v}, {baQa':excl}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3250,41 +3075,6 @@ To say "when I was X years old", the construction is, for example, {qaStaHvIS DI
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT p.167:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">berlIn</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Berlin</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is the capital city of {DoyIchlan:n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4810,7 +4600,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/NpFDKTzINH8}</column>
       <column name="entry_name">bInglan</column>
       <column name="part_of_speech">n</column>
       <column name="definition">hypothesis</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Hypothese</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -4824,7 +4614,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/NpFDKTzINH8}</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The Greek word "hypothesis" comes from roots meaning "under" ({bIng:n}) and "placing" ({lan:v}).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5488,7 +5278,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/NpFDKTzINH8}</column>
       <column name="definition_zh_HK">海洋</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{yu'egh:n}, {vI'Ir:n}, {bIQtIq:n}, {bIQ'a' HeH:n}</column>
+      <column name="see_also">{yu'egh:n}, {vI'Ir:n}, {bIQtIq:n}, {bIQ'a' HeH:n}, {tlher'aq:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5652,41 +5442,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/NpFDKTzINH8}</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">bIraSIw</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Brazil</column>
-      <column name="definition_de">Brasilien</column>
-      <column name="definition_fa">برزیل</column>
-      <column name="definition_sv">Brasilien</column>
-      <column name="definition_ru">Бразилия</column>
-      <column name="definition_zh_HK">巴西</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5897,41 +5652,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/NpFDKTzINH8}</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKDA:src}, [2] {Diplomatic Implausibility:src}, [3] {KCD:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">bIrI'tIS qolambIya</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">British Columbia</column>
-      <column name="definition_de">Britisch-Kolumbien</column>
-      <column name="definition_fa">بریتیش کلمبیا</column>
-      <column name="definition_sv">British Columbia [AUTOTRANSLATED]</column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK">不列顛哥倫比亞省</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a province of {qa'naDa':n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6910,7 +6630,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="entry_name">boghoy</column>
       <column name="part_of_speech">n</column>
       <column name="definition">procession, parade, march</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Prozession, Parade, Marsch</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -6924,7 +6644,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">A reference to the Colonel Bogey March.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7127,7 +6847,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="definition_zh_HK">歌曲</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bom mu':n}, {ghuQ:n}, {gha'tlhIq:n}, {wup:v}, {bom:v}</column>
+      <column name="see_also">{bom mu':n}, {ghuQ:n}, {gha'tlhIq:n}, {wup:v}, {bom:v}, {'ISQIm:n}, {'IngSav:n}, {jaghIv:n}, {romta':n}, {Savvanwer:n}</column>
       <column name="notes">Kinds of {bom:n:nolink} include: {bang bom:n}, {HIvje' bom:n}, {van bom:n}, {chon bom:n}, {Dap bom:n}, {ghe'naQ:n}, {may' bom:n}, {najmoHwI':n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7895,11 +7615,11 @@ Please support the Klingon language by purchasing {The Klingon Dictionary:src}, 
 Klingon, Star Trek, and related marks are trademarks of CBS Studios, Inc., and are used under "fair use" guidelines.
 
 Android programming: {De'vID:n:name}
-Flutter (iOS) port: {De'nIl:n:name,nolink} (Daniel Dadap)
+Flutter (iOS) port: Daniel Dadap
 Klingon-English data: {De'vID:n:name,nolink}, with help from others
 German translations: {Quvar:n:name} (Lieven L. Litaer)
 Swedish translations: {Klingonska Akademien:url:http://klingonska.org/}
-Russian translations: Кирилл Шилов, {De'nIl:n:name,nolink} (Дэниел Дэдеп) and Sirglin (Ольга Косарева)
+Russian translations: Кирилл Шилов, Дэниел Дэдеп and Sirglin (Ольга Косарева)
 TNG {pIqaD:n} font: Admiral {qurgh lungqIj:n:name,nolink} of the {Klingon Assault Group:url:http://www.kag.org/}
 DSC {pIqaD:n:nolink} font: {Quvar:n:name,nolink} (Lieven L. Litaer)
 
@@ -7923,11 +7643,11 @@ Bitte unterstütze die klingonische Sprache durch den Erwerb der Bücher {The Kl
 Klingon, Star Trek, und verwandte Begriffe sind Schutzmarken von CBS Studios, Inc., und werden unter "fair use" verwendet.
 
 Android Programmierung: {De'vID:n:name}
-Flutter (iOS) Portierung: {De'nIl:n:name,nolink} (Daniel Dadap)
+Flutter (iOS) Portierung: Daniel Dadap
 Klingonisch-Englische Informationen: {De'vID:n:name,nolink}, mit Unterstützung von Anderen
 Deutsche Übersetzung: {Quvar:n:name} (Lieven L. Litaer)
 Schwedische Übersetzung: {Klingonska Akademien:url:http://klingonska.org/}
-Russische Übersetzung: Кирилл Шилов, {De'nIl:n:name,nolink} (Дэниел Дэдеп) und Sirglin (Ольга Косарева)
+Russische Übersetzung: Кирилл Шилов, Дэниел Дэдеп und Sirglin (Ольга Косарева)
 TNG {pIqaD:n} Schriftart: Admiral {qurgh lungqIj:n:name,nolink} von der {Klingon Assault Group:url:http://www.kag.org/}
 DSC {pIqaD:n:nolink} Schriftart: {Quvar:n:name,nolink} (Lieven L. Litaer)
 
@@ -7953,11 +7673,11 @@ Ein besonderer Dank richtet sich an Marc Okrand ({marq 'oqranD:n:name}) für das
 Клингонский язык, Стар Трек, и связанные марки и торговые марки CBS Studios, Inc., использованы согласно рекомендациям доктрины "Добросовестного использования".
 
 Программирование под Android: {De'vID:n:name}
-Flutter (iOS) port: {De'nIl:n:name,nolink} (Daniel Dadap)
+Flutter (iOS) port: Daniel Dadap
 Клингоно-агнглийская информация: {De'vID:n:name,nolink}, с помощью других
 Переводы на немецкий язык: {Quvar:n:name} (Ливен Л. Литар)
 Переводы на шведский язык: {Klingonska Akademien:url:http://klingonska.org/}
-Переводы на русский язык: Кирилл Шилов ({tlhIngan:n:name,nolink} в KLI и {qrell:n:name,nolink} в Klingon Assault Group), De'nIl (Дэниел Дэдеп) и Sirglin (Ольга Косарева)
+Переводы на русский язык: Кирилл Шилов ({tlhIngan:n:name,nolink} в KLI и {qrell:n:name,nolink} в Klingon Assault Group), Дэниел Дэдеп и Sirglin (Ольга Косарева)
 TNG {pIqaD:n} font: Адмирал {qurgh lungqIj:n:name,nolink} из {Клингонской штурмовой группы:url:http://www.kag.org/}
 DSC {pIqaD:n:nolink} font: {Quvar:n:name,nolink} (Ливен Л. Литар)
 
@@ -8421,7 +8141,7 @@ This word is also used in mathematics (see {botlh:n:2}).</column>
       <column name="entry_name">botlh</column>
       <column name="part_of_speech">n:2</column>
       <column name="definition">median (used in math)</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Mittelwert</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -8921,7 +8641,7 @@ The Story of the Promise states that:
       <column name="entry_name">bulvar</column>
       <column name="part_of_speech">n:being</column>
       <column name="definition">monk, nun</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Mönch, Nonne</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>

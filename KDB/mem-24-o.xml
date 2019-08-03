@@ -109,14 +109,14 @@
       <column name="entry_name">'ob</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be curved, arced</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">gebogen, kurvenförmig sein</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms">{wan:v}</column>
-      <column name="see_also"></column>
+      <column name="see_also">{SIH:v}, {rutlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -690,41 +690,6 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">'onteryo</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Ontario</column>
-      <column name="definition_de">Ontario</column>
-      <column name="definition_fa">انتاریو [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Ontario [AUTOTRANSLATED]</column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK">安大略省</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a province of {qa'naDa':n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">'ong</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be cunning, sly</column>
@@ -843,7 +808,7 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
       <column name="entry_name">'opuHwI'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">prostitute</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Prostituierte/r</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -948,7 +913,7 @@ A verb commonly used with {'olQan:n:nolink} is {'uch:v:1}.</column>
       <column name="entry_name">'oqe'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">coral</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Koralle</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1514,41 +1479,6 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">'oSteray'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Austria</column>
-      <column name="definition_de">Österreich</column>
-      <column name="definition_fa">اتریش</column>
-      <column name="definition_sv">Österrike</column>
-      <column name="definition_ru">Австрия</column>
-      <column name="definition_zh_HK">奧地利</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">'oSwI'</column>
       <column name="part_of_speech">n:deriv,being</column>
       <column name="definition">emissary</column>
@@ -1839,7 +1769,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="definition_zh_HK">量子理論、量子力學、量子物理</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HapQeD:n}, {'otlhtej:n}</column>
+      <column name="see_also">{'otlh:n}, {HapQeD:n}, {'otlhtej:n}, {QeD:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1865,7 +1795,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'otlhtej</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">quantum physicist</column>
       <column name="definition_de">Quantenphysiker</column>
       <column name="definition_fa">فیزیکدان کوانتومی [AUTOTRANSLATED]</column>
@@ -1874,7 +1804,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="definition_zh_HK">量子物理學家</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'otlhQeD:n}</column>
+      <column name="see_also">{'otlh:n}, {'otlhQeD:n}, {tej:n}, {Haptej:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1972,7 +1902,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="entry_name">'ovmay</column>
       <column name="part_of_speech">n</column>
       <column name="definition">direct object</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">direktes Objekt</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1987,7 +1917,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">"The Object Of My ({'ovmay:sen:nolink}) Affection" was a 1998 film.</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -2324,6 +2254,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- Possibly a visual pun. -->
       <column name="entry_name">'o'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">aft</column>
@@ -2336,7 +2267,6 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="antonyms">{'et:n:2h}</column>
       <column name="see_also">{poS:n}, {nIH:n}, {'em:n}, {Sa'Hut:n}</column>
       <column name="notes">For the area behind an object, see {'em:n}.</column>
-      <!-- Possibly a visual pun. -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2434,7 +2364,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="entry_name">'o'mat ghIrI', tI'Im, pIvyoch</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">O'mat Gri T'M pffiots</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">O'mat Gri T'M pffiots</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -2469,7 +2399,7 @@ This word is also written {'orghenya'ngan:n:nolink}.</column>
       <column name="entry_name">'o'mat ghIrI'</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">O'mat Gri</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">O'mat Gri</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>

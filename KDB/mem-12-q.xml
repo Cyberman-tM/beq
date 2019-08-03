@@ -819,45 +819,10 @@ There is an idiom, {ghung; qagh rur@@ghung:v, qagh:n, rur:v}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">qalIvornIya</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">California</column>
-      <column name="definition_de">Kalifornien</column>
-      <column name="definition_fa">کالیفرنیا [AUTOTRANSLATED]</column>
-      <column name="definition_sv">kalifornien [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Калифорния</column>
-      <column name="definition_zh_HK">加州 [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is the name of a state located in {'amerI'qa' SepjIjQa':n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Название штата, расположенного в {'amerI'qa' SepjIjQa':n}.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">qalmuS</column>
       <column name="part_of_speech">n</column>
       <column name="definition">color</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Farbe</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -871,7 +836,9 @@ There is an idiom, {ghung; qagh rur@@ghung:v, qagh:n, rur:v}.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This word seems to contradict the claim on {KGT p.81:src} that there is no noun meaning "color".</column>
+      <column name="hidden_notes">Herbert Kalmus was the co-founder and President of the Technicolor Motion Picture Corporation, and Natalie Kalmus was the color supervisor for many of its films.
+
+This word seems to contradict the claim on {KGT p.81:src} that there is no noun meaning "color".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1132,41 +1099,6 @@ There is an idiom, {ghung; qagh rur@@ghung:v, qagh:n, rur:v}.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Diplomatic Implausibility:src}, [2] {'u':src}, [3] {paq'batlh:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">qamerun</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Cameroon</column>
-      <column name="definition_de">Kamerun</column>
-      <column name="definition_fa">کامرون [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Kamerun [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Камерун</column>
-      <column name="definition_zh_HK">喀麥隆</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a country on Earth.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Название земной страны</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1962,7 +1894,7 @@ This word is applied to people and animals.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.08.31:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3161,53 +3093,10 @@ In the past, this used to be {quvqa'meH vIttlhegh:n:nolink}.[1]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">qa'naDa'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Canada</column>
-      <column name="definition_de">Kanada</column>
-      <column name="definition_fa">کانادا</column>
-      <column name="definition_sv">Kanada</column>
-      <column name="definition_ru">Канада</column>
-      <column name="definition_zh_HK">加拿大</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">
-This is a country on Earth. Some of its provinces are:
-▶ {bIrI'tIS qolambIya:n}
-▶ {qebeq:n}
-▶ {'onteryo:n}</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">
-Это земная страна. Некоторые из её провинций:
-▶ {bIrI'tIS qolambIya:n}
-▶ {qebeq:n}
-▶ {'onteryo:n}</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">qa'put</column>
       <column name="part_of_speech">n:anim</column>
       <column name="definition">monkey-like creature</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Affe-ähnliche Kreatur</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -3538,76 +3427,6 @@ The word itself means "origin of everything" or "start of it all" or the like, a
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">qebeq</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Quebec</column>
-      <column name="definition_de">Quebec</column>
-      <column name="definition_fa">کبک [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Quebec [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Квебек</column>
-      <column name="definition_zh_HK">魁北克省</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a province of {qa'naDa':n}. Its capital city is {qebeq veng:n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Является провинцией {qa'naDa':n}. Столицей является {qebeq veng:n}.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">qebeq veng</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Quebec City</column>
-      <column name="definition_de">Quebec City</column>
-      <column name="definition_fa">شهر کبک [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Staden Quebec [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Квебек сити</column>
-      <column name="definition_zh_HK">魁北克市</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is the capital city of the province of {qebeq:n} in {qa'naDa':n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Является столицей провинции {qebeq:n} в {qa'naDa':n}.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">qech</column>
       <column name="part_of_speech">n</column>
       <column name="definition">idea</column>
@@ -3856,7 +3675,7 @@ The word itself means "origin of everything" or "start of it all" or the like, a
       <column name="entry_name">qelHay'ya</column>
       <column name="part_of_speech">n</column>
       <column name="definition">Kal'Hyah</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Kal'Hyah</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -3878,7 +3697,7 @@ The word itself means "origin of everything" or "start of it all" or the like, a
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">bachelor party</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3972,7 +3791,7 @@ The information about the length comes from {The Star Trek Encyclopedia, 4th ed.
       <column name="definition_zh_HK">祖先</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'ISyar:n}</column>
       <column name="notes">This refers to a cultural or societal ancestor or forebearer (who is not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.
 
 In the {paq'batlh:src}, the {qempa'QeH:n:nolink} are the enraged (see {QeH:v}) ancestral spirits populating {ghe'tor:n}.[2]</column>
@@ -4033,41 +3852,6 @@ In the {paq'batlh:src}, the {qempa'QeH:n:nolink} are the enraged (see {QeH:v}) a
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {s.k 1999.02.02:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">qenya'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Kenya</column>
-      <column name="definition_de">Kenia</column>
-      <column name="definition_fa">کنیا</column>
-      <column name="definition_sv">Kenya</column>
-      <column name="definition_ru">Кения</column>
-      <column name="definition_zh_HK">肯尼亞</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4581,7 +4365,7 @@ The famous author {Qa'taq:n:name} wrote a commentary on this work.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.08.31:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6037,21 +5821,21 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="entry_name">qIr'a'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">continuum</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Kontinuum</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tlhey'at:n}, {roDSer:n}</column>
+      <column name="see_also">{tlhey'at:n}, {roDSer:n}, {yutlhegh:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Kiera Cameron is the main character of the Canadian science fiction series "Continuum".</column>
       <column name="components"></column>
       <column name="examples">{tlhey'at qIr'a':n}</column>
       <column name="examples_de"></column>
@@ -6226,7 +6010,7 @@ Note that {qItbe'@@qIt:v, -be':v} means "impossible".</column>
       <column name="entry_name">qItoy</column>
       <column name="part_of_speech">n:being,slang</column>
       <column name="definition">prostitute</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Prostituierte/r</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -6268,7 +6052,7 @@ Note that {qItbe'@@qIt:v, -be':v} means "impossible".</column>
       <column name="definition_zh_HK">膝頭蓋</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tor:v:1}, {'eD:v:1}, {'uS:n}, {DeSqIv:n}</column>
+      <column name="see_also">{tor:v:1}, {'eD:v:1}, {'uS:n}, {DeSqIv:n}, {wIlle':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6557,7 +6341,7 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
       <column name="entry_name">qoch'uq</column>
       <column name="part_of_speech">n</column>
       <column name="definition">rubber</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Gummi (Material)</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -6571,7 +6355,7 @@ Maltz seemed reluctant to talk about what exactly this is.[2]</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">"Caoutchouc" is natural rubber that has not been vulcanised (hardened).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7788,7 +7572,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="definition_zh_HK">生日 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'echletHom:n}, {bogh:v}</column>
+      <column name="see_also">{'echletHom:n}, {bogh:v}, {DISjaj:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7851,7 +7635,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="entry_name">qoSqa'rIy</column>
       <column name="part_of_speech">n:inhpl,anim</column>
       <column name="definition">Kos'Karii</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Kos'Karii</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -7996,7 +7780,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="entry_name">qovIj</column>
       <column name="part_of_speech">n:anim</column>
       <column name="definition">small canine-like creature</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">kleines Hunde-ähnliches Wesen</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -8010,7 +7794,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Backwards, this is {jIvoq:sen@@jI-:v, voq:v} "I have faith", which is the Latin meaning of the name "Fido" (a common name for a dog).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8018,7 +7802,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">dog, poodle, puppy</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -8073,7 +7857,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="definition_zh_HK">世界、境界</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'umber:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8203,41 +7987,6 @@ It can also be used for the device some Humans use to keep their babies quiet (w
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">qo'qo'</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">coconut</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a borrowing and not a native Klingon word.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">qo'rIDan</column>
       <column name="part_of_speech">n:place,fic</column>
       <column name="definition">Coridan</column>
@@ -8276,21 +8025,21 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="entry_name">qo'rIn</column>
       <column name="part_of_speech">n</column>
       <column name="definition">chromium salts</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Chromsalze</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{qo'rIn DIr:n}</column>
       <column name="notes">This refers to chromium salts like the ones used in leather tanning, whereas {velSo':n} is elemental chromium.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">Corinthian leather.</column>
+      <column name="hidden_notes">See under {qo'rIn DIr:n}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8311,7 +8060,7 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="entry_name">qo'rIn DIr</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">leather</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Leder</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -8325,10 +8074,12 @@ It can also be used for the device some Humans use to keep their babies quiet (w
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">Corinthian leather.</column>
+      <column name="hidden_notes">Corinthian leather.
+
+Ricardo Montalbán (Khan Noonien Singh) appeared in a series of Chrysler commercials extolling the virtues of the cars' rich Corinthian leather.</column>
       <column name="components">{qo'rIn:n}, {DIr:n}</column>
       <column name="examples">
-{qo'rIn DIr qogh:n@@qo'rIn DIr:n, qogh:n:1} "leather belt"[1]</column>
+▶ {qo'rIn DIr qogh:n@@qo'rIn DIr:n, qogh:n:1} "leather belt"[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8451,45 +8202,10 @@ It can also be used for the device some Humans use to keep their babies quiet (w
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">quba'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Cuba</column>
-      <column name="definition_de">Kuba</column>
-      <column name="definition_fa">کوبا</column>
-      <column name="definition_sv">Kuba</column>
-      <column name="definition_ru">Куба</column>
-      <column name="definition_zh_HK">古巴</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">qubbID</column>
       <column name="part_of_speech">n</column>
       <column name="definition">span, run, stretch (between)</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Abstand, Strecke, Ausdehnung</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -9419,7 +9135,7 @@ To express the idea of some point (perhaps unknown) between the two ends of a ra
       <column name="definition_zh_HK">歷史學</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{quntej:n}</column>
+      <column name="see_also">{qun:n}, {QeD:n}, {quntej:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9440,12 +9156,12 @@ To express the idea of some point (perhaps unknown) between the two ends of a ra
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.08.31:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">quntej</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">historian</column>
       <column name="definition_de">Historiker</column>
       <column name="definition_fa">تاریخ شناس</column>
@@ -9454,7 +9170,7 @@ To express the idea of some point (perhaps unknown) between the two ends of a ra
       <column name="definition_zh_HK">歷史學家</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qunQeD:n}</column>
+      <column name="see_also">{qunQeD:n}, {tej:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9475,7 +9191,7 @@ To express the idea of some point (perhaps unknown) between the two ends of a ra
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2018.08.31:src}</column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9832,7 +9548,7 @@ This word can't be used for a hole in the ground (for which see {QemjIq:n}), but
       <column name="entry_name">qurme'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">ingredient</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Zutat</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -9846,7 +9562,7 @@ This word can't be used for a hole in the ground (for which see {QemjIq:n}), but
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">{qur:v} "greedy" + {me':n} "aunt" = "(in)gredient"</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -10079,7 +9795,7 @@ This word can't be used for a hole in the ground (for which see {QemjIq:n}), but
       <column name="entry_name">qut na'</column>
       <column name="part_of_speech">n:food,deriv</column>
       <column name="definition">salt (culinary, halite)</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Salz (kulinarisch, Halit)</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -10576,14 +10292,14 @@ Note that {ghaj:v} and {Hutlh:v} can be used with this noun to indicate that som
       <column name="entry_name">quvyaH</column>
       <column name="part_of_speech">n</column>
       <column name="definition">habit</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Angewohnheit</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{roD:adv}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

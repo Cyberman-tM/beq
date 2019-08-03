@@ -1244,7 +1244,7 @@ See also {tIq'ghob:n:hyp} for a hypothetical similar grammatical construction.</
       <column name="entry_name">paSjav</column>
       <column name="part_of_speech">n</column>
       <column name="definition">cinnamon-like Klingon plant</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">zimtähnliche Klingon plant</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -1314,14 +1314,14 @@ See also {tIq'ghob:n:hyp} for a hypothetical similar grammatical construction.</
       <column name="entry_name">paSrIq</column>
       <column name="part_of_speech">n</column>
       <column name="definition">fabric used in carpets and rugs</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Stoff, der in Teppichen verwendet wird</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{tlhIm:n}</column>
       <column name="notes">This is not used for fabric used for clothing, for which see {weSjech:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2064,14 +2064,14 @@ The {bIS'ub:n} of a {pa':n:1h,nolink} is its {rav:n:1}, and its {'aqroS:n:1} is 
       <column name="entry_name">pa'jaH</column>
       <column name="part_of_speech">n</column>
       <column name="definition">rhyme</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Reim</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sa:v}</column>
+      <column name="see_also">{Sa:v}, {ghuQ:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2128,41 +2128,6 @@ The {bIS'ub:n} of a {pa':n:1h,nolink} is its {rav:n:1}, and its {'aqroS:n:1} is 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {qep'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">pa'raghway</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Paraguay</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2863,7 +2828,7 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wID:v}, {HoH:v}</column>
-      <column name="notes">This word connotes intention, targeting specific victims.</column>
+      <column name="notes">This word connotes intention, targeting specific victims.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2872,12 +2837,12 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="hidden_notes">The example sentence is a lip-match for {'ej DochmeywIj vItlhapqa'meH}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "He has killed many of our people."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
-▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "Он убил много наших людей."</column>
+▶ {'ej Dojmey wID, vInDa'ma' peq.:sen@@'ej:conj, Dojmey:n, wID:v, vInDa':n, -ma':n, peq:v} "Он убил много наших людей."[2]</column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
@@ -2885,7 +2850,7 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Into Darkness:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3063,41 +3028,6 @@ This is also infrequently shortened to {pegh vIttlhegh:n:nolink}.[1]</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}, [2] {s.k 1999.02.02:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">per naH</column>
-      <column name="part_of_speech">n:food</column>
-      <column name="definition">pear</column>
-      <column name="definition_de">Birne</column>
-      <column name="definition_fa">گلابی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">päron</column>
-      <column name="definition_ru">груша</column>
-      <column name="definition_zh_HK">梨 [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is what Klingons would call the Terran fruit.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3495,41 +3425,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/QAd6OugYyxw}</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">pe'ru'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Peru</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4127,7 +4022,7 @@ The verb {roS:v:2} means "to use the third toe". It is also homophonous with a v
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-{qagh vISoppu' 'ej vISopqa'pu' 'ej vISopqa'pu':sen@@qagh:n, vI-:v, Sop:v, -pu':v, 'ej:conj, vI-:v, Sop:v, -qa':v, -pu':v, 'ej:conj, vI-:v, Sop:v, -qa':v, -pu':v} "I've eaten gagh many times"</column>
+▶ {qagh vISoppu' 'ej vISopqa'pu' 'ej vISopqa'pu':sen@@qagh:n, vI-:v, Sop:v, -pu':v, 'ej:conj, vI-:v, Sop:v, -qa':v, -pu':v, 'ej:conj, vI-:v, Sop:v, -qa':v, -pu':v} "I've eaten gagh many times"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4352,41 +4247,6 @@ The verb {roS:v:2} means "to use the third toe". It is also homophonous with a v
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">pIlam naH</column>
-      <column name="part_of_speech">n:food</column>
-      <column name="definition">plum</column>
-      <column name="definition_de">Pflaume</column>
-      <column name="definition_fa">آلو [AUTOTRANSLATED]</column>
-      <column name="definition_sv">plommon</column>
-      <column name="definition_ru">слива</column>
-      <column name="definition_zh_HK">李子</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is what Klingons would call the Terran fruit.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Это то, что Клингоны зовут земным фруктом.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4835,7 +4695,7 @@ For other units of time, {pIq:n:nolink} is used.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-{cha' tup pIq:n@@cha':n, tup:n, pIq:n} "two minutes from now"</column>
+▶ {cha' tup pIq:n@@cha':n, tup:n, pIq:n} "two minutes from now"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5029,41 +4889,6 @@ In the promotional posters and videos for {DSC:src}, as well as in the backgroun
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">pIra'Ha</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Prague</column>
-      <column name="definition_de"></column>
-      <column name="definition_fa"></column>
-      <column name="definition_sv"></column>
-      <column name="definition_ru"></column>
-      <column name="definition_zh_HK"></column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is the capital city of {cheSqa':n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">pIrmuS</column>
       <column name="part_of_speech">n</column>
       <column name="definition">bottom (exterior)</column>
@@ -5109,7 +4934,7 @@ In the promotional posters and videos for {DSC:src}, as well as in the backgroun
       <column name="definition_zh_HK">比薩 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chab:n:1}</column>
+      <column name="see_also">{chab:n:1}, {'IventoH:n}</column>
       <column name="notes">This is what Klingons would call the Terran food. To Klingons, pizzas are apparently a kind of {chab:n:1}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5172,41 +4997,6 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">pItlhbergh</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Pittsburgh</column>
-      <column name="definition_de">Pittsburgh</column>
-      <column name="definition_fa">پیتسبورگ</column>
-      <column name="definition_sv">Pittsburgh</column>
-      <column name="definition_ru">Питтсбург</column>
-      <column name="definition_zh_HK">匹茲堡</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{'a'leghen'I':n}</column>
-      <column name="notes">This is a place name in {'amerI'qa' SepjIjQa':n} on Earth.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Название места в {'amerI'qa' SepjIjQa':n} на Земле.</column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5528,7 +5318,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="entry_name">pIvyoch</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">pffiots</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Pffiots</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -6727,7 +6517,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">A person who studies this would presumably be a {porghtej:n@@porgh:n, tej:n}, but this word has never appeared in canon.</column>
       <column name="components">{porgh:n}, {QeD:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6742,41 +6532,6 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {HQ 12.4, Dec. 2003:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">portughal</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Portugal</column>
-      <column name="definition_de">Portugal</column>
-      <column name="definition_fa">پرتغال</column>
-      <column name="definition_sv">Portugal</column>
-      <column name="definition_ru">Португалия</column>
-      <column name="definition_zh_HK">葡萄牙</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7315,41 +7070,6 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">po'lISqa'</column>
-      <column name="part_of_speech">n:place</column>
-      <column name="definition">Poland</column>
-      <column name="definition_de">Polen</column>
-      <column name="definition_fa">لهستان</column>
-      <column name="definition_sv">Polen</column>
-      <column name="definition_ru">Польша</column>
-      <column name="definition_zh_HK">波蘭</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">pub</column>
       <column name="part_of_speech">v:i</column>
       <column name="definition">boil</column>
@@ -7432,7 +7152,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="definition_zh_HK">廁所 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{puchpa':n}, {qeQ:n}, {turmIq:n}, {taQbang:n:2}, {ghIm:v}, {vuj:v}</column>
+      <column name="see_also">{puchpa':n}, {qeQ:n}, {turmIq:n}, {taQbang:n:2}, {ghIm:v}, {vuj:v}, {'ImSIng:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7708,7 +7428,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="entry_name">puHley'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">cape, point</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Kap, Punkt</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -8147,7 +7867,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="entry_name">pumnuj</column>
       <column name="part_of_speech">n</column>
       <column name="definition">handcuffs, manacles</column>
-      <column name="definition_de"></column>
+      <column name="definition_de">Handschellen</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -8367,7 +8087,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="definition_zh_HK">細路、孩子、後代</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{vav:n}, {SoS:n}, {Qup:v}</column>
+      <column name="see_also">{vav:n}, {SoS:n}, {Qup:v}, {nortlham:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8508,13 +8228,13 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hov leng:n}</column>
-      <column name="notes">This phrase does not appear in canon, but it is an obvious derivation from canonical terms.</column>
+      <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Фраза никогда не появляется в канонических источниках, но имеет очевидное происхождение от канонических терминов.</column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This phrase does not appear in canon, but it is an obvious derivation from canonical terms.</column>
       <column name="components">{puq poH:n}, {veb:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8612,7 +8332,7 @@ Siehe wie Gowron dies sagt: {YouTube video:url:http://youtu.be/4gCJJiBXaE4}</col
       <column name="definition_zh_HK">孫</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{puq:n}, {nortlham:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9131,7 +8851,7 @@ This word takes the plural suffix {-mey:n}, unlike when {pu':n:3} refers to a ho
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source"></column>
+      <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
