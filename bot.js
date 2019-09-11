@@ -374,13 +374,14 @@ bot.on('message', function (messageDJS)
 			var p_filtWord = args[7];
 			var p_showNotes = args[8];  //show notes, if available
 			var p_beSimple  = args[9];  //Simple output - no frills, delete command message
-			var p_special   = args[10];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
+			var p_showS     = args[10]; //Show sources (if available)
+			var p_special   = args[11];  //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 	
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 				
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
-			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple;
+			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple+ '|' + p_showS;
 			if (dynArg.indexOf('case') >= 0)
 				beqTalk.wCase = true;
 
@@ -405,6 +406,9 @@ bot.on('message', function (messageDJS)
 				//Delete original message, we don't need it.
 				messageDJS.delete();
 			}
+				
+			if ((dynArg).indexOf('source') >= 0)
+				beqTalk.showSource = true;
 		
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
