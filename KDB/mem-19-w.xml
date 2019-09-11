@@ -1857,7 +1857,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The kilogram was originally defined to be the mass of 1 L ({wa':n:num}, {lay:n:1}) of water.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2591,7 +2591,7 @@ Do not confuse this with {mum:v}, which means "taste" in the sense of perceiving
       <column name="definition_zh_HK">蠟燭</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sech:n}, {wovmoHbogh jan:n}, {wovmoHwI':n}, {req:n}</column>
+      <column name="see_also">{Sech:n}, {wovmoHbogh jan:n}, {wovmoHwI':n}, {req:n}, {SuS:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

@@ -855,6 +855,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <!-- TODO: Fix Russian note. -->
       <column name="entry_name">mang</column>
       <column name="part_of_speech">n:inhps</column>
       <column name="definition">soldier</column>
@@ -865,12 +866,12 @@ The writers who came up with this apparently looked up words for "good" and "nig
       <column name="definition_zh_HK">士兵（單數）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{QaS:n:1h}</column>
-      <column name="notes">The word {mangpu':n@@mang:n, -pu':n} is seldom-used, and carries the notion that there are individuals making up the group. {negh:n} focuses on the group as a unit.[2]</column>
+      <column name="see_also"></column>
+      <column name="notes">The word {mangpu':n@@mang:n, -pu':n} is seldom-used, and carries the notion that there are individuals making up the group. {negh:n} focuses on the group as a unit. {QaS:n:1h} is similar to {negh:n:nolink}, but excludes officers.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Слово {mangpu':n@@mang:n, -pu':n} редко используется, и несет смысловую нагрузку, что есть люди, которые создают группу. Слово {negh:n} фокусируется на группе, как на подразделении.[2]</column>
+      <column name="notes_ru">Слово {mangpu':n@@mang:n, -pu':n} редко используется, и несет смысловую нагрузку, что есть люди, которые создают группу. Слово {negh:n} фокусируется на группе, как на подразделении. {QaS:n:1h} is similar to {negh:n:nolink}, but excludes officers.[2]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components">{negh:n}</column>
@@ -3736,14 +3737,14 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="entry_name">mergh</column>
       <column name="part_of_speech">v:i_c</column>
       <column name="definition">be combined, be mixed together</column>
-      <column name="definition_de">kombiniert, vermischt sein</column>
+      <column name="definition_de">überlagert sein, kombiniert sein</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tIr:v}</column>
+      <column name="see_also">{tIr:v}, {DuD:v}</column>
       <column name="notes">This is also used in a physics context, where it refers to the phenomenon of quantum superposition.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3997,7 +3998,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="notes_sv"></column>
       <column name="notes_ru">Когда используется в качестве команды, это слово значит прекратить что-либо делать. Это слово не используется чтобы приказать что-либо выключить.[2]</column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The only object this verb has taken in canon is {'e':n:pro}, and in every case the subject of {mev:v:nolink} has been identical to the subject of the sentence-as-object. It seems that the subject is what stops or ceases, even when there is an object. It is notable that {mevmoH:v@@mev:v, -moH:v} appears on {KGT p.154:src} as "cause [someone] to stop".</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {bIjatlh 'e' yImev!:sen}
