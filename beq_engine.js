@@ -568,8 +568,8 @@ module.exports.createTranslation = function(beqTalk)
 				if (item.hidden_notes != '')
 					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
-			if (beqTalk.showSource == true)
-				sndMessage += intText.resSrc + " " + item.shource + beqTalk.newline;
+			if (beqTalk.showSource == true && item.source != undefined)
+				sndMessage += intText.resSrc + " " + item.source + beqTalk.newline;
 			
 			//Tips about the word, is it slang, is it derived, are there notes, etc...
 			infTips = "";			
