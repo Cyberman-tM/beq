@@ -249,7 +249,7 @@
       <column name="entry_name">yach</column>
       <column name="part_of_speech">v:2,t</column>
       <column name="definition">strum (a stringed instrument)</column>
-      <column name="definition_de">streichen (ein Streichinstrument)</column>
+      <column name="definition_de">Saite anschlagen (bei einem Saiteninstrument)</column>
       <column name="definition_fa">ریش (یک ابزار رشته ای) [AUTOTRANSLATED]</column>
       <column name="definition_sv">knäppa på, slå på (ett stränginstrument)</column>
       <column name="definition_ru"></column>
@@ -789,7 +789,9 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tIqleH:n}, {'etlh:n}, {yaD:n:2}, {yan:v}</column>
-      <column name="notes">This is a weapon with long blades.</column>
+      <column name="notes">This is a weapon with long blades.
+
+This word is also used as slang for a "bow" which is used to play the {ngItHel:n}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -809,7 +811,7 @@ The toe verbs are used in the same way as the finger verbs, but they are not hea
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1765,7 +1767,7 @@ Do not confuse this with a society in the cultural sense, for which see {nugh:n}
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{yej:n}?, {'an:v} or {'an:n:hyp,nolink} or a homophonous element</column>
+      <column name="components">{yej:n}?, {'an:v:0} or {'an:n:hyp,nolink} or a homophonous element</column>
       <column name="examples">
 ▶ {tlhIngan yej'an:n:nolink} would be "a group dedicated to the study of Klingons"[1]</column>
       <column name="examples_de"></column>
@@ -2845,7 +2847,7 @@ To say that someone "lives at" a place, use {Dab:v}.</column>
       <column name="definition_zh_HK">健康長壽·繁榮昌盛！ [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{pIj tay'taH Doch pIm:sen}</column>
+      <column name="see_also">{SIpoq:n:name}, {pIj tay'taH Doch pIm:sen}</column>
       <column name="notes">This is a common Vulcan saying.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3367,30 +3369,31 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/HVOJkR51lBU}</column>
       <column name="_id"></column>
       <column name="entry_name">yIrIDngan</column>
       <column name="part_of_speech">n:being,fic</column>
-      <column name="definition">Yiridian (person)</column>
+      <column name="definition">Yridian (person)</column>
       <column name="definition_de">Yridianer</column>
       <column name="definition_fa">ییریدان (شخص) [AUTOTRANSLATED]</column>
       <column name="definition_sv">yridian (person)</column>
       <column name="definition_ru"></column>
-      <column name="definition_zh_HK">Yiridian（人） [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">Yridian（人） [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ngan:n}</column>
-      <column name="notes">This is also spelled "Yridian" in English.</column>
+      <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is misspelled as "Yiridian" in both word lists in {KGT:src}, but it is consistently spelled "Yridian" elsewhere, including {TKW:src} as well as Star Trek canon.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {nobmey qembogh yIrIDnganpu''e' yIvoqQo'.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">Yridian</column>
+      <column name="search_tags">Yiridian</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>

@@ -116,7 +116,7 @@
       <column name="definition_zh_HK">頭</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qab:n}, {mong:n}, {jIb:n}, {Quch:n}</column>
+      <column name="see_also">{qab:n}, {mong:n}, {jIb:n}, {Quch:n}, {DughrI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -672,7 +672,7 @@
       <column name="entry_name">nagh HeH</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">curb</column>
-      <column name="definition_de">Kurve</column>
+      <column name="definition_de">Bordstein, Randstein</column>
       <column name="definition_fa"></column>
       <column name="definition_sv"></column>
       <column name="definition_ru"></column>
@@ -3934,7 +3934,8 @@ This verb is used to express the concept that two things have the same amount of
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {nIHwIj ghop:n@@nIH:n, -wIj:n, ghop:n}[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3946,7 +3947,7 @@ This verb is used to express the concept that two things have the same amount of
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru">правый борт</column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.08.05:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5616,8 +5617,8 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="hidden_notes">There is a grammatical error with this sentence. It should be {tIvoqQo':sen@@tI-:v, voq:v, -Qo':v} rather than {yIvoqQo':sen:nolink}.</column>
+      <column name="components">{nob:n}, {-mey:n}, {qem:v}, {-bogh:v}, {yIrIDngan:n}, {-pu':n}, {-'e':n}, {yI-:v}, {voq:v}, {-Qo':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5631,6 +5632,41 @@ See {SIq:v} for an explanation of the usage of these finger verbs.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKW p.189:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">nobmeD</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">skeleton (anatomy)</column>
+      <column name="definition_de">Skelett (Anatomie)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hom:n:1}, {qal'aq:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">"Dem Bones" is a spiritual song about the skeleton.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7049,6 +7085,41 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     </table>
         <table name="mem">
           <column name="_id"></column>
+          <column name="entry_name">no' bov</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">ancestors' era</column>
+          <column name="definition_de">Epoche der Vorfahren</column>
+          <column name="definition_fa"></column>
+          <column name="definition_sv"></column>
+          <column name="definition_ru"></column>
+          <column name="definition_zh_HK"></column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{bov tIQ:n}</column>
+          <column name="notes">This refers to a period in paleontology more recent than {bov tIQ:n}.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{no':n}, {bov:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
           <column name="entry_name">no' DIr</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">ancestor hanging (wall ornament)</column>
@@ -7730,7 +7801,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{quv bey':n}, {betleH bey':n}</column>
-      <column name="notes">A {nuH bey':n:nolink} has one {betleH:n}, one {naQjej:n}, and one {ghob'etlh:n:hyp}.[1]</column>
+      <column name="notes">A {nuH bey':n:nolink} has one {betleH:n}, one {naQjej:n}, and one {ghop 'etlh:n}.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>

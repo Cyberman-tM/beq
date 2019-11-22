@@ -329,7 +329,6 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{yIQ:v}, {HaH:v:2}, {Qal:v}</column>
-      <!-- Source? -->
       <column name="notes">The object is the thing being soaked or drenched.
 
 {HaH'egh:v@@HaH:v:1, -'egh:v} is used to refer to drinking a great deal, or bathing.</column>
@@ -1040,7 +1039,7 @@
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Marc Okrand decided to put this word into {TKD:src} because he thought artificial sweetener would be something that would be around in the future.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1054,9 +1053,10 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.09.26:src}</column>
     </table>
     <table name="mem">
+      <!-- {HarnIS} sounds like "harness"? -->
       <column name="_id"></column>
       <column name="entry_name">Har</column>
       <column name="part_of_speech">v:t_c</column>
@@ -1070,7 +1070,6 @@
       <column name="antonyms">{Hon:v}</column>
       <column name="see_also">{DIch:n}, {voq:v}, {loy:v}, {Sov:v}</column>
       <column name="notes"></column>
-      <!-- {HarnIS} sounds like "harness"? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1944,6 +1943,7 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
+      <!-- Marc Okrand has said to Quvar that it's not related to the Biblical Noah, and the pun is quite complicated, but not so much so that nobody would solve it. -->
       <column name="_id"></column>
       <column name="entry_name">Ha'on</column>
       <column name="part_of_speech">n</column>
@@ -1957,7 +1957,6 @@ To answer in the negative, say {Qo':excl} "no, I refuse".</column>
       <column name="antonyms"></column>
       <column name="see_also">{Ha'on vevwI':n}</column>
       <column name="notes">This refers to the little piece of metal that holds sheets of paper together.</column>
-      <!-- Marc Okrand has said to Quvar that it's not related to the Biblical Noah, and the pun is quite complicated, but not so much so that nobody would solve it. -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2529,8 +2528,8 @@ This word is listed among other militaristic terminology in the body of {KGT:src
       <column name="source">[1] {SkyBox 31:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src})</column>
     </table>
     <table name="mem">
-      <column name="_id"></column>
       <!-- In Klingon, literally: Barge of Death -->
+      <column name="_id"></column>
       <column name="entry_name">Hegh Duj</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">Barge of the Dead</column>
@@ -3801,6 +3800,7 @@ See under {nItlh:n} for the verbs associated with each of the fingers.</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- Why is this a "boring gun"? -->
       <column name="_id"></column>
       <column name="entry_name">HIchDal</column>
       <column name="part_of_speech">n</column>
@@ -3814,7 +3814,6 @@ See under {nItlh:n} for the verbs associated with each of the fingers.</column>
       <column name="antonyms"></column>
       <column name="see_also">{lojmIt:n}</column>
       <column name="notes"></column>
-      <!-- Why is this a "boring gun"? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3984,6 +3983,7 @@ This was explicitly noted not to take an object.</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- High Noon? -->
       <column name="_id"></column>
       <column name="entry_name">HIgh</column>
       <column name="part_of_speech">v:t</column>
@@ -3997,7 +3997,6 @@ This was explicitly noted not to take an object.</column>
       <column name="antonyms"></column>
       <column name="see_also">{Suv:v}, {toj:v}</column>
       <column name="notes"></column>
-      <!-- High Noon? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5191,6 +5190,7 @@ If {Hoch:n:nolink} follows a noun, it means "all of X".[3; 4] Note that this is 
       <column name="source">[1] {KGT p.178:src}</column>
     </table>
     <table name="mem">
+      <!-- https://www.airspacemag.com/as-interview/say-what-linguist-elaborates-180960198/ -->
       <column name="_id"></column>
       <column name="entry_name">Hoch Holmey mughwI'</column>
       <column name="part_of_speech">n:deriv</column>
@@ -5220,7 +5220,6 @@ If {Hoch:n:nolink} follows a noun, it means "all of X".[3; 4] Note that this is 
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
       <column name="search_tags_de"></column>
-      <!-- https://www.airspacemag.com/as-interview/say-what-linguist-elaborates-180960198/ -->
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
@@ -5898,7 +5897,7 @@ The identifier is usually a country, region, or political unit of some kind. For
       <column name="definition_zh_HK">骨</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qal'aq:n}, {pIp:n}, {melchoQ:n}, {Somraw:n}, {Ha'DIbaH:n:1}</column>
+      <column name="see_also">{nobmeD:n}, {qal'aq:n}, {pIp:n}, {melchoQ:n}, {Somraw:n}, {Ha'DIbaH:n:1}, {'an'or:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6679,9 +6678,9 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- Is this a plural or an inherent plural? Also, are these capable of language? -->
       <column name="_id"></column>
       <column name="entry_name">HoSDo'</column>
-      <!-- Is this a plural or an inherent plural? Also, are these capable of language? -->
       <column name="part_of_speech">n:plural</column>
       <column name="definition">energy beings</column>
       <column name="definition_de">Energiewesen</column>
@@ -7052,7 +7051,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This is only spoken in Klingon in {KCD:src}, with no English translation. It is unclear whether it's one word or two.</column>
+      <column name="hidden_notes"></column>
       <column name="components">{Hov:n}, {lat:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7060,13 +7059,13 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">Hovlat</column>
+      <column name="search_tags"></column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KCD:src}</column>
+      <column name="source">[1] {KCD:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7086,7 +7085,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
 ▶ The Animated Series
 ▶ The Next Generation ({puq poH veb:n})
 ▶ Deep Space Nine ({logh Hop Hut tengchaH:n})
-▶ Voyager
+▶ Voyager ({vo'yajer:n:name})
 ▶ Enterprise ({'entepray':n:name})
 ▶ Discovery ({DISqa'vI'rIy:n:name})</column>
       <column name="notes_de"></column>
@@ -7123,7 +7122,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This is an out-of-universe phrase that doesn't come from Klingon culture.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7143,7 +7142,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {STC 104:src}</column>
+      <column name="source">[1] {STC 104:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8318,7 +8317,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{qach:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This is typically used for storing things, unlike a {raywal:n} which is intended to be used by people, although there is overlap between them.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -8338,7 +8337,7 @@ This verb is also used for regular polygons and polyhedra.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 2017:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8661,6 +8660,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/tAK-hgXMH-M}</column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
+      <!-- check example from paq'batlh -->
       <column name="_id"></column>
       <column name="entry_name">Hun</column>
       <column name="part_of_speech">n:anim</column>
@@ -8681,7 +8681,6 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/tAK-hgXMH-M}</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <!-- check example from paq'batlh -->
       <column name="examples">
 ▶ {nom leng Hun nom lengqu' lut:sen:nolink} "Stories travel faster than a Khrun"[2]</column>
       <column name="examples_de"></column>
@@ -8841,6 +8840,7 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/tAK-hgXMH-M}</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- The "hurdy gurdy" is a type of stringed instrument. -->
       <column name="_id"></column>
       <column name="entry_name">HurDagh</column>
       <column name="part_of_speech">n</column>
@@ -8853,10 +8853,11 @@ Watch Gowron say this: {YouTube video:url:http://youtu.be/tAK-hgXMH-M}</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the general term for a musical instrument with strings ({SIrgh:n}), which one may either pluck ({pang:v}) or strum ({yach:v:2}). To vary the sound, one "fingers" ({Heng:v}) the strings (touch them at different points while plucking or strumming).
+      <column name="notes">This is the general term for a musical instrument with strings ({SIrgh:n}), which one may either pluck ({pang:v}) or strum ({yach:v:2}). To vary the sound, one "fingers" ({Heng:v}) the strings (touch them at different points while plucking or strumming).[1]
 
-Types of {HurDagh:n:nolink} include the {Supghew:n} (small), the {leSpal:n} (medium), and the {tIngDagh:n} (large).</column>
-      <!-- The "hurdy gurdy" is a type of stringed instrument. -->
+Types of {HurDagh:n:nolink} include the {Supghew:n} (small), the {leSpal:n} (medium), and the {tIngDagh:n} (large).
+
+A {HurDagh:n:nolink} is not generally played with a bow, but a {ngItHel:n} may be plucked, strummed, or bowed.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -8870,13 +8871,13 @@ Types of {HurDagh:n:nolink} include the {Supghew:n} (small), the {leSpal:n} (med
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">violin, harp</column>
+      <column name="search_tags">harp</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8948,6 +8949,41 @@ Types of {HurDagh:n:nolink} include the {Supghew:n} (small), the {leSpal:n} (med
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">Hurgh Duj</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">submarine, blimp</column>
+          <column name="definition_de">U-Boot, Luftschiff </column>
+          <column name="definition_fa"></column>
+          <column name="definition_sv"></column>
+          <column name="definition_ru"></column>
+          <column name="definition_zh_HK"></column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">The Klingon Empire has ships which could both fly and submerge underwater. Whether this refers specifically to a submarine or a blimp depends on context. To differentiate them, a submarine would be a {bIQ Hurgh Duj:n@@bIQ:n, Hurgh Duj:n} and a blimp would be a {muD Hurgh Duj:n@@muD:n:1, Hurgh Duj:n}.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="hidden_notes">This word and information about it were revealed in conversation during the {qepHom:src}.</column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de">Unterseeboot</column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Hur'Iq</column>

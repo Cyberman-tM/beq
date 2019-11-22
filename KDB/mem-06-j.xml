@@ -1286,7 +1286,7 @@ In Klingon, titles generally go after the name, so "Captain Jean-Luc Picard" wou
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Star Trek Insurrection:src}, [2] {KLI mailing list 2013.07.29:src}, [3] {qep'a' 2017:src}</column>
+      <column name="source">[1] {Star Trek Insurrection:src}, [2] {KLI mailing list 2013.07.29:src}, [3] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1582,7 +1582,7 @@ Note that in Klingon, "deep space" is called {logh Hop:n}, literally, "far space
       <column name="definition_zh_HK">說話語無倫次、咕 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jatlh:v}</column>
+      <column name="see_also">{jatlh:v}, {jat Hol:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1639,6 +1639,41 @@ Note that in Klingon, "deep space" is called {logh Hop:n}, literally, "far space
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">jat Hol</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">gibberish</column>
+      <column name="definition_de">Kauderwelsch</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms">{laqlaq:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also">{jat:v:1}, {laq:v:2}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{jat:n}, {Hol:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2091,6 +2126,7 @@ In {TKD:src} this word is defined as "lord" only, same as {joH:n:nolink}. Howeve
       <column name="source">[1] {TKDA:src}</column>
     </table>
     <table name="mem">
+      <!-- See paq'batlh canto 7 stanza 8, {chaHvaD lut ja':sen:nolink}. -->
       <column name="_id"></column>
       <column name="entry_name">ja'</column>
       <column name="part_of_speech">v:t_c</column>
@@ -2111,7 +2147,6 @@ In {TKD:src} this word is defined as "lord" only, same as {joH:n:nolink}. Howeve
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">In the {HolQeD:src} interview, Will Martin suggested that a typical direct object of this verb is the person addressed. This was not contradicted by Marc Okrand, but not explicitly affirmed, either.[2]</column>
       <column name="components"></column>
-      <!-- See paq'batlh canto 7 stanza 8, {chaHvaD lut ja':sen:nolink}. -->
       <column name="examples">
 ▶ {nuja'rup.:sen:nolink} "They are prepared to tell us."[1]</column>
       <column name="examples_de"></column>
@@ -2242,9 +2277,9 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- This is an adverbial, despite not being labeled as such in TKD. -->
       <column name="_id"></column>
       <column name="entry_name">je</column>
-      <!-- This is an adverbial, despite not being labeled as such in TKD. -->
       <column name="part_of_speech">adv</column>
       <column name="definition">also (follows the verb it modifies)</column>
       <column name="definition_de">auch (folgt dem Verb das es modifiziert)</column>
@@ -2256,7 +2291,6 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
       <column name="antonyms"></column>
       <column name="see_also">{je:conj}, {vabDot:adv}</column>
       <column name="notes">When {je:adv:nolink} follows a verb, it means "also, too". {qaleghpu' je:sen:nolink} means "I also saw you, I saw you too", and as in English, its meaning is ambiguous. (It could mean "I and others saw you" or "I saw you and others".)[1]</column>
-      <!-- The sentence {pe'laH je:sen:nolink} appears on {SkyBox 2:src} and seems to mean "they cut, in addition to doing other things", even though such a meaning is not indicated in the explanation of {je:adv:nolink} found in {TKD:src}. But the sentence can also be interpreted to mean "they (in addition to the main blade) cut". (See {taj:n} for the actual text.) -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2264,7 +2298,16 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This is considered a noun conjunction, rather than an adverbial, in {TKD:src}.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {SoHvaD 'uQ wej vIqem. Dargh vIqem je.:sen:nolink}[2]
+▶ {jIghung. jIghung je. jI'oj. jI'oj je.:sen:nolink} (See {'avwI'vaD jatlh qama...:sen})[3]
+▶ {notlh veS, 'a tugh manotlhchoH je maH.:sen}
+▶ {pInaDqu' tuqlIj wInaDqu' je.:sen}
+▶ {ghop luQan tajHommey. pe'laH je.:sen:nolink} (See {taj:n}.)
+▶ {qep'a' wejDIchDaq jatlhtaH tlhIngan Hol HaDwI'pu'. ghoHtah je. tIv'eghtaH je. vaj SuquvmoH.:sen:nolink}[4]
+▶ {chalqachDaq bIQaDbe' je:sen:nolink} "Even in a tower you are not safe."[5]
+▶ {Qo'noSDaq boqwI'mey nejmeH je leng qeylIS 'ej chaHvaD lut ja':sen:nolink} "Kahless also went out to search for allies across Kronos, and told them his tale."[5]
+▶ {QIStaqDaq cholonDI' jIyIn DaH jIyIn je:sen:nolink} "I am alive as I was when you left me at Kri'stak."[5]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2276,7 +2319,7 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD 5.3:src}</column>
+      <column name="source">[1] {TKD 5.3:src}, [2] {CK:src}, [3] {PK:src}, [4] {msn 1996.11.10:src}, [5] {paq'batlh:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2636,6 +2679,41 @@ There is also an idiom, {jej; Daqtagh rur@@jej:v, Daqtagh:n, rur:v}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">jelwaS</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">iodine (element)</column>
+      <column name="definition_de">Jod (Element)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">Iodine gel is used for washing wounds.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">jem</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">sense, feel, perceive, detect</column>
@@ -2681,8 +2759,8 @@ There is also an idiom, {jej; Daqtagh rur@@jej:v, Daqtagh:n, rur:v}.</column>
       <column name="definition_zh_HK">「詹姆斯·T·柯克」</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Hov leng:n}, {'entepray':n:name}</column>
-      <column name="notes">This is the name of the {HoD:n} of the {'entepray':n:name}.
+      <column name="see_also"></column>
+      <column name="notes">This is the name of the {HoD:n} of the {'entepray':n:name}. His first officer is {SIpoq:n:name}.
 
 Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phonology, since they are part of an alien name.</column>
       <column name="notes_de"></column>
@@ -2744,8 +2822,8 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="source">[1] {KLI mailing list 2018.01.01:src}</column>
     </table>
     <table name="mem">
-      <column name="_id"></column>
       <!-- "High and Low" is an Akira Kurosawa film distributed by Janus ({jen} + {'eS}?) films. -->
+      <column name="_id"></column>
       <column name="entry_name">jen</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be high</column>
@@ -2780,6 +2858,8 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- https://twitter.com/pduff1964/status/366399958833827841 -->
+      <!-- https://twitter.com/pduff1964/status/366556390304661505 -->
       <column name="_id"></column>
       <column name="entry_name">jentu'</column>
       <column name="part_of_speech">n:anim</column>
@@ -2807,8 +2887,6 @@ Note that {jemS:n:nolink} and {qIrq:n:nolink} do not follow proper Klingon phono
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags">penguin</column>
-      <!-- https://twitter.com/pduff1964/status/366399958833827841 -->
-      <!-- https://twitter.com/pduff1964/status/366556390304661505 -->
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3536,9 +3614,9 @@ This verb is used in Sonnet 116, where its explicit subject is {muD:n:nolink}.[2
       <column name="source">[1] {TKD:src}, [2] {qep'a' 2017:src}</column>
     </table>
     <table name="mem">
+      <!-- Is this plural? -->
       <column name="_id"></column>
       <column name="entry_name">jIb Ho'Du'</column>
-      <!-- Is this plural? -->
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">comb</column>
       <column name="definition_de">Kamm</column>
@@ -4279,6 +4357,8 @@ To express a wish for something to happen, see {-jaj:v}.</column>
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
+      <!-- Reported by Zrajm, on Facebook: https://www.facebook.com/zrajm/posts/10154361398897846 -->
+      <!-- This word was revealed accompanied by a hand gesture, but Marc Okrand changed his mind and the gesture is not canon. -->
       <column name="_id"></column>
       <column name="entry_name">jIr</column>
       <column name="part_of_speech">excl</column>
@@ -4306,7 +4386,6 @@ To express a wish for something to happen, see {-jaj:v}.</column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
-      <!-- Reported by Zrajm, on Facebook: https://www.facebook.com/zrajm/posts/10154361398897846 -->
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -5490,6 +5569,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}, [2] {DSC - The Butcher's Knife Cares Not for the Lamb's Cry:src}</column>
     </table>
     <table name="mem">
+      <!-- The {ta'} here is possibly {ta':n:1}. -->
       <column name="_id"></column>
       <column name="entry_name">jonta'</column>
       <column name="part_of_speech">n</column>
@@ -5509,7 +5589,6 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">This word is a side-effect of the backfit that also gave us {qama':n}.</column>
-      <!-- The {ta'} here is possibly {ta':n:1}. -->
       <column name="components">{jon:n:hyp}, {ta':n:hyp,nolink}</column>
       <column name="examples">{matHa', DoS jonta' neH.:sen}</column>
       <column name="examples_de"></column>
@@ -5775,6 +5854,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="source">[1] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
+      <!-- TODO: Fix Russian. -->
       <column name="_id"></column>
       <column name="entry_name">joq</column>
       <column name="part_of_speech">v:i_c</column>
@@ -5786,7 +5866,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="definition_zh_HK">皮瓣、撲動、波浪 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{laq:v}, {joqwI':n}</column>
+      <column name="see_also">{laq:v:1}, {joqwI':n}</column>
       <column name="notes">This verb is also used to indicate the beating of a heart ({tIq:n}).[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5795,20 +5875,25 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <!-- Suto'vo'qor botlhDaq
-           pe'vIl joqchu'taH
-           quvbogh 'ej valbogh tIqDu' tIQ.
-
-           SIqral bIQtIqDaq
-           joqtaHbogh molor tIqDu' qem qeylIS
-           bIQ DoqDaq tlhabmoH. -->
       <column name="examples">
 ▶ {Hay'chu' luneHqu':sen:nolink}
    {vaj pe'vIl joqqu':sen:nolink}
    {cha' tlhIngan tIqDu':sen:nolink}
   "Both Klingon hearts beat,
    At their strongest,
-   In lust for blood."[2, p.167]</column>
+   In lust for blood."[2, p.166-167]
+▶ {Suto'vo'qor botlhDaq:sen:nolink}
+   {pe'vIl joqchu'taH:sen:nolink}
+   {quvbogh 'ej valbogh tIqDu' tIQ.:sen:nolink}
+  "At the cenre of Sto-vo-kor,
+   The ancient hearts of honor and wisdom
+   Beat steady and strong."[2, p.188-189]
+▶ {SIqral bIQtIqDaq:sen:nolink}
+   {joqtaHbogh molor tIqDu' qem qeylIS:sen:nolink}
+   {bIQ DoqDaq tlhabmoH.:sen:nolink}
+  "Kahless takes Molor's hearts,
+   Still beating, to the river Skral,
+   He sets them free in the crimson water."[2, p.170-171]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5818,7 +5903,19 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
    {cha' tlhIngan tIqDu':sen:nolink}
   "Оба Клингонских сердца бьются,
    Сильнее всего,
-   жаждя крови."[2, стр.167]</column>
+   жаждя крови."[2, стр.166-167]
+▶ {Suto'vo'qor botlhDaq:sen:nolink}
+   {pe'vIl joqchu'taH:sen:nolink}
+   {quvbogh 'ej valbogh tIqDu' tIQ.:sen:nolink}
+  "At the cenre of Sto-vo-kor,
+   The ancient hearts of honor and wisdom
+   Beat steady and strong."[2, p.188-189]
+▶ {SIqral bIQtIqDaq:sen:nolink}
+   {joqtaHbogh molor tIqDu' qem qeylIS:sen:nolink}
+   {bIQ DoqDaq tlhabmoH.:sen:nolink}
+  "Kahless takes Molor's hearts,
+   Still beating, to the river Skral,
+   He sets them free in the crimson water."[2, p.170-171]</column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags">beat, heartbeat</column>
       <column name="search_tags_de"></column>
@@ -5875,7 +5972,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="definition_zh_HK">旗</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{joq:v}, {Degh:n:1}</column>
+      <column name="see_also">{joq:v}, {Degh:n:1}, {pIlghIm:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

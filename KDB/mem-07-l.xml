@@ -473,13 +473,13 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chIl:v}</column>
-      <column name="notes">This verb can be used with the suffix {-chu':v} to express the idea of superimposing something on(to) something else. See {tIr:v}.</column>
+      <column name="notes">This verb can be used with the suffix {-chu':v} to express the idea of superimposing something on(to) something else.[3] See {tIr:v}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">In the printed booklet for {qep'a' 2019:src}, there was a typo and {lanchu':sen:nolink} was incorrectly written as {lalchu':sen:nolink}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {nuqDaq Dochvam vIlan?:sen}
@@ -491,13 +491,13 @@
 ▶ {nuqDaq Dochvam vIlan?:sen}
 ▶ {HurDaq tu'HomI'raHvetlh yIlan!:sen:nolink} "Убери отсюда этот хлам!"[2]</column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags">put</column>
+      <column name="search_tags">put, lal</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {KCD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KCD:src}, [3] {qep'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -574,7 +574,7 @@ This was defined as "be thin" in {TKD:src} and expanded to include "be narrow" a
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">laq</column>
-      <column name="part_of_speech">v:i_c</column>
+      <column name="part_of_speech">v:1,i_c</column>
       <column name="definition">flap</column>
       <column name="definition_de">flattern (wie Flügel eines Vogels, nicht wie Fahne)</column>
       <column name="definition_fa">فلاپ [AUTOTRANSLATED]</column>
@@ -584,7 +584,7 @@ This was defined as "be thin" in {TKD:src} and expanded to include "be narrow" a
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{bo'Degh:n}, {tel:n}</column>
-      <column name="notes">This verb describes movement like that of a bird's wings, and not like that of a flag (for which see {joq:v}). In flight, a bird's wings {laq:v:nolink}, and the bird is said to {laqmoH@@laq:v, -moH:v} its wings.</column>
+      <column name="notes">This verb describes movement like that of a bird's wings, and not like that of a flag (for which see {joq:v}). In flight, a bird's wings {laq:v:1:nolink}, and the bird is said to {laqmoH@@laq:v:1, -moH:v} its wings.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -606,6 +606,77 @@ This was defined as "be thin" in {TKD:src} and expanded to include "be narrow" a
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {HQ 10.4, Dec. 2001:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">laq</column>
+      <column name="part_of_speech">v:2,i_c,slang</column>
+      <column name="definition">speak gibberish</column>
+      <column name="definition_de">Kauderwelsch sprechen</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{laqlaq:n}</column>
+      <column name="notes">The non-slang way to say this would be {jat Hol jatlh:sen@@jat Hol:n, jatlh:v}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {tlhIngan Hol Dajatlh 'e' DaQub 'ach bIlaq.:sen:nolink}</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">laqlaq</column>
+      <column name="part_of_speech">n:slang</column>
+      <column name="definition">gibberish</column>
+      <column name="definition_de">Kauderwelsch</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms">{jat Hol:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also">{laq:v:2}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -788,6 +859,7 @@ In English slang, a "lat"rine is sometimes called a "shrine".</column>
       <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2016:src}</column>
     </table>
     <table name="mem">
+      <!-- There are two other examples of {latlhpu'}, one in the "Death Howl" SkyBox card, and one in the paq'batlh. -->
       <column name="_id"></column>
       <column name="entry_name">latlh</column>
       <column name="part_of_speech">n</column>
@@ -3942,7 +4014,7 @@ When a computer (or computer system) is online, it's said to be "sharing". See {
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {DSC - Battle at the Binary Stars:src}</column>
+      <column name="source">[1] {DSC - Battle at the Binary Stars:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4380,7 +4452,7 @@ This was used to refer to "variables" (a memory location used for storing data i
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{yugh:v}</column>
+      <column name="see_also">{yugh:v}, {boqHa''egh:v}</column>
       <column name="notes">This is used to express fractions in math.
 
 If appropriate in a mathematical discussion, no prefix is used even if the denominator is one, even though this is a bit grammatically aberrant. (One would not say {wa' luloch wej:sen@@wa':n:num, lu-:v, loch:v, wej:n:num}.)[1]</column>
@@ -5196,7 +5268,7 @@ The text of {SkyBox 99:src} reads:
       <column name="definition_zh_HK">門</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jI'ev:n}, {lIvqa'nan:n}, {DIn:n}, {Qorwagh:n}, {poS:v}, {SoQ:v}, {ngaQ:v}, {HIchDal:n}</column>
+      <column name="see_also">{jI'ev:n}, {lIvqa'nan:n}, {DIn:n}, {Qorwagh:n}, {poS:v}, {SoQ:v}, {ngaQ:v}, {HIchDal:n}, {Durghang:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5823,6 +5895,41 @@ Some of the verb suffixes have a precise meaning when used with this verb, when 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TKW p.46:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">loq</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be extinct</column>
+      <column name="definition_de">ausgestorben sein</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{SIntlher:n}</column>
+      <column name="notes">This refers to formerly living things, and not, for example, to volcanoes.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6603,7 +6710,7 @@ Marc Okrand has said that he prefers to call the puns or "Easter Eggs" in the Kl
       <column name="entry_name">lo' law' lojmIt</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">utility hatch</column>
-      <column name="definition_de">Werzeug-Luke</column>
+      <column name="definition_de">Werkzeug-Luke</column>
       <column name="definition_fa">خنده ابزار [AUTOTRANSLATED]</column>
       <column name="definition_sv">verktygslåda [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -7740,6 +7847,7 @@ This prefix is sometimes dropped for unknown reasons. While an error, this is of
       <column name="source">[1] {TKD:src}, [2] {SkyBox 13:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src})</column>
     </table>
     <table name="mem">
+      <!-- TODO: Update Russian note. -->
       <column name="_id"></column>
       <column name="entry_name">lurgh</column>
       <column name="part_of_speech">n</column>
@@ -7756,7 +7864,9 @@ This prefix is sometimes dropped for unknown reasons. While an error, this is of
 
 The areas around an object are its {Dung:n} (area above), {bIng:n} (area below), {retlh:n} (area beside), {tlhop:n:1} (front), and {'em:n} (behind). Something in an object's {retlh:n:nolink} can be on its {poS:n} (left) or its {nIH:n} (right). The area between two objects are their {joj:n} (area between). The area beyond an object is its {Hay:n:2h}.
 
-In standard Klingon, locative nouns follow pronouns, e.g., {jIH tlhop:n:nolink} "in front of me". But in the dialect of the Sakrej region ({Sa'Qej Sep:n}), locative nouns take pronominal possessive suffixes, e.g., {tlhopwIj:n:nolink} "my area in front".[2]  However, the directional nouns are an exception to this rule, and take possessive suffixes in every known dialect, e.g., {chanwIj:n:nolink} "east of me, to my east". If the full pronoun is used with a directional noun, the pronoun is emphasized, e.g., {jIH chan:n:nolink} "east of ME, to MY east".[4]
+In standard Klingon, locative nouns follow pronouns, e.g., {jIH tlhop:n:nolink} "in front of me". But in the dialect of the Sakrej region ({Sa'Qej Sep:n}), locative nouns take pronominal possessive suffixes, e.g., {tlhopwIj:n:nolink} "my area in front".[2] However, the directional nouns are an exception to this rule, and take possessive suffixes in every known dialect, e.g., {chanwIj:n:nolink} "east of me, to my east". If the full pronoun is used with a directional noun, the pronoun is emphasized, e.g., {jIH chan:n:nolink} "east of ME, to MY east".[4]
+
+When referring to one's left and right sides, possessive suffixes are used. For example, one might say {nIHwIj ghop:n@@nIH:n, -wIj:n, ghop:n} to refer to their right hand.[5]
 
 The points in between the three cardinal directions are {tIng chan:n:nolink}, {'ev chan:n:nolink}, and either {tIng 'ev:n:nolink} or {'ev tIng:n:nolink}. {chan:n:nolink} always comes second in such a compound.[3]</column>
       <column name="notes_de"></column>
@@ -7767,7 +7877,9 @@ The points in between the three cardinal directions are {tIng chan:n:nolink}, {'
 
 Территории вокруг объекта {Dung:n} (територия над), {bIng:n} (территория под), {retlh:n} (территория рядом), {tlhop:n:1} (спереди), и {'em:n} (позади). Объект {retlh:n:nolink} может быть {poS:n} (слева) или {nIH:n} (справа). Территория между двумя объектами их {joj:n} (территория между). Территория за пределами объекта {Hay:n:2h}.
 
-В стандартном клингонском диалекте, локационные существительные следуют за местоимениями, {jIH tlhop:n:nolink} "передо мной". Но в диалекте региона Саркедж ({Sa'Qej Sep:n}), локационные существительные принимают местоименные притяжательные суффиксы, {tlhopwIj:n:nolink} "моя территория передо мной".[2]  Тем не менее, направленные существительные являются исключением в этом правиле, и принимают притяжательные суффиксы в каждом известном диалекте, например {chanwIj:n:nolink} "к востоку от меня, ко мне на восток". Если полное местоимение использовано с направленным существительным, существительное акцентируется, {jIH chan:n:nolink} "к востоку от меня, ко мне на восток".[4]
+В стандартном клингонском диалекте, локационные существительные следуют за местоимениями, {jIH tlhop:n:nolink} "передо мной". Но в диалекте региона Саркедж ({Sa'Qej Sep:n}), локационные существительные принимают местоименные притяжательные суффиксы, {tlhopwIj:n:nolink} "моя территория передо мной".[2] Тем не менее, направленные существительные являются исключением в этом правиле, и принимают притяжательные суффиксы в каждом известном диалекте, например {chanwIj:n:nolink} "к востоку от меня, ко мне на восток". Если полное местоимение использовано с направленным существительным, существительное акцентируется, {jIH chan:n:nolink} "к востоку от меня, ко мне на восток".[4]
+
+When referring to one's left and right sides, possessive suffixes are used. For example, one might say {nIHwIj ghop:n@@nIH:n, -wIj:n, ghop:n} to refer to their right hand.[5]
 
 Точки между тремя основными направлениями {tIng chan:n:nolink}, {'ev chan:n:nolink}, и {tIng 'ev:n:nolink} или {'ev tIng:n:nolink}. {chan:n:nolink} всегда идут вторыми в таком соединении.[3]</column>
       <column name="notes_zh_HK"></column>
@@ -7795,7 +7907,7 @@ The points in between the three cardinal directions are {tIng chan:n:nolink}, {'
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKDA:src}, [2] {KGT p.24:src}, [3] {s.k 1999.11.21:src} (reprinted in {HQ 8.4, p.6-8, Dec. 1999:src}), [4] {s.k 1999.12.01:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT p.24:src}, [3] {s.k 1999.11.21:src} (reprinted in {HQ 8.4, p.6-8, Dec. 1999:src}), [4] {s.k 1999.12.01:src}, [5] {KLI mailing list 2019.08.05:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
