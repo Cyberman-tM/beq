@@ -11,7 +11,7 @@
     "request": "^2.88.0",
     "restify": "^8.4.0",
     "winston": "^3.2.1",
-    "winston-logzio": "^1.0.6",
+    "winston-logzio": "^1.0.8",
     "xmldoc": "^1.1.2"
   }
 }
