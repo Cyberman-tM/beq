@@ -519,6 +519,8 @@ module.exports.createTranslation = function(beqTalk)
 			{
 				var inTrans = item.type.split(':')[1];				
 				//Some words have multiple meanings, they have a number at pos 2
+				logger.info(inTrans);
+				logger.info(inTrans.substring(0,1));
 				if (inTrans.substring(0,1) >= 1 || inTrans.substring(0,1) <= 9 )
  				   inTrans = inTrans.substring(1,999);
 				var transText = '';
