@@ -517,7 +517,10 @@ module.exports.createTranslation = function(beqTalk)
 			count++;
 			if (beqTalk.command != "yIcha'")
 			{
-				var inTrans = item.type.split(':')[1];
+				var inTrans = item.type.split(':')[1];				
+				//Some words have multiple meanings, they have a number at pos 2
+				if (inTrans >= 1 || inTrans <= 9)
+ 				   inTrans = item.type.split(':')[2]
 				var transText = '';
 				if ( inTrans == 'i')
 					transText = 'intransitive';
