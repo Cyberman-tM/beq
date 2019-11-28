@@ -519,8 +519,8 @@ module.exports.createTranslation = function(beqTalk)
 			{
 				var inTrans = item.type.split(':')[1];				
 				//Some words have multiple meanings, they have a number at pos 2
-				if (inTrans.Substring(0,1) >= 1 || inTrans.Substring(0,1) <= 9 )
- 				   inTrans = inTrans.Substring(1,999);
+				if (inTrans.substring(0,1) >= 1 || inTrans.substring(0,1) <= 9 )
+ 				   inTrans = inTrans.substring(1,999);
 				var transText = '';
 				if ( inTrans == 'i')
 					transText = 'intransitive';
