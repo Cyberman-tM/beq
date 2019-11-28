@@ -517,10 +517,12 @@ module.exports.createTranslation = function(beqTalk)
 			count++;
 			if (beqTalk.command != "yIcha'")
 			{
-				var inTrans = item.type.split(':')[1];				
+				var inTrans = item.type.split(':')[1];
+				if (inTrans != null)
+				{
 				//Some words have multiple meanings, they have a number at pos 2
-				logger.info(inTrans);
-				logger.info(inTrans.substring(0,1));
+				//logger.info(inTrans);
+				//logger.info(inTrans.substring(0,1));
 				if (inTrans.substring(0,1) >= 1 || inTrans.substring(0,1) <= 9 )
  				   inTrans = inTrans.substring(2,999);
 				var transText = '';
@@ -539,6 +541,7 @@ module.exports.createTranslation = function(beqTalk)
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 				if (transText != '')
 				   sndMessage += '*(' + transText + ')*' + beqTalk.newline;
+				}
 				
 				sndMessage += '==> ' + item[beqTalk.transLang] + beqTalk.newline;				
 			}
