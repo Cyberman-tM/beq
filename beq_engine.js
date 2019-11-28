@@ -522,7 +522,7 @@ module.exports.createTranslation = function(beqTalk)
 				logger.info(inTrans);
 				logger.info(inTrans.substring(0,1));
 				if (inTrans.substring(0,1) >= 1 || inTrans.substring(0,1) <= 9 )
- 				   inTrans = inTrans.substring(1,999);
+ 				   inTrans = inTrans.substring(2,999);
 				var transText = '';
 				if ( inTrans == 'i')
 					transText = 'intransitive';
