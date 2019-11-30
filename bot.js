@@ -112,7 +112,9 @@ bot.on('message', function (messageDJS)
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (message.substring(0, 1) == '?')
 		{
-			if (channelID == DData.clipChan)
+			//Ask beq or Stammtisch
+			if (channelID == DData.clipChan ||
+			    channelID == DData.StamChan )
 			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
 				if (message.substring(1,4) == 'tlh')
@@ -404,14 +406,14 @@ bot.on('message', function (messageDJS)
 			if ((dynArg).indexOf('nofuzzy') >= 0)
 				beqTalk.fuzzy = false;
 				
-			if ((dynArg).indexOf('simple') >= 0)
-			{
-				beqTalk.simple = true;
+			if ( (dynArg).indexOf('simple') >= 0 ||
+			     channelID == DData.StammChan )
+				beqTalk.simple = true;			
 				
-				//Delete original message, we don't need it.
+			//Delete original message, we don't need it.
+			if (beqTalk.simple == true)
 				messageDJS.delete();
-			}
-				
+			
 			if ((dynArg).indexOf('source') >= 0)
 				beqTalk.showSource = true;
 		
