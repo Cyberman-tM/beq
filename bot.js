@@ -191,12 +191,17 @@ bot.on('message', function (messageDJS)
 			sndMessage += beqPerson.nameInt + ': ' + beqPerson.versInt + beqTalk.newline;
 		
 			sndMessage += beqTalk.newline;
+			sndMessage += 'Known channels:' + beqTalk.newline;
+			sndMessage += 'Ask beq:' + DData.clipChan + beqTalk.newline;
+			sndMessage += 'BeqTalk:' + DData.btChan + beqTalk.newline;
+			sndMessage += 'Letter to Maltz: + DData.LMChan + beqTalk.newline;
+			sndMessage += 'Anouncements:' + DData.ANChan + beqTalk.newline;
+			sndMessage += 'Stammtisch:' + DDcata.StammChan + beqTalk.newline;
 
 			sndMessage += beqPerson.yIngu;
-			//sndMessage += '*naDev jItoy\'taHpa\', SuvwI\'\'a\' jIH\'e\'.\nle\'rat, tIghnar tuq, jIH.\n\n toH. yInvetlh \'oHta\'*\n';
 			
-				if ( DData.devBuild == "true" )
-					sndMessage += "(Development edition)";
+			if ( DData.devBuild == "true" )
+				sndMessage += "(Development edition)";
 			break;
 			//"Lustige" Meldungen
 		case 'tlhIngan':
