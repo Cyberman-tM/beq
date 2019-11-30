@@ -196,7 +196,7 @@ bot.on('message', function (messageDJS)
 			sndMessage += 'BeqTalk:' + DData.btChan + beqTalk.newline;
 			sndMessage += 'Letter to Maltz:' + DData.LMChan + beqTalk.newline;
 			sndMessage += 'Anouncements:' + DData.ANChan + beqTalk.newline;
-			sndMessage += 'Stammtisch:' + DDcata.StammChan + beqTalk.newline;
+			sndMessage += 'Stammtisch:' + DData.StammChan + beqTalk.newline;
 
 			sndMessage += beqPerson.yIngu;
 			
