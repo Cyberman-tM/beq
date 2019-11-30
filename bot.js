@@ -192,11 +192,11 @@ bot.on('message', function (messageDJS)
 		
 			sndMessage += beqTalk.newline;
 			sndMessage += 'Known channels:' + beqTalk.newline;
-			sndMessage += 'Ask beq:' + DData.clipChan + beqTalk.newline;
-			sndMessage += 'BeqTalk:' + DData.btChan + beqTalk.newline;
-			sndMessage += 'Letter to Maltz:' + DData.LMChan + beqTalk.newline;
-			sndMessage += 'Anouncements:' + DData.ANChan + beqTalk.newline;
-			sndMessage += 'Stammtisch:' + DData.StammChan + beqTalk.newline;
+			sndMessage += 'Ask beq: ' + DData.clipChan + beqTalk.newline;
+			sndMessage += 'BeqTalk: ' + DData.bTChan + beqTalk.newline;
+			sndMessage += 'Letter to Maltz: ' + DData.LMChan + beqTalk.newline;
+			sndMessage += 'Anouncements: ' + DData.ANChan + beqTalk.newline;
+			sndMessage += 'Stammtisch: ' + DData.StammChan + beqTalk.newline;
 
 			sndMessage += beqPerson.yIngu;
 			
