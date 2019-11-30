@@ -114,7 +114,7 @@ bot.on('message', function (messageDJS)
 		{
 			//Ask beq or Stammtisch
 			if (channelID == DData.clipChan ||
-			    channelID == DData.StamChan )
+			    channelID == DData.StammChan )
 			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
 				if (message.substring(1,4) == 'tlh')
