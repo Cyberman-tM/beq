@@ -41,7 +41,7 @@ if (useHeroku === true)
 	
 	tmpWeatherMap = process.env.openWeatherMap;
 	
-	tmpStammChan = process.env.Stammtisch;
+	tmpStammChan = process.env.StammChan;
 }
 else
 {
