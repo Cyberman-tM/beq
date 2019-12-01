@@ -537,6 +537,8 @@ module.exports.createTranslation = function(beqTalk)
 				else if ( inTrans == 't')
 					transText = 'transitive';
 				
+			logger.info(beqTalk.startRes);
+			logger.info(item);
 				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';				
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 				if (transText != '')
