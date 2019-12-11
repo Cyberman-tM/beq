@@ -1158,4 +1158,3 @@ requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh')
 	extData = response.getBody();
 });
 };	
-}
