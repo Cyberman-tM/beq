@@ -57,8 +57,10 @@ You must initialize it before calling beq! Some fields may have default entries!
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
+var requestify = require('requestify'); 
 
 module.exports.beqTalkDef = beqTalkDef;
+module.exports.extData = null;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -84,6 +86,9 @@ module.exports.Engine = function(beqTalk)
 			
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
+		
+		//New test function, load external data
+		readRemData(extData);
 	}
 	
 	var tmpTxt = "";
@@ -423,7 +428,11 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case "split":
 			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
-		
+			beqTalk.gotResult = true;
+		break;
+		case "getRem":
+			beqTalk.message = extData;
+			beqTalk.gotResult = true;
 		break;
 	default:
 	   beqTalk.gotResult = false;
@@ -1140,4 +1149,13 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 xmlFiles = null;
 xml = null;
 fs = null;
+}
+
+function readRemData(extData)
+{
+requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
+	// Get the response body
+	extData = response.getBody();
+});
+};	
 }
