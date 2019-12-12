@@ -9,7 +9,8 @@
     "fs": "^0.0.2",
     "latest-version": "^5.1.0",
     "request": "^2.88.0",
-    "restify": "^8.4.0",
+    "requestify": "^0.2.5",
+    "restify": "^8.5.0",
     "winston": "^3.2.1",
     "winston-logzio": "^1.0.8",
     "xmldoc": "^1.1.2"

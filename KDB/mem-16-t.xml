@@ -2246,6 +2246,41 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tawleHnu' pogh</column>
+          <column name="part_of_speech">n:alt,deriv</column>
+          <column name="definition">{tawleHnu':n}</column>
+          <column name="definition_de">{tawleHnu':n}</column>
+          <column name="definition_fa">{tawleHnu':n}</column>
+          <column name="definition_sv">{tawleHnu':n}</column>
+          <column name="definition_ru">{tawleHnu':n}</column>
+          <column name="definition_zh_HK">{tawleHnu':n}</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">taw'</column>
@@ -3593,7 +3628,7 @@ This dialect is sort of half-way between the standard dialect and the {Qotmagh S
       <column name="hidden_notes"></column>
       <column name="components">{tep:n}, {jolpat:n}</column>
       <column name="examples">
-▶ {tep jolpat - wa':sen:nolink} "Cargo Transporter - 1"</column>
+▶ {tep jolpat:sen:nolink}: {wa':sen:nolink} "Cargo Transporter - 1"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3841,7 +3876,7 @@ Note that a human ({Human:n}) is a member of the major indigenous language-capab
       <column name="definition_zh_HK">橙（水果）</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tanje'rIn naH:n}</column>
+      <column name="see_also">{tanje'rIn:n}</column>
       <column name="notes">This is what Klingons would call the Terran fruit.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5933,7 +5968,8 @@ This verb can be used reflexively to mean "enjoy oneself", "have a good time".[3
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">It is stated that this cannot take an object.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {cheghDI' bangwI' jItIw:sen:nolink}[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
