@@ -467,6 +467,13 @@ bot.on('message', function (messageDJS)
 				beqTalk = beq.Engine(beqTalk);
 				sndMessage += beqTalk.message;
 			break;
+			case 'getRem':
+				//No parameters possible!
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'getRem';
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+			break;
 		default:
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
