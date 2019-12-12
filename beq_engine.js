@@ -1155,9 +1155,7 @@ function readRemData()
 {
 requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
 	// Get the response body
-	logger.info("Got data?");
 	module.exports.extData = response.getBody();
-	logger.info("Hm. Done?");
-	logger.info(extData);
+	module.exports.extData = module.exports.extData.substring(0,100);
 });
 };	
