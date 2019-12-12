@@ -88,7 +88,7 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
 		//New test function, load external data
-		readRemData(extData);
+		readRemData(module.exports.extData);
 	}
 	
 	var tmpTxt = "";
