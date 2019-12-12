@@ -88,7 +88,7 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
 		//New test function, load external data
-		readRemData(module.exports.extData);
+		readRemData();
 	}
 	
 	var tmpTxt = "";
@@ -1151,12 +1151,12 @@ xml = null;
 fs = null;
 }
 
-function readRemData(extData)
+function readRemData()
 {
 requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
 	// Get the response body
 	logger.info("Got data?");
-	extData = response.getBody();
+	module.exports.extData = response.getBody();
 	logger.info("Hm. Done?");
 	logger.info(extData);
 });
