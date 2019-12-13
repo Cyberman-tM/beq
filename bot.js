@@ -83,34 +83,34 @@ bot.on('message', function (messageDJS)
 	var userID = messageDJS.author.id;
 	var channelID = messageDJS.channel.id;
 	var message = messageDJS.content;
+    var cmdMagic = '';                         //Magic character that tells us its a command
 		
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
 	if (message.length < 3)
 	   return;
-	
-	//Dev build	only
+
+   //Regular use: first char is bot-command   
+   cmdMagic =  message.substring(0, 1);
+
+	//Dev build	only, first char is dev-marker($)
 	if ( DData.devBuild == "true" )
-	{
-		if ( message.substring(0, 1) == '$' )
-		   message = message.substring(1);
-	    else 
-		   message = message.substring(1);
-	}
+      cmdMagic =  message.substring(1, 1);
 
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
 	//              % => default GAME indicator
+	//              $ => Categorize words
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
+	if ( cmdMagic == '!' || cmdMagic == '?')	  
 	{		
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
-		if (message.substring(0, 1) == '?')
+		if (cmdMagic == '?')
 		{
 			//Ask beq or Stammtisch
 			if (channelID == DData.clipChan ||
@@ -488,15 +488,26 @@ bot.on('message', function (messageDJS)
 			break;
 		}
 	}
-	else if (message.substring(0, 1) == '%')
+    //GAme
+	else if (cmdMagic == '%')
 	{		
 		var gameTalk =gameTalkDef;
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
 	}
+    //Categorize
+	else if (cmdMagic == '$')
+	{
+        //Not much we can do, just deliver it to the beq engine
+		var beqTalk = JSON.parse(beq.beqTalkDef);
+		beqTalk.command = 'categorize';
+		beqTalk = beq.Engine(beqTalk);
+		sndMessage += beqTalk.message;   
+	}
 
 
-	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' || message.substring(0, 1) == '%')
+	if ( cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '%'
+          || cmdMagic == '$' )
 	{
 		if (cmdFound == false)		
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
