@@ -60,7 +60,9 @@ var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 var requestify = require('requestify'); 
 
 module.exports.beqTalkDef = beqTalkDef;
-module.exports.extData = null;
+//Word categorizationdata
+module.exports.catDataWords = null;
+module.exports.catDataCategs = null;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -87,8 +89,8 @@ module.exports.Engine = function(beqTalk)
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
-		//New test function, load external data
-		readRemData();
+        //Load Categorization (async!)
+        getCateg();
 	}
 	
 	var tmpTxt = "";
@@ -1151,11 +1153,69 @@ xml = null;
 fs = null;
 }
 
-function readRemData()
+function getCateg()
 {
-requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
+requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
 	// Get the response body
-	module.exports.extData = response.getBody();
-	module.exports.extData = module.exports.extData.substring(0,100);
+	var xmlCategs = response.getBody();
+    var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
+
+    //Resest, just to be sure
+    module.exports.catDataWords = null;
+    module.exports.catDataCategs = null;
+    
+    xmlDoc.children.forEach(function (word))
+    {
+        var wordName = word.attr.name;
+        var wordCats = word.val;
+        
+        //Worte sollten einzigartig sein
+        module.exports.catDataWords[wordName] = wordCats;
+        
+        //Kategorien sind definitiv nicht einzigartig
+        var categs = explode(";", wordCats);
+        categs.foreach(oneCateg)
+        {
+            var catList = module.exports.catDataCategs[oneCateg];
+            if (catList == null)
+            {
+                module.exports.catDataCategs[oneCateg] = wordName;
+            }
+            else
+            {
+                module.exports.catDataCategs[oneCateg].push(wordName);
+            }
+        }        
+    }
 });
 };	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
