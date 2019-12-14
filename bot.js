@@ -99,7 +99,7 @@ bot.on('message', function (messageDJS)
 	//Dev build only, first char is dev-marker($)
 	if ( DData.devBuild == "true" && cmdMagic == '$')
     {
-   		cmdMagic =  message.substring(1, 2);
+   		cmdMagic =  message.substring(0, 1);
         message = message.substring(1,99999);
     }
 
