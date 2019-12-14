@@ -1157,7 +1157,7 @@ fs = null;
 
 function getCateg()
 {
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
+requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
 	logger.info("Got data?");
 	try
@@ -1176,7 +1176,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
 function getCategx()
 {
     logger.info("getCateg");
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
+requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
 	var xmlCategs = response.getBody();
     var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
