@@ -1166,13 +1166,9 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     module.exports.catDataWords = null;
     module.exports.catDataCategs = null;
     
-    logger.info("x");
-    logger.info(xmlDoc);
-    logger.info("ml");
     xmlDoc.children.forEach(function (word)
     {
-        logger.info(word);
-        var wordName = word.attr.name;
+        var wordName = word.name;
         var wordCats = word.val;
         
         //Worte sollten einzigartig sein
