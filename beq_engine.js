@@ -90,6 +90,7 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
         //Load Categorization (async!)
+        logger.info("getCateg 1");
         getCateg();
 	}
 	
@@ -1156,6 +1157,7 @@ fs = null;
 
 function getCateg()
 {
+    logger.info("getCateg");
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
 	// Get the response body
 	var xmlCategs = response.getBody();
