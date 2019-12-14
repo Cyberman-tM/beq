@@ -1165,6 +1165,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
     module.exports.catDataWords = null;
     module.exports.catDataCategs = null;
     
+    logger.info(xmlCategs);
+    logger.info(xmlDoc);
     xmlDoc.children.forEach(function (word)
     {
         var wordName = word.attr.name;
