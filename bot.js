@@ -70,6 +70,8 @@ bot.on('ready', function (evt)
 	{
 		evTimer.startEventTimer(beq, bot);
 	}
+	else
+		logger.info("Development edition!");
 }
 );
 
