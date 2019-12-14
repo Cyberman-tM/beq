@@ -99,6 +99,9 @@ bot.on('message', function (messageDJS)
 	if ( DData.devBuild == "true" )
       cmdMagic =  message.substring(1, 2);
 
+	if (DData.devBuild == "true" )
+		logger.info(cmdMagic);
+	
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
 	//              % => default GAME indicator
