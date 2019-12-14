@@ -1160,7 +1160,14 @@ function getCateg()
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
 	// Get the response body
 	logger.info("Got data?");
-	module.exports.extData = response.getBody();
+	try
+    {
+    module.exports.extData = response.getBody();
+    }
+    catch(e)
+    {
+        logger.info(e);
+    }
 	logger.info("Hm. Done?");
 	logger.info(extData);
 	module.exports.extData = module.exports.extData.substring(0,100);
