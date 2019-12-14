@@ -126,7 +126,7 @@ bot.on('message', function (messageDJS)
 			    channelID == DData.StammChan )
 			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
-				if (message.substring(1,4) == 'tlh')
+				if (message.substring(0,4) == 'tlh')
 				   beqTalk.showNotes = true;
 				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
@@ -137,7 +137,7 @@ bot.on('message', function (messageDJS)
 				message = '!noShort';
 		}
 	
-		var args = message.substring(1).split(' ');
+		var args = message.substring(0).split(' ');
 		var cmd = args[0];
 		
 		if (DData.devBuild == "true" )
@@ -472,7 +472,7 @@ bot.on('message', function (messageDJS)
 			break;
 			case 'split':
 				//No parameters possible!
-				var splitRaw = message.substring(6);  //!split
+				var splitRaw = message.substring(5);  //!split
 				var beqTalk = JSON.parse(beq.beqTalkDef);
 				beqTalk.command = 'split';
 				beqTalk.lookWord = splitRaw;
