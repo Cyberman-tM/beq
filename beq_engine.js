@@ -1163,8 +1163,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
 
     //Resest, just to be sure
-    module.exports.catDataWords = null;
-    module.exports.catDataCategs = null;
+    module.exports.catDataWords = new array();
+    module.exports.catDataCategs = new array();
     
     xmlDoc.children.forEach(function (word)
     {
