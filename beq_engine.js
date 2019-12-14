@@ -433,8 +433,9 @@ module.exports.Engine = function(beqTalk)
 			beqTalk.gotResult = true;
 		break;
 		case "getRem":
-			beqTalk.message = module.exports.extData;
-			beqTalk.gotResult = true;
+    logger.info(module.exports.catDataWords);
+    logger.info(module.exports.catDataCategs);
+
 		break;
 	default:
 	   beqTalk.gotResult = false;
