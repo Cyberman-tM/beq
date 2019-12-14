@@ -1155,7 +1155,7 @@ xml = null;
 fs = null;
 }
 
-functon getCateg()
+function getCateg()
 {
 requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
 	// Get the response body
