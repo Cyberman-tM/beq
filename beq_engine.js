@@ -1166,6 +1166,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
     }
     catch(e)
     {
+        logger.info("got");
+        logger.info(module.exports.extData);
         logger.info(e);
     }
 	logger.info("Hm. Done?");
