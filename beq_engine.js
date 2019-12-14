@@ -1196,10 +1196,10 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             }
         }        
     })
-}).catch(e)
+}).catch(function(err)
     {
-        logger.info(e);
-    }
+        logger.info(err);
+    })
 
 };	
 
