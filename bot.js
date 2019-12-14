@@ -85,19 +85,23 @@ bot.on('message', function (messageDJS)
 	var userID = messageDJS.author.id;
 	var channelID = messageDJS.channel.id;
 	var message = messageDJS.content;
-    var cmdMagic = '';                         //Magic character that tells us its a command
+   	var cmdMagic = '';                         //Magic character that tells us its a command
 		
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
 	if (message.length < 3)
 	   return;
 
-   //Regular use: first char is bot-command   
-   cmdMagic =  message.substring(0, 1);
+   	//Regular use: first char is bot-command   
+   	cmdMagic =  message.substring(0, 1);
+    message = message.substring(1,99999);
 
-	//Dev build	only, first char is dev-marker($)
-	if ( DData.devBuild == "true" )
-      cmdMagic =  message.substring(1, 2);
+	//Dev build only, first char is dev-marker($)
+	if ( DData.devBuild == "true" && cmdMagic == '$')
+    {
+   		cmdMagic =  message.substring(1, 2);
+        message = message.substring(1,99999);
+    }
 
 	if (DData.devBuild == "true" )
 		logger.info(cmdMagic);
