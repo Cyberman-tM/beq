@@ -1157,7 +1157,6 @@ fs = null;
 
 function getCateg()
 {
-    logger.info("getCateg");
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
 	var xmlCategs = response.getBody();
@@ -1167,10 +1166,12 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     module.exports.catDataWords = null;
     module.exports.catDataCategs = null;
     
-    logger.info(xmlCategs);
+    logger.info("x");
     logger.info(xmlDoc);
+    logger.info("ml");
     xmlDoc.children.forEach(function (word)
     {
+        logger.info(word);
         var wordName = word.attr.name;
         var wordCats = word.val;
         
