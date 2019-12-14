@@ -1157,24 +1157,6 @@ fs = null;
 
 function getCateg()
 {
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
-	// Get the response body
-	logger.info("Got data?");
-	try
-    {
-    logger.info(response.getBody());
-    }
-    catch(e)
-    {
-        logger.info("got");
-        logger.info(module.exports.extData);
-        logger.info(e);
-    }
-	logger.info("Hm. Done?");
-});
-}
-function getCategx()
-{
     logger.info("getCateg");
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
