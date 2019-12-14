@@ -1168,6 +1168,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         
     xmlDoc.children.forEach(function (word)
     {
+        logger.info(word);
+        
         var wordName = word.getAttribute("name");
         var wordCats = word.innerHTML;
         
@@ -1192,9 +1194,6 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             }
         }        
     })
-}).catch(function(err){
-    logger.info('Requestify Error', err);
-    next(err);;
 })
 };	
 
