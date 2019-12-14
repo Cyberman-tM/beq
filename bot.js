@@ -97,7 +97,7 @@ bot.on('message', function (messageDJS)
 
 	//Dev build	only, first char is dev-marker($)
 	if ( DData.devBuild == "true" )
-      cmdMagic =  message.substring(1, 1);
+      cmdMagic =  message.substring(1, 2);
 
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
