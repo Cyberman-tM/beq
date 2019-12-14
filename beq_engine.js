@@ -1164,7 +1164,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
     module.exports.catDataWords = null;
     module.exports.catDataCategs = null;
     
-    xmlDoc.children.forEach(function (word))
+    xmlDoc.children.forEach(function (word)
     {
         var wordName = word.attr.name;
         var wordCats = word.val;
@@ -1186,7 +1186,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
                 module.exports.catDataCategs[oneCateg].push(wordName);
             }
         }        
-    }
+    })
 });
 };	
 
