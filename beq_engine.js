@@ -1165,7 +1165,9 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     //Resest, just to be sure
     module.exports.catDataWords = new Array();
     module.exports.catDataCategs = new Array();    
-        
+  
+logger.info(xmlDoc.children[0]);
+  
     xmlDoc.children.forEach(function (word)
     {
         logger.info(word.attr.name);
@@ -1196,11 +1198,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             }
         }        
     })
-}).catch(function(err)
-    {
-        logger.info(err);
-    })
-
+})
 };	
 
 
