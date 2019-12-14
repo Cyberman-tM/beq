@@ -1158,7 +1158,8 @@ fs = null;
 function getCateg()
 {
     logger.info("getCateg");
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
+requestify.get('http://www.tlhingan.at/Misc/mu_DelwI/linked_vocab/verb_voc.tlh').then(function(response) {
+//requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').then(function(response) {
 	// Get the response body
 	var xmlCategs = response.getBody();
     var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
