@@ -136,6 +136,9 @@ bot.on('message', function (messageDJS)
 		var args = message.substring(1).split(' ');
 		var cmd = args[0];
 		
+		if (DData.devBuild == "true" )
+			logger.info(cmd);
+		
 		//Some functions need the entire argument string, unprocessed
 		var firstBlank = message.indexOf(' ');
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
