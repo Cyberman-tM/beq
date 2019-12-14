@@ -1164,12 +1164,15 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
 
     //Resest, just to be sure
     module.exports.catDataWords = new Array();
-    module.exports.catDataCategs = new Array();
-    
+    module.exports.catDataCategs = new Array();    
+        
     xmlDoc.children.forEach(function (word)
     {
-        var wordName = word.name;
-        var wordCats = word.val;
+        var wordName = word.getAttribute("name");
+        var wordCats = word.innerHTML;
+        
+        logger.info(wordName);
+        logger.info(wordCats);
         
         //Worte sollten einzigartig sein
         module.exports.catDataWords[wordName] = wordCats;
