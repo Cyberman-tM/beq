@@ -1162,7 +1162,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
 	logger.info("Got data?");
 	try
     {
-    module.exports.extData = response.getBody();
+    logger.info(response.getBody());
     }
     catch(e)
     {
@@ -1171,8 +1171,6 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.xml').the
         logger.info(e);
     }
 	logger.info("Hm. Done?");
-	logger.info(extData);
-	module.exports.extData = module.exports.extData.substring(0,100);
 });
 }
 function getCategx()
