@@ -1159,15 +1159,13 @@ function getCateg()
 {
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
-    var myXML = new xmldoc(response.getBody());
-logger.info(myXML);
+ 	var document = new xmldoc.XmlDocument(response.getBody());
+
     //Reset, just to be sure
     module.exports.catDataWords = new Array();
     module.exports.catDataCategs = new Array();    
   
-    var words = myXML.childNamed("beqCat");
-    logger.info(words);
-    words.eachChild(function(word)
+	document.children[1].childrenNamed("w").forEach(function (word)
     {
        
         var wordName = word.attr.name;
