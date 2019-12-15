@@ -6,5 +6,5 @@ var logger = require('winston');
 
 module.exports = function(beq_engine, dataString)
 {
-    logger.info(beq_engine);
+    return "categorize?";
 }
