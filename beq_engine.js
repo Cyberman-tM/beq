@@ -1168,10 +1168,11 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     var words = document.childrenNamed("w");
  
 	words.forEach(function (word)
-    {
-       
+    {       
         var wordName = word.attr.name;
         var wordCats = word.val;
+        
+        logger.info(wordName);
         
         //Worte sollten einzigartig sein
         module.exports.catDataWords[wordName] = wordCats;
@@ -1180,20 +1181,16 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         var categs = wordCats.split(";");
         categs.forEach(function(oneCateg)
             {
-                logger.info(oneCateg);
-                try
+            try
                 {
             var catList = module.exports.catDataCategs[oneCateg];
             if (catList == null)
             {
-                logger.info("null");
-                module.exports.catDataCategs[oneCateg] = wordName;
-                logger.info("nulldone");
-            }
+                     module.exports.catDataCategs[oneCateg] = wordName;
+                 }
             else
             {
-                logger.info("!null");
-                module.exports.catDataCategs[oneCateg].push(wordName);
+                     module.exports.catDataCategs[oneCateg].push(wordName);
             }
                 }
                 catch(e)
