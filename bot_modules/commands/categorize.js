@@ -7,7 +7,7 @@ var requestify = require('requestify');
 
 module.exports = function(beq_engine, dataString)
 {
-    var tmpRet = "Nothing done.";
+    var tmpRet = "";
     
     //First word will be the word we want to categorize, second word (after blank)
     //will be the categorie we want to add
@@ -40,7 +40,7 @@ module.exports = function(beq_engine, dataString)
            tmpRet += "Please specify number of result to use";
     }
     else if (results.length == 0)
-        tmpRet += "\n Not found!";
+        tmpRet = "\n Not found!";
     else
        realResult = results[0];
    
@@ -53,10 +53,10 @@ module.exports = function(beq_engine, dataString)
         }
         else
         {
+            tmpRet += "";
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + args[1];
             requestify.get(addCatLink);
         }
-
     }
     
     return tmpRet;
