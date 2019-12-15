@@ -18,20 +18,13 @@ module.exports = function(beq_engine, dataString)
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, 'i');
-    try
-    {
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
         //Always look in english!
 		return item["tlh"].match(RE);
 	});
-    }
-    catch(e)
-    {
-        logger.info(e);
-    }
-    logger.info(results);
-    logger.info("XX");
+
+    var realResult = null;
     //results hat jetzt möglicherweise mehrere Einträge
     if (results.length > 1)
     {
@@ -40,22 +33,23 @@ module.exports = function(beq_engine, dataString)
         
         if (args[2] != null)
         {
-            var realResult = null;
             realResult = results[args[2]];
             if (realResult == undefined)
                 tmpRet += "Requested match #" + args[2] + "not found.";
-            else
-            {
-                var chkWord = realResult.tlh + ";;" + realResult.type;
-                if (beq_engine.catDataWords[chkWord] != undefined)
-                {
-                    tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
-                }
-                else
-                    tmpRet += "Category not found - will be added!";
-            }
         }
+        else
+           tmpRet += "Please specify number of result to use";
     }
+    else
+       realResult = results[0];
+   
+    var chkWord = realResult.tlh + ";;" + realResult.type;
+    if (beq_engine.catDataWords[chkWord] != undefined)
+    {
+        tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
+    }
+    else
+        tmpRet += "Category not found - will be added!";   
     
     return tmpRet;
 }
