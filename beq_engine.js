@@ -1194,7 +1194,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
      logger.info("fehler", e);
  }
 logger.info(module.exports.catDataCategs.length);
-logger.info(module.exports.catDataWords);
+logger.info(module.exports.catDataWords["word1;;v1"]);
 })
 };	
 
