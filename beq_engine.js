@@ -614,6 +614,7 @@ module.exports.createTranslation = function(beqTalk)
         //Check for categories
         var chkCat = item.tlh + item.type;
         var msgCat = module.exports.catDataWords[chkCat];
+        logger.info(chkCat);
         sndMessage += beqTalk.newline + msgCat;
 	}
 	)
