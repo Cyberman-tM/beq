@@ -22,8 +22,6 @@ module.exports = function(beq_engine, dataString)
     {
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
-        logger.info(item.tlh);
-        logger.info("SS");
         //Always look in english!
 		return item["tlh"].match(RE);
 	});
