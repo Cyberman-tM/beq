@@ -13,8 +13,6 @@ module.exports = function(beq_engine, dataString)
     //third, if exists, is the number of the result we want
     var args = dataString.split(' ');
     
-    logger.info(args[0]);
-        				
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, '');
@@ -23,9 +21,6 @@ module.exports = function(beq_engine, dataString)
         //Always look in klingon!
 		return item["tlh"].match(RE);
 	});
-
-results.forEach(function(item)
-{logger.info(item.tlh);});
 
     var realResult = null;
     //results hat jetzt möglicherweise mehrere Einträge
@@ -43,7 +38,7 @@ results.forEach(function(item)
         else
            tmpRet += "Please specify number of result to use";
     }
-    else if (results.length = 0)
+    else if (results.length == 0)
         tmpRet += "\n Not found!";
     else
        realResult = results[0];
