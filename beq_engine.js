@@ -611,6 +611,10 @@ module.exports.createTranslation = function(beqTalk)
 				   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
 		}
+        //Check for categories
+        var chkCat = item.tlh + item.type;
+        var msgCat = module.exports.catDataWords[chkCat];
+        sndMessage += beqTalk.newline + msgCat;
 	}
 	)
 	if (beqTalk.command == "yIcha'")
@@ -1166,8 +1170,6 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     module.exports.catDataCategs = {};    
     
     var words = document.childrenNamed("w");
- try
- {
 	words.forEach(function (word)
     {       
         var wordName = word.attr.name;
@@ -1188,11 +1190,6 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             module.exports.catDataCategs[oneCateg].push(wordName);
             });
     });
- }
- catch(e){
-     logger.info("fehler", e);
- }
-logger.info(module.exports.catDataCategs);
 })
 };	
 
