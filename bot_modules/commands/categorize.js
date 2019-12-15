@@ -53,7 +53,7 @@ module.exports = function(beq_engine, dataString)
         }
         else
         {
-            var addCatLink = 'http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + args[1];
+            var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + args[1];
             requestify.get(addCatLink);
         }
 
