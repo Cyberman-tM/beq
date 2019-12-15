@@ -12,15 +12,19 @@ module.exports = function(beq_engine, dataString)
     //will be the categorie we want to add
     //third, if exists, is the number of the result we want
     var args = dataString.split(' ');
+    
+    logger.info(args[0]);
         				
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, 'i');
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
+        logger.info(item);
         //Always look in english!
 		return item["en"].match(RE);
 	});
+    logger.info(results);
     
     //results hat jetzt möglicherweise mehrere Einträge
     if (results.length > 1)
