@@ -1159,19 +1159,16 @@ function getCateg()
 {
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
-	var xmlCategs = response.getBody().replace("\r\n", "");
-    logger.info(xmlCategs);
-    var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
+    var xmlDoc = new xmldoc.XmlDocument(response.getBody());
 
     //Reset, just to be sure
     module.exports.catDataWords = new Array();
     module.exports.catDataCategs = new Array();    
   
-    logger.info(xmlDoc.toString());
-    for (var i = 1; i < xmlDoc.children.length; i++)
+    var words = xmlDoc.childNamed("w");
+    words.eachChild(function(word)
     {
-        logger.info(i);
-        var word = xmlDoc.children[i];
+       
         var wordName = word.attr.name;
         var wordCats = word.val;
         
@@ -1204,7 +1201,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
                 }
             });
             logger.info("endloop");
-    }
+    });
     logger.info("endofroutine");
 })
 };	
