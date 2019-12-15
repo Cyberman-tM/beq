@@ -59,7 +59,7 @@ var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
-var cmdCateg    = requite('./bot_modules/commands/categorize.js');
+var cmdCateg    = require('./bot_modules/commands/categorize.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
@@ -92,7 +92,6 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
         //Load Categorization (async!)
-        logger.info("getCateg 1");
         getCateg();
 	}
 	
