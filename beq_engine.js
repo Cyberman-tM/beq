@@ -54,10 +54,12 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
+var requestify = require('requestify'); 
+var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
+
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
-var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
-var requestify = require('requestify'); 
+var cmdCateg    = requite('./bot_modules/commands/categorize.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
@@ -108,6 +110,10 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt += beqTalk.newline;
 		   beqTalk.message = tmpTxt;
 		break;
+        
+        case 'categorize':
+           beqTalk.message = cmdCateg(beqTalk.lookWord);
+        break;
 		
 		case 'KWOTD':			
 			//TODO: KWOTD - random word/sentence, type of word as parameter
@@ -614,8 +620,11 @@ module.exports.createTranslation = function(beqTalk)
         //Check for categories
         var chkCat = item.tlh + ';;' + item.type;
         var msgCat = module.exports.catDataWords[chkCat];
-        logger.info(chkCat);
-        sndMessage += beqTalk.newline + msgCat;
+        if (msgCat != undefined)
+        {
+            //Maybe preprocess the output to be nicer?
+            sndMessage += beqTalk.newline + "Categories: " + msgCat;
+        }
 	}
 	)
 	if (beqTalk.command == "yIcha'")
