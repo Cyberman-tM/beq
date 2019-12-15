@@ -17,7 +17,7 @@ module.exports = function(beq_engine, dataString)
         				
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
-	var RE = new RegExp(regexLook, 'i');
+	var RE = new RegExp(regexLook, '');
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
         //Always look in klingon!
