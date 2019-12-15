@@ -1,24 +1,16 @@
 /*
-
 Beq-Engine
-
 Functions to use:
-
 Engine:
 Main function, does the heavy lifting. Translate, identify(yIngu'), KWOTD
-
-
 createTranslation:
 As the name says, it translates the beqTalk result into a readable string
 Must be called manually, since the result is not useful everywhere, while the beqTalk-Result is JSON
 The result will be NULL if beqTalk-gotResult is set to NULL
 =>This method is intended for Discord-Bots or Text output!
-
 IMPORTANT STUFF:
-
 The beq-engine talks through the beqTalk structure - a JSON construct that is modified and returned:
 You must initialize it before calling beq! Some fields may have default entries!
-
 	"fuzzy": false,               // "fuzzy" searching, i.e. no word boundaries  => true/false
 	"wCase": false,               // search ignoring case                        => true/false
 	"remPref": false,             // Remove prefix if no result is found otherwise
@@ -52,17 +44,12 @@ You must initialize it before calling beq! Some fields may have default entries!
     "message": "",                // some functions or commands may return a message, it will be in here
 	"gotResult": false,           // indicates if the search was successful => true/false
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
-
 */
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
-var requestify = require('requestify'); 
 
 module.exports.beqTalkDef = beqTalkDef;
-//Word categorizationdata
-module.exports.catDataWords = null;
-module.exports.catDataCategs = null;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -88,10 +75,6 @@ module.exports.Engine = function(beqTalk)
 			
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
-		
-        //Load Categorization (async!)
-        logger.info("getCateg 1");
-        getCateg();
 	}
 	
 	var tmpTxt = "";
@@ -431,12 +414,7 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case "split":
 			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
-			beqTalk.gotResult = true;
-		break;
-		case "getRem":
-    logger.info(module.exports.catDataWords);
-    logger.info(module.exports.catDataCategs);
-
+		
 		break;
 	default:
 	   beqTalk.gotResult = false;
@@ -1154,83 +1132,3 @@ xmlFiles = null;
 xml = null;
 fs = null;
 }
-
-function getCateg()
-{
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
-	// Get the response body
- 	var document = new xmldoc.XmlDocument(response.getBody());
-
-    //Reset, just to be sure
-    module.exports.catDataWords = new Array();
-    module.exports.catDataCategs = new Array();    
-  
-	document.children.forEach(function (word)
-    {
-       
-        var wordName = word.attr.name;
-        var wordCats = word.val;
-        
-        //Worte sollten einzigartig sein
-        module.exports.catDataWords[wordName] = wordCats;
-        
-        //Kategorien sind definitiv nicht einzigartig
-        var categs = wordCats.split(";");
-        categs.forEach(function(oneCateg)
-            {
-                logger.info(oneCateg);
-                try
-                {
-            var catList = module.exports.catDataCategs[oneCateg];
-            if (catList == null)
-            {
-                logger.info("null");
-                module.exports.catDataCategs[oneCateg] = wordName;
-                logger.info("nulldone");
-            }
-            else
-            {
-                logger.info("!null");
-                module.exports.catDataCategs[oneCateg].push(wordName);
-            }
-                }
-                catch(e)
-                {
-                    logger.info(e);
-                }
-            });
-            logger.info("endloop");
-    });
-    logger.info("endofroutine");
-})
-};	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
