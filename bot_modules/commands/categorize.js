@@ -3,6 +3,7 @@
   Categorize - sort words into different categories, addendum to boQwI' database
 */
 var logger = require('winston');
+var requestify = require('requestify'); 
 
 module.exports = function(beq_engine, dataString)
 {
@@ -51,7 +52,10 @@ module.exports = function(beq_engine, dataString)
             tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
         }
         else
-            tmpRet += "Category not found - will be added!";   
+        {
+            requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + args[1]);
+        }
+
     }
     
     return tmpRet;
