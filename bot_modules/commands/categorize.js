@@ -14,6 +14,7 @@ module.exports = function(beq_engine, dataString)
     var args = dataString.split(' ');
         				
 	//TODO: search with boundary? only single word?
+    var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, regexFlag);
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
