@@ -1177,18 +1177,19 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         module.exports.catDataWords[wordName] = wordCats;
         
         //Kategorien sind definitiv nicht einzigartig
-        logger.info(wordCats);
         var categs = wordCats.split(";");
-        logger.info(categs);
         categs.forEach(function(oneCateg)
             {
+                logger.info(oneCateg);
             var catList = module.exports.catDataCategs[oneCateg];
             if (catList == null)
             {
+                logger.info("null");
                 module.exports.catDataCategs[oneCateg] = wordName;
             }
             else
             {
+                logger.info("!null");
                 module.exports.catDataCategs[oneCateg].push(wordName);
             }
             });
