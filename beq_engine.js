@@ -1184,12 +1184,10 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             var catList = module.exports.catDataCategs[oneCateg];
             if (catList == null)
             {
-                     module.exports.catDataCategs[oneCateg] = wordName;
-                 }
-            else
-            {
-                     module.exports.catDataCategs[oneCateg].push(wordName);
+                     module.exports.catDataCategs[oneCateg] = [];
             }
+            module.exports.catDataCategs[oneCateg].push(wordName);
+
                 }
                 catch(e)
                 {
