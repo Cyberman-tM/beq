@@ -111,7 +111,7 @@ module.exports.Engine = function(beqTalk)
 		break;
         
         case 'categorize':
-           beqTalk.message = cmdCateg(beqTalk.lookWord);
+           beqTalk.message = cmdCateg(this, beqTalk.lookWord);
         break;
 		
 		case 'KWOTD':			
