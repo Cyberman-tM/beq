@@ -1172,8 +1172,6 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         var wordName = word.attr.name;
         var wordCats = word.val;
         
-        logger.info(wordName);
-        
         //Worte sollten einzigartig sein
         module.exports.catDataWords[wordName] = wordCats;
         
@@ -1198,9 +1196,9 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
                     logger.info(e);
                 }
             });
-            logger.info("endloop");
     });
-    logger.info("endofroutine");
+
+logger.info(module.exports.catDataCategs);
 })
 };	
 
