@@ -22,7 +22,7 @@ module.exports = function(beq_engine, dataString)
 	{
         logger.info(item);
         //Always look in english!
-		return item["en"].match(RE);
+		return item["tlh"].match(RE);
 	});
     logger.info(results);
     
