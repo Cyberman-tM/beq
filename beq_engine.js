@@ -1175,7 +1175,10 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         
         //Worte sollten einzigartig sein
         //module.exports.catDataWords[wordName].push(wordCats);
+        logger.info(wordName);
         module.exports.catDataWords[wordName] = wordCats;
+        logger.info(module.exports.catDataWords[wordName]);
+        logger.info(module.exports.catDataWords);
         
         //Kategorien sind definitiv nicht einzigartig
         var categs = wordCats.split(";");
