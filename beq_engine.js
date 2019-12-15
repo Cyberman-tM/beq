@@ -1188,6 +1188,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             {
                 logger.info("null");
                 module.exports.catDataCategs[oneCateg] = wordName;
+                logger.info("nulldone");
             }
             else
             {
