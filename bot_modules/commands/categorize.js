@@ -20,10 +20,10 @@ module.exports = function(beq_engine, dataString)
 	var RE = new RegExp(regexLook, 'i');
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
-        //Always look in english!
+        //Always look in klingon!
 		return item["tlh"].match(RE);
 	});
-
+logger.info(results);
     var realResult = null;
     //results hat jetzt möglicherweise mehrere Einträge
     if (results.length > 1)
@@ -40,16 +40,21 @@ module.exports = function(beq_engine, dataString)
         else
            tmpRet += "Please specify number of result to use";
     }
+    else if (results.length = 0)
+        tmpRet += "\n Not found!";
     else
        realResult = results[0];
    
-    var chkWord = realResult.tlh + ";;" + realResult.type;
-    if (beq_engine.catDataWords[chkWord] != undefined)
+    if (realResult != null)
     {
-        tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
+        var chkWord = realResult.tlh + ";;" + realResult.type;
+        if (beq_engine.catDataWords[chkWord] != undefined)
+        {
+            tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
+        }
+        else
+            tmpRet += "Category not found - will be added!";   
     }
-    else
-        tmpRet += "Category not found - will be added!";   
     
     return tmpRet;
 }
