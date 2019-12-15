@@ -518,6 +518,7 @@ bot.on('message', function (messageDJS)
         //Not much we can do, just deliver it to the beq engine
 		var beqTalk = JSON.parse(beq.beqTalkDef);
 		beqTalk.command = 'categorize';
+		beqTalk.lookWord = message;
 		beqTalk = beq.Engine(beqTalk);
 		sndMessage += beqTalk.message;   
 	}
