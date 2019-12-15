@@ -20,7 +20,7 @@ module.exports = function(beq_engine, dataString)
 	var RE = new RegExp(regexLook, 'i');
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
-        logger.info(item);
+        logger.info(item.tlh);
         //Always look in english!
 		return item["tlh"].match(RE);
 	});
