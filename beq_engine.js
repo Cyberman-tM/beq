@@ -1160,6 +1160,7 @@ function getCateg()
 requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
 	// Get the response body
 	var xmlCategs = response.getBody().replace("\r\n", "");
+    logger.info(xmlCategs);
     var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
 
     //Reset, just to be sure
