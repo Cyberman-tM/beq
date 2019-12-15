@@ -18,12 +18,19 @@ module.exports = function(beq_engine, dataString)
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, 'i');
+    try
+    {
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
         logger.info(item.tlh);
         //Always look in english!
 		return item["tlh"].match(RE);
 	});
+    }
+    catch(e)
+    {
+        logger.info(e);
+    }
     logger.info(results);
     
     //results hat jetzt möglicherweise mehrere Einträge
