@@ -1162,12 +1162,13 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
 	var xmlCategs = response.getBody();
     var xmlDoc = new xmldoc.XmlDocument(xmlCategs);
 
-    //Resest, just to be sure
+    //Reset, just to be sure
     module.exports.catDataWords = new Array();
     module.exports.catDataCategs = new Array();    
   
     //xmlDoc.children.forEach(function (word)
-    logger.info(xmlDoc.children.length);
+    logger.info(xmlDoc.firstChild.children.length);
+    logger.info(xmlDoc.firstChild);
     for (var i = 1; i < xmlDoc.children.length; i++)
     {
         logger.info(i);
