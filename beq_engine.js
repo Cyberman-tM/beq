@@ -1166,7 +1166,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
     module.exports.catDataCategs = new Array();    
     
     var words = document.childrenNamed("w");
- 
+ try
+ {
 	words.forEach(function (word)
     {       
         var wordName = word.attr.name;
@@ -1187,7 +1188,10 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             module.exports.catDataCategs[oneCateg].push(wordName);
             });
     });
-
+ }
+ catch{
+     logger.info("fehler");
+ }
 logger.info(module.exports.catDataCategs.length);
 logger.info(module.exports.catDataWords);
 })
