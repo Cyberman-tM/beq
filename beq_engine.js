@@ -1192,10 +1192,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
                 module.exports.catDataCategs[oneCateg].push(wordName);
             }
             });
-        }        
     }
-    
-    logger.info(module.exports.catDataCategs);
 })
 };	
 
