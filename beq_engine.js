@@ -1163,7 +1163,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
 
     //Reset, just to be sure
     module.exports.catDataWords = {};
-    module.exports.catDataCategs = new Array();    
+    module.exports.catDataCategs = {};    
     
     var words = document.childrenNamed("w");
  try
@@ -1174,11 +1174,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
         var wordCats = word.val;
         
         //Worte sollten einzigartig sein
-        //module.exports.catDataWords[wordName].push(wordCats);
-        logger.info(wordName);
         module.exports.catDataWords[wordName] = wordCats;
-        logger.info(module.exports.catDataWords[wordName]);
-        logger.info(module.exports.catDataWords);
         
         //Kategorien sind definitiv nicht einzigartig
         var categs = wordCats.split(";");
@@ -1196,8 +1192,7 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
  catch(e){
      logger.info("fehler", e);
  }
-logger.info(module.exports.catDataCategs.length);
-logger.info(module.exports.catDataWords["word1;;v1"]);
+logger.info(module.exports.catDataCategs);
 })
 };	
 
