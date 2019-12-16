@@ -60,6 +60,7 @@ var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
 var cmdCateg    = require('./bot_modules/commands/categorize.js');
+var cmdListCat  = require('./bot_modules/commands/list_categ.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
@@ -119,6 +120,10 @@ module.exports.Engine = function(beqTalk)
         break;        
         case 'categorize':
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
+        break;
+        //List categories already defined
+        case 'listcat':
+           beqTalk.message = cmdListCat(this);
         break;
 		
 		case 'KWOTD':			
