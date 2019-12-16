@@ -629,7 +629,7 @@ module.exports.createTranslation = function(beqTalk)
         if (msgCat != undefined)
         {
             //Maybe preprocess the output to be nicer?
-            sndMessage += beqTalk.newline + "Categories: " + msgCat;
+            sndMessage += beqTalk.newline + "Categories: " + msgCat + beqTalk.newline;
         }
 	}
 	)
