@@ -92,6 +92,7 @@ module.exports.Engine = function(beqTalk)
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
 		
         //Load Categorization (async!)
+	//includes calling reorg first!
         getCateg();
 	}
 	
@@ -109,7 +110,11 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt += beqTalk.newline;
 		   beqTalk.message = tmpTxt;
 		break;
-        
+
+        case 'cat_reorg':
+           //Call category reorganization, re-read categorization
+           getCateg();
+        break;        
         case 'categorize':
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
         break;
@@ -1170,7 +1175,12 @@ fs = null;
 
 function getCateg()
 {
-requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response) {
+	//Reorg call
+	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function(response)
+    {
+        //REsponse is irrelevant, but there's no use reading the XML before it has been created...
+	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response)
+    {
 	// Get the response body
  	var document = new xmldoc.XmlDocument(response.getBody());
 
@@ -1200,7 +1210,8 @@ requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').the
             });
     });
 })
-};	
+    });
+};
 
 
 
