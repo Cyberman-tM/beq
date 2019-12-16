@@ -122,7 +122,7 @@ module.exports.Engine = function(beqTalk)
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
         break;
         //List categories already defined
-        case 'listcat':
+        case 'listCat':
            beqTalk.message = cmdListCat(this);
         break;
 		
