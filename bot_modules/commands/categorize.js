@@ -7,14 +7,14 @@ var requestify = require('requestify');
 
 module.exports = function(beq_engine, dataString)
 {
-    var tmpRet = "";
-    var newCategory = args[1].toUpperCase();
-    
     //First word will be the word we want to categorize, second word (after blank)
     //will be the categorie we want to add
     //third, if exists, is the number of the result we want
     var args = dataString.split(' ');
-    
+	
+    var tmpRet = "";
+    var newCategory = args[1].toUpperCase();   
+   
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, '');
