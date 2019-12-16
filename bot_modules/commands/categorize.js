@@ -8,6 +8,7 @@ var requestify = require('requestify');
 module.exports = function(beq_engine, dataString)
 {
     var tmpRet = "";
+    var newCategory = args[1].toUpperCase();
     
     //First word will be the word we want to categorize, second word (after blank)
     //will be the categorie we want to add
@@ -47,15 +48,23 @@ module.exports = function(beq_engine, dataString)
     if (realResult != null)
     {
         var chkWord = realResult.tlh + ";;" + realResult.type;
+        var foundCat = false;
         if (beq_engine.catDataWords[chkWord] != undefined)
         {
-            tmpRet += "Found category for word:" + beq_engine.catDataWords[chkWord];
+            var wordCategs = beq_engine.catDataWords[chkWord].split(';');
+            wordCategs.forEach(function(catItem)
+            {
+                if (catItem == newCategory)
+                    foundCat = true;
+            });
+            if (foundCat == true)
+                tmpRet += "Category already noted.";
         }
-        else
+        
+        if (foundCat == false)
         {
-            tmpRet += "";
-            var category = args[1].toUpperCase();
-            var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + category;
+            tmpRet += "Category added. Please reorganize to see it.";
+            var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
         }
     }
