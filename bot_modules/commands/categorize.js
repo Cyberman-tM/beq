@@ -55,7 +55,7 @@ module.exports = function(beq_engine, dataString)
         {
             tmpRet += "";
             var category = args[1].toUpperCase();
-            var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + ;
+            var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + category;
             requestify.get(addCatLink);
         }
     }
