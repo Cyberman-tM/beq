@@ -17,7 +17,7 @@ module.exports = function(beq_engine)
         if (item.substr(0,1) != lastChar)
         {
             lastChar = item.substr(0,1);
-            tmpRet += "**Categories starting with" + lastChar + "**\n";
+            tmpRet += "**Categories starting with " + lastChar + "**\n";
         }
         tmpRet += item + "\n";
     });
