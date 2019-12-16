@@ -28,4 +28,7 @@ module.exports.cmdlist = 'ping - simple response test, replies "pong"<BR>'
 + 'yIqaw - Remember! Adds a note in the "Letter to Maltz" channel, so we can ask for clarification/words when the opportunity shows itself.<BR>'
 + '        Anything after the keyword will be stored! No parameters.<BR>'
 + 'wiki, canon, mailing list - not yet documented, sorry <BR>'
++ '<BR>'
++ '$*word* - add a category to the specified word. There is no actual command!<BR>'
++ '          Categories are translated to UPPER case, multiple categories per word have to be separated by semicolons.'
 +'<BR>';
