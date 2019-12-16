@@ -114,6 +114,8 @@ module.exports.Engine = function(beqTalk)
         case 'cat_reorg':
            //Call category reorganization, re-read categorization
            getCateg();
+	   //TODO: Personality?
+	   beqTalk.message = 'Reorganization started';
         break;        
         case 'categorize':
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
