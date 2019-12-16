@@ -517,7 +517,7 @@ bot.on('message', function (messageDJS)
 	{
   	   var beqTalk = JSON.parse(beq.beqTalkDef);
 	   //Re-org command
-       if (message.substring(0,3) == "***"
+       if (message.substring(0,3) == "***")
 	   {
 	      beqTalk.command = 'cat_reorg';
 	   }
