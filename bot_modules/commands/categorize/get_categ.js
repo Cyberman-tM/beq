@@ -12,13 +12,11 @@ module.exports = function(beq_engine)
 		{
 			// Get the response body
 			var document = new xmldoc.XmlDocument(response.getBody());
-			logger.info("afterxml");
 
 			//Reset, just to be sure
 			beq_engine.catDataWords = {};
-			beg_engine.catDataCategs = {};
+			beq_engine.catDataCategs = {};
 			
-
 			var words = document.childrenNamed("w");
 			words.forEach(function (word)
 			{
