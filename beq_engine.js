@@ -54,6 +54,11 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
+module.exports.beqTalkDef = beqTalkDef;
+//Word categorizationdata
+module.exports.catDataWords = null;
+module.exports.catDataCategs = null;
+
 var requestify = require('requestify'); 
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 
@@ -63,11 +68,6 @@ var cmdCateg    = require('./bot_modules/commands/categorize/categorize.js');
 var cmdListCat  = require('./bot_modules/commands/categorize/list_categ.js');
 var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
 var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
-
-module.exports.beqTalkDef = beqTalkDef;
-//Word categorizationdata
-module.exports.catDataWords = null;
-module.exports.catDataCategs = null;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
