@@ -97,6 +97,7 @@ module.exports.Engine = function(beqTalk)
         //Load Categorization (async!)
 	//includes calling reorg first!
         utilGetCateg(this);
+		logger.info(module.exports.catDataWords);
 	}
 	
 	var tmpTxt = "";
