@@ -145,6 +145,7 @@ bot.on('message', function (messageDJS)
 		var args = message.substring(0).split(' ');
 		var cmd = args[0];
 		
+		logger.info(cmd);
 		if (DData.devBuild == "true" )
 			logger.info(cmd);
 		
