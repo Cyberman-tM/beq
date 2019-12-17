@@ -17,7 +17,14 @@ module.exports = function(beq_engine)
 			beg_engine.catDataWords = {};
 			beg_engine.catDataCategs = {};
 
+			try
+			{
 			var words = document.childrenNamed("w");
+			}
+			catch(e)
+			{
+				logger.info(e);
+			}
 			logger.info(words);
 			words.forEach(function (word)
 			{
