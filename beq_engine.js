@@ -127,7 +127,7 @@ module.exports.Engine = function(beqTalk)
            beqTalk.message = cmdListCat(this);
         break;
 		case 'showCat':
-			beqTalk.message = cmdShowCat(this);
+			beqTalk.message = cmdShowCat(this, beqTalk.lookWord);
 		break;
 		
 		case 'KWOTD':			
