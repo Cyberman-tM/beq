@@ -15,6 +15,7 @@ module.exports = function(beq_engine)
 			logger.info("dat");
 			// Get the response body
 			var document = new xmldoc.XmlDocument(response.getBody());
+			logger.info("afterxml");
 
 			//Reset, just to be sure
 			beg_engine.catDataWords = {};
