@@ -62,6 +62,7 @@ var kSplit      = require('./bot_modules/utils/kSplit.js');
 var cmdCateg    = require('./bot_modules/commands/categorize/categorize.js');
 var cmdListCat  = require('./bot_modules/commands/categorize/list_categ.js');
 var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
+var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
@@ -95,7 +96,7 @@ module.exports.Engine = function(beqTalk)
 		
         //Load Categorization (async!)
 	//includes calling reorg first!
-        getCateg();
+        utilgetCateg(this);
 	}
 	
 	var tmpTxt = "";
@@ -1183,73 +1184,4 @@ xmlFiles = null;
 xml = null;
 fs = null;
 }
-
-function getCateg()
-{
-	//Reorg call
-	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function(response)
-    {
-        //REsponse is irrelevant, but there's no use reading the XML before it has been created...
-	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function(response)
-    {
-	// Get the response body
- 	var document = new xmldoc.XmlDocument(response.getBody());
-
-    //Reset, just to be sure
-    module.exports.catDataWords = {};
-    module.exports.catDataCategs = {};    
-    
-    var words = document.childrenNamed("w");
-	words.forEach(function (word)
-    {       
-        var wordName = word.attr.name;
-        var wordCats = word.val;
-        
-        //Worte sollten einzigartig sein
-        module.exports.catDataWords[wordName] = wordCats;
-        
-        //Kategorien sind definitiv nicht einzigartig
-        var categs = wordCats.split(";");
-        categs.forEach(function(oneCateg)
-            {
-            var catList = module.exports.catDataCategs[oneCateg];
-            if (catList == null)
-            {
-                module.exports.catDataCategs[oneCateg] = [];
-            }
-            module.exports.catDataCategs[oneCateg].push(wordName);
-            });
-    });
-})
-    });
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
