@@ -1,8 +1,11 @@
+var logger = require('winston');
 var requestify = require('requestify'); 
 var xmldoc = require('xmldoc');
 
 module.exports = function(beq_engine)
 {
+	logger.info("called");
+	logger.info(beq_engine.catDataWords);
 	//Reorg call
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function (response)
 	{
