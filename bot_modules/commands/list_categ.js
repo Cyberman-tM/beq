@@ -14,6 +14,7 @@ module.exports = function(beq_engine)
     tmpRet = "Currently available categories:\n```";
     allCats.forEach(function(item)
     {
+      tmpRet += "_" + item + "_";
         if (item.substr(0,1) != lastChar)
         {
             lastChar = item.substr(0,1);
