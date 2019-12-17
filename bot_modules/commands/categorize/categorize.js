@@ -33,9 +33,11 @@ module.exports = function(beq_engine, dataString)
         
         if (args[2] != null)
         {
-            realResult = results[args[2]];
+	    //Javascript ist 0-basierend, boQwI' nicht
+	    var resNum = args[2] + 1;
+            realResult = results[resNum];
             if (realResult == undefined)
-                tmpRet += "Requested match #" + args[2] + "not found.";
+                tmpRet += "Requested match #" + resNum + "not found.";
         }
         else
            tmpRet += "Please specify number of result to use";
