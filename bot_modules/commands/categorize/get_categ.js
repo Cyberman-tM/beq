@@ -10,25 +10,17 @@ module.exports = function(beq_engine)
 		//Response from reorg is irrelevant, but there's no use reading the XML before it has been created...
 		requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function (response)
 		{
-			logger.info("before xml");
-			try
-			{
 			// Get the response body
 			var document = new xmldoc.XmlDocument(response.getBody());
 
 			//Reset, just to be sure
 			beg_engine.catDataWords = {};
 			beg_engine.catDataCategs = {};
-
+			
+			logger.info(document);
+			logger.info(beq_engine.catDataWords);
 			
 			var words = document.childrenNamed("w");
-			}
-			catch(e)
-			{
-				logger.info(e);
-			}
-			logger.info("after xml");
-			logger.info(words);
 			words.forEach(function (word)
 			{
 				logger.info(word);
