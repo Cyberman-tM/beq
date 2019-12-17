@@ -98,7 +98,6 @@ module.exports.Engine = function(beqTalk)
         //Load Categorization (async!)
 	//includes calling reorg first!
         utilGetCateg(this);
-		logger.info(module.exports.catDataWords);
 	}
 	
 	var tmpTxt = "";
@@ -118,7 +117,7 @@ module.exports.Engine = function(beqTalk)
 
         case 'cat_reorg':
            //Call category reorganization, re-read categorization
-           getCateg();
+           utilGetCateg(this);
 	   //TODO: Personality?
 	   beqTalk.message = 'Reorganization started';
         break;        
