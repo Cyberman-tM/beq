@@ -19,7 +19,7 @@ module.exports = function(beq_engine)
             lastChar = item.substr(0,1);
             tmpRet += "**Categories starting with " + lastChar + "**\n";
         }
-        tmpRet += item + "\n";
+        tmpRet += item + " (" + beq_engine.catDataCategs[item].length  + ")\n";
     });
     tmpRet += "```";
     return tmpRet;    
