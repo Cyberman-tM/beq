@@ -497,6 +497,13 @@ bot.on('message', function (messageDJS)
 				beqTalk = beq.Engine(beqTalk);
 				sndMessage += beqTalk.message;
 		 	break;
+			case 'showCat':
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'showCat';
+				beqTalk.lookWord = args[1];
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+		 	break;
 		default:
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
