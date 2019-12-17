@@ -4,15 +4,12 @@ var xmldoc = require('xmldoc');
 
 module.exports = function(beq_engine)
 {
-	logger.info("called");
-	logger.info(beq_engine.catDataWords);
 	//Reorg call
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function (response)
 	{
 		//Response from reorg is irrelevant, but there's no use reading the XML before it has been created...
 		requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function (response)
 		{
-			logger.info("we have data");
 			// Get the response body
 			var document = new xmldoc.XmlDocument(response.getBody());
 
@@ -41,6 +38,8 @@ module.exports = function(beq_engine)
 					beq_engine.catDataCategs[oneCateg].push(wordName);
 				}
 				);
+				
+				logger.info(beq_engine.catDataCategs);
 			}
 			);
 		}
