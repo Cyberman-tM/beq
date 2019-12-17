@@ -54,7 +54,6 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 
 */
-module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
 module.exports.catDataWords = null;
 module.exports.catDataCategs = null;
@@ -71,6 +70,8 @@ var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
+
+module.exports.beqTalkDef = beqTalkDef;
 
 //Testing
 var logger = require('winston');
