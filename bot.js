@@ -22,7 +22,7 @@ var searchWiki = require('./bot_modules/commands/search_wiki.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.4 - Beq engine forever!';
+var versInt = '2.1.5 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -136,7 +136,7 @@ bot.on('message', function (messageDJS)
 				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
 				//So we can simply replace the ? with "mugh " and the rest will work normally
-				message = "mugh" + message;
+				message = "mugh " + message;
 			}
 			else
 				message = '!noShort';
@@ -145,7 +145,6 @@ bot.on('message', function (messageDJS)
 		var args = message.substring(0).split(' ');
 		var cmd = args[0];
 		
-		logger.info(cmd);
 		if (DData.devBuild == "true" )
 			logger.info(cmd);
 		
