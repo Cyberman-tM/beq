@@ -1,7 +1,7 @@
 var requestify = require('requestify'); 
 var xmldoc = require('xmldoc');
 
-function getCateg(beq_engine)
+module.exports = function(beq_engine)
 {
 	//Reorg call
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function (response)
