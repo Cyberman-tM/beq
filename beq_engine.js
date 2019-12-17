@@ -45,14 +45,24 @@ You must initialize it before calling beq! Some fields may have default entries!
 	"gotResult": false,           // indicates if the search was successful => true/false
 	"failure":false               // indicates if there was a problem (i.e. command not found) => true/false
 */
-var kTranscode  = require('./bot_modules/utils/recode.js');
-var kSplit      = require('./bot_modules/utils/kSplit.js');
+//Word categorizationdata
+module.exports.catDataWords = null;
+module.exports.catDataCategs = null;
+
+var requestify = require('requestify'); 
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 
-module.exports.beqTalkDef = beqTalkDef;
+var kTranscode  = require('./bot_modules/utils/recode.js');
+var kSplit      = require('./bot_modules/utils/kSplit.js');
+var cmdCateg    = require('./bot_modules/commands/categorize/categorize.js');
+var cmdListCat  = require('./bot_modules/commands/categorize/list_categ.js');
+var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
+var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
+
+module.exports.beqTalkDef = beqTalkDef;
 
 //Testing
 var logger = require('winston');
@@ -75,6 +85,10 @@ module.exports.Engine = function(beqTalk)
 			
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
+		
+        //Load Categorization (async!)
+	//includes calling reorg first!
+        utilGetCateg(this);
 	}
 	
 	var tmpTxt = "";
@@ -90,6 +104,23 @@ module.exports.Engine = function(beqTalk)
 		   tmpTxt += module.exports.KDBJSon.length + ' words in database.' + beqTalk.newline;
 		   tmpTxt += beqTalk.newline;
 		   beqTalk.message = tmpTxt;
+		break;
+
+        case 'cat_reorg':
+           //Call category reorganization, re-read categorization
+           utilGetCateg(this);
+	   //TODO: Personality?
+	   beqTalk.message = 'Reorganization started';
+        break;        
+        case 'categorize':
+           beqTalk.message = cmdCateg(this, beqTalk.lookWord);
+        break;
+        //List categories already defined
+        case 'listCat':
+           beqTalk.message = cmdListCat(this);
+        break;
+		case 'showCat':
+			beqTalk.message = cmdShowCat(this, beqTalk.lookWord);
 		break;
 		
 		case 'KWOTD':			
@@ -414,7 +445,12 @@ module.exports.Engine = function(beqTalk)
 		break;
 		case "split":
 			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
-		
+			beqTalk.gotResult = true;
+		break;
+		case "getRem":
+    logger.info(module.exports.catDataWords);
+    logger.info(module.exports.catDataCategs);
+
 		break;
 	default:
 	   beqTalk.gotResult = false;
@@ -589,6 +625,14 @@ module.exports.createTranslation = function(beqTalk)
 				   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
 		}
+        //Check for categories
+        var chkCat = item.tlh + ';;' + item.type;
+        var msgCat = module.exports.catDataWords[chkCat];
+        if (msgCat != undefined)
+        {
+            //Maybe preprocess the output to be nicer?
+            sndMessage += beqTalk.newline + "Categories: " + msgCat + beqTalk.newline;
+        }
 	}
 	)
 	if (beqTalk.command == "yIcha'")
@@ -1132,3 +1176,4 @@ xmlFiles = null;
 xml = null;
 fs = null;
 }
+

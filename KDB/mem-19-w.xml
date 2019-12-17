@@ -3063,7 +3063,7 @@ While the implemented used could be anything, it is not common to use this verb 
       <column name="hidden_notes"></column>
       <column name="components">{wey:n}, {jolpat:n}</column>
       <column name="examples">
-▶ {wey jolpat - wa' (jav ghotpu'):sen:nolink} "Personnel Transporter - 1 (6 Man)"</column>
+▶ {wey jolpat:sen:nolink}: {wa' (jav ghotpu'):sen:nolink} "Personnel Transporter - 1 (6 Man)"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3445,7 +3445,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="definition_zh_HK"></column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DeSqIv:n}, {ngIb:n}, {qIv:n}, {volchaH:n}, {yeb:n}</column>
+      <column name="see_also">{DeSqIv:n}, {ngIb:n:1}, {qIv:n}, {volchaH:n}, {yeb:n:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

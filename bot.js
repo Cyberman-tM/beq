@@ -70,6 +70,8 @@ bot.on('ready', function (evt)
 	{
 		evTimer.startEventTimer(beq, bot);
 	}
+	else
+		logger.info("Development edition!");
 }
 );
 
@@ -83,41 +85,53 @@ bot.on('message', function (messageDJS)
 	var userID = messageDJS.author.id;
 	var channelID = messageDJS.channel.id;
 	var message = messageDJS.content;
+   	var cmdMagic = '';                         //Magic character that tells us its a command
 		
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
 	if (message.length < 3)
 	   return;
-	
-	//Dev build	only
-	if ( DData.devBuild == "true" )
-	{
-		if ( message.substring(0, 1) == '$' )
-		   message = message.substring(1);
-	    else 
-		   message = message.substring(1);
-	}
 
+   	//Regular use: first char is bot-command   
+   	cmdMagic =  message.substring(0, 1);
+    message = message.substring(1,99999);
+
+	//Dev build only, first char is dev-marker($)
+	if ( DData.devBuild == "true")
+    {
+	    if (cmdMagic == '$')
+	    {
+   		cmdMagic =  message.substring(0, 1);
+        	message = message.substring(1,99999);
+	    }
+	    else
+               return;
+    }
+
+	if (DData.devBuild == "true" )
+		logger.info(cmdMagic);
+	
 	//GEneral info: ! => default command indicator
 	//              ? => shorthand for translation (mugh), only applicable in certain channels
 	//              % => default GAME indicator
+	//              $ => Categorize words
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?')
+	if ( cmdMagic == '!' || cmdMagic == '?')	  
 	{		
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
-		if (message.substring(0, 1) == '?')
+		if (cmdMagic == '?')
 		{
 			//Ask beq or Stammtisch
 			if (channelID == DData.clipChan ||
 			    channelID == DData.StammChan )
 			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
-				if (message.substring(1,4) == 'tlh')
+				if (message.substring(0,4) == 'tlh')
 				   beqTalk.showNotes = true;
 				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
@@ -128,8 +142,11 @@ bot.on('message', function (messageDJS)
 				message = '!noShort';
 		}
 	
-		var args = message.substring(1).split(' ');
+		var args = message.substring(0).split(' ');
 		var cmd = args[0];
+		
+		if (DData.devBuild == "true" )
+			logger.info(cmd);
 		
 		//Some functions need the entire argument string, unprocessed
 		var firstBlank = message.indexOf(' ');
@@ -460,13 +477,33 @@ bot.on('message', function (messageDJS)
 			break;
 			case 'split':
 				//No parameters possible!
-				var splitRaw = message.substring(6);  //!split
+				var splitRaw = message.substring(5);  //!split
 				var beqTalk = JSON.parse(beq.beqTalkDef);
 				beqTalk.command = 'split';
 				beqTalk.lookWord = splitRaw;
 				beqTalk = beq.Engine(beqTalk);
 				sndMessage += beqTalk.message;
 			break;
+			case 'getRem':
+				//No parameters possible!
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'getRem';
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+			break;
+			case 'listCat':
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'listCat';
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+		 	break;
+			case 'showCat':
+				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk.command = 'showCat';
+				beqTalk.lookWord = args[1];
+				beqTalk = beq.Engine(beqTalk);
+				sndMessage += beqTalk.message;
+		 	break;
 		default:
 		    //This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
@@ -481,15 +518,34 @@ bot.on('message', function (messageDJS)
 			break;
 		}
 	}
-	else if (message.substring(0, 1) == '%')
+    //GAme
+	else if (cmdMagic == '%')
 	{		
 		var gameTalk =gameTalkDef;
 		gameTalk = games.runGames(bot, userID, message);
 		sndMessage = gameTalk.message;
 	}
+    //Categorize
+	else if (cmdMagic == '$')
+	{
+  	   var beqTalk = JSON.parse(beq.beqTalkDef);
+	   //Re-org command
+       if (message.substring(0,3) == "***")
+	   {
+	      beqTalk.command = 'cat_reorg';
+	   }
+       else
+       {
+		  beqTalk.command = 'categorize';
+	      beqTalk.lookWord = message;
+       }
+	   beqTalk = beq.Engine(beqTalk);
+	   sndMessage += beqTalk.message;   
+	}
 
 
-	if ( message.substring(0, 1) == '!' || message.substring(0, 1) == '?' || message.substring(0, 1) == '%')
+	if ( cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '%'
+          || cmdMagic == '$' )
 	{
 		if (cmdFound == false)		
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
