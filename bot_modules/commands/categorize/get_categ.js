@@ -18,6 +18,7 @@ module.exports = function(beq_engine)
 			beg_engine.catDataCategs = {};
 
 			var words = document.childrenNamed("w");
+			logger.info(words);
 			words.forEach(function (word)
 			{
 				logger.info(word);
