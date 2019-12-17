@@ -59,8 +59,9 @@ var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
 
 var kTranscode  = require('./bot_modules/utils/recode.js');
 var kSplit      = require('./bot_modules/utils/kSplit.js');
-var cmdCateg    = require('./bot_modules/commands/categorize.js');
-var cmdListCat  = require('./bot_modules/commands/list_categ.js');
+var cmdCateg    = require('./bot_modules/commands/categorize/categorize.js');
+var cmdListCat  = require('./bot_modules/commands/categorize/list_categ.js');
+var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 //Word categorizationdata
@@ -125,6 +126,9 @@ module.exports.Engine = function(beqTalk)
         case 'listCat':
            beqTalk.message = cmdListCat(this);
         break;
+		case 'showCat':
+			beqTalk.message = cmdShowCat(this);
+		break;
 		
 		case 'KWOTD':			
 			//TODO: KWOTD - random word/sentence, type of word as parameter
