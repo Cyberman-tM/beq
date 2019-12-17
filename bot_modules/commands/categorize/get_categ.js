@@ -25,6 +25,9 @@ module.exports = function(beq_engine)
 
 				//Worte sollten einzigartig sein
 				beq_engine.catDataWords[wordName] = wordCats;
+				
+				logger.info(beq_engine.catDataWords);
+				logger.info("x");
 
 				//Kategorien sind definitiv nicht einzigartig
 				var categs = wordCats.split(";");
@@ -37,9 +40,8 @@ module.exports = function(beq_engine)
 					}
 					beq_engine.catDataCategs[oneCateg].push(wordName);
 				}
-				);
+				);			
 				
-				logger.info(beq_engine.catDataCategs);
 			}
 			);
 		}
