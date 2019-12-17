@@ -135,8 +135,8 @@ bot.on('message', function (messageDJS)
 				   beqTalk.showNotes = true;
 				
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
-				//So we can simply replace the ? with "!mugh " and the rest will work normally
-				message = message.replace('?', "!mugh ");			
+				//So we can simply replace the ? with "mugh " and the rest will work normally
+				message = message.replace('?', "mugh ");			
 			}
 			else
 				message = '!noShort';
