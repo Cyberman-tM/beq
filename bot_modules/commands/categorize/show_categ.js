@@ -7,8 +7,9 @@ module.exports = function(beq_engine, lookWord)
 {
     var tmpRet = "";
     
+    lookWord = lookWord.toUpperCase();
     tmpRet = "Words in category " + lookWord + "\n";
-    beq_engine.catDataCategs.forEach(function(item)
+    beq_engine.catDataCategs[lookWord].forEach(function(item)
     {
     //TODO: prepare output
        tmpRet += item + "\n";
