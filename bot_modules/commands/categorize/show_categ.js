@@ -12,7 +12,8 @@ module.exports = function(beq_engine, lookWord)
     beq_engine.catDataCategs[lookWord].forEach(function(item)
     {
     //TODO: prepare output
-       tmpRet += item + "\n";
+      var tmpCat = item.split(";;");
+       tmpRet += tmpCat[0] + beq_engine.getWType(tmpCat[1].substr(0,1)) + "\n";
     });
     
     return tmpRet;    
