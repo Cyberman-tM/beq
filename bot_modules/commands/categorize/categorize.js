@@ -1,9 +1,9 @@
-
 /*
   Categorize - sort words into different categories, addendum to boQwI' database
 */
 var logger = require('winston');
 var requestify = require('requestify'); 
+var beqPerson = require('./../../personality/beq_person.js');
 
 module.exports = function(beq_engine, dataString)
 {
@@ -29,7 +29,7 @@ module.exports = function(beq_engine, dataString)
     if (results.length > 1)
     {
         //TODO: newline - where from? beqtalk?
-        tmpRet = "Multiple matches for " + args[0] + "!\n";
+        tmpRet = "Multiple matches for " args[0] + "!\n";
         
         if (args[2] != null)
         {
