@@ -3,10 +3,11 @@
    (sounds grander than it is)
    
    A collection of lines beq may say, or react to   
+   (Not the actual lines, but the types of things he says)
 
 */
 var beqLines = require('./beq_lines.js');
-module.exports.versInt = '0.1';
+module.exports.versInt = '0.2';
 module.exports.nameInt = 'beq Personality';
 
 //Text that is to be added to yIngu' only
@@ -49,6 +50,8 @@ module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, ital
 		myLines = JSON.parse(beqLines.MemorizeDone);
 	else if (lineType == 6)
 		myLines = JSON.parse(beqLines.ProclaimDone);
+	else if (lineType == 7)
+		myLines = JSON.parse(beqLines.WorkDone);
 	
 	if (myLines.length == 0)
 		oneLine = "";

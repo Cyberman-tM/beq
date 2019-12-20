@@ -69,3 +69,12 @@ module.exports.ProclaimDone = JSON.stringify(
 		"'e' jatlh ghaH. not jIH...",
 		"toH. SaH 'Iv?"
 		]);
+//Generic lines he might say after doing something (translating, moving, whatever)
+module.exports.WorkDone = JSON.stringify(
+	[
+		"pItlh",
+		"'e' vIvumta'. DaHjaj nuq Davum?",
+		"veb nuq?",
+		"nuq vIbaj?",
+		"Hoch 'oH, 'e' vItul..."
+	]);

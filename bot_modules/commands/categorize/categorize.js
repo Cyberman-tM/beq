@@ -1,9 +1,9 @@
-
 /*
   Categorize - sort words into different categories, addendum to boQwI' database
 */
 var logger = require('winston');
 var requestify = require('requestify'); 
+var beqPerson = require('./../../personality/beq_person.js');
 
 module.exports = function(beq_engine, dataString)
 {
@@ -29,15 +29,17 @@ module.exports = function(beq_engine, dataString)
     if (results.length > 1)
     {
         //TODO: newline - where from? beqtalk?
-        tmpRet = "Multiple matches!" + "\n";
+        tmpRet = "Multiple matches for " + args[0] + "!\n";
         
         if (args[2] != null)
         {
-	    //Javascript ist 0-basierend, boQwI' nicht
-	    var resNum = parseInt(args[2]) - 1;
-            realResult = results[resNum];
-            if (realResult == undefined)
-                tmpRet += "Requested match #" + resNum + "not found.";
+            //Javascript ist 0-basierend, boQwI' nicht
+            var resNum = parseInt(args[2]) - 1;
+                realResult = results[resNum];
+                if (realResult == undefined)
+                    tmpRet += "Requested match #" + args[2] + "not found for word " + args[0] + "\n";
+                else
+                    tmpRet += "Requested match #" + args[2] + "found and used." + "\n";
         }
         else
            tmpRet += "Please specify number of result to use";
@@ -60,16 +62,19 @@ module.exports = function(beq_engine, dataString)
                     foundCat = true;
             });
             if (foundCat == true)
-                tmpRet += "Category already noted.";
+                tmpRet += "Category " + newCategory + " already noted for " + realResult.tlh + ".";
         }
         
         if (foundCat == false)
         {
-            tmpRet += "Category added. Please reorganize to see it.";
+            tmpRet += "Category " + newCategory + " added to word " + realResult.tlh + ".\n";
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
         }
     }
+	
+  //Add in some personality
+  tmpRet += beqPerson.getLine(7, true, true, "\n");
     
     return tmpRet;
 }
