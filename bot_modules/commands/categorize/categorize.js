@@ -72,6 +72,9 @@ module.exports = function(beq_engine, dataString)
             requestify.get(addCatLink);
         }
     }
+	
+  //Add in some personality
+  tmpRet += beqPerson.getLine(7, true, true, "\n");
     
     return tmpRet;
 }
