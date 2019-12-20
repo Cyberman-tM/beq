@@ -37,9 +37,9 @@ module.exports = function(beq_engine, dataString)
             var resNum = parseInt(args[2]) - 1;
                 realResult = results[resNum];
                 if (realResult == undefined)
-                    tmpRet += "Requested match #" + resNum + "not found for word " + args[0];
+                    tmpRet += "Requested match #" + args[2] + "not found for word " + args[0] + "\n";
                 else
-                    tmpRet += "Requested match #" + resNum + "found and used.";
+                    tmpRet += "Requested match #" + args[2] + "found and used." + "\n";
         }
         else
            tmpRet += "Please specify number of result to use";
@@ -67,7 +67,7 @@ module.exports = function(beq_engine, dataString)
         
         if (foundCat == false)
         {
-            tmpRet += "Category " + newCategory + " added to word " + realResult.tlh + ".";
+            tmpRet += "Category " + newCategory + " added to word " + realResult.tlh + ".\n";
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
         }
