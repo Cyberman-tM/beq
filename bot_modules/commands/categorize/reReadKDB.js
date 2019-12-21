@@ -17,6 +17,8 @@ module.exports = function(beq_engine)
         //Primitive, but it should do
         if (item.type.includes("anim"))
             newCategory += ";Animal";
+        if (item.type.includes("being"))
+           newCategory += ";being";
         if (item.type.includes("archaic"))
             newCategory += ";Archaic";
         if (item.type.includes("deriv"))
