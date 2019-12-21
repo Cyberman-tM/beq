@@ -21,9 +21,9 @@ module.exports = function(beq_engine)
 			var words = document.childrenNamed("w");
 			words.forEach(function (word)
 			{
-				//We had to encode the special characters, now we have to decode them
-				var wordName = unEscapeHtml(word.attr.name);
-				var wordCats = unEscapeHtml(word.val);
+				//We had to encode the apostrophe
+				var wordName = word.attr.name.replace("X-Z", "'");
+				var wordCats = word.val.replace("X-Z", "'");
 				logger.info(wordName);
 
 				//Worte sollten einzigartig sein
@@ -49,28 +49,3 @@ module.exports = function(beq_engine)
 	}
 	);
 };
-
-function escapeHtml(text) {
-  var map = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;'
-  };
-
-  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
-}
-
-
-function unEscapeHtml(text) {
-  var map = {
-    '&amp;': '&',
-    '&lt;': '<',
-    '&gt;':'>' ,
-    '&quot;': '"',
-    '&#039;': "'"
-  };
-
-  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
-}
