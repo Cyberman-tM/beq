@@ -10,8 +10,10 @@ module.exports = function(beq_engine)
 		//Response from reorg is irrelevant, but there's no use reading the XML before it has been created...
 		requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function (response)
 		{
+			var rawXML = response.getBody();
+			
 			// Get the response body
-			var document = new xmldoc.XmlDocument(response.getBody());
+			var document = new xmldoc.XmlDocument(rawXML);
 
 			//Reset, just to be sure
 			beq_engine.catDataWords = {};
@@ -46,3 +48,28 @@ module.exports = function(beq_engine)
 	}
 	);
 };
+
+function escapeHtml(text) {
+  var map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+
+
+function unEscapeHtml(text) {
+  var map = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;':'>' ,
+    '&quot;': '"',
+    '&#039;': "'"
+  };
+
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
