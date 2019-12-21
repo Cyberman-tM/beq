@@ -534,6 +534,8 @@ bot.on('message', function (messageDJS)
 	   {
 	      beqTalk.command = 'cat_reorg';
 	   }
+       else if (message.substring(0,3) == '+++")
+		beqTalk.command = 'rereadkdb';
        else
        {
 		  beqTalk.command = 'categorize';
