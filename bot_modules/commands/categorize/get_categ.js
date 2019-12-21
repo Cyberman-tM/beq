@@ -22,9 +22,10 @@ module.exports = function(beq_engine)
 			logger.info(words.length);
 			words.forEach(function (word)
 			{
+				logger.info(wordName);
 				//We had to encode the apostrophe
-				var wordName = word.attr.name.replace("X-Z", "'");
-				var wordCats = word.val.replace("X-Z", "'");
+				var wordName = word.attr.name.replace(/X-Z/g, "'");
+				var wordCats = word.val.replace(/X-Z/g, "'");
 				logger.info(wordName);
 
 				//Worte sollten einzigartig sein
