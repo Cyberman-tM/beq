@@ -24,6 +24,7 @@ module.exports = function(beq_engine)
 				//We had to encode the special characters, now we have to decode them
 				var wordName = unEscapeHtml(word.attr.name);
 				var wordCats = unEscapeHtml(word.val);
+				logger.info(wordName);
 
 				//Worte sollten einzigartig sein
 				beq_engine.catDataWords[wordName] = wordCats;
