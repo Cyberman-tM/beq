@@ -561,6 +561,7 @@ bot.on('message', function (messageDJS)
             logger.info("mes");
             var sendMessage = sndMessage.substr(0,1500);
             sndMessage = sndMessage.substr(1500, 9999);
+		sendMessage += "xxxx";
             
             botSendMessage(1, this, messageDJS.channel.id, sendMessage);
         }
