@@ -22,7 +22,14 @@ module.exports = function(beq_engine, lookWord)
 	{
 		return item["tlh"].match(RE);
 	});
-       tmpRet += tmpCat[0] + ": " + results[0].en + " -> " + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";      
+       var tmpTrans = "";
+       results.forEach(function(item)
+       {
+          if (item.type == tmpCat[1])
+  	     tmpTrans = item.en;
+       });
+	    
+       tmpRet += tmpCat[0] + ": " + tmpTrans + " -> " + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";      
     });
     
     return tmpRet;    
