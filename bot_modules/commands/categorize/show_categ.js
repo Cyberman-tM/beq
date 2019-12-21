@@ -18,7 +18,7 @@ module.exports = function(beq_engine, lookWord)
       var tmpCat = item.split(";;");
        tmpRet += tmpCat[0] + " " + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
        //+ beq_engine.KDBJSon[tmpCat[0]].en 
-      logger.info(beq_engine.KDBJSon);
+      //logger.info(beq_engine.KDBJSon);
       logger.info(tmpCat[0]);
     });
     
