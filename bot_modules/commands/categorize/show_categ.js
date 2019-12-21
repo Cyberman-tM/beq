@@ -18,8 +18,15 @@ module.exports = function(beq_engine, lookWord)
       var tmpCat = item.split(";;");
        tmpRet += tmpCat[0] + " " + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
        //+ beq_engine.KDBJSon[tmpCat[0]].en 
-      logger.info(beq_engine.KDBJSon["QIn"]);
-      logger.info(tmpCat[0]);
+      //KDBJson ist ein Array von Objekten - kein String als Index
+          var regexLook = '^' + tmpCat[0] + '$';
+	var RE = new RegExp(regexLook, '');
+	var results = beq_engine.KDBJSon.filter(function (item)
+	{
+		return item.match(RE);
+	});
+      
+      logger.info(results[0]);
     });
     
     return tmpRet;    
