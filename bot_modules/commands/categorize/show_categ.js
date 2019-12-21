@@ -23,7 +23,7 @@ module.exports = function(beq_engine, lookWord)
 	var RE = new RegExp(regexLook, '');
 	var results = beq_engine.KDBJSon.filter(function (item)
 	{
-		return item.match(RE);
+		return item["tlh"].match(RE);
 	});
       
       logger.info(results[0]);
