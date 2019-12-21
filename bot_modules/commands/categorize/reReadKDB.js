@@ -16,23 +16,26 @@ module.exports = function(beq_engine)
         
         //Primitive, but it should do
         if (item.type.includes("anim"))
-            newCategory = "Animal";
-        else if (item.type.includes("archaic"))
-            newCategory = "Archaic";
-        else if (item.type.includes("deriv"))
-            newCategory = "derived";
-        else if (item.type.includes("reg"))
-            newCategory = "regional";
-        else if (item.type.includes("food"))
-            newCategory = "food";
-        else if (item.type.includes("inv"))
-            newCategory = "invectives";
-        else if (item.type.includes("slang"))
-            newCategory = "slang";
-        else if (item.type.includes("weap"))
-            newCategory = "weapon";
-        else
-            newCategory = "";
+            newCategory += ";Animal";
+        if (item.type.includes("archaic"))
+            newCategory += ";Archaic";
+        if (item.type.includes("deriv"))
+            newCategory += ";derived";
+        if (item.type.includes("reg"))
+            newCategory += ";regional";
+        if (item.type.includes("food"))
+            newCategory += ";food";
+        if (item.type.includes("inv"))
+            newCategory += ";invectives";
+        if (item.type.includes("slang"))
+            newCategory += ";slang";
+        if (item.type.includes("weap"))
+            newCategory += ";weapon";
+       
+       //Besserer Weg?
+       if (newCategory.substr(0,1) == ';')
+          newCategory = newCategory.substr(1,9999);
+
         
         if (newCategory != "")        
             //Word is not categorized yet
