@@ -37,7 +37,7 @@ module.exports = function(beq_engine)
         if (newCategory != "")        
             //Word is not categorized yet
             if (beq_engine.catDataWords[wordName] == undefined)
-                requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
+                requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
     });
 };
 
