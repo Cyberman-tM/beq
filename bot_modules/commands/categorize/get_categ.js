@@ -1,4 +1,10 @@
-var logger = require('winston');
+var logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
 var requestify = require('requestify'); 
 var xmldoc = require('xmldoc');
 
