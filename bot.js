@@ -22,7 +22,7 @@ var searchWiki = require('./bot_modules/commands/search_wiki.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.5 - Beq engine forever!';
+var versInt = '2.1.6 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
@@ -554,10 +554,16 @@ bot.on('message', function (messageDJS)
 			
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
-		//messageDJS.channel.send(sndMessage);
-		//TODO: Nachricht > 2000 Zeichen aufteilen
-//Loop?
-		botSendMessage(1, this, messageDJS.channel.id, sndMessage);
+
+		//Nachricht > 2000 Zeichen aufteilen
+        while(sndMessage.length > 0)
+        {
+            var sendMessage = sndMessage.substr(0,1500);
+            if (sndMessage.length >= 1500)
+                sndMessage = sndMessage.substr(1500, 9999);
+            botSendMessage(1, this, messageDJS.channel.id, sendMessage);
+        }
+		
 	}
 }
 );
