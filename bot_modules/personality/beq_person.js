@@ -53,6 +53,10 @@ module.exports.getLine = function(lineType, addNewLine, addItalic, newLine, ital
 	else if (lineType == 7)
 		myLines = JSON.parse(beqLines.WorkDone);
 	
+	//Type 7, Work Done, can also be used for specific works, so we have more variation
+	if (lineType == 5 || lineType == 6)
+		myLines = Array.concat(myLines, JSON.parse(beqLines.WorkDone));
+	
 	if (myLines.length == 0)
 		oneLine = "";
 	else
