@@ -558,11 +558,12 @@ bot.on('message', function (messageDJS)
 		//Nachricht > 2000 Zeichen aufteilen
         while(sndMessage.length > 0)
         {
-            logger.info("mes");
             var sendMessage = sndMessage.substr(0,1500);
-            sndMessage = sndMessage.substr(1500, 9999);
+		logger.info(sndMessage.substr(1500, sndMessage.length));
+            sndMessage = sndMessage.substr(1500, sndMessage.length);		
 		sendMessage += "xxxx";
 		logger.info(sndMessage);
+		
             
             botSendMessage(1, this, messageDJS.channel.id, sendMessage);
         }
