@@ -555,19 +555,15 @@ bot.on('message', function (messageDJS)
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
 
+		logger.info(sndMessage.length);
 		//Nachricht > 2000 Zeichen aufteilen
-        while(sndMessage.length > 0)
-        {
-            var sendMessage = sndMessage.substr(0,1500);
-		logger.info(sndMessage.substr(1500, sndMessage.length));
-            sndMessage = sndMessage.substr(1500, sndMessage.length);		
-		sendMessage += "xxxx";
-		logger.info(sndMessage);
-		
-            
-            botSendMessage(1, this, messageDJS.channel.id, sendMessage);
-        }
-		
+		while(sndMessage.length > 0)
+		{
+		    var sendMessage = sndMessage.substr(0,1500);
+		    sndMessage = sndMessage.substr(1500, sndMessage.length);		
+
+		    botSendMessage(1, this, messageDJS.channel.id, sendMessage);
+		}		
 	}
 }
 );
