@@ -2,6 +2,7 @@
 /*
   Show all words (klingon/english) in a specific category
 */
+var logger = require('winston');
 
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
@@ -15,7 +16,10 @@ module.exports = function(beq_engine, lookWord)
     {
     //TODO: prepare output, add translation?
       var tmpCat = item.split(";;");
-       tmpRet += tmpCat[0] + " " + beq_engine.KDBJSon[tmpCat[0]].en + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
+       tmpRet += tmpCat[0] + " " + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
+       //+ beq_engine.KDBJSon[tmpCat[0]].en 
+      logger.info(beq_engine.KDBJSon);
+      logger.info(tmpCat[0]);
     });
     
     return tmpRet;    
