@@ -37,8 +37,8 @@ module.exports = function(beq_engine)
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
           newCategory = newCategory.substr(1,9999);
-
         
+       newCategory = newCategory.toUpperCase();
         if (newCategory != "")        
             //Word is not categorized yet
             if (beq_engine.catDataWords[chkWord] == undefined)
