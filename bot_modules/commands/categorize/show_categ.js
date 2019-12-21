@@ -15,7 +15,7 @@ module.exports = function(beq_engine, lookWord)
     {
     //TODO: prepare output, add translation?
       var tmpCat = item.split(";;");
-       tmpRet += tmpCat[0] + " " + beq_engine.KDBJSon[tmpCat[0}].en + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
+       tmpRet += tmpCat[0] + " " + beq_engine.KDBJSon[tmpCat[0]].en + boQwI_translate.getWType(tmpCat[1].substr(0,1), "en") + "\n";
     });
     
     return tmpRet;    
