@@ -1,3 +1,4 @@
+var winston = require('winston');
 var logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
