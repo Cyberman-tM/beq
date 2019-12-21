@@ -555,6 +555,8 @@ bot.on('message', function (messageDJS)
 		if (sndMessage == '')
 			sndMessage = 'ERROR - no message?';
 		//messageDJS.channel.send(sndMessage);
+		//TODO: Nachricht > 2000 Zeichen aufteilen
+//Loop?
 		botSendMessage(1, this, messageDJS.channel.id, sndMessage);
 	}
 }
