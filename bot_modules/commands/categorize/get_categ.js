@@ -26,7 +26,6 @@ module.exports = function(beq_engine)
 			beq_engine.catDataCategs = {};
 			
 			var words = document.childrenNamed("w");
-			logger.info(words.length);
 			words.forEach(function (word)
 			{
 				//We had to encode the apostrophe
