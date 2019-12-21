@@ -563,6 +563,7 @@ bot.on('message', function (messageDJS)
 		    sndMessage = sndMessage.substr(1500, sndMessage.length);		
 
 		    botSendMessage(1, this, messageDJS.channel.id, sendMessage);
+			logger.info("xyz");
 		}		
 	}
 }
