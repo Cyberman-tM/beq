@@ -57,6 +57,7 @@ var kSplit      = require('./bot_modules/utils/kSplit.js');
 var cmdCateg    = require('./bot_modules/commands/categorize/categorize.js');
 var cmdListCat  = require('./bot_modules/commands/categorize/list_categ.js');
 var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
+var reReadKDB   = require ('./bot_modules/commands/categorize/reReadKDB.js');
 var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 
 var fs = require('fs');
@@ -111,6 +112,9 @@ module.exports.Engine = function(beqTalk)
            utilGetCateg(this);
 	   //TODO: Personality?
 	   beqTalk.message = 'Reorganization started';
+	case 'rereadkdb':
+	   reReadKDB(this);
+	break;
         break;        
         case 'categorize':
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
