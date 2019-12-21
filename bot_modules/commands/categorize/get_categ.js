@@ -10,10 +10,9 @@ module.exports = function(beq_engine)
 		//Response from reorg is irrelevant, but there's no use reading the XML before it has been created...
 		requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function (response)
 		{
-			var rawXML = response.getBody();
-			
+
 			// Get the response body
-			var document = new xmldoc.XmlDocument(rawXML);
+			var document = new xmldoc.XmlDocument(response.getBody());
 
 			//Reset, just to be sure
 			beq_engine.catDataWords = {};
@@ -22,8 +21,9 @@ module.exports = function(beq_engine)
 			var words = document.childrenNamed("w");
 			words.forEach(function (word)
 			{
-				var wordName = word.attr.name;
-				var wordCats = word.val;
+				//We had to encode the special characters, now we have to decode them
+				var wordName = unEscapeHtml(word.attr.name);
+				var wordCats = unEscapeHtml(word.val);
 
 				//Worte sollten einzigartig sein
 				beq_engine.catDataWords[wordName] = wordCats;
