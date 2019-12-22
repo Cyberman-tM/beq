@@ -436,10 +436,11 @@ var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 			var endSuffNum = 9;
 
 			if (beqTalk.wordType2.substring(1, 2) == '+')
-				startSuffNum = beqTalk.wordType2.substring(0, 1)else if (beqTalk.wordType2.substring(1, 2) == '-')
+				startSuffNum = beqTalk.wordType2.substring(0, 1)
+				else if (beqTalk.wordType2.substring(1, 2) == '-')
 					{
-						startSuffNum = beqTalk.wordType2.substring(0, 1)
-							endSuffNum = beqTalk.wordType2.substring(2, 3)
+						startSuffNum = beqTalk.wordType2.substring(0, 1);
+							endSuffNum = beqTalk.wordType2.substring(2, 3);
 					}
 					else
 						startSuffNum = endSuffNum = beqTalk.wordType2;
