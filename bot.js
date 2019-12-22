@@ -103,6 +103,10 @@ bot.on('message', function (messageDJS)
 		{
 			cmdMagic = message.substring(0, 1);
 			message = message.substring(1, 99999);
+			
+			//Maybe it was a command to devBeq?
+			if (message.substring(0,1) == '!')
+			   cmdMagic = "!";
 		}
 		else
 			return;
