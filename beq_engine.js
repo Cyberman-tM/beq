@@ -127,7 +127,7 @@ var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 			beqTalk.message = cmdShowCat(this, beqTalk.lookWord);
 			break;
         case 'addCatDesc':
-            beqTalk.message = addCatDesc(this, beqTalk.message);
+            beqTalk.message = addCatDesc(this, beqTalk.lookWord);
             break;
 		case 'KWOTD':
 			//TODO: KWOTD - random word/sentence, type of word as parameter
