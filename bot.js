@@ -102,15 +102,15 @@ bot.on('message', function (messageDJS)
 		if (cmdMagic == '$')
 		{
 			cmdMagic = message.substring(0, 1);
-			message = message.substring(1, 99999);
-			
-			//Maybe it was a command to devBeq?
-			if (message.substring(0,1) == '!')
-			   cmdMagic = "!";
+			message = message.substring(1, 99999);			   
 		}
 		else
 			return;
 	}
+	else
+	   //Maybe it's a command to devBeq, in which case we ignore it
+	   if (cmdMagic == '$' && message.substring(0,1) == '!')
+              return;
 
 	if (DData.devBuild == "true")
 		logger.info(cmdMagic);
