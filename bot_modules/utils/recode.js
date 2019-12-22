@@ -81,6 +81,7 @@ module.exports.RCtlh2u = function(orig_text)
 	 return tmpText;
 }
 //tlhIngan => uhmal with numbers instead of vocals
+//Usable for easier identifying of CVC - any V will be a number
 module.exports.RCtlh2u2 = function(orig_text)
 {
 	var tmpText = "";
