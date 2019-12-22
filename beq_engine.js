@@ -59,7 +59,7 @@ var cmdListCat = require('./bot_modules/commands/categorize/list_categ.js');
 var cmdShowCat = require('./bot_modules/commands/categorize/show_categ.js');
 var reReadKDB = require('./bot_modules/commands/categorize/reReadKDB.js');
 var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
-var addCatDesc = require(('./bot_modules/commands/categorize/addCatDesc.js');
+var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 
 		var fs = require('fs');
 		var xmldoc = require('xmldoc');
