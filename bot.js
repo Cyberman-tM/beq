@@ -508,6 +508,13 @@ bot.on('message', function (messageDJS)
 			beqTalk = beq.Engine(beqTalk);
 			sndMessage += beqTalk.message;
 			break;
+		case 'addCatDesc':
+			var beqTalk = JSON.parse(beq.beqTalkDef);
+			beqTalk.command = 'addCatDesc';
+			beqTalk.lookWord = message;
+			beqTalk = beq.Engine(beqTalk);
+			sndMessage += beqTalk.message;
+			break;
 		default:
 			//This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
