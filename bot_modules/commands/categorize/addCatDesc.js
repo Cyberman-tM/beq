@@ -3,6 +3,7 @@
 Add a description to the category
 
  */
+var requestify = require('requestify'); 
 
 module.exports = function (beq_engine, beqMessage)
 {
