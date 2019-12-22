@@ -5,11 +5,29 @@ var logger = require('winston');
 
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
-module.exports = function (beq_engine, lookWord)
+module.exports = function(beq_engine, lookWord)
+{
+    var tmpRet = "";
+	lookWord = lookWord.toUpperCase();
+    
+    //Any specific category should include implicit subcategories
+    var searchCats = new RegExp(lookWord + "(?=-)|\b" + lookWord + "\b");
+    var foundCats = beq_engine.catDataCategs.filter(function(item)
+    {
+      return item.match(searchCats);  
+    });
+    
+    //Collect all words of all subcategories
+    foundCats.forEach(function(item)
+    {
+       tmpRet += getSingleCategory(beq_engine, item); 
+    });
+    
+}
+
+function getSingleCategory (beq_engine, lookWord)
 {
 	var tmpRet = "";
-
-	lookWord = lookWord.toUpperCase();
 
 	if (beq_engine.catDataCategs[lookWord] == undefined)
 		tmpRet = "Category " + lookWord + " not yet defined!\n";
