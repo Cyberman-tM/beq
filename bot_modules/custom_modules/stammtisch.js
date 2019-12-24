@@ -5,6 +5,7 @@
 var myBot = null;
 var myBeq = null;
 var sendChannel = null;
+var stammData = null;
 
 module.exports.Init = function(bot, beq_engine, devTest, logger)
 {
@@ -15,11 +16,18 @@ module.exports.Init = function(bot, beq_engine, devTest, logger)
 //   myBeq = beq_engine;
    
    sendChannel = beq_engine.StammChan   
+   
+   //Get timings
+   stammData = require('./stammtisch_notes.js');
 };
 
 module.exports.remind = function(myDate, myHour, myMinute)
 {
    
+   stammData.items.forEach(function (item)
+   {
+      
+   });
    //myBot.botSendMessage(1, myBot, sendChannel, sendMessage);
 
 };
