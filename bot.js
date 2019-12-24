@@ -578,7 +578,7 @@ bot.on('message', function (messageDJS)
 				//JS starts with 0, and we want to have the \n
 				nextBR += 1;
 				sendMessage += sndMessage.substr(0, nextBR);
-				sndMessage = sndMessage.substr(nextBr, sndMessage.length);
+				sndMessage = sndMessage.substr(nextBR, sndMessage.length);
 			}
 
 			botSendMessage(1, this, messageDJS.channel.id, sendMessage);
