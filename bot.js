@@ -557,6 +557,7 @@ bot.on('message', function (messageDJS)
 		//Nachricht > 2000 Zeichen aufteilen
 		while (sndMessage.length > 0)
 		{
+			//TODO: Suche nach newline, um zerissene Worte/Texte zu vermeiden
 			var sendMessage = sndMessage.substr(0, 1500);
 			sndMessage = sndMessage.substr(1500, sndMessage.length);
 
