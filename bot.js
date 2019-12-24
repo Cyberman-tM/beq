@@ -570,6 +570,16 @@ bot.on('message', function (messageDJS)
 		{
 			var sendMessage = sndMessage.substr(0, 1700);
 			sndMessage = sndMessage.substr(1700, sndMessage.length);
+			
+			//Prevent break of text
+			var nextBR = sndMessage.indexOf('\n');
+			if (nextBR != -1)
+			{
+				//JS starts with 0, and we want to have the \n
+				nextBR += 1;
+				sendMessage += sndMessage.substr(0, nextBR);
+				sndMessage = sndMessage.substr(nextBr, sndMessage.length);
+			}
 
 			botSendMessage(1, this, messageDJS.channel.id, sendMessage);
 		}
