@@ -628,7 +628,6 @@ module.exports.createTranslation = function(beqTalk)
 				if (infTips != "")
 				   sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
-		}
         //Check for categories
         var chkCat = item.tlh + ';;' + item.type;
         var msgCat = module.exports.catDataWords[chkCat];
@@ -637,6 +636,7 @@ module.exports.createTranslation = function(beqTalk)
             //Maybe preprocess the output to be nicer?
             sndMessage += beqTalk.newline + "Categories: " + msgCat + beqTalk.newline;
         }
+		}
 	}
 	)
 	if (beqTalk.command == "yIcha'")
