@@ -1,15 +1,15 @@
 {
 	"items": [{
-			"weekday": 6,
+			"weekday": 5,
 			"hour": 19,
 			"minute": 0,
-			"message": "test 6 19 0"
+			"message": "test 5 19 0"
 		},
 		{
-			"weekday": 6,
+			"weekday": 5,
 			"hour": 18,
 			"minute": 0,
-			"message": "test 6 18 0"
+			"message": "test 5 18 0"
 		}
 	]
 }
