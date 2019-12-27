@@ -65,12 +65,11 @@ bot.on('ready', function (evt)
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
 
-	//Timer runs once a minute, unless we're in dev-build
-	if (DData.devBuild != "true")
-	{
-		evTimer.startEventTimer(beq, bot);
-	}
-	else
+	//Timer runs once a minute (KWOTD excepted)
+	evTimer.startEventTimer(beq, bot);
+
+	//Notice that we're devBuild
+	if (DData.devBuild == "true")
 		logger.info("Development edition!");
 }
 );
