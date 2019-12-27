@@ -21,7 +21,7 @@ module.exports.Init = function(bot, beq_engine, devTest, logger)
    //d.h. keine dynamische Änderung, und bei jeder Änderung
    //muß der Bot neu gestartet werden
    //Alternative: mit requestify eine Datei von woanders einlesen   
-   stammData = require('./stammtisch_notes.js');
+   stammData = require('./stammtisch_notes.json');
 };
 
 module.exports.remind = function(myDate, myHour, myMinute)
