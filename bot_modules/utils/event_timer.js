@@ -27,6 +27,8 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	if (TDData.devBuild == "true")
 	   devTest = true;
 	
+	logger.info(devTest);
+	
 	//Disable log-pulse, to keep the log clean?
 	noPulse = false;
 	if (TDData.noPulse == "true")
