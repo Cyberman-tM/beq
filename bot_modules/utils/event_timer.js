@@ -40,8 +40,9 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	//Call init function of individual timers
 	cusTimer.runCustInit(beqEngine, bot, devTest);
 	
-	//Hardcoded timers
-	KWOTD.KWOTDInit(beqEngine, bot, TDData.KWOTDChan, devTest);
+	//Hardcoded timers, nur im echten beq
+	if (devTest == false)
+		KWOTD.KWOTDInit(beqEngine, bot, TDData.KWOTDChan, devTest);
 	
 	//During tests, give a lifesign
 	if (devTest == true)
@@ -72,6 +73,7 @@ function actualEventTimer()
 	//Call custom timer functions
 	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
 	
-	//Call hardcoded stuff we know we have
-	KWOTD.KWOTD(thisDate, thisHour, thisMinu);
+	//Call hardcoded stuff we know we have (unless we're devBeq
+	if (devTest == false)
+		KWOTD.KWOTD(thisDate, thisHour, thisMinu);
 }
