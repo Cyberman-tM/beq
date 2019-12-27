@@ -10,7 +10,7 @@ module.exports.runCustInit = function(bot, beq_engine, devTest, logger)
 	if (devTest == true)
 	   logger.info("Custom Timer init");
 	
-	stammtischReminder.Init(bot, beq_engine, devTest);
+	stammtischReminder.Init(bot, beq_engine, devTest, logger);
 }
 
 //The name is mandatory!
