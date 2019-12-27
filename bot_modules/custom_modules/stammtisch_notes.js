@@ -3,8 +3,8 @@
 		{
 			"weekday": 4,
 			"hour": 01,
-			"minute": 05,
-			"message": "Freitag 1:05? TEST",
+			"minute": 45,
+			"message": "Freitag 1:45? TEST",
 		        "channel": "650385585642405907"
 		},
 		{
