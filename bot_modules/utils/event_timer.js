@@ -38,7 +38,7 @@ module.exports.startEventTimer = function(beqEngine, bot)
 	eventTimer = setInterval(actualEventTimer, 60 * 1000);
 	
 	//Call init function of individual timers
-	cusTimer.runCustInit(beqEngine, bot, devTest);
+	cusTimer.runCustInit(beqEngine, bot, devTest, logger);
 	
 	//Hardcoded timers, nur im echten beq
 	if (devTest == false)
@@ -71,7 +71,7 @@ function actualEventTimer()
 	   logger.info(thisHour + ':' + thisMinu);
 	
 	//Call custom timer functions
-	cusTimer.runCusTimer(thisDate, thisHour, thisMinu);
+	cusTimer.runCusTimer(thisDate, thisHour, thisMinu, logger);
 	
 	//Call hardcoded stuff we know we have (unless we're devBeq
 	if (devTest == false)
