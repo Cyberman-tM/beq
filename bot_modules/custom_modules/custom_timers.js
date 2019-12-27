@@ -2,7 +2,6 @@
    Custom timers
 */
 
-var logger = require('winston');
 var stammtischReminder = require('./stammtisch.js');
 
 //Initialize the custom timer, reserver space, etc..
