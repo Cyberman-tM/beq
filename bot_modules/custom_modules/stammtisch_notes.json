@@ -2,9 +2,9 @@
 	"items": [
 		{
 			"weekday": "4",
-			"hour": "01",
-			"minute": "45",
-			"message": "Freitag 1:45? TEST",
+			"hour": "02",
+			"minute": "10",
+			"message": "Freitag? TEST",
 		        "channel": "650385585642405907"
 		},
 		{
