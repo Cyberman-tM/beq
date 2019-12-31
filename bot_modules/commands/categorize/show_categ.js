@@ -21,24 +21,9 @@ module.exports = function(beq_engine, lookWord)
    {
      if (item.startsWith(lookWord))
      {
-	     tmpRet +=  getSingleCategory(beq_engine, item); 
+	     tmpRet +=  getSingleCategory(beq_engine, item) + "\n\n"; 
      }
    });
-/*
-    var foundCats = beq_engine.catDataCategs.values.filter(function(item)
-    {
-      if (item.startsWith(lookWord))
-         return true;
-      else
-         return false;
-    });
-    
-    //Collect all words of all subcategories
-    foundCats.forEach(function(item)
-    {
-       tmpRet += getSingleCategory(beq_engine, item); 
-    });
-*/  
 	
    return tmpRet;
 }
