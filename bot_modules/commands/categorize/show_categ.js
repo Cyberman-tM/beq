@@ -14,8 +14,8 @@ var boQwI_translate = require('./../../utils/boQwI_translate.js');
 module.exports = function(beq_engine, lookWord)
 {
     var tmpRet = "";
-    lookWord = lookWord.toUpperCase();
-    
+    lookWord = lookWord.toUpperCase();    
+	
     //Any specific category should include implicit subcategories
    beq_engine.catDataCategs.forEach(function (item)
    {
