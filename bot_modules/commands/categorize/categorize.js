@@ -45,7 +45,7 @@ module.exports = function(beq_engine, dataString)
            tmpRet += "Please specify number of result to use";
     }
     else if (results.length == 0)
-        tmpRet = "\n Not found!";
+        tmpRet = "\n Not found!\n";
     else
        realResult = results[0];
    
