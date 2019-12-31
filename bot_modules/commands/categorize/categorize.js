@@ -23,7 +23,7 @@ module.exports = function(beq_engine, dataString)
         //Always look in klingon!
 		return item["tlh"].match(RE);
 	});
-
+logger.info(results);
     var realResult = null;
     //results hat jetzt möglicherweise mehrere Einträge
     if (results.length > 1)
