@@ -21,7 +21,10 @@ module.exports = function(beq_engine, lookWord)
    {
 	   logger.info(item);
      if (item.startsWith(lookWord))
+     {
+	     logger.info(lookWord);
 	     tmpRet +=  getSingleCategory(beq_engine, item); 
+     }
    });
 /*
     var foundCats = beq_engine.catDataCategs.values.filter(function(item)
