@@ -19,10 +19,8 @@ module.exports = function(beq_engine, lookWord)
     //Any specific category should include implicit subcategories
    Object.keys(beq_engine.catDataCategs).forEach(function (item)
    {
-	   logger.info(item);
      if (item.startsWith(lookWord))
      {
-	     logger.info(lookWord);
 	     tmpRet +=  getSingleCategory(beq_engine, item); 
      }
    });
@@ -41,6 +39,8 @@ module.exports = function(beq_engine, lookWord)
        tmpRet += getSingleCategory(beq_engine, item); 
     });
 */  
+	
+   return tmpRet;
 }
 
 function getSingleCategory (beq_engine, lookWord)
