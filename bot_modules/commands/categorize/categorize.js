@@ -15,6 +15,7 @@ module.exports = function(beq_engine, dataString)
     var tmpRet = "";
     var newCategory = args[1].toUpperCase();   
    
+	logger.info(args[0]);
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, '');
