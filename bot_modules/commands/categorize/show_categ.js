@@ -17,7 +17,7 @@ module.exports = function(beq_engine, lookWord)
     lookWord = lookWord.toUpperCase();    
 	
     //Any specific category should include implicit subcategories
-   Object.values(beq_engine.catDataCategs).forEach(function (item)
+   Object.keys(beq_engine.catDataCategs).forEach(function (item)
    {
 	   logger.info(item);
      if (item.startsWith(lookWord))
