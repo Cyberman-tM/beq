@@ -11,11 +11,15 @@ module.exports = function(beq_engine, dataString)
     //will be the categorie we want to add
     //third, if exists, is the number of the result we want
     var args = dataString.split(' ');
+
+    //Maybe the user left a blank between the magic character and the klingon word
+    if (args[0] == "")
+	    args.shift();
 	
     var tmpRet = "";
     var newCategory = args[1].toUpperCase();   
    
-	logger.info(args[0]);
+
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
 	var RE = new RegExp(regexLook, '');
@@ -24,7 +28,7 @@ module.exports = function(beq_engine, dataString)
         //Always look in klingon!
 		return item["tlh"].match(RE);
 	});
-logger.info(results);
+
     var realResult = null;
     //results hat jetzt möglicherweise mehrere Einträge
     if (results.length > 1)
