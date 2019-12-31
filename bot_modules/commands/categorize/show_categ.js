@@ -1,5 +1,11 @@
 /*
-Show all words (klingon/english) in a specific category
+   Show all words (klingon/english) in a specific category
+
+   Categorie can sub "subcategories", separated by _
+   for example:
+      COMPUTER
+      COMPUTER_COMMUNICATION
+      COMPUTER_GRAPHICS
  */
 var logger = require('winston');
 
@@ -8,13 +14,15 @@ var boQwI_translate = require('./../../utils/boQwI_translate.js');
 module.exports = function(beq_engine, lookWord)
 {
     var tmpRet = "";
-	lookWord = lookWord.toUpperCase();
+    lookWord = lookWord.toUpperCase();
     
     //Any specific category should include implicit subcategories
-    var searchCats = new RegExp(lookWord + "(?=-)|\b" + lookWord + "\b");
     var foundCats = beq_engine.catDataCategs.filter(function(item)
     {
-      return item.match(searchCats);  
+      if (item.startsWith(lookWord))
+         return true;
+      else
+         return false;
     });
     
     //Collect all words of all subcategories
