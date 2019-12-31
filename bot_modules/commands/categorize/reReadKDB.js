@@ -16,23 +16,23 @@ module.exports = function(beq_engine)
         
         //Primitive, but it should do
         if (item.type.includes("anim"))
-            newCategory += ";Animal";
+            newCategory += ";Animal_boqwi";
         if (item.type.includes("being"))
-           newCategory += ";being";
+           newCategory += ";being_boqwi";
         if (item.type.includes("archaic"))
-            newCategory += ";Archaic";
+            newCategory += ";Archaic_boqwi";
         if (item.type.includes("deriv"))
-            newCategory += ";derived";
+            newCategory += ";derived_boqwi";
         if (item.type.includes("reg"))
-            newCategory += ";regional";
+            newCategory += ";regional_boqwi";
         if (item.type.includes("food"))
-            newCategory += ";food";
+            newCategory += ";food_boqwi";
         if (item.type.includes("inv"))
-            newCategory += ";invectives";
-        if (item.type.includes("slang"))
-            newCategory += ";slang";
+            newCategory += ";invectives_boqwi";
+        if (item.type.includes("slang_boqwi"))
+            newCategory += ";slang_boqwi";
         if (item.type.includes("weap"))
-            newCategory += ";weapon";
+            newCategory += ";weapon_boqwi";
        
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
