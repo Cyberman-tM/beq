@@ -25,6 +25,9 @@ module.exports = function(beq_engine, lookWord)
      }
    });
 	
+   if (tmpRet == "")
+      tmpRet = "Category not found.";
+	
    return tmpRet;
 }
 
