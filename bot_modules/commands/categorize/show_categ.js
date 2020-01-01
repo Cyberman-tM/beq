@@ -37,7 +37,7 @@ function getSingleCategory (beq_engine, lookWord)
 	else
 	{
 		tmpRet = "Category " + lookWord + "\n";
-		tmpRet += "*" + beq_engine.catDesc[lookWord] + "*";
+		tmpRet += "*" + beq_engine.catDesc[lookWord] + "*\n";
 		
 		beq_engine.catDataCategs[lookWord].forEach(function (item)
 		{
