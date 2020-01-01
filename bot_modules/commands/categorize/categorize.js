@@ -7,6 +7,8 @@ var beqPerson = require('./../../personality/beq_person.js');
 
 module.exports = function(beq_engine, dataString)
 {
+    var tmpRet = "";
+    
     //First word will be the word we want to categorize, second word (after blank)
     //will be the categorie we want to add
     //third, if exists, is the number of the result we want
@@ -16,9 +18,21 @@ module.exports = function(beq_engine, dataString)
     if (args[0] == "")
 	    args.shift();
 	
-    var tmpRet = "";
     var newCategory = args[1].toUpperCase();   
-   
+    
+    //We have main categories and subcategories
+    //don't allow a subcategory to be created without explicitely
+    //creating the main category
+    if (newCategory.includes('_'))
+    {
+        var mainCat = newCategory.split('_')[0];
+        if (beq_engine.catDataCategs[mainCat] == undefined)
+        {
+            tmpRet = "Category " + newCat + " looks like a subcategory of " + mainCat +
+                     ", but the main category is not yet defined!\n Please define that first.\n";
+            return tmpRet;
+        }
+    }   
 
 	//TODO: search with boundary? only single word?
     var regexLook = '^' + args[0] + '$';
