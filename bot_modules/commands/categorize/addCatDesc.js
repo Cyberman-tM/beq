@@ -10,7 +10,7 @@ module.exports = function (beq_engine, beqMessage)
 {
 	var tmpRet = "";
 	var args = beqMessage.split(" ");
-	var category = args[1].toUpper();
+	var category = args[1].toUpperCase();
 	
 	//Clear command and category
 	args[0] = "";
