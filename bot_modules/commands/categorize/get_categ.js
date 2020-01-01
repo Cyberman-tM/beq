@@ -74,7 +74,7 @@ module.exports = function(beq_engine)
         {
             beq_engine.catDesc[item.attr.name] = item.val;
         });
-        logger.info(beq_engine.catDataCategs);
+
         //Go through existing categories to mark the automatically created ones
         Object.keys(beq_engine.catDataCategs).forEach(function (item)
         {
