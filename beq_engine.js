@@ -61,6 +61,7 @@ var cmdShowCat  = require('./bot_modules/commands/categorize/show_categ.js');
 var reReadKDB   = require ('./bot_modules/commands/categorize/reReadKDB.js');
 var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
+var beqPerson = require('./bot_modules/personality/beq_person.js');
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -116,6 +117,7 @@ module.exports.Engine = function(beqTalk)
 	    beqTalk.message = 'Reorganization started';
         case 'rereadkdb':
 	    reReadKDB(this);
+	    beqTalk.message = beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
         break;        
         case 'categorize':
            beqTalk.message = cmdCateg(this, beqTalk.lookWord);
