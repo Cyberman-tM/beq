@@ -36,8 +36,9 @@ function getSingleCategory (beq_engine, lookWord)
 		tmpRet = "Category " + lookWord + " not yet defined!\n";
 	else
 	{
-
-		tmpRet = "Words in category " + lookWord + "\n";
+		tmpRet = "Category " + lookWord + "\n";
+		tmpRet += "*" + beq_engine.catDesc[lookWord] + "*";
+		
 		beq_engine.catDataCategs[lookWord].forEach(function (item)
 		{
 			var tmpCat = item.split(";;");
