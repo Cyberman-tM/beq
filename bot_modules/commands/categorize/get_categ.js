@@ -87,7 +87,7 @@ module.exports = function(beq_engine)
             }
         });
         
-    }));
+    })});
 };
 
 
