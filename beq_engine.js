@@ -48,6 +48,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 //Word categorizationdata
 module.exports.catDataWords = null;
 module.exports.catDataCategs = null;
+module.exports.catDesc       = null;
 
 var requestify = require('requestify'); 
 var beqTalkDef  = require('./beqTalk_raw.js').beqTalkDef ;
