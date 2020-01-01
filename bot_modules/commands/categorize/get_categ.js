@@ -80,7 +80,7 @@ module.exports = function(beq_engine)
         {
             if (beq_engine.catDesc[item] == undefined)
             {
-                if (item.contains("boQwI'")
+                if (item.contains("boQwI'"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
                 else
                     beq_engine.catDesc[item] = "Description missing!";
