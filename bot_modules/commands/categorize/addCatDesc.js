@@ -19,7 +19,7 @@ module.exports = function (beq_engine, beqMessage)
 	var catDesc = args.join(" ");
 
 	//TODO: re-read xml
-	var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_catadddesc.php?category=" + category + "&description=" + catDesc;
+	var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addcatdesc.php?category=" + category + "&description=" + catDesc;
 	requestify.get(addCatLink);
 
 	tmpRet = "Done.";
