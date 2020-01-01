@@ -456,11 +456,6 @@ module.exports.Engine = function(beqTalk)
 			beqTalk.message = kSplit.kSplit(beqTalk.lookWord, null)
 			beqTalk.gotResult = true;
 		break;
-		case "getRem":
-    logger.info(module.exports.catDataWords);
-    logger.info(module.exports.catDataCategs);
-
-		break;
 	default:
 	   beqTalk.gotResult = false;
 	   beqTalk.failure = true;
