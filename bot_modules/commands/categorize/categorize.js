@@ -28,7 +28,7 @@ module.exports = function(beq_engine, dataString)
         var mainCat = newCategory.split('_')[0];
         if (beq_engine.catDataCategs[mainCat] == undefined)
         {
-            tmpRet = "Category " + newCat + " looks like a subcategory of " + mainCat +
+            tmpRet = "Category " + newCategory + " looks like a subcategory of " + mainCat +
                      ", but the main category is not yet defined!\n Please define that first.\n";
             return tmpRet;
         }
