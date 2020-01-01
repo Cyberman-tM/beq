@@ -33,7 +33,6 @@ module.exports = function(beq_engine)
 			var words = document.childrenNamed("w");
 			words.forEach(function (word)
 			{
-				logger.info(word);
 				//We had to encode the apostrophe
 				var wordName = word.attr.name.replace(/X-Z/g, "'");
 				var wordCats = word.val.replace(/X-Z/g, "'");
