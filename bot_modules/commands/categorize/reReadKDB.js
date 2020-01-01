@@ -41,7 +41,7 @@ module.exports = function(beq_engine)
        newCategory = newCategory.toUpperCase();
         if (newCategory != "")        
             //Word is not categorized yet
-            if (!beq_engine.catDataWords[chkWord].contains(newCategory))
+            if (!beq_engine.catDataWords[chkWord].includes(newCategory))
                 requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
     });
 };
