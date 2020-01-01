@@ -19,7 +19,7 @@ module.exports = function(beq_engine, lookWord)
     //Any specific category should include implicit subcategories
    Object.keys(beq_engine.catDataCategs).forEach(function (item)
    {
-     if (item.startsWith(lookWord))
+     if (item == lookWord || item.startsWith(lookWord+"_"))
      {
 	     tmpRet +=  getSingleCategory(beq_engine, item) + "\n\n"; 
      }
