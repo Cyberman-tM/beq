@@ -34,13 +34,17 @@ module.exports = function(beq_engine, lookWord)
 function getSingleCategory (beq_engine, lookWord)
 {
 	var tmpRet = "";
+	var tmpCatDesc = "";
 
 	if (beq_engine.catDataCategs[lookWord] == undefined)
 		tmpRet = "Category " + lookWord + " not yet defined!\n";
 	else
 	{
+		tmpCatDesc = beq_engine.catDesc[lookWord];
+		
 		tmpRet = "Category " + lookWord + "\n";
-		tmpRet += "*" + beq_engine.catDesc[lookWord].trim() + "*\n\n";
+		if (tmpCatDesc != undefined)
+		   tmpRet += "*" + tmpCatDesc.trim() + "*\n\n";
 		
 		beq_engine.catDataCategs[lookWord].forEach(function (item)
 		{
