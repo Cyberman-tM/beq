@@ -1,3 +1,7 @@
+/*
+   Re-Read categorization data, reorganize if necessary
+*/
+
 var winston = require('winston');
 var logger = winston.createLogger({
   level: 'info',
@@ -11,9 +15,10 @@ var xmldoc = require('xmldoc');
 
 module.exports = function(beq_engine)
 {
-	//Reorg call
+	//Reorg call for categorized words
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_reorgCat.php').then(function (response)
 	{
+		//Re-Read call
 		//Response from reorg is irrelevant, but there's no use reading the XML before it has been created...
 		requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_Categories.txt').then(function (response)
 		{
@@ -53,5 +58,48 @@ module.exports = function(beq_engine)
 		}
 		)
 	}
-	);
+	)
+    //Re-Read category descriptions
+    .then(function ()
+    {   
+	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
+	{
+    	// Get the response body
+		var document = new xmldoc.XmlDocument(response.getBody());
+        
+        //Reset data
+        beq_engine.catDesc = {};
+        var catDescs = document.childrenNamed("cat");
+        catDescs.forEach(function(item)
+        {
+            beq_engine.catDesc[item.attr.name] = item.val;
+        });
+        
+        //Go through existing categories to mark the automatically created ones
+        Object.keys(beq_engine.catDataCategs).forEach(function (item)
+        {
+            if (beq_engine.catDesc[item] == undefined)
+            {
+                if (item.contains("boQwI'")
+                    beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
+                else
+                    beq_engine.catDesc[item] = "Description missing!";
+            }
+        };
+        
+    }));
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
