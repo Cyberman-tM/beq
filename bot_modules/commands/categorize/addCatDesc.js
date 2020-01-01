@@ -17,6 +17,9 @@ module.exports = function (beq_engine, beqMessage)
 	args[1] = "";
 	
 	var catDesc = args.join(" ");
+	
+	//Apostroph austauschen - XML macht sonst Ärger. Ist ev. nicht die beste Variante?
+	catDesc = catDesc.replace("'", "X-Z");
 
 	//TODO: re-read xml
 	var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addcatdesc.php?category=" + category + "&description=" + catDesc;
