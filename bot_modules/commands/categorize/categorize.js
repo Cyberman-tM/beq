@@ -64,7 +64,7 @@ module.exports = function(beq_engine, dataString)
            tmpRet += "Please specify number of result to use";
     }
     else if (results.length == 0)
-        tmpRet = "\n Not found!\n";
+        tmpRet = "\n Word" + args[0] + "could not be found!\n";
     else
        realResult = results[0];
    
