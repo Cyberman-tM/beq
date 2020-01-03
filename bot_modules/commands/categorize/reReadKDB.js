@@ -47,7 +47,13 @@ module.exports = function(beq_engine)
             if (beq_engine.catDataWords == null ||
                 beq_engine.catDataWords[chkWord] == undefined || 
                !beq_engine.catDataWords[chkWord].includes(newCategory))
+	    {
+		    logger.info(chkWord);
+		    logger.info(beq_engine.catDataWords);
+		    return;
+		    
                 requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
+	    }
     });
 };
 
