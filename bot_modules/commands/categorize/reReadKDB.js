@@ -4,6 +4,7 @@
    
 */
 var requestify = require('requestify'); 
+var kTranscode = require('./../utils/recode.js');
 
 module.exports = function(beq_engine)
 {
@@ -13,7 +14,7 @@ module.exports = function(beq_engine)
     {
 		  //KLingon word must be stored as uhmal
 				
-        var chkWord = beq_engine.kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
+        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
         var newCategory = "";
         
         //Primitive, but it should do
