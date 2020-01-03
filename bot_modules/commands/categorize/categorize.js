@@ -4,6 +4,7 @@
 var logger = require('winston');
 var requestify = require('requestify'); 
 var beqPerson = require('./../../personality/beq_person.js');
+var kTranscode = require('./../utils/recode.js');
 
 module.exports = function(beq_engine, dataString)
 {
@@ -88,7 +89,7 @@ module.exports = function(beq_engine, dataString)
         {
 	   //Apostrophe in Attributen sind in XML nicht erlaubt!
 	   //Wandeln wir das klingonische Wort in UHMAL um
-	   chkWord = beq_engine.kTranscode.RCtlh2u(chkWord);
+	   chkWord = kTranscode.RCtlh2u(chkWord);
 		
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
