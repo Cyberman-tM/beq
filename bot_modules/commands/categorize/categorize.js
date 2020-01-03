@@ -86,9 +86,14 @@ module.exports = function(beq_engine, dataString)
         
         if (foundCat == false)
         {
-            tmpRet += "Category " + newCategory + " added to word " + realResult.tlh + ".\n";
+	   //Apostrophe in Attributen sind in XML nicht erlaubt!
+	   //Wandeln wir das klingonische Wort in UHMAL um
+	   chkWord = beq_engine.kTranscode.RCtlh2u(chkWord);
+		
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
+		
+            tmpRet += "Category " + newCategory + " added to word " + realResult.tlh + ".\n";
         }
     }
 	
