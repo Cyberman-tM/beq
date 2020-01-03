@@ -10,7 +10,7 @@ var logger = require('winston');
 module.exports = function(beq_engine)
 {
     //This will probably take some time...
-    
+    logger.info("reread");
     beq_engine.KDBJSon.forEach(function (item)
     {
 	//In-memory, everything is normal, but we store uhmal
