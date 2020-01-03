@@ -11,7 +11,9 @@ module.exports = function(beq_engine)
     
     beq_engine.KDBJSon.forEach(function (item)
     {
-        var chkWord = item.tlh + ";;" + item.type;
+		  //KLingon word must be stored as uhmal
+				
+        var chkWord = beq_engine.kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
         var newCategory = "";
         
         //Primitive, but it should do
