@@ -12,7 +12,7 @@ var logger = winston.createLogger({
 });
 var requestify = require('requestify'); 
 var xmldoc = require('xmldoc');
-var kTranscode = require('./../utils/recode.js');
+var kTranscode = require('./../../utils/recode.js');
 
 module.exports = function(beq_engine)
 {
