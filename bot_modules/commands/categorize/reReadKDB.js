@@ -1,6 +1,6 @@
 /*
-   Re-Read KDB (boQwI' DB) and check if there are words that haven't been categorized yet
-   (boQwI' uses a simple categorization system itself)
+   Re-Read KDB (boqwi DB) and check if there are words that haven't been categorized yet
+   (boqwi uses a simple categorization system itself)
    
 */
 var requestify = require('requestify'); 
@@ -18,23 +18,23 @@ module.exports = function(beq_engine)
         
         //Primitive, but it should do
         if (item.type.includes("anim"))
-            newCategory += ";Animal_boqwi'";
+            newCategory += ";Animal_boqwi";
         if (item.type.includes("being"))
-           newCategory += ";being_boqwi'";
+           newCategory += ";being_boqwi";
         if (item.type.includes("archaic"))
-            newCategory += ";Archaic_boqwi'";
+            newCategory += ";Archaic_boqwi";
         if (item.type.includes("deriv"))
-            newCategory += ";derived_boqwi'";
+            newCategory += ";derived_boqwi";
         if (item.type.includes("reg"))
-            newCategory += ";regional_boqwi'";
+            newCategory += ";regional_boqwi";
         if (item.type.includes("food"))
-            newCategory += ";food_boqwi'";
+            newCategory += ";food_boqwi";
         if (item.type.includes("inv"))
-            newCategory += ";invectives_boqwi'";
+            newCategory += ";invectives_boqwi";
         if (item.type.includes("slang_boqwi"))
-            newCategory += ";slang_boqwi'";
+            newCategory += ";slang_boqwi";
         if (item.type.includes("weap"))
-            newCategory += ";weapon_boqwi'";
+            newCategory += ";weapon_boqwi";
        
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
