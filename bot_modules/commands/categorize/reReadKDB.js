@@ -13,9 +13,8 @@ module.exports = function(beq_engine)
     
     beq_engine.KDBJSon.forEach(function (item)
     {
-		  //KLingon word must be stored as uhmal
-				
-        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
+	//In-memory, everything is normal, but we store uhmal
+        var chkWord = item.tlh + ";;" + item.type;
         var newCategory = "";
         
         //Primitive, but it should do
@@ -49,10 +48,8 @@ module.exports = function(beq_engine)
                 beq_engine.catDataWords[chkWord] == undefined || 
                !beq_engine.catDataWords[chkWord].includes(newCategory))
 	    {
-		    logger.info(chkWord);
-		    logger.info(beq_engine.catDataWords);
-		    return;
-		    
+		//Store as uhmal
+	        chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;		    
                 requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
 	    }
     });
