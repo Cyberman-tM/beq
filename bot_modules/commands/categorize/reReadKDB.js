@@ -5,6 +5,7 @@
 */
 var requestify = require('requestify'); 
 var kTranscode = require('./../../utils/recode.js');
+var logger = require('winston');
 
 module.exports = function(beq_engine)
 {
