@@ -4,7 +4,7 @@
 var logger = require('winston');
 var requestify = require('requestify'); 
 var beqPerson = require('./../../personality/beq_person.js');
-var kTranscode = require('./../utils/recode.js');
+var kTranscode = require('./../../utils/recode.js');
 
 module.exports = function(beq_engine, dataString)
 {
