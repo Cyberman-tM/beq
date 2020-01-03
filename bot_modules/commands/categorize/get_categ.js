@@ -12,6 +12,7 @@ var logger = winston.createLogger({
 });
 var requestify = require('requestify'); 
 var xmldoc = require('xmldoc');
+var kTranscode = require('./../utils/recode.js');
 
 module.exports = function(beq_engine)
 {
@@ -37,7 +38,7 @@ module.exports = function(beq_engine)
 				var wordCats = word.val;
 				
 				//KLingon word is stored as uhmal
-				wordName = beq_engine.kTranscode.RCu2tlh(wordName);
+				wordName = kTranscode.RCu2tlh(wordName);
 
 				//Worte sollten einzigartig sein
 				beq_engine.catDataWords[wordName] = wordCats;
@@ -82,7 +83,7 @@ module.exports = function(beq_engine)
         {
             if (beq_engine.catDesc[item] == undefined)
             {
-                if (item.contains("boQwI'"))
+                if (item.contains("BOQWI"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
                 else
                     beq_engine.catDesc[item] = "Description missing!";
