@@ -115,6 +115,7 @@ module.exports.Engine = function(beqTalk)
            utilGetCateg(this);
 	    //TODO: Personality?
 	    beqTalk.message = 'Reorganization started';
+	break;
         case 'rereadkdb':
 	    reReadKDB(this);
 	    beqTalk.message = beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
