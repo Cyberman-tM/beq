@@ -34,8 +34,6 @@ module.exports = function (beq_engine, lookWord)
 		if (firstEl < secEl)
 			tmpRet = -1;
         
-		logger.info(firstEl);
-		logger.info(secEl);
             if (firstEl.includes("_"))
                 if (firstEl.startsWith(secEl))
                    tmpRet = 1;
@@ -43,7 +41,6 @@ module.exports = function (beq_engine, lookWord)
                 if (secEl.startsWith(firstEl))
                     tmpRet = -1;
 
-        logger.info(tmpRet);
 		return tmpRet;
 	}
 	);
@@ -52,7 +49,7 @@ module.exports = function (beq_engine, lookWord)
 	{
 		if (item == lookWord || item.startsWith(lookWord + "_"))
 		{
-			tmpRet += getSingleCategory(beq_engine, item) + "\n\n";
+			tmpRet += getSingleCategory(beq_engine, item) + "\n";
 		}
 	}
 	);
