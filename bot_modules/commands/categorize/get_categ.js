@@ -81,8 +81,7 @@ module.exports = function(beq_engine)
             if (beq_engine.catDesc[item] == undefined)		    
             {
 		    logger.info("inif");
-		    logger.info(item.contains("BOQWI"));
-                if (item.contains("BOQWI"))
+                if (item.includes("BOQWI"))
 		{
 			logger.info("x");
                     beq_engine.catDesc[item] = "Auto-generated from boQwI data";
