@@ -37,6 +37,9 @@ module.exports = function(beq_engine)
 				var wordName = word.attr.name;
 				var wordCats = word.val;
 				
+				if (wordName == "bafleq;;n:food")
+					logger.info("found");
+				
 				//KLingon word is stored as uhmal
 				var fragments = wordName.split(";;");
 				fragments[0] = kTranscode.RCu2tlh(fragments[0]);
