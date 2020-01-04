@@ -62,7 +62,6 @@ module.exports = function(beq_engine)
             
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
 	{
-		logger.info("reread cat2");
     	// Get the response body
 		var document = new xmldoc.XmlDocument(response.getBody());
         
@@ -74,12 +73,12 @@ module.exports = function(beq_engine)
             beq_engine.catDesc[item.attr.name] = item.val;
         });
 
-		logger.info(Object.keys(beq_engine.catDataCategs));
         //Go through existing categories to mark the automatically created ones
         Object.keys(beq_engine.catDataCategs).forEach(function (item)
         {
 		logger.info(item);
-            if (beq_engine.catDesc[item] == undefined)
+		logger.info(beq_engine.catDesc[item]);
+            if (beq_engine.catDesc[item] == undefined)		    
             {
                 if (item.contains("BOQWI"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
