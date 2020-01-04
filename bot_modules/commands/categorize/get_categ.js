@@ -81,6 +81,7 @@ module.exports = function(beq_engine)
             if (beq_engine.catDesc[item] == undefined)		    
             {
 		    logger.info("inif");
+		    logger.info(item.contains("BOQWI"));
                 if (item.contains("BOQWI"))
 		{
 			logger.info("x");
@@ -89,6 +90,8 @@ module.exports = function(beq_engine)
 		}
                 else
                     beq_engine.catDesc[item] = "Description missing!";
+		    
+		    logger.info("afterinif");
             }
 		logger.info("afterif");
         });
