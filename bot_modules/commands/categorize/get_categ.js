@@ -59,6 +59,7 @@ module.exports = function(beq_engine)
 				);			
 			}
 			);
+			logger.info("cat read1");
 		}
 		)
 	}
@@ -66,7 +67,6 @@ module.exports = function(beq_engine)
     //Re-Read category descriptions
     .then(function ()
     {   
-		logger.info("reread cat");
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
 	{
 		logger.info("reread cat2");
@@ -81,6 +81,7 @@ module.exports = function(beq_engine)
             beq_engine.catDesc[item.attr.name] = item.val;
         });
 
+		logger.info(Object.keys(beq_engine.catDataCategs));
         //Go through existing categories to mark the automatically created ones
         Object.keys(beq_engine.catDataCategs).forEach(function (item)
         {
