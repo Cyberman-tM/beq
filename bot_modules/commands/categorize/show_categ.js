@@ -29,7 +29,7 @@ module.exports = function (beq_engine, lookWord)
         else
         {
             if (firstEl.includes("_"))
-                if (firstEl.startsWith(secEl));
+                if (firstEl.startsWith(secEl))
                    tmpRet = -1;
             else if (secEl.includes("_"))
                 if (secEl.startsWith(firstEl))
