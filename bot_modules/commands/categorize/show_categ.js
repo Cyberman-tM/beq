@@ -8,7 +8,7 @@
       COMPUTER_GRAPHICS
  */
 var logger = require('winston');
-
+var beqPerson = require('./../../personality/beq_person.js');
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
 module.exports = function(beq_engine, lookWord)
