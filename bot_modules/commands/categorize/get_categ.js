@@ -69,6 +69,7 @@ module.exports = function(beq_engine)
 		logger.info("reread cat");
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
 	{
+		logger.info("reread cat2");
     	// Get the response body
 		var document = new xmldoc.XmlDocument(response.getBody());
         
