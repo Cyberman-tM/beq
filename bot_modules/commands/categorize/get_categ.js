@@ -76,25 +76,15 @@ module.exports = function(beq_engine)
         //Go through existing categories to mark the automatically created ones
         Object.keys(beq_engine.catDataCategs).forEach(function (item)
         {
-		logger.info(item);
-		logger.info(beq_engine.catDesc[item]);
             if (beq_engine.catDesc[item] == undefined)		    
             {
-		    logger.info("inif");
                 if (item.includes("BOQWI"))
-		{
-			logger.info("x");
-                    beq_engine.catDesc[item] = "Auto-generated from boQwI data";
-			logger.info("y");
-		}
+                    beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
                 else
                     beq_engine.catDesc[item] = "Description missing!";
 		    
-		    logger.info("afterinif");
             }
-		logger.info("afterif");
         });
-						     logger.info("afterloop");
         
     })
 	})
