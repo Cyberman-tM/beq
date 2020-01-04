@@ -70,10 +70,7 @@ module.exports = function(beq_engine)
         var catDescs = document.childrenNamed("cat");
         catDescs.forEach(function(item)
         {
-		logger.info(item.attr.name);
             beq_engine.catDesc[item.attr.name] = item.val;
-		logger.info(beq_engine.catDesc[item.attr.name]);
-		logger.info(item.val);
         });
 
         //Go through existing categories to mark the automatically created ones
