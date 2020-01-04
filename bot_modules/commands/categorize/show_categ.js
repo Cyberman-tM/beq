@@ -1,41 +1,61 @@
 /*
-   Show all words (klingon/english) in a specific category
+Show all words (klingon/english) in a specific category
 
-   Categorie can sub "subcategories", separated by _
-   for example:
-      COMPUTER
-      COMPUTER_COMMUNICATION
-      COMPUTER_GRAPHICS
+Categorie can sub "subcategories", separated by _
+for example:
+COMPUTER
+COMPUTER_COMMUNICATION
+COMPUTER_GRAPHICS
  */
 var logger = require('winston');
 var beqPerson = require('./../../personality/beq_person.js');
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
-module.exports = function(beq_engine, lookWord)
+module.exports = function (beq_engine, lookWord)
 {
-    var tmpRet = "";
-    lookWord = lookWord.toUpperCase();    
-	
-    //Any specific category should include implicit subcategories
-   var allCat = Object.keys(beq_engine.catDataCategs);
-   allCat.sort();
-   allCat.forEach(function (item)
-   {
-     if (item == lookWord || item.startsWith(lookWord+"_"))
-     {
-	     tmpRet +=  getSingleCategory(beq_engine, item) + "\n\n"; 
-     }
-   });
-	
-   if (tmpRet == "")
-      tmpRet = "Category not found.";
-	
-  tmpRet += "\n" + beqPerson.getLine(7, true, true, "\n");
-	
-   return tmpRet;
+	var tmpRet = "";
+	lookWord = lookWord.toUpperCase();
+
+	//Any specific category should include implicit subcategories
+	var allCat = Object.keys(beq_engine.catDataCategs);
+
+	//Es wäre besser das woanders zu machen, nicht immer jedesmal aufs neue...
+	allCat.sort(function (firstEl, secEl)
+	{
+		var tmpRet = 0;
+		if (firstEl.length == secEl.length)
+			if (firstEl < secEl)
+				tmpRet = -1;
+        else
+        {
+            if (firstEl.includes("_"))
+                if (firstEl.startsWith(secEl));
+                   tmpRet = -1;
+            else if (secEl.includes("_"))
+                if (secEl.startsWith(firstEl))
+                    tmpRet = 1;
+        }
+	}
+	);
+
+	allCat.forEach(function (item)
+	{
+		if (item == lookWord || item.startsWith(lookWord + "_"))
+		{
+			tmpRet += getSingleCategory(beq_engine, item) + "\n\n";
+		}
+	}
+	);
+
+	if (tmpRet == "")
+		tmpRet = "Category not found.";
+
+	tmpRet += "\n" + beqPerson.getLine(7, true, true, "\n");
+
+	return tmpRet;
 }
 
-function getSingleCategory (beq_engine, lookWord)
+function getSingleCategory(beq_engine, lookWord)
 {
 	var tmpRet = "";
 	var tmpCatDesc = "";
@@ -45,11 +65,11 @@ function getSingleCategory (beq_engine, lookWord)
 	else
 	{
 		tmpCatDesc = beq_engine.catDesc[lookWord];
-		
+
 		tmpRet = "Category " + lookWord + "\n";
 		if (tmpCatDesc != undefined)
-		   tmpRet += "*" + tmpCatDesc.trim() + "*\n\n";
-		
+			tmpRet += "*" + tmpCatDesc.trim() + "*\n\n";
+
 		beq_engine.catDataCategs[lookWord].forEach(function (item)
 		{
 			var tmpCat = item.split(";;");
