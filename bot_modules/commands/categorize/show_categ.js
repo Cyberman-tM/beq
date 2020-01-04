@@ -29,25 +29,20 @@ module.exports = function (beq_engine, lookWord)
 	//Es wäre besser das woanders zu machen, nicht immer jedesmal aufs neue...
 	allCat.sort(function (firstEl, secEl)
 	{
-		var tmpRet = -1;
+		var tmpRet = 1;
         
 		if (firstEl < secEl)
-			tmpRet = 1;
+			tmpRet = -1;
         
 		logger.info(firstEl);
 		logger.info(secEl);
-		if (firstEl.length == secEl.length)
-			if (firstEl < secEl)
-				tmpRet = 1;
-        else
-        {
             if (firstEl.includes("_"))
                 if (firstEl.startsWith(secEl))
                    tmpRet = 1;
             else if (secEl.includes("_"))
                 if (secEl.startsWith(firstEl))
                     tmpRet = -1;
-        }
+
         logger.info(tmpRet);
 		return tmpRet;
 	}
