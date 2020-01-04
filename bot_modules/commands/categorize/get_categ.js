@@ -38,7 +38,9 @@ module.exports = function(beq_engine)
 				var wordCats = word.val;
 				
 				//KLingon word is stored as uhmal
-				wordName = kTranscode.RCu2tlh(wordName);
+				var fragments = wordName.split(";;");
+				fragments[0] = kTranscode.RCu2tlh(fragments[0]);
+				wordName = fragments.join(";;");
 
 				//Worte sollten einzigartig sein
 				beq_engine.catDataWords[wordName] = wordCats;
