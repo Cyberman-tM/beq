@@ -10,7 +10,7 @@ module.exports.runCustInit = function(bot, beq_engine, devTest, logger)
 	if (devTest == true)
 	   logger.info("Custom Timer init");
 	
-	stammtischReminder.Init(bot, beq_engine, devTest, logger);
+	//stammtischReminder.Init(bot, beq_engine, devTest, logger);
 }
 
 //The name is mandatory!
@@ -20,5 +20,5 @@ module.exports.runCusTimer = function(myDate, myHour, myMinute)
 	//You get no other parameters, you are just called with the current time
 	//Now include whatever coding you want to run - maybe call another module?
 	
-	stammtischReminder.remind(myDate, myHour, myMinute);
+	//stammtischReminder.remind(myDate, myHour, myMinute);
 }
