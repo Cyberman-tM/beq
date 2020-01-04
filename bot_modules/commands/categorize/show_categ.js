@@ -5,8 +5,9 @@ Categorie can sub "subcategories", separated by _
 for example:
 COMPUTER
 COMPUTER_COMMUNICATION
-COMPUTER_GRAPHICS
+COMPUTER_GRAPHICS 
  */
+var winston = require('winston');
 var logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
