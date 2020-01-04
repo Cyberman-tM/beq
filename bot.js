@@ -579,7 +579,6 @@ bot.on('message', function (messageDJS)
 				sendMessage += sndMessage.substr(0, nextBR);
 				sndMessage = sndMessage.substr(nextBR, sndMessage.length);
 			}
-
 			botSendMessage(1, this, messageDJS.channel.id, sendMessage);
 		}
 	}
