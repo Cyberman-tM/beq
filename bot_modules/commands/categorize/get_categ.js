@@ -68,6 +68,7 @@ module.exports = function(beq_engine)
         //Reset data
         beq_engine.catDesc = {};
         var catDescs = document.childrenNamed("cat");
+		logger.info(catDescs);
         catDescs.forEach(function(item)
         {
             beq_engine.catDesc[item.attr.name] = item.val;
