@@ -7,7 +7,13 @@ COMPUTER
 COMPUTER_COMMUNICATION
 COMPUTER_GRAPHICS
  */
-var logger = require('winston');
+var logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
 var beqPerson = require('./../../personality/beq_person.js');
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
