@@ -11,7 +11,7 @@
 
 */
 
-module.exports.versInt = '0.7';
+module.exports.versInt = '0.8';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
