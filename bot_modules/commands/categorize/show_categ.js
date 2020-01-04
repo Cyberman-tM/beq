@@ -29,7 +29,7 @@ module.exports = function (beq_engine, lookWord)
 	//Es wäre besser das woanders zu machen, nicht immer jedesmal aufs neue...
 	allCat.sort(function (firstEl, secEl)
 	{
-		var tmpRet = 0;
+		var tmpRet = -1;
         
 		if (firstEl < secEl)
 			tmpRet = 1;
