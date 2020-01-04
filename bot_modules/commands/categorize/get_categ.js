@@ -80,11 +80,13 @@ module.exports = function(beq_engine)
 		logger.info(beq_engine.catDesc[item]);
             if (beq_engine.catDesc[item] == undefined)		    
             {
+		    logger.info("inif");
                 if (item.contains("BOQWI"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
                 else
                     beq_engine.catDesc[item] = "Description missing!";
             }
+		logger.info("afterif");
         });
 						     logger.info("afterloop");
         
