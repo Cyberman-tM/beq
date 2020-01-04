@@ -35,6 +35,7 @@ module.exports = function (beq_engine, lookWord)
                 if (secEl.startsWith(firstEl))
                     tmpRet = 1;
         }
+		return tmpRet;
 	}
 	);
 
