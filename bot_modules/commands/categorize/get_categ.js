@@ -59,14 +59,7 @@ module.exports = function(beq_engine)
 				);			
 			}
 			);
-			logger.info("cat read1");
-		}
-		)
-	}
-	)
-    //Re-Read category descriptions
-    .then(function ()
-    {   
+            
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
 	{
 		logger.info("reread cat2");
@@ -95,7 +88,9 @@ module.exports = function(beq_engine)
             }
         });
         
-    })});
+    })
+	})
+});
 };
 
 
