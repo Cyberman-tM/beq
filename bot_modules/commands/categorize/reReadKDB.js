@@ -10,7 +10,6 @@ var logger = require('winston');
 module.exports = function(beq_engine)
 {
     //This will probably take some time...
-    logger.info("reread");
     beq_engine.KDBJSon.forEach(function (item)
     {
 	//In-memory, everything is normal, but we store uhmal
@@ -48,8 +47,6 @@ module.exports = function(beq_engine)
                 beq_engine.catDataWords[chkWord] == undefined || 
                !beq_engine.catDataWords[chkWord].includes(newCategory))
 	    {
-		    logger.info(chkWord);
-		    logger.info(beq_engine.catDataWords[chkWord]);
 		//Store as uhmal
 	        chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;		    
                 requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
