@@ -89,7 +89,7 @@ module.exports = function(beq_engine, dataString)
         {
 	   //Apostrophe in Attributen sind in XML nicht erlaubt!
 	   //Wandeln wir das klingonische Wort in UHMAL um
-	   chkWord = kTranscode.RCtlh2u(chkWord);
+ 	   chkWord = kTranscode.RCtlh2u(realResult.tlh) + ";;" + realResult.type;
 		
             var addCatLink = "http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory;
             requestify.get(addCatLink);
