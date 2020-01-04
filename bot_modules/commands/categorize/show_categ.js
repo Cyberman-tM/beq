@@ -28,6 +28,8 @@ module.exports = function(beq_engine, lookWord)
    if (tmpRet == "")
       tmpRet = "Category not found.";
 	
+  tmpRet += "\n" + beqPerson.getLine(7, true, true, "\n");
+	
    return tmpRet;
 }
 
