@@ -85,7 +85,8 @@ module.exports = function(beq_engine)
                 else
                     beq_engine.catDesc[item] = "Description missing!";
             }
-        });
+        }
+						     logger.info("afterloop"););
         
     })
 	})
