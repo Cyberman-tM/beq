@@ -66,6 +66,7 @@ module.exports = function(beq_engine)
     //Re-Read category descriptions
     .then(function ()
     {   
+		logger.info("reread cat");
 	requestify.get('http://www.tlhingan.at/Misc/beq/wordCat/beq_CatDesc.txt').then(function (response)
 	{
     	// Get the response body
@@ -82,6 +83,7 @@ module.exports = function(beq_engine)
         //Go through existing categories to mark the automatically created ones
         Object.keys(beq_engine.catDataCategs).forEach(function (item)
         {
+		logger.info(item);
             if (beq_engine.catDesc[item] == undefined)
             {
                 if (item.contains("BOQWI"))
