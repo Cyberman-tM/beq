@@ -23,6 +23,8 @@ module.exports = function (beq_engine, lookWord)
 	allCat.sort(function (firstEl, secEl)
 	{
 		var tmpRet = 0;
+		logger.info(firstEl);
+		logger.info(secEl);
 		if (firstEl.length == secEl.length)
 			if (firstEl < secEl)
 				tmpRet = 1;
