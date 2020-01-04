@@ -74,7 +74,7 @@ module.exports = function(beq_engine)
 		
 	   var catList = beq_engine.catDataCategs[item.attr.name];
 	   if (catList == null)
-		beq_engine.catDataCategs[] = [];
+		beq_engine.catDataCategs[item.attr.name] = [];
         });
 
         //Go through existing categories to mark the automatically created ones
