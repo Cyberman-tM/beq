@@ -1,22 +1,53 @@
 /*
-Show all words (klingon/english) in a specific category
+   Show all words (klingon/english) in a specific category
+
+   Categorie can sub "subcategories", separated by _
+   for example:
+      COMPUTER
+      COMPUTER_COMMUNICATION
+      COMPUTER_GRAPHICS
  */
 var logger = require('winston');
-
+var beqPerson = require('./../../personality/beq_person.js');
 var boQwI_translate = require('./../../utils/boQwI_translate.js');
 
-module.exports = function (beq_engine, lookWord)
+module.exports = function(beq_engine, lookWord)
+{
+    var tmpRet = "";
+    lookWord = lookWord.toUpperCase();    
+	
+    //Any specific category should include implicit subcategories
+   Object.keys(beq_engine.catDataCategs).forEach(function (item)
+   {
+     if (item == lookWord || item.startsWith(lookWord+"_"))
+     {
+	     tmpRet +=  getSingleCategory(beq_engine, item) + "\n\n"; 
+     }
+   });
+	
+   if (tmpRet == "")
+      tmpRet = "Category not found.";
+	
+  tmpRet += "\n" + beqPerson.getLine(7, true, true, "\n");
+	
+   return tmpRet;
+}
+
+function getSingleCategory (beq_engine, lookWord)
 {
 	var tmpRet = "";
-
-	lookWord = lookWord.toUpperCase();
+	var tmpCatDesc = "";
 
 	if (beq_engine.catDataCategs[lookWord] == undefined)
 		tmpRet = "Category " + lookWord + " not yet defined!\n";
 	else
 	{
-
-		tmpRet = "Words in category " + lookWord + "\n";
+		tmpCatDesc = beq_engine.catDesc[lookWord];
+		
+		tmpRet = "Category " + lookWord + "\n";
+		if (tmpCatDesc != undefined)
+		   tmpRet += "*" + tmpCatDesc.trim() + "*\n\n";
+		
 		beq_engine.catDataCategs[lookWord].forEach(function (item)
 		{
 			var tmpCat = item.split(";;");

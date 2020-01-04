@@ -11,7 +11,7 @@
 
 */
 
-module.exports.versInt = '0.7';
+module.exports.versInt = '0.8';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
@@ -77,10 +77,11 @@ module.exports.RCtlh2u = function(orig_text)
 	  tmpText = tmpText.replace(/o/g, 'n');
 	  tmpText = tmpText.replace(/p/g, 'o');
 	  
-	  tmpText = tmpText.toLowerCase();
+	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
 }
 //tlhIngan => uhmal with numbers instead of vocals
+//Usable for easier identifying of CVC - any V will be a number
 module.exports.RCtlh2u2 = function(orig_text)
 {
 	var tmpText = "";
@@ -105,7 +106,7 @@ module.exports.RCtlh2u2 = function(orig_text)
 	  tmpText = tmpText.replace(/a/g, '1');
 	  tmpText = tmpText.replace(/e/g, '2');
 	  
-	  tmpText = tmpText.toLowerCase();
+	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
 }
 

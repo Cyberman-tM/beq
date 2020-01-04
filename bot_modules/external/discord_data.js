@@ -6,18 +6,19 @@
    This bot was developed at/for Heroku, but it should be usable somewhere else as well.
 */
 
-var tmpToken = '';      //Bot Token
-var tmpservID = '';        //Server ID
+var tmpToken = '';       //Bot Token
+var tmpservID = '';      //Server ID
 
-var tmpclipChan = '';   //Channel where clipped commands are allowed (translation command ? for example)
-var tmpbTChan = '';     //Channel for beqTalk - system messages should go there
-var tmpdevBuild = '';   //Flag that tells us if this bot runs as developer toy or productive assistant
-var tmpKWOTDChan = '';  //Which channel should we post the KWOTD message to?
-var tmpnoPulse   = '';  //Disable Event-Timer pulse during testing
-var tmpWeatherMap = ''; //ID for openWeatherMap
-var tmpLMChannel = '';  //Channel ID for Letter to Maltz
-var tmpANChannel = '';  //Channel ID for Announcements
-var tmpStammChan = '';  //Channel ID for Stammtisch (Text)
+var tmpclipChan = '';    //Channel where clipped commands are allowed (translation command ? for example)
+var tmpbTChan = '';      //Channel for beqTalk - system messages should go there
+var tmpdevBuild = '';    //Flag that tells us if this bot runs as developer toy or productive assistant
+var tmpKWOTDChan = '';   //Which channel should we post the KWOTD message to?
+var tmpnoPulse   = '';   //Disable Event-Timer pulse during testing
+var tmpWeatherMap = '';  //ID for openWeatherMap
+var tmpLMChannel = '';   //Channel ID for Letter to Maltz
+var tmpANChannel = '';   //Channel ID for Announcements
+var tmpStammChan = '';   //Channel ID for Stammtisch (Text)
+var tmpStoreServer = ''; //URL to the server(file) to store/retrieve data
 
 
 var useHeroku = true;   //Change this to false if you don't use Heroku, so we won't try to get the Heroku data
@@ -41,7 +42,8 @@ if (useHeroku === true)
 	
 	tmpWeatherMap = process.env.openWeatherMap;
 	
-	tmpStammChan = process.env.StammChan;
+	tmpStammChan   = process.env.StammChan;
+	tmpStoreServer = process.env.StoreServ;
 }
 else
 {
@@ -60,5 +62,6 @@ module.exports.openWeatherMap = tmpWeatherMap;
 module.exports.LMChan = tmpLMChannel;
 module.exports.ANChan = tmpANChannel;
 module.exports.StammChan = tmpStammChan;
+module.exports.StoreServ = tmpStoreServer;
 
 

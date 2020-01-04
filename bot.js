@@ -65,12 +65,11 @@ bot.on('ready', function (evt)
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
 
-	//Timer runs once a minute, unless we're in dev-build
-	if (DData.devBuild != "true")
-	{
-		evTimer.startEventTimer(beq, bot);
-	}
-	else
+	//Timer runs once a minute (KWOTD excepted)
+	evTimer.startEventTimer(beq, bot);
+
+	//Notice that we're devBuild
+	if (DData.devBuild == "true")
 		logger.info("Development edition!");
 }
 );
@@ -102,11 +101,15 @@ bot.on('message', function (messageDJS)
 		if (cmdMagic == '$')
 		{
 			cmdMagic = message.substring(0, 1);
-			message = message.substring(1, 99999);
+			message = message.substring(1, 99999);			   
 		}
 		else
 			return;
 	}
+	else
+	   //Maybe it's a command to devBeq, in which case we ignore it
+	   if (cmdMagic == '$' && message.substring(0,1) == '!')
+              return;
 
 	if (DData.devBuild == "true")
 		logger.info(cmdMagic);
@@ -504,6 +507,13 @@ bot.on('message', function (messageDJS)
 			beqTalk = beq.Engine(beqTalk);
 			sndMessage += beqTalk.message;
 			break;
+		case 'addCatDesc':
+			var beqTalk = JSON.parse(beq.beqTalkDef);
+			beqTalk.command = 'addCatDesc';
+			beqTalk.lookWord = message;
+			beqTalk = beq.Engine(beqTalk);
+			sndMessage += beqTalk.message;
+			break;
 		default:
 			//This MUST return false if nothing was done!
 			cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
@@ -557,10 +567,18 @@ bot.on('message', function (messageDJS)
 		//Nachricht > 2000 Zeichen aufteilen
 		while (sndMessage.length > 0)
 		{
-			//TODO: Suche nach newline, um zerissene Worte/Texte zu vermeiden
-			var sendMessage = sndMessage.substr(0, 1500);
-			sndMessage = sndMessage.substr(1500, sndMessage.length);
-
+			var sendMessage = sndMessage.substr(0, 1700);
+			sndMessage = sndMessage.substr(1700, sndMessage.length);
+			
+			//Prevent break of text
+			var nextBR = sndMessage.indexOf('\n');
+			if (nextBR != -1)
+			{
+				//JS starts with 0, and we want to have the \n
+				nextBR += 1;
+				sendMessage += sndMessage.substr(0, nextBR);
+				sndMessage = sndMessage.substr(nextBR, sndMessage.length);
+			}
 			botSendMessage(1, this, messageDJS.channel.id, sendMessage);
 		}
 	}
