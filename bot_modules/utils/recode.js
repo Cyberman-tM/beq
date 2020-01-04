@@ -77,7 +77,7 @@ module.exports.RCtlh2u = function(orig_text)
 	  tmpText = tmpText.replace(/o/g, 'n');
 	  tmpText = tmpText.replace(/p/g, 'o');
 	  
-	  tmpText = tmpText.toLowerCase();
+	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
 }
 //tlhIngan => uhmal with numbers instead of vocals
@@ -106,7 +106,7 @@ module.exports.RCtlh2u2 = function(orig_text)
 	  tmpText = tmpText.replace(/a/g, '1');
 	  tmpText = tmpText.replace(/e/g, '2');
 	  
-	  tmpText = tmpText.toLowerCase();
+	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
 }
 
