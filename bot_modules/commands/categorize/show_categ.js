@@ -25,15 +25,15 @@ module.exports = function (beq_engine, lookWord)
 		var tmpRet = 0;
 		if (firstEl.length == secEl.length)
 			if (firstEl < secEl)
-				tmpRet = -1;
+				tmpRet = 1;
         else
         {
             if (firstEl.includes("_"))
                 if (firstEl.startsWith(secEl))
-                   tmpRet = -1;
+                   tmpRet = 1;
             else if (secEl.includes("_"))
                 if (secEl.startsWith(firstEl))
-                    tmpRet = 1;
+                    tmpRet = -1;
         }
 		return tmpRet;
 	}
