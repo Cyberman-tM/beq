@@ -48,12 +48,7 @@ module.exports = function(beq_engine)
                 beq_engine.catDataWords[chkWord] == undefined || 
                !beq_engine.catDataWords[chkWord].includes(newCategory))
 	    {
-		    logger.info("X");
-		    logger.info(beq_engine.catDataWords);
-		    logger.info(chkWord);
-		    logger.info(beq_engine.catDataWords[chkWord]);
-		    logger.info("<");
-		    
+	    
 		//Store as uhmal
 	        chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;		    
                 requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord +  "&wordCat=" + newCategory);
