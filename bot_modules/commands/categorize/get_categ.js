@@ -72,6 +72,8 @@ module.exports = function(beq_engine)
         {
 		logger.info(item.attr.name);
             beq_engine.catDesc[item.attr.name] = item.val;
+		logger.info(beq_engine.catDesc[item.attr.name]);
+		logger.info(item.val);
         });
 
         //Go through existing categories to mark the automatically created ones
