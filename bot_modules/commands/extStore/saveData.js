@@ -32,6 +32,8 @@ module.exports = function(dataKey, dataData)
    
    requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php", {
 		hello: 'world'
+},{
+    dataType: 'form-url-encoded'
 })
 .then(function(response) {
 	// Get the response body
