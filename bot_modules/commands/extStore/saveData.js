@@ -34,7 +34,5 @@ module.exports = function (dataKey, dataData)
 		logger.info("fail");
 		logger.info(response.getCode())
 	});
+};
 
-}
-);
-}
