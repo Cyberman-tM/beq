@@ -362,9 +362,10 @@ bot.on('message', function (messageDJS)
 		case 'experiment':
 			experimentalFunc(bot, args, messageDJS);
 			break;
-			case 'store':
-			   storeData(this);
-			break;
+		case 'store':
+				logger.info("storing");
+		   storeData(this);
+		break;
 		case 'yIqaw':
 			memorize(bot, args, messageDJS);
 			sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
