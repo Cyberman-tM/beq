@@ -364,7 +364,7 @@ bot.on('message', function (messageDJS)
 			break;
 		case 'store':
 				logger.info("storing");
-		   storeData("testing", beqPerson.versInt);
+		   storeData("testing",rules);
 		break;
 		case 'yIqaw':
 			memorize(bot, args, messageDJS);
