@@ -18,8 +18,6 @@ var tmpWeatherMap = '';  //ID for openWeatherMap
 var tmpLMChannel = '';   //Channel ID for Letter to Maltz
 var tmpANChannel = '';   //Channel ID for Announcements
 var tmpStammChan = '';   //Channel ID for Stammtisch (Text)
-var tmpStoreServer = ''; //URL to the server(file) to store/retrieve data
-
 
 var useHeroku = true;   //Change this to false if you don't use Heroku, so we won't try to get the Heroku data
 
@@ -62,6 +60,5 @@ module.exports.openWeatherMap = tmpWeatherMap;
 module.exports.LMChan = tmpLMChannel;
 module.exports.ANChan = tmpANChannel;
 module.exports.StammChan = tmpStammChan;
-module.exports.StoreServ = tmpStoreServer;
 
 
