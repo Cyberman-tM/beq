@@ -22,5 +22,8 @@ module.exports = function(dataKey, dataData)
                                                                                                              {
     logger.info("response");
        logger.info(response.getBody());
-    });
+    })
+    .fail(function(response)
+    {logger.info("fail");
+    logger.info(response.getCode())});
 }
