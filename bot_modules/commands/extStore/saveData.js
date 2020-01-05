@@ -20,7 +20,7 @@ module.exports = function (dataKey, dataData)
 	var dataString = JSON.stringify(dataData);
 	//Daten irgendwie ändern? Prüfen? Blubb
 
-	requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php?dataKey=" + dataKey, {"daten": dataData},
+	requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php?dataKey=" + dataKey, {"daten": 'dataData'},
 	{
 		dataType: 'form-url-encoded'
 	})
