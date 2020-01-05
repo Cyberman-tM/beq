@@ -19,7 +19,7 @@ var proclaim = require('./bot_modules/commands/proclaim.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
-var storeData = require('./bot_modules/commands/ext_store/saveData.js');
+var storeData = require('./bot_modules/commands/extStore/saveData.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
