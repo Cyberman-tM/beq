@@ -18,7 +18,11 @@ module.exports = function(dataKey, dataData)
     var dataString = JSON.stringify(dataData);
     logger.info("instore");
     //Daten irgendwie ändern? Prüfen? Blubb
-    requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php?key="+dataKey, { daten: dataString}).then(function(response)
+   requestify.post(http://www.tlhingan.at/Misc/beq/storage/store.php?key="+dataKey, {
+		hello: 'world'
+})
+//    requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php?key="+dataKey, { daten: dataString})
+      .then(function(response)
                                                                                                              {
     logger.info("response");
        logger.info(response.getBody());
