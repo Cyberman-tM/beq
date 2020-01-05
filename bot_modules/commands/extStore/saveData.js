@@ -19,7 +19,7 @@ module.exports = function (dataKey, dataData)
 {
 	logger.info(dataData);
 	var dataString = JSON.stringify(dataData);
-	löogger.info(dataString);
+	logger.info(dataString);
 	//Daten irgendwie ändern? Prüfen? Blubb
 
 	requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php?dataKey=" + dataKey, {"daten": dataString},
