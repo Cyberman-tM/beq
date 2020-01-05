@@ -30,13 +30,9 @@ module.exports = function(dataKey, dataData)
     logger.info(response.getCode())});
     */
    
-   requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php", {
-		hello: 'world'
-},{
+requestify.post("http://www.tlhingan.at/Misc/beq/storage/store.php", {name: "Hiago", age: 23}, {
     dataType: 'form-url-encoded'
-})
-.then(function(response) {
-	// Get the response body
-	logger.info(response.getBody());
+}).then(function(res) {
+    console.log(res);
 });
 }
