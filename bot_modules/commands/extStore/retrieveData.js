@@ -16,16 +16,13 @@ var logger = winston.createLogger(
 	);
 var requestify = require('requestify');
 
-module.exports = function (dataKey)
+module.exports = function (dataKey, targetData)
 {
-    var tmpRet = null;
 	//Daten irgendwie ändern? Prüfen? Blubb
 	requestify.get("http://www.tlhingan.at/Misc/beq/storage/retrieve.php?dataKey=" + dataKey)
 	.then(function (response)
 	{
-        tmpRet = JSON.parse(response);
-	});
-    
-    return tmpRet;
+        targetData = JSON.parse(response);
+	});    
 };
 
