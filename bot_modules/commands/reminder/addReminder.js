@@ -7,12 +7,20 @@
    Time to display
    Which channel
    Message
-   Repeat how often?
-   Repeat when?
-   
+   Repeat how often (once per day at the time of the reminder)
+  
 */
 
-module.exports = function()
+module.exports = function(myMinute, myHour, myDate, myChannel, myMessage, myRepeats)
 {
+    var newReminder =
+    {
+        "myMinute": myMinute,
+        "myHour": myHour,
+        "myDate": myDate,
+        "myChannel": myChannel,
+        "myMessage": myMessage,
+        "myRepeats": myRepeats
+    }
     
 }
