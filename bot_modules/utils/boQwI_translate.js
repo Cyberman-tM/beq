@@ -27,7 +27,7 @@ module.exports.getWType = function (wType, tranLang)
 {
 	var wTypeS = wType.split(':')[0];
 	var wTypeL = '';
-
+logger.info(wTypeS);
 	if (tranLang == 'de')
 	{
 		if (wTypeS == 'n')
@@ -142,7 +142,7 @@ module.exports.getSType = function (wType, tranLang)
 {
 	var wTypeW = wType.split(':')[0];
 	var wTypeS = wType.split(':')[1];
-
+logger.info("getSType");
 	var tmpRet = "";
 
 	if (wTypeW != "sen")
