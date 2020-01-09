@@ -838,6 +838,30 @@ function getWType(wType, tranLang)
 			wTypeL = 'Bindewort';
 		else if (wTypeS == 'ques')
 			wTypeL = 'Frage';
+		else if (wTypeS == 'phr')
+			wTypeL = "Generic Phrase";
+		else if (wTypeS == 'toast')
+			wTypeL = "Toast";
+		else if (wTypeS == 'eu')
+			wTypeL = "EU";
+		else if (wTypeS == 'idiom')
+			wTypeL = "Idium";
+		else if (wTypeS == 'mv')
+			wTypeL = "mu'qaD veS";
+		else if (wTypeS == 'nt')
+			wTypeL = "nentay";
+		else if (wTypeS == 'prov')
+			wTypeL = "Proverb";
+		else if (wTypeS == 'Ql')
+			wTypeL = "QI'lop";
+		else if (wTypeS == 'rej')
+			wTypeL = "Rejection";
+		else if (wTypeS == 'rp')
+			wTypeL = "Replacement proverb";
+		else if (wTypeS == 'sp')
+			wTypeL = "Secret Proverb";
+		else if (wTypeS == 'lyr')
+			wTypeL = "Lyrics";
 		else
 			wTypeL = 'unsupported yet';
 	}
@@ -867,6 +891,30 @@ function getWType(wType, tranLang)
 			wTypeL = 'Conjunction';
 		else if (wTypeS == 'ques')
 			wTypeL = 'Question';
+		else if (wTypeS == 'phr')
+			wTypeL = "Generic Phrase";
+		else if (wTypeS == 'toast')
+			wTypeL = "Toast";
+		else if (wTypeS == 'eu')
+			wTypeL = "EU";
+		else if (wTypeS == 'idiom')
+			wTypeL = "Idium";
+		else if (wTypeS == 'mv')
+			wTypeL = "mu'qaD veS";
+		else if (wTypeS == 'nt')
+			wTypeL = "nentay";
+		else if (wTypeS == 'prov')
+			wTypeL = "Proverb";
+		else if (wTypeS == 'Ql')
+			wTypeL = "QI'lop";
+		else if (wTypeS == 'rej')
+			wTypeL = "Rejection";
+		else if (wTypeS == 'rp')
+			wTypeL = "Replacement proverb";
+		else if (wTypeS == 'sp')
+			wTypeL = "Secret Proverb";
+		else if (wTypeS == 'lyr')
+			wTypeL = "Lyrics";
 		else
 			wTypeL = 'unsupported yet!';
 	}
