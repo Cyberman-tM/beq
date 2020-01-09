@@ -35,6 +35,32 @@ module.exports = function(beq_engine)
             newCategory += ";slang_boqwi";
         if (item.type.includes("weap"))
             newCategory += ";weapon_boqwi";
+	if (item.type == 'sen:phr')
+	    newCategory += ";sentence_phrase_boqwi";
+	if (item.type == 'sen:toast')
+	    newCategory += ";sentence_toast_boqwi";
+	if (item.type == 'sen:eu')
+	    newCategory += ";sentence_eu_boqwi";
+	if (item.type == 'sen:idiom')
+	    newCategory += ";sentence_idiom_boqwi";
+	if (item.type == 'sen:mv')
+	    newCategory += ";sentence_muqad_ves_boqwi";
+	if (item.type == 'sen:nt')
+	    newCategory += ";sentence_nentay_boqwi";
+	if (item.type == 'sen:phr')
+	    newCategory += ";sentence_phrase_boqwi";
+	if (item.type == 'sen:prov')
+	    newCategory += ";sentence_proverb_boqwi";
+	if (item.type == 'sen:Ql')
+	    newCategory += ";sentence_qilop_boqwi";
+	if (item.type == 'sen:rej')
+	    newCategory += ";sentence_rejection_boqwi";
+	if (item.type == 'sen:rp')
+	    newCategory += ";sentence_replacement_proverb_boqwi";
+	if (item.type == 'sen:sp')
+	    newCategory += ";sentence_secret_proverb_boqwi";
+	if (item.type == 'sen:lyr')
+	    newCategory += ";sentence_lyrics_boqwi";
        
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
