@@ -3,6 +3,7 @@
 Translation functions for the various boQwI' types (like word types)
 
  */
+var logger = require('winston');
 
 //Check if the word is actually a derived definition
 module.exports.isDerived = function (wType)
@@ -142,7 +143,7 @@ module.exports.getSType = function (wType, tranLang)
 {
 	var wTypeW = wType.split(':')[0];
 	var wTypeS = wType.split(':')[1];
-logger.info("getSType");
+
 	var tmpRet = "";
 
 	if (wTypeW != "sen")
