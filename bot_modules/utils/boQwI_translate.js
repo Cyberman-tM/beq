@@ -55,7 +55,7 @@ module.exports.getWType = function(wType, tranLang)
 		else if (wTypeS == 'ques')
 			wTypeL = 'Frage';
 		else
-			wTypeL = 'unsupported yet';
+			wTypeL = 'unsupported yet!';
 	}
 	else if (tranLang == 'en')
 	{
@@ -84,7 +84,7 @@ module.exports.getWType = function(wType, tranLang)
 		else if (wTypeS == 'ques')
 			wTypeL = 'Question';
 		else
-			wTypeL = 'unsupported yet';
+			wTypeL = 'unsupported yet!';
 	}
 	return wTypeL;
 }
