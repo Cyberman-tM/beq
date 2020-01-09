@@ -28,8 +28,6 @@ module.exports.getWType = function (wType, tranLang)
 {
 	var wTypeS = wType.split(':')[0];
 	var wTypeL = '';
-logger.info(wTypeS);
-logger.info(wType);
 	if (tranLang == 'de')
 	{
 		if (wTypeS == 'n')
