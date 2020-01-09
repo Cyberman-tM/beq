@@ -868,7 +868,7 @@ function getWType(wType, tranLang)
 		else if (wTypeS == 'ques')
 			wTypeL = 'Question';
 		else
-			wTypeL = 'unsupported yet';
+			wTypeL = 'unsupported yet!';
 	}
 	//Override: Names
 	if (wType.indexOf(":name") >= 0)
