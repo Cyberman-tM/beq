@@ -78,6 +78,8 @@ module.exports.getWType = function (wType, tranLang)
 			wTypeL = "Secret Proverb";
 		else if (wTypeS == 'lyr')
 			wTypeL = "Lyrics";
+		else if (wTypeS == 'archaic')
+			wTypeL = "Archaic";
 		else
 			wTypeL = 'unsupported yet!';
 	}
@@ -131,6 +133,8 @@ module.exports.getWType = function (wType, tranLang)
 			wTypeL = "Secret Proverb";
 		else if (wTypeS == 'lyr')
 			wTypeL = "Lyrics";
+		else if (wTypeS == 'archaic')
+			wTypeL = "Archaic";
 		else
 			wTypeL = 'unsupported yet!';
 	}
@@ -191,6 +195,8 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Secret Proverb";
 		else if (wTypeS == 'lyr')
 			tmpRet = "Lyrics";
+		else if (wTypeS == "archaic")
+			tmpRet = "Archaic";
 		else
 			tmpRet = wTypeS;
 	}
@@ -232,6 +238,8 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Secret Proverb";
 		else if (wTypeS == 'lyr')
 			tmpRet = "Lyrics";
+		else if (wTypeS == "archaic")
+			tmpRet = "Archaic";
 		else
 			tmpRet = wTypeS;
 	}
