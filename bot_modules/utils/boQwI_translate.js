@@ -157,6 +157,8 @@ module.exports.getSType = function (wType, tranLang)
 	if (wTypeW != "sen")
 		return "Wrong type!";
 
+	//TODO: phr,archaic => zweimal spalten? phr extra auflösen?
+	
 	if (tranLang == 'en')
 	{
 		if (wTypeS == 'rp')
