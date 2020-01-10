@@ -137,7 +137,7 @@ module.exports.getWType = function (wType, tranLang)
 	
 	//Get better description for sentences
 	if (wTypeS == "sen")
-	   wTypeL += '(' + module.exports.getSType(wType, tranLang) + ')';
+	   wTypeL += ' (' + module.exports.getSType(wType, tranLang) + ')';
 	
 	return wTypeL;
 }
@@ -167,7 +167,30 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = 'Alternate spelling! Treat carefully!';
 		else if (wTypeS == 'rej')
 			tmpRet = 'Rejection';
-		//TODO: MORE
+		else if (wTypeS == 'phr')
+			tmpRet = "Generic Phrase";
+		else if (wTypeS == 'toast')
+			tmpRet = "Toast";
+		else if (wTypeS == 'eu')
+			tmpRet = "EU";
+		else if (wTypeS == 'idiom')
+			tmpRet = "Idium";
+		else if (wTypeS == 'mv')
+			tmpRet = "mu'qaD veS";
+		else if (wTypeS == 'nt')
+			tmpRet = "nentay";
+		else if (wTypeS == 'prov')
+			tmpRet = "Proverb";
+		else if (wTypeS == 'Ql')
+			tmpRet = "QI'lop";
+		else if (wTypeS == 'rej')
+			tmpRet = "Rejection";
+		else if (wTypeS == 'rp')
+			tmpRet = "Replacement proverb";
+		else if (wTypeS == 'sp')
+			tmpRet = "Secret Proverb";
+		else if (wTypeS == 'lyr')
+			tmpRet = "Lyrics";
 		else
 			tmpRet = wTypeS;
 	}
@@ -185,6 +208,30 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = 'Alternative Schreibweise! Vorsicht!';
 		else if (wTypeS == 'rej')
 			tmpRet = 'Zurückweisung';
+		else if (wTypeS == 'phr')
+			tmpRet = "Generic Phrase";
+		else if (wTypeS == 'toast')
+			tmpRet = "Toast";
+		else if (wTypeS == 'eu')
+			tmpRet = "EU";
+		else if (wTypeS == 'idiom')
+			tmpRet = "Idium";
+		else if (wTypeS == 'mv')
+			tmpRet = "mu'qaD veS";
+		else if (wTypeS == 'nt')
+			tmpRet = "nentay";
+		else if (wTypeS == 'prov')
+			tmpRet = "Proverb";
+		else if (wTypeS == 'Ql')
+			tmpRet = "QI'lop";
+		else if (wTypeS == 'rej')
+			tmpRet = "Rejection";
+		else if (wTypeS == 'rp')
+			tmpRet = "Replacement proverb";
+		else if (wTypeS == 'sp')
+			tmpRet = "Secret Proverb";
+		else if (wTypeS == 'lyr')
+			tmpRet = "Lyrics";
 		else
 			tmpRet = wTypeS;
 	}
