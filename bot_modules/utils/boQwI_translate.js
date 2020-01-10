@@ -134,6 +134,11 @@ module.exports.getWType = function (wType, tranLang)
 		else
 			wTypeL = 'unsupported yet!';
 	}
+	
+	"Bei Sätzen noch genauere Erklärung finden
+	if (wTypeS == "sen")
+	   wTypeL += '(' + module.exports.getSType(wType, tranLang) + ')';
+	
 	return wTypeL;
 }
 
