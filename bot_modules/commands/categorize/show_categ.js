@@ -96,7 +96,7 @@ function getSingleCategory(beq_engine, lookWord)
 			}
 			);
 
-			tmpRet += tmpCat[0] + ": " + tmpTrans + " -> " + boQwI_translate.getWType(tmpCat[1].substr(0, 1), "en") + "\n";
+			tmpRet += tmpCat[0] + ": " + tmpTrans + " -> " + boQwI_translate.getWType(tmpCat[1], "en") + "\n";
 		}
 		);
 	}
