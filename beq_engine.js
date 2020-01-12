@@ -440,15 +440,16 @@ module.exports.Engine = function (beqTalk)
 		var endSuffNum = 9;
 
 		if (beqTalk.wordType2.substring(1, 2) == '+')
-			startSuffNum = beqTalk.wordType2.substring(0, 1)else if (beqTalk.wordType2.substring(1, 2) == '-')
-				{
-					startSuffNum = beqTalk.wordType2.substring(0, 1)
-						endSuffNum = beqTalk.wordType2.substring(2, 3)
-				}
-				else
-					startSuffNum = endSuffNum = beqTalk.wordType2;
+			startSuffNum = beqTalk.wordType2.substring(0, 1);
+		else if (beqTalk.wordType2.substring(1, 2) == '-')
+		{
+			startSuffNum = beqTalk.wordType2.substring(0, 1);
+			endSuffNum = beqTalk.wordType2.substring(2, 3);
+		}
+		else
+			startSuffNum = endSuffNum = beqTalk.wordType2;
 
-				beqTalk.result = new Array();
+		beqTalk.result = new Array();
 		if (beqTalk.wordType1 == "prefix")
 		{
 			//Simply export all prefixes
@@ -670,8 +671,8 @@ module.exports.createTranslation = function (beqTalk)
 				//Maybe preprocess the output to be nicer?
 				sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline;
 			}
-            
-            sndMessage += beqTalk.newline;
+
+			sndMessage += beqTalk.newline;
 		}
 	}
 	)
@@ -680,7 +681,7 @@ module.exports.createTranslation = function (beqTalk)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 
-    sndMessage += beqTalk.newline;
+	sndMessage += beqTalk.newline;
 	return sndMessage;
 }
 
