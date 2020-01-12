@@ -670,6 +670,8 @@ module.exports.createTranslation = function (beqTalk)
 				//Maybe preprocess the output to be nicer?
 				sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline;
 			}
+            
+            sndMessage += beqTalk.newline;
 		}
 	}
 	)
@@ -678,7 +680,7 @@ module.exports.createTranslation = function (beqTalk)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 
-    sndMessage += beqTalk.newline + beqTalk.newline;
+    sndMessage += beqTalk.newline;
 	return sndMessage;
 }
 
