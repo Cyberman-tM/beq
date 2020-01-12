@@ -635,7 +635,7 @@ module.exports.createTranslation = function(beqTalk)
         if (msgCat != undefined)
         {
             //Maybe preprocess the output to be nicer?
-            sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline + beqTalk.newline;
+            sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline;
         }
 		}
 	}
@@ -645,7 +645,7 @@ module.exports.createTranslation = function(beqTalk)
 	if (count >= beqTalk.limitRes)
 		sndMessage += intText.resTMR + beqTalk.newline;
 
-	return sndMessage;
+	return sndMessage + beqTalk.newline;
 }
 
 module.exports.createTranslationList = function(beqTalk)
