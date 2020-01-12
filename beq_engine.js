@@ -605,7 +605,7 @@ module.exports.createTranslation = function (beqTalk)
 						transText = 'transitive';
 				}
 
-				sndMessage += (+beqTalk.startRes + +count).toString() + ') ' + getWType(item.type, listLang) + ': ';
+				sndMessage += '**' + (+beqTalk.startRes + +count).toString() + '**) ' + getWType(item.type, listLang) + ': ';
 				sndMessage += item[beqTalk.lookLang] + beqTalk.newline;
 				if (transText != '')
 					sndMessage += '*(' + transText + ')*' + beqTalk.newline;
@@ -968,6 +968,7 @@ function getWType(wType, tranLang)
 //Get SENTENCE type - needed for KWOTD
 function getSType(wType, tranLang)
 {
+    logger.info("getSType beq_engine");
 	var wTypeW = wType.split(':')[0];
 	var wTypeS = wType.split(':')[1];
 
