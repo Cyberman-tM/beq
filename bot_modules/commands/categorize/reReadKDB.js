@@ -61,6 +61,8 @@ module.exports = function(beq_engine)
 	    newCategory += ";sentence_secret_proverb_boqwi";
 	if (item.type == 'sen:lyr')
 	    newCategory += ";sentence_lyrics_boqwi";
+	    
+       //TODO: categorize by source
        
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
