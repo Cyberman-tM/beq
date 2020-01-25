@@ -119,7 +119,7 @@ module.exports = function (beq_engine)
 			           catFound = true;
 
 				//Word is not categorized yet
-				if (catFound == false ||
+				if (catFound == false)
 				{
 					//Store as uhmal
 					chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
