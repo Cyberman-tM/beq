@@ -9,7 +9,6 @@ var logger = require('winston');
 
 module.exports = function(beq_engine)
 {
-	logger.info("rereadkdb");
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item)
     {
@@ -75,10 +74,11 @@ module.exports = function(beq_engine)
 	if (item.source.includes("KLI mailing list"))
 	{	   
 		logger.info(item.source);
-	    var regexLook = '^(?:KLI mailing list) ([0-9]{4})$';
+	    var regexLook = '(?:KLI mailing list) ([0-9]{4})';
 	    var RE = new RegExp(regexLook, '');
-	    newCategory +=";source_kli_maillist_";
-	    newCategory += item.source.match(RE)[1];
+	    var result = item.source.match(RE);
+	    if (result.length > 1)
+ 	       newCategory +=";source_kli_maillist_" + result[1];
 	}
 //	if (item.source.includes(""))
 //	    newCategory +=";source_";
