@@ -9,6 +9,7 @@ var logger = require('winston');
 
 module.exports = function(beq_engine)
 {
+	logger.info("rereadkdb");
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item)
     {
@@ -82,8 +83,7 @@ module.exports = function(beq_engine)
 //	if (item.source.includes(""))
 //	    newCategory +=";source_";
 	    
-       //TODO: categorize by source
-       
+     
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
           newCategory = newCategory.substr(1,9999);
