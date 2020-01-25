@@ -81,7 +81,7 @@ module.exports = function (beq_engine)
 		if (item.source.includes("SkyBox"))
 			newCategory += ";source_skybox";
 		if (item.source.includes("BoP"))
-			newCategory += ";source_bp";
+			newCategory += ";source_bop";
 		if (item.source.includes("msn"))
 			newCategory += ";source_msn";
 		if (item.source.includes("s.e"))
