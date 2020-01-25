@@ -11,7 +11,7 @@ module.exports = function(beq_engine)
     var allCats = Object.keys(beq_engine.catDataCategs).sort();
     var lastChar = '';
     
-    tmpRet = "Currently available categories:\n```";
+    tmpRet = "Currently available categories:\n";
     allCats.forEach(function(item)
     {
       //Woher kommt der leere Eintrag?
@@ -25,6 +25,5 @@ module.exports = function(beq_engine)
         tmpRet += item + " (" + beq_engine.catDataCategs[item].length  + ")\n";
       }
     });
-    tmpRet += "```";
     return tmpRet;    
 }
