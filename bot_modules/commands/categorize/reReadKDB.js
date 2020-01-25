@@ -62,6 +62,7 @@ module.exports = function(beq_engine)
 	if (item.type == 'sen:lyr')
 	    newCategory += ";sentence_lyrics_boqwi";
 	    
+	    logger.info(item.source);
 	if (item.source.includes("TKD"))
 	    newCategory +=";source_tkd";
 	if (item.source.includes("DSC"))
@@ -72,6 +73,7 @@ module.exports = function(beq_engine)
 	    newCategory +=";source_tos";
 	if (item.source.includes("KLI mailing list"))
 	{	   
+		logger.info(item.source);
 	    var regexLook = '^(?:KLI mailing list) ([0-9]{4})$';
 	    var RE = new RegExp(regexLook, '');
 	    newCategory +=";source_kli_maillist_";
