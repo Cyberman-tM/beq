@@ -47,8 +47,6 @@ module.exports = function (beq_engine)
 			newCategory += ";sentence_muqad_ves_boqwi";
 		if (item.type == 'sen:nt')
 			newCategory += ";sentence_nentay_boqwi";
-		if (item.type == 'sen:phr')
-			newCategory += ";sentence_phrase_boqwi";
 		if (item.type == 'sen:prov')
 			newCategory += ";sentence_proverb_boqwi";
 		if (item.type == 'sen:Ql')
