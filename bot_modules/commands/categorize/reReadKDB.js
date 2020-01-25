@@ -110,12 +110,12 @@ module.exports = function (beq_engine)
 		{
 			var catFound = false;
 			var newCats = newCategory.split(";");
-			newCats.forEach(function (item)
+			newCats.forEach(function (itemCat)
 			{
 				catFound = false;
 				if (( beq_engine.catDataWords != null &&
  				      beq_engine.catDataWords[chkWord] != undefined ) &&
-				      beq_engine.catDataWords[chkWord].includes(item))
+				      beq_engine.catDataWords[chkWord].includes(itemCat))
 			           catFound = true;
 
 				//Word is not categorized yet
@@ -123,7 +123,7 @@ module.exports = function (beq_engine)
 				{
 					//Store as uhmal
 					chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
-					requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord + "&wordCat=" + item);
+					requestify.get("http://www.tlhingan.at/Misc/beq/wordCat/beq_addCategory.php?wordKey=" + chkWord + "&wordCat=" + itemCat);
 				}
 			}
 			);
