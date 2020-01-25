@@ -62,6 +62,24 @@ module.exports = function(beq_engine)
 	if (item.type == 'sen:lyr')
 	    newCategory += ";sentence_lyrics_boqwi";
 	    
+	if (item.source.includes("TKD"))
+	    newCategory +=";source_tkd";
+	if (item.source.includes("DSC"))
+	    newCategory +=";source_discovery";
+	if (item.source.includes("KGT"))
+	    newCategory +=";source_kgt";
+	if (item.source.includes("TOS"))
+	    newCategory +=";source_tos";
+	if (item.source.includes("KLI mailing list"))
+	{	   
+	    var regexLook = '^(?:KLI mailing list) ([0-9]{4})$';
+	    var RE = new RegExp(regexLook, '');
+	    newCategory +=";source_kli_maillist_";
+	    newCategory += item.source.match(RE)[1];
+	}
+//	if (item.source.includes(""))
+//	    newCategory +=";source_";
+	    
        //TODO: categorize by source
        
        //Besserer Weg?
