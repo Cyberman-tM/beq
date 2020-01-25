@@ -19,7 +19,8 @@ module.exports = function(beq_engine, dataString)
     if (args[0] == "")
 	    args.shift();
 	
-	//TODO: _ auf blank umsetzen
+   //Some words have two words
+   args[0] = args[0}.replace('_', ' ');
 	
     var newCategory = args[1].toUpperCase();   
     
