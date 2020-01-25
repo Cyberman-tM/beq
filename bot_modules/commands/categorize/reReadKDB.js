@@ -65,12 +65,35 @@ module.exports = function(beq_engine)
 	    logger.info(item.source);
 	if (item.source.includes("TKD"))
 	    newCategory +=";source_tkd";
+	if (item.source.includes("TKW"))
+	    newCategory +=";source_tkw";
 	if (item.source.includes("DSC"))
 	    newCategory +=";source_discovery";
 	if (item.source.includes("KGT"))
 	    newCategory +=";source_kgt";
-	if (item.source.includes("TOS"))
-	    newCategory +=";source_tos";
+	if (item.source.includes("CK"))
+	    newCategory +=";source_ck";
+	if (item.source.includes("PK"))
+	    newCategory +=";source_pk";
+	if (item.source.includes("KCD"))
+	    newCategory +=";source_kcd";
+	if (item.source.includes("TNK"))
+	    newCategory +=";source_tnk";
+	if (item.source.includes("HQ"))
+	    newCategory +=";source_hq";
+	if (item.source.includes("SkyBox"))
+	    newCategory +=";source_skybox";
+	if (item.source.includes("BoP"))
+	    newCategory +=";source_bp";
+	if (item.source.includes("msn"))
+	    newCategory +=";source_msn";
+	if (item.source.includes("s.e"))
+	    newCategory +=";source_s.e";
+	if (item.source.includes("s.k"))
+	    newCategory +=";source_s.k";
+	if (item.source.includes("FTG"))
+	    newCategory +=";source_ftg";
+
 	if (item.source.includes("KLI mailing list"))
 	{	   
 		logger.info(item.source);
@@ -80,10 +103,6 @@ module.exports = function(beq_engine)
 	    if (result.length > 1)
  	       newCategory +=";source_kli_maillist_" + result[1];
 	}
-//	if (item.source.includes(""))
-//	    newCategory +=";source_";
-	    
-     
        //Besserer Weg?
        if (newCategory.substr(0,1) == ';')
           newCategory = newCategory.substr(1,9999);
