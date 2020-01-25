@@ -99,6 +99,17 @@ module.exports = function (beq_engine)
 			if (result.length > 1)
 				newCategory += ";source_kli_maillist_" + result[1];
 		}
+		
+		if (item.source.includes("qepHom'a'"))
+		{
+			var regexLook = "(?:Saarbrücken qepHom'a') ([0-9]{4})";
+			var RE = new RegExp(regexLook, '');
+			var result = item.source.match(RE);
+			if (result.length > 1)
+				newCategory += ";source_qephom_" + result[1];
+		}
+		
+		
 		//Besserer Weg?
 		if (newCategory.substr(0, 1) == ';')
 			newCategory = newCategory.substr(1, 9999);
