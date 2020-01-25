@@ -84,8 +84,10 @@ module.exports = function(beq_engine)
             {
                 if (item.includes("BOQWI"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
+		else if (item.startsWith("source")
+	            beq_engine.catDesc[item] = "Source of the definition. Most likely generated from boQwI'";
                 else
-                    beq_engine.catDesc[item] = "Description missing!";
+                    beq_engine.catDesc[item] = "Description missing!";		  
 		    
             }
         });
