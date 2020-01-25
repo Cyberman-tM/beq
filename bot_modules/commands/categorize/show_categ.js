@@ -22,6 +22,12 @@ module.exports = function (beq_engine, lookWord)
 {
 	var tmpRet = "";
 	lookWord = lookWord.toUpperCase();
+	
+	if (lookWord == 'SOURCE')
+	{
+		tmpRet = "Sorry, this category is HUGE, it cannot be displayed. Chose a subcategory!";
+		return tmpRet;
+	}
 
 	//Any specific category should include implicit subcategories
 	var allCat = Object.keys(beq_engine.catDataCategs);
