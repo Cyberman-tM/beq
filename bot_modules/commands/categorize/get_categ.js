@@ -115,6 +115,12 @@ module.exports = function(beq_engine)
 		       beq_engine.catDesc[item] += "Star trek Klingon newsgroup";
 		   else if (item.includes("FTG"))
 		       beq_engine.catDesc[item] += "Federation Travel Guide";
+		   else if (item.includes("KLI_MAILLIST"))
+		       beq_engine.catDesc[item] += "KLI Mailing list";
+		   else if (item.includes("QEPHOM"))
+		       beq_engine.catDesc[item] += "qepHom Saarbrücken";
+		   else
+		       beq_engine.catDesc[item] += "unknown sources";
 		}
                 else
                     beq_engine.catDesc[item] = "Description missing!";		  
