@@ -19,6 +19,8 @@ module.exports = function(beq_engine, dataString)
     if (args[0] == "")
 	    args.shift();
 	
+	//TODO: _ auf blank umsetzen
+	
     var newCategory = args[1].toUpperCase();   
     
     //We have main categories and subcategories
