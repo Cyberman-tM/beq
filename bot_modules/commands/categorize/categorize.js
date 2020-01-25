@@ -20,7 +20,7 @@ module.exports = function(beq_engine, dataString)
 	    args.shift();
 	
    //Some words have two words
-   args[0] = args[0}.replace('_', ' ');
+   args[0] = args[0].replace('_', ' ');
 	
     var newCategory = args[1].toUpperCase();   
     
