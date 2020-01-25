@@ -84,8 +84,38 @@ module.exports = function(beq_engine)
             {
                 if (item.includes("BOQWI"))
                     beq_engine.catDesc[item] = "Auto-generated from boQwI' data";
-		else if (item.startsWith("source"))
-	            beq_engine.catDesc[item] = "Source of the definition. Most likely generated from boQwI'";
+		else if (item.startsWith("SOURCE"))
+		{
+		   beq_engine.catDesc[item] = "Source of definition comes from ";
+		   if (item.includes("TKD")
+		       beq_engine.catDesc[item] += "The Klingon Dictionary (Addendum)";
+		   else if (item.includes("TKW")
+		       beq_engine.catDesc[item] += "The Klingon Way";
+		   else if (item.includes("KGT")
+		       beq_engine.catDesc[item] += "Klingon for the Galactic Traveller";
+		   else if (item.includes("CK")
+		       beq_engine.catDesc[item] += "Conversational Klingon";
+		   else if (item.includes("PK")
+		       beq_engine.catDesc[item] += "Power Klingon";
+		   else if (item.includes("KCD")
+		       beq_engine.catDesc[item] += "Klingon CD (game)";
+		   else if (item.includes("TNK")
+		       beq_engine.catDesc[item] += "Talk Now! Klingon";
+		   else if (item.includes("HQ")
+		       beq_engine.catDesc[item] += "HolQeD";
+		   else if (item.includes("SKYBOX")
+		       beq_engine.catDesc[item] += "SkyBox";
+		   else if (item.includes("BOP")
+		       beq_engine.catDesc[item] += "Bird Of Prey poster";
+		   else if (item.includes("MSN")
+		       beq_engine.catDesc[item] += "MSN expert forum";
+		   else if (item.includes("S.E")
+		       beq_engine.catDesc[item] += "Star trek Expert forum";
+		   else if (item.includes("S.K")
+		       beq_engine.catDesc[item] += "Star trek Klingon newsgroup";
+		   else if (item.includes("FTG")
+		       beq_engine.catDesc[item] += "Federation Travel Guide";
+		}
                 else
                     beq_engine.catDesc[item] = "Description missing!";		  
 		    
