@@ -609,7 +609,8 @@ function langKnown(language)
 
 function BTalk(message)
 {
-   botSendMessage(1, this, DData.bTChan, message);
+	//Macht Ärger?
+   //botSendMessage(1, this, DData.bTChan, message);
 };
 
 
