@@ -605,12 +605,12 @@ function langKnown(language)
 		return true;
 	else
 		return false;
-}
+};
 
 function BTalk(message)
 {
    botSendMessage(1, this, DData.bTChan, message);
-}
+};
 
 
 
