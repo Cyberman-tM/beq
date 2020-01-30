@@ -441,6 +441,8 @@ bot.on('message', function (messageDJS)
 
 			if ((dynArg).indexOf('source') >= 0)
 				beqTalk.showSource = true;
+				
+			BTalk("showSource:" + beqTalk.showSource);
 
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
@@ -604,3 +606,11 @@ function langKnown(language)
 	else
 		return false;
 }
+
+function BTalk(message)
+{
+   botSendMessage(1, this, DData.bTChan, sendMessage);
+}
+
+
+
