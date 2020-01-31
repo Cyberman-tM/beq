@@ -644,7 +644,7 @@ module.exports.createTranslation = function (beqTalk)
 				if (item.hidden_notes != '')
 					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
-			logger.info(item.source);
+
 			if (beqTalk.showSource == true && item.source != undefined)
 				sndMessage += intText.resSrc + " " + item.source + beqTalk.newline;
 
@@ -1080,6 +1080,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 					break;
 				case 'source':
 					emptyStruct.source = item.firstChild.text;
+									logger.info(emptyStruct.source);
 					break;
 				}
 			}
