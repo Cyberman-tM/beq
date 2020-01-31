@@ -1080,7 +1080,6 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 					break;
 				case 'source':
 					emptyStruct.source = item.firstChild.text;
-									logger.info(emptyStruct.source);
 					break;
 				}
 			}
@@ -1116,7 +1115,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		emptyStruct.notes_de = emptyStruct.notes_de.replace(regClean, '');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regClean, '');
 		emptyStruct.source = emptyStruct.source.replace(regClean, '');
-
+			logger.info(emptyStruct.source);
 		var regClean2 = ",nolink";
 		emptyStruct.notes = emptyStruct.notes.replace(regClean2, '');
 		emptyStruct.notes_de = emptyStruct.notes_de.replace(regClean2, '');
@@ -1129,6 +1128,7 @@ function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon)
 		emptyStruct.notes_de = emptyStruct.notes_de.replace(regMark, '*');
 		emptyStruct.hidden_notes = emptyStruct.hidden_notes.replace(regMark, '*');
 		emptyStruct.source = emptyStruct.source.replace(regMark, '*');
+			logger.info(emptyStruct.source);
 
 		//Push it into the array
 		KDBJSon.push(emptyStruct);
