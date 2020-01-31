@@ -472,6 +472,9 @@ bot.on('message', function (messageDJS)
 			{
 				//Let the engine do its magic :-)
 				talkBeq = beq.Engine(beqTalk);
+				
+				//Make sure the showSource flag stays
+				talkBeq.showSource = beqTalk.showSource;
 			}
 
 			sndMessage = beq.createTranslation(talkBeq);
