@@ -644,6 +644,7 @@ module.exports.createTranslation = function (beqTalk)
 				if (item.hidden_notes != '')
 					sndMessage += 'Hidden notes: ' + item.hidden_notes + beqTalk.newline;
 			}
+			logger.info(item.source);
 			if (beqTalk.showSource == true && item.source != undefined)
 				sndMessage += intText.resSrc + " " + item.source + beqTalk.newline;
 
