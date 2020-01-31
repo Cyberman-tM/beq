@@ -442,7 +442,7 @@ bot.on('message', function (messageDJS)
 			if ((dynArg).indexOf('source') >= 0)
 				beqTalk.showSource = true;
 				
-			BTalk("showSource:");
+			BTalk("showSource:" + showSource);
 
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
