@@ -471,7 +471,6 @@ bot.on('message', function (messageDJS)
 			else
 			{
 				//Let the engine do its magic :-)
-				BTalk("showSource:" + beqTalk.showSource);
 				talkBeq = beq.Engine(beqTalk);
 			}
 
