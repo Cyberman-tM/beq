@@ -98,7 +98,7 @@ module.exports.KWOTDTranslate = function(beqTalk, item)
 	
 		 sndMessage += 'Type of word: *' + wordType + '*' + beqTalk.newline;
 		 sndMessage += 'English: *' + item.en + '*' + beqTalk.newline;
-		 sndMessage += 'Deutsch: *' + item.de + '*' + beqTalk.newline;
+		 sndMessage += '🇩🇪: *' + item.de + '*' + beqTalk.newline;
 		 sndMessage += beqTalk.newline;
 		if (item.notes != '')
 			sndMessage += 'Notes: ' + item.notes + beqTalk.newline;
