@@ -477,7 +477,7 @@ To juggle, that is, to throw objects into the air and catch them in a rhythmic p
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This was the winning replacement proverb entry, submitted by Rich Yampell ({Qanqor:n:name,nolink}), in the proverbs competition at {qep'a' 2014:src}.</column>
+      <column name="hidden_notes">This was the winning replacement proverb entry, submitted by Rich Yampell ({Qanqor:n:name,nolink}), in the proverbs competition at {qep'a' 21 (2014):src}.</column>
       <column name="components">{jagh:n}, {yI-:v}, {buS:v}, {-taH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -491,7 +491,7 @@ To juggle, that is, to throw objects into the air and catch them in a rhythmic p
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2014:src}</column>
+      <column name="source">[1] {qep'a' 21 (2014):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -596,7 +596,7 @@ To juggle, that is, to throw objects into the air and catch them in a rhythmic p
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -787,7 +787,7 @@ For "days ago" and "days from now", see {Hu':n} and {leS:n}, respectively.</colu
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1037,7 +1037,7 @@ For "days ago" and "days from now", see {Hu':n} and {leS:n}, respectively.</colu
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1533,7 +1533,7 @@ Note that in Klingon, "deep space" is called {logh Hop:n}, literally, "far space
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2012:src} ({KLI mailing list 2012.08.30:src}), [2] {Saarbrücken qepHom'a' 2013:src} ({KLI mailing list 2014.01.15:src})</column>
+      <column name="source">[1] {qep'a' 19 (2012):src} ({KLI mailing list 2012.08.30:src}), [2] {Saarbrücken qepHom'a' 2013:src} ({KLI mailing list 2014.01.15:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1729,7 +1729,9 @@ The "prefix trick" may be used with this verb: if the verb prefix indicates a fi
 
 The verb {jatlh:v:nolink} is also used when giving a direct quotation, in which case the verb prefix indicating no object is used (except if the "prefix trick" is applied). The quotation may come before or after the sentence with {jatlh:v:nolink}.[3]
 
-This is one of the few "verbs of speech" in Klingon. In Klingon, quotations must always be accompanied by one of these verbs.[4]</column>
+This is one of the few "verbs of speech" in Klingon. In Klingon, quotations must always be accompanied by one of these verbs.[4]
+
+For expressing "read aloud" (e.g., a book), something like {paq mu'mey jatlh:sen:nolink} would work.[6]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1739,7 +1741,9 @@ This is one of the few "verbs of speech" in Klingon. In Klingon, quotations must
 
 Глагол {jatlh:v:nolink} также используется, когда даётся прямая цитата, в каком случае глагольный префикс не указывает ни на какой объект (за исключением, если применен "трюк с префиксом"). Цитата может идти до или после предложения с {jatlh:v:nolink}.[3]
 
-Это один из нескольких "речевых глаголов" в Клингонском. В Клингонском цитать должны всегда сопровождаться одним из этих глаголов.[4]</column>
+Это один из нескольких "речевых глаголов" в Клингонском. В Клингонском цитать должны всегда сопровождаться одним из этих глаголов.[4]
+
+For expressing "read aloud" (e.g., a book), something like {paq mu'mey jatlh:sen:nolink} would work.[6]</column>
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes">In {TKD:src}, this is defined in the K-E word list as "say", and listed in the E-K word list under "speak". In {TKDA:src}, it is defined in both word lists as "say".
 
@@ -1770,7 +1774,7 @@ In the {msn:src} newsgroup message, it says only that the verb prefix indicating
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {TKDA:src}, [3] {msn 1997.06.29:src}, [4] {HQ 7.4, Dec. 1998:src}, [5] {ENT - Affliction:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {TKDA:src}, [3] {msn 1997.06.29:src}, [4] {HQ 7.4, Dec. 1998:src}, [5] {ENT - Affliction:src}, [6] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2016,7 +2020,7 @@ In the {msn:src} newsgroup message, it says only that the verb prefix indicating
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2272,7 +2276,9 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
 ▶ {SenwI' rIlwI' je:n}
 ▶ {tay'taHbe' 'Iw bIQ je.:sen}
 ▶ Paramount Pictures {malja' permey bIH:sen:nolink} Star Trek {pong'e' Deghmey'e' je.:sen:nolink}[2]
-▶ {wa' Dol bIH qa''e' porgh'e' je.:sen@@wa':n:num, Dol:n, bIH:n:pro, qa':n, -'e':n, porgh:n, -'e':n, je:conj} "Spirit and body are one."[3]</column>
+▶ {HoS law'qu' luch law'qu' je lo' Duj nuH pat Hub pat je.:sen:nolink} "A huge amount of the ship's power and technology is devoted to its weapons grid and defensive systems."[3]
+▶ {wa' Dol bIH qa''e' porgh'e' je.:sen@@wa':n:num, Dol:n, bIH:n:pro, qa':n, -'e':n, porgh:n, -'e':n, je:conj} "Spirit and body are one."[4]
+▶ {Quj wa'DIch juH qachmey mebpa'mey je qa' raQmey chu' monmey chu' je:sen:nolink} "Custom OUTPOSTS and CAPITALS replace original Houses and Hotels"[5]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2284,7 +2290,7 @@ In addition to nouns, {je:sen:nolink} can also follow a verb. See {je:adv}.</col
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {SkyBox cards:src}, [3] {paq'batlh p.102-103:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {SkyBox cards:src}, [3] {SkyBox 3:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src}), [4] {paq'batlh p.102-103:src}, [5] {Klingon Monopoly:src}</column>
     </table>
     <table name="mem">
       <!-- This is an adverbial, despite not being labeled as such in TKD. -->
@@ -2685,7 +2691,7 @@ There is also an idiom, {jej; Daqtagh rur@@jej:v, Daqtagh:n, rur:v}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3274,7 +3280,7 @@ This verb is used in Sonnet 116, where its explicit subject is {muD:n:nolink}.[2
       <column name="definition">defeat</column>
       <column name="definition_de">(Feind) schlagen</column>
       <column name="definition_fa">شکست [AUTOTRANSLATED]</column>
-      <column name="definition_sv">besegra</column>
+      <column name="definition_sv">besegra, vinna över</column>
       <column name="definition_ru">побеждать, нанести поражение, уничтожать, разбивать врага</column>
       <column name="definition_zh_HK">打敗 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
@@ -3621,7 +3627,7 @@ This verb is used in Sonnet 116, where its explicit subject is {muD:n:nolink}.[2
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {qep'a' 2017:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <!-- Is this plural? -->
@@ -4471,7 +4477,7 @@ To express a wish for something to happen, see {-jaj:v}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4506,7 +4512,7 @@ To express a wish for something to happen, see {-jaj:v}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4649,7 +4655,7 @@ The first half of the example sentence was a lip-match for the beginning of {'ej
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4789,7 +4795,7 @@ The first half of the example sentence was a lip-match for the beginning of {'ej
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4860,7 +4866,7 @@ The first half of the example sentence was a lip-match for the beginning of {'ej
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5861,7 +5867,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <!-- TODO: Fix Russian. -->
@@ -6248,7 +6254,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6637,7 +6643,7 @@ If {-Daq:n} is used, it implies a miss: air was blown towards the object, but by
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7002,7 +7008,7 @@ If {-Daq:n} is used, it implies a miss: air was blown towards the object, but by
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2011:src}</column>
+      <column name="source">[1] {qep'a' 18 (2011):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

@@ -101,7 +101,7 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.158-159:src}, [3] {qep'a' 2019:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.158-159:src}, [3] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -136,7 +136,7 @@
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {KGT:src}, [3] {qep'a' 2016:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT:src}, [3] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -945,7 +945,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes">This was the winning replacement proverb entry, submitted by Alan Anderson ({ghunchu'wI':n:name,nolink}), in the proverbs competition at {qep'a' 2018:src}.</column>
+      <column name="hidden_notes">This was the winning replacement proverb entry, submitted by Alan Anderson ({ghunchu'wI':n:name,nolink}), in the proverbs competition at {qep'a' 25 (2018):src}.</column>
       <column name="components">{Qap:v:1}, {tlham:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -959,7 +959,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -994,7 +994,7 @@ Watch a lesson on this word: {YouTube video:url:http://youtu.be/auqS6FR_RDE}</co
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2249,7 +2249,7 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2319,7 +2319,7 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source"></column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3075,7 +3075,7 @@ The names of the Klingon consonants consist of the sound followed by {ay:sen:nol
       <column name="definition">wrong, treat unjustly</column>
       <column name="definition_de">ungerecht behandeln, misshandeln</column>
       <column name="definition_fa">اشتباه، درمان ناعادلانه [AUTOTRANSLATED]</column>
-      <column name="definition_sv">göra orätt (mot), behandla oschyst</column>
+      <column name="definition_sv">göra orätt (mot), behandla oschyst, kränka</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">錯了、不公正待人 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
@@ -3380,7 +3380,7 @@ It is used to refer to the point on a (geometric) star ({DujtlhuQ:n}).[3]</colum
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">mail</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3526,7 +3526,7 @@ It is used to refer to the point on a (geometric) star ({DujtlhuQ:n}).[3]</colum
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2011:src}</column>
+      <column name="source">[1] {qep'a' 18 (2011):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3633,7 +3633,7 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2016:src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3685,15 +3685,15 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="see_also">{DIS chu':n}</column>
       <column name="notes">This is the name of a Terran holiday.
 
-There is no traditional Klingon way to say something like "Merry Christmas". An expression such as {wornagh yItlhutlh!} might be more appropriate.</column>
+There is no traditional Klingon way to say something like "Merry Christmas". An expression such as {wornagh yItlhutlh!} might be more appropriate.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru">Это название земного праздника.
 
-Не существует традиционного способ сказать что-то типа "Счастливого рождества". Выражение типа {wornagh yItlhutlh!} может быть наиболее соответствующим для этого.</column>
+Не существует традиционного способ сказать что-то типа "Счастливого рождества". Выражение типа {wornagh yItlhutlh!} может быть наиболее соответствующим для этого.[1]</column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Maltz thought "Merry Christmas" and "Happy New Year" were silly things to say.[1]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4704,7 +4704,7 @@ Agreement is also expressed by the idiomatic expression {wa' DoS wIqIp.:sen:idio
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {Letter from MO 2010.11.15:src} ({KLI mailing list 2010.12.07:src})</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2010:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5061,6 +5061,7 @@ Types of Klingon musical instruments include: percussion ({'In:n}), wind (no ove
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- "expensive very minor battle", referring to Windows? -->
       <column name="_id"></column>
       <column name="entry_name">Qorwagh</column>
       <column name="part_of_speech">n</column>
@@ -5072,9 +5073,8 @@ Types of Klingon musical instruments include: percussion ({'In:n}), wind (no ove
       <column name="definition_zh_HK">窗口</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{lojmIt:n}</column>
+      <column name="see_also">{notron:n}, {lojmIt:n}</column>
       <column name="notes"></column>
-      <!-- "expensive very minor battle", referring to Windows? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5419,6 +5419,7 @@ In the Krotmag region, speakers replace {b:sen:nolink} with {m:sen:nolink} and {
       <column name="source">[1] {TKD:src}, [2] {TKW:src}</column>
     </table>
     <table name="mem">
+      <!-- TODO: Fix Russian note on the archaic grammar to match the English.-->
       <column name="_id"></column>
       <column name="entry_name">QoymoH</column>
       <column name="part_of_speech">v:t_c,deriv</column>
@@ -5489,7 +5490,7 @@ In the Krotmag region, speakers replace {b:sen:nolink} with {m:sen:nolink} and {
 
 There is a variant of this song in which the word {Say'moHchu':v:nolink} is replaced with {SeymoHchu':v:nolink}. The variant line means "The blood of battle perfectly excites the warrior brave and true."
 
-The line {yoHbogh matlhbogh je SuvwI':sen:nolink} is not a mistake, but a deliberately poetic or archaic usage, which is mirrored by the English "warrior brave and true". In standard Klingon, it would be {yoHbogh 'ej matlhbogh SuvwI':sen:nolink}.[2]</column>
+The line {yoHbogh matlhbogh je SuvwI':sen:nolink} should be {yoHbogh 'ej matlhbogh SuvwI':sen:nolink} in standard Klingon. However, this may not be a mistake, but rather Okrand deliberately mirroring the marked, archaic English phrase "warrior brave and true".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5860,7 +5861,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
 
 Сленговое значение {chong:v:2,slang}, когда применяется к лицу, эквивалентно {Qubchu'} "Ясно мыслить".[3]</column>
       <column name="notes_zh_HK"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The noun {buSHach:n:hyp} was rumoured to have been revealed at {qep'a' 26 (2019):src}, but has not been officially confirmed.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {tlhIngan Hol Dajatlh 'e' vIQub.:sen:nolink} "I think that you speak Klingon."[2]</column>
@@ -7113,7 +7114,7 @@ The slang meaning of {chong:v:2,slang}, when applied to a person, is equivalent 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

@@ -237,7 +237,8 @@ The suits in a deck of playing cards are called {Degh:n:1}.</column>
       <column name="hidden_notes"></column>
       <column name="components">{'echlet:n}, {-Hom:n}</column>
       <column name="examples">
-▶ {Quj wa'DIch juH qachmey mebpa'mey je qa' raQmey chu' monmey chu' je:sen:nolink} "Custom OUTPOSTS and CAPITALS replace original Houses and Hotels"[1]</column>
+▶ {Chance 'echletHommey Community Chest 'echletHommey je qa' quv 'echletHommey vIq 'echletHommey je:sen:nolink} "COMBAT and HONOR cards replace Chance and Community Chest cards"[1]
+▶ {'echletHom Dopvam yIcha':sen:nolink} "card must be turned this side up"[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -284,7 +285,7 @@ The suits in a deck of playing cards are called {Degh:n:1}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -319,7 +320,7 @@ The suits in a deck of playing cards are called {Degh:n:1}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -566,7 +567,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -892,7 +893,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2007:src}</column>
+      <column name="source">[1] {qep'a' 14 (2007):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1032,7 +1033,7 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1102,9 +1103,10 @@ When connecting multiple sentences, only the final conjunction is needed. See th
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
+      <!-- Something to do with "appendix"? -->
       <column name="_id"></column>
       <column name="entry_name">'enDeq</column>
       <column name="part_of_speech">n:body</column>
@@ -1318,7 +1320,7 @@ It takes the suffix {-Du':n} even when used metaphorically.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {TKD:src}, [2] {qep'a' 2017:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1425,7 +1427,7 @@ It takes the suffix {-Du':n} even when used metaphorically.[2]</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2011:src}, via {'ISqu':n:name,nolink}</column>
+      <column name="source">[1] {qep'a' 18 (2011):src}, via {'ISqu':n:name,nolink}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1673,7 +1675,7 @@ This word should not be confused with {'eQway:n}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1708,7 +1710,7 @@ This word should not be confused with {'eQway:n}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1990,7 +1992,7 @@ This word should not be confused with {'eQway:n}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2140,7 +2142,7 @@ Do not confuse this pronoun with the suffix {-'e':n:suff}.</column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
