@@ -10,6 +10,8 @@ module.exports.beqTalkDef = JSON.stringify(
 	"simple": "",
 	"special": "",
 	"showNotes": false,
+	"showSource": false,
+	"showCat": false,
 	"wordType1": null,
 	"wordType2": null,
 	"startRes": '0',

@@ -116,7 +116,7 @@ bot.on('message', function (messageDJS)
 		logger.info(cmdMagic);
 
 	//GEneral info: ! => default command indicator
-	//              ? => shorthand for translation (mugh), only applicable in certain channels
+	//              ? => shorthand for translation (mugh)
 	//              % => default GAME indicator
 	//              $ => Categorize words
 
@@ -130,10 +130,6 @@ bot.on('message', function (messageDJS)
 		//Special processing, there are shortcut commands, we have to translate them to normal commands
 		if (cmdMagic == '?')
 		{
-			//Ask beq or Stammtisch
-			if (channelID == DData.clipChan ||
-				channelID == DData.StammChan)
-			{
 				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
 				if (message.substring(0, 3) == 'tlh')
 					beqTalk.showNotes = true;
@@ -141,9 +137,6 @@ bot.on('message', function (messageDJS)
 				//A ? always means "mugh", translate. And must be followed by the language, without space.
 				//So we can simply replace the ? with "mugh " and the rest will work normally
 				message = "mugh " + message;
-			}
-			else
-				message = '!noShort';
 		}
 
 		var args = message.substring(0).split(' ');

@@ -552,6 +552,7 @@ module.exports.createTranslation = function (beqTalk)
 		beqTalk.simple = true;
 		beqTalk.showNotes = false;
 		beqTalk.showSource = false;
+        beqTalk.showCat    = false;
 	}
 
 	var count = 0;
@@ -666,14 +667,18 @@ module.exports.createTranslation = function (beqTalk)
 				if (infTips != "")
 					sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
-			//Check for categories
-			var chkCat = item.tlh + ';;' + item.type;
-			var msgCat = module.exports.catDataWords[chkCat];
-			if (msgCat != undefined)
-			{
-				//Maybe preprocess the output to be nicer?
-				sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline;
-			}
+            
+			//Check for categories if requested
+            if (beqTalk.showCat == true)
+            {
+                var chkCat = item.tlh + ';;' + item.type;
+                var msgCat = module.exports.catDataWords[chkCat];
+                if (msgCat != undefined)
+                {
+                    //Maybe preprocess the output to be nicer?
+                    sndMessage += "*Categories: " + msgCat + "*" + beqTalk.newline;
+                }
+            }
 
 			sndMessage += beqTalk.newline;
 		}

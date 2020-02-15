@@ -92,12 +92,13 @@ module.exports.KWOTDTranslate = function(beqTalk, item)
 		 if (item.type.startsWith('sen'))
 		     wordType = boQwITranslate.getSType(item.type, 'en');
 		 else
-		     wordType = boQwITranslate.getWType(item.type, 'en');
-		      
+		     wordType = boQwITranslate.getWType(item.type, 'en');		      
+
+		 sndMessage += '<:flag:387667578572636160> ** *' + item.tlh + '* **' + beqTalk.newline + beqTalk.newline;
+	
 		 sndMessage += 'Type of word: *' + wordType + '*' + beqTalk.newline;
-		 sndMessage += 'tlhIngan: *' + item.tlh + '*' + beqTalk.newline;
-		 sndMessage += 'English: *' + item.en + '*' + beqTalk.newline;
-		 sndMessage += 'Deutsch: *' + item.de + '*' + beqTalk.newline;
+		 sndMessage += '🇺🇸 *' + item.en + '*' + beqTalk.newline;
+		 sndMessage += '🇩🇪 *' + item.de + '*' + beqTalk.newline;
 		 sndMessage += beqTalk.newline;
 		if (item.notes != '')
 			sndMessage += 'Notes: ' + item.notes + beqTalk.newline;
