@@ -94,7 +94,7 @@ module.exports.KWOTDTranslate = function(beqTalk, item)
 		 else
 		     wordType = boQwITranslate.getWType(item.type, 'en');		      
 
-		 sndMessage += ':flag: ** *' + item.tlh + '* **' + beqTalk.newline + beqTalk.newline;
+		 sndMessage += '<:flag:387667578572636160> ** *' + item.tlh + '* **' + beqTalk.newline + beqTalk.newline;
 	
 		 sndMessage += 'Type of word: *' + wordType + '*' + beqTalk.newline;
 		 sndMessage += '🇺🇸 *' + item.en + '*' + beqTalk.newline;
