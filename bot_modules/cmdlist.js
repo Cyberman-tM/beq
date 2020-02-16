@@ -4,7 +4,7 @@
 */
 
 module.exports.cmdlist = ''
-+ '(You can call this list with !cmdlist, !QaH or !help)<BR>'.
++ '(You can call this list with !cmdlist, !QaH or !help)<BR>'
 + '**How to interact with beq**<BR><BR>'
 + 'beq will by definition "read" every message, but reacts only to those that start with'
 + 'a specific character: !, ?, or in some special cases % or $ (ignore those for now)<BR><BR>'
