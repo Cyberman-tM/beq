@@ -55,7 +55,6 @@ module.exports.Word2Num = function(numWord)
 	   
 	   tmpRet += tmpNum * tmpMul;
 	});
-	logger.info(tmpRet);
 	return tmpRet;
 }
 
