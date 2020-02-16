@@ -54,10 +54,8 @@ module.exports.Word2Num = function(numWord)
 		   tmpMul = 1000000;
 	   
 	   tmpRet += tmpNum * tmpMul;
-		logger.info(tmpRet);
-		logger.info(tmpNum);
 	});
-	
+	logger.info(tmpRet);
 	return tmpRet;
 }
 
