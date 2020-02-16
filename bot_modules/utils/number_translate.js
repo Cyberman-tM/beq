@@ -1,3 +1,4 @@
+var logger = require('winston');
 /*
    "Translate" numbers to words and vice versa
    The resultant WORDS are always Number+multiplier, with no space between them, while the words themselves
@@ -15,10 +16,10 @@ module.exports.Word2Num = function(numWord)
 	var words = numWord.split(" ");
 	var tmpRet = 0;
 	var tmpNum = 0;
-	var tmpMul = 0;
+	var tmpMul = 0;	
 	
 	words.forEach(function(item)
-	{		
+	{
 		if (item.startsWith("wa'"))
 		   tmpNum = 1;
 	    else if (item.startsWith("cha'"))
@@ -54,7 +55,6 @@ module.exports.Word2Num = function(numWord)
 	   
 	   tmpRet += tmpNum * tmpMul;
 	});
-	
 	return tmpRet;
 }
 
