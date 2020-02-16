@@ -344,6 +344,7 @@ bot.on('message', function (messageDJS)
 			//Word to Number
 		case 'w2n':
 			sndMessage = NumWords.Word2Num(onePar);
+				logger.info(sndMessage);
 			break;
 			//tlhIngan->xifan etc...
 		case 'recode':
