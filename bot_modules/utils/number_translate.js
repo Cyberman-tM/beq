@@ -20,7 +20,6 @@ module.exports.Word2Num = function(numWord)
 	
 	words.forEach(function(item)
 	{
-		logger.info(item);
 		if (item.startsWith("wa'"))
 		   tmpNum = 1;
 	    else if (item.startsWith("cha'"))
@@ -55,6 +54,8 @@ module.exports.Word2Num = function(numWord)
 		   tmpMul = 1000000;
 	   
 	   tmpRet += tmpNum * tmpMul;
+		logger.info(tmpRet);
+		logger.info(tmpNum);
 	});
 	
 	return tmpRet;
