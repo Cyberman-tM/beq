@@ -194,7 +194,9 @@ bot.on('message', function (messageDJS)
 
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 		case 'CMDLIST':
+		case 'cmdlist':
 		case 'help':
+		case 'HELP':
 		case 'QaH':
 			sndMessage = cmdList.cmdlist;
 			sndMessage = sndMessage.replace(/<BR>/g, beqTalk.newline);
