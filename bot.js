@@ -404,13 +404,14 @@ bot.on('message', function (messageDJS)
 			var p_showNotes = args[8]; //show notes, if available
 			var p_beSimple = args[9]; //Simple output - no frills, delete command message
 			var p_showS = args[10]; //Show sources (if available)
-			var p_special = args[11]; //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
+            var p_showC = args[11]; //Show Category
+			var p_special = args[12]; //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 
 			if (beqTalk.transLang == undefined)
 				beqTalk.transLang = null;
 
 			//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
-			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple + '|' + p_showS;
+			var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple + '|' + p_showS + '|' + p_showC;
 			if (dynArg.indexOf('case') >= 0)
 				beqTalk.wCase = true;
 
@@ -438,6 +439,9 @@ bot.on('message', function (messageDJS)
 
 			if ((dynArg).indexOf('source') >= 0)
 				beqTalk.showSource = true;
+            
+			if ((dynArg).indexOf('cat') >= 0)
+				beqTalk.showCat = true;
 				
 			//These parameters have parameters in themselves
 			//always an equal sign without spaces and the value following it
