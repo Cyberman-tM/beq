@@ -16,11 +16,11 @@ module.exports.Word2Num = function(numWord)
 	var words = numWord.split(" ");
 	var tmpRet = 0;
 	var tmpNum = 0;
-	var tmpMul = 0;
+	var tmpMul = 0;	
 	
-	logger.info(numWord);
 	words.forEach(function(item)
-	{		
+	{
+		logger.info(item);
 		if (item.startsWith("wa'"))
 		   tmpNum = 1;
 	    else if (item.startsWith("cha'"))
