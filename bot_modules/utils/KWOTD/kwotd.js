@@ -83,7 +83,8 @@ module.exports.KWOTD = function(myDate, myHour, myMinute)
 module.exports.KWOTDTranslate = function(beqTalk, item)
 {
 	var sndMessage = "";
-	         sndMessage  = beqTalk.newline + '**KWOTD** - Klingon Word Of The Day - *beq edition*' + beqTalk.newline;
+	         //sndMessage  = beqTalk.newline + '**KWOTD** - Klingon Word Of The Day - *beq edition*' + beqTalk.newline;
+	sndMessage  = beqTalk.newline + '**KWOTD** - *beq edition*' + beqTalk.newline;
 	//Get a little bit of smalltalk :-)
 		 sndMessage += beq.getLine(3, true, true, beqTalk.newline) + beqTalk.newline;
 
