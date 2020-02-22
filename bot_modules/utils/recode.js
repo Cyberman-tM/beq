@@ -226,7 +226,7 @@ logger.info(tmpText);
 	if (tmpText.length > 5)
 	{
 		logger.info(tmpText.substring(4,4));
-		logger.info(Number.isInteger(tmpText.substring(4,4));
+		logger.info(Number.isInteger(tmpText.substring(4,4)));
 		if (Number.isInteger(tmpText.substring(4,4)) == false)	
 		{
 			prefix = tmpText.substring(0,2);
