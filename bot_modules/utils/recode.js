@@ -12,6 +12,7 @@
   Now new: Dialect recoding!
 
 */
+var logger = require('winston');
 
 module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
@@ -221,7 +222,8 @@ module.exports.RC2Morska = function(orig_text)
 	var tmpText = module.exports.RCtlh2u2(orig_text);
 
 	var prefix = '';	
-if (Number.isInteger(tmpText.substring(5,6)) == false)
+	logger.info(Number.isInteger(tmpText.substring(5,6)));
+if (Number.isInteger(tmpText.substring(5,6)) == false)	
 {
    prefix = tmpText.substring(0,2);
    tmpText = tmpText.substring(3,9999);	
