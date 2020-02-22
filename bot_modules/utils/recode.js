@@ -222,12 +222,9 @@ module.exports.RC2Morska = function(orig_text)
 	var tmpText = module.exports.RCtlh2u2(orig_text);
 
 	var prefix = '';	
-logger.info(tmpText);
 	if (tmpText.length > 5)
 	{
-		logger.info(tmpText.substring(4,5));
-		logger.info(Number.isInteger(tmpText.substring(4,5)));
-		if (Number.isInteger(tmpText.substring(4,5)) == false)	
+		if (Number.isInteger(tmpText.substring(4,5)) == true)	
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
@@ -238,12 +235,12 @@ logger.info(tmpText);
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
         tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
-	logger.info(tmpText);
+	
 	tmpText = tmpText.replace(/Q(?=[1-5])/g, '7');	
 	tmpText = tmpText.replace(/u(?=[1-5])/g, '8');
-	logger.info(tmpText);
+	
 	tmpText = tmpText.replace(/(?<=[1-5])u/g, '9');
-	logger.info(tmpText);
+	
 	tmpText = prefix + tmpText;
 	
 	tmpText = module.exports.RCu22tlh(tmpText);
