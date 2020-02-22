@@ -222,20 +222,23 @@ module.exports.RC2Morska = function(orig_text)
 	var tmpText = module.exports.RCtlh2u2(orig_text);
 
 	var prefix = '';	
-	logger.info(Number.isInteger(tmpText.substring(5,6)));
-if (Number.isInteger(tmpText.substring(5,6)) == false)	
-{
-   prefix = tmpText.substring(0,2);
-   tmpText = tmpText.substring(3,9999);	
-}
+
+	if (Number.isInteger(tmpText.substring(5,6)) == false)	
+	{
+   		prefix = tmpText.substring(0,2);
+   		tmpText = tmpText.substring(3,9999);	
+	}
 	prefix = prefix.replace('H', 'h');
-	tmpText = tmpText.replace(/Q(?:[1-5])/g, 'H');
-	tmpText = tmpText.replace(/H(?:[1-5])/g, 'h');
+	
+	logger.info(tmpText);
+	tmpText = tmpText.replace(/(?:[1-5])H/g, '');
+        tmpText = tmpText.replace(/H(?:[1-5])/g, 'h');
+	
+	tmpText = tmpText.replace(/Q(?:[1-5])/g, 'H');	
 	tmpText = tmpText.replace(/tlh(?:[1-5])/g, 'ghl');
 	
-	tmpText = tmpText.replace(/(?:[1-5])H/g, '');
 	tmpText = tmpText.replace(/(?:[1-5])tlh/g, 'ts');
-	
+	logger.info(tmpText);
 	tmpText = prefix + tmpText;
 
 	return tmpText;
