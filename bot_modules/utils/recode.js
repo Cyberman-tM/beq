@@ -228,7 +228,7 @@ module.exports.RC2Morska = function(orig_text)
 		if (Number.isInteger(tmpText.substring(5,6)) == false)	
 		{
 			prefix = tmpText.substring(0,2);
-			tmpText = tmpText.substring(3,9999);	
+			tmpText = tmpText.substring(2,9999);	
 		}
 		prefix = prefix.replace('H', '6');
 	}
