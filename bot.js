@@ -348,7 +348,6 @@ bot.on('message', function (messageDJS)
 			//tlhIngan->xifan etc...
 		case 'recode':
 			beqTalk.transLang = args[1];
-				logger.info(args[1]);
 			//beqTalk.lookLang = args[2];
 			beqTalk.lookLang = 'tlhIngan'; //Kann nichts anderes sein
 			beqTalk.lookWord = args.slice(2, 999).join(' ');
