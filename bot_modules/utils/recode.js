@@ -225,12 +225,12 @@ module.exports.RC2Morska = function(orig_text)
 logger.info(tmpText);
 	if (tmpText.length > 5)
 	{
-		logger.info(Number.isInteger(tmpText.substring(5,5)) == false);
-		if (Number.isInteger(tmpText.substring(5,5)) == false)	
+		logger.info(tmpText.substring(4,4));
+		logger.info(Number.isInteger(tmpText.substring(4,4));
+		if (Number.isInteger(tmpText.substring(4,4)) == false)	
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
-			logger.info('if');
 		}
 		prefix = prefix.replace('H', '6');
 	}
