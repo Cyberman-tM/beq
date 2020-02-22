@@ -270,9 +270,9 @@ module.exports.Engine = function (beqTalk)
 		else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
 			tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
 		else if (beqTalk.lookLang == 'Qotmag' && beqTalk.transLang == 'tlhIngan')
-			tmpText = kTranscode.RCT2Qot(beqTalk.lookWord);
+			tmpText = kTranscode.RC2Qot(beqTalk.lookWord);
 		else if (beqTalk.lookLang == 'taq\'ev' && beqTalk.transLang == 'tlhIngan')
-			tmpText = kTranscode.RCT2taq(beqTalk.lookWord);
+			tmpText = kTranscode.RC2taq(beqTalk.lookWord);
 
 		if (tmpText != '')
 		{
