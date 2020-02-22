@@ -230,6 +230,7 @@ logger.info(tmpText);
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
+			logger.info('if');
 		}
 		prefix = prefix.replace('H', '6');
 	}
