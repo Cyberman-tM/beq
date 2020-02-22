@@ -233,13 +233,13 @@ module.exports.RC2Morska = function(orig_text)
 		prefix = prefix.replace('H', 'h');
 	}
 	
-	tmpText = tmpText.replace(/(?:[1-5])g/g, '');
-        tmpText = tmpText.replace(/g(?:[1-5])/g, 'h');
+	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
+        tmpText = tmpText.replace(/g(?=[1-5])/g, 'h');
 	
-	tmpText = tmpText.replace(/Q(?:[1-5])/g, 'H');	
-	tmpText = tmpText.replace(/u(?:[1-5])/g, 'ghl');
+	tmpText = tmpText.replace(/Q(?=[1-5])/g, 'H');	
+	tmpText = tmpText.replace(/u(?=[1-5])/g, 'ghl');
 	
-	tmpText = tmpText.replace(/(?:[1-5])u/g, 'ts');
+	tmpText = tmpText.replace(/(?<=[1-5])u/g, 'ts');
 	
 	tmpText = prefix + tmpText;
 
