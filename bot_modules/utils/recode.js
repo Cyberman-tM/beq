@@ -225,8 +225,8 @@ module.exports.RC2Morska = function(orig_text)
 
 	if (tmpText.length > 5)
 	{
-		logger.info(Number.isInteger(tmpText.substring(4,5)) == false);
-		if (Number.isInteger(tmpText.substring(4,5)) == false)	
+		logger.info(Number.isInteger(tmpText.substring(5,5)) == false);
+		if (Number.isInteger(tmpText.substring(5,5)) == false)	
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
