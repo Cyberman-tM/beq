@@ -220,16 +220,18 @@ module.exports.RC2taq = function(orig_text)
 module.exports.RC2Morska = function(orig_text)
 {
 	var tmpText = module.exports.RCtlh2u2(orig_text);
-logger.info(tmpText);
+
 	var prefix = '';	
 
-	if (Number.isInteger(tmpText.substring(5,6)) == false)	
+	if (tmpText.length > 5)
 	{
-   		prefix = tmpText.substring(0,2);
-   		tmpText = tmpText.substring(3,9999);	
+		if (Number.isInteger(tmpText.substring(5,6)) == false)	
+		{
+			prefix = tmpText.substring(0,2);
+			tmpText = tmpText.substring(3,9999);	
+		}
+		prefix = prefix.replace('H', 'h');
 	}
-	prefix = prefix.replace('H', 'h');
-	
 	
 	tmpText = tmpText.replace(/(?:[1-5])H/g, '');
         tmpText = tmpText.replace(/H(?:[1-5])/g, 'h');
