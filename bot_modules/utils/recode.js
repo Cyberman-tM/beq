@@ -245,10 +245,10 @@ module.exports.RC2Morska = function(orig_text)
 	
 	tmpText = module.exports.RCu22tlh(tmpText);
 	
-	tmpText = tmpText.replace(/6/g, 'h);
-        tmpText = tmpText.replace(/7/g, 'H);
-	tmpText = tmpText.replace(/8/g, 'ghl);
-	tmpText = tmpText.replace(/9/g, 'ts);
+	tmpText = tmpText.replace(/6/g, 'h');
+        tmpText = tmpText.replace(/7/g, 'H');
+	tmpText = tmpText.replace(/8/g, 'ghl');
+	tmpText = tmpText.replace(/9/g, 'ts');
 
 	return tmpText;
 }
