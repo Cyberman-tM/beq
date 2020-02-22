@@ -273,6 +273,8 @@ module.exports.Engine = function (beqTalk)
 			tmpText = kTranscode.RC2Qot(beqTalk.lookWord);
 		else if (beqTalk.lookLang == 'taq\'ev' && beqTalk.transLang == 'tlhIngan')
 			tmpText = kTranscode.RC2taq(beqTalk.lookWord);
+			
+			logger.info(beqTalk.lookLang);
 
 		if (tmpText != '')
 		{
