@@ -220,7 +220,7 @@ module.exports.RC2taq = function(orig_text)
 module.exports.RC2Morska = function(orig_text)
 {
 	var tmpText = module.exports.RCtlh2u2(orig_text);
-
+logger.info(tmpText);
 	var prefix = '';	
 
 	if (Number.isInteger(tmpText.substring(5,6)) == false)	
@@ -230,7 +230,7 @@ module.exports.RC2Morska = function(orig_text)
 	}
 	prefix = prefix.replace('H', 'h');
 	
-	logger.info(tmpText);
+	
 	tmpText = tmpText.replace(/(?:[1-5])H/g, '');
         tmpText = tmpText.replace(/H(?:[1-5])/g, 'h');
 	
@@ -238,7 +238,7 @@ module.exports.RC2Morska = function(orig_text)
 	tmpText = tmpText.replace(/tlh(?:[1-5])/g, 'ghl');
 	
 	tmpText = tmpText.replace(/(?:[1-5])tlh/g, 'ts');
-	logger.info(tmpText);
+	
 	tmpText = prefix + tmpText;
 
 	return tmpText;
