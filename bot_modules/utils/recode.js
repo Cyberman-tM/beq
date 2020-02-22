@@ -222,7 +222,7 @@ module.exports.RC2Morska = function(orig_text)
 	var tmpText = module.exports.RCtlh2u2(orig_text);
 
 	var prefix = '';	
-
+logger.info(tmpText);
 	if (tmpText.length > 5)
 	{
 		logger.info(Number.isInteger(tmpText.substring(5,5)) == false);
