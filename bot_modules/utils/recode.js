@@ -230,18 +230,25 @@ module.exports.RC2Morska = function(orig_text)
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(3,9999);	
 		}
-		prefix = prefix.replace('H', 'h');
+		prefix = prefix.replace('H', '6');
 	}
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
-        tmpText = tmpText.replace(/g(?=[1-5])/g, 'h');
+        tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
 	
-	tmpText = tmpText.replace(/Q(?=[1-5])/g, 'H');	
-	tmpText = tmpText.replace(/u(?=[1-5])/g, 'ghl');
+	tmpText = tmpText.replace(/Q(?=[1-5])/g, '7');	
+	tmpText = tmpText.replace(/u(?=[1-5])/g, '8');
 	
-	tmpText = tmpText.replace(/(?<=[1-5])u/g, 'ts');
+	tmpText = tmpText.replace(/(?<=[1-5])u/g, '9');
 	
 	tmpText = prefix + tmpText;
+	
+	tmpText = module.exports.RCu22tlh(tmpText);
+	
+	tmpText = tmpText.replace(/6/g, 'h);
+        tmpText = tmpText.replace(/7/g, 'H);
+	tmpText = tmpText.replace(/8/g, 'ghl);
+	tmpText = tmpText.replace(/9/g, 'ts);
 
 	return tmpText;
 }
