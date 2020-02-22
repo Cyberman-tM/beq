@@ -8,10 +8,12 @@
   
   uhmal gnj by Philip Newton
   https://metacpan.org/pod/Lingua::Klingon::Recode
+  
+  Now new: Dialect recoding!
 
 */
 
-module.exports.versInt = '0.8';
+module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
@@ -188,4 +190,27 @@ module.exports.RCT2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/x/g, 'ng');
 	  tmpText = tmpText.replace(/T/g, 'tlh');
 	 return tmpText;
+}
+
+//Dialekte - http://www.klingonwiki.net/De/Dialekt
+
+// ta' Hol => Krotmag
+module.exports.RC2Qot = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/m/g, 'M');
+	tmpText = tmpText.replace(/b/g, 'M');
+	tmpText = tmpText.replace(/D/g, 'N');
+	
+	return tmpText;
+}
+
+// ta' Hol => Tak'ev
+module.exports.RC2taq = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/b/g, 'MB');
+	tmpText = tmpText.replace(/D/g, 'nD');
+	
+	return tmpText;
 }
