@@ -201,7 +201,7 @@ module.exports.RC2Qot = function(orig_text)
 	tmpText = orig_text.replace(/m/g, 'M');
 	tmpText = tmpText.replace(/b/g, 'M');
 	tmpText = tmpText.replace(/D/g, 'N');
-	
+	tmpText = "slkjdf";
 	return tmpText;
 }
 
