@@ -223,6 +223,7 @@ module.exports.RC2Morska = function(orig_text)
 	var tmpText = "";
 
 	var manyWords = fullText.split(' ');
+	fullText = "";
 	manyWords.forEach(function(tmpText)
 	{
 	var prefix = '';	
@@ -253,7 +254,7 @@ module.exports.RC2Morska = function(orig_text)
 	tmpText = tmpText.replace(/8/g, 'ghl');
 	tmpText = tmpText.replace(/9/g, 'ts');
 	
-		fullText = fullText + " " + tmpText;
+	fullText = fullText + " " + tmpText;
 	});
 	return fullText;
 }
