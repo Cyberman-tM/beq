@@ -219,8 +219,12 @@ module.exports.RC2taq = function(orig_text)
 // ta' Hol => Morska
 module.exports.RC2Morska = function(orig_text)
 {
-	var tmpText = module.exports.RCtlh2u2(orig_text);
+	var fullText = module.exports.RCtlh2u2(orig_text);
+	var tmpText = "";
 
+	var manyWords = fullText.split(' ');
+	manyWords.forEach(function(tmpText)
+	{
 	var prefix = '';	
 	if (tmpText.length > 5)
 	{
@@ -231,7 +235,6 @@ module.exports.RC2Morska = function(orig_text)
 		}
 		prefix = prefix.replace('H', '6');
 	}
-	logger.info(tmpText);
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
         tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
@@ -249,6 +252,8 @@ module.exports.RC2Morska = function(orig_text)
         tmpText = tmpText.replace(/7/g, 'H');
 	tmpText = tmpText.replace(/8/g, 'ghl');
 	tmpText = tmpText.replace(/9/g, 'ts');
-
-	return tmpText;
+	
+		fullText = fullText + " " + tmpText;
+	}
+	return fullText;
 }
