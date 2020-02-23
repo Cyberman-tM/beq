@@ -261,6 +261,9 @@ module.exports.RC2Morska = function(orig_text)
         tmpText = tmpText.replace(/7/g, 'H');
 	tmpText = tmpText.replace(/8/g, 'ghl');
 	tmpText = tmpText.replace(/9/g, 'ts');
+		
+	//Morska verwendet das Topifizierungs-Suffix nicht
+	tmpText = tmpText.replace(/(?=.*)\'e\'/g, '');		
 	
 	fullText = fullText + " " + tmpText;
 	});
