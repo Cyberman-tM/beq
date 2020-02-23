@@ -222,6 +222,14 @@ module.exports.RC2Morska = function(orig_text)
 	var fullText = module.exports.RCtlh2u2(orig_text);
 	var tmpText = "";
 
+	//Satzzeichen sind leider ein PRoblem, die müssen weg
+	fullText = fullText.replace('.', '');
+	fullText = fullText.replace('!', '');
+	fullText = fullText.replace('?', '');
+	fullText = fullText.replace(';', '');
+	fullText = fullText.replace(':', '');
+	fullText = fullText.replace(',', '');
+	
 	var manyWords = fullText.split(' ');
 	fullText = "";
 	manyWords.forEach(function(tmpText)
