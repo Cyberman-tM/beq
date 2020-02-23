@@ -254,6 +254,6 @@ module.exports.RC2Morska = function(orig_text)
 	tmpText = tmpText.replace(/9/g, 'ts');
 	
 		fullText = fullText + " " + tmpText;
-	}
+	});
 	return fullText;
 }
