@@ -8,10 +8,13 @@
   
   uhmal gnj by Philip Newton
   https://metacpan.org/pod/Lingua::Klingon::Recode
+  
+  Now new: Dialect recoding!
 
 */
+var logger = require('winston');
 
-module.exports.versInt = '0.8';
+module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
@@ -188,4 +191,81 @@ module.exports.RCT2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/x/g, 'ng');
 	  tmpText = tmpText.replace(/T/g, 'tlh');
 	 return tmpText;
+}
+
+//Dialekte - http://www.klingonwiki.net/De/Dialekt
+
+// ta' Hol => Krotmag
+module.exports.RC2Qot = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/m/g, 'M');
+	tmpText = tmpText.replace(/b/g, 'M');
+	tmpText = tmpText.replace(/D/g, 'N');
+	
+	return tmpText;
+}
+
+// ta' Hol => Tak'ev
+module.exports.RC2taq = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/b/g, 'MB');
+	tmpText = tmpText.replace(/D/g, 'nD');
+	
+	return tmpText;
+}
+
+// ta' Hol => Morska
+module.exports.RC2Morska = function(orig_text)
+{
+	var fullText = module.exports.RCtlh2u2(orig_text);
+	var tmpText = "";
+
+	//Satzzeichen sind leider ein PRoblem, die müssen weg
+	fullText = fullText.replace('.', '');
+	fullText = fullText.replace('!', '');
+	fullText = fullText.replace('?', '');
+	fullText = fullText.replace(';', '');
+	fullText = fullText.replace(':', '');
+	fullText = fullText.replace(',', '');
+	
+	var manyWords = fullText.split(' ');
+	fullText = "";
+	manyWords.forEach(function(tmpText)
+	{
+	var prefix = '';	
+	if (tmpText.length > 5)
+	{
+		if (Number.isInteger(tmpText.substring(4,5)) == true)	
+		{
+			prefix = tmpText.substring(0,2);
+			tmpText = tmpText.substring(2,9999);	
+		}
+		prefix = prefix.replace('H', '6');
+	}
+	
+	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
+        tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
+	
+	tmpText = tmpText.replace(/Q(?=[1-5])/g, '7');	
+	tmpText = tmpText.replace(/u(?=[1-5])/g, '8');
+	
+	tmpText = tmpText.replace(/(?<=[1-5])u/g, '9');
+	
+	tmpText = prefix + tmpText;
+	
+	tmpText = module.exports.RCu22tlh(tmpText);
+	
+	tmpText = tmpText.replace(/6/g, 'h');
+        tmpText = tmpText.replace(/7/g, 'H');
+	tmpText = tmpText.replace(/8/g, 'ghl');
+	tmpText = tmpText.replace(/9/g, 'ts');
+		
+	//Morska verwendet das Topifizierungs-Suffix nicht
+	tmpText = tmpText.replace(/(?=.*)\'e\'/g, '');		
+	
+	fullText = fullText + " " + tmpText;
+	});
+	return fullText;
 }

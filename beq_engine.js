@@ -269,6 +269,13 @@ module.exports.Engine = function (beqTalk)
 			tmpText = kTranscode.RCtlh2T(beqTalk.lookWord);
 		else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
 			tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
+		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'Qotmag')
+			tmpText = kTranscode.RC2Qot(beqTalk.lookWord);
+		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'taq\'ev')
+			tmpText = kTranscode.RC2taq(beqTalk.lookWord);
+		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'mo\'rISqa\'')
+			tmpText = kTranscode.RC2Morska(beqTalk.lookWord);
+			
 
 		if (tmpText != '')
 		{
