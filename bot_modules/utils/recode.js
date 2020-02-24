@@ -234,6 +234,7 @@ module.exports.RC2taq = function(orig_text)
 // ta' Hol => Morska
 module.exports.RC2Morska = function(orig_text)
 {
+	logger.info(orig_text);
 	var fullText = module.exports.RCtlh2u2(orig_text);
 	var tmpText = "";
 
