@@ -250,6 +250,7 @@ module.exports.RC2Morska = function(orig_text)
 	manyWords.forEach(function(tmpText)
 	{
 	var prefix = '';
+		logger.info(tmpText);
 	if (tmpText.length >= 5)
 	{
 		logger.info(Number.isInteger(tmpText.substring(4,5)));
