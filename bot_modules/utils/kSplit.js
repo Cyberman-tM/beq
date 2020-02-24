@@ -55,7 +55,6 @@ module.exports.kSplit = function (raw_text)
 				prefix = oneWord.substring(0, 2);
 				oneWord = oneWord.substring(2, 9999);
 			}
-			prefix = prefix.replace('g', '6');
 		}
 
 		var syls = oneWord.split(/([a-z][1-5][a-z])/);
@@ -74,7 +73,9 @@ module.exports.kSplit = function (raw_text)
 		tmpText += prefix + "-" + oneWord;
 	}
 	);
-
+	
+	//Now we have to re-translate this all :-/
+        tmpText = kTranscodeX.RCu32tlh(tmpText);
 	return tmpText;
 };
 
