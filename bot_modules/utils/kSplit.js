@@ -51,7 +51,7 @@ module.exports.kSplit = function (raw_text)
             }		
             prefix = prefix.replace('g', '6');
         }
-        var syls[] = oneWord.split(/([a-z][1-5][a-z])/);
+        var syls = oneWord.split(/([a-z][1-5][a-z])/);
         if (syls.length > 0)
         {
             oneWord = "";
