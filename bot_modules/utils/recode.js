@@ -141,6 +141,18 @@ module.exports.RCu22tlh = function(orig_text)
 	return tmpText;
 }
 
+//uhmal3 - uhmal2 + consonant clusters rewritten as AEI
+module.exports.RCtlh2u3 = function(orig_text)
+{
+	var tmpText = "";
+	  tmpText = module.exports.RCtlh2u2(orig_text);
+
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])rf(?=[a-z][1-5])/g, 'A');
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])wz(?=[a-z][1-5])/g, 'E');
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])yz(?=[a-z][1-5])/g, 'I');
+	
+	return tmpText;
+}
 
 //uhmal => tlhIngan
 module.exports.RCu2tlh = function(orig_text)
