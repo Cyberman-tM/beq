@@ -165,6 +165,20 @@ module.exports.RCtlh2u3 = function(orig_text)
 	return tmpText;
 }
 
+//uhmal3 => tlhIngan
+module.exportsRCu32tlh = function(orig_text)
+{
+	var tmpText = "";
+	
+	tmpText = orig_text.replace(/A/g, 'rf');
+	tmpText = tmpText.replace(/E/g, 'xz');
+	tmpText = tmpText.replace(/I/g, 'yz');
+	
+	tmpText = module.exports.RCu22tlh(tmpText);
+	
+	return tmpText;
+}
+
 //uhmal => tlhIngan
 module.exports.RCu2tlh = function(orig_text)
 {
