@@ -47,6 +47,7 @@ module.exports.kSplit = function (raw_text)
 		if (oneWord == "")
 			return;
 
+		prefix = "";
 		if (oneWord.length >= 5)
 		{
 			if (parseInt(oneWord.substring(3, 4)) > 0 &&
