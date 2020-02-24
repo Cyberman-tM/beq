@@ -45,7 +45,7 @@ module.exports.kSplit = function (raw_text)
 	wordList.forEach(function (oneWord)
 	{
 		if (oneWord == "")
-			continue;
+			return;
 
 		if (oneWord.length >= 5)
 		{
@@ -65,7 +65,7 @@ module.exports.kSplit = function (raw_text)
 			syls.forEach(function (syllable)
 			{
 				if (syllable == "")
-					continue;
+					return;
 
 				oneWord = oneWord + "-" + syllable + "-";
 			}
