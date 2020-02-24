@@ -241,7 +241,6 @@ module.exports.RC2taq = function(orig_text)
 // ta' Hol => Morska
 module.exports.RC2Morska = function(orig_text)
 {
-	logger.info(orig_text);
 	var fullText = module.exports.RCtlh2u2(orig_text);
 	var tmpText = "";
 
@@ -260,9 +259,9 @@ module.exports.RC2Morska = function(orig_text)
 	var prefix = '';
 	if (tmpText.length >= 5)
 	{
+		logger.info(tmpText.substring(4,5));
 		logger.info(Number.isInteger(tmpText.substring(4,5)));
-		logger.info(prefixList.indexOf(tmpText.substring(0,2)));
-			    logger.info(prefixList);
+
 		if (Number.isInteger(tmpText.substring(4,5)) == true &&
 		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
 		{
