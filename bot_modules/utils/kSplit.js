@@ -24,8 +24,7 @@ module.exports.nameInt = 'Klingon text split';
 
 module.exports.kSplit = function (raw_text)
 {
-	logger.info(raw_text);
-    var tmpText = "";
+	var tmpText = "";
 	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
 	var wordsOnly = raw_text.replace(/[^a-zA-Z0-9']/g, ' ');
 	logger.info(wordsOnly);
@@ -35,13 +34,15 @@ module.exports.kSplit = function (raw_text)
 	//uhmal2 replaces vowels with numbers
 	//uhmal3 replaces consonant clusters with AEI
 	var wordsUhmal3 = kTranscodeX.RCtlh2u3(wordsOnly);
-	logger.info(wordsUhmal3);
 
 	//Split into obvious separate words and remove duplicates
 	var wordList = wordsUhmal3.split(' ');
-	wordList = arrayUnique(wordList);
+	if (wordList.length > 0)
+	   wordList = arrayUnique(wordList);
+	else
+	   wordList = [wordsUhmal3];
 
-    var prefix = "";
+        var prefix = "";
 	wordList.forEach(function (oneWord)
     {
 		logger.info(oneWord);
