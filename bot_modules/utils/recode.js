@@ -12,10 +12,21 @@
   Now new: Dialect recoding!
 
 */
-var logger = require('winston');
+var winston = require('winston');
+var logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
+//List of prefixes, might be useful :-)
+//uhmal2 encoded!
+module.exports.prefixListu3 = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l5-o2-o3-q1-r2-S1-S5-t3-t5-w3-x3-y3";
 
 module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
+
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
 module.exports.RCtlh2x = function(orig_text, upper_case)
@@ -154,6 +165,20 @@ module.exports.RCtlh2u3 = function(orig_text)
 	return tmpText;
 }
 
+//uhmal3 => tlhIngan
+module.exports.RCu32tlh = function(orig_text)
+{
+	var tmpText = "";
+	
+	tmpText = orig_text.replace(/A/g, 'rf');
+	tmpText = tmpText.replace(/E/g, 'xz');
+	tmpText = tmpText.replace(/I/g, 'yz');
+	
+	tmpText = module.exports.RCu22tlh(tmpText);
+	
+	return tmpText;
+}
+
 //uhmal => tlhIngan
 module.exports.RCu2tlh = function(orig_text)
 {
@@ -246,15 +271,16 @@ module.exports.RC2Morska = function(orig_text)
 	fullText = "";
 	manyWords.forEach(function(tmpText)
 	{
-	var prefix = '';	
-	if (tmpText.length > 5)
+	var prefix = '';
+	if (tmpText.length >= 5)
 	{
-		if (Number.isInteger(tmpText.substring(4,5)) == true)	
+		if (parseInt(tmpText.substring(3,4)) > 0 &&
+		    module.exports.prefixListu3.indexOf(tmpText.substring(0,2)) != -1 )
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
-		}
-		prefix = prefix.replace('H', '6');
+		}		
+		prefix = prefix.replace('g', '6');
 	}
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');

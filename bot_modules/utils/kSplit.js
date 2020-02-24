@@ -1,127 +1,91 @@
 /*
-  Split a text into syllables/words
-  For example:
-  tlhIngan vIjatlh vIneH
-  ->tlhINgan vI- jatlh neH
-  
-*/
-var logger = require('winston');
+Split a text into syllables/words
+For example:
+tlhIngan vIjatlh vIneH
+->tlhINgan vI- jatlh neH
+
+ */
+var winston = require('winston');
+var logger = winston.createLogger(
+	{
+		level: 'info',
+		format: winston.format.json(),
+		transports: [
+			new winston.transports.Console()
+		]
+	}
+	);
+
 //Local copy of transcoder
-var kTranscodeX  = require('./recode.js');
+var kTranscodeX = require('./recode.js');
 
 module.exports.versInt = '0.1';
 module.exports.nameInt = 'Klingon text split';
 
-module.exports.kSplit = function(raw_text, split_syls)
+module.exports.kSplit = function (raw_text)
 {
-  var rawRecode = kTranscodeX.RCu22tlh(raw_text);
-  
-  //Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
-  var onlyWordsRE = new RegExp(/[^a-zA-Z0-9]/, 'g');
-  var wordsOnly = raw_text.replace(onlyWordsRE, ' ');
+	var tmpText = "";
+	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
+	var wordsOnly = raw_text.replace(/[^a-zA-Z0-9']/g, ' ');
 
-  //tlhIngan nach umahl2 umwandeln
-  wordsOnly = kTranscodeX.RCtlh2u2(wordsOnly);
-	
-  //Split into obvious separate words and remove duplicates
-  var wordList = wordsOnly.split(' ');  
-  wordList = arrayUnique(wordList);
-	
-//Sort through the wordlist:
-var undefList = [];
-var verbList = [];
-var prefList = [];
-var checkSuff = false;
+	//We have uhmal 3 for this stuff now
+	//uhmal  replaces double-letters with single letters
+	//uhmal2 replaces vowels with numbers
+	//uhmal3 replaces consonant clusters with AEI
+	var wordsUhmal3 = kTranscodeX.RCtlh2u3(wordsOnly);
 
-//fullWord == current word
-//removedPrefix/removedSuffix == affixes that have been removed this time
-//example:
-//first entry: yIcha'nIS
-//secnd entry: yI- cha'nIS
-//third entry: yIcha' -nIS
-//forth entry: yI- cha'
-//fifth entry: cha' -nIS
-//?
-	
-var splitWords = JSON.parse(
-[
+	//Split into obvious separate words and remove duplicates
+	var wordList = wordsUhmal3.split(' ');
+	if (wordList.length > 0)
+		wordList = arrayUnique(wordList);
+	else
+		wordList = [wordsUhmal3];
+
+	var prefix = "";
+	wordList.forEach(function (oneWord)
 	{
-		"fullWord": "",
-		"removedPrefix": "",
-		"removedSuffix": "",
+		if (oneWord == "")
+			return;
+
+		prefix = "";
+		if (oneWord.length >= 5)
+		{
+			if (parseInt(oneWord.substring(3, 4)) > 0 &&
+				kTranscodeX.prefixListu3.indexOf(oneWord.substring(0, 2)) != -1)
+			{
+				prefix = oneWord.substring(0, 2);
+				oneWord = oneWord.substring(2, 9999);
+			}
+		}
+
+		var syls = oneWord.split(/([a-z][1-5][a-z])/);
+		if (syls.length > 0)
+		{
+			oneWord = "";
+			syls.forEach(function (syllable)
+			{
+				if (syllable == "")
+					return;
+
+				oneWord = oneWord + "-" + syllable + "-";
+			}
+			);
+		}
+		tmpText += prefix + "-" + oneWord;
 	}
-]
-);
+	);
 	
-wordList.forEach(function(oneWord)
+	//Now we have to re-translate this all :-/
+        tmpText = kTranscodeX.RCu32tlh(tmpText);
+	return tmpText;
+};
+
+//Utility :-)
+var arrayUnique = function (arr)
 {
-  //We have to check for the entire word in any case, unfortunately
-  undefList.push(oneWord);
-	
-  //Always assume suffixes
-  checkSuff = true;
-
-  if (oneWord.length <= 3)
-  {
-      //Whatever it is, it cannot have affixes, so we don't know if it's noun or verb or whatever
-      checkSuff = false;
-  }
- //Longer than 3 characters, might have a prefix, which means 4th place must be a number
- else if (oneWord.substring(3,4) > 0)
-  {
-	  //Quite likely a prefix, therefore verb (or a nounified verb)
-	  //We already will check the whole word, so lets see if we find a verb prefix:
-	  switch (oneWord.substring(0,2))
-	  {
-		//Prefixes in Uhmal 2
-		case 'b3':
-		case 'b4':
-		case 'c2':
-		case 'c4':
-		case 'd1':
-		case 'd3':
-		case 'd5':
-		case 'f4':
-		case 'g3':
-		case 'i3':
-		case 'i5':
-		case 'j3':
-		case 'j5':
-		case 'k1':
-		case 'k5':
-		case 'l3':
-		case 'l5':
-		case 'o2':
-		case 'o3':
-		case 'q1':
-		case 'r2':
-		case 's1':
-		case 's5':
-		case 't3':
-		case 't5':
-		case 'w3':
-		case 'x3':
-		case 'y3':
-		   prefList.push(oneWord.substring(0,2));
-		   oneWord = oneWord.substring(1);
-		  break;
-	  }
-  }
-         //Check if the first letter CANNOT be a prefix:
-  else if (oneWord.substring(0,1) == "u" || 
-           oneWord.substring(0,1) == "Q")
-  {
-      //Might be a noun, might be a verb - we don't know
-  }
- });
-	
- return prefList.join();
-
-
-}
-
-var arrayUnique = function (arr) {
-	return arr.filter(function(item, index){
+	return arr.filter(function (item, index)
+	{
 		return arr.indexOf(item) >= index;
-	});
+	}
+	);
 };
