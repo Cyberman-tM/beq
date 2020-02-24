@@ -15,7 +15,7 @@ var logger = winston.createLogger(
 		]
 	}
 	);
-    
+
 //Local copy of transcoder
 var kTranscodeX = require('./recode.js');
 
@@ -37,37 +37,41 @@ module.exports.kSplit = function (raw_text)
 	//Split into obvious separate words and remove duplicates
 	var wordList = wordsUhmal3.split(' ');
 	if (wordList.length > 0)
-	   wordList = arrayUnique(wordList);
+		wordList = arrayUnique(wordList);
 	else
-	   wordList = [wordsUhmal3];
+		wordList = [wordsUhmal3];
 
-        var prefix = "";
+	var prefix = "";
 	wordList.forEach(function (oneWord)
-    {
-       	if (oneWord.length >= 5)
-        {
-            if (parseInt(oneWord.substring(3,4)) > 0 &&
-                kTranscodeX.prefixListu3.indexOf(oneWord.substring(0,2)) != -1 )
-            {
-                prefix = oneWord.substring(0,2);
-                oneWord = oneWord.substring(2,9999);	
-            }		
-            prefix = prefix.replace('g', '6');
-        }
+	{
+        logger.info("oneWord:"+oneWord);
+		if (oneWord.length >= 5)
+		{
+			if (parseInt(oneWord.substring(3, 4)) > 0 &&
+				kTranscodeX.prefixListu3.indexOf(oneWord.substring(0, 2)) != -1)
+			{
+				prefix = oneWord.substring(0, 2);
+				oneWord = oneWord.substring(2, 9999);
+			}
+			prefix = prefix.replace('g', '6');
+		}
 
-	var syls = oneWord.split(/([a-z][1-5][a-z])/);
-        if (syls.length > 0)
-        {
-            oneWord = "";
-            syls.forEach(function(syllable)
-            {
-                oneWord = oneWord + "-" + syllable + "-";
-            });
-        }
-        tmpText = "++" + prefix + "-" + oneWord;
-    });
+		var syls = oneWord.split(/([a-z][1-5][a-z])/);
+		if (syls.length > 0)
+		{
+			oneWord = "";
+			syls.forEach(function (syllable)
+			{
+                logger.info("syl:"+syllable);
+				oneWord = oneWord + "-" + syllable + "-";
+			}
+			);
+		}
+		tmpText += prefix + "-" + oneWord;
+	}
+	);
 
-   return tmpText;
+	return tmpText;
 };
 
 //Utility :-)
