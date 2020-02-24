@@ -13,9 +13,12 @@
 
 */
 var logger = require('winston');
+//List of prefixes, might be useful :-)
+var prefixList = "bI-bo-che-cho-Da-DI-Du-gho-HI-jI-ju-lI-lu-ma-mu-nI-nu-pe-pI-qa-re-Sa-Su-tI-tu-vI-wI-yI";
 
 module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
+
 
 //tlhIngan Hol => xifan hol or XIFAN HOL
 module.exports.RCtlh2x = function(orig_text, upper_case)
@@ -249,12 +252,14 @@ module.exports.RC2Morska = function(orig_text)
 	var prefix = '';	
 	if (tmpText.length > 5)
 	{
-		if (Number.isInteger(tmpText.substring(4,5)) == true)	
+		if (Number.isInteger(tmpText.substring(4,5)) == true &&
+		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
-		}
+		}		
 		prefix = prefix.replace('H', '6');
+			
 	}
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
