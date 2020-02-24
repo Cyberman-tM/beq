@@ -259,7 +259,8 @@ module.exports.RC2Morska = function(orig_text)
 	var prefix = '';
 	if (tmpText.length >= 5)
 	{
-		logger.info(tmpText.substring(4,5));
+		logger.info(tmpText);
+		logger.info(tmpText.substring(3,4));
 		logger.info(Number.isInteger(tmpText.substring(3,4)));
 
 		if (Number.isInteger(tmpText.substring(3,4)) == true &&
