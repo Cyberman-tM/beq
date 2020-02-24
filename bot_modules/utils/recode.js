@@ -22,7 +22,7 @@ var logger = winston.createLogger({
 });
 //List of prefixes, might be useful :-)
 //uhmal2 encoded!
-var prefixList = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l5-o2-o3-q1-r2-S1-S5-t3-t5-w3-x3-y3";
+module.exports.prefixListu3 = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l5-o2-o3-q1-r2-S1-S5-t3-t5-w3-x3-y3";
 
 module.exports.versInt = '0.91';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
@@ -261,7 +261,7 @@ module.exports.RC2Morska = function(orig_text)
 	if (tmpText.length >= 5)
 	{
 		if (parseInt(tmpText.substring(3,4)) > 0 &&
-		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
+		    module.exports.prefixListu3.indexOf(tmpText.substring(0,2)) != -1 )
 		{
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
