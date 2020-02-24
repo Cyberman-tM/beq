@@ -279,6 +279,7 @@ module.exports.RC2Morska = function(orig_text)
 	tmpText = tmpText.replace(/(?<=[1-5])u/g, '9');
 	
 	tmpText = prefix + tmpText;
+		logger.info(tmpText);
 	
 	tmpText = module.exports.RCu22tlh(tmpText);
 	
