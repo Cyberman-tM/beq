@@ -44,7 +44,9 @@ module.exports.kSplit = function (raw_text)
 	var prefix = "";
 	wordList.forEach(function (oneWord)
 	{
-        logger.info("oneWord:"+oneWord);
+		if (oneWord == "")
+			continue;
+
 		if (oneWord.length >= 5)
 		{
 			if (parseInt(oneWord.substring(3, 4)) > 0 &&
@@ -62,7 +64,9 @@ module.exports.kSplit = function (raw_text)
 			oneWord = "";
 			syls.forEach(function (syllable)
 			{
-                logger.info("syl:"+syllable);
+				if (syllable == "")
+					continue;
+
 				oneWord = oneWord + "-" + syllable + "-";
 			}
 			);
