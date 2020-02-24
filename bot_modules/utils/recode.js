@@ -260,9 +260,9 @@ module.exports.RC2Morska = function(orig_text)
 	if (tmpText.length >= 5)
 	{
 		logger.info(tmpText.substring(4,5));
-		logger.info(Number.isInteger(tmpText.substring(4,5)));
+		logger.info(Number.isInteger(tmpText.substring(3,4)));
 
-		if (Number.isInteger(tmpText.substring(4,5)) == true &&
+		if (Number.isInteger(tmpText.substring(3,4)) == true &&
 		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
 		{
 			prefix = tmpText.substring(0,2);
