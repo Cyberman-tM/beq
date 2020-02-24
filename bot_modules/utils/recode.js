@@ -269,6 +269,7 @@ logger.info(tmpText.substring(2,9999));
 		prefix = prefix.replace('g', '6');
 			
 	}
+		logger.info(tmpText);
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
         tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
