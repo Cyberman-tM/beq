@@ -147,9 +147,9 @@ module.exports.RCtlh2u3 = function(orig_text)
 	var tmpText = "";
 	  tmpText = module.exports.RCtlh2u2(orig_text);
 
-	tmpText = tmpText.replace(/(?<=[a-z][1-5])rf(?=[a-z][1-5])/g, 'A');
-	tmpText = tmpText.replace(/(?<=[a-z][1-5])xz(?=[a-z][1-5])/g, 'E');
-	tmpText = tmpText.replace(/(?<=[a-z][1-5])yz(?=[a-z][1-5])/g, 'I');
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])rf(?=[^1-5]|$)/g, 'A');
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])xz(?=[^1-5]|$)/g, 'E');
+	tmpText = tmpText.replace(/(?<=[a-z][1-5])yz(?=[^1-5]|$)/g, 'I');
 	
 	return tmpText;
 }
