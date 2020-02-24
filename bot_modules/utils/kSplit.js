@@ -58,6 +58,8 @@ module.exports.kSplit = function (raw_text)
 			}
 		}
 
+		//TODO: unmögliche Silben nicht spalten: tlhIng-an kann nicht sein
+		//VK geht nicht - nur KV!
 		var syls = oneWord.split(/([a-z][1-5][a-z])/);
 		if (syls.length > 0)
 		{
