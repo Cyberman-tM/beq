@@ -12,7 +12,14 @@
   Now new: Dialect recoding!
 
 */
-var logger = require('winston');
+var winston = require('winston');
+var logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
 //List of prefixes, might be useful :-)
 var prefixList = "bI-bo-che-cho-Da-DI-Du-gho-HI-jI-ju-lI-lu-ma-mu-nI-nu-pe-pI-qa-re-Sa-Su-tI-tu-vI-wI-yI";
 
