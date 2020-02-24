@@ -166,7 +166,7 @@ module.exports.RCtlh2u3 = function(orig_text)
 }
 
 //uhmal3 => tlhIngan
-module.exportsRCu32tlh = function(orig_text)
+module.exports.RCu32tlh = function(orig_text)
 {
 	var tmpText = "";
 	
