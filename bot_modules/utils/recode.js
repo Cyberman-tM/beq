@@ -252,6 +252,9 @@ module.exports.RC2Morska = function(orig_text)
 	var prefix = '';
 	if (tmpText.length >= 5)
 	{
+		logger.info(Number.isInteger(tmpText.substring(4,5)));
+		logger.info(prefixList.indexOf(tmpText.substring(0,2));
+			    logger.info(prefixList);
 		if (Number.isInteger(tmpText.substring(4,5)) == true &&
 		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
 		{
