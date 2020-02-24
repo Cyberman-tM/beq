@@ -259,7 +259,7 @@ module.exports.RC2Morska = function(orig_text)
 	var prefix = '';
 	if (tmpText.length >= 5)
 	{
-
+logger.info(tmpText.substring(0,2));
 		if (Number.isInteger(tmpText.substring(3,4)) == true &&
 		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
 		{
