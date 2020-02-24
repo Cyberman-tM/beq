@@ -267,9 +267,7 @@ module.exports.RC2Morska = function(orig_text)
 			tmpText = tmpText.substring(2,9999);	
 		}		
 		prefix = prefix.replace('g', '6');
-			
 	}
-		logger.info(tmpText);
 	
 	tmpText = tmpText.replace(/(?<=[1-5])g/g, '');
         tmpText = tmpText.replace(/g(?=[1-5])/g, '6');
@@ -280,7 +278,6 @@ module.exports.RC2Morska = function(orig_text)
 	tmpText = tmpText.replace(/(?<=[1-5])u/g, '9');
 	
 	tmpText = prefix + tmpText;
-		logger.info(tmpText);
 	
 	tmpText = module.exports.RCu22tlh(tmpText);
 	
