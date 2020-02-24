@@ -249,8 +249,8 @@ module.exports.RC2Morska = function(orig_text)
 	fullText = "";
 	manyWords.forEach(function(tmpText)
 	{
-	var prefix = '';	
-	if (tmpText.length > 5)
+	var prefix = '';
+	if (tmpText.length >= 5)
 	{
 		if (Number.isInteger(tmpText.substring(4,5)) == true &&
 		    prefixList.indexOf(tmpText.substring(0,2)) != -1 )
@@ -258,7 +258,7 @@ module.exports.RC2Morska = function(orig_text)
 			prefix = tmpText.substring(0,2);
 			tmpText = tmpText.substring(2,9999);	
 		}		
-		prefix = prefix.replace('H', '6');
+		prefix = prefix.replace('g', '6');
 			
 	}
 	
