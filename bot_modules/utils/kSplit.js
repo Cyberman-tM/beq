@@ -48,7 +48,7 @@ module.exports.kSplit = function (raw_text)
        	if (oneWord.length >= 5)
         {
             if (parseInt(oneWord.substring(3,4)) > 0 &&
-                kTranscodeX.prefixList.indexOf(oneWord.substring(0,2)) != -1 )
+                kTranscodeX.prefixListu3.indexOf(oneWord.substring(0,2)) != -1 )
             {
                 prefix = oneWord.substring(0,2);
                 oneWord = oneWord.substring(2,9999);	
