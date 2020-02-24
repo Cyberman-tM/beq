@@ -27,7 +27,6 @@ module.exports.kSplit = function (raw_text)
 	var tmpText = "";
 	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
 	var wordsOnly = raw_text.replace(/[^a-zA-Z0-9']/g, ' ');
-	logger.info(wordsOnly);
 
 	//We have uhmal 3 for this stuff now
 	//uhmal  replaces double-letters with single letters
@@ -45,7 +44,6 @@ module.exports.kSplit = function (raw_text)
         var prefix = "";
 	wordList.forEach(function (oneWord)
     {
-		logger.info(oneWord);
        	if (oneWord.length >= 5)
         {
             if (parseInt(oneWord.substring(3,4)) > 0 &&
@@ -56,19 +54,17 @@ module.exports.kSplit = function (raw_text)
             }		
             prefix = prefix.replace('g', '6');
         }
-	logger.info(prefix);
-		logger.info(oneWord);
-        var syls = oneWord.split(/([a-z][1-5][a-z])/);
+
+	var syls = oneWord.split(/([a-z][1-5][a-z])/);
         if (syls.length > 0)
         {
             oneWord = "";
             syls.forEach(function(syllable)
             {
-		    logger.info(syllable);
-                oneWord = syllable + "-";
+                oneWord = oneWord + "-" + syllable + "-";
             });
         }
-        tmpText = "--" + prefix + "-" + oneWord;
+        tmpText = "++" + prefix + "-" + oneWord;
     });
 
    return tmpText;
