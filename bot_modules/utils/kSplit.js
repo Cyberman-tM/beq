@@ -60,7 +60,8 @@ module.exports.kSplit = function (raw_text)
 
 		//TODO: unmögliche Silben nicht spalten: tlhIng-an kann nicht sein
 		//VK geht nicht - nur KV!
-		var syls = oneWord.split(/([a-z][1-5][a-z])/);
+		//var syls = oneWord.split(/([a-z][1-5][a-z])/);
+		var syls = oneWord.match(/(?:[a-z][1-5][a-z](?:[1-5][a-z])?(?<!2y))|2y/g);
 		if (syls.length > 0)
 		{
 			oneWord = "";
