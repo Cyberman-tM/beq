@@ -542,7 +542,8 @@ module.exports.createTranslation = function (beqTalk)
 	sndMessage = "";
 	if (beqTalk.simple == true)
 	{
-		sndMessage = sndMessage +  beqTalk.newline;
+		//Get some distance between this message and the previous
+		sndMessage = sndMessage + ".        ." + beqTalk.newline;
 	}
 	if (beqTalk.command == "mugh")
 	{
