@@ -541,11 +541,13 @@ module.exports.createTranslation = function (beqTalk)
 
 	if (beqTalk.command == "mugh")
 	{
+		//Always repeat the word we want to know, even in simple mode
+		//Otherwise it gets too confusing
+		sndMessage = intText.resStart;
+		sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
+		sndMessage = sndMessage.replace("&2", beqTalk.result.length);
 		if (beqTalk.simple != true)
 		{
-			sndMessage = intText.resStart;
-			sndMessage = sndMessage.replace("&1", beqTalk.lookWord);
-			sndMessage = sndMessage.replace("&2", beqTalk.result.length);
 			if (beqTalk.fuzzy == true)
 				sndMessage += intText.resFuzz;
 			if (beqTalk.wCase == true)
