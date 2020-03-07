@@ -61,7 +61,7 @@ module.exports.getWType = function (wType, tranLang)
 		else if (wTypeS == 'eu')
 			wTypeL = "EU";
 		else if (wTypeS == 'idiom')
-			wTypeL = "Idium";
+			wTypeL = "Idiom";
 		else if (wTypeS == 'mv')
 			wTypeL = "mu'qaD veS";
 		else if (wTypeS == 'nt')
