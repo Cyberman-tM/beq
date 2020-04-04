@@ -917,7 +917,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1026,6 +1026,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">baStan</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Boston</column>
+      <column name="definition_de">Boston</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a city in {'amerI'qa' SepjIjQa':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">belghIya'</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Belgium</column>
@@ -1092,7 +1127,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1201,6 +1236,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">boSporoS</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Bosporus</column>
+      <column name="definition_de">Bosporus</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a waterway in {turIqya':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">cheSqa'</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Czech Republic</column>
@@ -1246,7 +1316,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="definition_zh_HK">丹麥</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{ghenlan:n}</column>
       <column name="notes">In the Terran retelling of {Hamlet:src}, the titular character is the prince of this country on Earth.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1341,6 +1411,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ghenlan</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Greenland</column>
+      <column name="definition_de">Grönland</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Denmargh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2020.03.30:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ghIrep naH</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">grape</column>
@@ -1373,6 +1478,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghI'neS</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Guinness</column>
+      <column name="definition_de">Guinness</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is just the Klingon spelling for the company name.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1481,6 +1621,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ju'pIter</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Jupiter</column>
+      <column name="definition_de">Jupiter</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the colloquial name for {Sol vagh:n@@Sol:n, vagh:n:1,num}, a planet in the {Sol:n} system.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">lanDan</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">London</column>
@@ -1512,7 +1687,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1548,6 +1723,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {Star Trek The Experience:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">lIyenIn</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Lenin</column>
+      <column name="definition_de">Lenin</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the name of a person from Earth history.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2020.03.30:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1761,6 +1971,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">marIS</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Mars</column>
+      <column name="definition_de">Mars</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the colloquial name for {Sol loS:n@@Sol:n, loS:n:1,num}, a planet in the {Sol:n} system.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">maSIr</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Egypt</column>
@@ -1827,7 +2072,42 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maw</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Mao</column>
+      <column name="definition_de">Mao</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK">毛澤東</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the name of a person from Earth history.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2020.03.30:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1971,6 +2251,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">nayeghra</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Niagara</column>
+      <column name="definition_de">Niagara</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a region spanning the border between {qa'naDa':n} and {'amerI'qa' SepjIjQa':n} with a famous {bIQ notron:n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">nayjerya'</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Nigeria</column>
@@ -2076,6 +2391,41 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">parIy</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Paris</column>
+      <column name="definition_de">Paris</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the capital city of {vIraS:n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">pa'raghway</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Paraguay</column>
@@ -2107,7 +2457,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2177,7 +2527,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2247,7 +2597,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2574,6 +2924,41 @@ This is a country on Earth. Some of its provinces are:
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">qo'qa' qo'la'</column>
+      <column name="part_of_speech">n:food</column>
+      <column name="definition">Coca Cola</column>
+      <column name="definition_de">Coca Cola</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qo'la' 'awje':n}</column>
+      <column name="notes">This is just the transliteration of a brand of soft drink found on Earth.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {KLI mailing list 2020.03.30:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">qo'qo</column>
       <column name="part_of_speech">n</column>
       <column name="definition">coconut</column>
@@ -2605,7 +2990,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2831,7 +3216,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tera':n}</column>
-      <column name="notes">This is the name of one of the planets in the Terran solar system. It does not follow proper Klingon phonology, since it is an alien name.</column>
+      <column name="notes">This is the colloquial name for {Sol jav:n@@Sol:n, jav:n:1,num}, a planet in the {Sol:n} system. It does not follow proper Klingon phonology, since it is an alien name.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2956,7 +3341,52 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Sol</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Sun (scientific name for Earth's sun)</column>
+      <column name="definition_de">Sonne (wissenschaftlicher Name für die Sonne der Erde)</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the scientific name for the star around which Earth orbits. The eight planets of the {Sol:n:nonlink} star system are:
+▶ Mercury
+▶ Venus
+▶ {tera':n}
+▶ {marIS:n}
+▶ {ju'pIter:n}
+▶ {Saturn:n}
+▶ Uranus
+▶ Neptune
+
+The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., {Sol loS:n@@Sol:n, loS:n:1} for {marIS:n@@Sol:n, vagh:n:1} or {Sol vagh:n:nolink} for {ju'pIter:n:nolink}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3061,7 +3491,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3237,7 +3667,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2019.11.10:src}</column>
+      <column name="source">[1] {Sepqep wa'DIch:src} ({KLI mailing list 2019.11.10:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3307,7 +3737,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2018:src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3321,7 +3751,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="definition_zh_HK">土耳其</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{boSporoS:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3381,6 +3811,41 @@ This is a country on Earth. Some of its provinces are:
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">vIlaDelvIya'</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Philadelphia</column>
+      <column name="definition_de">Philadelphia</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a city in {'amerI'qa' SepjIjQa':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">vIraS</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">France</column>
@@ -3392,7 +3857,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Its capital city is {parIy:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3413,6 +3878,41 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wa'SIngtanDIySIy</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Washington, DC</column>
+      <column name="definition_de">Washington, DC</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the capital city of {'amerI'qa' SepjIjQa':n}. It is treated as a single name and in normal conversation, the {DIySIy:sen:nolink} is never left off.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source">[1] {'eSrIv 6, Feb. 2020:src} ({KLI mailing list 2020.01.28:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3497,7 +3997,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tuqjIjQa':n}, {yuQjIjQa':n}</column>
-      <column name="notes">This is a country on Earth.</column>
+      <column name="notes">This is a country on Earth. Its capital city is {wa'SIngtanDIySIy:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3832,7 +4332,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4182,7 +4682,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source"></column>
+      <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4322,7 +4822,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2017:src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4357,7 +4857,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {qep'a' 2019:src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4407,7 +4907,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">To describe an "italics" font, {chongHa':v@@chong:v:1, -Ha':v} may be used.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4532,7 +5032,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
-      <column name="source">[1] {KLI mailing list 2019.11.10:src}</column>
+      <column name="source">[1] {Sepqep wa'DIch:src} ({KLI mailing list 2019.11.10:src})</column>
     </table>
 
     <!-- Section: Other -->
@@ -4608,6 +5108,123 @@ This is a country on Earth. Some of its provinces are:
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">boQwI'</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">assistant (this program)</column>
+      <column name="definition_de">Assistent (diese App)</column>
+      <column name="definition_fa">دستیار (این برنامه)</column>
+      <column name="definition_sv">assistent (det här programmet)</column>
+      <column name="definition_ru">Помощник (название данной программы)</column>
+      <column name="definition_zh_HK">助手（這個軟件）</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">{tlhIngan Hol boQwI':n:nolink} "Klingon Language Assistant" - database version [[VERSION]].
+
+To begin searching, simply press the "Search" (magnifying glass) button and type into the search box.
+
+To hear the sounds of Klingon, you need to install a {Text-To-Speech engine:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}.
+
+It is recommended to install the {Klingon Keyboard for ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Otherwise, to make it easier to type Klingon on a mobile keyboard, the following shorthand (called "xifan hol") can be enabled under the Preferences menu:
+    c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
+    i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
+It is also possible to choose the alternate keymapping:
+    k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
+
+If you encounter any problems, or have any suggestions, please send me an {email at De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
+
+Please support the Klingon language by purchasing {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src}, and other Klingon- and Star Trek-related products from Pocket Books, Simon &amp; Schuster, and Paramount/Viacom/CBS Entertainment.
+
+Klingon, Star Trek, and related marks are trademarks of CBS Studios, Inc., and are used under "fair use" guidelines.
+
+Android programming: {De'vID:n:name}
+Flutter (iOS) port: Daniel Dadap
+Klingon-English data: {De'vID:n:name,nolink}, with help from others
+German translations: {Quvar:n:name} (Lieven L. Litaer)
+Swedish translations: {Klingonska Akademien:url:http://klingonska.org/}
+Russian translations: Кирилл Шилов, Дэниел Дэдеп and Sirglin (Ольга Косарева)
+TNG {pIqaD:n} font: Admiral {qurgh lungqIj:n:name,nolink} of the {Klingon Assault Group:url:http://www.kag.org/}
+DSC {pIqaD:n:nolink} font: {Quvar:n:name,nolink} (Lieven L. Litaer)
+
+Special thanks to Marc Okrand ({marq 'oqranD:n:name}) for creating the Klingon language.</column>
+      <column name="notes_de">{tlhIngan Hol boQwI':n:nolink} "Klingonisch-Assistent" - Datenbank Version [[VERSION]].
+
+Um eine Suche zu starten, Klicke auf das Suchsymbol (die Lupe) und gib etwas in das Suchfeld ein.
+
+Um die klingonischen Wörter zu hören, muss die {Vorlesesoftware:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine} installiert werden.
+
+Es wird empfohlen, die {klingonische Tastatur für ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan} zu installieren. Um auf einer kleinen Tastatur einfacher Klingonisch einzugeben, kann in den Einstellungen die folgende vereinfachte Eingabemethode ("xifan hol" genannt) aktiviert werden:
+    c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
+    i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
+Zusätzlich kann auch die folgende Tastenbelegung ausgewählt werden:
+    k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
+
+Bei Problemen oder Vorschlägen, sende bitte eine {E-Mail an De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
+
+Bitte unterstütze die klingonische Sprache durch den Erwerb der Bücher {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src}, sowie der anderen Klingonen- oder Star-Trek-bezogenen Produkte von Pocket Books, Simon &amp; Schuster, und Paramount/Viacom/CBS Entertainment.
+
+Klingon, Star Trek, und verwandte Begriffe sind Schutzmarken von CBS Studios, Inc., und werden unter "fair use" verwendet.
+
+Android Programmierung: {De'vID:n:name}
+Flutter (iOS) Portierung: Daniel Dadap
+Klingonisch-Englische Informationen: {De'vID:n:name,nolink}, mit Unterstützung von Anderen
+Deutsche Übersetzung: {Quvar:n:name} (Lieven L. Litaer)
+Schwedische Übersetzung: {Klingonska Akademien:url:http://klingonska.org/}
+Russische Übersetzung: Кирилл Шилов, Дэниел Дэдеп und Sirglin (Ольга Косарева)
+TNG {pIqaD:n} Schriftart: Admiral {qurgh lungqIj:n:name,nolink} von der {Klingon Assault Group:url:http://www.kag.org/}
+DSC {pIqaD:n:nolink} Schriftart: {Quvar:n:name,nolink} (Lieven L. Litaer)
+
+Ein besonderer Dank richtet sich an Marc Okrand ({marq 'oqranD:n:name}) für das Erschaffen der klingonischen Sprache.</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru">{tlhIngan Hol boQwI':n:nolink} "Помощник по Клингонскому языку" - версия базы данных [[VERSION]].
+
+Чтобы начать поиски, просто нажмите кнопку "Поиск" (увеличительное стекло) и печатайте в строке поиска
+
+Чтобы услышать звуки на Клингонском языке, вам необходимо установить {Text-To-Speech engine:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}
+
+Рекомендуется установить {Klingon Keyboard for ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Тем не менее, чтобы облегчить процесс печати текста на клингонском на мобильной клавиатуре, стеганография (под названием "xifan hol")  может быть активирована в меню Preferences:
+    c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
+    i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
+Также возможно использовать альтернативную раскладку:
+    k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
+
+Если вы столкнетесь с какими-либо проблемами, или у вас появятся предложения, пожалуйста отправьте сообщение на {email at De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}
+
+Поддержите Клингонский язык, купив {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src}, и другую продукцию, связанную со Стар Трэком и Клингонами , от Pocket Books, Simon &amp; Schuster, and Paramount/Viacom/CBS Entertainment.
+
+Клингонский язык, Стар Трек, и связанные марки и торговые марки CBS Studios, Inc., использованы согласно рекомендациям доктрины "Добросовестного использования".
+
+Программирование под Android: {De'vID:n:name}
+Flutter (iOS) port: Daniel Dadap
+Клингоно-агнглийская информация: {De'vID:n:name,nolink}, с помощью других
+Переводы на немецкий язык: {Quvar:n:name} (Ливен Л. Литар)
+Переводы на шведский язык: {Klingonska Akademien:url:http://klingonska.org/}
+Переводы на русский язык: Кирилл Шилов ({tlhIngan:n:name,nolink} в KLI и {qrell:n:name,nolink} в Klingon Assault Group), Дэниел Дэдеп и Sirglin (Ольга Косарева)
+TNG {pIqaD:n} font: Адмирал {qurgh lungqIj:n:name,nolink} из {Клингонской штурмовой группы:url:http://www.kag.org/}
+DSC {pIqaD:n:nolink} font: {Quvar:n:name,nolink} (Ливен Л. Литар)
+
+
+Особая благодарность Марку Окранду ({marq 'oqranD:n:name}) за создание Клингонского языка.</column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{boQ:v}, {-wI':v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags">version, help, about</column>
+      <column name="search_tags_de">Hilfe, Anleitung</column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">boqor</column>
       <column name="part_of_speech">n:name,fic,extcan</column>
       <column name="definition">Bokor</column>
@@ -4675,6 +5292,41 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {DSC:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">buSHach</column>
+      <column name="part_of_speech">n:hyp</column>
+      <column name="definition">thought?</column>
+      <column name="definition_de">Gedanke?</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Qub:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">This was rumoured to have been revealed at {qep'a' 26 (2019):src}, but has not been officially confirmed.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4838,6 +5490,41 @@ This is a country on Earth. Some of its provinces are:
       <column name="notes_zh_HK"></column>
       <column name="hidden_notes"></column>
       <column name="components">{cho':n}, {tay:n:2}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">De'vID</column>
+      <column name="part_of_speech">n:name,deriv</column>
+      <column name="definition">De'vID</column>
+      <column name="definition_de">De'vID</column>
+      <column name="definition_fa">De'vID</column>
+      <column name="definition_sv">De'vID</column>
+      <column name="definition_ru">De'vID</column>
+      <column name="definition_zh_HK">De'vID</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{boQwI':n:deriv}</column>
+      <column name="notes">The name of the author of this program and the compiler of its lexicon.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru">Имя автора этой программы и того, кто собрал этот словарь</column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{De':n}, {vID:v:is}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -5804,7 +6491,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="definition">quarters, living quarters</column>
       <column name="definition_de">Quartiere</column>
       <column name="definition_fa">چهارم، چهارم زندگی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">kvartaler, bostäder [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hytt, rum (plural)</column>
       <column name="definition_ru"></column>
       <column name="definition_zh_HK">宿舍、生活區 [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
@@ -6070,12 +6757,12 @@ This is a country on Earth. Some of its provinces are:
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="search_tags"></column>
-      <!-- http://nordicebm.wordpress.com/2014/11/12/igniting-the-hidden-fire-of-demand-for-understandable-scientific-evidence/ -->
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
+      <!-- http://nordicebm.wordpress.com/2014/11/12/igniting-the-hidden-fire-of-demand-for-understandable-scientific-evidence/ -->
       <column name="source"></column>
     </table>
     <table name="mem">
@@ -6224,6 +6911,76 @@ This is a country on Earth. Some of its provinces are:
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Qov</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Robyn Stewart</column>
+      <column name="definition_de">Robyn Stewart</column>
+      <column name="definition_fa">رابین استوارت</column>
+      <column name="definition_sv">Robyn Stewart</column>
+      <column name="definition_ru">Робин Стюарт</column>
+      <column name="definition_zh_HK">羅賓·斯圖爾特</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">She is the Klingon language expert behind the dialogue in {DSC:src}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru">Она является экспертом по Клингонскому языку для {DSC:src}.</column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Quvar</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Quvar</column>
+      <column name="definition_de">Quvar</column>
+      <column name="definition_fa">قووار</column>
+      <column name="definition_sv">Quvar</column>
+      <column name="definition_ru">Кувар</column>
+      <column name="definition_zh_HK">古娃爾</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qepHom'a':n}</column>
+      <column name="notes">This is the Klingon name of Lieven L. Litaer, a {Klingon teacher from Germany:url:http://www.youtube.com/user/KlingonTeacher}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru">Это Клингонское имя Ливена Л. Литара {Клингонский учитель из Германии:url:http://www.youtube.com/user/KlingonTeacher}.</column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Quv'eq</column>
       <column name="part_of_speech">n:anim,extcan</column>
       <column name="definition">type of animal, kuvrek</column>
@@ -6367,7 +7124,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="entry_name">roS</column>
       <column name="part_of_speech">v:3,is,hyp</column>
       <column name="definition">be agile, be nimble, be spry?</column>
-      <column name="definition_de">agil, flott, wendig</column>
+      <column name="definition_de">agil, flott, wendig sein</column>
       <column name="definition_fa">چاق بودن، پرتقال، پرتقال [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara smidig, vara nimble, bli spry? [AUTOTRANSLATED]</column>
       <column name="definition_ru"></column>
@@ -6507,7 +7264,7 @@ This is a country on Earth. Some of its provinces are:
       <column name="entry_name">SoSbor</column>
       <column name="part_of_speech">n:hyp</column>
       <column name="definition">motherboard, core?</column>
-      <column name="definition_de">Motherboard</column>
+      <column name="definition_de">Motherboard?</column>
       <column name="definition_fa">مادربرد، هسته [AUTOTRANSLATED]</column>
       <column name="definition_sv">enhet, kärna</column>
       <column name="definition_ru"></column>
@@ -6536,6 +7293,41 @@ This is a country on Earth. Some of its provinces are:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="source">[1] {BoP:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Suchtuv</column>
+      <column name="part_of_speech">n:hyp</column>
+      <column name="definition">dream?</column>
+      <column name="definition_de">Traum?</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{naj:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes">This was rumoured to have been revealed at {qep'a' 26 (2019):src}, but has not been officially confirmed.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7148,6 +7940,41 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
       <column name="antonyms"></column>
       <column name="see_also">{'obe':n}</column>
       <column name="notes">The word {'ISletlh:n:hyp,nolink} has never appeared by itself, but is found in {yan 'ISletlh:n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'ISqu'</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Agnieszka Solska</column>
+      <column name="definition_de">Agnieszka Solska</column>
+      <column name="definition_fa"></column>
+      <column name="definition_sv"></column>
+      <column name="definition_ru"></column>
+      <column name="definition_zh_HK"></column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">She is the translator of the Tao Te Ching and Sunzi's Art of War into Klingon.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
