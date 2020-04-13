@@ -2,7 +2,7 @@
 
 This repository contains:
 1) Discord bot, based upon example bot: https://medium.com/@renesansz/tutorial-creating-a-simple-discord-bot-9465a2764dc0
-2) rest-like service, "Ask beq"
+2) rest-like service, "Ask beq" (somewhat discontinued - may not work as it should, so be careful)
 3) Beq-Engine, does the actual work for the bot and Ask Beq.
 
 Written in JS/Node.js
