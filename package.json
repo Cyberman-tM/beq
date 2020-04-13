@@ -4,13 +4,13 @@
   "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "discord.js": "^11.6.4",
     "dom-parser": "^0.1.6",
     "fs": "^0.0.2",
     "latest-version": "^5.1.0",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "requestify": "^0.2.5",
-    "restify": "^8.5.0",
+    "restify": "^8.5.1",
     "winston": "^3.2.1",
     "winston-logzio": "^1.0.8",
     "xmldoc": "^1.1.2"
