@@ -527,7 +527,7 @@ bot.on('message', function (messageDJS)
 			sndMessage += beqTalk.message;
 			break;
 		case 'reLoad':
-			sndMessage = cat.reLoad(beq);
+			sndMessage = cat.catReLoad(beq);
 			
 			break;
 		default:
