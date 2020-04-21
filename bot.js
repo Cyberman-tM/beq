@@ -20,6 +20,7 @@ var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
 var storeData = require('./bot_modules/commands/extStore/saveData.js');
+var cat = require('./bot_modules/commands/categorize20/cat20.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -524,6 +525,9 @@ bot.on('message', function (messageDJS)
 			beqTalk.lookWord = message;
 			beqTalk = beq.Engine(beqTalk);
 			sndMessage += beqTalk.message;
+			break;
+		case 'reLoad':
+			cat.reLoad(beq);
 			break;
 		default:
 			//This MUST return false if nothing was done!
