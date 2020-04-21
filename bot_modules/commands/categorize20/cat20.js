@@ -7,4 +7,4 @@ var catAPI = require('./../../external/cat_api.js');
 
 var tmpReload = require('./reloadcats.js');
 
-module.exports.catReLoad = tmpReload;
+module.exports.catReLoad = tmpReload();
