@@ -23,7 +23,7 @@ module.exports = function(beq_engine)
         ]
         */
         // Get the response body
-        beq_engine.catEx = JSON.parse(response.getBody());       
+        beq_engine.catEx = (response.getBody());       
 
     });
 
