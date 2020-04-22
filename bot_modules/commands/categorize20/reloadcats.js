@@ -4,6 +4,15 @@
 var requestify = require('requestify'); 
 var catAPI = require('./../../external/cat_api.js');
 
+var winston = require('winston');
+var logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.json(),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
+
 module.exports = function(beq_engine)
 {
     var tmpRet = "";    
@@ -24,6 +33,9 @@ module.exports = function(beq_engine)
         */
         // Get the response body
         beq_engine.catEx = (response.getBody());       
+
+        logger.info(beq_engine.catEx);
+        logger.info("sf");
 
     });
 
