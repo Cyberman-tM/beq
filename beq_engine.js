@@ -62,6 +62,7 @@ var reReadKDB = require('./bot_modules/commands/categorize/reReadKDB.js');
 var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
 var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
+var tmpExperiment = "";
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');

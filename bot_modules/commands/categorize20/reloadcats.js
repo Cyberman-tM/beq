@@ -25,9 +25,9 @@ module.exports = function(beq_engine)
         // Get the response body
         var catList = JSON.parse(response.getBody());
 
-        tmpRet = catList[0].KID + catList[0].fn;
+        beq_engine.tmpExperiment = catList[0].KID + catList[0].fn;
 
-    }).wait();
+    });
 
-    return tmpRet;
+    return beq_engine.tmpExperiment;
 }
