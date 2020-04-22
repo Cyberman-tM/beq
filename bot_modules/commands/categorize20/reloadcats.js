@@ -33,11 +33,9 @@ module.exports = function(beq_engine)
         ]
         */
         // Get the response body
-        logger.info("in response");
+        logger.info("in response");        
         var  catData = JSON.parse(response.getBody());
-        logger.info(catData.KID);
-        logger.info(catData[0].fn);
-        logger.info(catData[0].WIDS[0].JDescs.en);
+        logger.info(catData);
 
     });
     tmpRet = "done?";
