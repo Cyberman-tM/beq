@@ -39,8 +39,6 @@ module.exports = function(beq_engine)
         logger.info(catData[0].WIDS[0].JDescs.en);
 
     });
-cs
-
     tmpRet = "done?";
     return tmpRet;
 }
