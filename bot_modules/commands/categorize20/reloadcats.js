@@ -33,13 +33,13 @@ module.exports = function(beq_engine)
         ]
         */
         // Get the response body
-        beq_engine.catEx = (response.getBody());       
-
-        logger.info(beq_engine.catEx);
-        logger.info("sf");
+        var  catData = JSON.parse(response.getBody());
+        logger.info(catData.KID);
+        logger.info(catData[0].fn);
+        logger.info(catData[0].WIDS[0].JDescs.en);
 
     });
-
+cs
 
     tmpRet = "done?";
     return tmpRet;
