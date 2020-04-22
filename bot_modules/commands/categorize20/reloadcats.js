@@ -27,7 +27,7 @@ module.exports = function(beq_engine)
 
         tmpRet = catList[0].KID + catList[0].fn;
 
-    });
+    }).wait();
 
     return tmpRet;
 }
