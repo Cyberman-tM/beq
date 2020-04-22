@@ -33,6 +33,7 @@ module.exports = function(beq_engine)
         ]
         */
         // Get the response body
+        logger.info("in response");
         var  catData = JSON.parse(response.getBody());
         logger.info(catData.KID);
         logger.info(catData[0].fn);
@@ -40,5 +41,6 @@ module.exports = function(beq_engine)
 
     });
     tmpRet = "done?";
+    beq_engine.catEx = "catex";
     return tmpRet;
 }
