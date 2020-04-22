@@ -17,8 +17,8 @@ module.exports = function(beq_engine)
 {
     var tmpRet = "";    
     logger.info("in func");
-logger.info(catAPI.catGetData + "?dataID=categs");
-    requestify.get(catAPI.catGetData + "?dataID=categs").then(function (response)
+
+    requestify.get(catAPI.catGetData + "&dataID=categs").then(function (response)
     {
         /*
         KID
