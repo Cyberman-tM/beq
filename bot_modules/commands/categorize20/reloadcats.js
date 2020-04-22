@@ -6,7 +6,7 @@ var catAPI = require('./../../external/cat_api.js');
 
 module.exports = function(beq_engine)
 {
-    var tmpRet = "";
+    var tmpRet = "";    
 
     requestify.get(catAPI.catGetData + "?dataID=categs").then(function (response)
     {
@@ -23,11 +23,11 @@ module.exports = function(beq_engine)
         ]
         */
         // Get the response body
-        var catList = JSON.parse(response.getBody());
-
-        beq_engine.tmpExperiment = catList[0].KID + catList[0].fn;
+        beq_engine.catEx = JSON.parse(response.getBody());       
 
     });
 
-    return beq_engine.tmpExperiment;
+
+    tmpRet = "done?";
+    return tmpRet;
 }
