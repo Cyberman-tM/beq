@@ -38,6 +38,7 @@ module.exports = function(beq_engine)
         logger.info(catData);
         catData.forEach(function(aCat) 
         {
+           logger.info("in foreach");
            logger.info(aCat.fn); 
         });
         
