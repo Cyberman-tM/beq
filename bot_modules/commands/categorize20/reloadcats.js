@@ -35,6 +35,7 @@ module.exports = function(beq_engine)
         // Get the response body
         logger.info("in response");        
         var  catData = JSON.parse(response.getBody());
+        logger.info(catData);
         catData.forEach(function(aCat) 
         {
            logger.info(aCat.fn); 
