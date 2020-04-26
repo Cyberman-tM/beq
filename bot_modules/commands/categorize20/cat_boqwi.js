@@ -142,6 +142,7 @@ module.exports = function (beq_engine) {
                 addBulkWord(chkWord);
                 addBulkC2W(itemCat, chkWord);
 
+                
                 //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
                 /*
                 var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
@@ -164,6 +165,7 @@ module.exports = function (beq_engine) {
     });
     logger.info("before bulk");
 
+    logger.info(bulkWordData);
     //Call bulk functions
     //First: call with basic categories
     //Then:  call with categories for boQwI' subcategories
