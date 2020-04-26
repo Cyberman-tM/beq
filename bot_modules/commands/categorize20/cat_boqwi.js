@@ -166,6 +166,8 @@ module.exports = function (beq_engine) {
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
     var boQbulk = bulkCatData;
+
+    //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("wakeup");
@@ -197,7 +199,7 @@ function reCreateBaseCats() {
     createCat("slang", "en", "Similar to regional words, it\'s canon, but not everyone knows or uses it.");
     createCat("weapon", "en", "Anything related to weapons, be they handheld or ship-mounted.");
     createCat("sentence_proverb", "en", "%%fill in better description");
-    createCat("source_kli", "en", "");
+    createCat("source_kli", "en", "%%fill in better description");
     createCat("source_qephom", "en", "Revealed at a qepHom, year see category name");
     createCat("sentence_phrase", "en", "Generic phrases.");
     createCat("sentence_toast", "en", "Toasts");
@@ -213,24 +215,16 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
-    bulkWordData.push(name);
+    bulkWordData.push({ "n": name });
 }
 
 function addBulkC2W(nameCat, nameWord) {
-    bulkC2W.push(nameCat, nameWord);
+    bulkC2W.push({ "k": nameCat, "w": nameWord });
 }
 
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
-    /*
-    var fullURI = catAPI.catCreateCat + "&catName=" + name
-        + "&catDLan=" + langu
-        + "&catDesc=" + encodeURI(desc);
-    */
 
-    bulkCatData.push({ "name": name, "langu": langu, "desc": desc });
-
-    //No response needed
-    //requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
+    bulkCatData.push({ "n": name, "l": langu, "d": desc });
 }
 
