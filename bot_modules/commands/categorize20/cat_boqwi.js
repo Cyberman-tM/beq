@@ -13,14 +13,14 @@ var logger = winston.createLogger({
     ]
 });
 
+var bulkCatData = [];
+var bulkWordData = [];
+var bulkC2W = [];
+
 module.exports = function (beq_engine) {
     var regexLook = "";
     var RE = "";
     var result = "";
-
-    var bulkCatData = [];
-    var bulkWordData = [];
-    var bulkC2W = [];
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
