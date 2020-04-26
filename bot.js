@@ -511,6 +511,10 @@ bot.on('message', function (messageDJS) {
 			case 'reLoad2':
 				sndMessage = beq.catEx;
 				break;
+			case 'reKDB':
+				cat.catReKDB(beq);
+				sndMessage = "Mabe it worked...";
+				break;
 			default:
 				//This MUST return false if nothing was done!
 				cmdFound = extCmds.extCommands(bot, userID, message, sndMessage);
