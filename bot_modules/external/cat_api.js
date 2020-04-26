@@ -19,5 +19,5 @@ module.exports.catW2C = tmpW2C;
 module.exports.catCreateCatBulk = tmpCreateCatBulk;
 module.exports.catAddWordBulk = tmpAddWordBulk;
 module.exports.cat_w2cBulk = tmpW2CBulk;
-module.exports.catWakeup    = tmpWakeup;
+module.exports.catWakeup    = tmpWakeUp;
 //module.exports.catGetData   = tmpGetData;
