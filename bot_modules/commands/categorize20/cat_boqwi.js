@@ -185,13 +185,13 @@ module.exports = function (beq_engine) {
 
     function createCat(name, langu, desc) {
         var fullURI = catAPI.catCreateCat + "&catName=" + name
-        + "&catDLan=" + langu
-        + "&catDesc=" + encodeURI(desc);
-        
-        logger.info(fullURI);
+            + "&catDLan=" + langu
+            + "&catDesc=" + encodeURI(desc);
+
+
 
         //No response needed
-        requestify.get(fullURI);
-    }
+        requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
+}
 
 };
