@@ -165,11 +165,13 @@ module.exports = function (beq_engine) {
         //Finally: call with category <> words
         var boQbulk = bulkCatData;
         reCreateBaseCats();
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-            bulkCatData = boQbulk;
+        requestify.get(catAPI.catWakeup).then(function () {
             requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                    requestify.post(catAPI.catW2CBulk, bulkC2W);
+                bulkCatData = boQbulk;
+                requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+                    requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
+                        requestify.post(catAPI.catW2CBulk, bulkC2W);
+                    });
                 });
             });
         });
