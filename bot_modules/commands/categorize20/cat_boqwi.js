@@ -132,8 +132,9 @@ module.exports = function (beq_engine) {
                 //Store as uhmal
                 chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
 
+                var fromBoq = encodeURI("Taken from boQwI\'");
                 //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
-                requestify.get(catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc='Taken from boQwI\''").then(function (response) {
+                requestify.get(catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq).then(function (response) {
                     //Response should be the category id
                     var KID = response.getBody();
 
@@ -184,7 +185,7 @@ module.exports = function (beq_engine) {
         //No response required
         requestify.get(catAPI.catGetData + "&catName=" + name
             + "&catDLan=" + langu     //always en
-            + "&catDesc=" + desc
+            + "&catDesc=" + encodeURI(desc)
         );
     }
 
