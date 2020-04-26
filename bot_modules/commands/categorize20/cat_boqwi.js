@@ -185,7 +185,7 @@ module.exports = function (beq_engine) {
         createCat("sentence_proverb_replacement", "en", "%%fill in better description");
         createCat("sentence_lyrics", "en", "Song texts.");
 
-        requestify.post(catAPI.catCreateCatBulk, {bulkCatData});
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
 
 
     }
