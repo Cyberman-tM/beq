@@ -136,7 +136,6 @@ module.exports = function (beq_engine) {
                 var fromBoq = encodeURI("Taken from boQwI\'");
                 //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
                 var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
-                logger.info(createCatURL);
                 requestify.get(createCatURL).then(function (response) {
                     //Response should be the category id
                     var KID = response.getBody();
