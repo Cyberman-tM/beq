@@ -18,7 +18,7 @@ module.exports = function (beq_engine) {
     var RE = "";
     var result = "";
 
-    var bulkCatData;
+    var bulkCatData = [];
 
     //Before we start, we need to define a few basic categories that WILL be used here
     //Most likely they're already there, but it's easier to just "create" them again
