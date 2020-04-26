@@ -19,10 +19,8 @@ module.exports = function (beq_engine) {
     var result = "";
 
     var bulkCatData = [];
-
-    //Before we start, we need to define a few basic categories that WILL be used here
-    //Most likely they're already there, but it's easier to just "create" them again
-    reCreateBaseCats();
+    var bulkWordData = [];
+    var bulkC2W = [];
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
@@ -135,7 +133,11 @@ module.exports = function (beq_engine) {
                 //Store as uhmal
                 chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
 
-                var fromBoq = encodeURI("Taken from boQwI\'");
+                //Add to category bulk array
+                createCat(itemCat, "en", "Taken from boQwI\'");
+                addBulkWord(chkWord);
+                addBulkC2W(itemCat, chkWord);
+
                 //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
                 /*
                 var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
@@ -155,6 +157,27 @@ module.exports = function (beq_engine) {
                 */
             });
         }
+
+        //Call bulk functions
+        //First: call with basic categories
+        //Then:  call with categories for boQwI' subcategories
+        //Next:  call with words we want to categorize
+        //Finally: call with category <> words
+        var boQbulk = bulkCatData;
+        reCreateBaseCats();
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+            bulkCatData = boQbulk;
+            requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
+                    requestify.post(catAPI.catW2CBulk, bulkC2W);
+                });
+            });
+        });
+
+
+
+        //refresh array for next bulk call
+
 
     }
     );
@@ -186,23 +209,28 @@ module.exports = function (beq_engine) {
         createCat("sentence_proverb_secret", "en", "%%fill in better description");
         createCat("sentence_proverb_replacement", "en", "%%fill in better description");
         createCat("sentence_lyrics", "en", "Song texts.");
+    }
 
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
+    function addBulkWord(name) {
+        bulkWordData.push(name);
+    }
 
-
+    function addBulkC2W(nameCat, nameWord) {
+        bulkC2W.push(nameCat, nameWord);
     }
 
     function createCat(name, langu, desc) {
+        //No creation anymore, just collect for bulk creation
         /*
         var fullURI = catAPI.catCreateCat + "&catName=" + name
             + "&catDLan=" + langu
             + "&catDesc=" + encodeURI(desc);
         */
 
-        bulkCatData.push({"name": name, "langu": langu, "desc": desc});
-        
+        bulkCatData.push({ "name": name, "langu": langu, "desc": desc });
+
         //No response needed
         //requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
-}
+    }
 
 };
