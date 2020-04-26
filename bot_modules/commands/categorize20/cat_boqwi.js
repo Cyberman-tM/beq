@@ -22,6 +22,10 @@ module.exports = function (beq_engine) {
     var RE = "";
     var result = "";
 
+    bulkCatData = [];
+    bulkWordData = [];
+    bulkC2W = [];
+
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
         //In-memory, everything is normal, but we store uhmal
