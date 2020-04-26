@@ -157,86 +157,80 @@ module.exports = function (beq_engine) {
                 */
             });
         }
+    });
+    logger.info("before bulk");
 
-        logger.info("before bulk");
-
-        //Call bulk functions
-        //First: call with basic categories
-        //Then:  call with categories for boQwI' subcategories
-        //Next:  call with words we want to categorize
-        //Finally: call with category <> words
-        var boQbulk = bulkCatData;
-        reCreateBaseCats();
-        requestify.get(catAPI.catWakeup).then(function () {
-            logger.info("wakeup");
+    //Call bulk functions
+    //First: call with basic categories
+    //Then:  call with categories for boQwI' subcategories
+    //Next:  call with words we want to categorize
+    //Finally: call with category <> words
+    var boQbulk = bulkCatData;
+    reCreateBaseCats();
+    requestify.get(catAPI.catWakeup).then(function () {
+        logger.info("wakeup");
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+            logger.info("createcat");
+            bulkCatData = boQbulk;
             requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-                logger.info("createcat");
-                bulkCatData = boQbulk;
-                requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-                    requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                        requestify.post(catAPI.catW2CBulk, bulkC2W);
-                    });
+                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
+                    requestify.post(catAPI.catW2CBulk, bulkC2W);
                 });
             });
         });
-
-
-
-        //refresh array for next bulk call
-
-
-    }
-    );
-
-    function reCreateBaseCats() {
-        //Call order is intended - superkategories need to exist before the subkategorie is created
-        createCat("sentence", "en", "Whole sentences that are canon.");
-        createCat("source", "en", "First instance of the word, origin.");
-        createCat("animal", "en", "Animal names and everything related");
-        createCat("being", "en", "Beings, as opposed to things.");
-        createCat("archaic", "en", "Words rarely used, or outdated versions.");
-        createCat("derived", "en", "These words are probably canon, but we don\'t really have confirmation.");
-        createCat("regional", "en", "Similar to slang, they\'re canon, but not everyone knows or uses them.");
-        createCat("food", "en", "Anything related to stuff you can eat.");
-        createCat("invectives", "en", "Insults and the like.");
-        createCat("slang", "en", "Similar to regional words, it\'s canon, but not everyone knows or uses it.");
-        createCat("weapon", "en", "Anything related to weapons, be they handheld or ship-mounted.");
-        createCat("sentence_proverb", "en", "%%fill in better description");
-        createCat("source_kli", "en", "");
-        createCat("source_qephom", "en", "Revealed at a qepHom, year see category name");
-        createCat("sentence_phrase", "en", "Generic phrases.");
-        createCat("sentence_toast", "en", "Toasts");
-        createCat("sentence_eu", "en", "Empire Unification");
-        createCat("sentence_idiom", "en", "Idioms, sayings that have more than the literal meaning.");
-        createCat("sentence_muqadves", "en", "mu\'qaD veS - insult war");
-        createCat("sentence_nentay", "en", "The rite of ascension.");
-        createCat("sentence_qilop", "en", "%%fill in better description");
-        createCat("sentence_rejection", "en", "%%fill in better description");
-        createCat("sentence_proverb_secret", "en", "%%fill in better description");
-        createCat("sentence_proverb_replacement", "en", "%%fill in better description");
-        createCat("sentence_lyrics", "en", "Song texts.");
-    }
-
-    function addBulkWord(name) {
-        bulkWordData.push(name);
-    }
-
-    function addBulkC2W(nameCat, nameWord) {
-        bulkC2W.push(nameCat, nameWord);
-    }
-
-    function createCat(name, langu, desc) {
-        //No creation anymore, just collect for bulk creation
-        /*
-        var fullURI = catAPI.catCreateCat + "&catName=" + name
-            + "&catDLan=" + langu
-            + "&catDesc=" + encodeURI(desc);
-        */
-
-        bulkCatData.push({ "name": name, "langu": langu, "desc": desc });
-
-        //No response needed
-        //requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
-    }
+    });
 
 };
+
+
+function reCreateBaseCats() {
+    //Call order is intended - superkategories need to exist before the subkategorie is created
+    createCat("sentence", "en", "Whole sentences that are canon.");
+    createCat("source", "en", "First instance of the word, origin.");
+    createCat("animal", "en", "Animal names and everything related");
+    createCat("being", "en", "Beings, as opposed to things.");
+    createCat("archaic", "en", "Words rarely used, or outdated versions.");
+    createCat("derived", "en", "These words are probably canon, but we don\'t really have confirmation.");
+    createCat("regional", "en", "Similar to slang, they\'re canon, but not everyone knows or uses them.");
+    createCat("food", "en", "Anything related to stuff you can eat.");
+    createCat("invectives", "en", "Insults and the like.");
+    createCat("slang", "en", "Similar to regional words, it\'s canon, but not everyone knows or uses it.");
+    createCat("weapon", "en", "Anything related to weapons, be they handheld or ship-mounted.");
+    createCat("sentence_proverb", "en", "%%fill in better description");
+    createCat("source_kli", "en", "");
+    createCat("source_qephom", "en", "Revealed at a qepHom, year see category name");
+    createCat("sentence_phrase", "en", "Generic phrases.");
+    createCat("sentence_toast", "en", "Toasts");
+    createCat("sentence_eu", "en", "Empire Unification");
+    createCat("sentence_idiom", "en", "Idioms, sayings that have more than the literal meaning.");
+    createCat("sentence_muqadves", "en", "mu\'qaD veS - insult war");
+    createCat("sentence_nentay", "en", "The rite of ascension.");
+    createCat("sentence_qilop", "en", "%%fill in better description");
+    createCat("sentence_rejection", "en", "%%fill in better description");
+    createCat("sentence_proverb_secret", "en", "%%fill in better description");
+    createCat("sentence_proverb_replacement", "en", "%%fill in better description");
+    createCat("sentence_lyrics", "en", "Song texts.");
+}
+
+function addBulkWord(name) {
+    bulkWordData.push(name);
+}
+
+function addBulkC2W(nameCat, nameWord) {
+    bulkC2W.push(nameCat, nameWord);
+}
+
+function createCat(name, langu, desc) {
+    //No creation anymore, just collect for bulk creation
+    /*
+    var fullURI = catAPI.catCreateCat + "&catName=" + name
+        + "&catDLan=" + langu
+        + "&catDesc=" + encodeURI(desc);
+    */
+
+    bulkCatData.push({ "name": name, "langu": langu, "desc": desc });
+
+    //No response needed
+    //requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
+}
+
