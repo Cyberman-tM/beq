@@ -158,6 +158,8 @@ module.exports = function (beq_engine) {
             });
         }
 
+        logger.info("before bulk");
+
         //Call bulk functions
         //First: call with basic categories
         //Then:  call with categories for boQwI' subcategories
@@ -166,7 +168,9 @@ module.exports = function (beq_engine) {
         var boQbulk = bulkCatData;
         reCreateBaseCats();
         requestify.get(catAPI.catWakeup).then(function () {
+            logger.info("wakeup");
             requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+                logger.info("createcat");
                 bulkCatData = boQbulk;
                 requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
                     requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
