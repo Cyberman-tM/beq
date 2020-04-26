@@ -166,6 +166,7 @@ module.exports = function (beq_engine) {
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
     var boQbulk = bulkCatData;
+    logger.info(bulkWordData.length);
 
     //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
     reCreateBaseCats();
