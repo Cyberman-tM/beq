@@ -184,11 +184,14 @@ module.exports = function (beq_engine) {
     }
 
     function createCat(name, langu, desc) {
-        //No response required
-        requestify.get(catAPI.catCreateCat + "&catName=" + name
-            + "&catDLan=" + langu     //always en
-            + "&catDesc=" + encodeURI(desc)
-        );
+        var fullURI = catAPI.catCreateCat + "&catName=" + name
+        + "&catDLan=" + langu
+        + "&catDesc=" + encodeURI(desc);
+        
+        logger.info(fullURI);
+
+        //No response needed
+        requestify.get(fullURI);
     }
 
 };
