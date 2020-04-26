@@ -6,6 +6,7 @@
 var tmpAddWord = process.env.cat_addword;
 var tmpCreateCat = process.env.cat_create;
 var tmpW2C = process.env.cat_w2c;
+var tmpCreateCatBulk = process.env.cat_createBulk;
 //var tmpWakeup = process.env.cat_wakeup;
 //var tmpGetData = process.env.cat_getdata;
 
@@ -13,5 +14,6 @@ var tmpW2C = process.env.cat_w2c;
 module.exports.catAddWord   = tmpAddWord;
 module.exports.catCreateCat = tmpCreateCat;
 module.exports.catW2C       = tmpW2C;
+module.exports.catCreateCatBulk = tmpCreateCatBulk;
 //module.exports.catWakeup    = tmpWakeup;
 //module.exports.catGetData   = tmpGetData;

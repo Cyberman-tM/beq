@@ -18,6 +18,8 @@ module.exports = function (beq_engine) {
     var RE = "";
     var result = "";
 
+    var bulkCatData = array();
+
     //Before we start, we need to define a few basic categories that WILL be used here
     //Most likely they're already there, but it's easier to just "create" them again
     reCreateBaseCats();
@@ -156,9 +158,9 @@ module.exports = function (beq_engine) {
     );
 
     function reCreateBaseCats() {
+        //Call order is intended - superkategories need to exist before the subkategorie is created
+        createCat("sentence", "en", "Whole sentences that are canon.");
         createCat("source", "en", "First instance of the word, origin.");
-        createCat("source_kli", "en", "");
-        createCat("source_qephom", "en", "Revealed at a qepHom, year see category name");
         createCat("animal", "en", "Animal names and everything related");
         createCat("being", "en", "Beings, as opposed to things.");
         createCat("archaic", "en", "Words rarely used, or outdated versions.");
@@ -168,30 +170,37 @@ module.exports = function (beq_engine) {
         createCat("invectives", "en", "Insults and the like.");
         createCat("slang", "en", "Similar to regional words, it\'s canon, but not everyone knows or uses it.");
         createCat("weapon", "en", "Anything related to weapons, be they handheld or ship-mounted.");
-        createCat("sentence", "en", "Whole sentences that are canon.");
+        createCat("sentence_proverb", "en", "%%fill in better description");
+        createCat("source_kli", "en", "");
+        createCat("source_qephom", "en", "Revealed at a qepHom, year see category name");
         createCat("sentence_phrase", "en", "Generic phrases.");
         createCat("sentence_toast", "en", "Toasts");
         createCat("sentence_eu", "en", "Empire Unification");
         createCat("sentence_idiom", "en", "Idioms, sayings that have more than the literal meaning.");
         createCat("sentence_muqadves", "en", "mu\'qaD veS - insult war");
         createCat("sentence_nentay", "en", "The rite of ascension.");
-        createCat("sentence_proverb", "en", "%%fill in better description");
         createCat("sentence_qilop", "en", "%%fill in better description");
         createCat("sentence_rejection", "en", "%%fill in better description");
         createCat("sentence_proverb_secret", "en", "%%fill in better description");
         createCat("sentence_proverb_replacement", "en", "%%fill in better description");
         createCat("sentence_lyrics", "en", "Song texts.");
+
+        requestify.post(catAPI.catCreateCatBulk, {bulkCatData});
+
+
     }
 
     function createCat(name, langu, desc) {
+        /*
         var fullURI = catAPI.catCreateCat + "&catName=" + name
             + "&catDLan=" + langu
             + "&catDesc=" + encodeURI(desc);
+        */
 
-
-
+        bulkCatData.push({"name": name, "langu": langu, "desc": desc});
+        
         //No response needed
-        requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
+        //requestify.get(fullURI).then(function (response) { logger.info(response.getBody());});
 }
 
 };
