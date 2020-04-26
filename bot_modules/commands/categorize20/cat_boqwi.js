@@ -175,6 +175,7 @@ module.exports = function (beq_engine) {
             logger.info("createcat");
             bulkCatData = boQbulk;
             requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
+                logger.info("bulkword");
                 requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
                     requestify.post(catAPI.catW2CBulk, bulkC2W);
                 });
