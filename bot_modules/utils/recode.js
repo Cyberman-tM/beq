@@ -313,7 +313,7 @@ module.exports.RC2Morska = function(orig_text)
 
 
 //NEU: Unicode
-module.exports.RC2Uni = function(orig_text)
+module.exports.RCtlh2Uni = function(orig_text)
 {
    tmpText = "";
    //Konvertierung auf UHMAL -> jeder Buchstabe ein Buchstabe :-)
