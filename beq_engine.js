@@ -278,6 +278,8 @@ module.exports.Engine = function (beqTalk)
 			tmpText = kTranscode.RC2Morska(beqTalk.lookWord);
 		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal3')
 			tmpText = kTranscode.RCtlh2u3(beqTalk.lookWord);
+ 		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'unicode')
+			tmpText = kTranscode.RCtlh2Uni(beqTalk.lookWord);
 			
 
 		if (tmpText != '')
@@ -685,7 +687,8 @@ module.exports.createTranslation = function (beqTalk)
 				if (infTips != "")
 					sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
-            
+			
+			//possible TODO: store KatID in item, request cat name from AZS?
 			//Check for categories if requested
             if (beqTalk.showCat == true)
             {
