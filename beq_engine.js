@@ -247,6 +247,8 @@ module.exports.Engine = function (beqTalk)
 			tmpText += kTranscode.shortDesc + beqTalk.newline;
 			tmpText += kTranscode.longHelp;
 		}
+		else if (beqTalk.transLang == 'n/a')
+			tmpText = 'I\'m sorry, "n/a" means that encoding is Not Available.';
 		//Default case
 		else if (beqTalk.lookLang == 'tlhIngan')
 		{
@@ -289,8 +291,6 @@ module.exports.Engine = function (beqTalk)
 				tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
 			
 			//More to be added when requested/bored
-			else if (beqTalk.transLang == 'n/a')
-			   tmpText = 'I\'m sorry, this means that encoding is not available.';
 		}
 
 		if (tmpText != '')
