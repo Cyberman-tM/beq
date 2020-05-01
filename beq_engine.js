@@ -291,7 +291,7 @@ module.exports.Engine = function (beqTalk)
 				tmpText = kTranscode.RCu32tlh(beqTalk.lookWord);
 			else if (beqTalk.transLang == 'T2tlh' )
 				tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
-				else if (beqTalk.transLang == 'TI2tlh' )
+			else if (beqTalk.transLang == 'TI2tlh' )
 				tmpText = kTranscode.RCTI2tlh(beqTalk.lookWord);
 			
 			//More to be added when requested/bored
@@ -322,7 +322,7 @@ module.exports.Engine = function (beqTalk)
 			beqTalk.failure = true;
 			beqTalk.message = kTranscode.shortHelp;
 			beqTalk.message += kTranscode.example;
-			beqTalk.message += 'See "recode help" for more details!'
+			beqTalk.message += 'See "recode help" for more details!';
 
 		}
 		beqTalk.lookLang = 'tlh';

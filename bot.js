@@ -512,7 +512,7 @@ bot.on('message', function (messageDJS) {
 				break;
 			case 'reKDB':
 				cat.catReKDB(beq);
-				sndMessage = "Mabe it worked...";
+				sndMessage = "Maybe it worked...";
 				break;
 			default:
 				//This MUST return false if nothing was done!
