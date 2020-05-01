@@ -92,6 +92,8 @@ module.exports.RCtlh2u = function(orig_text)
 	  tmpText = tmpText.replace(/n/g, 'l');
 	  tmpText = tmpText.replace(/o/g, 'n');
 	  tmpText = tmpText.replace(/p/g, 'o');
+
+	//Nicht umgesetzt: a, e, q, Q, D, r, S, t
 	  
 	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
@@ -339,8 +341,14 @@ module.exports.RCtlh2Uni = function(orig_text)
    tmpText = tmpText.replace(/x/g, '\uF8E7');       //Kein klingonischer Buchstabe!
    tmpText = tmpText.replace(/d/g, '\uF8D3');
 
-   //Es fehlen noch einige!
-   
+   tmpText = tmpText.replace(/a/g, '\uF8D0');
+   tmpText = tmpText.replace(/e/g, '\uF8D4');
+   tmpText = tmpText.replace(/q/g, '\uF8DF');
+   tmpText = tmpText.replace(/Q/g, '\uF8E0');
+   tmpText = tmpText.replace(/D/g, '\uF8D3');
+   tmpText = tmpText.replace(/r/g, '\uF8E1');
+   tmpText = tmpText.replace(/S/g, '\uF8E2');
+   tmpText = tmpText.replace(/t/g, '\uF8E3'); 
 
    return tmpText;
 }
