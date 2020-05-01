@@ -46,6 +46,10 @@ module.exports.longHelp = 'Basic operation is simple: *recode* encoding text-to-
 						  '  Can be upper or lower case\r\n' +
 						  '  xifan/XIFAN <> x2tlh \r\n' +
 						  '\r\n' +
+						  '* TINan xol\r\n' +
+						  '  Another simple cipher: tlh=>T, ch=>C, gh=>G, ng=>N, H=>x\r\n' +
+						  '  TINan <> TI2tlh\r\n' +
+						  '\r\n' +
 						  '* uhmal\r\n' +
 						  '  A rather complex cipher, invented to solve the problem of automated sorting with klingon letters,\r\n' +
 						  '  the result can be sorted with standard sorting methods while obeying klingon rules.\r\n' +
@@ -101,6 +105,32 @@ module.exports.RCtlh2x = function(orig_text, upper_case)
 	   tmpText = tmpText.toLowerCase();
    
    return tmpText;
+};
+
+//tlhIngan Hol => TINan xol
+module.exports.RCtlh2TI = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/tlh/g, 'T');
+	tmpText = tmpText.replace(/ch/g, 'C');
+	tmpText = tmpText.replace(/H/g, 'x');
+	tmpText = tmpText.replace(/ng/g, 'N');
+	tmpText = tmpText.replace(/gh/g, 'G');
+
+	return tmpText;
+};
+
+//TINan xol = > tlhIngan Hol
+module.exports.RCTI2tlh = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/T/g, 'tlh');
+	tmpText = tmpText.replace(/C/g, 'ch');
+	tmpText = tmpText.replace(/x/g, 'H');
+	tmpText = tmpText.replace(/N/g, 'ng');
+	tmpText = tmpText.replace(/G/g, 'gh');
+
+	return tmpText;
 };
 
 //xifan hol => tlhIngan Hol
