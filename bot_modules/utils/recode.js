@@ -124,6 +124,7 @@ module.exports.RCtlh2TI = function(orig_text)
 module.exports.RCTI2tlh = function(orig_text)
 {
 	var tmpText = "";
+	logger.info("ti2tlh");
 	tmpText = orig_text.replace(/T/g, 'tlh');
 	tmpText = tmpText.replace(/C/g, 'ch');
 	tmpText = tmpText.replace(/x/g, 'H');
