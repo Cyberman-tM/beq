@@ -26,11 +26,65 @@ var logger = winston.createLogger({
 //uhmal2 encoded!
 module.exports.prefixListu3 = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l5-o2-o3-q1-r2-S1-S5-t3-t5-w3-x3-y3";
 
-module.exports.versInt = '0.95';
+module.exports.versInt = '1.0';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
+module.exports.shortDesc = 'Encode between different variations of representing klingon characters.';
+module.exports.shortHelp = 'recode *targetencoding*  text-to-encode\r\n';
+module.exports.example = 'Example: "recode uhmal tlhIngan Hol" brings "uhmal gnj"';
+
+module.exports.longHelp = 'Basic operation is simple: *recode* encoding text-to-encode\r\n' +
+						  'The encoding is either the name of the possible encodings, or their special codeword for going back from encoded text to pure tlhIngan, if available.\r\n' +
+						  'Ciphers (letter to letter exchange):' +
+						  '\r\n' +
+						  '* TIxan\r\n'+
+						  '  A very basic encoding, tlh=>T, ch=>c, gh=>g, ng=>x, q=>k.\r\n' +
+						  '  The rest remains the same, case remains as in klingon.\r\n' +
+						  '  tixan <> T2tlh\r\n' +
+						  '\r\n' +
+						  '* xifan\r\n' +
+						  '  Basically the same as tixan, but the tlh becomes an x, and the ng is turned into f.\r\n' +
+						  '  Can be upper or lower case\r\n' +
+						  '  xifan/XIFAN <> x2tlh \r\n' +
+						  '\r\n' +
+						  '* uhmal\r\n' +
+						  '  A rather complex cipher, invented to solve the problem of automated sorting with klingon letters,\r\n' +
+						  '  the result can be sorted with standard sorting methods while obeying klingon rules.\r\n' +
+						  '  Rather hard to read, but useful in computing, see below.\r\n' +
+						  '  uhmal <> u2tlh\r\n' +
+						  '\r\n' +
+						  '* uhmal2\r\n' +
+						  '  Basically the same as regular uhmal, but vowels are replaced by numbers.\r\n' +
+						  '  That way a quick check for syllables is easier (just check for number).\r\n' +
+						  '  uhaml2 <> u22tlh\r\n' +
+						  '\r\n' +
+						  '* uhmal3\r\n' +
+						  '  Going a step further, this also encodes consonant clusters into upper case letters A, E, I.\r\n' +
+						  '  Probably only useful in computing, it ensures that a single klingon letter WILL BE a single letter.\r\n' +
+						  '  uhmal3 <> u32tlh\r\n' +
+						  '\r\n' +
+						  '* Unicode (unicode)\r\n' +
+						  '  Translates the characters into their (non-standard) unicode codepoints, so that you can see the pIqaD letters.\r\n' +
+						  '  It should work with most if not all currently available fonts.\r\n' +
+						  '  unicode <> n/a\r\n' +
+						  '\r\n' +
+						  'Dialects (more transformative than ciphers):\r\n' +
+						  '\r\n' +
+						  '* Krotmag (Qotmag)\r\n' +
+						  '  "Translates" the text into Krotmag dialect, i.e. "Dabom" becomes "NaMoM".\r\n' +
+						  '  Qotmag <> n/a\r\n' +
+						  '\r\n' +
+						  '* Tak\'ev (taq\'ev)\r\n' +
+						  '  "Dabom" becomes "nDaMBom"\r\n' +
+						  '  taq\'ev <> n/a\r\n' +
+						  '\r\n' +
+						  '* Morska (mo\'rISqa\')\r\n' +
+						  '  "tlhIngan Hol majatlh" becomes "ghlIngan hol majats"\r\n' +
+						  '  mo\'rISqa\' <> n/a\r\n' +
+						  '\r\n' +
+						  '\r\n';
 
 
-//tlhIngan Hol => xifan hol or XIFAN HOL
+///tlhIngan Hol => xifan hol or XIFAN HOL
 module.exports.RCtlh2x = function(orig_text, upper_case)
 {
 	var tmpText = "";
@@ -351,5 +405,4 @@ module.exports.RCtlh2Uni = function(orig_text)
    tmpText = tmpText.replace(/t/g, '\uF8E3'); 
 
    return tmpText;
-}
-
+};
