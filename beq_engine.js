@@ -240,7 +240,7 @@ module.exports.Engine = function (beqTalk)
 
 	case "recode":
 		var tmpText = '';
-
+logger.info(beqTalk.transLang);
 		if (beqTalk.transLang == 'help')
 		{
 			tmpText = kTranscode.nameInt + beqTalk.newline;
@@ -281,6 +281,7 @@ module.exports.Engine = function (beqTalk)
 		//We're not going from tlhIngan, we want to recode BACK to tlhIngan
 		else
 		{
+			logger.info("else");
 			if (beqTalk.transLang == 'x2tlh')
 				tmpText = kTranscode.RCx2tlh(beqTalk.lookWord);
 			else if (beqTalk.transLang == 'u2tlh' )
