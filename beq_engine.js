@@ -240,7 +240,6 @@ module.exports.Engine = function (beqTalk)
 
 	case "recode":
 		var tmpText = '';
-logger.info(beqTalk.transLang);
 		if (beqTalk.transLang == 'help')
 		{
 			tmpText = kTranscode.nameInt + beqTalk.newline;
@@ -249,7 +248,8 @@ logger.info(beqTalk.transLang);
 		}
 		else if (beqTalk.transLang == 'n/a')
 			tmpText = 'I\'m sorry, "n/a" means that encoding is Not Available.';
-		//Default case
+
+		//lookLang is always tlhIngan, the transLang decides what we do
 		else if (beqTalk.lookLang == 'tlhIngan')
 		{
 			if (beqTalk.transLang == 'xifan')
@@ -277,11 +277,8 @@ logger.info(beqTalk.transLang);
 
 			else if (beqTalk.transLang == 'unicode')
 				tmpText = kTranscode.RCtlh2Uni(beqTalk.lookWord);
-		}
-		//We're not going from tlhIngan, we want to recode BACK to tlhIngan
-		else
-		{
-			logger.info("else");
+
+			//We're not going from tlhIngan, we want to recode BACK to tlhIngan
 			if (beqTalk.transLang == 'x2tlh')
 				tmpText = kTranscode.RCx2tlh(beqTalk.lookWord);
 			else if (beqTalk.transLang == 'u2tlh' )
