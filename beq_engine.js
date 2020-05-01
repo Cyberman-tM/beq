@@ -241,8 +241,14 @@ module.exports.Engine = function (beqTalk)
 	case "recode":
 		var tmpText = '';
 
+		if (beqTalk.transLang == 'help')
+		{
+			tmpText = kTranscode.nameInt + beqTalk.newline;
+			tmpText += kTranscode.shortDesc + beqTalk.newline;
+			tmpText += kTranscode.longHelp;
+		}
 		//Default case
-		if (beqTalk.lookLang == 'tlhIngan')
+		else if (beqTalk.lookLang == 'tlhIngan')
 		{
 			if (beqTalk.transLang == 'xifan')
 				tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, false);
@@ -283,13 +289,6 @@ module.exports.Engine = function (beqTalk)
 				tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
 			
 			//More to be added when requested/bored
-
-			if (beqTalk.transLang == 'help')
-			{
-				tmpText = kTranscode.nameInt + beqTalk.newline;
-				tmpText += kTranscode.shortDesc + beqTalk.newline;
-				tmpText += kTranscode.longHelp;
-			}
 			else if (beqTalk.transLang == 'n/a')
 			   tmpText = 'I\'m sorry, this means that encoding is not available.';
 		}

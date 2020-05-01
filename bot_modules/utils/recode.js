@@ -28,9 +28,9 @@ module.exports.prefixListu3 = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l
 
 module.exports.versInt = '1.0';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
-module.exports.shortDesc = 'Encode between different variations of representing klingon characters.';
+module.exports.shortDesc = 'Encode between different variations of representing klingon characters.\r\n';
 module.exports.shortHelp = 'recode *targetencoding*  text-to-encode\r\n';
-module.exports.example = 'Example: "recode uhmal tlhIngan Hol" brings "uhmal gnj"';
+module.exports.example = 'Example: "recode uhmal tlhIngan Hol" brings "uhmal gnj\r\n"';
 
 module.exports.longHelp = 'Basic operation is simple: *recode* encoding text-to-encode\r\n' +
 						  'The encoding is either the name of the possible encodings, or their special codeword for going back from encoded text to pure tlhIngan, if available.\r\n' +
