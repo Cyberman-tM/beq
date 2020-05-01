@@ -10,27 +10,24 @@ var gameTalkDef = require('./bot_modules/games/gameTalkDef.js');
 var NumWords = require('./bot_modules/utils/number_translate.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 var evTimer = require('./bot_modules/utils/event_timer.js');
-var weather = require('./bot_modules/utils/weather.js');
 var KWOTD = require('./bot_modules/utils/KWOTD/kwotd.js');
 var botSendMessage = require('./bot_modules/utils/sendMessage.js');
-var experimentalFunc = require('./bot_modules/experimental/currentExperiment.js');
 var memorize = require('./bot_modules/commands/memorize.js');
 var proclaim = require('./bot_modules/commands/proclaim.js');
 var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
-var storeData = require('./bot_modules/commands/extStore/saveData.js');
 var cat = require('./bot_modules/commands/categorize20/cat20.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.1.6 - Beq engine forever!';
+var versInt = '2.2.6 - Beq engine forever!';
 
 //Can be changed
 var defaultTranslation = 'en';
 
 //Keep track of the language the user wants us to use
-var userTranLang = new Array();
+var userTranLang = [];
 
 //Generic index for search/replace in array
 var aIdx = null;
@@ -148,22 +145,6 @@ bot.on('message', function (messageDJS) {
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
 
 		switch (cmd) {
-			//This is only usable with devBeq, not the production version!
-			case 'specTest':
-				if (DData.devBuild == "true") {
-					weather.getWeather(3249068);
-				}
-				break;
-
-			case 'testing':
-				//sndMessage = bot.DiscordClient.servers[0].Server.members.toString();
-				if (args[1] == 'on')
-					devTest = true;
-				else
-					devTest = false;
-
-				sndMessage = 'Test mode == ' + devTest;
-				break;
 			case 'noShort':
 				sndMessage = 'Sorry, shorthand commands are only allowed in certain channels (ask_beq).';
 				break;
@@ -314,13 +295,6 @@ bot.on('message', function (messageDJS) {
 					sndMessage = beq.createTranslation(talkBeq);
 				}
 				break;
-			case 'linkMe':
-				var ListLink1 = args[1];
-
-				if (ListLink1 == 'list')
-					sndMessage += JSON.stringify(links);
-
-				break;
 			//Number to Word
 			case 'n2w':
 				sndMessage = NumWords.Num2Word(parseInt(onePar));
@@ -341,13 +315,6 @@ bot.on('message', function (messageDJS) {
 					sndMessage = talkBeq.message;
 				else
 					sndMessage = beq.createTranslation(talkBeq);
-				break;
-			case 'experiment':
-				experimentalFunc(bot, args, messageDJS);
-				break;
-			case 'store':
-				logger.info("storing");
-				storeData("testing", knownLangs);
 				break;
 			case 'yIqaw':
 				memorize(bot, args, messageDJS);
@@ -470,49 +437,11 @@ bot.on('message', function (messageDJS) {
 			case 'split':
 				//No parameters possible!
 				var splitRaw = message.substring(5); //!split
-				var beqTalk = JSON.parse(beq.beqTalkDef);
+				beqTalk = JSON.parse(beq.beqTalkDef);
 				beqTalk.command = 'split';
 				beqTalk.lookWord = splitRaw;
 				beqTalk = beq.Engine(beqTalk);
 				sndMessage += beqTalk.message;
-				break;
-			case 'getRem':
-				//No parameters possible!
-				var beqTalk = JSON.parse(beq.beqTalkDef);
-				beqTalk.command = 'getRem';
-				beqTalk = beq.Engine(beqTalk);
-				sndMessage += beqTalk.message;
-				break;
-			case 'listCat':
-				var beqTalk = JSON.parse(beq.beqTalkDef);
-				beqTalk.command = 'listCat';
-				beqTalk = beq.Engine(beqTalk);
-				sndMessage += beqTalk.message;
-				break;
-			case 'showCat':
-				var beqTalk = JSON.parse(beq.beqTalkDef);
-				beqTalk.command = 'showCat';
-				beqTalk.lookWord = args[1];
-				beqTalk = beq.Engine(beqTalk);
-				sndMessage += beqTalk.message;
-				break;
-			case 'addCatDesc':
-				var beqTalk = JSON.parse(beq.beqTalkDef);
-				beqTalk.command = 'addCatDesc';
-				beqTalk.lookWord = message;
-				beqTalk = beq.Engine(beqTalk);
-				sndMessage += beqTalk.message;
-				break;
-			case 'reLoad':
-				sndMessage = cat.catReLoad(beq);
-
-				break;
-			case 'reLoad2':
-				sndMessage = beq.catEx;
-				break;
-			case 'reKDB':
-				cat.catReKDB(beq);
-				sndMessage = "Maybe it worked...";
 				break;
 			default:
 				//This MUST return false if nothing was done!
@@ -536,7 +465,7 @@ bot.on('message', function (messageDJS) {
 	}
 	//Categorize
 	else if (cmdMagic == '$') {
-		var beqTalk = JSON.parse(beq.beqTalkDef);
+		beqTalk = JSON.parse(beq.beqTalkDef);
 		//Re-org command
 		if (message.substring(0, 3) == "***") {
 			beqTalk.command = 'cat_reorg';
@@ -551,8 +480,7 @@ bot.on('message', function (messageDJS) {
 		sndMessage += beqTalk.message;
 	}
 
-	if (cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '%'
-		|| cmdMagic == '$') {
+	if (cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '%' || cmdMagic == '$') {
 		if (cmdFound == false)
 			sndMessage = '\'e\' vIyajbe\' :-( \n (unknown command)';
 

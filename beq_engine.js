@@ -55,12 +55,7 @@ var beqTalkDef = require('./beqTalk_raw.js').beqTalkDef;
 
 var kTranscode = require('./bot_modules/utils/recode.js');
 var kSplit = require('./bot_modules/utils/kSplit.js');
-var cmdCateg = require('./bot_modules/commands/categorize/categorize.js');
-var cmdListCat = require('./bot_modules/commands/categorize/list_categ.js');
-var cmdShowCat = require('./bot_modules/commands/categorize/show_categ.js');
 var reReadKDB = require('./bot_modules/commands/categorize/reReadKDB.js');
-var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
-var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 var catEx = null;
 
@@ -82,11 +77,11 @@ module.exports.Engine = function (beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 
-		module.exports.KDBJSon = new Array(); //Generic database of all words
-		module.exports.KDBPHJSon = new Array(); //All phrases
-		module.exports.KDBVPJSon = new Array(); //All verb prefixes
-		module.exports.KDBVSJSon = new Array(); //All verb suffixes
-		module.exports.KDBNSJSon = new Array(); //All noun suffixes
+		module.exports.KDBJSon = []; //Generic database of all words
+		module.exports.KDBPHJSon = []; //All phrases
+		module.exports.KDBVPJSon = []; //All verb prefixes
+		module.exports.KDBVSJSon = []; //All verb suffixes
+		module.exports.KDBNSJSon = []; //All noun suffixes
 
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
