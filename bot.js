@@ -74,11 +74,11 @@ bot.on('ready', function (evt) {
 
 bot.on('messageUpdate', function(oldMessage, newMessage)
 {
-	processMessage(bot, newMessage);
+	processMessage(this, newMessage);
 });
 
 bot.on('message', function (messageDJS) {
-   processMessage(bot, messageDJS);
+   processMessage(this, messageDJS);
 });
 
 //Actual message processing
