@@ -72,6 +72,12 @@ bot.on('ready', function (evt) {
 }
 );
 
+bot.on('messageUpdate', function(oldMessage, newMessage)
+{
+	logger.info(oldMessage);
+	logger.info(newMessage);
+});
+
 bot.on('message', function (messageDJS) {
 	var sndMessage = '';
 	var userTLang = null;
