@@ -74,15 +74,15 @@ bot.on('ready', function (evt) {
 
 bot.on('messageUpdate', function(oldMessage, newMessage)
 {
-	processMessage(newMessage);
+	processMessage(bot, newMessage);
 });
 
 bot.on('message', function (messageDJS) {
-   processMessage(messageDJS);
+   processMessage(bot, messageDJS);
 });
 
 //Actual message processing
-function processMessage(messageDJS)
+function processMessage(bot, messageDJS)
 {
 	var sndMessage = '';
 	var userTLang = null;
