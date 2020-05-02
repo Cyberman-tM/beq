@@ -10,6 +10,7 @@
   https://metacpan.org/pod/Lingua::Klingon::Recode
   
   Now new: Dialect recoding!
+  Now even newer: Recode to Unicode! (pIqaD)
 
 */
 var winston = require('winston');
@@ -20,15 +21,74 @@ var logger = winston.createLogger({
     new winston.transports.Console()
   ]
 });
+
 //List of prefixes, might be useful :-)
 //uhmal2 encoded!
 module.exports.prefixListu3 = "b3-b4-c2-c4-D1-D3-D5-f4-g3-i3-i5-j3-j5-k1-k5-l3-l5-o2-o3-q1-r2-S1-S5-t3-t5-w3-x3-y3";
 
-module.exports.versInt = '0.91';
+module.exports.versInt = '1.0';
 module.exports.nameInt = 'Text recoder (tlhIngan<>xIfan and more)';
+module.exports.shortDesc = 'Encode between different variations of representing klingon characters.\r\n';
+module.exports.shortHelp = 'recode *targetencoding*  text-to-encode\r\n';
+module.exports.example = 'Example: "recode uhmal tlhIngan Hol" brings "uhmal gnj\r\n"';
+
+module.exports.longHelp = 'Basic operation is simple: *recode* encoding text-to-encode\r\n' +
+						  'The encoding is either the name of the possible encodings, or their special codeword for going back from encoded text to pure tlhIngan, if available.\r\n' +
+						  'Ciphers (letter to letter exchange):' +
+						  '\r\n' +
+						  '* TIxan\r\n'+
+						  '  A very basic encoding, tlh=>T, ch=>c, gh=>g, ng=>x, q=>k.\r\n' +
+						  '  The rest remains the same, case remains as in klingon.\r\n' +
+						  '  tixan <> T2tlh\r\n' +
+						  '\r\n' +
+						  '* xifan\r\n' +
+						  '  Basically the same as tixan, but the tlh becomes an x, and the ng is turned into f.\r\n' +
+						  '  Can be upper or lower case\r\n' +
+						  '  xifan/XIFAN <> x2tlh \r\n' +
+						  '\r\n' +
+						  '* TINan xol\r\n' +
+						  '  Another simple cipher: tlh=>T, ch=>C, gh=>G, ng=>N, H=>x\r\n' +
+						  '  TINan <> TI2tlh\r\n' +
+						  '\r\n' +
+						  '* uhmal\r\n' +
+						  '  A rather complex cipher, invented to solve the problem of automated sorting with klingon letters,\r\n' +
+						  '  the result can be sorted with standard sorting methods while obeying klingon rules.\r\n' +
+						  '  Rather hard to read, but useful in computing, see below.\r\n' +
+						  '  uhmal <> u2tlh\r\n' +
+						  '\r\n' +
+						  '* uhmal2\r\n' +
+						  '  Basically the same as regular uhmal, but vowels are replaced by numbers.\r\n' +
+						  '  That way a quick check for syllables is easier (just check for number).\r\n' +
+						  '  uhaml2 <> u22tlh\r\n' +
+						  '\r\n' +
+						  '* uhmal3\r\n' +
+						  '  Going a step further, this also encodes consonant clusters into upper case letters A, E, I.\r\n' +
+						  '  Probably only useful in computing, it ensures that a single klingon letter WILL BE a single letter.\r\n' +
+						  '  uhmal3 <> u32tlh\r\n' +
+						  '\r\n' +
+						  '* Unicode (unicode)\r\n' +
+						  '  Translates the characters into their (non-standard) unicode codepoints, so that you can see the pIqaD letters.\r\n' +
+						  '  It should work with most if not all currently available fonts.\r\n' +
+						  '  unicode <> n/a\r\n' +
+						  '\r\n' +
+						  'Dialects (more transformative than ciphers):\r\n' +
+						  '\r\n' +
+						  '* Krotmag (Qotmag)\r\n' +
+						  '  "Translates" the text into Krotmag dialect, i.e. "Dabom" becomes "NaMoM".\r\n' +
+						  '  Qotmag <> n/a\r\n' +
+						  '\r\n' +
+						  '* Tak\'ev (taq\'ev)\r\n' +
+						  '  "Dabom" becomes "nDaMBom"\r\n' +
+						  '  taq\'ev <> n/a\r\n' +
+						  '\r\n' +
+						  '* Morska (mo\'rISqa\')\r\n' +
+						  '  "tlhIngan Hol majatlh" becomes "ghlIngan hol majats"\r\n' +
+						  '  mo\'rISqa\' <> n/a\r\n' +
+						  '\r\n' +
+						  '\r\n';
 
 
-//tlhIngan Hol => xifan hol or XIFAN HOL
+///tlhIngan Hol => xifan hol or XIFAN HOL
 module.exports.RCtlh2x = function(orig_text, upper_case)
 {
 	var tmpText = "";
@@ -45,7 +105,33 @@ module.exports.RCtlh2x = function(orig_text, upper_case)
 	   tmpText = tmpText.toLowerCase();
    
    return tmpText;
-}
+};
+
+//tlhIngan Hol => TINan xol
+module.exports.RCtlh2TI = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/tlh/g, 'T');
+	tmpText = tmpText.replace(/ch/g, 'C');
+	tmpText = tmpText.replace(/H/g, 'x');
+	tmpText = tmpText.replace(/ng/g, 'N');
+	tmpText = tmpText.replace(/gh/g, 'G');
+
+	return tmpText;
+};
+
+//TINan xol = > tlhIngan Hol
+module.exports.RCTI2tlh = function(orig_text)
+{
+	var tmpText = "";
+	tmpText = orig_text.replace(/T/g, 'tlh');
+	tmpText = tmpText.replace(/C/g, 'ch');
+	tmpText = tmpText.replace(/x/g, 'H');
+	tmpText = tmpText.replace(/N/g, 'ng');
+	tmpText = tmpText.replace(/G/g, 'gh');
+
+	return tmpText;
+};
 
 //xifan hol => tlhIngan Hol
 module.exports.RCx2tlh = function(orig_text)
@@ -66,7 +152,7 @@ module.exports.RCx2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/g/g, 'gh');
 	  tmpText = tmpText.replace(/f/g, 'ng');
 	return tmpText;
-}
+};
 
 //tlhIngan => uhmal
 module.exports.RCtlh2u = function(orig_text)
@@ -90,10 +176,13 @@ module.exports.RCtlh2u = function(orig_text)
 	  tmpText = tmpText.replace(/n/g, 'l');
 	  tmpText = tmpText.replace(/o/g, 'n');
 	  tmpText = tmpText.replace(/p/g, 'o');
+
+	//Nicht umgesetzt: a, e, q, Q, D, r, S, t
 	  
 	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
-}
+};
+
 //tlhIngan => uhmal with numbers instead of vocals
 //Usable for easier identifying of CVC - any V will be a number
 module.exports.RCtlh2u2 = function(orig_text)
@@ -122,7 +211,7 @@ module.exports.RCtlh2u2 = function(orig_text)
 	  
 	  //tmpText = tmpText.toLowerCase();
 	 return tmpText;
-}
+};
 
 //uhmal2 => tlhIngan
 module.exports.RCu22tlh = function(orig_text)
@@ -150,7 +239,7 @@ module.exports.RCu22tlh = function(orig_text)
 	  tmpText = tmpText.replace(/1/g, 'a');
 	  tmpText = tmpText.replace(/2/g, 'e');
 	return tmpText;
-}
+};
 
 //uhmal3 - uhmal2 + consonant clusters rewritten as AEI
 module.exports.RCtlh2u3 = function(orig_text)
@@ -163,7 +252,7 @@ module.exports.RCtlh2u3 = function(orig_text)
 	tmpText = tmpText.replace(/(?<=[a-zA-Z][1-5])yz(?=[^1-5]|$)/g, 'I');
 	
 	return tmpText;
-}
+};
 
 //uhmal3 => tlhIngan
 module.exports.RCu32tlh = function(orig_text)
@@ -177,7 +266,7 @@ module.exports.RCu32tlh = function(orig_text)
 	tmpText = module.exports.RCu22tlh(tmpText);
 	
 	return tmpText;
-}
+};
 
 //uhmal => tlhIngan
 module.exports.RCu2tlh = function(orig_text)
@@ -203,7 +292,7 @@ module.exports.RCu2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/x/g, 'w');       //Kein klingonischer Buchstabe!
 	  tmpText = tmpText.replace(/d/g, 'D');
 	return tmpText;
-}
+};
 
 // tlhIngan => TIxan
 module.exports.RCtlh2T = function(orig_text)
@@ -215,7 +304,7 @@ module.exports.RCtlh2T = function(orig_text)
 	tmpText = tmpText.replace(/ng/g, 'x');
 	tmpText = tmpText.replace(/tlh/g, 'T');
 	return tmpText;
-}
+};
 
 // TIxan => tlhIngan
 module.exports.RCT2tlh = function(orig_text)
@@ -228,7 +317,7 @@ module.exports.RCT2tlh = function(orig_text)
 	  tmpText = tmpText.replace(/x/g, 'ng');
 	  tmpText = tmpText.replace(/T/g, 'tlh');
 	 return tmpText;
-}
+};
 
 //Dialekte - http://www.klingonwiki.net/De/Dialekt
 
@@ -241,7 +330,7 @@ module.exports.RC2Qot = function(orig_text)
 	tmpText = tmpText.replace(/D/g, 'N');
 	
 	return tmpText;
-}
+};
 
 // ta' Hol => Tak'ev
 module.exports.RC2taq = function(orig_text)
@@ -251,7 +340,7 @@ module.exports.RC2taq = function(orig_text)
 	tmpText = tmpText.replace(/D/g, 'nD');
 	
 	return tmpText;
-}
+};
 
 // ta' Hol => Morska
 module.exports.RC2Morska = function(orig_text)
@@ -306,4 +395,44 @@ module.exports.RC2Morska = function(orig_text)
 	fullText = fullText + " " + tmpText;
 	});
 	return fullText;
-}
+};
+
+
+//NEU: Unicode
+module.exports.RCtlh2Uni = function(orig_text)
+{
+   tmpText = "";
+   //Konvertierung auf UHMAL -> jeder Buchstabe ein Buchstabe :-)
+   tmpText = module.exports.RCtlh2u(orig_text);
+
+
+   tmpText = tmpText.replace(/o/g, '\uF8DE');
+   tmpText = tmpText.replace(/n/g, '\uF8DD');
+   tmpText = tmpText.replace(/l/g, '\uF8DB');	
+   tmpText = tmpText.replace(/j/g, '\uF8D9');
+   tmpText = tmpText.replace(/g/g, '\uF8D6');
+   tmpText = tmpText.replace(/m/g, '\uF8DC');			  
+   tmpText = tmpText.replace(/h/g, '\uF8D7');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/c/g, '\uF8D2');
+   tmpText = tmpText.replace(/u/g, '\uF8E4');
+   tmpText = tmpText.replace(/v/g, '\uF8E5');
+   tmpText = tmpText.replace(/w/g, '\uF8E6');
+   tmpText = tmpText.replace(/k/g, '\uF8DA');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/f/g, '\uF8D5');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/i/g, '\uF8D8');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/z/g, '\uF8E9');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/y/g, '\uF8E8');
+   tmpText = tmpText.replace(/x/g, '\uF8E7');       //Kein klingonischer Buchstabe!
+   tmpText = tmpText.replace(/d/g, '\uF8D3');
+
+   tmpText = tmpText.replace(/a/g, '\uF8D0');
+   tmpText = tmpText.replace(/e/g, '\uF8D4');
+   tmpText = tmpText.replace(/q/g, '\uF8DF');
+   tmpText = tmpText.replace(/Q/g, '\uF8E0');
+   tmpText = tmpText.replace(/D/g, '\uF8D3');
+   tmpText = tmpText.replace(/r/g, '\uF8E1');
+   tmpText = tmpText.replace(/S/g, '\uF8E2');
+   tmpText = tmpText.replace(/t/g, '\uF8E3'); 
+
+   return tmpText;
+};

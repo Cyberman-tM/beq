@@ -55,12 +55,6 @@ var beqTalkDef = require('./beqTalk_raw.js').beqTalkDef;
 
 var kTranscode = require('./bot_modules/utils/recode.js');
 var kSplit = require('./bot_modules/utils/kSplit.js');
-var cmdCateg = require('./bot_modules/commands/categorize/categorize.js');
-var cmdListCat = require('./bot_modules/commands/categorize/list_categ.js');
-var cmdShowCat = require('./bot_modules/commands/categorize/show_categ.js');
-var reReadKDB = require('./bot_modules/commands/categorize/reReadKDB.js');
-var utilGetCateg = require('./bot_modules/commands/categorize/get_categ.js');
-var addCatDesc = require('./bot_modules/commands/categorize/addCatDesc.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
 
 var fs = require('fs');
@@ -81,18 +75,14 @@ module.exports.Engine = function (beqTalk)
 		module.exports.startDateTime = new Date().toLocaleString();
 		module.exports.KDBVer = fs.readFileSync('./KDB/VERSION', 'utf8');
 
-		module.exports.KDBJSon = new Array(); //Generic database of all words
-		module.exports.KDBPHJSon = new Array(); //All phrases
-		module.exports.KDBVPJSon = new Array(); //All verb prefixes
-		module.exports.KDBVSJSon = new Array(); //All verb suffixes
-		module.exports.KDBNSJSon = new Array(); //All noun suffixes
+		module.exports.KDBJSon = []; //Generic database of all words
+		module.exports.KDBPHJSon = []; //All phrases
+		module.exports.KDBVPJSon = []; //All verb prefixes
+		module.exports.KDBVSJSon = []; //All verb suffixes
+		module.exports.KDBNSJSon = []; //All noun suffixes
 
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
-
-		//Load Categorization (async!)
-		//includes calling reorg first!
-		utilGetCateg(this);
 	}
 
 	var tmpTxt = "";
@@ -110,30 +100,6 @@ module.exports.Engine = function (beqTalk)
 		beqTalk.message = tmpTxt;
 		break;
 
-	case 'cat_reorg':
-		//Call category reorganization, re-read categorization
-		utilGetCateg(this);
-		//TODO: Personality?
-		beqTalk.message = 'Reorganization started';
-		break;
-	case 'rereadkdb':
-		logger.info("calling reread");
-		reReadKDB(this);
-		beqTalk.message = beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
-		break;
-	case 'categorize':
-		beqTalk.message = cmdCateg(this, beqTalk.lookWord);
-		break;
-		//List categories already defined
-	case 'listCat':
-		beqTalk.message = cmdListCat(this);
-		break;
-	case 'showCat':
-		beqTalk.message = cmdShowCat(this, beqTalk.lookWord);
-		break;
-	case 'addCatDesc':
-		beqTalk.message = addCatDesc(this, beqTalk.lookWord);
-		break;
 	case 'KWOTD':
 		//TODO: KWOTD - random word/sentence, type of word as parameter
 		//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
@@ -239,50 +205,65 @@ module.exports.Engine = function (beqTalk)
 
 	case "recode":
 		var tmpText = '';
-		var encoding = '';
-
-		//lookLang and transLang are NOT language IDs here, but they mark the original "encoding" of the text in lookWord (also not just a word)
-		if (beqTalk.lookLang == 'tlhIngan' && (beqTalk.transLang == 'xifan' || beqTalk.transLang == 'XIFAN'))
+		if (beqTalk.transLang == 'help')
 		{
-			if (beqTalk.transLang == 'XIFAN')
-			{
-				encoding = 'tlhIngan > XIFAN';
-				tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, true);
-			}
-			else
-			{
-				encoding = 'tlhIngan > xifan';
-				tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, false);
-			}
+			tmpText = kTranscode.nameInt + beqTalk.newline;
+			tmpText += kTranscode.shortDesc + beqTalk.newline;
+			tmpText += kTranscode.longHelp;
 		}
-		else if ((beqTalk.lookLang == 'xifan' || beqTalk.lookLang == 'XIFAN') && (beqTalk.transLang == 'tlhIngan'))
-			tmpText = kTranscode.RCx2tlh(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal')
-			tmpText = kTranscode.RCtlh2u(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'uhmal' && beqTalk.transLang == 'tlhIngan')
-			tmpText = kTranscode.RCu2tlh(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal2')
-			tmpText = kTranscode.RCtlh2u2(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'uhmal2' && beqTalk.transLang == 'tlhIngan')
-			tmpText = kTranscode.RCu22tlh(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'TIxan')
-			tmpText = kTranscode.RCtlh2T(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'TIxan' && beqTalk.transLang == 'tlhIngan')
-			tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'Qotmag')
-			tmpText = kTranscode.RC2Qot(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'taq\'ev')
-			tmpText = kTranscode.RC2taq(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'mo\'rISqa\'')
-			tmpText = kTranscode.RC2Morska(beqTalk.lookWord);
-		else if (beqTalk.lookLang == 'tlhIngan' && beqTalk.transLang == 'uhmal3')
-			tmpText = kTranscode.RCtlh2u3(beqTalk.lookWord);
+		else if (beqTalk.transLang == 'n/a')
+			tmpText = 'I\'m sorry, "n/a" means that encoding is Not Available.';
+
+		//lookLang is always tlhIngan, the transLang decides what we do
+		else if (beqTalk.lookLang == 'tlhIngan')
+		{
+			if (beqTalk.transLang == 'xifan')
+				tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, false);
+			else if (beqTalk.transLang == 'XIFAN')
+				tmpText = kTranscode.RCtlh2x(beqTalk.lookWord, true);
+			else if (beqTalk.transLang == 'TIxan')
+				tmpText = kTranscode.RCtlh2T(beqTalk.lookWord);
+				else if (beqTalk.transLang == 'TINan')
+				tmpText = kTranscode.RCtlh2TI(beqTalk.lookWord);
+
+			else if (beqTalk.transLang == 'uhmal')
+				tmpText = kTranscode.RCtlh2u(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'uhmal2')
+				tmpText = kTranscode.RCtlh2u2(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'uhmal3')
+				tmpText = kTranscode.RCtlh2u3(beqTalk.lookWord);
+
+			else if (beqTalk.transLang == 'Qotmag')
+				tmpText = kTranscode.RC2Qot(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'taq\'ev')
+				tmpText = kTranscode.RC2taq(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'mo\'rISqa\'')
+				tmpText = kTranscode.RC2Morska(beqTalk.lookWord);
+
+			else if (beqTalk.transLang == 'unicode')
+				tmpText = kTranscode.RCtlh2Uni(beqTalk.lookWord);
+
+			//We're not going from tlhIngan, we want to recode BACK to tlhIngan
+			if (beqTalk.transLang == 'x2tlh')
+				tmpText = kTranscode.RCx2tlh(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'u2tlh' )
+				tmpText = kTranscode.RCu2tlh(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'u22tlh' )
+				tmpText = kTranscode.RCu22tlh(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'u32tlh' )
+				tmpText = kTranscode.RCu32tlh(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'T2tlh' )
+				tmpText = kTranscode.RCT2tlh(beqTalk.lookWord);
+			else if (beqTalk.transLang == 'TI2tlh' )
+				tmpText = kTranscode.RCTI2tlh(beqTalk.lookWord);
 			
+			//More to be added when requested/bored
+		}
 
 		if (tmpText != '')
 		{
 			//This might change later on, I'm unsure if the createTranslation method should be able to use this or not...
-			beqTalk.result = new Array();
+			beqTalk.result = [];
 			beqTalk.result.push(
 			{
 				"tlh": beqTalk.lookWord,
@@ -295,18 +276,17 @@ module.exports.Engine = function (beqTalk)
 				"hidden_notes": ''
 			}
 			);
-			beqTalk.lookWord = new String('recoding');
+			beqTalk.lookWord = 'recoding';
 			beqTalk.gotResult = true;
 		}
 		else
 		{
 			beqTalk.gotResult = false;
 			beqTalk.failure = true;
-			beqTalk.message = 'Recoding is only possible between these "languages"' + beqTalk.newline + '(supply them in lookLang for source, and transLang for destination)';
-			beqTalk.message += beqTalk.newline;
-			beqTalk.message += 'tlhIngan <> xifan/XIFAN' + beqTalk.newline;
-			beqTalk.message += 'tlhIngan <> uhmal' + beqTalk.newline;
-			beqTalk.message += 'tlhIngan <> TIxan' + beqTalk.newline;
+			beqTalk.message = kTranscode.shortHelp;
+			beqTalk.message += kTranscode.example;
+			beqTalk.message += 'See "recode help" for more details!';
+
 		}
 		beqTalk.lookLang = 'tlh';
 		beqTalk.transLang = 'en';
@@ -684,7 +664,8 @@ module.exports.createTranslation = function (beqTalk)
 				if (infTips != "")
 					sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
 			}
-            
+			
+			//possible TODO: store KatID in item, request cat name from AZS?
 			//Check for categories if requested
             if (beqTalk.showCat == true)
             {
