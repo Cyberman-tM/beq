@@ -74,11 +74,16 @@ bot.on('ready', function (evt) {
 
 bot.on('messageUpdate', function(oldMessage, newMessage)
 {
-	logger.info(oldMessage.content);
-	logger.info(newMessage.content);
+	processMessage(newMessage);
 });
 
 bot.on('message', function (messageDJS) {
+   processMessage(messageDJS);
+});
+
+//Actual message processing
+function processMessage(messageDJS)
+{
 	var sndMessage = '';
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
@@ -509,8 +514,7 @@ bot.on('message', function (messageDJS) {
 			botSendMessage(1, this, messageDJS.channel.id, sendMessage);
 		}
 	}
-}
-);
+};
 
 function langKnown(language) {
 	var langFound = knownLangs.filter(function (lang) {
