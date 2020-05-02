@@ -55,9 +55,7 @@ var beqTalkDef = require('./beqTalk_raw.js').beqTalkDef;
 
 var kTranscode = require('./bot_modules/utils/recode.js');
 var kSplit = require('./bot_modules/utils/kSplit.js');
-var reReadKDB = require('./bot_modules/commands/categorize/reReadKDB.js');
 var beqPerson = require('./bot_modules/personality/beq_person.js');
-var catEx = null;
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
@@ -85,10 +83,6 @@ module.exports.Engine = function (beqTalk)
 
 		//Load XML data
 		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
-
-		//Load Categorization (async!)
-		//includes calling reorg first!
-		utilGetCateg(this);
 	}
 
 	var tmpTxt = "";
@@ -106,30 +100,6 @@ module.exports.Engine = function (beqTalk)
 		beqTalk.message = tmpTxt;
 		break;
 
-	case 'cat_reorg':
-		//Call category reorganization, re-read categorization
-		utilGetCateg(this);
-		//TODO: Personality?
-		beqTalk.message = 'Reorganization started';
-		break;
-	case 'rereadkdb':
-		logger.info("calling reread");
-		reReadKDB(this);
-		beqTalk.message = beqTalk.newline + beqPerson.getLine(1, true, true, beqTalk.newline);
-		break;
-	case 'categorize':
-		beqTalk.message = cmdCateg(this, beqTalk.lookWord);
-		break;
-		//List categories already defined
-	case 'listCat':
-		beqTalk.message = cmdListCat(this);
-		break;
-	case 'showCat':
-		beqTalk.message = cmdShowCat(this, beqTalk.lookWord);
-		break;
-	case 'addCatDesc':
-		beqTalk.message = addCatDesc(this, beqTalk.lookWord);
-		break;
 	case 'KWOTD':
 		//TODO: KWOTD - random word/sentence, type of word as parameter
 		//Die Wortart in boQwI' ist "sen:rp" für Ersatz-Sprichwörter, "sen:sp" für Geheimnis-Sprichwörte
