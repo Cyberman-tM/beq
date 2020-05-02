@@ -2,7 +2,6 @@
    var logger = require('winston');
 module.exports = function(messageType, bot, channelID, messageString)
 {
-   logger.info(bot);
    //This should work in discord.js
    if (messageType == 1)
       bot.channels.get(channelID).send(messageString);   
