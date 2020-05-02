@@ -173,7 +173,7 @@ function processMessage(bot, messageDJS)
 					if (userTLang != null)
 						sndMessage = rules[userTLang];
 					else
-						sndMessage = rules['de'];
+						sndMessage = rules.de;
 				break;
 
 			//Liste der Befehle - muß von Hand aktualisiert werden!
@@ -187,7 +187,7 @@ function processMessage(bot, messageDJS)
 				break;
 
 			case 'yIngu\'':
-				sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n'
+				sndMessage = 'beq \'oH pongwIj\'e\'.\nVersion: ' + versInt + '\nI am a helper bot. Use "CMDLIST" for a list of commands.\n';
 
 				beqTalk.command = "yIngu'";
 				beqTalk = beq.Engine(beqTalk);
@@ -330,6 +330,7 @@ function processMessage(bot, messageDJS)
 			case 'yIqaw':
 				memorize(bot, args, messageDJS);
 				sndMessage += beqTalk.newline + beqPerson.getLine(5, true, true, beqTalk.newline);
+				break;
 			case 'yImaq':
 				proclaim(bot, args, messageDJS);
 				sndMessage += beqTalk.newline + beqPerson.getLine(6, true, true, beqTalk.newline);
