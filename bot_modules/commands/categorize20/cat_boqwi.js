@@ -17,6 +17,11 @@ var bulkCatData = [];
 var bulkWordData = [];
 var bulkC2W = [];
 
+var bulkCmpCD = [];
+var bulkCmpWD = [];
+var bulkCmpC2W = [];
+
+
 module.exports = function (beq_engine) {
     var regexLook = "";
     var RE = "";
@@ -247,11 +252,11 @@ function createCat(name, langu, desc) {
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
     newObj = { "n": name, "l": langu, "d": desc };
     newObjStr = String(newObj);
-    if (bulkCmpCD.indexOf(newObjStr) < 0) 
-    {
+    if (bulkCmpCD.indexOf(newObjStr) < 0) {
         bulkCatData.push(newObj);
         bulkCmpCD.push(newObjStr);
-    }    
+        logger.info(newObjStr);
+    }
 
 }
 
