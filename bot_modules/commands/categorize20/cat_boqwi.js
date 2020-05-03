@@ -181,6 +181,7 @@ module.exports = function (beq_engine) {
 
 
     reCreateBaseCats();
+    logger.info(bulkCatData);
 
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("wakeup");
