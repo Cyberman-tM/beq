@@ -26,7 +26,11 @@ module.exports = function (beq_engine) {
     bulkWordData = [];
     bulkC2W = [];
 
-    bcdcount = 0;
+    bulkCmpCD = [];
+    bulkCmpWD = [];
+    bulkCmpC2W = [];
+
+
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
@@ -173,10 +177,6 @@ module.exports = function (beq_engine) {
     //Finally: call with category <> words
     var boQbulk = bulkCatData;
     logger.info(bulkCatData.length);
-    logger.info(bulkWordData.length);
-    logger.info(bulkC2W.length);
-
-    logger.info(bcdcount);
 
     //logger.info(bulkCatData);
     /*
@@ -246,13 +246,12 @@ function createCat(name, langu, desc) {
 
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
     newObj = { "n": name, "l": langu, "d": desc };
-    logger.info(name + langu + desc);
-    
-    if (bulkCatData.indexOf(newObj) < 0)
+    newObjStr = String(newObj);
+    if (bulkCmpCD.indexOf(newObjStr) < 0) 
+    {
         bulkCatData.push(newObj);
-
-    
-        bcdcount++;
+        bulkCmpCD.push(newObjStr);
+    }    
 
 }
 
