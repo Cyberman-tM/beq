@@ -156,6 +156,11 @@ function processMessage(bot, messageDJS)
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
 
 		switch (cmd) {
+
+			case 'reKDB':
+				sndMessage = cat.catReKDB(beq);
+				break;
+
 			case 'noShort':
 				sndMessage = 'Sorry, shorthand commands are only allowed in certain channels (ask_beq).';
 				break;

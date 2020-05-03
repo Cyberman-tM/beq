@@ -795,7 +795,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang) {
 function getWType(wType, tranLang) {
 	var wTypeS = wType.split(':')[0];
 	var wTypeL = '';
-	logger.info(wTypeS);
+	
 	if (tranLang == 'de') {
 		if (wTypeS == 'n') {
 			wTypeL = 'Nomen';
