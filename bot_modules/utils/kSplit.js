@@ -27,7 +27,7 @@ module.exports.kSplit = function (raw_text)
 	var tmpText = "";
 	logger.info(raw_text);
 	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
-	var wordsOnly = raw_text.replace(/[^a-zA-Z0-9/\'/]/g, ' ');
+	var wordsOnly = raw_text.replace(/[^'a-zA-Z0-9]/g, ' ');
 
 logger.info(wordsOnly);
 
@@ -67,7 +67,7 @@ logger.info(wordsOnly);
 		//VK geht nicht - nur KV!
 		//var syls = oneWord.split(/([a-zA-Z][1-5][a-zA-Z])/);
 		var syls = oneWord.match(/(?:[a-zA-Z][1-5][a-zA-Z](?:[1-5][a-zA-Z])?(?<!4y))|4y/g);
-		if (syls.length > 0)
+		if (syls != null && syls.length > 0)
 		{
 			oneWord = "";
 			syls.forEach(function (syllable)
