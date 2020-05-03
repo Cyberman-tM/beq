@@ -41,7 +41,7 @@ module.exports = function (beq_engine, startLetters) {
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
-
+/*
         //Ridiculous way to make sure we don't overwhelm the table storage...
         if (!(item.tlh.startsWith(sLetter[0]) ||
             item.tlh.startsWith(sLetter[1]) ||
@@ -51,7 +51,7 @@ module.exports = function (beq_engine, startLetters) {
             item.tlh.startsWith(sLetter[5]) ||
             item.tlh.startsWith(sLetter[6])))
             return;
-
+*/
         //In-memory, everything is normal, but we store uhmal
         var chkWord = item.tlh + ";;" + item.type;
         var newCategory = "";
