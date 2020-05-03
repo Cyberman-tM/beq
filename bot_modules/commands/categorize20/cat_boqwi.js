@@ -171,7 +171,7 @@ module.exports = function (beq_engine) {
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
     var boQbulk = bulkCatData;
-    logger.info(bulkWordData.length);
+    logger.info(bulkCatData.length);
 
     //logger.info(bulkCatData);
     /*
@@ -239,6 +239,8 @@ newObj = { "n": name, "l": langu, "d": desc };
     if (bulkCatData.indexOf(newObj) < 0)
         bulkCatData.push(newObj);
         //bulkCatData.push({ "n": name, "l": langu, "d": desc });
+
+        logger.info(bulkCatData.indexOf(newObj));
 
 
 }
