@@ -142,8 +142,8 @@ module.exports = function (beq_engine) {
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
                 catFound = false;
-                //Store as uhmal
-                chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
+                //Store as uhmal3
+                chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
 
                 //Add to category bulk array
                 createCat(itemCat, "en", "Taken from boQwI\'");
@@ -159,19 +159,19 @@ module.exports = function (beq_engine) {
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
     logger.info(bulkWordData.length);
-    logger.info(bulkC2W.length);
-/*
+    logger.info(bulkC2W);
+
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
         requestify.post(catAPI.catCreateCatBulk, bulkCatData)
             .then(function () {
                 requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                    logger.info("w2c");
-                    requestify.post(catAPI.catW2CBulk, bulkC2W);
+                    logger.info("words");
+                    //requestify.post(catAPI.catW2CBulk, bulkC2W);
                 });
             });
     });
-*/
+
 };
 
 
