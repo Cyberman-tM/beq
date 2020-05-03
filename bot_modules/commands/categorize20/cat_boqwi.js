@@ -174,6 +174,7 @@ module.exports = function (beq_engine, startLetters) {
     //Finally: call with category <> words
     logger.info(bulkWordData.length);
     reCreateBaseCats();
+    logger.info(bulkWordData);
     requestify.post(catAPI.catAddWordBulk, bulkWordData);
     /*
     requestify.get(catAPI.catWakeup).then(function () {
