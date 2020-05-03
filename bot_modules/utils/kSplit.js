@@ -28,6 +28,8 @@ module.exports.kSplit = function (raw_text)
 	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
 	var wordsOnly = raw_text.replace(/[^a-zA-Za-zA-Z0-9\']/g, ' ');
 
+logger.info(wordsOnly);
+
 	//We have uhmal 3 for this stuff now
 	//uhmal  replaces double-letters with single letters
 	//uhmal2 replaces vowels with numbers
