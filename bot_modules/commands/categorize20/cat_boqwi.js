@@ -173,8 +173,6 @@ module.exports = function (beq_engine, startLetters) {
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
     logger.info(bulkWordData.length);
-    logger.info(bulkC2W);
-logger.info(bulkWordData);
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
         requestify.post(catAPI.catCreateCatBulk, bulkCatData)
@@ -221,9 +219,7 @@ function reCreateBaseCats() {
 function addBulkWord(name) {
 
     //Fragezeichen und Rufzeichen machen in Azure Table STorage Ärger!
-    logger.info(name);
     name = name.replace(/[?!]/g, ' ');
-    logger.info(name);
     if (bulkCmpWD.indexOf(name) < 0) {
         bulkWordData.push({ "n": name });
         bulkCmpWD.push(name);

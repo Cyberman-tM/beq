@@ -23,7 +23,7 @@ module.exports.KWOTDInit = function(beqEngine, bot, mesChan, devTest)
 {
 	//Lets see if there are any timings to run at all
 	myTimings = JSON.parse(KWOTDTimings.KWOTDTimings);
-	if (myTimings.length == 0)
+	if (myTimings.length == 0 || devTest == "True")
 	   return;
 	
 	mybeqEngine = beqEngine;
