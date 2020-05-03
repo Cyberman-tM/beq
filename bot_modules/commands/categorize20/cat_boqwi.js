@@ -26,6 +26,8 @@ module.exports = function (beq_engine) {
     bulkWordData = [];
     bulkC2W = [];
 
+    bcdcount = 0;
+
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
         //In-memory, everything is normal, but we store uhmal
@@ -163,7 +165,6 @@ module.exports = function (beq_engine) {
             });
         }
     });
-    logger.info("before bulk");
 
     //Call bulk functions
     //First: call with basic categories
@@ -245,6 +246,8 @@ function createCat(name, langu, desc) {
     newObj = { "n": name, "l": langu, "d": desc };
     if (bulkCatData.indexOf(newObj) < 0)
         bulkCatData.push(newObj);
+
+        bcdcount++;
 
 }
 
