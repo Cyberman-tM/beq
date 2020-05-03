@@ -195,7 +195,7 @@ module.exports = function (beq_engine) {
         });
         */
     });
-
+/*
     bulkCatData = null;
     bulkWordData = null;
     bulkC2W = null;
@@ -203,6 +203,7 @@ module.exports = function (beq_engine) {
     bulkCmpCD = null;
     bulkCmpWD = null;
     bulkCmpC2W = null;
+    */
 };
 
 
