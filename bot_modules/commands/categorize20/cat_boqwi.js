@@ -235,18 +235,16 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
-    newObj = { "n": name };
     if (bulkCmpWD.indexOf(name) < 0) {
-        bulkWordData.push(newObj);
+        bulkWordData.push({ "n": name });
         bulkCmpWD.push(name);
     }
 }
 
 function addBulkC2W(nameCat, nameWord) {
-    newObj = { "k": nameCat, "w": nameWord };
     newObjStr = nameCat + nameWord;
     if (bulkCmpC2W.indexOf(newObjStr) < 0) {
-        bulkC2W.push(newObj);
+        bulkC2W.push({ "k": nameCat, "w": nameWord });
         bulkCmpC2W.push(newObjStr);
     }
 }
@@ -255,10 +253,9 @@ function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
 
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
-    newObj = { "n": name, "l": langu, "d": desc };
     newObjStr = name + langu + desc;
     if (bulkCmpCD.indexOf(newObjStr) < 0) {
-        bulkCatData.push(newObj);
+        bulkCatData.push({ "n": name, "l": langu, "d": desc });
         bulkCmpCD.push(newObjStr);
     }
 
