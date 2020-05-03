@@ -246,11 +246,12 @@ function createCat(name, langu, desc) {
 
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
     newObj = { "n": name, "l": langu, "d": desc };
-    logger.info(bulkCatData.indexOf(newObj));
+    logger.info(name + langu + desc);
+    
     if (bulkCatData.indexOf(newObj) < 0)
         bulkCatData.push(newObj);
 
-        logger.info(bulkCatData.indexOf(newObj));
+    
         bcdcount++;
 
 }
