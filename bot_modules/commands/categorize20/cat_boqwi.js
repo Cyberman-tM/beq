@@ -35,8 +35,6 @@ module.exports = function (beq_engine) {
     bulkCmpWD = [];
     bulkCmpC2W = [];
 
-
-
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
         //In-memory, everything is normal, but we store uhmal
@@ -180,28 +178,30 @@ module.exports = function (beq_engine) {
     //Then:  call with categories for boQwI' subcategories
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
-    var boQbulk = bulkCatData;
-    logger.info(bulkCatData.length);
 
-    //logger.info(bulkCatData);
-    /*
-    //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
+
     reCreateBaseCats();
+
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("wakeup");
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-            logger.info("createcat");
-            bulkCatData = boQbulk;
-            requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-                logger.info("bulkword");
-                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                    requestify.post(catAPI.catW2CBulk, bulkC2W);
-                });
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
+        /*
+        .then(function () {
+            logger.info("bulkword");
+            requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
+                requestify.post(catAPI.catW2CBulk, bulkC2W);
             });
         });
+        */
     });
-    */
 
+    bulkCatData = null;
+    bulkWordData = null;
+    bulkC2W = null;
+
+    bulkCmpCD = null;
+    bulkCmpWD = null;
+    bulkCmpC2W = null;
 };
 
 
@@ -235,9 +235,8 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
-    newObj = { "n": name };    
-    if (bulkCmpWD.indexOf(name) < 0)
-    {
+    newObj = { "n": name };
+    if (bulkCmpWD.indexOf(name) < 0) {
         bulkWordData.push(newObj);
         bulkCmpWD.push(name);
     }
@@ -246,8 +245,7 @@ function addBulkWord(name) {
 function addBulkC2W(nameCat, nameWord) {
     newObj = { "k": nameCat, "w": nameWord };
     newObjStr = nameCat + nameWord;
-    if (bulkCmpC2W.indexOf(newObjStr) < 0)
-    {
+    if (bulkCmpC2W.indexOf(newObjStr) < 0) {
         bulkC2W.push(newObj);
         bulkCmpC2W.push(newObjStr);
     }
