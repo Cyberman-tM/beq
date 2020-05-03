@@ -22,7 +22,7 @@ var bulkCmpWD = [];
 var bulkCmpC2W = [];
 
 
-module.exports = function (beq_engine) {
+module.exports = function (beq_engine, startLetters) {
     var regexLook = "";
     var RE = "";
     var result = "";
@@ -35,8 +35,23 @@ module.exports = function (beq_engine) {
     bulkCmpWD = [];
     bulkCmpC2W = [];
 
+    //Make sure we ALWAYS have enough entries
+    startLetters += "x;x;x;x;x;x"
+    sLetter = startLetters.split(';');
+
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
+
+        //Ridiculous way to make sure we don't overwhelm the table storage...
+        if (!(item.tlh.startsWith(sLetter[0]) ||
+            item.tlh.startsWith(sLetter[1]) ||
+            item.tlh.startsWith(sLetter[2]) ||
+            item.tlh.startsWith(sLetter[3]) ||
+            item.tlh.startsWith(sLetter[4]) ||
+            item.tlh.startsWith(sLetter[5]) ||
+            item.tlh.startsWith(sLetter[6])))
+            return;
+
         //In-memory, everything is normal, but we store uhmal
         var chkWord = item.tlh + ";;" + item.type;
         var newCategory = "";
