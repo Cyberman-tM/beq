@@ -176,6 +176,8 @@ module.exports = function (beq_engine) {
     logger.info(bulkWordData.length);
     logger.info(bulkC2W.length);
 
+    logger.info(bcdcount);
+
     //logger.info(bulkCatData);
     /*
     //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
