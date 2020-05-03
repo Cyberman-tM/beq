@@ -58,6 +58,8 @@ module.exports.kSplit = function (raw_text)
 			}
 		}
 
+		logger.info(oneWord);
+
 		//TODO: unmögliche Silben nicht spalten: tlhIng-an kann nicht sein
 		//VK geht nicht - nur KV!
 		//var syls = oneWord.split(/([a-zA-Z][1-5][a-zA-Z])/);
@@ -67,6 +69,7 @@ module.exports.kSplit = function (raw_text)
 			oneWord = "";
 			syls.forEach(function (syllable)
 			{
+				logger.info(syllable);
 				if (syllable == "")
 					return;
 

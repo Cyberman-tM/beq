@@ -165,7 +165,6 @@ module.exports = function (beq_engine) {
     });
     logger.info("before bulk");
 
-    logger.info(bulkWordData);
     //Call bulk functions
     //First: call with basic categories
     //Then:  call with categories for boQwI' subcategories
