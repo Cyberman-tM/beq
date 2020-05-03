@@ -142,7 +142,7 @@ module.exports = function (beq_engine) {
                 addBulkWord(chkWord);
                 addBulkC2W(itemCat, chkWord);
 
-                
+
                 //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
                 /*
                 var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
@@ -172,6 +172,8 @@ module.exports = function (beq_engine) {
     //Finally: call with category <> words
     var boQbulk = bulkCatData;
     logger.info(bulkCatData.length);
+    logger.info(bulkWordData.length);
+    logger.info(bulkC2W.length);
 
     //logger.info(bulkCatData);
     /*
@@ -225,23 +227,24 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
-    bulkWordData.push({ "n": name });
+    newObj = { "n": name };
+    if (bulkWordData.indexOf(newObj) < 0)
+        bulkWordData.push(newObj);
 }
 
 function addBulkC2W(nameCat, nameWord) {
-    bulkC2W.push({ "k": nameCat, "w": nameWord });
+    newObj = { "k": nameCat, "w": nameWord };
+    if (bulkC2W.indexOf(newObj) < 0)
+        bulkC2W.push(newObj);
 }
 
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
-newObj = { "n": name, "l": langu, "d": desc };
+
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
+    newObj = { "n": name, "l": langu, "d": desc };
     if (bulkCatData.indexOf(newObj) < 0)
         bulkCatData.push(newObj);
-        //bulkCatData.push({ "n": name, "l": langu, "d": desc });
-
-        logger.info(bulkCatData.indexOf(newObj));
-
 
 }
 
