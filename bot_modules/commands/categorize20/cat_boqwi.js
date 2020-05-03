@@ -249,6 +249,7 @@ function createCat(name, langu, desc) {
     if (bulkCatData.indexOf(newObj) < 0)
         bulkCatData.push(newObj);
 
+        logger.info(bulkCatData.indexOf(newObj));
         bcdcount++;
 
 }
