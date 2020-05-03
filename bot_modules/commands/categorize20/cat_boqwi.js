@@ -233,6 +233,8 @@ function addBulkC2W(nameCat, nameWord) {
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
 
-    bulkCatData.push({ "n": name, "l": langu, "d": desc });
+    //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
+    if (bulkCatData.indexOf({ "n": name, "l": langu, "d": desc }) < 0)
+        bulkCatData.push({ "n": name, "l": langu, "d": desc });
 }
 
