@@ -153,7 +153,6 @@ module.exports = function (beq_engine, startLetters) {
             newCategory = newCategory.substr(1, 9999);
 
         if (newCategory != "") {
-            logger.info(newCategory);
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
                 catFound = false;
@@ -220,6 +219,9 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
+
+    //Fragezeichen und Rufzeichen machen in Azure Table STorage Ärger!
+    name = name.replace(/[?!]/g, ' ');
     if (bulkCmpWD.indexOf(name) < 0) {
         bulkWordData.push({ "n": name });
         bulkCmpWD.push(name);
