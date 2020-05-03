@@ -137,9 +137,8 @@ module.exports = function (beq_engine) {
         if (newCategory.substr(0, 1) == ';')
             newCategory = newCategory.substr(1, 9999);
 
-        newCategory = newCategory.toUpperCase();
         if (newCategory != "") {
-            var catFound = false;
+            logger.info(newCategory);
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
                 catFound = false;
@@ -150,25 +149,6 @@ module.exports = function (beq_engine) {
                 createCat(itemCat, "en", "Taken from boQwI\'");
                 addBulkWord(chkWord);
                 addBulkC2W(itemCat, chkWord);
-
-
-                //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
-                /*
-                var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
-                requestify.get(createCatURL).then(function (response) {
-                    //Response should be the category id
-                    var KID = response.getBody();
-
-                    //Create word, get ID
-                    requestify.get(catAPI.catAddWord + "&fullWord=" + chkWord).then(function (response) {
-                        var WID = response.getBody();
-
-                        //And finally, add word to category
-                        requestify.get(catAPI.catW2C + "&WID=" + WID + "&KID=" + KID);
-                    });
-
-                });
-                */
             });
         }
     });
@@ -180,7 +160,7 @@ module.exports = function (beq_engine) {
     //Finally: call with category <> words
     logger.info(bulkWordData.length);
     logger.info(bulkC2W.length);
-
+/*
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
         requestify.post(catAPI.catCreateCatBulk, bulkCatData)
@@ -191,15 +171,7 @@ module.exports = function (beq_engine) {
                 });
             });
     });
-    /*
-        bulkCatData = null;
-        bulkWordData = null;
-        bulkC2W = null;
-    
-        bulkCmpCD = null;
-        bulkCmpWD = null;
-        bulkCmpC2W = null;
-        */
+*/
 };
 
 
@@ -249,6 +221,7 @@ function addBulkC2W(nameCat, nameWord) {
 
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
+    name = name.toUpperCase();
 
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
     newObjStr = name + langu + desc;
