@@ -173,7 +173,8 @@ module.exports = function (beq_engine) {
     var boQbulk = bulkCatData;
     logger.info(bulkWordData.length);
 
-    logger.info(bulkCatData);
+    //logger.info(bulkCatData);
+    /*
     //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
@@ -189,6 +190,7 @@ module.exports = function (beq_engine) {
             });
         });
     });
+    */
 
 };
 
@@ -232,9 +234,11 @@ function addBulkC2W(nameCat, nameWord) {
 
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
-
+logger.info({ "n": name, "l": langu, "d": desc });
     //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
     if (bulkCatData.indexOf({ "n": name, "l": langu, "d": desc }) < 0)
         bulkCatData.push({ "n": name, "l": langu, "d": desc });
+logger.info(bulkCatData.indexOf({ "n": name, "l": langu, "d": desc }));
+
 }
 
