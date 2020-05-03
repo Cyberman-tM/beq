@@ -235,15 +235,22 @@ function reCreateBaseCats() {
 }
 
 function addBulkWord(name) {
-    newObj = { "n": name };
-    if (bulkWordData.indexOf(newObj) < 0)
+    newObj = { "n": name };    
+    if (bulkCmpWD.indexOf(name) < 0)
+    {
         bulkWordData.push(newObj);
+        bulkCmpWD.push(name);
+    }
 }
 
 function addBulkC2W(nameCat, nameWord) {
     newObj = { "k": nameCat, "w": nameWord };
-    if (bulkC2W.indexOf(newObj) < 0)
+    newObjStr = nameCat + nameWord;
+    if (bulkCmpC2W.indexOf(newObjStr) < 0)
+    {
         bulkC2W.push(newObj);
+        bulkCmpC2W.push(newObjStr);
+    }
 }
 
 function createCat(name, langu, desc) {
