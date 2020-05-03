@@ -158,7 +158,8 @@ function processMessage(bot, messageDJS)
 		switch (cmd) {
 
 			case 'reKDB':
-				sndMessage = cat.catReKDB(beq);
+				cat.catReKDB(beq);
+				sndMessage = 'Maybe?';
 				break;
 
 			case 'noShort':
