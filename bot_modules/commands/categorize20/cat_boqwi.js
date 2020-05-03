@@ -178,6 +178,8 @@ module.exports = function (beq_engine) {
     //Then:  call with categories for boQwI' subcategories
     //Next:  call with words we want to categorize
     //Finally: call with category <> words
+    logger.info(bulkWordData.length);
+    logger.info(bulkC2W.length);
 
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
