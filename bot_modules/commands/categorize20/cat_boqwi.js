@@ -221,7 +221,9 @@ function reCreateBaseCats() {
 function addBulkWord(name) {
 
     //Fragezeichen und Rufzeichen machen in Azure Table STorage Ärger!
+    logger.info(name);
     name = name.replace(/[?!]/g, ' ');
+    logger.info(name);
     if (bulkCmpWD.indexOf(name) < 0) {
         bulkWordData.push({ "n": name });
         bulkCmpWD.push(name);
