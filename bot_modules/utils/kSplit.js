@@ -25,6 +25,7 @@ module.exports.nameInt = 'Klingon text split';
 module.exports.kSplit = function (raw_text)
 {
 	var tmpText = "";
+	logger.info(raw_text);
 	//Alle nicht-Worte durch Leerzeichen ersetzen (Punkt, Beistrich, etc...)
 	var wordsOnly = raw_text.replace(/[^a-zA-Za-zA-Z0-9\']/g, ' ');
 
