@@ -173,6 +173,7 @@ module.exports = function (beq_engine) {
     var boQbulk = bulkCatData;
     logger.info(bulkWordData.length);
 
+    logger.info(bulkCatData);
     //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
     reCreateBaseCats();
     requestify.get(catAPI.catWakeup).then(function () {
