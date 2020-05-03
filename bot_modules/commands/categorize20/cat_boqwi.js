@@ -174,6 +174,8 @@ module.exports = function (beq_engine, startLetters) {
     //Finally: call with category <> words
     logger.info(bulkWordData.length);
     reCreateBaseCats();
+    requestify.post(catAPI.catAddWordBulk, bulkWordData);
+    /*
     requestify.get(catAPI.catWakeup).then(function () {
         requestify.post(catAPI.catCreateCatBulk, bulkCatData)
             .then(function () {
@@ -183,6 +185,7 @@ module.exports = function (beq_engine, startLetters) {
                 });
             });
     });
+    */
 
 };
 
