@@ -185,25 +185,23 @@ module.exports = function (beq_engine) {
 
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("wakeup");
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
-        /*
-        .then(function () {
-            logger.info("bulkword");
-            requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                requestify.post(catAPI.catW2CBulk, bulkC2W);
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData)
+            .then(function () {
+                logger.info("bulkword");
+                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
+                    requestify.post(catAPI.catW2CBulk, bulkC2W);
+                });
             });
-        });
-        */
     });
-/*
-    bulkCatData = null;
-    bulkWordData = null;
-    bulkC2W = null;
-
-    bulkCmpCD = null;
-    bulkCmpWD = null;
-    bulkCmpC2W = null;
-    */
+    /*
+        bulkCatData = null;
+        bulkWordData = null;
+        bulkC2W = null;
+    
+        bulkCmpCD = null;
+        bulkCmpWD = null;
+        bulkCmpC2W = null;
+        */
 };
 
 
