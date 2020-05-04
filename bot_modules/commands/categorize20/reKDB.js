@@ -19,9 +19,7 @@ var reCat = require('./categorize_boqwi.js');
 
 module.exports = function(beq_engine, phase)
 {
-    tmpRet = "";
-    if (phase == "")
-       return "Please indicate phase: 1 - words, 2- categories, 3 categorization";
+    tmpRet = "Please indicate phase: 1 - words, 2- categories, 3 categorization";
 
     if (phase == "1")
     {
