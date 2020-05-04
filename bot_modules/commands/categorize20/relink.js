@@ -149,7 +149,7 @@ function addBulkC2W(nameCat, nameWord) {
     nameWord = nameWord.replace(/[?!]/g, ' ');
     newObjStr = nameCat + nameWord;
     if (bulkCmpC2W.indexOf(newObjStr) < 0) {
-        bulkC2W.push({ "k": nameCat, "w": nameWord });
+        bulkC2W.push({ "k": nameCat, "n": nameWord });
         bulkCmpC2W.push(newObjStr);
     }
 }
