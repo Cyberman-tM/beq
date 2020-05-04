@@ -167,6 +167,7 @@ function reCreateBaseCats() {
     createCat("sentence_proverb_secret", "en", "%%fill in better description");
     createCat("sentence_proverb_replacement", "en", "%%fill in better description");
     createCat("sentence_lyrics", "en", "Song texts.");
+    createCat("source_kli_maillist", "en", "%%fill in better description");
 }
 
 function createCat(name, langu, desc) {
