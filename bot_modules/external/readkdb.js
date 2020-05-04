@@ -4,6 +4,9 @@
    read in boQwI' xml, update with ID from Azure storage
 */
 
+var fs = require('fs');
+var xmldoc = require('xmldoc');
+
 module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
     //Read boQwI' xml files to build up internal JSON database
     var xmlFiles = fs.readdirSync('./KDB/');
