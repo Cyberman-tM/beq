@@ -20,7 +20,7 @@ module.exports = function (beq_engine) {
 
     beq_engine.KDBJSon.forEach(function (item) {
         //Store as uhmal
-        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
+        var chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
 
         addBulkWord(chkWord);
     });
