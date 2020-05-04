@@ -24,6 +24,8 @@ module.exports = function (beq_engine) {
     bulkCatData = [];
     bulkCmpCD = [];
 
+    reCreateBaseCats();
+
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
         var newCategory = "";
@@ -132,8 +134,7 @@ module.exports = function (beq_engine) {
             });
         }
     });
-
-    reCreateBaseCats();
+       
     requestify.get(catAPI.catWakeup).then(function () {
         requestify.post(catAPI.catCreateCatBulk, bulkCatData);
     });
