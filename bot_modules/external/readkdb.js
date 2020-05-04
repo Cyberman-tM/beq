@@ -8,6 +8,7 @@ var fs = require('fs');
 var xmldoc = require('xmldoc');
 var catAPI = require('./../external/cat_api.js');
 var kTranscode = require('./../utils/recode.js');
+var requestify = require('requestify');
 
 module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
     //Read boQwI' xml files to build up internal JSON database
