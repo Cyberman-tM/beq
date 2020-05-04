@@ -27,8 +27,8 @@ module.exports = function (beq_engine) {
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
-        //In-memory, everything is normal, but we store uhmal
-        var chkWord = item.tlh + ";;" + item.type;
+        //Store as uhmal
+        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
         var newCategory = "";
 
         //Primitive, but it should do
@@ -129,9 +129,6 @@ module.exports = function (beq_engine) {
         if (newCategory != "") {
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
-                catFound = false;
-                //Store as uhmal3
-                chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
 
                 addBulkC2W(itemCat, chkWord);
             });
@@ -147,6 +144,8 @@ module.exports = function (beq_engine) {
 
 
 function addBulkC2W(nameCat, nameWord) {
+
+    nameWord = nameWord.replace(/[?!]/g, ' ');
     newObjStr = nameCat + nameWord;
     if (bulkCmpC2W.indexOf(newObjStr) < 0) {
         bulkC2W.push({ "k": nameCat, "w": nameWord });

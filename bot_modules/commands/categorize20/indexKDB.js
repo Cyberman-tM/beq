@@ -19,8 +19,8 @@ var bulkCmpWD = [];
 module.exports = function (beq_engine) {
 
     beq_engine.KDBJSon.forEach(function (item) {
-        //In-memory, everything is normal, but we store uhmal
-        var chkWord = item.tlh + ";;" + item.type;
+        //Store as uhmal
+        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
 
         addBulkWord(chkWord);
     });
