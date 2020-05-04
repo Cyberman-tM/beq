@@ -13,7 +13,7 @@ var logger = winston.createLogger({
     ]
 });
 
-var reLink = require('./catword_boqwi.js');
+var reLink = require('./relink.js');
 var reIndex = require('./indexKDB.js');
 var reCat = require('./categorize_boqwi.js');
 
