@@ -135,6 +135,7 @@ module.exports = function (beq_engine) {
         }
     });
 
+    logger.info(bulkC2W);
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("c2w");
         requestify.post(catAPI.catW2CBulk, bulkC2W);
