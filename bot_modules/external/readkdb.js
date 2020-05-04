@@ -288,7 +288,7 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
                 logger.info("words");
                 var wData = JSON.parse(wordData);
                 //KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon              
-
+logger.info(KDBJSon);
                 KDBJSon.foreach(function(item, index){
 
                     logger.info(item.tlh);
