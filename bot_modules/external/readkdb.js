@@ -286,7 +286,14 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
         requestify.get(catAPI.catGetData + "&dataType=WordN2I").then(            
             function (wordData) {
                 logger.info("words");
+                try
+                {
                 var wData = JSON.parse(wordData);
+                }
+                catch(error)
+                {
+                    logger.info(error);
+                }
                 logger.info("afterparse");
                 //KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon              
 logger.info(KDBJSon);
