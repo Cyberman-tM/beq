@@ -59,6 +59,7 @@ var beqPerson = require('./bot_modules/personality/beq_person.js');
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
+var readXML = require('./bot_modules/external/readkdb.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 
@@ -550,7 +551,7 @@ module.exports.createTranslation = function (beqTalk) {
 					//logger.info(inTrans.substring(0,1));
 					if (inTrans.substring(0, 1) >= 1 || inTrans.substring(0, 1) <= 9)
 						inTrans = inTrans.substring(2, 999);
-					    transText = '';
+					transText = '';
 					if (inTrans == 'i')
 						transText = 'intransitive';
 					else if (inTrans == 'is')
@@ -795,7 +796,7 @@ function getSuffNum(itemType, itemSuffixNum, tranLang) {
 function getWType(wType, tranLang) {
 	var wTypeS = wType.split(':')[0];
 	var wTypeL = '';
-	
+
 	if (tranLang == 'de') {
 		if (wTypeS == 'n') {
 			wTypeL = 'Nomen';
@@ -936,7 +937,7 @@ function getSType(wType, tranLang) {
 	return tmpRet;
 }
 
-function readXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
+function OLDreadXML(KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
 	//Read boQwI' xml files to build up internal JSON database
 	var xmlFiles = fs.readdirSync('./KDB/');
 	var xml = '';
