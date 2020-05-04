@@ -10,7 +10,7 @@ var tmpCreateCatBulk = process.env.cat_createBulk;
 var tmpAddWordBulk = process.env.cat_addWordBulk;
 var tmpW2CBulk = process.env.cat_w2cBulk;
 var tmpWakeUp = process.env.cat_wakeup;
-//var tmpGetData = process.env.cat_getdata;
+var tmpGetData = process.env.cat_getdata;
 
 //module.exports.catAddDesc  = tmpAddDesc;
 module.exports.catAddWord = tmpAddWord;
@@ -20,4 +20,4 @@ module.exports.catCreateCatBulk = tmpCreateCatBulk;
 module.exports.catAddWordBulk = tmpAddWordBulk;
 module.exports.catW2CBulk = tmpW2CBulk;
 module.exports.catWakeup    = tmpWakeUp;
-//module.exports.catGetData   = tmpGetData;
+module.exports.catGetData   = tmpGetData;

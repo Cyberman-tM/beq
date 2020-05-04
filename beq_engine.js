@@ -258,6 +258,8 @@ module.exports.Engine = function (beqTalk) {
 						"tlh": beqTalk.lookWord,
 						"en": tmpText,
 						"de": '',
+						"ru": '',
+						"id": '',
 						"type": 'RECODE',
 						"slang": false,
 						"notes": '',
@@ -388,6 +390,7 @@ module.exports.Engine = function (beqTalk) {
 							"en": item.en,
 							"de": item.de,
 							"ru": item.ru,
+							"id": item.id,
 							"type": item.type,
 							"slang": isSlang,
 							"notes": item.notes,
@@ -617,6 +620,8 @@ module.exports.createTranslation = function (beqTalk) {
 
 				if (infTips != "")
 					sndMessage += '===>*' + infTips + '*' + beqTalk.newline;
+
+				sndMessage += item.id;
 			}
 
 			//possible TODO: store KatID in item, request cat name from AZS?

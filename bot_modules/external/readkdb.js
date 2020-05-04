@@ -6,6 +6,8 @@
 
 var fs = require('fs');
 var xmldoc = require('xmldoc');
+var catAPI = require('./../external/cat_api.js');
+var kTranscode = require('./../utils/recode.js');
 
 module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
     //Read boQwI' xml files to build up internal JSON database
@@ -28,6 +30,7 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
         en: 'klingon',
         de: 'Klingone',
         ru: '',
+        id: '',
         type: 'n',
         notes: 'notes',
         notes_de: 'notes_de',
@@ -42,6 +45,7 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
                 en: '',
                 de: '',
                 ru: '',
+                id: '',
                 type: '',
                 notes: '',
                 notes_de: '',
@@ -108,6 +112,8 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
             emptyStruct.hidden_notes = '';
         if (emptyStruct.source == undefined)
             emptyStruct.source = '';
+        if (emptyStruct.id == undefined)
+            emptyStruct.id = '';
 
         //Cleanup - boQwI' contains links to other, related words - we don't use them, so I throw them away
         var regClean = /(\:[a-zA-Z0-9]*)/g;
@@ -264,4 +270,22 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
     xmlFiles = null;
     xml = null;
     fs = null;
-}
+
+    //Get IDs from external, must be asynchronous because of JavaScript...
+    requestify.get(catAPI.catWakeup).then(function () {
+        requestify.get(catAPI.catGetData + "&dataType=WordN2I").then(
+            function (wordData) {
+                var wData = JSON.parse(wordData);
+                //KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon              
+
+                KDBJSon.foreach(function(item, index){
+                    var chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
+                    chkWord = chkWord.replace(/[?!]/g, '');
+                    item.id = wData[chkWord];
+                    //zurückschreiben
+                    KDBJSon[index] = item;
+                });
+
+            });
+    });
+};
