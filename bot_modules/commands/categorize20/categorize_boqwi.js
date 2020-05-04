@@ -1,5 +1,5 @@
 /*
-   Auto-Categorize words from boQwI'
+   Create categories from boQwI'
 */
 var requestify = require('requestify');
 var catAPI = require('./../../external/cat_api.js');
@@ -14,46 +14,18 @@ var logger = winston.createLogger({
 });
 
 var bulkCatData = [];
-var bulkWordData = [];
-var bulkC2W = [];
-
 var bulkCmpCD = [];
-var bulkCmpWD = [];
-var bulkCmpC2W = [];
 
-
-module.exports = function (beq_engine, startLetters) {
+module.exports = function (beq_engine) {
     var regexLook = "";
     var RE = "";
     var result = "";
 
     bulkCatData = [];
-    bulkWordData = [];
-    bulkC2W = [];
-
     bulkCmpCD = [];
-    bulkCmpWD = [];
-    bulkCmpC2W = [];
-
-    //Make sure we ALWAYS have enough entries
-    startLetters += "x;x;x;x;x;x"
-    sLetter = startLetters.split(';');
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
-/*
-        //Ridiculous way to make sure we don't overwhelm the table storage...
-        if (!(item.tlh.startsWith(sLetter[0]) ||
-            item.tlh.startsWith(sLetter[1]) ||
-            item.tlh.startsWith(sLetter[2]) ||
-            item.tlh.startsWith(sLetter[3]) ||
-            item.tlh.startsWith(sLetter[4]) ||
-            item.tlh.startsWith(sLetter[5]) ||
-            item.tlh.startsWith(sLetter[6])))
-            return;
-*/
-        //In-memory, everything is normal, but we store uhmal
-        var chkWord = item.tlh + ";;" + item.type;
         var newCategory = "";
 
         //Primitive, but it should do
@@ -147,7 +119,6 @@ module.exports = function (beq_engine, startLetters) {
                 newCategory += ";source_qephom_" + result[1];
         }
 
-
         //Besserer Weg?
         if (newCategory.substr(0, 1) == ';')
             newCategory = newCategory.substr(1, 9999);
@@ -155,41 +126,18 @@ module.exports = function (beq_engine, startLetters) {
         if (newCategory != "") {
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
-                catFound = false;
-                //Store as uhmal3
-                chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
 
                 //Add to category bulk array
                 createCat(itemCat, "en", "Taken from boQwI\'");
-                addBulkWord(chkWord);
-                addBulkC2W(itemCat, chkWord);
             });
         }
     });
 
-    //Call bulk functions
-    //First: call with basic categories
-    //Then:  call with categories for boQwI' subcategories
-    //Next:  call with words we want to categorize
-    //Finally: call with category <> words
-    logger.info(bulkWordData.length);
     reCreateBaseCats();
-    logger.info(bulkWordData);
-    requestify.post(catAPI.catAddWordBulk, bulkWordData);
-    /*
     requestify.get(catAPI.catWakeup).then(function () {
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData)
-            .then(function () {
-                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                    logger.info("words");
-                    //requestify.post(catAPI.catW2CBulk, bulkC2W);
-                });
-            });
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
     });
-    */
-
 };
-
 
 function reCreateBaseCats() {
     //Call order is intended - superkategories need to exist before the subkategorie is created
@@ -218,24 +166,6 @@ function reCreateBaseCats() {
     createCat("sentence_proverb_secret", "en", "%%fill in better description");
     createCat("sentence_proverb_replacement", "en", "%%fill in better description");
     createCat("sentence_lyrics", "en", "Song texts.");
-}
-
-function addBulkWord(name) {
-
-    //Fragezeichen und Rufzeichen machen in Azure Table STorage Ärger!
-    name = name.replace(/[?!]/g, ' ');
-    if (bulkCmpWD.indexOf(name) < 0) {
-        bulkWordData.push({ "n": name });
-        bulkCmpWD.push(name);
-    }
-}
-
-function addBulkC2W(nameCat, nameWord) {
-    newObjStr = nameCat + nameWord;
-    if (bulkCmpC2W.indexOf(newObjStr) < 0) {
-        bulkC2W.push({ "k": nameCat, "w": nameWord });
-        bulkCmpC2W.push(newObjStr);
-    }
 }
 
 function createCat(name, langu, desc) {

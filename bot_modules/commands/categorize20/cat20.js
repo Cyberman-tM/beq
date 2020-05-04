@@ -6,7 +6,7 @@
 var catAPI = require('./../../external/cat_api.js');
 
 var tmpReload = require('./reloadcats.js');
-var tmpCatBoq = require('./cat_boqwi.js');
+var tmpReKDB = require('./reKDB.js');
 
 module.exports.catReLoad = tmpReload;
-module.exports.catReKDB = tmpCatBoq;
+module.exports.reKDB = tmpReKDB;
