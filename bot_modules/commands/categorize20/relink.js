@@ -146,7 +146,7 @@ module.exports = function (beq_engine) {
 
 function addBulkC2W(nameCat, nameWord) {
     nameCat = nameCat.toUpperCase();
-    nameWord = nameWord.replace(/[?!]/g, ' ');
+    nameWord = nameWord.replace(/[?!]/g, '');
     newObjStr = nameCat + nameWord;
     if (bulkCmpC2W.indexOf(newObjStr) < 0) {
         bulkC2W.push({ "k": nameCat, "n": nameWord });
