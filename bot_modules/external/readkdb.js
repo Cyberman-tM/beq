@@ -9,6 +9,7 @@ var xmldoc = require('xmldoc');
 var catAPI = require('./../external/cat_api.js');
 var kTranscode = require('./../utils/recode.js');
 var requestify = require('requestify');
+var winston = require('winston');
 var logger = winston.createLogger({
     level: 'info',
     format: winston.format.json(),
