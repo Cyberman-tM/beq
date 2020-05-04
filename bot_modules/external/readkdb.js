@@ -9,6 +9,13 @@ var xmldoc = require('xmldoc');
 var catAPI = require('./../external/cat_api.js');
 var kTranscode = require('./../utils/recode.js');
 var requestify = require('requestify');
+var logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.json(),
+    transports: [
+        new winston.transports.Console()
+    ]
+});
 
 module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
     //Read boQwI' xml files to build up internal JSON database
@@ -274,8 +281,10 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
 
     //Get IDs from external, must be asynchronous because of JavaScript...
     requestify.get(catAPI.catWakeup).then(function () {
-        requestify.get(catAPI.catGetData + "&dataType=WordN2I").then(
+        logger.info("wake");
+        requestify.get(catAPI.catGetData + "&dataType=WordN2I").then(            
             function (wordData) {
+                logger.info("words");
                 var wData = JSON.parse(wordData);
                 //KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon              
 
