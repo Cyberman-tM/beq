@@ -28,7 +28,7 @@ module.exports = function (beq_engine) {
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
         //Store as uhmal
-        var chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
+        var chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
         var newCategory = "";
 
         //Primitive, but it should do
