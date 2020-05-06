@@ -11,7 +11,7 @@ var logger = winston.createLogger({
 });
 
 
-var playDataStruc = '{     "playDataStrucDef": {     "playerID": "";",     "playerName": "";",     "playerPoints": "0;",     "playerObj": "null;"   }   }';
+var playDataStruc = '{     "playDataStrucDef": {     "playerID": "",     "playerName": "",     "playerPoints": "0;",     "playerObj": ""   }   }';
 
 var intPlayers = [];
 
