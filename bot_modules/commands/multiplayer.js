@@ -33,6 +33,7 @@ module.exports.addPlayer = function (i_user) {
     newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
 
+    logger.info(i_user.username);
     logger.info(newPlayer.player);
 
     //Only new players should be added
