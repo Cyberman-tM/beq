@@ -161,11 +161,13 @@ function processMessage(bot, messageDJS)
 			case 'newGame':
 				sndMessage= "Done, I hope?";
 				if (args[1] == "add")
-					newGame.addPlayer(user, username);
+					newGame.addPlayer(messageDJS.author);
 				else if (args[1] == "reset")
 					newGame.restart();
 				else if (args[1] == "list")
 					sndMessage = newGame.listPlayers();
+				else if (args[1] == "myPoints")
+					newGame.myPoints(messageDJS.author);
 				break;
 
 			case 'reKDB':

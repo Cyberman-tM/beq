@@ -14,6 +14,7 @@ var playDataStrucDef = "";
 playDataStrucDef.playerID = "";
 playDataStrucDef.playerName = "";
 playDataStrucDef.playerPoints = 0;
+playDataStrucDef.playerObj = null;
 
 var playDataStruc = JSON.stringify(playDataStrucDef);
 
@@ -25,11 +26,13 @@ module.exports.restart = function () {
     intPlayers = null;
 };
 
-module.exports.addPlayer = function (i_userID, i_userName) {
+module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
 
-    newPlayer.playerID = i_userID;
-    newPlayer.playerName = i_userName;
+    newPlayer.playerID = i_user.id;
+    newPlayer.playerName = i_user.username;
+    newPlayer.playerObj = i_user;
+
     //Only new players should be added
     if (!intPlayers.find(function (myObj) { if (myObj.playerID == i_userID) return myOjb; }))
         intPlayers.push(newPlayer);
@@ -40,4 +43,9 @@ module.exports.listPlayers = function () {
     intPlayers.forEach(function (item) { tmpRet += item.playerName; });
 
     return tmpRet;
+};
+
+module.exports.myPoints = function(i_user)
+{
+    i_user.send("my points?");
 };
