@@ -33,7 +33,8 @@ module.exports.addPlayer = function (i_user) {
     newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
 
-    logger.info(newPlayer.playerName);
+    logger.info(i_user);
+        logger.info(i_user.username);
 
     //Only new players should be added
     if (!intPlayers.find(function (myObj) { if (myObj.playerID == i_userID) return myOjb; }))
