@@ -29,7 +29,7 @@ module.exports.restart = function () {
 module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
 
-    logger.info(newPlayer);
+    logger.info(newPlayer.playerName);
     newPlayer.playerID = i_user.id;
     newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
@@ -37,7 +37,7 @@ module.exports.addPlayer = function (i_user) {
     dummy = i_user.username;
     logger.info(dummy);
     logger.info(i_user.username);
-    logger.info(newPlayer.player);
+    logger.info(newPlayer.playerName);
 
     //Only new players should be added
     if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.userID) return myOjb; }))
