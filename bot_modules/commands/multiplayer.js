@@ -44,7 +44,7 @@ module.exports.addPlayer = function (i_user) {
     logger.info(newPlayer.playerName);
 
     //Only new players should be added
-    if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.userID) return myOjb; }))
+    if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.userID) return myObj; }))
         intPlayers.push(newPlayer);
 };
 
