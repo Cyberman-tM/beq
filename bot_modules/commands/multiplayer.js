@@ -12,7 +12,7 @@ var logger = winston.createLogger({
 
 var playDataStrucDef = "";
 playDataStrucDef.playerID = "";
-playDataStrucDef.playerName = "";
+playDataStrucDef.playerName = "dummy";
 playDataStrucDef.playerPoints = 0;
 playDataStrucDef.playerObj = null;
 
