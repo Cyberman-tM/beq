@@ -23,23 +23,13 @@ module.exports.restart = function () {
 
 module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
-    logger.info(playDataStruc);
 
-    logger.info(newPlayer.playerName);
     newPlayer.playerID = i_user.id;
     newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
 
-    dummy = i_user.username;
-    newPlayer.playerName = dummy;
-    newPlayer.playerName = "fuck you js";
-    logger.info(newPlayer);
-    logger.info(dummy);
-    logger.info(i_user.username);
-    logger.info(newPlayer.playerName);
-
     //Only new players should be added
-    if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.userID) return myObj; }))
+    if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.playerID) return myObj; }))
         intPlayers.push(newPlayer);
 };
 
