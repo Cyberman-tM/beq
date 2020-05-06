@@ -36,8 +36,8 @@ module.exports.addPlayer = function (i_user) {
 
     dummy = i_user.username;
     newPlayer.playerName = dummy;
-    newPlayer.playerName = "fuck you";
-    logger.info(dummy);
+    newPlayer.playerName = "fuck you js";
+    logger.info(dummy); 
     logger.info(i_user.username);
     logger.info(newPlayer.playerName);
 
