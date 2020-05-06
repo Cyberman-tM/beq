@@ -33,6 +33,8 @@ module.exports.addPlayer = function (i_user) {
     newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
 
+    dummy = i_user.username;
+    logger.info(dummy);
     logger.info(i_user.username);
     logger.info(newPlayer.player);
 
