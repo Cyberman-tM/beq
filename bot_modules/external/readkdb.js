@@ -296,14 +296,14 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
                 }
                 logger.info("afterparse");
                 //KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon              
-logger.info(KDBJSon);
+
                 KDBJSon.foreach(function(item, index){
 
-                    logger.info(item.tlh);
+
                     var chkWord = kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type;
                     chkWord = chkWord.replace(/[?!]/g, '');
                     item.id = wData[chkWord];
-                    logger.info(item.id);
+
                     //zurückschreiben
                     KDBJSon[index] = item;
                 });
