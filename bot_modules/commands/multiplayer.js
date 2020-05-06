@@ -27,7 +27,7 @@ module.exports.restart = function () {
 };
 
 module.exports.addPlayer = function (i_user) {
-    var newPlayer = JSON.parse(playDataStruc);
+    var newPlayer = JSON.parse(playDataStrucDef);
 
     logger.info(newPlayer.playerName);
     newPlayer.playerID = i_user.id;
