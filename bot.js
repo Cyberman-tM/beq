@@ -18,6 +18,7 @@ var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
 var cat = require('./bot_modules/commands/categorize20/cat20.js');
+var newGame = require('./bot_modules/commands/multiplayer.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -156,6 +157,16 @@ function processMessage(bot, messageDJS)
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
 
 		switch (cmd) {
+			//Experiment
+			case 'newGame':
+				sndMessage= "Done, I hope?";
+				if (args[1] == "add")
+					newGame.addPlayer(user, username);
+				else if (args[1] == "reset")
+					newGame.restart();
+				else if (args[1] == "list")
+					sndMessage = newGame.listPlayers();
+				break;
 
 			case 'reKDB':
 				sndMessage = cat.reKDB(beq, args[1]);
