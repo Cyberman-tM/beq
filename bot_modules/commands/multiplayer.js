@@ -10,13 +10,8 @@ var logger = winston.createLogger({
     ]
 });
 
-var playDataStrucDef = "";
-playDataStrucDef.playerID = "";
-playDataStrucDef.playerName = "dummy";
-playDataStrucDef.playerPoints = 0;
-playDataStrucDef.playerObj = null;
 
-var playDataStruc = JSON.stringify(playDataStrucDef);
+var playDataStruc = '{     "playDataStrucDef": {     "playerID": "\"\";",     "playerName": "\"\";",     "playerPoints": "0;",     "playerObj": "null;"   }   }';
 
 var intPlayers = [];
 
@@ -39,7 +34,7 @@ module.exports.addPlayer = function (i_user) {
     newPlayer.playerName = dummy;
     newPlayer.playerName = "fuck you js";
     logger.info(newPlayer);
-    logger.info(dummy); 
+    logger.info(dummy);
     logger.info(i_user.username);
     logger.info(newPlayer.playerName);
 
@@ -55,7 +50,6 @@ module.exports.listPlayers = function () {
     return tmpRet;
 };
 
-module.exports.myPoints = function(i_user)
-{
+module.exports.myPoints = function (i_user) {
     i_user.send("my points?");
 };
