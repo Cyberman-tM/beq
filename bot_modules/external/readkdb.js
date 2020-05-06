@@ -279,7 +279,7 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
     xmlFiles = null;
     xml = null;
     fs = null;
-
+/*
     //Get IDs from external, must be asynchronous because of JavaScript...
     requestify.get(catAPI.catWakeup).then(function () {
         logger.info("wake");
@@ -310,4 +310,5 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
 
             });
     });
+    */
 };
