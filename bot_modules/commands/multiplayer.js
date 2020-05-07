@@ -76,6 +76,8 @@ module.exports.givePoints = function (i_user, i_pointlist) {
     var pointList = (i_pointlist + ";").split(';');
     var winner = null;
 
+    logger.info(pointList[0]);
+
     pointList.forEach(function (player) {
         var pointName = player.split(':');
         if (intPlayerNames[pointName[0]] != null) {
