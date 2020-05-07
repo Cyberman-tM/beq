@@ -168,6 +168,8 @@ function processMessage(bot, messageDJS)
 					sndMessage = newGame.listPlayers();
 				else if (args[1] == "myPoints")
 					newGame.myPoints(messageDJS.author);
+				else if (args[1] == "addGM")
+					sndMessage = newGame.addGM(messageDJS.author);
 				break;
 
 			case 'reKDB':

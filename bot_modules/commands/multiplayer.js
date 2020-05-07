@@ -10,22 +10,22 @@ var logger = winston.createLogger({
     ]
 });
 
-
-var playDataStruc = '{     "playDataStrucDef": {     "playerID": "",     "playerName": "",     "playerPoints": "0;",     "playerObj": ""   }   }';
-
+var playDataStruc = '{ "playDataStrucDef": { "playerID": "", "playerPoints": "0;",  "playerObj": ""  } }';
 var intPlayers = [];
+var GM = null;
 
 module.exports.players = intPlayers;
 
 module.exports.restart = function () {
     intPlayers = null;
+    GM = null;
 };
 
 module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
 
+    newPlayer = i_user.username;
     newPlayer.playerID = i_user.id;
-    newPlayer.playerName = i_user.username;
     newPlayer.playerObj = i_user;
 
     //Only new players should be added
@@ -33,13 +33,36 @@ module.exports.addPlayer = function (i_user) {
         intPlayers.push(newPlayer);
 };
 
+module.exports.addGM = function (i_user) {
+    var tmpRet = "";
+    if (GM == null) {
+        GM = i_user;
+        tmpRet = "You are GM now.";
+    }
+    else
+        tmpRet = "We already have a GM:" + GM.username;
+};
+
 module.exports.listPlayers = function () {
     var tmpRet = "";
-    intPlayers.forEach(function (item) { tmpRet += item.playerName; });
+    intPlayers.forEach(function (item) {
+        tmpRet += item;
+    });
 
     return tmpRet;
 };
 
 module.exports.myPoints = function (i_user) {
     i_user.send("my points?");
+};
+
+//Manual scoring
+module.exports.givePoints = function (i_pointlist) {
+    //pointlist is a a string of name:points;
+    var pointList = i_pointlist.split(';');
+    pointList.forEach(function (player) {
+
+
+    });
+
 };
