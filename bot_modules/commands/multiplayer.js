@@ -24,6 +24,10 @@ module.exports.restart = function () {
 module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
 
+    intPlayers[i_user.username] = {};
+    intPlayers[i_user.username].playerID = i_user.id;
+    intPlayers[i_user.username].playerPoints = -1;
+
     newPlayer[i_user.username] = {};
     newPlayer[i_user.username].playerID = i_user.id;
     newPlayer[i_user.username].playerPoints = -1;
@@ -31,9 +35,11 @@ module.exports.addPlayer = function (i_user) {
     newPlayer.playerID = i_user.id;
     newPlayer.playerObj = i_user;
 
+    
+
     //Only new players should be added
-    if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.playerID) return myObj; }))
-        intPlayers.push(newPlayer);
+    //if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.playerID) return myObj; }))
+        //intPlayers.push(newPlayer);
 };
 
 module.exports.addGM = function (i_user) {
@@ -60,7 +66,7 @@ module.exports.listPlayers = function () {
 
 module.exports.myPoints = function (i_user) {
     i_user.send(intPlayers[i_user.username].playerPoints);
-};
+    };
 
 //Manual scoring
 module.exports.givePoints = function (i_pointlist) {
