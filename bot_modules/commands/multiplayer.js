@@ -41,19 +41,22 @@ module.exports.addGM = function (i_user) {
     }
     else
         tmpRet = "We already have a GM:" + GM.username;
+
+    return tmpRet;
 };
 
 module.exports.listPlayers = function () {
     var tmpRet = "";
     intPlayers.forEach(function (item) {
         tmpRet += item;
+        tmpRet += "\n" + item.playerPoints + "-" + item.playerID;
     });
 
     return tmpRet;
 };
 
 module.exports.myPoints = function (i_user) {
-    i_user.send("my points?");
+    i_user.send(intPlayers[i_user.username].playerPoints);
 };
 
 //Manual scoring
