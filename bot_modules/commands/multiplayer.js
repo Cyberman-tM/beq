@@ -19,7 +19,7 @@ var targetPoints = 0;
 module.exports.players = intPlayers;
 
 module.exports.restart = function () {
-    intPlayers = null;
+    intPlayers = {};
     GM = null;
 };
 
@@ -69,7 +69,7 @@ module.exports.sendQuestion = function(i_user, i_question)
 
 module.exports.sendAnswer = function(i_user, i_answer)
 {
-    GM.send("New answer from" + i_user.username + ":" + "i_answer");
+    GM.send("New answer from" + i_user.username + ": " + i_answer);
 };
 
 //Manual scoring
@@ -82,6 +82,7 @@ module.exports.givePoints = function (i_user, i_pointlist) {
         var pointName = player.split(':');
         if (intPlayerNames[pointName[0]] != undefined)
         {
+            logger.info(pointName[1]);
             intPlayers[intPlayerNames[pointName[0]]].playerPoints += pointName[1];
             if (intPlayers[intPlayerNames[pointName[0]]].playerPoints >= targetPoints)
                 winner = pointName[0];
@@ -115,6 +116,6 @@ function notifyPlayers(i_text) {
 
 function notifyPlayersPoints() {
     intPlayerNames.forEach(function (name) {
-        intPlayers[name].playerObj.send("Current points:" + intPlayers[name].playerPoints);
+        intPlayers[name].playerObj.send("Current points: " + intPlayers[name].playerPoints);
     });
 }
