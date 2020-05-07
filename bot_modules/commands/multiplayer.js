@@ -80,6 +80,7 @@ module.exports.givePoints = function (i_user, i_pointlist) {
 
     pointList.forEach(function (player) {
         var pointName = player.split(':');
+        logger.info(intPlayerNames[pointName[0]]);
         if (intPlayerNames[pointName[0]] != undefined)
         {
             logger.info(pointName[1]);
