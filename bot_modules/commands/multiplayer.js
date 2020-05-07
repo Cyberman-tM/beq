@@ -26,6 +26,7 @@ module.exports.addPlayer = function (i_user) {
 
     newPlayer[i_user.username] = {};
     newPlayer[i_user.username].playerID = i_user.id;
+    newPlayer[i_user.username].playerPoints = -1;
     newPlayer.username = i_user.username;
     newPlayer.playerID = i_user.id;
     newPlayer.playerObj = i_user;
