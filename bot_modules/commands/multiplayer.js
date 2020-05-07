@@ -11,8 +11,10 @@ var logger = winston.createLogger({
 });
 
 var playDataStruc = '{ "playDataStrucDef": { "playerID": "", "playerPoints": "0;",  "playerObj": ""  } }';
-var intPlayers = [];
+var intPlayers = {};
+var intPlayerNames = [];
 var GM = null;
+var targetPoints = 0;
 
 module.exports.players = intPlayers;
 
@@ -24,22 +26,17 @@ module.exports.restart = function () {
 module.exports.addPlayer = function (i_user) {
     var newPlayer = JSON.parse(playDataStruc);
 
-    intPlayers[i_user.username] = {};
-    intPlayers[i_user.username].playerID = i_user.id;
-    intPlayers[i_user.username].playerPoints = -1;
-
-    newPlayer[i_user.username] = {};
-    newPlayer[i_user.username].playerID = i_user.id;
-    newPlayer[i_user.username].playerPoints = -1;
-    newPlayer.username = i_user.username;
-    newPlayer.playerID = i_user.id;
-    newPlayer.playerObj = i_user;
-
-    
-
     //Only new players should be added
-    //if (!intPlayers.find(function (myObj) { if (myObj.playerID == newPlayer.playerID) return myObj; }))
-        //intPlayers.push(newPlayer);
+    if (intPlayers[i_user.username] == undefined) {
+
+        intPlayers[i_user.username] = {};
+        intPlayers[i_user.username].playerID = i_user.id;
+        intPlayers[i_user.username].playerPoints = -1;
+        intPlayers[i_user.username].playerObj = i_user;
+
+        //Echtes Array mit Namen, um auf das falsche Array zugreifen zu können
+        intPlayerNames.push(i_user.username);
+    }
 };
 
 module.exports.addGM = function (i_user) {
@@ -56,9 +53,9 @@ module.exports.addGM = function (i_user) {
 
 module.exports.listPlayers = function () {
     var tmpRet = "";
-    intPlayers.forEach(function (item) {
-        tmpRet += item;
-        tmpRet += "\n" + item.playerPoints + "-" + item.playerID;
+    intPlayerNames.forEach(function (name) {
+        tmpRet += name;
+        tmpRet += "\n" + intPlayers[name].playerPoints + "-" + intPlayers[name].playerID;
     });
 
     return tmpRet;
@@ -66,7 +63,7 @@ module.exports.listPlayers = function () {
 
 module.exports.myPoints = function (i_user) {
     i_user.send(intPlayers[i_user.username].playerPoints);
-    };
+};
 
 //Manual scoring
 module.exports.givePoints = function (i_pointlist) {
@@ -76,5 +73,20 @@ module.exports.givePoints = function (i_pointlist) {
 
 
     });
-
 };
+
+module.exports.setTarget = function (i_user, i_maxPoints) {
+    //Nur GM
+    if (i_user.userid == GM.userid) {
+        targetPoints = i_maxPoints;
+        notifyPlayers("GM set new target points: " + i_maxPoints);
+    }
+};
+
+
+//Utilities
+function notifyPlayers(i_text) {
+    intPlayerNames.forEach(function (name) {
+        intPlayers[name].playerObj.send(i_text);
+    });
+}
