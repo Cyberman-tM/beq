@@ -89,7 +89,7 @@ module.exports.givePoints = function (i_user, i_pointlist) {
     if (winner == null)
         notifyPlayersPoints();
     else
-        notifyPlayers("Player" + winner + "has reached" + intPlayers[intPlayerNames[winner]].playerPoints + "of" + targetPoints + "points! Congratulations!");
+        notifyPlayers("Player" + winner + "has reached" + intPlayers[winner].playerPoints + "of" + targetPoints + "points! Congratulations!");
 };
 
 module.exports.setTarget = function (i_user, i_maxPoints) {
