@@ -61,18 +61,37 @@ module.exports.listPlayers = function () {
     return tmpRet;
 };
 
-module.exports.myPoints = function (i_user) {
-    i_user.send(intPlayers[i_user.username].playerPoints);
+module.exports.sendQuestion = function(i_user, i_question)
+{
+    if (i_user.userid == GM.userid)
+        notifyPlayers(i_question);
+};
+
+module.exports.sendAnswer = function(i_user, i_answer)
+{
+    GM.send("New answer from" + i_user.username + ":" + "i_answer");
 };
 
 //Manual scoring
-module.exports.givePoints = function (i_pointlist) {
+module.exports.givePoints = function (i_user, i_pointlist) {
     //pointlist is a a string of name:points;
-    var pointList = i_pointlist.split(';');
+    var pointList = (i_pointlist+";").split(';');
+    var winner = null;
+
     pointList.forEach(function (player) {
-
-
+        var pointName = player.split(':');
+        if (intPlayerNames[pointName[0]] != undefined)
+        {
+            intPlayers[intPlayerNames[pointName[0]]].playerPoints += pointName[1];
+            if (intPlayers[intPlayerNames[pointName[0]]].playerPoints >= targetPoints)
+                winner = pointName[0];
+        }
     });
+
+    if (winner == null)
+        notifyPlayersPoints();
+    else
+       notifyPlayers("Player" + winner + "has reached" + intPlayers[intPlayerNames[winner]].playerPoints + "of" + targetPoints + "points! Congratulations!");
 };
 
 module.exports.setTarget = function (i_user, i_maxPoints) {
@@ -83,10 +102,19 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
     }
 };
 
-
 //Utilities
+module.exports.myPoints = function (i_user) {
+    i_user.send(intPlayers[i_user.username].playerPoints);
+};
+
 function notifyPlayers(i_text) {
     intPlayerNames.forEach(function (name) {
         intPlayers[name].playerObj.send(i_text);
+    });
+}
+
+function notifyPlayersPoints() {
+    intPlayerNames.forEach(function (name) {
+        intPlayers[name].playerObj.send("Current points:" + intPlayers[name].playerPoints);
     });
 }

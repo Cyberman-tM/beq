@@ -73,18 +73,16 @@ bot.on('ready', function (evt) {
 }
 );
 
-bot.on('messageUpdate', function(oldMessage, newMessage)
-{
+bot.on('messageUpdate', function (oldMessage, newMessage) {
 	processMessage(this, newMessage);
 });
 
 bot.on('message', function (messageDJS) {
-   processMessage(this, messageDJS);
+	processMessage(this, messageDJS);
 });
 
 //Actual message processing
-function processMessage(bot, messageDJS)
-{
+function processMessage(bot, messageDJS) {
 	var sndMessage = '';
 	var userTLang = null;
 	var beqTalk = JSON.parse(beq.beqTalkDef);
@@ -155,11 +153,12 @@ function processMessage(bot, messageDJS)
 		//Some functions need the entire argument string, unprocessed
 		var firstBlank = message.indexOf(' ');
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
+		var tmpText = "";
 
 		switch (cmd) {
 			//Experiment
 			case 'newGame':
-				sndMessage= "Done, I hope?";
+				sndMessage = "Done, I hope?";
 				if (args[1] == "add")
 					newGame.addPlayer(messageDJS.author);
 				else if (args[1] == "reset")
@@ -171,9 +170,13 @@ function processMessage(bot, messageDJS)
 				else if (args[1] == "addGM")
 					sndMessage = newGame.addGM(messageDJS.author);
 				else if (args[1] == "givePoints")
-					newGame.givePoints(args[2]);
+					newGame.givePoints(messageDJS.author, args[2]);
 				else if (args[1] == "setTarget")
-					newGame.setTarget(args[2]);
+					newGame.setTarget(messageDJS.author, args[2]);
+				else if (args[1] == "sendQuestion")
+					newGame.sendQuestion(messageDJS.author, args.slice(2, 999).join());
+				else if (args[1] == "sendAnswer")
+					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join());
 				break;
 
 			case 'reKDB':
