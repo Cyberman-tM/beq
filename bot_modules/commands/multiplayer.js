@@ -9,6 +9,7 @@ var logger = winston.createLogger({
         new winston.transports.Console()
     ]
 });
+var bT = require('./../utils/boQwI_translate.js');
 
 var playDataStruc = '{ "playDataStrucDef": { "playerID": "", "playerPoints": "0;",  "playerObj": ""  } }';
 var intPlayers = {};
@@ -100,7 +101,34 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
 };
 
 module.exports.getQuestion = function (KDBJSon, i_numResults) {
-    getRandomWords(KDBJSon, i_numResults);
+    var rawQuestion = getRandomWords(KDBJSon, i_numResults);
+    var finText = "";
+
+    var ans1, ans2, ans3, ans4;
+    do {
+        ans1 = Math.floor(Math.random() * 3);
+        ans2 = Math.floor(Math.random() * 3);
+        ans3 = Math.floor(Math.random() * 3);
+        ans4 = Math.floor(Math.random() * 3);
+    }
+    while (ans1 == ans2 == ans3 == ans4);
+
+    var rawText = "";
+    rawText += "Translate the following from klingon:\r\n";
+    rawText += "\r\n";
+    rawText += "(Type: " + bT.getWType(rawQuestion[0].type, "en") + ")\r\n";
+    rawText += rawQuestion[0].tlh + "\r\n";
+    rawText += "\r\n";
+    rawText += "\r\n";
+    rawText += "Possible answers:\r\n";
+    rawText += "a)" + rawQuestion[ans1].en + "\r\n";
+    rawText += "b)" + rawQuestion[ans2].en + "\r\n";
+    rawText += "c)" + rawQuestion[ans3].en + "\r\n";
+    rawText += "d)" + rawQuestion[ans4].en + "\r\n";
+
+    finText = rawText;
+
+    return finText;
 };
 
 //Utilities
@@ -127,27 +155,25 @@ function getRandomWords(KDBJSon, i_numResults) {
     var quests = {};
 
     //Initial question
-    quests[++numQuests] = KDBJSon[Math.floor(Math.random() * (KDBJSon.length + 1))];
+    //TODO: check for hyp/derived - integrate in loop?
+    quests[++numQuests] = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
     do {
         //Get additional questions
-        tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length + 1))];
+        tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
 
-        if (tmpWord.type == quests[0].type)
-            quests[++numQuests] = tmpWord;
+        //Same type, but different word?
+        if (tmpWord.type == quests[0].type && tmpWord.tlh != quests[0].tlh)
+            //Not hypothetical or derived?
+            if (!(bT.isHyp(tmpWord.type) && bT.isDerived(tmpWord.type)))
+                quests[++numQuests] = tmpWord;
     }
     while (numQuests < i_numResults);
-
-    numQuests = 0;
-    do {
-        logger.info(quests[++numQuests].tlh);
-    }
-    while (numQuests < i_numResults);
-
-
-    //Get additional i_numResults-1 words of the same type
-
-    //Prepare data for giving back - array?
-    //Return all + answers!
-
-
+    /*
+        numQuests = 0;
+        do {
+            logger.info(quests[++numQuests].tlh);
+        }
+        while (numQuests < i_numResults);
+    */
+    return quests;
 }
