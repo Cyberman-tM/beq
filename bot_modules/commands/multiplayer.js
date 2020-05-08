@@ -105,7 +105,7 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     var finText = "";
 
     var ans = [];
-    while (ans.length < 4)
+    while (ans.length <= 4)
     {
         var r = Math.floor(Math.random() * 3);
         if (ans.indexOf(r) == -1)
