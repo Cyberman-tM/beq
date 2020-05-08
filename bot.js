@@ -178,7 +178,7 @@ function processMessage(bot, messageDJS) {
 				else if (args[1] == "sendAnswer")
 					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")
-					newGame.getQuestion(beq.KDBJSon, 4);
+					sndMessage = newGame.getQuestion(beq.KDBJSon, 4);
 
 				break;
 			case 'reKDB':
