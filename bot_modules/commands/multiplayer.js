@@ -121,10 +121,10 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     rawText += "\r\n";
     rawText += "\r\n";
     rawText += "Possible answers:\r\n";
-    rawText += "a)" + rawQuestion[ans1].en + "\r\n";
-    rawText += "b)" + rawQuestion[ans2].en + "\r\n";
-    rawText += "c)" + rawQuestion[ans3].en + "\r\n";
-    rawText += "d)" + rawQuestion[ans4].en + "\r\n";
+    rawText += "a)" + ans1 + rawQuestion[ans1].en + rawQuestion[ans1].tlh + "\r\n";
+    rawText += "b)" + ans2 + rawQuestion[ans2].en + rawQuestion[ans1].tlh + "\r\n";
+    rawText += "c)" + ans3 + rawQuestion[ans3].en + rawQuestion[ans1].tlh + "\r\n";
+    rawText += "d)" + ans4 + rawQuestion[ans4].en + rawQuestion[ans1].tlh + "\r\n";
 
     finText = rawText;
 
