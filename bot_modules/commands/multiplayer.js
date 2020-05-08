@@ -173,12 +173,12 @@ function getRandomWords(KDBJSon, i_numResults) {
                 quests[++numQuests] = tmpWord;
     }
     while (numQuests < i_numResults);
-    /*
+    
         numQuests = 0;
         do {
             logger.info(quests[++numQuests].tlh);
         }
         while (numQuests < i_numResults);
-    */
+    
     return quests;
 }

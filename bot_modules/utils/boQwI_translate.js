@@ -12,7 +12,7 @@ module.exports.isDerived = function (wType)
 		return true;
 	else
 		return false;
-}
+};
 
 //Check if entry is hyptothetical
 module.exports.isHyp = function (wType)
@@ -21,7 +21,7 @@ module.exports.isHyp = function (wType)
 		return true;
 	else
 		return false;
-}
+};
 
 //Get (translate) word Type
 module.exports.getWType = function (wType, tranLang)
@@ -144,7 +144,7 @@ module.exports.getWType = function (wType, tranLang)
 	   wTypeL += ' (' + module.exports.getSType(wType, tranLang) + ')';
 	
 	return wTypeL;
-}
+};
 
 //Get SENTENCE type - needed for KWOTD
 module.exports.getSType = function (wType, tranLang)
@@ -247,4 +247,4 @@ module.exports.getSType = function (wType, tranLang)
 	}
 
 	return tmpRet;
-}
+};
