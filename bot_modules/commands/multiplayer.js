@@ -104,14 +104,17 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     var rawQuestion = getRandomWords(KDBJSon, i_numResults);
     var finText = "";
 
-    var ans1, ans2, ans3, ans4;
-    do {
-        ans1 = Math.floor(Math.random() * 3);
-        ans2 = Math.floor(Math.random() * 3);
-        ans3 = Math.floor(Math.random() * 3);
-        ans4 = Math.floor(Math.random() * 3);
+    var ans = [];
+    while (ans.length < 4)
+    {
+        var r = Math.floor(Math.random() * 3);
+        if (ans.indexOf(r) == -1)
+            ans.push(r);
     }
-    while (ans1 == ans2 == ans3 == ans4);
+    var ans1 = ans[0];
+    var ans2 = ans[1];
+    var ans3 = ans[2];
+    var ans4 = ans[3];
 
     var rawText = "";
     rawText += "Translate the following from klingon:\r\n";
@@ -122,9 +125,9 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     rawText += "\r\n";
     rawText += "Possible answers:\r\n";
     rawText += "a)" + ans1 + rawQuestion[ans1].en + rawQuestion[ans1].tlh + "\r\n";
-    rawText += "b)" + ans2 + rawQuestion[ans2].en + rawQuestion[ans1].tlh + "\r\n";
-    rawText += "c)" + ans3 + rawQuestion[ans3].en + rawQuestion[ans1].tlh + "\r\n";
-    rawText += "d)" + ans4 + rawQuestion[ans4].en + rawQuestion[ans1].tlh + "\r\n";
+    rawText += "b)" + ans2 + rawQuestion[ans2].en + rawQuestion[ans2].tlh + "\r\n";
+    rawText += "c)" + ans3 + rawQuestion[ans3].en + rawQuestion[ans3].tlh + "\r\n";
+    rawText += "d)" + ans4 + rawQuestion[ans4].en + rawQuestion[ans4].tlh + "\r\n";
 
     finText = rawText;
 
