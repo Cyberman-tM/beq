@@ -78,8 +78,7 @@ module.exports.givePoints = function (i_user, i_pointlist) {
 
     pointList.forEach(function (player) {
         var pointName = player.split(':');
-        if (intPlayers[pointName[0]] != null)
-        {
+        if (intPlayers[pointName[0]] != null) {
             intPlayers[pointName[0]].playerPoints += parseInt(pointName[1]);
             if (intPlayers[pointName[0]].playerPoints >= targetPoints)
                 winner = pointName[0];
@@ -89,7 +88,7 @@ module.exports.givePoints = function (i_user, i_pointlist) {
     if (winner == null)
         notifyPlayersPoints();
     else
-        notifyPlayers("Player" + winner + "has reached" + intPlayers[winner].playerPoints + "of" + targetPoints + "points! Congratulations!");
+        notifyPlayers("Player " + winner + " has reached " + intPlayers[winner].playerPoints + " of " + targetPoints + " points! Congratulations!");
 };
 
 module.exports.setTarget = function (i_user, i_maxPoints) {
@@ -98,6 +97,10 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
         targetPoints = i_maxPoints;
         notifyPlayers("GM set new target points: " + i_maxPoints);
     }
+};
+
+module.exports.getQuestion = function (KDBJSon, i_numResults) {
+    getRandomWords(KDBJSon, i_numResults);
 };
 
 //Utilities
@@ -115,4 +118,36 @@ function notifyPlayersPoints() {
     intPlayerNames.forEach(function (name) {
         intPlayers[name].playerObj.send("Current points: " + intPlayers[name].playerPoints);
     });
+}
+
+//Get a random word, then get additional results to offer multiple choice
+function getRandomWords(KDBJSon, i_numResults) {
+    var numQuests = 0;
+    var tmpWord = "";
+    var quests = {};
+
+    //Initial question
+    quests[++numQuests] = KDBJSon[Math.floor(Math.random() * (KDBJSon.length + 1))];
+    do {
+        //Get additional questions
+        tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length + 1))];
+
+        if (tmpWord.type == quests[0].type)
+            quests[++numQuests] = tmpWord;
+    }
+    while (numQuests < i_numResults);
+
+    numQuests = 0;
+    do {
+        logger.info(quests[++numQuests].tlh);
+    }
+    while (numQuests < i_numResults);
+
+
+    //Get additional i_numResults-1 words of the same type
+
+    //Prepare data for giving back - array?
+    //Return all + answers!
+
+
 }
