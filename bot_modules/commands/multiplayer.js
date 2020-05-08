@@ -107,7 +107,7 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     var ans = [];
     while (ans.length <= 4)
     {
-        var r = Math.floor(Math.random() * 3);
+        var r = Math.floor(Math.random() * 4);
         if (ans.indexOf(r) == -1)
             ans.push(r);
     }
