@@ -60,6 +60,7 @@ var beqPerson = require('./bot_modules/personality/beq_person.js');
 var fs = require('fs');
 var xmldoc = require('xmldoc');
 var readXML = require('./bot_modules/external/readkdb.js');
+var bT = require('./bot_modules/utils/boQwI_translate.js');
 
 module.exports.beqTalkDef = beqTalkDef;
 
@@ -145,7 +146,7 @@ module.exports.Engine = function (beqTalk) {
 				for (i = 0; i < useArray.length; i++) {
 					//We already preselected the array, so can we go wrong by taking any entry?
 					tmpWord = useArray[Math.floor(Math.random() * (useArray.length + 1))];
-					if (tmpWord != null && isHyp(tmpWord.type) == false && isAlt(tmpWord.type) == false)
+					if (tmpWord != null && bT.isHyp(tmpWord.type) == false && bT.isAlt(tmpWord.type) == false)
 						break;
 					tmpWord = null;
 				}
@@ -172,7 +173,7 @@ module.exports.Engine = function (beqTalk) {
 					isSlang = true;
 
 				//Derived entries are not 100% canon, but most likely
-				isDeriv = isDerived(tmpWord.type);
+				isDeriv = bT.isDerived(tmpWord.type);
 
 				beqTalk.result.push(
 					{
@@ -612,8 +613,10 @@ module.exports.createTranslation = function (beqTalk) {
 					infTips = '(slang)';
 				if (item.deriv == true)
 					infTips += '(deriv)';
-				if (isHyp(item.type))
+				if (bT.isHyp(item.type))
 					infTips += '(hyp)';
+				if (bT.isReg(item.type))
+					infTips += '(reg)';
 				if (beqTalk.showNotes != true &&
 					(item.notes != "" || item.notes_de != "" || item.hidden_notes != ""))
 					infTips += '(notes)';
@@ -666,7 +669,7 @@ module.exports.createTranslationList = function (beqTalk) {
 
 	return sndMessage;
 };
-
+/*
 //Check if the word is actually a derived definition
 function isDerived(wType) {
 	if (wType.indexOf("deriv") != -1)
@@ -699,6 +702,7 @@ function isReg(wType)
 	else
 		return false;
 }
+*/
 
 //get (translate) suffix number/type
 function getSuffNum(itemType, itemSuffixNum, tranLang) {

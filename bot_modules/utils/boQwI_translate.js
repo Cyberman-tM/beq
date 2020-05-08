@@ -23,6 +23,23 @@ module.exports.isHyp = function (wType)
 		return false;
 };
 
+//Check if entry is regional
+module.exports.isReg = function(wType)
+{
+	if (wType.indexOf("reg") != -1)
+		return true;
+	else
+		return false;
+};
+
+//Check if entry is alternate spelling
+module.exports.isAlt = function(wType) {
+	if (wType.indexOf("alt") != -1)
+		return true;
+	else
+		return false;
+};
+
 //Get (translate) word Type
 module.exports.getWType = function (wType, tranLang)
 {
