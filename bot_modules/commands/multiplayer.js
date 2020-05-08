@@ -118,16 +118,17 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
 
     var rawText = "";
     rawText += "Translate the following from klingon:\r\n";
-    rawText += "\r\n";
     rawText += "(Type: " + bT.getWType(rawQuestion[0].type, "en") + ")\r\n";
-    rawText += rawQuestion[0].tlh + "\r\n";
     rawText += "\r\n";
+    rawText += "==> " + rawQuestion[0].tlh + "\r\n";
     rawText += "\r\n";
     rawText += "Possible answers:\r\n";
-    rawText += "a)" + ans1 + rawQuestion[ans1].en + rawQuestion[ans1].tlh + "\r\n";
-    rawText += "b)" + ans2 + rawQuestion[ans2].en + rawQuestion[ans2].tlh + "\r\n";
-    rawText += "c)" + ans3 + rawQuestion[ans3].en + rawQuestion[ans3].tlh + "\r\n";
-    rawText += "d)" + ans4 + rawQuestion[ans4].en + rawQuestion[ans4].tlh + "\r\n";
+    rawText += "a)" + rawQuestion[ans1].en + "\r\n";
+    rawText += "b)" + rawQuestion[ans2].en + "\r\n";
+    rawText += "c)" + rawQuestion[ans3].en + "\r\n";
+    rawText += "d)" + rawQuestion[ans4].en + "\r\n";
+    rawText += "\r\n";
+    rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
 
     finText = rawText;
 
