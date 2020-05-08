@@ -46,6 +46,8 @@ module.exports.getWType = function (wType, tranLang)
 		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Satz';
+		else if (wTypeS == 'reg')
+			wTypeL = 'Regional';
 		else if (wTypeS == 'excl')
 			wTypeL = 'Ausruf';
 		else if (wTypeS == 'adv')
@@ -101,6 +103,8 @@ module.exports.getWType = function (wType, tranLang)
 		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Sentence';
+		else if (wTypeS == 'reg')
+			wTypeL = 'Regional';
 		else if (wTypeS == 'excl')
 			wTypeL = 'Exclamation';
 		else if (wTypeS == 'adv')

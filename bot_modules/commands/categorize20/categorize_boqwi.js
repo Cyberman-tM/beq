@@ -37,6 +37,8 @@ module.exports = function (beq_engine) {
             newCategory += ";being_boqwi";
         if (item.type.includes("archaic"))
             newCategory += ";Archaic_boqwi";
+        if (item.type.includes("body"))
+            newCategory += ";Bodypart_boqwi";
         if (item.type.includes("deriv"))
             newCategory += ";derived_boqwi";
         if (item.type.includes("reg"))
@@ -145,6 +147,7 @@ function reCreateBaseCats() {
     createCat("sentence", "en", "Whole sentences that are canon.");
     createCat("source", "en", "First instance of the word, origin.");
     createCat("animal", "en", "Animal names and everything related");
+    createCat("body", "en", "Bodyparts");
     createCat("being", "en", "Beings, as opposed to things.");
     createCat("archaic", "en", "Words rarely used, or outdated versions.");
     createCat("derived", "en", "These words are probably canon, but we don\'t really have confirmation.");
