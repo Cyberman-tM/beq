@@ -105,8 +105,7 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
     var finText = "";
 
     var ans = [];
-    while (ans.length < 4)
-    {
+    while (ans.length < 4) {
         var r = Math.floor(Math.random() * 4);
         if (ans.indexOf(r) == -1)
             ans.push(r);
@@ -157,28 +156,29 @@ function notifyPlayersPoints() {
 function getRandomWords(KDBJSon, i_numResults) {
     var numQuests = -1;
     var tmpWord = "";
-    var quests = {};
+    var quests = [];
 
-    //Initial question
-    //TODO: check for hyp/derived - integrate in loop?
-    quests[++numQuests] = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
     do {
         //Get additional questions
         tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
 
-        //Same type, but different word?
-        if (tmpWord.type == quests[0].type && tmpWord.tlh != quests[0].tlh && tmpWord.en != quests[0].en)
-            //Not hypothetical or derived? Or reginal?
-            if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type) ))
-                quests[++numQuests] = tmpWord;
+        //Not hypothetical or derived? Or reginal?
+        if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type)))
+            if (quests.length == 0)
+                quests.push(tmpWord);
+            else
+                quests.foreach(function (item) {
+                    if (item.type == tmpWord.type && item.tlh != tmpWord.tlh && item.en != tmpWord.en)
+                        quests.push(tmpWord);
+                });
+    }
+    while (quests.length < i_numResults);
+
+    numQuests = 0;
+    do {
+        logger.info(quests[++numQuests].tlh);
     }
     while (numQuests < i_numResults);
-    
-        numQuests = 0;
-        do {
-            logger.info(quests[++numQuests].tlh);
-        }
-        while (numQuests < i_numResults);
-    
+
     return quests;
 }
