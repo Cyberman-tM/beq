@@ -122,7 +122,7 @@ function notifyPlayersPoints() {
 
 //Get a random word, then get additional results to offer multiple choice
 function getRandomWords(KDBJSon, i_numResults) {
-    var numQuests = 0;
+    var numQuests = -1;
     var tmpWord = "";
     var quests = {};
 
