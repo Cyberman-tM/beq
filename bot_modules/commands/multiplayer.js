@@ -110,9 +110,8 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
         var r = Math.floor(Math.random() * 4);
         if (ans.indexOf(r) == -1)
             ans.push(r);
-            //
 
-        logger.info(r);
+        logger.info(ans.length);
     }
     var ans1 = ans[0];
     var ans2 = ans[1];
