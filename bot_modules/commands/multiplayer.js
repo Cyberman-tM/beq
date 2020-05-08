@@ -167,7 +167,7 @@ function getRandomWords(KDBJSon, i_numResults) {
         tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
 
         //Same type, but different word?
-        if (tmpWord.type == quests[0].type && tmpWord.tlh != quests[0].tlh)
+        if (tmpWord.type == quests[0].type && tmpWord.tlh != quests[0].tlh && tmpWord.en != quests[0].en)
             //Not hypothetical or derived?
             if (!(bT.isHyp(tmpWord.type) && bT.isDerived(tmpWord.type)))
                 quests[++numQuests] = tmpWord;
