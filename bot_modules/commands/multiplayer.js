@@ -110,6 +110,7 @@ module.exports.getQuestion = function (KDBJSon, i_numResults) {
         var r = Math.floor(Math.random() * 4);
         if (ans.indexOf(r) == -1)
             ans.push(r);
+            //
 
         logger.info(r);
     }
