@@ -691,6 +691,15 @@ function isAlt(wType) {
 		return false;
 }
 
+//Check if entry is regional
+function isReg(wType)
+{
+	if (wType.indexOf("reg") != -1)
+		return true;
+	else
+		return false;
+}
+
 //get (translate) suffix number/type
 function getSuffNum(itemType, itemSuffixNum, tranLang) {
 	var tmpRet = "";
