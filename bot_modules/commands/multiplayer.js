@@ -90,7 +90,7 @@ module.exports.listPlayers = function () {
 };
 
 module.exports.sendQuestion = function (i_user, i_question) {
-    if (i_user.userid == GM.userid) {
+    if (GM != null && i_user.userid == GM.userid) {
         notifyPlayers(i_question);
         playersAnswered = 0;
         sentQuest = false;
