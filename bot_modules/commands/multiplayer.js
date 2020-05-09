@@ -177,12 +177,12 @@ function getRandomWords(KDBJSon, i_numResults) {
                 });
     }
     while (quests.length < i_numResults);
-
+logger.info("----");
     numQuests = -1;
     do {
         logger.info(quests[++numQuests].tlh);
     }
-    while (numQuests < i_numResults);
+    while (numQuests <= i_numResults);
 
     return quests;
 }
