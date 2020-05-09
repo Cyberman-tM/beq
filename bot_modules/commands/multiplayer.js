@@ -90,7 +90,9 @@ module.exports.sendQuestion = function (i_user, i_quest, i_question) {
         notifyPlayers(i_question);
         playersAnswered = 0;
 
-        sentQuest = i_quest;
+        sentQuest = false;
+        if (i_quest == "true")
+            sentQuest = true;
     }
 };
 
@@ -103,9 +105,6 @@ module.exports.sendAnswer = function (i_user, i_answer) {
     if (GM != null)
         GM.send("New answer from" + i_user.username + ": " + i_answer);
 
-
-        logger.info(playersAnswered);
-        logger.info(intPlayerNames.length);
     //All players sent an answer, and we previously sent a vocabulary question
     if (playersAnswered == intPlayerNames.length && sentQuest == true) {
         tmpText = "Question was to translate: " + quests[0].tlh + "\r\n";
