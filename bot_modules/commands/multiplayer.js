@@ -150,7 +150,7 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
 };
 
 module.exports.getQuestion = function (i_numResults) {
-    var rawQuestion = getRandomWords(KDBJSon, i_numResults);
+    var rawQuestion = getRandomWords(i_numResults);
     var finText = "";
 
     //Randomize the order of answers, question is always entry 0
@@ -203,7 +203,7 @@ function notifyPlayersPoints() {
 }
 
 //Get a random word, then get additional results to offer multiple choice
-function getRandomWords(KDBJSon, i_numResults) {
+function getRandomWords(i_numResults) {
     var numQuests = -1;
     var tmpWord = "";
     var quests = [];
@@ -211,7 +211,7 @@ function getRandomWords(KDBJSon, i_numResults) {
 
     do {
         //Get additional questions
-        tmpWord = KDBJSon[Math.floor(Math.random() * (KDBJSon.length))];
+        tmpWord = myKDBJSon[Math.floor(Math.random() * (myKDBJSon.length))];
 
         //Not hypothetical or derived? Or reginal?
         if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type)))
