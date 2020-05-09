@@ -18,6 +18,7 @@ var targetPoints = 0;
 var playersAnswered = 0;
 var myKDBJSon = null;
 var sentQuest = false;
+var lastQuest = null;
 
 module.exports.players = intPlayers;
 
@@ -29,6 +30,7 @@ module.exports.restart = function () {
     playersAnswered = 0;
     myKDBJSon = null;
     sentQuest = false;
+    lastQuest = null;
 };
 
 module.exports.initGame = function (KDBJSon) {
@@ -151,7 +153,8 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
 };
 
 module.exports.getQuestion = function (i_numResults) {
-    var rawQuestion = getRandomWords(i_numResults);
+    var rawQuestion;
+    rawQuestion = lastQuest = getRandomWords(i_numResults);
     var finText = "";
 
     //Randomize the order of answers, question is always entry 0
