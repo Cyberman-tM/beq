@@ -187,7 +187,7 @@ function processMessage(bot, messageDJS) {
 				else if (args[1] == "getQuestion")
 					sndMessage = newGame.getQuestion(4);
 				else if (args[1] == "spectate")
-					sndMessage = newGame.addSpectator(messageDJS.channel);
+					newGame.addSpectator(messageDJS.channel);
 				else
 					sndMessage = "Command not found.";
 
