@@ -161,8 +161,13 @@ function processMessage(bot, messageDJS) {
 				sndMessage = "Done, I hope?";
 				if (args[1] == "add")
 					newGame.addPlayer(messageDJS.author);
-				else if (args[1] == "reset")
+				else if (args[1] == "remove")
+					newGame.removePlayer(messageDJS.author);
+				else if (args[1] == "newGame")
+				{
 					newGame.restart();
+					newGame.initGame(beq.KDBJSon);
+				}
 				else if (args[1] == "list")
 					sndMessage = newGame.listPlayers();
 				else if (args[1] == "myPoints")
@@ -170,15 +175,15 @@ function processMessage(bot, messageDJS) {
 				else if (args[1] == "addGM")
 					sndMessage = newGame.addGM(messageDJS.author);
 				else if (args[1] == "givePoints")
-					newGame.givePoints(messageDJS.author, args[2]);
+					newGame.givePoints(args[2]);
 				else if (args[1] == "setTarget")
 					newGame.setTarget(messageDJS.author, args[2]);
 				else if (args[1] == "sendQuestion")
-					newGame.sendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
+					newGame.sendQuestion(messageDJS.author, args[2], args.slice(3, 999).join(' '));
 				else if (args[1] == "sendAnswer")
 					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")
-					sndMessage = newGame.getQuestion(beq.KDBJSon, 4);
+					sndMessage = newGame.getQuestion(4);
 
 				break;
 			case 'reKDB':
