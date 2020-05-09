@@ -169,7 +169,11 @@ function getRandomWords(KDBJSon, i_numResults) {
             else
                 quests.forEach(function (item) {
                     if (item.type == tmpWord.type && item.tlh != tmpWord.tlh && item.en != tmpWord.en)
+                    {
+                        if ( item.tlh != tmpWord.tlh )
+                           logger.info(item.tlh + "NE" + tmpWord.tlh);
                         quests.push(tmpWord);
+                    }
                 });
     }
     while (quests.length < i_numResults);
