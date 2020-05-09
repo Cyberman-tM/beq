@@ -67,7 +67,7 @@ module.exports.addGM = function (i_user) {
     var tmpRet = "";
     if (GM == null) {
         GM = i_user;
-        tmpRet = "You are GM now.";
+        tmpRet = "You are GM now";
     }
     else
         tmpRet = "We already have a GM:" + GM.username;
