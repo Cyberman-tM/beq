@@ -118,7 +118,7 @@ module.exports.sendAnswer = function (i_user, i_answer) {
         tmpText += lastQuest[3].tlh + " => " + lastQuest[3].en + "\r\n";
 
         for (X = 0; X < intPlayerNames.length; X++)
-            tmpText += "\r\n Player " + intPlayerNames[X] + "answered " + intPlayers[intPlayerNames[X]].lastAnswer + "\r\n";
+            tmpText += "\r\n Player " + intPlayerNames[X] + " answered: " + intPlayers[intPlayerNames[X]].lastAnswer + "\r\n";
         notifyPlayers(tmpText);
     }
 };

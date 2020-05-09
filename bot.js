@@ -184,6 +184,8 @@ function processMessage(bot, messageDJS) {
 					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")
 					sndMessage = newGame.getQuestion(4);
+				else
+					sndMessage = "Command not found.";
 
 				break;
 			case 'reKDB':
