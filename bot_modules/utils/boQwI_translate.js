@@ -220,6 +220,8 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Lyrics";
 		else if (wTypeS == "archaic")
 			tmpRet = "Archaic";
+		else if (wTypeS == "bc")
+			tmpRet = "Beginner\'s conversation";
 		else
 			tmpRet = wTypeS;
 	}
@@ -263,6 +265,8 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Lyrics";
 		else if (wTypeS == "archaic")
 			tmpRet = "Archaic";
+		else if (wTypeS == "bc")
+			tmpRet = "Beginner\'s conversation";
 		else
 			tmpRet = wTypeS;
 	}

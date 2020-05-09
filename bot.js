@@ -179,11 +179,15 @@ function processMessage(bot, messageDJS) {
 				else if (args[1] == "setTarget")
 					newGame.setTarget(messageDJS.author, args[2]);
 				else if (args[1] == "sendQuestion")
-					newGame.sendQuestion(messageDJS.author, args[2], args.slice(3, 999).join(' '));
+					newGame.sendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
+				else if (args[1] == "sendVoc")
+					newGame.sendVocQuest(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "sendAnswer")
 					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")
 					sndMessage = newGame.getQuestion(4);
+				else if (args[1] == "spectate")
+					sndMessage = newGame.addSpectator(messageDJS.channel);
 				else
 					sndMessage = "Command not found.";
 

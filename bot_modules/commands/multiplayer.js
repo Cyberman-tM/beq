@@ -19,6 +19,7 @@ var playersAnswered = 0;
 var myKDBJSon = null;
 var sentQuest = false;
 var lastQuest = null;
+var specChannel = [];
 
 module.exports.players = intPlayers;
 
@@ -31,6 +32,7 @@ module.exports.restart = function () {
     myKDBJSon = null;
     sentQuest = false;
     lastQuest = null;
+    specChannel = [];
 };
 
 module.exports.initGame = function (KDBJSon) {
@@ -81,20 +83,34 @@ module.exports.listPlayers = function () {
     var tmpRet = "";
     intPlayerNames.forEach(function (name) {
         tmpRet += name;
-        tmpRet += "\n" + intPlayers[name].playerPoints + "-" + intPlayers[name].playerID;
+        tmpRet += "\n" + intPlayers[name].playerPoints;
     });
 
     return tmpRet;
 };
 
-module.exports.sendQuestion = function (i_user, i_quest, i_question) {
+module.exports.sendQuestion = function (i_user, i_question) {
     if (i_user.userid == GM.userid) {
         notifyPlayers(i_question);
         playersAnswered = 0;
-
         sentQuest = false;
-        if (i_quest == "true")
-            sentQuest = true;
+
+        notifySpectators("GM sent a new question: " + i_question + "\r\n");
+    }
+};
+
+//TODO: remove from GM utils, move to automatic
+module.exports.sendVocQuest = function (i_user, i_question) {
+    var l_question = i_question;
+    if (l_question == "")
+        l_question = this.getQuestion(4);
+
+    if (i_user.userid == GM.userid) {
+        notifyPlayers(l_question);
+        playersAnswered = 0;
+        sentQuest = true;
+
+        notifySpectators("GM sent a new question: " + i_question + "\r\n");
     }
 };
 
@@ -106,6 +122,8 @@ module.exports.sendAnswer = function (i_user, i_answer) {
 
     if (GM != null)
         GM.send("New answer from" + i_user.username + ": " + i_answer);
+
+    notifySpectators("New answer from" + i_user.username + ": " + i_answer);
 
     //All players sent an answer, and we previously sent a vocabulary question
     if (playersAnswered == intPlayerNames.length && sentQuest == true) {
@@ -120,6 +138,16 @@ module.exports.sendAnswer = function (i_user, i_answer) {
         for (X = 0; X < intPlayerNames.length; X++)
             tmpText += "\r\n Player " + intPlayerNames[X] + " answered: " + intPlayers[intPlayerNames[X]].lastAnswer + "\r\n";
         notifyPlayers(tmpText);
+        notifyGM(tmpText);
+        notifySpectators(tmpText);
+    }
+};
+
+module.exports.addSpectator = function (i_channel) {
+    if (specChannel.indexOf(i_channel) == -1)
+    {
+        specChannel.push(i_channel);
+        i_channel.send("This channel is now set to spectate the spectacle!");
     }
 };
 
@@ -140,8 +168,11 @@ module.exports.givePoints = function (i_pointlist) {
 
     if (winner == null)
         notifyPlayersPoints();
-    else
-        notifyPlayers("Player " + winner + " has reached " + intPlayers[winner].playerPoints + " of " + targetPoints + " points! Congratulations!");
+    else {
+        var winText = "Player " + winner + " has reached " + intPlayers[winner].playerPoints + " of " + targetPoints + " points! Congratulations!";
+        notifyPlayers(winText);
+        notifyGM(winText);
+    }
 };
 
 module.exports.setTarget = function (i_user, i_maxPoints) {
@@ -200,10 +231,21 @@ function notifyPlayers(i_text) {
     });
 }
 
+function notifySpectators(i_text) {
+    specChannel.forEach(function (channel) {
+        channel.send(i_text);
+    });
+}
+
 function notifyPlayersPoints() {
     intPlayerNames.forEach(function (name) {
         intPlayers[name].playerObj.send("Current points: " + intPlayers[name].playerPoints);
     });
+}
+
+function notifyGM(i_text) {
+    if (GM != null)
+        GM.send(i_text);
 }
 
 //Get a random word, then get additional results to offer multiple choice
@@ -237,7 +279,6 @@ function getRandomWords(i_numResults) {
             logger.info(item.tlh);
         });
     */
-
 
     return quests;
 }
