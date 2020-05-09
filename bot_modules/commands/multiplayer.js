@@ -169,20 +169,17 @@ function getRandomWords(KDBJSon, i_numResults) {
             else
                 quests.forEach(function (item) {
                     if (item.type == tmpWord.type && item.tlh != tmpWord.tlh && item.en != tmpWord.en)
-                    {
-                        logger.info(tmpWord.tlh);
-                        logger.info(item.tlh);
                         quests.push(tmpWord);
-                    }
                 });
     }
     while (quests.length < i_numResults);
-logger.info("----");
-    numQuests = -1;
-    do {
-        logger.info(quests[++numQuests].tlh);
-    }
-    while (numQuests <= i_numResults);
+
+    quests.forEach(function(item)
+    {
+      logger.info(item.tlh);
+    });
+
+
 
     return quests;
 }
