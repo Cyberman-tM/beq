@@ -167,7 +167,7 @@ function getRandomWords(KDBJSon, i_numResults) {
             if (quests.length == 0)
                 quests.push(tmpWord);
             else
-                quests.foreach(function (item) {
+                quests.forEach(function (item) {
                     if (item.type == tmpWord.type && item.tlh != tmpWord.tlh && item.en != tmpWord.en)
                         quests.push(tmpWord);
                 });
