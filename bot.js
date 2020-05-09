@@ -179,9 +179,9 @@ function processMessage(bot, messageDJS) {
 				else if (args[1] == "setTarget")
 					newGame.setTarget(messageDJS.author, args[2]);
 				else if (args[1] == "sendQuestion")
-					newGame.sendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
+					newGame.GMsendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "sendVoc")
-					newGame.sendVocQuest(messageDJS.author, args.slice(2, 999).join(' '));
+					newGame.GMsendVocQuest(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "sendAnswer")
 					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")

@@ -89,7 +89,7 @@ module.exports.listPlayers = function () {
     return tmpRet;
 };
 
-module.exports.sendQuestion = function (i_user, i_question) {
+module.exports.GMsendQuestion = function (i_user, i_question) {
     if (GM != null && i_user.userid == GM.userid) {
         notifyPlayers(i_question);
         playersAnswered = 0;
@@ -100,7 +100,7 @@ module.exports.sendQuestion = function (i_user, i_question) {
 };
 
 //TODO: remove from GM utils, move to automatic
-module.exports.sendVocQuest = function (i_user, i_question) {
+module.exports.GMsendVocQuest = function (i_user, i_question) {
     var l_question = i_question;
     if (l_question == "")
         l_question = this.getQuestion(4);
@@ -117,6 +117,9 @@ module.exports.sendVocQuest = function (i_user, i_question) {
 module.exports.sendAnswer = function (i_user, i_answer) {
     var tmpText = "";
 
+    if (intPlayers[i_user.username] == undefined)
+        return;
+        
     intPlayers[i_user.username].lastAnswer = i_answer;
     playersAnswered++;
 
