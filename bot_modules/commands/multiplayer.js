@@ -109,13 +109,13 @@ module.exports.sendAnswer = function (i_user, i_answer) {
 
     //All players sent an answer, and we previously sent a vocabulary question
     if (playersAnswered == intPlayerNames.length && sentQuest == true) {
-        tmpText = "Question was to translate: " + quests[0].tlh + "\r\n";
-        tmpText += "The correct answer was: " + quests[0].en + "\r\n";
+        tmpText = "Question was to translate: " + lastQuest[0].tlh + "\r\n";
+        tmpText += "The correct answer was: " + lastQuest[0].en + "\r\n";
         tmpText += "\r\n";
         tmpText += "The other possible answers have been:\r\n";
-        tmpText += quests[1].tlh + " => " + quests[1].en + "\r\n";
-        tmpText += quests[2].tlh + " => " + quests[2].en + "\r\n";
-        tmpText += quests[3].tlh + " => " + quests[3].en + "\r\n";
+        tmpText += lastQuest[1].tlh + " => " + lastQuest[1].en + "\r\n";
+        tmpText += lastQuest[2].tlh + " => " + lastQuest[2].en + "\r\n";
+        tmpText += lastQuest[3].tlh + " => " + lastQuest[3].en + "\r\n";
 
         for (X = 0; X < 4; X++)
             tmpText += "\r\n Player " + intPlayerNames[X] + "answered " + intPlayers[intPlayerNames[X]].lastAnswer + "\r\n";
