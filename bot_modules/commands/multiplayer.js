@@ -157,6 +157,7 @@ function getRandomWords(KDBJSon, i_numResults) {
     var numQuests = -1;
     var tmpWord = "";
     var quests = [];
+    var noGood = false;
 
     do {
         //Get additional questions
@@ -166,21 +167,20 @@ function getRandomWords(KDBJSon, i_numResults) {
         if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type)))
             if (quests.length == 0)
                 quests.push(tmpWord);
-            else
+            else {
+                noGood = false;
                 quests.forEach(function (item) {
-                    if (item.type == tmpWord.type && item.tlh != tmpWord.tlh && item.en != tmpWord.en)
-                    {
-                        if ( item.tlh != tmpWord.tlh )
-                           logger.info(item.tlh + "NE" + tmpWord.tlh);
-                        quests.push(tmpWord);
-                    }
+                    if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
+                        noGood = true;
                 });
+                if (noGood == false)
+                    quests.push(tmpWord);
+            }
     }
     while (quests.length < i_numResults);
 
-    quests.forEach(function(item)
-    {
-      logger.info(item.tlh);
+    quests.forEach(function (item) {
+        logger.info(item.tlh);
     });
 
 
