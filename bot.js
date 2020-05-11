@@ -569,6 +569,7 @@ function processMessage(bot, messageDJS) {
 		else if (args[0] == "create") {
 			logger.info("creating");
 			gameTalk = JSON.parse(questGame.gameTalkDef);
+			logger.info(gameTalk);
 			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
 		}
 
