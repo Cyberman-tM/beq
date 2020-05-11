@@ -33,7 +33,10 @@ module.exports.initGame = function (KDBJSon) {
 
 //Similar to the beqEngine, this is the GameEngine
 module.exports.Engine = function (gameTalk) {
-    if (gameTalk.command == "add")
+    if (gameTalk.command == "NOP") {
+        //Do nothing, this is something that needs to be done in the bot
+    }
+    else if (gameTalk.command == "add")
         gameTalk = addPlayer(gameTalk);
     else if (gameTalk.command == "sendanswer")
         gameTalk = sendAnswer(gameTalk);

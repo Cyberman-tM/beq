@@ -594,11 +594,16 @@ function processMessage(bot, messageDJS) {
 				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(1, 999).join(' ');
 			}
-			else if (args[0] = "++")
+			else if (args[0] == "++")
 			{
 				gameTalk.command = "getquestion";
 				gameTalk.args = 4;
 			}
+			else if (args[0] == "??")
+			{
+				gameTalk.command = "NOP";
+				gameTalk.retMes = "Game ID: " + userGameID;
+			}				
 			else if (args[0] == "spectate")
 			{
 				gameTalk.command = "spectate";
