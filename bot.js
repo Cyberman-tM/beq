@@ -73,7 +73,7 @@ bot.on('ready', function (evt) {
 	logger.info(beqTalk.message);
 
 	//Initialize question game
-	questGame.initGame();
+	questGame.initGame(beq.KDBJSon);
 
 	//Timer runs once a minute (KWOTD excepted)
 	evTimer.startEventTimer(beq, bot);
