@@ -49,7 +49,7 @@ var userGame = {};
 
 //Game <> Game ID tracking
 //gameData.gameID == gameObject (gameTalk)
-var gameData = {};
+var gameData = [];
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -585,7 +585,7 @@ function processMessage(bot, messageDJS) {
 			}
 			else if (args[0] == "answer") {
 				gameTalk.command = "sendanswer";
-				gameTalk.args = args.slice(2, 999).join(' ');
+				gameTalk.args = args.slice(1, 999).join(' ');
 			}
 
 			gameTalk = questGame.Engine(gameTalk);
