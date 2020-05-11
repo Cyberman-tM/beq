@@ -249,6 +249,7 @@ function getQuestion(gameTalk) {
     finText = rawText;
 
     gameTalk.retMessage = finText;
+    return gameTalk;
 }
 
 //Utilities
