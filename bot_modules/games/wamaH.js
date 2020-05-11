@@ -6,7 +6,7 @@
 */
 
 
-var userGames = new Array();
+var userGames = [];
 var aIdx = null;
 var gameTalkDef = "";
 

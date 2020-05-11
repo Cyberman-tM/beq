@@ -18,7 +18,7 @@ var searchCanon = require('./bot_modules/commands/search_canon.js');
 var searchMList = require('./bot_modules/commands/search_mlist.js');
 var searchWiki = require('./bot_modules/commands/search_wiki.js');
 var cat = require('./bot_modules/commands/categorize20/cat20.js');
-var newGame = require('./bot_modules/commands/multiplayer.js');
+var questGame = require('./bot_modules/commands/questGame.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
@@ -43,6 +43,14 @@ var beqTalkRaw = JSON.parse(beq.beqTalkDef);
 //Special variable to turn testing features on and off
 var devTest = false;
 
+//User <> Game tracking
+//userGame.userID == gameID
+var userGame = {};
+
+//Game <> Game ID tracking
+//gameData.gameID == gameObject (gameTalk)
+var gameData = {};
+
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.level = 'debug';
@@ -63,6 +71,9 @@ bot.on('ready', function (evt) {
 	beqTalk.command = "yIngu'";
 	beqTalk = beq.Engine(beqTalk);
 	logger.info(beqTalk.message);
+
+	//Initialize question game
+	questGame.initGame();
 
 	//Timer runs once a minute (KWOTD excepted)
 	evTimer.startEventTimer(beq, bot);
@@ -129,27 +140,27 @@ function processMessage(bot, messageDJS) {
 	// Expected format: COMMAND ARG1 ARG2 ARG3
 	// For example: mugh tlh Suv
 	// That is: command (translate) language (klingon) word (Suv)
-	if (cmdMagic == '!' || cmdMagic == '?') {
-		//Special processing, there are shortcut commands, we have to translate them to normal commands
-		if (cmdMagic == '?') {
-			//Ask beq or Stammtisch
-			if (channelID == DData.clipChan ||
-				channelID == DData.StammChan) {
-				//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
-				if (message.substring(0, 3) == 'tlh')
-					beqTalk.showNotes = true;
-			}
-			//A ? always means "mugh", translate. And must be followed by the language, without space.
-			//So we can simply replace the ? with "mugh " and the rest will work normally
-			message = "mugh " + message;
+	//Special processing, there are shortcut commands, we have to translate them to normal commands
+	if (cmdMagic == '?') {
+		//Ask beq or Stammtisch
+		if (channelID == DData.clipChan ||
+			channelID == DData.StammChan) {
+			//Inside the "ask beq" Channel, we always want to show notes when asking for a klingon word:
+			if (message.substring(0, 3) == 'tlh')
+				beqTalk.showNotes = true;
 		}
+		//A ? always means "mugh", translate. And must be followed by the language, without space.
+		//So we can simply replace the ? with "mugh " and the rest will work normally
+		message = "mugh " + message;
+		cmdMagic = '!';
+	}
 
-		var args = message.substring(0).split(' ');
-		var cmd = args[0];
+	var args = message.substring(0).split(' ');
+	var cmd = args[0];
+	if (DData.devBuild == "true")
+		logger.info(cmd);
 
-		if (DData.devBuild == "true")
-			logger.info(cmd);
-
+	if (cmdMagic == '!') {
 		//Some functions need the entire argument string, unprocessed
 		var firstBlank = message.indexOf(' ');
 		var onePar = message.substr(firstBlank, message.length - firstBlank);
@@ -157,41 +168,63 @@ function processMessage(bot, messageDJS) {
 
 		switch (cmd) {
 			//Experiment
-			case 'newGame':
+			/*
+			case 'newGame':				
+				var gameTalk = {};
+				//Check if user already has a game open
+				if (userGame[messageDJS.author.userID] != undefined && userGame[messageDJS.author.userID] != null)
+					gameTalk = userGame[messageDJS.author.userID];
+				else
+					userGame[messageDJS.author.userID] = JSON.parse(questGame.gameTalkDef);
+
 				sndMessage = "Done, I hope?";
 				if (args[1] == "add")
-					newGame.addPlayer(messageDJS.author);
-				else if (args[1] == "remove")
-					newGame.removePlayer(messageDJS.author);
-				else if (args[1] == "newGame")
 				{
-					newGame.restart();
-					newGame.initGame(beq.KDBJSon);
+					if (args[2] != undefined)
+					{
+						gameID = args[2];
+						questGame.loadGame(gameID);
+					}
+					else
+					{
+
+					}
+					questGame.addPlayer(messageDJS.author);
+				}
+				else if (args[1] == "remove")
+					questGame.removePlayer(messageDJS.author);
+				else if (args[1] == "newGame") {
+					questGame.restart();
+					questGame.initGame(beq.KDBJSon);
 				}
 				else if (args[1] == "list")
-					sndMessage = newGame.listPlayers();
+					sndMessage = questGame.listPlayers();
 				else if (args[1] == "myPoints")
-					newGame.myPoints(messageDJS.author);
+					questGame.myPoints(messageDJS.author);
 				else if (args[1] == "addGM")
-					sndMessage = newGame.addGM(messageDJS.author);
+					sndMessage = questGame.addGM(messageDJS.author);
 				else if (args[1] == "givePoints")
-					newGame.givePoints(args[2]);
+					questGame.givePoints(args[2]);
 				else if (args[1] == "setTarget")
-					newGame.setTarget(messageDJS.author, args[2]);
+					questGame.setTarget(messageDJS.author, args[2]);
 				else if (args[1] == "sendQuestion")
-					newGame.GMsendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
+					questGame.GMsendQuestion(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "sendVoc")
-					newGame.GMsendVocQuest(messageDJS.author, args.slice(2, 999).join(' '));
+					questGame.GMsendVocQuest(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "sendAnswer")
-					newGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
+					questGame.sendAnswer(messageDJS.author, args.slice(2, 999).join(' '));
 				else if (args[1] == "getQuestion")
-					sndMessage = newGame.getQuestion(4);
+					sndMessage = questGame.getQuestion(4);
 				else if (args[1] == "spectate")
-					newGame.addSpectator(messageDJS.channel);
+					questGame.addSpectator(messageDJS.channel);
 				else
 					sndMessage = "Command not found.";
 
+				if (gameID > 0)
+					questGame.saveGame(gameID);
+
 				break;
+				*/
 			case 'reKDB':
 				sndMessage = cat.reKDB(beq, args[1]);
 				break;
@@ -509,11 +542,64 @@ function processMessage(bot, messageDJS) {
 				break;
 		}
 	}
-	//GAme
+	//Game
 	else if (cmdMagic == '%') {
-		var gameTalk = gameTalkDef;
-		gameTalk = games.runGames(bot, userID, message);
-		sndMessage = gameTalk.message;
+		/*
+			Possible commands
+			JOIN - join an existing game
+			CREATE - create a new game
+		
+		*/
+		args[1] = args[1].toLowerCase();
+		var gameTalk = {};
+		var userGameID = userGame[messageDJS.author.userID];
+
+		//User does not have a game running?
+		if (userGameID == undefined)
+			userGameID = null;
+
+		//If we have an ID given, we might want to join a game?
+		if (args[1] == "join") {
+			userGameID = args[2];
+		}
+		//Or we actually don't have an ID, so we want to create a game?
+		else if (args[1] == "create") {
+			gameTalk = JSON.parse(questGame.gameTalkDef);
+			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
+		}
+
+		//By now we should have an existing game ID!
+		if (userGameID != null)
+		{
+			gameTalk = gameData[userGameID];
+
+			//Now to check the rest of the commands
+			if (args[1] == "join" || args[1] == "create")
+			{
+				gameTalk.command = "add";
+				gameTalk.args = messageDJS.author;
+			}
+			else if (args[1] == "answer")
+			{
+				gameTalk.command = "sendanswer";
+				gameTalk.args = args.slice(2, 999).join(' ');
+			}
+
+			gameTalk = questGame.Engine(gameTalk);
+		}
+		sndMessage = gameTalk.retMes;
+
+
+
+
+
+
+		//wa', cha', wa'maH is disabled for now
+		/*
+				var gameTalk = gameTalkDef;
+				gameTalk = games.runGames(bot, userID, message);
+				sndMessage = gameTalk.message;
+		*/
 	}
 	//Categorize
 	else if (cmdMagic == '$') {
