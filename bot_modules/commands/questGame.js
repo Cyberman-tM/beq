@@ -140,7 +140,7 @@ module.exports.GMsendVocQuest = function (i_user, i_question) {
 
 function sendAnswer(gameTalk) {
     var tmpText = "";
-    var uName = singleGame.curPlayer.username;
+    var uName = gameTalk.curPlayer.username;
 
     if (gameTalk.intPlayers[uName] == undefined)
         return;
