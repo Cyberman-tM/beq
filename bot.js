@@ -552,11 +552,14 @@ function processMessage(bot, messageDJS) {
 		*/
 		if (args[1] != undefined && args[1] != null)
 			args[1] = args[1].toLowerCase();
+
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
 		sndMessage = "Wrong command";
 
 		logger.info("UGI:" + userGameID);
+		logger.info(args[1]);
+		logger.info(args[0]);
 
 		//User does not have a game running?
 		if (userGameID == undefined)
