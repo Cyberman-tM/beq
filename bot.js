@@ -124,7 +124,7 @@ function processMessage(bot, messageDJS) {
 	}
 	else
 		//Maybe it's a command to devBeq, in which case we ignore it
-		if (cmdMagic == '$' && message.substring(0, 1) == '!')
+		if (cmdMagic == '$')
 			return;
 
 	if (DData.devBuild == "true")
@@ -575,12 +575,14 @@ logger.info(userGameID);
 		if (userGameID != null)
 		{
 			gameTalk = gameData[userGameID];
+			logger.info(gameTalk);
 
 			//Now to check the rest of the commands
 			if (args[1] == "join" || args[1] == "create")
 			{
 				gameTalk.command = "add";
 				gameTalk.args = messageDJS.author;
+				logger.info(gameTalk);
 			}
 			else if (args[1] == "answer")
 			{
