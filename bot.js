@@ -563,29 +563,25 @@ function processMessage(bot, messageDJS) {
 
 		//If we have an ID given, we might want to join a game?
 		if (args[0] == "join") {
+			logger.info(args[1]);
 			userGameID = args[1];
 		}
 		//Or we actually don't have an ID, so we want to create a game?
 		else if (args[0] == "create") {
-			logger.info("creating");
 			gameTalk = JSON.parse(questGame.gameTalkDef);
-			logger.info(gameTalk);
-			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
-			logger.info("UGI:" + userGameID);
-			logger.info("ug" + userGame[messageDJS.author.userID]);
-			logger.info(gameData);
+
+			//Return is length of array - first index is 0
+			userGameID = userGame[messageDJS.author.userID] = (gameData.push(gameTalk)) - 1;
 		}
 
 		//By now we should have an existing game ID!
 		if (userGameID != null) {
 			gameTalk = gameData[userGameID-1];
-			logger.info(gameTalk);
 
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {
 				gameTalk.command = "add";
 				gameTalk.args = messageDJS.author;
-				logger.info(gameTalk);
 			}
 			else if (args[0] == "answer") {
 				gameTalk.command = "sendanswer";
