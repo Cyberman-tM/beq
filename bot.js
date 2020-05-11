@@ -571,6 +571,9 @@ function processMessage(bot, messageDJS) {
 			gameTalk = JSON.parse(questGame.gameTalkDef);
 			logger.info(gameTalk);
 			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
+			logger.info("UGI:" + userGameID);
+			logger.info("ug" + userGame[messageDJS.author.userID])
+			logger.info(gameData);
 		}
 
 		//By now we should have an existing game ID!
