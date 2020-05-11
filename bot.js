@@ -568,6 +568,7 @@ function processMessage(bot, messageDJS) {
 		}
 		//Or we actually don't have an ID, so we want to create a game?
 		else if (args[1] == "create") {
+			logger.info("creating");
 			gameTalk = JSON.parse(questGame.gameTalkDef);
 			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
 		}
