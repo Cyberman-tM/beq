@@ -113,6 +113,7 @@ function processMessage(bot, messageDJS) {
 	cmdMagic = message.substring(0, 1);
 	message = message.substring(1, 99999);
 
+	logger.info(cmdMagic);
 	//Dev build only, first char is dev-marker($)
 	if (DData.devBuild == "true") {
 		if (cmdMagic == '$') {
@@ -125,7 +126,10 @@ function processMessage(bot, messageDJS) {
 	else
 		//Maybe it's a command to devBeq, in which case we ignore it
 		if (cmdMagic == '$')
-			return;
+		{
+			logger.info(cmdMagic);
+			return;			
+		}
 
 	if (DData.devBuild == "true")
 		logger.info(cmdMagic);
