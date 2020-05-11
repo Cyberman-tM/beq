@@ -114,7 +114,7 @@ function processMessage(bot, messageDJS)
 	}
 	else
 		//Maybe it's a command to devBeq, in which case we ignore it
-		if (cmdMagic == '$' && message.substring(0, 1) == '!')
+		if (cmdMagic == '$')
 			return;
 
 	if (DData.devBuild == "true")
