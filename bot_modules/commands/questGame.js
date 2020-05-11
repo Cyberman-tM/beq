@@ -23,7 +23,7 @@ singleGame.lastQuest = null;
 singleGame.specChannel = [];
 
 //Basic data structure - similar to beqTalk with the beq engine
-module.exports.gameTalkDef = '{"intPlayers":{},"intPlayerNames":[],"GM":null, "command": "", "args": {}, "retMes": "Empty message", "targetPoints":0,"playersAnswered":0,"sentQuest":false,"lastQuest":null,"specChannel":[]}';
+module.exports.gameTalkDef = '{"intPlayers":{},"intPlayerNames":[],"GM":null, "curPlayer":{}, "command": "", "args": {}, "retMes": "Empty message", "targetPoints":0,"playersAnswered":0,"sentQuest":false,"lastQuest":null,"specChannel":[]}';
 
 //Called when the bot starts up - prepare data for later
 module.exports.initGame = function (KDBJSon) {
@@ -32,12 +32,15 @@ module.exports.initGame = function (KDBJSon) {
 };
 
 //Similar to the beqEngine, this is the GameEngine
-module.exports.Engine = function(gameTalk)
-{
+module.exports.Engine = function (gameTalk) {
     if (gameTalk.command == "add")
-        gameTalk = addPlayer(gameTalk.args, gameTalk);
+        gameTalk = addPlayer(gameTalk);
+    else if (gameTalk.command == "sendanswer")
+        gameTalk = sendAnswer(gameTalk);
+    else if (gameTalk.command == "getquestion")
+        gameTalk = getQuestion(gameTalk);
 
-return gameTalk;
+    return gameTalk;
 };
 
 module.exports.restart = function () {
@@ -52,21 +55,22 @@ module.exports.restart = function () {
     singleGame.specChannel = [];
 };
 
-function addPlayer(i_user, singleGame) {
+function addPlayer(singleGame) {
+    var uName = singleGame.curPlayer.username;
 
     //Only new players should be added
-    if (singleGame.intPlayers[i_user.username] == undefined) {
+    if (singleGame.intPlayers[uName] == undefined) {
 
-        singleGame.intPlayers[i_user.username] = {};
-        singleGame.intPlayers[i_user.username].playerID = i_user.id;
-        singleGame.intPlayers[i_user.username].playerPoints = -1;
-        singleGame.intPlayers[i_user.username].playerObj = i_user;
-        singleGame.intPlayers[i_user.username].lastAnswer = "";
+        singleGame.intPlayers[uName] = {};
+        singleGame.intPlayers[uName].playerID = i_user.id;
+        singleGame.intPlayers[uName].playerPoints = -1;
+        singleGame.intPlayers[uName].playerObj = i_user;
+        singleGame.intPlayers[uName].lastAnswer = "";
 
         //Echtes Array mit Namen, um auf das falsche Array zugreifen zu können
-        singleGame.intPlayerNames.push(i_user.username);
+        singleGame.intPlayerNames.push(uName);
 
-        i_user.send("Ready to play?");
+        singleGame.curPlayer.send("Ready to play?");
 
         singleGame.retMes = "player added, I think?";
     }
@@ -131,38 +135,41 @@ module.exports.GMsendVocQuest = function (i_user, i_question) {
     }
 };
 
-module.exports.sendAnswer = function (i_user, i_answer) {
+function sendAnswer(gameTalk) {
     var tmpText = "";
+    var uName = singleGame.curPlayer.username;
 
-    if (singleGame.intPlayers[i_user.username] == undefined)
+    if (gameTalk.intPlayers[uName] == undefined)
         return;
 
-    singleGame.intPlayers[i_user.username].lastAnswer = i_answer;
-    singleGame.playersAnswered++;
+    gameTalk.intPlayers[uName].lastAnswer = i_answer;
+    gameTalk.playersAnswered++;
 
-    if (singleGame.GM != null)
-        singleGame.GM.send("New answer from " + i_user.username + ": " + i_answer);
+    if (gameTalk.GM != null)
+        gameTalk.GM.send("New answer from " + uName + ": " + i_answer);
 
-    notifySpectators("New answer from " + i_user.username + ": " + i_answer);
+    notifySpectators("New answer from " + uName + ": " + i_answer);
 
     //All players sent an answer, and we previously sent a vocabulary question
-    if (singleGame.playersAnswered == singleGame.intPlayerNames.length && singleGame.sentQuest == true) {
-        tmpText = "Question was to translate: " + singleGame.lastQuest[0].tlh + "\r\n";
-        tmpText += "The correct answer was: " + singleGame.lastQuest[0].en + "\r\n";
+    if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
+        tmpText = "Question was to translate: " + gameTalk.lastQuest[0].tlh + "\r\n";
+        tmpText += "The correct answer was: " + gameTalk.lastQuest[0].en + "\r\n";
         tmpText += "\r\n";
         tmpText += "The other possible answers have been:\r\n";
-        tmpText += singleGame.lastQuest[1].tlh + " => " + singleGame.lastQuest[1].en + "\r\n";
-        tmpText += singleGame.lastQuest[2].tlh + " => " + singleGame.lastQuest[2].en + "\r\n";
-        tmpText += singleGame.lastQuest[3].tlh + " => " + singleGame.lastQuest[3].en + "\r\n";
+        tmpText += gameTalk.lastQuest[1].tlh + " => " + gameTalk.lastQuest[1].en + "\r\n";
+        tmpText += gameTalk.lastQuest[2].tlh + " => " + gameTalk.lastQuest[2].en + "\r\n";
+        tmpText += gameTalk.lastQuest[3].tlh + " => " + gameTalk.lastQuest[3].en + "\r\n";
 
-        for (X = 0; X < singleGame.intPlayerNames.length; X++)
-            tmpText += "\r\n Player " + singleGame.intPlayerNames[X] + " answered: " + singleGame.intPlayers[singleGame.intPlayerNames[X]].lastAnswer + "\r\n";
+        for (X = 0; X < gameTalk.intPlayerNames.length; X++)
+            tmpText += "\r\n Player " + gameTalk.intPlayerNames[X] + " answered: " + gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer + "\r\n";
 
         notifyPlayers(tmpText);
         notifyGM(tmpText);
         notifySpectators(tmpText);
     }
-};
+
+    return gameTalk;
+}
 
 module.exports.addSpectator = function (i_channel) {
     if (singleGame.specChannel.indexOf(i_channel) == -1) {
@@ -204,9 +211,9 @@ module.exports.setTarget = function (i_user, i_maxPoints) {
     }
 };
 
-module.exports.getQuestion = function (i_numResults) {
+function getQuestion(gameTalk) {
     var rawQuestion;
-    rawQuestion = singleGame.lastQuest = getRandomWords(i_numResults);
+    rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
     var finText = "";
 
     //Randomize the order of answers, question is always entry 0
@@ -238,8 +245,8 @@ module.exports.getQuestion = function (i_numResults) {
 
     finText = rawText;
 
-    return finText;
-};
+    gameTalk.retMessage = finText;
+}
 
 //Utilities
 module.exports.myPoints = function (i_user) {

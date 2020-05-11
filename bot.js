@@ -546,8 +546,9 @@ function processMessage(bot, messageDJS) {
 	else if (cmdMagic == '%') {
 		/*
 			Possible commands
-			JOIN - join an existing game
+			JOIN - join an existing game, parameter is game number
 			CREATE - create a new game
+			SPECTATE - send game messages to current channel, optional parameter is game number, otherwise players number
 		
 		*/
 		if (args[1] != undefined && args[1] != null)
@@ -561,34 +562,51 @@ function processMessage(bot, messageDJS) {
 		if (userGameID == undefined)
 			userGameID = null;
 
-		//If we have an ID given, we might want to join a game?
-		if (args[0] == "join") {
-			logger.info(args[1]);
-			userGameID = args[1];
-		}
-		//Or we actually don't have an ID, so we want to create a game?
-		else if (args[0] == "create") {
-			gameTalk = JSON.parse(questGame.gameTalkDef);
+		//Special case: spectate
+		if (args[0] == "spectate")
+			if (args[1] != undefined)
+				userGameID = args[1];
 
-			//Return is length of array - first index is 0
-			userGameID = userGame[messageDJS.author.userID] = (gameData.push(gameTalk)) - 1;
+		//No user game ID yet - join or create?
+		if (userGameID == null) {
+			//If we have an ID given, we might want to join a game?
+			if (args[0] == "join")
+				userGameID = args[1];
+			//Or we actually don't have an ID, so we want to create a game?
+			else if (args[0] == "create") {
+				gameTalk = JSON.parse(questGame.gameTalkDef);
+
+				//Return is length of array - first index is 0
+				userGameID = userGame[messageDJS.author.userID] = (gameData.push(gameTalk)) - 1;
+			}
 		}
 
 		//By now we should have an existing game ID!
 		if (userGameID != null) {
 			gameTalk = gameData[userGameID];
+			gameTalk.curPlayer = messageDJS.author;
 
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {
-				gameTalk.command = "add";
-				gameTalk.args = messageDJS.author;
+				gameTalk.command = "add";				
 			}
-			else if (args[0] == "answer") {
+			else if (args[0] == "::") {
 				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(1, 999).join(' ');
 			}
+			else if (args[0] = "++")
+			{
+				gameTalk.command = "getquestion";
+				gameTalk.args = 4;
+			}
+			else if (args[0] == "spectate")
+			{
+				gameTalk.command = "spectate";
+				gameTalk.args = messageDJS.channel;
+			}
 
 			gameTalk = questGame.Engine(gameTalk);
+			gameData[userGameID] = gameTalk;
 			sndMessage = gameTalk.retMes;
 		}
 
