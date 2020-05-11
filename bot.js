@@ -113,8 +113,6 @@ function processMessage(bot, messageDJS) {
 	cmdMagic = message.substring(0, 1);
 	message = message.substring(1, 99999);
 
-
-	logger.info("devBuild:" + DData.devBuild);
 	//Dev build only, first char is dev-marker($)
 	if (DData.devBuild == "true") {
 		if (cmdMagic == '$') {
@@ -125,15 +123,10 @@ function processMessage(bot, messageDJS) {
 			return;
 	}
 	else
-	{
-		logger.info("not devbeq " + cmdMagic);
 		//Maybe it's a command to devBeq, in which case we ignore it
 		if (cmdMagic == '$')
-		{
-			logger.info("devbeq");
-			return;			
-		}
-	}
+			return;
+
 	if (DData.devBuild == "true")
 		logger.info(cmdMagic);
 
@@ -561,8 +554,9 @@ function processMessage(bot, messageDJS) {
 			args[1] = args[1].toLowerCase();
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
+		sndMessage = "Wrong command";
 
-logger.info(userGameID);
+		logger.info("UGI:" + userGameID);
 
 		//User does not have a game running?
 		if (userGameID == undefined)
@@ -579,20 +573,17 @@ logger.info(userGameID);
 		}
 
 		//By now we should have an existing game ID!
-		if (userGameID != null)
-		{
+		if (userGameID != null) {
 			gameTalk = gameData[userGameID];
 			logger.info(gameTalk);
 
 			//Now to check the rest of the commands
-			if (args[1] == "join" || args[1] == "create")
-			{
+			if (args[1] == "join" || args[1] == "create") {
 				gameTalk.command = "add";
 				gameTalk.args = messageDJS.author;
 				logger.info(gameTalk);
 			}
-			else if (args[1] == "answer")
-			{
+			else if (args[1] == "answer") {
 				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(2, 999).join(' ');
 			}
