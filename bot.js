@@ -123,13 +123,15 @@ function processMessage(bot, messageDJS) {
 			return;
 	}
 	else
+	{
+		logger.info("not devbeq " + cmdMagic);
 		//Maybe it's a command to devBeq, in which case we ignore it
 		if (cmdMagic == '$')
 		{
 			logger.info("devbeq");
 			return;			
 		}
-
+	}
 	if (DData.devBuild == "true")
 		logger.info(cmdMagic);
 
