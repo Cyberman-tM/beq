@@ -62,9 +62,9 @@ function addPlayer(singleGame) {
     if (singleGame.intPlayers[uName] == undefined) {
 
         singleGame.intPlayers[uName] = {};
-        singleGame.intPlayers[uName].playerID = i_user.id;
+        singleGame.intPlayers[uName].playerID = singleGame.curPlayer.id;
         singleGame.intPlayers[uName].playerPoints = -1;
-        singleGame.intPlayers[uName].playerObj = i_user;
+        singleGame.intPlayers[uName].playerObj = singleGame.curPlayer;
         singleGame.intPlayers[uName].lastAnswer = "";
 
         //Echtes Array mit Namen, um auf das falsche Array zugreifen zu können
@@ -142,13 +142,13 @@ function sendAnswer(gameTalk) {
     if (gameTalk.intPlayers[uName] == undefined)
         return;
 
-    gameTalk.intPlayers[uName].lastAnswer = i_answer;
+    gameTalk.intPlayers[uName].lastAnswer = gameTalk.args;
     gameTalk.playersAnswered++;
 
     if (gameTalk.GM != null)
-        gameTalk.GM.send("New answer from " + uName + ": " + i_answer);
+        gameTalk.GM.send("New answer from " + uName + ": " + gameTalk.args);
 
-    notifySpectators("New answer from " + uName + ": " + i_answer);
+    notifySpectators("New answer from " + uName + ": " + gameTalk.args);
 
     //All players sent an answer, and we previously sent a vocabulary question
     if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
