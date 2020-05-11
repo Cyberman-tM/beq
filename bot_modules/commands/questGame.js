@@ -23,7 +23,7 @@ singleGame.lastQuest = null;
 singleGame.specChannel = [];
 
 //Basic data structure - similar to beqTalk with the beq engine
-module.exports.gameTalkDef = '{"intPlayers":{},"intPlayerNames":[],"GM":null, "command": "", "args": {}, "retMes": "", "targetPoints":0,"playersAnswered":0,"sentQuest":false,"lastQuest":null,"specChannel":[]}';
+module.exports.gameTalkDef = '{"intPlayers":{},"intPlayerNames":[],"GM":null, "command": "", "args": {}, "retMes": "Empty message", "targetPoints":0,"playersAnswered":0,"sentQuest":false,"lastQuest":null,"specChannel":[]}';
 
 //Called when the bot starts up - prepare data for later
 module.exports.initGame = function (KDBJSon) {

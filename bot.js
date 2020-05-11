@@ -550,7 +550,8 @@ function processMessage(bot, messageDJS) {
 			CREATE - create a new game
 		
 		*/
-		args[1] = args[1].toLowerCase();
+		if (args[1] != undefined && args[1] != null)
+			args[1] = args[1].toLowerCase();
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
 
