@@ -555,6 +555,8 @@ function processMessage(bot, messageDJS) {
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
 
+logger.info(userGameID);
+
 		//User does not have a game running?
 		if (userGameID == undefined)
 			userGameID = null;
@@ -587,9 +589,8 @@ function processMessage(bot, messageDJS) {
 			}
 
 			gameTalk = questGame.Engine(gameTalk);
+			sndMessage = gameTalk.retMes;
 		}
-		sndMessage = gameTalk.retMes;
-
 
 
 
