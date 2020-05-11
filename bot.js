@@ -572,13 +572,13 @@ function processMessage(bot, messageDJS) {
 			logger.info(gameTalk);
 			userGameID = userGame[messageDJS.author.userID] = gameData.push(gameTalk);
 			logger.info("UGI:" + userGameID);
-			logger.info("ug" + userGame[messageDJS.author.userID])
+			logger.info("ug" + userGame[messageDJS.author.userID]);
 			logger.info(gameData);
 		}
 
 		//By now we should have an existing game ID!
 		if (userGameID != null) {
-			gameTalk = gameData[userGameID];
+			gameTalk = gameData[userGameID-1];
 			logger.info(gameTalk);
 
 			//Now to check the rest of the commands
