@@ -576,7 +576,7 @@ function processMessage(bot, messageDJS) {
 
 		//By now we should have an existing game ID!
 		if (userGameID != null) {
-			gameTalk = gameData[userGameID-1];
+			gameTalk = gameData[userGameID];
 
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {
