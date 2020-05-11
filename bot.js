@@ -557,17 +557,13 @@ function processMessage(bot, messageDJS) {
 		var userGameID = userGame[messageDJS.author.userID];
 		sndMessage = "Wrong command";
 
-		logger.info("UGI:" + userGameID);
-		logger.info(args[1]);
-		logger.info(args[0]);
-
 		//User does not have a game running?
 		if (userGameID == undefined)
 			userGameID = null;
 
 		//If we have an ID given, we might want to join a game?
-		if (args[1] == "join") {
-			userGameID = args[2];
+		if (args[0] == "join") {
+			userGameID = args[1];
 		}
 		//Or we actually don't have an ID, so we want to create a game?
 		else if (args[1] == "create") {
@@ -582,12 +578,12 @@ function processMessage(bot, messageDJS) {
 			logger.info(gameTalk);
 
 			//Now to check the rest of the commands
-			if (args[1] == "join" || args[1] == "create") {
+			if (args[0] == "join" || args[0] == "create") {
 				gameTalk.command = "add";
 				gameTalk.args = messageDJS.author;
 				logger.info(gameTalk);
 			}
-			else if (args[1] == "answer") {
+			else if (args[0] == "answer") {
 				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(2, 999).join(' ');
 			}
