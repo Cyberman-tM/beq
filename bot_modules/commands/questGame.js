@@ -77,7 +77,10 @@ function getCurPlayer(gameTalk) {
     var tmpRet = null;
     gameTalk.intPlayers.forEach(function (player) {
         if (player.playerObj.playerID == gameTalk.curPlayer.playerID)
+        {
+            logger.info(player);
             tmpRet = player;
+        }
     });
 
     return tmpRet;
@@ -162,8 +165,6 @@ function sendAnswer(gameTalk) {
     var tmpText = "";
     var playerData = getCurPlayer(gameTalk);
     var uName = playerData.playerObj.username;
-
-logger.info(playerData.playerObj.username);
 
     if (playerData.playerObj.username == undefined)
         return;
