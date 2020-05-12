@@ -585,6 +585,8 @@ function processMessage(bot, messageDJS) {
 		if (userGameID != null) {
 			gameTalk = gameData[userGameID];
 			gameTalk.curPlayer = messageDJS.author;
+			gameTalk.retMes = "";
+			gameTalk.command = "";
 
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {

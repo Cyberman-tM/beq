@@ -53,7 +53,6 @@ module.exports.initGame = function (KDBJSon) {
 module.exports.Engine = function (gameTalk) {
     if (gameTalk.command == "NOP") {
         //Do nothing, this is something that needs to be done in the bot
-        notifyPlayersPoints(gameTalk);
     }
     else if (gameTalk.command == "add")
         gameTalk = addPlayer(gameTalk);
@@ -88,7 +87,7 @@ function addPlayer(gameTalk) {
     var newPlayer = getCurPlayer(gameTalk);
     if (newPlayer.playerObj.username == undefined) {
         newPlayer.playerObj = gameTalk.curPlayer;
-        newPlayer.playerPoints = 10;
+        newPlayer.playerPoints = 0;
         newPlayer.GM = false;
         newPlayer.lastAnswer = "";
 
@@ -161,22 +160,27 @@ module.exports.GMsendVocQuest = function (i_user, i_question) {
 
 function sendAnswer(gameTalk) {
     var tmpText = "";
-    var uName = gameTalk.curPlayer.username;
+    var playerData = getCurPlayer(gameTalk);
+    var uName = playerData.playerObj.username;
 
-    if (gameTalk.intPlayers[uName] == undefined)
+    if (playerData.playerObj.username == undefined)
         return;
 
-    gameTalk.intPlayers[uName].lastAnswer = gameTalk.args;
+    //TODO: check if player has answered already
+    playerData.lastAnswer = gameTalk.args;
     gameTalk.playersAnswered++;
 
-    if (gameTalk.GM != null)
+    if (playerData.GM == true)
         gameTalk.GM.send("New answer from " + uName + ": " + gameTalk.args);
 
     notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
+logger.info(gameTalk.playersAnswered);
+logger.info(gameTalk.intPlayers.length);
+
     //TODO: change from intPlayerNames.length to count variable?
     //All players sent an answer, and we previously sent a vocabulary question
-    if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
+    if (gameTalk.playersAnswered == gameTalk.intPlayers.length && gameTalk.sentQuest == true) {
         tmpText = "Question was to translate: " + gameTalk.lastQuest[0].tlh + "\r\n";
         tmpText += "The correct answer was: " + gameTalk.lastQuest[0].en + "\r\n";
         tmpText += "\r\n";
@@ -185,11 +189,11 @@ function sendAnswer(gameTalk) {
         tmpText += gameTalk.lastQuest[2].tlh + " => " + gameTalk.lastQuest[2].en + "\r\n";
         tmpText += gameTalk.lastQuest[3].tlh + " => " + gameTalk.lastQuest[3].en + "\r\n";
 
-        for (X = 0; X < gameTalk.intPlayerNames.length; X++) {
-            tmpText += "\r\n Player " + gameTalk.intPlayerNames[X] + " answered: " + gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer + "\r\n";
-            if (gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer == gameTalk.corAnswer)
-                intGivePoints(gameTalk, 5);
-        }
+        gameTalk.intPlayers.forEach(function (player){
+            tmpText += "\r\n Player " + player.playerObj.username +  " answered: " + player.lastAnswer + "\r\n";
+            if (player.lastAnswer == gameTalk.corAnswer)
+                intGivePoints2CurPlayer(gameTalk, 5);
+        });
 
         notifyPlayers(gameTalk, tmpText);
         notifyGM(gameTalk, tmpText);
@@ -207,8 +211,9 @@ function addSpectator(gameTalk) {
     }
 }
 
-function intGivePoints(gameTalk, i_points) {
-    //TODO: give points
+function intGivePoints2CurPlayer(gameTalk, i_points) {
+    var playerData = getCurPlayer(gameTalk);
+    playerData.playerPoints += i_points;
 }
 
 //Manual scoring
@@ -246,6 +251,8 @@ function setTarget(gameTalk) {
 
 function getQuestion(gameTalk) {
     var rawQuestion;
+    var curPlayer = getCurPlayer(gameTalk);
+
     rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
     var finText = "";
 
@@ -273,7 +280,7 @@ function getQuestion(gameTalk) {
     rawText += "c) " + rawQuestion[ans3].en + "\r\n";
     rawText += "d) " + rawQuestion[ans4].en + "\r\n";
     rawText += "\r\n";
-    if (gameTalk.curPlayer == gameTalk.GM) {
+    if (curPlayer.GM == true) {
         rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
         rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
     }
