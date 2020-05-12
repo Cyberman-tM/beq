@@ -43,6 +43,10 @@ module.exports.Engine = function (gameTalk) {
     else if (gameTalk.command == "getquestion")
         gameTalk = getQuestion(gameTalk);
 
+    //We just processed a command - make sure it doesn't get processed again
+    //if the main program doesn't clean up
+    gameTalk.command = "NOP";
+
     return gameTalk;
 };
 
