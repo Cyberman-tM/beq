@@ -76,10 +76,17 @@ module.exports.Engine = function (gameTalk) {
 //Get current player's data
 function getCurPlayer(gameTalk) {
     var tmpRet = null;
+    try
+    {
     gameTalk.intPlayers.forEach(function (player) {
         if (player.playerObj.playerID == gameTalk.curPlayer.playerID)
             tmpRet = player;
     });
+}
+catch(fehler)
+{
+    logger.error(fehler);
+}
 
     return tmpRet;
 }
