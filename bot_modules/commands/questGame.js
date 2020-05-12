@@ -23,7 +23,25 @@ singleGame.lastQuest = null;
 singleGame.specChannel = [];
 
 //Basic data structure - similar to beqTalk with the beq engine
-module.exports.gameTalkDef = '{"intPlayers":{},"intPlayerNames":[],"GM":null, "curPlayer":{}, "command": "", "args": {}, "retMes": "Empty message", "targetPoints":0,"playersAnswered":0,"sentQuest":false,"lastQuest":null,"specChannel":[]}';
+var gameTalk = {
+    intPlayers: [{
+        playerObj: {},
+        playerPoints: 0,
+        GM: false,
+        lastAnswer: ""
+    }],
+    curPlayer: {},
+    numPlayers: 0,
+    playersAnswered: 0,
+    command: "",
+    args: {},
+    retMes: "empty message",
+    sentQuest: false,
+    lastQuest: {},
+    corAnswer: 0,
+    specChannel: []
+};
+module.exports.gameTalkDef = JSON.stringify(gameTalk);
 
 //Called when the bot starts up - prepare data for later
 module.exports.initGame = function (KDBJSon) {
@@ -35,6 +53,7 @@ module.exports.initGame = function (KDBJSon) {
 module.exports.Engine = function (gameTalk) {
     if (gameTalk.command == "NOP") {
         //Do nothing, this is something that needs to be done in the bot
+        notifyPlayersPoints(gameTalk);
     }
     else if (gameTalk.command == "add")
         gameTalk = addPlayer(gameTalk);
@@ -42,6 +61,10 @@ module.exports.Engine = function (gameTalk) {
         gameTalk = sendAnswer(gameTalk);
     else if (gameTalk.command == "getquestion")
         gameTalk = getQuestion(gameTalk);
+    else if (gameTalk.command == "spectate")
+        gameTalk = addSpectator(gameTalk);
+    else if (gameTalk.command == "newtarget")
+        gameTalk = setTarget(gameTalk);
 
     //We just processed a command - make sure it doesn't get processed again
     //if the main program doesn't clean up
@@ -50,36 +73,31 @@ module.exports.Engine = function (gameTalk) {
     return gameTalk;
 };
 
-module.exports.restart = function () {
-    singleGame = {};
-    singleGame.intPlayers = {};
-    singleGame.GM = null;
-    singleGame.intPlayerNames = [];
-    singleGame.targetPoints = 0;
-    singleGame.playersAnswered = 0;
-    singleGame.sentQuest = false;
-    singleGame.lastQuest = null;
-    singleGame.specChannel = [];
-};
+//Get current player's data
+function getCurPlayer(gameTalk) {
+    var tmpRet = null;
+    gameTalk.intPlayers.forEach(function (player) {
+        if (player.playerObj.playerID == gameTalk.curPlayer.playerID)
+            tmpRet = player;
+    });
+
+    return tmpRet;
+}
 
 function addPlayer(gameTalk) {
-    var uName = gameTalk.curPlayer.username;
+    var newPlayer = getCurPlayer(gameTalk);
 
-    //Only new players should be added
-    if (gameTalk.intPlayers[uName] == undefined) {
+    if (newPlayer == null) {
+        newPlayer = {};
+        newPlayer.playerObj = gameTalk.curPlayer;
+        newPlayer.playerPoints = 10;
+        newPlayer.GM = false;
+        newPlayer.lastAnswer = "";
 
-        gameTalk.intPlayers[uName] = {};
-        gameTalk.intPlayers[uName].playerID = gameTalk.curPlayer.id;
-        gameTalk.intPlayers[uName].playerPoints = -1;
-        gameTalk.intPlayers[uName].playerObj = gameTalk.curPlayer;
-        gameTalk.intPlayers[uName].lastAnswer = "";
-
-        //Echtes Array mit Namen, um auf das falsche Array zugreifen zu können
-        gameTalk.intPlayerNames.push(uName);
-
-        gameTalk.curPlayer.send("Ready to play?");
-
-        gameTalk.retMes = "player added, I think?";
+        gameTalk.intPlayers.push(newPlayer);
+        gameTalk.numPlayers++;
+        gameTalk.curPlayer.send("Get ready to play!");
+        gameTalk.retMes = "Player " + newPlayer.playerObj.playerName + " added to game.";
     }
 
     return gameTalk;
@@ -95,6 +113,7 @@ module.exports.removePlayer = function (i_user) {
     }
 };
 
+//TODO: rework, simplify - do we need GM as a user object? why not flag?
 module.exports.addGM = function (i_user) {
     var tmpRet = "";
     if (singleGame.GM == null) {
@@ -157,6 +176,7 @@ function sendAnswer(gameTalk) {
 
     notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
+    //TODO: change from intPlayerNames.length to count variable?
     //All players sent an answer, and we previously sent a vocabulary question
     if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
         tmpText = "Question was to translate: " + gameTalk.lastQuest[0].tlh + "\r\n";
@@ -167,8 +187,11 @@ function sendAnswer(gameTalk) {
         tmpText += gameTalk.lastQuest[2].tlh + " => " + gameTalk.lastQuest[2].en + "\r\n";
         tmpText += gameTalk.lastQuest[3].tlh + " => " + gameTalk.lastQuest[3].en + "\r\n";
 
-        for (X = 0; X < gameTalk.intPlayerNames.length; X++)
+        for (X = 0; X < gameTalk.intPlayerNames.length; X++) {
             tmpText += "\r\n Player " + gameTalk.intPlayerNames[X] + " answered: " + gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer + "\r\n";
+            if (gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer == gameTalk.corAnswer)
+                intGivePoints(gameTalk, 5);
+        }
 
         notifyPlayers(gameTalk, tmpText);
         notifyGM(gameTalk, tmpText);
@@ -179,12 +202,16 @@ function sendAnswer(gameTalk) {
     return gameTalk;
 }
 
-module.exports.addSpectator = function (i_channel) {
-    if (singleGame.specChannel.indexOf(i_channel) == -1) {
-        singleGame.specChannel.push(i_channel);
-        i_channel.send("This channel is now set to spectate the spectacle!");
+function addSpectator(gameTalk) {
+    if (gameTalk.specChannel.indexOf(gameTalk.args) == -1) {
+        gameTalk.specChannel.push(gameTalk.args);
+        gameTalk.args.send("This channel is now set to spectate the spectacle!");
     }
-};
+}
+
+function intGivePoints(gameTalk, i_points) {
+    //TODO: give points
+}
 
 //Manual scoring
 module.exports.givePoints = function (i_pointlist) {
@@ -210,14 +237,14 @@ module.exports.givePoints = function (i_pointlist) {
     }
 };
 
-module.exports.setTarget = function (i_user, i_maxPoints) {
+function setTarget(gameTalk) {
     //Nur GM
-    if (i_user.userid == singleGame.GM.userid) {
-        singleGame.targetPoints = i_maxPoints;
-        notifyPlayers("GM set new target points: " + i_maxPoints);
-        notifySpectators("GM set new target points: " + i_maxPoints);
+    if (gameTalk.curPlayer.userid == gameTalk.GM.userid) {
+        gameTalk.targetPoints = gameTalk.args;
+        notifyPlayers(gameTalk, "GM set new target points: " + gameTalk.args);
+        notifySpectators(gameTalk, "GM set new target points: " + gameTalk.args);
     }
-};
+}
 
 function getQuestion(gameTalk) {
     var rawQuestion;
@@ -255,6 +282,15 @@ function getQuestion(gameTalk) {
     finText = rawText;
 
     gameTalk.sentQuest = true;
+    //Store correct answer as abcd to check later
+    if (ans1 == 0)
+        gameTalk.corAnswer = "a";
+    else if (ans2 == 0)
+        gameTalk.corAnswer = "b";
+    else if (ans3 == 0)
+        gameTalk.corAnswer = "c";
+    else if (ans4 == 0)
+        gameTalk.corAnswer = "d";
 
     gameTalk.retMes = finText;
     return gameTalk;
@@ -266,8 +302,8 @@ module.exports.myPoints = function (i_user) {
 };
 
 function notifyPlayers(gameTalk, i_text) {
-    gameTalk.intPlayerNames.forEach(function (name) {
-        gameTalk.intPlayers[name].playerObj.send(i_text);
+    gameTalk.intPlayers.forEach(function (player) {
+        player.playerObj.send(i_text);
     });
 }
 
@@ -278,8 +314,8 @@ function notifySpectators(gameTalk, i_text) {
 }
 
 function notifyPlayersPoints(gameTalk) {
-    gameTalk.intPlayerNames.forEach(function (name) {
-        gameTalk.intPlayers[name].playerObj.send("Current points: " + gameTalk.intPlayers[name].playerPoints);
+    gameTalk.intPlayers.forEach(function (player) {
+        player.playerObj.send("Current points: " + player.playerPoints);
     });
 }
 
@@ -314,11 +350,6 @@ function getRandomWords(i_numResults) {
             }
     }
     while (quests.length < i_numResults);
-    /*
-        quests.forEach(function (item) {
-            logger.info(item.tlh);
-        });
-    */
 
     return quests;
 }

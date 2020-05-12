@@ -590,6 +590,10 @@ function processMessage(bot, messageDJS) {
 			if (args[0] == "join" || args[0] == "create") {
 				gameTalk.command = "add";				
 			}
+			else if (args[0] == "targetpoints"){
+				gameTalk.command = "settarget";
+				gameTalk.args = args[1];
+			}
 			else if (args[0] == "::") {
 				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(1, 999).join(' ');
@@ -666,7 +670,7 @@ function processMessage(bot, messageDJS) {
 			botSendMessage(1, bot, messageDJS.channel.id, sendMessage);
 		}
 	}
-};
+}
 
 function langKnown(language) {
 	var langFound = knownLangs.filter(function (lang) {
@@ -679,12 +683,12 @@ function langKnown(language) {
 		return true;
 	else
 		return false;
-};
+}
 
 function BTalk(message) {
 	//Macht Ärger?
 	botSendMessage(1, bot, DData.bTChan, message);
-};
+}
 
 
 
