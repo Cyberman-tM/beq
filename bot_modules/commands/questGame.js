@@ -76,7 +76,7 @@ module.exports.Engine = function (gameTalk) {
 function getCurPlayer(gameTalk) {
     var tmpRet = null;
     gameTalk.intPlayers.forEach(function (player) {
-        if (player.playerObj.playerID == gameTalk.curPlayer.playerID)
+        if (player.playerObj.id == gameTalk.curPlayer.id)
         {
             logger.info(player);
             tmpRet = player;
