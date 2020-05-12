@@ -155,10 +155,7 @@ function sendAnswer(gameTalk) {
     if (gameTalk.GM != null)
         gameTalk.GM.send("New answer from " + uName + ": " + gameTalk.args);
 
-    notifySpectators("New answer from " + uName + ": " + gameTalk.args);
-
-    logger.info(gameTalk.playersAnswered);
-    logger.info(gameTalk.intPlayerNames.length);
+    notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
     //All players sent an answer, and we previously sent a vocabulary question
     if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
@@ -173,9 +170,9 @@ function sendAnswer(gameTalk) {
         for (X = 0; X < gameTalk.intPlayerNames.length; X++)
             tmpText += "\r\n Player " + gameTalk.intPlayerNames[X] + " answered: " + gameTalk.intPlayers[gameTalk.intPlayerNames[X]].lastAnswer + "\r\n";
 
-        notifyPlayers(tmpText);
-        notifyGM(tmpText);
-        notifySpectators(tmpText);
+        notifyPlayers(gameTalk, tmpText);
+        notifyGM(gameTalk, tmpText);
+        notifySpectators(gameTalk, tmpText);
     }
 
     gameTalk.retMes = "Answer sent.";
@@ -268,27 +265,27 @@ module.exports.myPoints = function (i_user) {
     i_user.send(singleGame.intPlayers[i_user.username].playerPoints);
 };
 
-function notifyPlayers(i_text) {
-    singleGame.intPlayerNames.forEach(function (name) {
-        singleGame.intPlayers[name].playerObj.send(i_text);
+function notifyPlayers(gameTalk, i_text) {
+    gameTalk.intPlayerNames.forEach(function (name) {
+        gameTalk.intPlayers[name].playerObj.send(i_text);
     });
 }
 
-function notifySpectators(i_text) {
-    singleGame.specChannel.forEach(function (channel) {
+function notifySpectators(gameTalk, i_text) {
+    gameTalk.specChannel.forEach(function (channel) {
         channel.send(i_text);
     });
 }
 
-function notifyPlayersPoints() {
-    singleGame.intPlayerNames.forEach(function (name) {
-        singleGame.intPlayers[name].playerObj.send("Current points: " + singleGame.intPlayers[name].playerPoints);
+function notifyPlayersPoints(gameTalk) {
+    gameTalk.intPlayerNames.forEach(function (name) {
+        gameTalk.intPlayers[name].playerObj.send("Current points: " + gameTalk.intPlayers[name].playerPoints);
     });
 }
 
-function notifyGM(i_text) {
-    if (singleGame.GM != null)
-        singleGame.GM.send(i_text);
+function notifyGM(gameTalk, i_text) {
+    if (gameTalk.GM != null)
+        gameTalk.GM.send(i_text);
 }
 
 //Get a random word, then get additional results to offer multiple choice
