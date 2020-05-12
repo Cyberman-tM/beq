@@ -171,6 +171,7 @@ function sendAnswer(gameTalk) {
         notifySpectators(tmpText);
     }
 
+    gameTalk.retMes = "Answer sent.";
     return gameTalk;
 }
 
@@ -243,9 +244,10 @@ function getQuestion(gameTalk) {
     rawText += "c) " + rawQuestion[ans3].en + "\r\n";
     rawText += "d) " + rawQuestion[ans4].en + "\r\n";
     rawText += "\r\n";
-    rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
-    rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
-
+    if (gameTalk.curPlayer == gameTalk.GM) {
+        rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
+        rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
+    }
     finText = rawText;
 
     gameTalk.retMes = finText;
