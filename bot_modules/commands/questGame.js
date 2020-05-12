@@ -86,8 +86,10 @@ function getCurPlayer(gameTalk) {
 catch(fehler)
 {
     logger.error(fehler);
+    logger.info(fehler);
 }
 
+logger.info(tmpRet);
     return tmpRet;
 }
 
