@@ -86,6 +86,12 @@ function getCurPlayer(gameTalk) {
 function addPlayer(gameTalk) {
     var newPlayer = getCurPlayer(gameTalk);
     if (newPlayer == null) {
+
+        //If this is the first time, the zero entry is likely the empty object - we should remove it, no one needs it anymore
+        //(It only exists so that the structure above is listed and we can check for *something*)
+        if (gameTalk.intPlayers[0].playerObj.id == undefined)
+            gameTalk.intPlayers = gameTalk.intPlayers.splice(0, 1);
+
         //Make sure this is the same structure as above!
         newPlayer = {};
         newPlayer.playerObj = gameTalk.curPlayer;
@@ -106,7 +112,8 @@ module.exports.removePlayer = function (i_user) {
     if (singleGame.intPlayers[i_user.username] != undefined) {
         singleGame.intPlayers[i_user.username] = null;
         var playerIndex = singleGame.intPlayerNames.indexOf(i_user.username);
-        singleGame.intPlayerNames = singleGame.intPlayerNames.slice(playerIndex, 1);
+
+        singleGame.intPlayerNames = singleGame.intPlayerNames.splice(playerIndex, 1);
 
         i_user.send("It was fun playing with you!");
     }
