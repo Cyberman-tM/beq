@@ -25,7 +25,7 @@ singleGame.specChannel = [];
 //Basic data structure - similar to beqTalk with the beq engine
 var gameTalk = {
     intPlayers: [{
-        playerObj: null,
+        playerObj: {},
         playerPoints: 0,
         GM: false,
         lastAnswer: ""
@@ -86,8 +86,8 @@ function getCurPlayer(gameTalk) {
 
 function addPlayer(gameTalk) {
     var newPlayer = getCurPlayer(gameTalk);
-
-    if (newPlayer.playerObj == null) {
+logger.info(newPlayer.playerObj);
+    if (newPlayer.playerObj == undefined) {
         newPlayer.playerObj = gameTalk.curPlayer;
         newPlayer.playerPoints = 10;
         newPlayer.GM = false;
