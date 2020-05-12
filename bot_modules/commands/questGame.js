@@ -90,7 +90,7 @@ function addPlayer(gameTalk) {
         //If this is the first time, the zero entry is likely the empty object - we should remove it, no one needs it anymore
         //(It only exists so that the structure above is listed and we can check for *something*)
         if (gameTalk.intPlayers[0].playerObj.id == undefined)
-            gameTalk.intPlayers = gameTalk.intPlayers.splice(0, 1);
+            gameTalk.intPlayers.splice(0, 1);
 
         //Make sure this is the same structure as above!
         newPlayer = {};
