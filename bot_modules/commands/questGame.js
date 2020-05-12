@@ -58,27 +58,27 @@ module.exports.restart = function () {
     singleGame.specChannel = [];
 };
 
-function addPlayer(singleGame) {
-    var uName = singleGame.curPlayer.username;
+function addPlayer(gameTalk) {
+    var uName = gameTalk.curPlayer.username;
 
     //Only new players should be added
-    if (singleGame.intPlayers[uName] == undefined) {
+    if (gameTalk.intPlayers[uName] == undefined) {
 
-        singleGame.intPlayers[uName] = {};
-        singleGame.intPlayers[uName].playerID = singleGame.curPlayer.id;
-        singleGame.intPlayers[uName].playerPoints = -1;
-        singleGame.intPlayers[uName].playerObj = singleGame.curPlayer;
-        singleGame.intPlayers[uName].lastAnswer = "";
+        gameTalk.intPlayers[uName] = {};
+        gameTalk.intPlayers[uName].playerID = gameTalk.curPlayer.id;
+        gameTalk.intPlayers[uName].playerPoints = -1;
+        gameTalk.intPlayers[uName].playerObj = gameTalk.curPlayer;
+        gameTalk.intPlayers[uName].lastAnswer = "";
 
         //Echtes Array mit Namen, um auf das falsche Array zugreifen zu können
-        singleGame.intPlayerNames.push(uName);
+        gameTalk.intPlayerNames.push(uName);
 
-        singleGame.curPlayer.send("Ready to play?");
+        gameTalk.curPlayer.send("Ready to play?");
 
-        singleGame.retMes = "player added, I think?";
+        gameTalk.retMes = "player added, I think?";
     }
 
-    return singleGame;
+    return gameTalk;
 }
 
 module.exports.removePlayer = function (i_user) {
@@ -152,6 +152,9 @@ function sendAnswer(gameTalk) {
         gameTalk.GM.send("New answer from " + uName + ": " + gameTalk.args);
 
     notifySpectators("New answer from " + uName + ": " + gameTalk.args);
+
+    logger.info(gameTalk.playersAnswered);
+    logger.info(gameTalk.intPlayerNames.length);
 
     //All players sent an answer, and we previously sent a vocabulary question
     if (gameTalk.playersAnswered == gameTalk.intPlayerNames.length && gameTalk.sentQuest == true) {
@@ -249,6 +252,8 @@ function getQuestion(gameTalk) {
         rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
     }
     finText = rawText;
+
+    gameTalk.sentQuest = true;
 
     gameTalk.retMes = finText;
     return gameTalk;
