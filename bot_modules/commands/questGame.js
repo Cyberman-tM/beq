@@ -163,6 +163,8 @@ function sendAnswer(gameTalk) {
     var playerData = getCurPlayer(gameTalk);
     var uName = playerData.playerObj.username;
 
+logger.info(playerData.playerObj.username);
+
     if (playerData.playerObj.username == undefined)
         return;
 
