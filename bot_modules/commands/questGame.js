@@ -77,10 +77,7 @@ function getCurPlayer(gameTalk) {
     var tmpRet = null;
     gameTalk.intPlayers.forEach(function (player) {
         if (player.playerObj.id == gameTalk.curPlayer.id)
-        {
-            logger.info(player);
             tmpRet = player;
-        }
     });
 
     return tmpRet;
@@ -180,12 +177,8 @@ function sendAnswer(gameTalk) {
 
     notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
-logger.info(gameTalk.playersAnswered);
-logger.info(gameTalk.intPlayers.length);
-
-    //TODO: change from intPlayerNames.length to count variable?
     //All players sent an answer, and we previously sent a vocabulary question
-    if (gameTalk.playersAnswered == gameTalk.intPlayers.length && gameTalk.sentQuest == true) {
+    if (gameTalk.playersAnswered == gameTalk.numPlayers && gameTalk.sentQuest == true) {
         tmpText = "Question was to translate: " + gameTalk.lastQuest[0].tlh + "\r\n";
         tmpText += "The correct answer was: " + gameTalk.lastQuest[0].en + "\r\n";
         tmpText += "\r\n";
