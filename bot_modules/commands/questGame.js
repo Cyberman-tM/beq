@@ -88,7 +88,9 @@ function getCurPlayer(gameTalk) {
 
 function addPlayer(gameTalk) {
     var newPlayer = getCurPlayer(gameTalk);
-    if (newPlayer.playerObj.username == undefined) {
+    if (newPlayer == null) {
+        //Make sure this is the same structure as above!
+        newPlayer = {};
         newPlayer.playerObj = gameTalk.curPlayer;
         newPlayer.playerPoints = 0;
         newPlayer.GM = false;
