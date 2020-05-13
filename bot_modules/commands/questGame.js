@@ -15,7 +15,7 @@ var myKDBJSon = null;
 var singleGame = {};
 singleGame.intPlayers = {};
 singleGame.intPlayerNames = [];
-singleGame.GM = null;
+singleGame.isGM = null;
 singleGame.targetPoints = 0;
 singleGame.playersAnswered = 0;
 singleGame.sentQuest = false;
@@ -27,7 +27,7 @@ var gameTalk = {
     intPlayers: [{
         playerObj: {},
         playerPoints: 0,
-        GM: false,
+        isGM: false,
         lastAnswer: ""
     }],
     curPlayer: {},
@@ -51,19 +51,30 @@ module.exports.initGame = function (KDBJSon) {
 
 //Similar to the beqEngine, this is the GameEngine
 module.exports.Engine = function (gameTalk) {
+
+    //Generic functions that can be called by anyone
     if (gameTalk.command == "NOP") {
         //Do nothing, this is something that needs to be done in the bot
     }
     else if (gameTalk.command == "add")
         gameTalk = addPlayer(gameTalk);
-    else if (gameTalk.command == "sendanswer")
-        gameTalk = sendAnswer(gameTalk);
-    else if (gameTalk.command == "getquestion")
-        gameTalk = getQuestion(gameTalk);
     else if (gameTalk.command == "spectate")
         gameTalk = addSpectator(gameTalk);
-    else if (gameTalk.command == "newtarget")
-        gameTalk = setTarget(gameTalk);
+
+    //Functions that need an active player
+    if (getCurPlayerIndex(gameTalk) != -1) {
+        if (gameTalk.command == "sendanswer")
+            gameTalk = sendAnswer(gameTalk);
+        else if (gameTalk.command == "getquestion")
+            gameTalk = getQuestion(gameTalk);
+        else if (gameTalk.command == "newtarget")
+            gameTalk = setTarget(gameTalk);
+    }
+
+        //Functions that need a GM
+        if (getCurPlayerData(gameTalk).isGM) {
+            //GM functions
+        }
 
     //We just processed a command - make sure it doesn't get processed again
     //if the main program doesn't clean up
@@ -71,17 +82,6 @@ module.exports.Engine = function (gameTalk) {
 
     return gameTalk;
 };
-
-//Get current player's data
-function getCurPlayer(gameTalk) {
-    var tmpRet = null;
-    gameTalk.intPlayers.forEach(function (player) {
-        if (player.playerObj.id == gameTalk.curPlayer.id)
-            tmpRet = player;
-    });
-
-    return tmpRet;
-}
 
 function addPlayer(gameTalk) {
     var newPlayer = getCurPlayer(gameTalk);
@@ -96,7 +96,7 @@ function addPlayer(gameTalk) {
         newPlayer = {};
         newPlayer.playerObj = gameTalk.curPlayer;
         newPlayer.playerPoints = 0;
-        newPlayer.GM = false;
+        newPlayer.isGM = false;
         newPlayer.lastAnswer = "";
 
         gameTalk.intPlayers.push(newPlayer);
@@ -108,26 +108,27 @@ function addPlayer(gameTalk) {
     return gameTalk;
 }
 
-module.exports.removePlayer = function (i_user) {
-    if (singleGame.intPlayers[i_user.username] != undefined) {
-        singleGame.intPlayers[i_user.username] = null;
-        var playerIndex = singleGame.intPlayerNames.indexOf(i_user.username);
+function removePlayer(gameTalk) {
+    var playerData = getCurPlayer(gameTalk);
 
-        singleGame.intPlayerNames = singleGame.intPlayerNames.splice(playerIndex, 1);
+    if (playerData != null) {
+        var playerIndex = getCurPlayerIndex(gameTalk);
 
-        i_user.send("It was fun playing with you!");
+        playerData.playerObj.send("It was fun playing with you!");
+        gameTalk.intPlayers.playerObj = null;
+        gameTalk.intPlayers.splice(playerIndex, 1);
     }
-};
+}
 
 //TODO: rework, simplify - do we need GM as a user object? why not flag?
 module.exports.addGM = function (i_user) {
     var tmpRet = "";
-    if (singleGame.GM == null) {
-        singleGame.GM = i_user;
+    if (singleGame.isGM == null) {
+        singleGame.isGM = i_user;
         tmpRet = "You are GM now";
     }
     else
-        tmpRet = "We already have a GM:" + singleGame.GM.username;
+        tmpRet = "We already have a GM:" + singleGame.isGM.username;
 
     return tmpRet;
 };
@@ -143,7 +144,7 @@ module.exports.listPlayers = function () {
 };
 
 module.exports.GMsendQuestion = function (i_user, i_question) {
-    if (singleGame.GM != null && i_user.userid == singleGame.GM.userid) {
+    if (singleGame.isGM != null && i_user.userid == singleGame.isGM.userid) {
         notifyPlayers(i_question);
         singleGame.playersAnswered = 0;
         singleGame.sentQuest = false;
@@ -158,7 +159,7 @@ module.exports.GMsendVocQuest = function (i_user, i_question) {
     if (l_question == "")
         l_question = this.getQuestion(4);
 
-    if (i_user.userid == singleGame.GM.userid) {
+    if (i_user.userid == singleGame.isGM.userid) {
         notifyPlayers(l_question);
         singleGame.playersAnswered = 0;
         singleGame.sentQuest = true;
@@ -179,8 +180,7 @@ function sendAnswer(gameTalk) {
     playerData.lastAnswer = gameTalk.args;
     gameTalk.playersAnswered++;
 
-    if (playerData.GM == true)
-        gameTalk.GM.send("New answer from " + uName + ": " + gameTalk.args);
+    notifyGM(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
     notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
@@ -194,8 +194,8 @@ function sendAnswer(gameTalk) {
         tmpText += gameTalk.lastQuest[2].tlh + " => " + gameTalk.lastQuest[2].en + "\r\n";
         tmpText += gameTalk.lastQuest[3].tlh + " => " + gameTalk.lastQuest[3].en + "\r\n";
 
-        gameTalk.intPlayers.forEach(function (player){
-            tmpText += "\r\n Player " + player.playerObj.username +  " answered: " + player.lastAnswer + "\r\n";
+        gameTalk.intPlayers.forEach(function (player) {
+            tmpText += "\r\n Player " + player.playerObj.username + " answered: " + player.lastAnswer + "\r\n";
             if (player.lastAnswer == gameTalk.corAnswer)
                 intGivePoints2CurPlayer(gameTalk, 5);
         });
@@ -247,7 +247,7 @@ module.exports.givePoints = function (i_pointlist) {
 
 function setTarget(gameTalk) {
     //Nur GM
-    if (gameTalk.curPlayer.userid == gameTalk.GM.userid) {
+    if (gameTalk.curPlayer.userid == gameTalk.isGM.userid) {
         gameTalk.targetPoints = gameTalk.args;
         notifyPlayers(gameTalk, "GM set new target points: " + gameTalk.args);
         notifySpectators(gameTalk, "GM set new target points: " + gameTalk.args);
@@ -285,7 +285,7 @@ function getQuestion(gameTalk) {
     rawText += "c) " + rawQuestion[ans3].en + "\r\n";
     rawText += "d) " + rawQuestion[ans4].en + "\r\n";
     rawText += "\r\n";
-    if (curPlayer.GM == true) {
+    if (curPlayer.isGM == true) {
         rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
         rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
     }
@@ -311,6 +311,39 @@ module.exports.myPoints = function (i_user) {
     i_user.send(singleGame.intPlayers[i_user.username].playerPoints);
 };
 
+//Get current player's data
+function getCurPlayer(gameTalk) {
+    var tmpRet = null;
+    gameTalk.intPlayers.forEach(function (player) {
+        if (player.playerObj.id == gameTalk.curPlayer.id)
+            tmpRet = player;
+    });
+
+    return tmpRet;
+}
+
+//Get current player's INDEX
+function getCurPlayerIndex(gameTalk) {
+    var tmpRet = -1;
+    gameTalk.intPlayers.forEach(function (player, myIndex) {
+        if (player.playerObj.id == gameTalk.curPlayer.id)
+            tmpRet = myIndex;
+    });
+
+    return tmpRet;
+}
+
+//GetGM
+function getGM(gameTalk) {
+    var tmpRet = -1;
+    gameTalk.intPlayers.forEach(function (player) {
+        if (player.isGM)
+            tmpRet = player;
+    });
+
+    return tmpRet;
+}
+
 function notifyPlayers(gameTalk, i_text) {
     gameTalk.intPlayers.forEach(function (player) {
         player.playerObj.send(i_text);
@@ -330,8 +363,7 @@ function notifyPlayersPoints(gameTalk) {
 }
 
 function notifyGM(gameTalk, i_text) {
-    if (gameTalk.GM != null)
-        gameTalk.GM.send(i_text);
+    getGM(gameTalk).playerObj.send(i_text);
 }
 
 //Get a random word, then get additional results to offer multiple choice
