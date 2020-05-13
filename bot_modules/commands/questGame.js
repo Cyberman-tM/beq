@@ -71,10 +71,10 @@ module.exports.Engine = function (gameTalk) {
             gameTalk = setTarget(gameTalk);
     }
 
-        //Functions that need a GM
-        if (getCurPlayerData(gameTalk).isGM) {
-            //GM functions
-        }
+    //Functions that need a GM
+    if (getCurPlayerData(gameTalk).isGM) {
+        //GM functions
+    }
 
     //We just processed a command - make sure it doesn't get processed again
     //if the main program doesn't clean up
@@ -84,7 +84,7 @@ module.exports.Engine = function (gameTalk) {
 };
 
 function addPlayer(gameTalk) {
-    var newPlayer = getCurPlayer(gameTalk);
+    var newPlayer = getCurPlayerData(gameTalk);
     if (newPlayer == null) {
 
         //If this is the first time, the zero entry is likely the empty object - we should remove it, no one needs it anymore
@@ -109,7 +109,7 @@ function addPlayer(gameTalk) {
 }
 
 function removePlayer(gameTalk) {
-    var playerData = getCurPlayer(gameTalk);
+    var playerData = getCurPlayerData(gameTalk);
 
     if (playerData != null) {
         var playerIndex = getCurPlayerIndex(gameTalk);
@@ -170,7 +170,7 @@ module.exports.GMsendVocQuest = function (i_user, i_question) {
 
 function sendAnswer(gameTalk) {
     var tmpText = "";
-    var playerData = getCurPlayer(gameTalk);
+    var playerData = getCurPlayerData(gameTalk);
     var uName = playerData.playerObj.username;
 
     if (playerData.playerObj.username == undefined)
@@ -217,7 +217,7 @@ function addSpectator(gameTalk) {
 }
 
 function intGivePoints2CurPlayer(gameTalk, i_points) {
-    var playerData = getCurPlayer(gameTalk);
+    var playerData = getCurPlayerData(gameTalk);
     playerData.playerPoints += i_points;
 }
 
@@ -256,7 +256,7 @@ function setTarget(gameTalk) {
 
 function getQuestion(gameTalk) {
     var rawQuestion;
-    var curPlayer = getCurPlayer(gameTalk);
+    var curPlayer = getCurPlayerData(gameTalk);
 
     rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
     var finText = "";
@@ -312,7 +312,7 @@ module.exports.myPoints = function (i_user) {
 };
 
 //Get current player's data
-function getCurPlayer(gameTalk) {
+function getCurPlayerData(gameTalk) {
     var tmpRet = null;
     gameTalk.intPlayers.forEach(function (player) {
         if (player.playerObj.id == gameTalk.curPlayer.id)
