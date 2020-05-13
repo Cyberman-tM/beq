@@ -1,5 +1,12 @@
 var Discord = require('discord.js');
-var logger = require('winston');
+var winston = require('winston');
+var logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.json(),
+    transports: [
+        new winston.transports.Console()
+    ]
+});
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');
 var extCmds = require('./bot_modules/external/ext_commands.js');
