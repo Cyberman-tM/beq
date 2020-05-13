@@ -337,7 +337,7 @@ function getCurPlayerIndex(gameTalk) {
 
 //GetGM
 function getGM(gameTalk) {
-    var tmpRet = -1;
+    var tmpRet = null;
     gameTalk.intPlayers.forEach(function (player) {
         if (player.isGM)
             tmpRet = player;
@@ -372,7 +372,6 @@ function notifyGM(gameTalk, i_text) {
 
 //Get a random word, then get additional results to offer multiple choice
 function getRandomWords(i_numResults) {
-    var numQuests = -1;
     var tmpWord = "";
     var quests = [];
     var noGood = false;
@@ -382,18 +381,15 @@ function getRandomWords(i_numResults) {
         tmpWord = myKDBJSon[Math.floor(Math.random() * (myKDBJSon.length))];
 
         //Not hypothetical or derived? Or reginal?
-        if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type)))
-            if (quests.length == 0)
+        if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type))) {
+            noGood = false;
+            quests.forEach(function (item) {
+                if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
+                    noGood = true;
+            });
+            if (noGood == false)
                 quests.push(tmpWord);
-            else {
-                noGood = false;
-                quests.forEach(function (item) {
-                    if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
-                        noGood = true;
-                });
-                if (noGood == false)
-                    quests.push(tmpWord);
-            }
+        }
     }
     while (quests.length < i_numResults);
 
