@@ -63,17 +63,19 @@ module.exports.Engine = function (gameTalk) {
 
     //Functions that need an active player
     if (getCurPlayerIndex(gameTalk) != -1) {
-        if (gameTalk.command == "sendanswer")
-            gameTalk = sendAnswer(gameTalk);
-        else if (gameTalk.command == "getquestion")
-            gameTalk = getQuestion(gameTalk);
-        else if (gameTalk.command == "newtarget")
-            gameTalk = setTarget(gameTalk);
-    }
 
-    //Functions that need a GM
-    if (getCurPlayerData(gameTalk).isGM) {
-        //GM functions
+        if (getCurPlayerData(gameTalk).isGM) {
+            //GM functions
+        }
+        else {
+
+            if (gameTalk.command == "sendanswer")
+                gameTalk = sendAnswer(gameTalk);
+            else if (gameTalk.command == "getquestion")
+                gameTalk = getQuestion(gameTalk);
+            else if (gameTalk.command == "newtarget")
+                gameTalk = setTarget(gameTalk);
+        }
     }
 
     //We just processed a command - make sure it doesn't get processed again
@@ -363,7 +365,9 @@ function notifyPlayersPoints(gameTalk) {
 }
 
 function notifyGM(gameTalk, i_text) {
-    getGM(gameTalk).playerObj.send(i_text);
+    var GM = getGM(gameTalk);
+    if (GM != null)
+        GM.playerObj.send(i_text);
 }
 
 //Get a random word, then get additional results to offer multiple choice
