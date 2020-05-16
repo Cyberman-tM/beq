@@ -449,13 +449,14 @@ function processMessage(bot, messageDJS) {
 				var p_beSimple = args[9]; //Simple output - no frills, delete command message
 				var p_showS = args[10]; //Show sources (if available)
 				var p_showC = args[11]; //Show Category
-				var p_special = args[12]; //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
+				var p_uid   = args[12]; //Unique Word ID
+				var p_special = args[13]; //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 
 				if (beqTalk.transLang == undefined)
 					beqTalk.transLang = null;
 
 				//Since the parameters can arrive in any range, we simply have to search for the manually - they are all named, fortunately
-				var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple + '|' + p_showS + '|' + p_showC;
+				var dynArg = beqTalk.transLang + '|' + p_lookFuzz + '|' + p_lookCase + '|' + p_startRes + '|' + p_filtWord + '|' + p_showNotes + '|' + p_special + '|' + p_beSimple + '|' + p_showS + '|' + p_showC + '|' + p_uid;
 				if (dynArg.indexOf('case') >= 0)
 					beqTalk.wCase = true;
 
@@ -486,6 +487,9 @@ function processMessage(bot, messageDJS) {
 
 				if ((dynArg).indexOf('cat') >= 0)
 					beqTalk.showCat = true;
+
+				if ((dynArg).indexOf('UID') >= 0)
+					beqTalk.UID = true;
 
 				//These parameters have parameters in themselves
 				//always an equal sign without spaces and the value following it
@@ -623,7 +627,7 @@ function processMessage(bot, messageDJS) {
 				gameTalk.args = messageDJS.channel;
 			}
 
-			gameTalk = questGame.Engine(gameTalk);
+			gameTalk = questGame.GameEngine(gameTalk);
 			gameData[userGameID] = gameTalk;
 			sndMessage = gameTalk.retMes;
 		}

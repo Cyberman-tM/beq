@@ -21,6 +21,7 @@ You must initialize it before calling beq! Some fields may have default entries!
 "command": "",                // the actual command, like "mugh"
 "simple": "",                 // true/false -> Keep the output simple, no personality, no fluff
 "special": "",                // special commands, untested, unlisted, etc...
+"UID": false,                 // Return unique ID when translating
 "showNotes": ""               // Show notes, if available? => true/false
 "showSource": ""              // Show source, if available => true/false
 "wordType1": null,            // some commands or functions allow to limit the word type, for example KWOTD does that
@@ -626,6 +627,10 @@ module.exports.createTranslation = function (beqTalk) {
 
 				sndMessage += item.id;
 			}
+
+			//Unique Word ID
+			if (beqTalk.UID == true)
+				sndMessage += "UID" + kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type + beqTalk.newline;
 
 			//possible TODO: store KatID in item, request cat name from AZS?
 			//Check for categories if requested
