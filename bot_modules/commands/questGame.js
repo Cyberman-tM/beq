@@ -38,7 +38,6 @@ var gameTalk = {
     retMes: "empty message",
     sentQuest: false,
     lastQuest: {},
-    corAnswer: 0,
     specChannel: []
 };
 module.exports.gameTalkDef = JSON.stringify(gameTalk);
@@ -178,36 +177,40 @@ function sendAnswer(gameTalk) {
     if (playerData.playerObj.username == undefined)
         return;
 
-    //TODO: check if player has answered already
-    playerData.lastAnswer = gameTalk.args;
-    gameTalk.playersAnswered++;
+    if (playerData.lastAnswer == "") {
+        playerData.lastAnswer = gameTalk.args;
+        gameTalk.playersAnswered++;
 
-    notifyGM(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
+        notifyGM(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
-    notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
+        notifySpectators(gameTalk, "New answer from " + uName + ": " + gameTalk.args);
 
-    //All players sent an answer, and we previously sent a vocabulary question
-    if (gameTalk.playersAnswered == gameTalk.numPlayers && gameTalk.sentQuest == true) {
-        tmpText = "Question was to translate: " + gameTalk.lastQuest[0].tlh + "\r\n";
-        tmpText += "The correct answer was: " + gameTalk.lastQuest[0].en + "\r\n";
-        tmpText += "\r\n";
-        tmpText += "The other possible answers have been:\r\n";
-        tmpText += gameTalk.lastQuest[1].tlh + " => " + gameTalk.lastQuest[1].en + "\r\n";
-        tmpText += gameTalk.lastQuest[2].tlh + " => " + gameTalk.lastQuest[2].en + "\r\n";
-        tmpText += gameTalk.lastQuest[3].tlh + " => " + gameTalk.lastQuest[3].en + "\r\n";
+        //All players sent an answer, and we previously sent a vocabulary question
+        if (gameTalk.playersAnswered == gameTalk.numPlayers && gameTalk.sentQuest == true) {
+            tmpText = "Question was to translate: " + gameTalk.lastQuest[gameTalk.lastQuest.theQuest].tlh + "\r\n";
+            tmpText += "The correct answer was: " + gameTalk.lastQuest[gameTalk.lastQuest.theQuest].en + "\r\n";
+            tmpText += "\r\n";
+            tmpText += "The other possible answers have been:\r\n";
+            gameTalk.lastQuest.forEach(function (item) {
+                tmpText += item.tlh + " => " + item.en + "\r\n";
+            });
 
-        gameTalk.intPlayers.forEach(function (player) {
-            tmpText += "\r\n Player " + player.playerObj.username + " answered: " + player.lastAnswer + "\r\n";
-            if (player.lastAnswer == gameTalk.corAnswer)
-                intGivePoints2CurPlayer(gameTalk, 5);
-        });
+            gameTalk.intPlayers.forEach(function (player) {
+                tmpText += "\r\n Player " + player.playerObj.username + " answered: " + player.lastAnswer + "\r\n";
+                if (player.lastAnswer == gameTalk.lastQuest.theQuest)
+                    intGivePoints2CurPlayer(gameTalk, 5);
+            });
 
-        notifyPlayers(gameTalk, tmpText);
-        notifyGM(gameTalk, tmpText);
-        notifySpectators(gameTalk, tmpText);
+            notifyPlayers(gameTalk, tmpText);
+            notifyGM(gameTalk, tmpText);
+            notifySpectators(gameTalk, tmpText);
+        }
+
+        gameTalk.retMes = "Answer sent.";
     }
+    else
+        gameTalk.retMes = "You already answered!";
 
-    gameTalk.retMes = "Answer sent.";
     return gameTalk;
 }
 
@@ -261,50 +264,36 @@ function getQuestion(gameTalk) {
     var curPlayer = getCurPlayerData(gameTalk);
 
     rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
-    var finText = "";
+    //This is the question we ask, the correct answer
+    rawQuestion.theQuest = Math.floor(Math.random() * (gameTalk.args));
 
-    //Randomize the order of answers, question is always entry 0
-    var ans = [];
-    while (ans.length < 4) {
-        var r = Math.floor(Math.random() * 4);
-        if (ans.indexOf(r) == -1)
-            ans.push(r);
-    }
-    var ans1 = ans[0];
-    var ans2 = ans[1];
-    var ans3 = ans[2];
-    var ans4 = ans[3];
+    var finText = "";
 
     var rawText = "";
     rawText += "Translate the following from klingon:\r\n";
-    rawText += "(Type: " + bT.getWType(rawQuestion[0].type, "en") + ")\r\n";
+    rawText += "(Type: " + bT.getWType(rawQuestion[rawQuestion.theQuest].type, "en") + ")\r\n";
     rawText += "\r\n";
-    rawText += "==> " + rawQuestion[0].tlh + "\r\n";
+    rawText += "==> " + rawQuestion[rawQuestion.theQuest].tlh + "\r\n";
     rawText += "\r\n";
     rawText += "Possible answers:\r\n";
-    rawText += "a) " + rawQuestion[ans1].en + "\r\n";
-    rawText += "b) " + rawQuestion[ans2].en + "\r\n";
-    rawText += "c) " + rawQuestion[ans3].en + "\r\n";
-    rawText += "d) " + rawQuestion[ans4].en + "\r\n";
+    var listCount = 0;
+    rawQuestion.forEach(function (item) {
+        listCount++;
+        rawText += listCount + ") " + item.tlh + "\r\n";
+    });
     rawText += "\r\n";
     if (curPlayer.isGM == true) {
-        rawText += "DO NOT COPY: ANSWER:" + rawQuestion[0].en + "\r\n";
-        rawText += "debug:" + ans1 + ans2 + ans3 + ans4;
+        rawText += "DO NOT COPY: ANSWER:" + rawQuestion[rawQuestion.theQuest].en + "\r\n";
     }
     finText = rawText;
 
     gameTalk.sentQuest = true;
-    //Store correct answer as abcd to check later
-    if (ans1 == 0)
-        gameTalk.corAnswer = "a";
-    else if (ans2 == 0)
-        gameTalk.corAnswer = "b";
-    else if (ans3 == 0)
-        gameTalk.corAnswer = "c";
-    else if (ans4 == 0)
-        gameTalk.corAnswer = "d";
-
     gameTalk.retMes = finText;
+
+    //Rest last answers
+    gameTalk.intPlayers.forEach(function (item) {
+        item.lastAnswer = "";
+    });
     return gameTalk;
 }
 
@@ -372,24 +361,24 @@ function notifyGM(gameTalk, i_text) {
 
 //Get a random word, then get additional results to offer multiple choice
 function getRandomWords(i_numResults) {
-    var tmpWord = "";
     var quests = [];
-    var noGood = false;
 
     do {
         //Get additional questions
-        tmpWord = myKDBJSon[Math.floor(Math.random() * (myKDBJSon.length))];
+        var tmpWord = myKDBJSon[Math.floor(Math.random() * (myKDBJSon.length))];
 
         //Not hypothetical or derived? Or reginal?
-        if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type))) {
-            noGood = false;
-            quests.forEach(function (item) {
-                if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
-                    noGood = true;
-            });
-            if (noGood == false)
-                quests.push(tmpWord);
-        }
+        if (!(bT.isHyp(tmpWord.type) || bT.isDerived(tmpWord.type) || bT.isReg(tmpWord.type)))
+            //Weitere Einschränkungen - Wortart, Herkunft? Nur Worte von XXXX?
+            if (1 == 1) {
+                var noGood = false;
+                quests.forEach(function (item) {
+                    if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
+                        noGood = true;
+                });
+                if (noGood == false)
+                    quests.push(tmpWord);
+            }
     }
     while (quests.length < i_numResults);
 

@@ -594,7 +594,7 @@ function processMessage(bot, messageDJS) {
 			gameTalk.curPlayer = messageDJS.author;
 			gameTalk.retMes = "";
 			gameTalk.command = "";
-logger.info(args[0] + "_" + args[1] + "_" + args[2]);
+
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {
 				gameTalk.command = "add";				
@@ -603,8 +603,8 @@ logger.info(args[0] + "_" + args[1] + "_" + args[2]);
 				gameTalk.command = "settarget";
 				gameTalk.args = args[1];
 			}
-			else if (args[0] == "::") {
-				gameTalk.command = "sendanswer";
+			else if (args[0].startsWith("::")) {
+				gameTalk.command = "sendanswer";				
 				gameTalk.args = args.slice(1, 999).join(' ');
 			}
 			else if (args[0] == "++")
