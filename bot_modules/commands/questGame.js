@@ -164,6 +164,7 @@ function sendAnswer(gameTalk) {
     var tmpText = "";
     var playerData = getCurPlayerData(gameTalk);
     var uName = playerData.playerObj.username;
+    var winner = null;
 
     if (playerData.playerObj.username == undefined)
         return;
@@ -182,15 +183,36 @@ function sendAnswer(gameTalk) {
             tmpText += "The correct answer was: " + gameTalk.lastQuest[gameTalk.lastQuest.theQuest].en + "\r\n";
             tmpText += "\r\n";
             tmpText += "The other possible answers have been:\r\n";
-            gameTalk.lastQuest.forEach(function (item) {
+
+            gameTalk.lastQuest.forEach(function (item, index) {
+                if (index == gameTalk.lastQuest.theQuest)
+                    return;
                 tmpText += item.tlh + " => " + item.en + "\r\n";
             });
 
             gameTalk.intPlayers.forEach(function (player) {
-                tmpText += "\r\n Player " + player.playerObj.username + " answered: " + player.lastAnswer + "\r\n";
+                tmpText += "\r\n Player " + player.playerObj.username + " answered: " + player.lastAnswer;
                 if (player.lastAnswer == gameTalk.lastQuest.theQuest)
                     intGivePoints2CurPlayer(gameTalk, 5);
+                tmpText += " (points now: " + player.playerPoints + ")";
+                tmpText += "\r\n";
+
+                if (player.PlayerPoints >= gameTalk.targetPoints)
+                    winner.push(player);
             });
+
+            if (winner.length > 0) {
+                tmpText += "Point limit of " + gameTalk.targetPoints + " reached!\r\n";
+                tmpText += "Congratulations, ";
+                if (winner.length > 1)
+                    winner.forEach(function (aWinner) {
+                        tmpText += aWinner.playerObj.username + ",";
+                    });
+                else
+                    tmpText += winner[0].playerObj.username;
+
+                tmpText += "!\r\n";
+            }
 
             notifyPlayers(gameTalk, tmpText);
             notifyGM(gameTalk, tmpText);
