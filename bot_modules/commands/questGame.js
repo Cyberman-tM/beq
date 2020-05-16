@@ -199,7 +199,7 @@ function sendAnswer(gameTalk) {
             //Reset data
             gameTalk.sendQuest = false;
             gameTalk.playersAnswered = 0;
-            gameTalk.lastQuest = 0;
+            gameTalk.lastQuest = null;
         }
 
         gameTalk.retMes = "Answer sent.";
