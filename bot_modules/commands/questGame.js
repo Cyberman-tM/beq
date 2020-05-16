@@ -255,7 +255,7 @@ function getQuestion(gameTalk) {
     var curPlayer = getCurPlayerData(gameTalk);
 
     //Only get a new question if all have answered the last question already
-    if (gameTalk.intPlayers.length == gameTalk.playersAnswered || gameTalk.lastQuest == null) {
+    if (gameTalk.intPlayers.length == gameTalk.playersAnswered && gameTalk.lastQuest == null) {
         rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
         //This is the question we ask, the correct answer
         rawQuestion.theQuest = Math.floor(Math.random() * (gameTalk.args));
