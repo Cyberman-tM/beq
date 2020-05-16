@@ -279,7 +279,7 @@ function getQuestion(gameTalk) {
     var listCount = 0;
     rawQuestion.forEach(function (item) {
         listCount++;
-        rawText += listCount + ") " + item.tlh + "\r\n";
+        rawText += listCount + ") " + item.en + "\r\n";
     });
     rawText += "\r\n";
     if (curPlayer.isGM == true) {
