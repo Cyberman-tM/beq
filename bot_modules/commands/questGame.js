@@ -28,7 +28,7 @@ var gameTalk = {
     retMes: "empty message",
     sentQuest: false,
     targetPoints: 50,
-    lastQuest: {},
+    lastQuest: null,
     specChannel: []
 };
 module.exports.gameTalkDef = JSON.stringify(gameTalk);
@@ -290,7 +290,7 @@ function getQuestion(gameTalk) {
     }
     else
         gameTalk.retMes = "Previous question has not been completed!";
-        
+
     return gameTalk;
 }
 
