@@ -201,18 +201,20 @@ function sendAnswer(gameTalk) {
                     winner.push(player);
             });
 
-            if (winner.length > 0) {
-                tmpText += "Point limit of " + gameTalk.targetPoints + " reached!\r\n";
-                tmpText += "Congratulations, ";
-                if (winner.length > 1)
-                    winner.forEach(function (aWinner) {
-                        tmpText += aWinner.playerObj.username + ",";
-                    });
-                else
-                    tmpText += winner[0].playerObj.username;
+            //Check for winner and prepare congratulations
+            if (winner != null)
+                if (winner.length > 0) {
+                    tmpText += "Point limit of " + gameTalk.targetPoints + " reached!\r\n";
+                    tmpText += "Congratulations, ";
+                    if (winner.length > 1)
+                        winner.forEach(function (aWinner) {
+                            tmpText += aWinner.playerObj.username + ",";
+                        });
+                    else
+                        tmpText += winner[0].playerObj.username;
 
-                tmpText += "!\r\n";
-            }
+                    tmpText += "!\r\n";
+                }
 
             notifyPlayers(gameTalk, tmpText);
             notifyGM(gameTalk, tmpText);
