@@ -12,16 +12,6 @@ var logger = winston.createLogger({
 var bT = require('../utils/boQwI_translate.js');
 var myKDBJSon = null;
 
-var singleGame = {};
-singleGame.intPlayers = {};
-singleGame.intPlayerNames = [];
-singleGame.isGM = null;
-singleGame.targetPoints = 0;
-singleGame.playersAnswered = 0;
-singleGame.sentQuest = false;
-singleGame.lastQuest = null;
-singleGame.specChannel = [];
-
 //Basic data structure - similar to beqTalk with the beq engine
 var gameTalk = {
     intPlayers: [{
@@ -37,6 +27,7 @@ var gameTalk = {
     args: {},
     retMes: "empty message",
     sentQuest: false,
+    targetPoints: 50,
     lastQuest: {},
     specChannel: []
 };
@@ -263,37 +254,43 @@ function getQuestion(gameTalk) {
     var rawQuestion;
     var curPlayer = getCurPlayerData(gameTalk);
 
-    rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
-    //This is the question we ask, the correct answer
-    rawQuestion.theQuest = Math.floor(Math.random() * (gameTalk.args));
+    //Only get a new question if all have answered the last question already
+    if (gameTalk.intPlayers.length == gameTalk.playersAnswered || gameTalk.lastQuest == null) {
+        rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
+        //This is the question we ask, the correct answer
+        rawQuestion.theQuest = Math.floor(Math.random() * (gameTalk.args));
 
-    var finText = "";
+        var finText = "";
 
-    var rawText = "";
-    rawText += "Translate the following from klingon:\r\n";
-    rawText += "(Type: " + bT.getWType(rawQuestion[rawQuestion.theQuest].type, "en") + ")\r\n";
-    rawText += "\r\n";
-    rawText += "==> " + rawQuestion[rawQuestion.theQuest].tlh + "\r\n";
-    rawText += "\r\n";
-    rawText += "Possible answers:\r\n";
-    var listCount = 0;
-    rawQuestion.forEach(function (item) {
-        listCount++;
-        rawText += listCount + ") " + item.en + "\r\n";
-    });
-    rawText += "\r\n";
-    if (curPlayer.isGM == true) {
-        rawText += "DO NOT COPY: ANSWER:" + rawQuestion[rawQuestion.theQuest].en + "\r\n";
+        var rawText = "";
+        rawText += "Translate the following from klingon:\r\n";
+        rawText += "(Type: " + bT.getWType(rawQuestion[rawQuestion.theQuest].type, "en") + ")\r\n";
+        rawText += "\r\n";
+        rawText += "==> " + rawQuestion[rawQuestion.theQuest].tlh + "\r\n";
+        rawText += "\r\n";
+        rawText += "Possible answers:\r\n";
+        var listCount = 0;
+        rawQuestion.forEach(function (item) {
+            listCount++;
+            rawText += listCount + ") " + item.en + "\r\n";
+        });
+        rawText += "\r\n";
+        if (curPlayer.isGM == true) {
+            rawText += "DO NOT COPY: ANSWER:" + rawQuestion[rawQuestion.theQuest].en + "\r\n";
+        }
+        finText = rawText;
+
+        gameTalk.sentQuest = true;
+        gameTalk.retMes = finText;
+
+        //Rest last answers
+        gameTalk.intPlayers.forEach(function (item) {
+            item.lastAnswer = "";
+        });
     }
-    finText = rawText;
-
-    gameTalk.sentQuest = true;
-    gameTalk.retMes = finText;
-
-    //Rest last answers
-    gameTalk.intPlayers.forEach(function (item) {
-        item.lastAnswer = "";
-    });
+    else
+        gameTalk.retMes = "Previous question has not been completed!";
+        
     return gameTalk;
 }
 
