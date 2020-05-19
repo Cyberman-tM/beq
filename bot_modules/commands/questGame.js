@@ -367,7 +367,7 @@ function getQuestion(gameTalk) {
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
         var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
-        if (gameTalk.questObj.curQuest == gameTalk.questObj.daten.length)
+        if (gameTalk.questObj.curQuest == gameTalk.questObj.daten.length-1)  //Index is zero based, length is 1based
             gameTalk.questFinished = true;
 
         //Translation
