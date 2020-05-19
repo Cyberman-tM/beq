@@ -238,7 +238,7 @@ function sendAnswer(gameTalk) {
         if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
             tmpText += "Task was: *" + curQuest.questQuestion + "*\r\n";
             tmpText += "Correct answer was: " + corAnswerText;
-            //tmpText += "You answered:" + playerData.lastAnswer;
+            tmpText += "You answered:" + playerData.lastAnswer;
             gameTalk.playersAnswered = 0;
             gameTalk.lastQuestFinished = true;
 
@@ -369,6 +369,8 @@ function getQuestion(gameTalk) {
         var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
         if (gameTalk.questObj.curQuest == gameTalk.questObj.daten.length-1)  //Index is zero based, length is 1based
             gameTalk.questFinished = true;
+        logger.info(gameTalk.questObj.daten.length);
+        logger.info(gameTalk.questObj.curQuest);
 
         //Translation
         if (nextQuest.questType == 1) {
