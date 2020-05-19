@@ -244,6 +244,23 @@ function sendAnswer(gameTalk) {
 
             //TODO: Show all answers?
 
+            //All questions answered - show final points
+            if (gameTalk.questFinished == true)
+            {
+                var tmpText2 = "";
+                tmpText2 = "That have been all the questions! Final points total:\r\n";
+                gameTalk.intPlayers.forEach(function(item)
+                {
+                    tmpText2 += item.playerName + ": " + item.playerPoints;
+                    if (item.playerPoints >= gameTalk.questObj.targetPoints)
+                        tmpText2 += "<== Reached target Points! majQa\'!";
+                    tmpText2 += "\r\n";
+                });
+
+                notifyPlayers(gameTalk, tmpText2);
+                notifySpectators(gameTalk, tmpText2);
+            }
+
         }
         else
             tmpText += "\r\nThe correct answer will be revealed once all have answered!";
