@@ -236,8 +236,9 @@ function sendAnswer(gameTalk) {
         }
 
         if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
-            tmpText += "Task was:" + curQuest.questQuestion + "\r\n";
+            tmpText += "Task was: *" + curQuest.questQuestion + "*\r\n";
             tmpText += "Correct answer was: " + corAnswerText;
+            tmpText += "You answered:" + playerData.lastAnswer;
             gameTalk.playersAnswered = 0;
             gameTalk.lastQuestFinished = true;
 
@@ -444,6 +445,8 @@ function getQuestion(gameTalk) {
     }
     else if (gameTalk.questFinished == true)
         gameTalk.retMes = "Questionaire is finished! Start another?";
+    else
+        gameTalk.retMes = "Previous question has not been answered!";
 
     return gameTalk;
 }
