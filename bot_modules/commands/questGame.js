@@ -136,7 +136,7 @@ function intLoadQuestObj(gameTalk) {
             answerType: 3,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
             questPoints: 10     //Punkte die diese Frage wert ist
         },
-    ],
+        ],
         allowRandom: true,    //Should we shuffle the questions?
         curQuest: 0,           //Index of current question, not set by creator but used by engine
         points2Win: 100
@@ -195,8 +195,7 @@ function sendAnswer(gameTalk) {
 
     gameTalk.retMes = "Catastrophic error! You should NEVER see this. sendAnswer error.";
 
-    if (playerData.playerObj.username == undefined)
-    {
+    if (playerData.playerObj.username == undefined) {
         gameTalk.retMes = "You are not currently playing?";
         return gameTalk;
     }
@@ -204,6 +203,12 @@ function sendAnswer(gameTalk) {
     if (playerData.lastAnswer == "") {
         playerData.lastAnswer = gameTalk.args;
         gameTalk.playersAnswered++;
+
+        //Multiple Choice - translate answer to word
+        if (curQuest.answerType == 1)
+            playerData.lastAnswer = curQuest.questObj[playerData.lastAnswer].tlh;
+        else if (curQuest.answerType == 2)
+            playerData.lastAnswer = curQuest.questObj[playerData.lastAnswer].en;
 
         if (curQuest.questType == 1) {
             if (curQuest.answerType == 2 || curQuest.answerType == 3) {
@@ -217,18 +222,16 @@ function sendAnswer(gameTalk) {
                     corAnswer = true;
             }
         }
-        else if (curQuest.questType == 2 && curQuest.answerType == 4)
-        {        
+        else if (curQuest.questType == 2 && curQuest.answerType == 4) {
             corAnswerText = curQuest.questAnswer;
             if (playerData.lastAnswer == curQuest.questAnswer)
                 corAnswer = true;
         }
 
         if (corAnswer == false)
-            tmpText = "Sorry, that answer was wrong.";
-        else
-        {
-            tmpText = "Great, that was the correct answer!";
+            tmpText = "Sorry, that answer was wrong.\r\n";
+        else {
+            tmpText = "Great, that was the correct answer!\r\n";
             playerData.playerPoints += curQuest.questPoints;
         }
 
@@ -383,13 +386,11 @@ function getQuestion(gameTalk) {
         }
 
         //Construct question text:
-        if (nextQuest.questType == 1)
-        {
+        if (nextQuest.questType == 1) {
             tmpText = "Object to translate: ";
             nextQuest.questQuestion = "Translate: ";
         }
-        else
-        {
+        else {
             tmpText = "Solve this: ";
             nextQuest.questQuestion = "Answer: " + nextQuest.questQuestion;
         }
@@ -423,6 +424,8 @@ function getQuestion(gameTalk) {
                     tmpText += item.en;
                 else if (nextQuest.answerType == 2)
                     tmpText += item.tlh;
+
+                tmpText += "\r\n";
             });
         }
 
