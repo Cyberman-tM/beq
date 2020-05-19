@@ -10,7 +10,7 @@ var logger = winston.createLogger({
     ]
 });
 var bT = require('../utils/boQwI_translate.js');
-var kTranscode = require('./../../utils/recode.js');
+var kTranscode = require('./../utils/recode.js');
 
 var myKDBJSon = null;
 
