@@ -369,8 +369,6 @@ function getQuestion(gameTalk) {
         var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
         if (gameTalk.questObj.curQuest == (gameTalk.questObj.daten.length-1))  //Index is zero based, length is 1based
             gameTalk.questFinished = true;
-        logger.info(gameTalk.questObj.daten.length);
-        logger.info(gameTalk.questObj.curQuest);
 
         //Translation
         if (nextQuest.questType == 1) {
@@ -437,7 +435,6 @@ function getQuestion(gameTalk) {
         gameTalk.retMes = tmpText;
         gameTalk.playersAnswered = 0;
         gameTalk.lastQuestFinished = false;
-        gameTalk.questFinished = false;
 
         //Reset last answers
         gameTalk.intPlayers.forEach(function (item) {
