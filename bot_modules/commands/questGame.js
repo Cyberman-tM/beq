@@ -49,7 +49,7 @@ var questObj = {
         questPoints: 10     //Punkte die diese Frage wert ist
     }],
     allowRandom: false,    //Should we shuffle the questions?
-    curQuest: 0,           //Index of current question, not set by creator but used by engine
+    curQuest: -1,           //Index of current question, not set by creator but used by engine, needs to be -1 because of increment
     points2Win: 100
 };
 module.exports.questObjDef = JSON.stringify(questObj);
@@ -138,7 +138,7 @@ function intLoadQuestObj(gameTalk) {
         },
         ],
         allowRandom: true,    //Should we shuffle the questions?
-        curQuest: 0,           //Index of current question, not set by creator but used by engine
+        curQuest: -1,           //Index of current question, not set by creator but used by engine
         points2Win: 100
     };
     var tmpString = JSON.stringify(tmpObj);
@@ -238,7 +238,7 @@ function sendAnswer(gameTalk) {
         if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
             tmpText += "Task was: *" + curQuest.questQuestion + "*\r\n";
             tmpText += "Correct answer was: " + corAnswerText;
-            tmpText += "You answered:" + playerData.lastAnswer;
+            //tmpText += "You answered:" + playerData.lastAnswer;
             gameTalk.playersAnswered = 0;
             gameTalk.lastQuestFinished = true;
 
