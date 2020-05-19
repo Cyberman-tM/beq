@@ -238,6 +238,8 @@ function sendAnswer(gameTalk) {
         if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
             tmpText += "Task was:" + curQuest.questQuestion + "\r\n";
             tmpText += "Correct answer was: " + corAnswerText;
+            gameTalk.playersAnswered = 0;
+            gameTalk.lastQuestFinished = true;
 
             //TODO: Show all answers?
 
