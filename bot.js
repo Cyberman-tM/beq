@@ -562,8 +562,9 @@ function processMessage(bot, messageDJS) {
 			SPECTATE - send game messages to current channel, optional parameter is game number, otherwise players number
 		
 		*/
-		if (args[1] != undefined && args[1] != null)
-			args[1] = args[1].toLowerCase();
+		//Warum hatte ich das?
+		//if (args[1] != undefined && args[1] != null)
+			//args[1] = args[1].toLowerCase();
 
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
