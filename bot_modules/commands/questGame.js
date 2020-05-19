@@ -25,7 +25,7 @@ var gameTalk = {
     curPlayer: {},
     numPlayers: 0,
     playersAnswered: 0,
-    lastQuestFinished: false,
+    lastQuestFinished: true,           //Initial value needs to be true
     questFinished: false,
     command: "",
     args: {},
