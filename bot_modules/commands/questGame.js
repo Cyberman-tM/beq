@@ -245,13 +245,11 @@ function sendAnswer(gameTalk) {
             //TODO: Show all answers?
 
             //All questions answered - show final points
-            if (gameTalk.questFinished == true)
-            {
+            if (gameTalk.questFinished == true) {
                 var tmpText2 = "";
                 tmpText2 = "That have been all the questions! Final points total:\r\n";
-                gameTalk.intPlayers.forEach(function(item)
-                {
-                    tmpText2 += item.playerName + ": " + item.playerPoints;
+                gameTalk.intPlayers.forEach(function (item) {
+                    tmpText2 += item.playerObj.username + ": " + item.playerPoints;
                     if (item.playerPoints >= gameTalk.questObj.targetPoints)
                         tmpText2 += "<== Reached target Points! majQa\'!";
                     tmpText2 += "\r\n";
@@ -345,10 +343,13 @@ function sendAnswerOld(gameTalk) {
 }
 
 function addSpectator(gameTalk) {
-    if (gameTalk.specChannel.indexOf(gameTalk.args) == -1) {
-        gameTalk.specChannel.push(gameTalk.args);
-        gameTalk.args.send("This channel is now set to spectate the spectacle!");
-    }
+    if (gameTalk.intPlayers.length > 0)
+        if (gameTalk.specChannel.indexOf(gameTalk.args) == -1) {
+            gameTalk.specChannel.push(gameTalk.args);
+            gameTalk.args.send("This channel is now set to spectate the spectacle!");
+        }
+    else
+        gameTalk.retMes = "No one is playing right now.";
 }
 
 //Manual scoring
@@ -384,7 +385,7 @@ function getQuestion(gameTalk) {
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
         var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
-        if (gameTalk.questObj.curQuest == (gameTalk.questObj.daten.length-1))  //Index is zero based, length is 1based
+        if (gameTalk.questObj.curQuest == (gameTalk.questObj.daten.length - 1))  //Index is zero based, length is 1based
             gameTalk.questFinished = true;
 
         //Translation
