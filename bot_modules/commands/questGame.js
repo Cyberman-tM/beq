@@ -347,7 +347,7 @@ module.exports.givePoints = function (i_pointlist) {
 
 function getQuestion(gameTalk) {
     var tmpText = "";
-    var questWord = null;
+    var questWord = [];
 
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
