@@ -630,7 +630,7 @@ module.exports.createTranslation = function (beqTalk) {
 
 			//Unique Word ID
 			if (beqTalk.UID == true)
-				sndMessage += "UID" + kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type + beqTalk.newline;
+				sndMessage += "UID " + kTranscode.RCtlh2u3(item.tlh) + ";;" + item.type + beqTalk.newline;
 
 			//possible TODO: store KatID in item, request cat name from AZS?
 			//Check for categories if requested

@@ -117,7 +117,32 @@ function addPlayer(gameTalk) {
 }
 function intLoadQuestObj(gameTalk) {
 
-    var myquestObj = JSON.parse("{  'daten': [  {  'questType': 1,  'questQuestion': '???',  'questAnswer': '',  'questDupes': 3,  'answerType': 1,  'questPoints': 10  }  ],  'allowRandom': false,  'curQuest': 0,  'points2Win': 100  }");
+    var tmpObj = {
+        daten: [{
+            questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
+            questQuestion: "u3m1l;;n:being,fic", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
+            questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
+            questDupes: 3,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+            questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
+            answerType: 1,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
+            questPoints: 10     //Punkte die diese Frage wert ist
+        },
+        {
+            questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
+            questQuestion: "i3b;;n:body", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
+            questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
+            questDupes: 5,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+            questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
+            answerType: 3,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
+            questPoints: 10     //Punkte die diese Frage wert ist
+        },
+    ],
+        allowRandom: true,    //Should we shuffle the questions?
+        curQuest: 0,           //Index of current question, not set by creator but used by engine
+        points2Win: 100
+    };
+    var tmpString = JSON.stringify(tmpObj);
+    var myquestObj = JSON.parse(tmpString)
 
     if (myquestObj.allowRandom == true)
         shuffleArray(myquestObj.daten);
