@@ -594,7 +594,7 @@ function processMessage(bot, messageDJS) {
 		}
 
 		//By now we should have an existing game ID!
-		if (userGameID != null) {
+		if (userGameID != null && userGameID != undefined) {
 			gameTalk = gameData[userGameID];
 			gameTalk.curPlayer = messageDJS.author;
 			gameTalk.retMes = "";

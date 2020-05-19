@@ -348,8 +348,8 @@ function addSpectator(gameTalk) {
             gameTalk.specChannel.push(gameTalk.args);
             gameTalk.args.send("This channel is now set to spectate the spectacle!");
         }
-    else
-        gameTalk.retMes = "No one is playing right now.";
+        else
+            gameTalk.retMes = "No one is playing right now.";
 }
 
 //Manual scoring
@@ -530,10 +530,11 @@ function getCurPlayerData(gameTalk) {
 //Get current player's INDEX
 function getCurPlayerIndex(gameTalk) {
     var tmpRet = -1;
-    gameTalk.intPlayers.forEach(function (player, myIndex) {
-        if (player.playerObj.id == gameTalk.curPlayer.id)
-            tmpRet = myIndex;
-    });
+    if (gameTalk.intPlayers.length > 0)
+        gameTalk.intPlayers.forEach(function (player, myIndex) {
+            if (player.playerObj.id == gameTalk.curPlayer.id)
+                tmpRet = myIndex;
+        });
 
     return tmpRet;
 }
