@@ -142,7 +142,7 @@ function intLoadQuestObj(gameTalk) {
         points2Win: 100
     };
     var tmpString = JSON.stringify(tmpObj);
-    var myquestObj = JSON.parse(tmpString)
+    var myquestObj = JSON.parse(tmpString);
 
     if (myquestObj.allowRandom == true)
         shuffleArray(myquestObj.daten);
@@ -193,8 +193,13 @@ function sendAnswer(gameTalk) {
     var corAnswer = false;
     var corAnswerText = "";
 
+    gameTalk.retMes = "Catastrophic error! You should NEVER see this. sendAnswer error.";
+
     if (playerData.playerObj.username == undefined)
+    {
+        gameTalk.retMes = "You are not currently playing?";
         return gameTalk;
+    }
 
     if (playerData.lastAnswer == "") {
         playerData.lastAnswer = gameTalk.args;
@@ -236,6 +241,8 @@ function sendAnswer(gameTalk) {
         }
         else
             tmpText += "\r\nThe correct answer will be revealed once all have answered!";
+
+        gameTalk.retMes = tmpText;
     }
     else
         gameTalk.retMes = "You already answered!";
@@ -348,6 +355,8 @@ module.exports.givePoints = function (i_pointlist) {
 function getQuestion(gameTalk) {
     var tmpText = "";
     var questWord = [];
+
+    gameTalk.retMes = "Catastrophic error! You should NEVER see this. getQuestion error.";
 
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
