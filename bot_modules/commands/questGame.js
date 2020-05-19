@@ -206,9 +206,9 @@ function sendAnswer(gameTalk) {
 
         //Multiple Choice - translate answer to word
         if (curQuest.answerType == 1)
-            playerData.lastAnswer = curQuest.questObj[playerData.lastAnswer].tlh;
-        else if (curQuest.answerType == 2)
             playerData.lastAnswer = curQuest.questObj[playerData.lastAnswer].en;
+        else if (curQuest.answerType == 2)
+            playerData.lastAnswer = curQuest.questObj[playerData.lastAnswer].tlh;
 
         if (curQuest.questType == 1) {
             if (curQuest.answerType == 2 || curQuest.answerType == 3) {
@@ -367,7 +367,7 @@ function getQuestion(gameTalk) {
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
         var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
-        if (gameTalk.questObj.curQuest == gameTalk.questObj.daten.length-1)  //Index is zero based, length is 1based
+        if (gameTalk.questObj.curQuest == (gameTalk.questObj.daten.length-1))  //Index is zero based, length is 1based
             gameTalk.questFinished = true;
         logger.info(gameTalk.questObj.daten.length);
         logger.info(gameTalk.questObj.curQuest);
