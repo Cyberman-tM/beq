@@ -10,6 +10,8 @@ var logger = winston.createLogger({
     ]
 });
 var bT = require('../utils/boQwI_translate.js');
+var kTranscode = require('./../../utils/recode.js');
+
 var myKDBJSon = null;
 
 //Basic data structure - similar to beqTalk with the beq engine
@@ -23,6 +25,8 @@ var gameTalk = {
     curPlayer: {},
     numPlayers: 0,
     playersAnswered: 0,
+    lastQuestFinished: false,
+    questFinished: false,
     command: "",
     args: {},
     targetPoints: 0,                   //Not used anymore!
@@ -37,13 +41,14 @@ module.exports.gameTalkDef = JSON.stringify(gameTalk);
 var questObj = {
     daten: [{
         questType: 0,      //1 - Übersetzung, 2 - komplexe Aufgabe
-        questQuestion: "", //Nur bei questType 2 relevant - wird als Frage ausgegeben
+        questQuestion: "", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
         questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
-        questDupes: 0,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+        questDupes: 3,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+        questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
         answerType: 0,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
         questPoints: 10     //Punkte die diese Frage wert ist
     }],
-    allowRandom: false,
+    allowRandom: false,    //Should we shuffle the questions?
     curQuest: 0,           //Index of current question, not set by creator but used by engine
     points2Win: 100
 };
@@ -112,9 +117,24 @@ function addPlayer(gameTalk) {
 }
 function intLoadQuestObj(gameTalk) {
 
-    var questObj = JSON.parse("{  'daten': [  {  'questType': 1,  'questQuestion': '???',  'questAnswer': '',  'questDupes': 3,  'answerType': 1,  'questPoints': 10  }  ],  'allowRandom': false,  'curQuest': 0,  'points2Win': 100  }");
-    gameTalk.questObj = questObj;
+    var myquestObj = JSON.parse("{  'daten': [  {  'questType': 1,  'questQuestion': '???',  'questAnswer': '',  'questDupes': 3,  'answerType': 1,  'questPoints': 10  }  ],  'allowRandom': false,  'curQuest': 0,  'points2Win': 100  }");
+
+    if (myquestObj.allowRandom == true)
+        shuffleArray(myquestObj.daten);
+
+    gameTalk.questObj = myquestObj;
+    gameTalk.playersAnswered = 0;
     return gameTalk;
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
 }
 
 function removePlayer(gameTalk) {
@@ -129,7 +149,7 @@ function removePlayer(gameTalk) {
     }
 }
 
-
+/*
 module.exports.listPlayers = function () {
     var tmpRet = "";
     singleGame.intPlayerNames.forEach(function (name) {
@@ -139,8 +159,65 @@ module.exports.listPlayers = function () {
 
     return tmpRet;
 };
+*/
 
 function sendAnswer(gameTalk) {
+    var tmpText = "";
+    var playerData = getCurPlayerData(gameTalk);
+    var curQuest = gameTalk.questObj.daten[gameTalk.questObj.curQuest];
+    var corAnswer = false;
+    var corAnswerText = "";
+
+    if (playerData.playerObj.username == undefined)
+        return gameTalk;
+
+    if (playerData.lastAnswer == "") {
+        playerData.lastAnswer = gameTalk.args;
+        gameTalk.playersAnswered++;
+
+        if (curQuest.questType == 1) {
+            if (curQuest.answerType == 2 || curQuest.answerType == 3) {
+                corAnswerText = curQuest.questAnswer.tlh;
+                if (playerData.lastAnswer == corAnswerText)
+                    corAnswer = true;
+            }
+            else if (curQuest.answerType == 1) {
+                corAnswerText = curQuest.questAnswer.en;
+                if (playerData.lastAnswer == corAnswerText)
+                    corAnswer = true;
+            }
+        }
+        else if (curQuest.questType == 2 && curQuest.answerType == 4)
+        {        
+            corAnswerText = curQuest.questAnswer;
+            if (playerData.lastAnswer == curQuest.questAnswer)
+                corAnswer = true;
+        }
+
+        if (corAnswer == false)
+            tmpText = "Sorry, that answer was wrong.";
+        else
+        {
+            tmpText = "Great, that was the correct answer!";
+            playerData.playerPoints += curQuest.questPoints;
+        }
+
+        if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
+            tmpText += "Task was:" + curQuest.questQuestion + "\r\n";
+            tmpText += "Correct answer was: " + corAnswerText;
+
+            //TODO: Show all answers?
+
+        }
+        else
+            tmpText += "\r\nThe correct answer will be revealed once all have answered!";
+    }
+    else
+        gameTalk.retMes = "You already answered!";
+
+    return gameTalk;
+}
+function sendAnswerOld(gameTalk) {
     var tmpText = "";
     var playerData = getCurPlayerData(gameTalk);
     var uName = playerData.playerObj.username;
@@ -242,13 +319,104 @@ module.exports.givePoints = function (i_pointlist) {
     }
 };
 
+
 function getQuestion(gameTalk) {
+    var tmpText = "";
+    var questWord = null;
+
+    //Only get a new question if all have answered the last question already
+    if (gameTalk.playersAnswered == 0 && gameTalk.lastQuestFinished == true && gameTalk.questFinished == false) {
+        var nextQuest = gameTalk.questObj.daten[++gameTalk.questObj.curQuest];
+        if (gameTalk.questObj.curQuest == gameTalk.questObj.daten.length)
+            gameTalk.questFinished = true;
+
+        //Translation
+        if (nextQuest.questType == 1) {
+            //Get complete word - is there a better way?`
+            var klingonWord = kTranscode.RCu32tlh(nextQuest.questQuestion.split(';;')[0]);
+            var typeWord = nextQuest.questQuestion.split(';;')[1];
+
+            questWord.push(myKDBJSon.find(function (item) {
+                if (item.tlh == klingonWord && item.type == typeWord)
+                    return true;
+            }));
+            intGetRandomWords(questWord, nextQuest.questDupes);
+            nextQuest.questAnswer = questWord[0];
+            nextQuest.questObj = questWord;
+
+            //Shuffle answers to make sure everything is random
+            shuffleArray(questWord);
+        }
+
+        //Construct question text:
+        if (nextQuest.questType == 1)
+        {
+            tmpText = "Object to translate: ";
+            nextQuest.questQuestion = "Translate: ";
+        }
+        else
+        {
+            tmpText = "Solve this: ";
+            nextQuest.questQuestion = "Answer: " + nextQuest.questQuestion;
+        }
+
+        if (nextQuest.answerType == 1) {
+            tmpText += nextQuest.questAnswer.tlh;
+            tmpText += "\r\nSelect the correct english answer:\r\n";
+            nextQuest.questQuestion += nextQuest.questAnswer.tlh;
+        }
+        else if (nextQuest.answerType == 2) {
+            tmpText += nextQuest.questAnswer.en;
+            tmpText += "\r\nSelect the correct klingon answer:\r\n";
+            nextQuest.questQuestion += nextQuest.questAnswer.en;
+        }
+        else if (nextQuest.answerType == 3) {
+            tmpText += nextQuest.questAnswer.en;
+            tmpText += "\r\nEnter the correct klingon answer:\r\n";
+            nextQuest.questQuestion += nextQuest.questAnswer.en;
+        }
+        else if (nextQuest.answerType == 2) {
+            tmpText += nextQuest.questQuestion;
+            tmpText += "\r\nEnter the correct answer:\r\n";
+        }
+
+        //Multiple Choice -> offer choices
+        if (nextQuest.questType == 1 && nextQuest.answerType != 3) {
+            questWord.forEach(function (item, index) {
+                tmpText += index + ") ";
+
+                if (nextQuest.answerType == 1)
+                    tmpText += item.en;
+                else if (nextQuest.answerType == 2)
+                    tmpText += item.tlh;
+            });
+        }
+
+        gameTalk.retMes = tmpText;
+        gameTalk.playersAnswered = 0;
+        gameTalk.lastQuestFinished = false;
+        gameTalk.questFinished = false;
+
+        //Reset last answers
+        gameTalk.intPlayers.forEach(function (item) {
+            item.lastAnswer = "";
+        });
+
+    }
+    else if (gameTalk.questFinished == true)
+        gameTalk.retMes = "Questionaire is finished! Start another?";
+
+    return gameTalk;
+}
+
+//Old system
+function getQuestionOld(gameTalk) {
     var rawQuestion;
     var curPlayer = getCurPlayerData(gameTalk);
 
     //Only get a new question if all have answered the last question already
     if (gameTalk.playersAnswered == 0 && gameTalk.lastQuest == null) {
-        rawQuestion = gameTalk.lastQuest = getRandomWords(gameTalk.args);
+        rawQuestion = gameTalk.lastQuest = intGetRandomWords(gameTalk.args);
         //This is the question we ask, the correct answer
         rawQuestion.theQuest = Math.floor(Math.random() * (gameTalk.args));
 
@@ -330,8 +498,7 @@ function notifyPlayersPoints(gameTalk) {
 }
 
 //Get a random word, then get additional results to offer multiple choice
-function getRandomWords(i_numResults) {
-    var quests = [];
+function intGetRandomWords(i_quests, i_numResults) {
 
     do {
         //Get additional questions
@@ -342,15 +509,15 @@ function getRandomWords(i_numResults) {
             //Weitere Einschränkungen - Wortart, Herkunft? Nur Worte von XXXX?
             if (1 == 1) {
                 var noGood = false;
-                quests.forEach(function (item) {
+                i_quests.forEach(function (item) {
                     if (item.type != tmpWord.type || item.tlh == tmpWord.tlh || item.en == tmpWord.en)
                         noGood = true;
                 });
                 if (noGood == false)
-                    quests.push(tmpWord);
+                    i_quests.push(tmpWord);
             }
     }
-    while (quests.length < i_numResults);
+    while (i_quests.length < i_numResults);
 
-    return quests;
+    return i_quests;
 }
