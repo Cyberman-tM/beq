@@ -574,10 +574,21 @@ function processMessage(bot, messageDJS) {
 		if (userGameID == undefined)
 			userGameID = null;
 
-		//Special case: spectate
+		//Special cases: spectate, load
 		if (args[0] == "spectate")
+		{
 			if (args[1] != undefined)
 				userGameID = args[1];
+		}
+		else if (args[0] == "load")
+			{
+				gameTalk.command = "load";
+				gameTalk.args = args.slice(1, 999).join(' ');				
+				
+				gameTalk = questGame.GameEngine(gameTalk);
+				gameData[userGameID] = gameTalk;
+				sndMessage = gameTalk.retMes;
+			}
 
 		//No user game ID yet - join or create?
 		if (userGameID == null) {
