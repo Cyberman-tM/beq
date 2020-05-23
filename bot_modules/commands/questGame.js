@@ -1,6 +1,7 @@
 /*
    New game experiment - "register" multiple players
 */
+var requestify = require('requestify');
 var winston = require('winston');
 var logger = winston.createLogger({
     level: 'info',
@@ -37,6 +38,8 @@ var gameTalk = {
 };
 module.exports.gameTalkDef = JSON.stringify(gameTalk);
 
+var allQuests = [];
+
 //Testobjekt - enthält Fragen und administrative Daten
 var questObj = {
     daten: [{
@@ -71,6 +74,8 @@ module.exports.GameEngine = function (gameTalk) {
         gameTalk = addPlayer(gameTalk);
     else if (gameTalk.command == "spectate")
         gameTalk = addSpectator(gameTalk);
+    else if (gameTalk.command == "load")
+        intLoadQuest(gameTalk);
 
     //Functions that need an active player
     if (getCurPlayerIndex(gameTalk) != -1) {
@@ -86,6 +91,35 @@ module.exports.GameEngine = function (gameTalk) {
 
     return gameTalk;
 };
+
+function intLoadQuest(gameTalk) {
+    var myUrl = gameTalk.args.split(",")[1];
+    var myQuest = gameTalk.args.split(",")[0];
+    gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
+
+    requestify.get(myUrl).then(function (response) {
+        var tmpQO = JSON.parse(response.getBody());
+
+        //Do we have a quest with this name already?
+        var newQuest = allQuests.find(function (item) {
+            if (item.name == myQuest)
+                return true;
+        });
+        //Yes, overwrite
+        if (newQuest != undefined)
+            newQuest.quest= tmpQO;
+        else
+        {
+            //No, create new entry in array
+            newQuest = {};
+            newQuest.name = myQuest;
+            newQuest.quest = tmpQO;
+            allQuests.push(newQuest);
+        }
+        gameTalk.curPlayer.send("Quest received and stored as " + myQuest);
+    });
+
+}
 
 function addPlayer(gameTalk) {
     var newPlayer = getCurPlayerData(gameTalk);
@@ -109,40 +143,46 @@ function addPlayer(gameTalk) {
 
         if (gameTalk.intPlayers.length == 1) {
             //Load question Object
-            gameTalk = intLoadQuestObj(gameTalk);
+            requestify.get(gameTalk.args).then(function () {
+
+            });
+            /*            var tmpObj = {
+                            daten: [{
+                                questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
+                                questQuestion: "u3m1l;;n:being,fic", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
+                                questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
+                                questDupes: 3,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+                                questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
+                                answerType: 1,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
+                                questPoints: 10     //Punkte die diese Frage wert ist
+                            },
+                            {
+                                questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
+                                questQuestion: "i3b;;n:body", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
+                                questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
+                                questDupes: 5,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
+                                questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
+                                answerType: 3,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
+                                questPoints: 10     //Punkte die diese Frage wert ist
+                            },
+                            ],
+                            allowRandom: true,    //Should we shuffle the questions?
+                            curQuest: -1,           //Index of current question, not set by creator but used by engine
+                            points2Win: 100
+                        };
+                        var tmpString = JSON.stringify(tmpObj);
+                        var myquestObj = JSON.parse(tmpString);
+                    
+                        gameTalk = intLoadQuestObj(gameTalk, myquestObj);
+            
+            */
+            gameTalk.retMes = "Loading file";
         }
     }
 
     return gameTalk;
 }
-function intLoadQuestObj(gameTalk) {
-
-    var tmpObj = {
-        daten: [{
-            questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
-            questQuestion: "u3m1l;;n:being,fic", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
-            questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
-            questDupes: 3,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
-            questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
-            answerType: 1,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
-            questPoints: 10     //Punkte die diese Frage wert ist
-        },
-        {
-            questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
-            questQuestion: "i3b;;n:body", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
-            questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
-            questDupes: 5,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
-            questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
-            answerType: 3,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
-            questPoints: 10     //Punkte die diese Frage wert ist
-        },
-        ],
-        allowRandom: true,    //Should we shuffle the questions?
-        curQuest: -1,           //Index of current question, not set by creator but used by engine
-        points2Win: 100
-    };
-    var tmpString = JSON.stringify(tmpObj);
-    var myquestObj = JSON.parse(tmpString);
+function intLoadQuestObj(gameTalk, myquestObj) {
 
     if (myquestObj.allowRandom == true)
         shuffleArray(myquestObj.daten);
@@ -237,12 +277,17 @@ function sendAnswer(gameTalk) {
 
         if (gameTalk.playersAnswered == gameTalk.intPlayers.length) {
             tmpText += "Task was: *" + curQuest.questQuestion + "*\r\n";
-            tmpText += "Correct answer was: " + corAnswerText;
-            tmpText += "You answered:" + playerData.lastAnswer;
+            tmpText += "Correct answer was: " + corAnswerText + "\r\n";
+            tmpText += "Answers given: \r\n";
+            gameTalk.intPlayers.forEach(function (item) {
+                tmpText += item.playerObj.username + ": " + item.lastAnswer + "\r\n";
+            });
             gameTalk.playersAnswered = 0;
             gameTalk.lastQuestFinished = true;
 
-            //TODO: Show all answers?
+            notifyPlayers(gameTalk, tmpText);
+            notifySpectators(gameTalk, tmpText);
+            tmpText = "pItlh";
 
             //All questions answered - show final points
             if (gameTalk.questFinished == true) {
