@@ -106,6 +106,8 @@ function intLoadQuest(gameTalk) {
         requestify.get(myUrl).then(function (response) {
             var tmpQO = JSON.parse(response.getBody());
 
+            try
+            {
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
                 if (item.name == myQuest)
@@ -123,6 +125,11 @@ function intLoadQuest(gameTalk) {
             }
             logger.info("quest loaded!");
             infoPlayer.send("Quest received and stored as " + myQuest);
+        }
+        catch(error)
+        {
+            logger.info(error);
+        }
         });
     }
 
