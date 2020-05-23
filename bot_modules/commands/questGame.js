@@ -112,6 +112,7 @@ function intLoadQuest(gameTalk) {
                 var tmpQO = JSON.parse(tmpJSON);
             } catch (e) {
                 logger.info(e);
+                logger.info("fehler in json");
             }
 
 
