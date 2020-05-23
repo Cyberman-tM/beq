@@ -97,13 +97,14 @@ module.exports.GameEngine = function (gameTalk) {
 function intLoadQuest(gameTalk) {
     var myQuest = gameTalk.args.split(",")[0];
     var myUrl = gameTalk.args.split(",")[1];
+    var infoPlayer = gameTalk.curPlayer;
 
     //If we have nothing in myUrl, then something went wrong
     if (myUrl != undefined) {
         gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
 
         requestify.get(myUrl).then(function (response) {
-            logger.info("in response");
+            logger.info(response.getBody());
             var tmpQO = JSON.parse(response.getBody());
 
             //Do we have a quest with this name already?
@@ -121,7 +122,7 @@ function intLoadQuest(gameTalk) {
                 newQuest.quest = tmpQO;
                 allQuests.push(newQuest);
             }
-            gameTalk.curPlayer.send("Quest received and stored as " + myQuest);
+            infoPlayer.send("Quest received and stored as " + myQuest);
         });
     }
 
