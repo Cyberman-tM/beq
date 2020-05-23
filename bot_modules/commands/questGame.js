@@ -104,7 +104,6 @@ function intLoadQuest(gameTalk) {
         gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
 
         requestify.get(myUrl).then(function (response) {
-            logger.info(infoPlayer);
             var tmpQO = JSON.parse(response.getBody());
 
             //Do we have a quest with this name already?
@@ -122,6 +121,7 @@ function intLoadQuest(gameTalk) {
                 newQuest.quest = tmpQO;
                 allQuests.push(newQuest);
             }
+            logger.info("quest loaded!");
             infoPlayer.send("Quest received and stored as " + myQuest);
         });
     }
