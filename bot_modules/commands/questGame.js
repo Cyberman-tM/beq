@@ -108,15 +108,18 @@ function intLoadQuest(gameTalk) {
 
             try
             {
+                logger.info("find");
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
                 if (item.name == myQuest)
                     return true;
             });
+            logger.info("found");
             //Yes, overwrite
             if (newQuest != undefined)
                 newQuest.quest = tmpQO;
             else {
+                logger.info("pushing");
                 //No, create new entry in array
                 newQuest = {};
                 newQuest.name = myQuest;
