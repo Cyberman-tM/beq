@@ -85,6 +85,8 @@ module.exports.GameEngine = function (gameTalk) {
             gameTalk = sendAnswer(gameTalk);
         else if (gameTalk.command == "getquestion")
             gameTalk = getQuestion(gameTalk);
+        else if (gameTalk.command == "start")
+            gameTalk = startQuest(gameTalk);
     }
 
     //We just processed a command - make sure it doesn't get processed again
@@ -93,6 +95,23 @@ module.exports.GameEngine = function (gameTalk) {
 
     return gameTalk;
 };
+
+function startQuest(gameTalk)
+{
+    gameTalk.retMes = "Quest not found. Try again.";
+    var myQuest = allQuests.find(function (item) {
+        if (item.name == gameTalk.args)
+            return true;
+    });
+
+    if (myQuest != undefined)
+    {
+        gameTalk = intLoadQuestObj(gameTalk, myQuest)
+        gameTalk.retMes = "Questionaire loaded, ready to start!";
+    }
+
+    return gameTalk;
+}
 
 function intLoadQuest(gameTalk) {
     var myQuest = gameTalk.args.split(",")[0];
@@ -104,13 +123,7 @@ function intLoadQuest(gameTalk) {
         gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
 
         requestify.get(myUrl).then(function (response) {
-            logger.info("in response");
-            var tmpJSON = response.getBody();
-            logger.info(tmpJSON);
-            
-            var tmpQO = tmpJSON;
-
-            logger.info(tmpQO.daten[0].questType);
+            var tmpQO = response.getBody();
 
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
@@ -131,7 +144,6 @@ function intLoadQuest(gameTalk) {
             infoPlayer.send("Quest received and stored as " + myQuest);
         });
     }
-
 }
 
 function addPlayer(gameTalk) {
@@ -153,44 +165,6 @@ function addPlayer(gameTalk) {
         gameTalk.numPlayers++;
         gameTalk.curPlayer.send("Get ready to play!");
         gameTalk.retMes = "Player " + newPlayer.playerObj.username + " added to game.";
-
-        if (gameTalk.intPlayers.length == 1) {
-            //Load question Object
-            requestify.get(gameTalk.args).then(function () {
-
-            });
-            /*            var tmpObj = {
-                            daten: [{
-                                questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
-                                questQuestion: "u3m1l;;n:being,fic", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
-                                questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
-                                questDupes: 3,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
-                                questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
-                                answerType: 1,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
-                                questPoints: 10     //Punkte die diese Frage wert ist
-                            },
-                            {
-                                questType: 1,      //1 - Übersetzung, 2 - komplexe Aufgabe
-                                questQuestion: "i3b;;n:body", //Bei Typ 1 das klingonische Wort das übersetzt wird, bei Typ 2 die Frage/Aufgabe, wird direkt ausgegeben
-                                questAnswer: "",   //nur für questType 2 relevant! Das ist die erwartete Antwort, bei 1 wird die Antowort automatisch gefunden
-                                questDupes: 5,     //Anzahl "falscher" Antworten, nur bei questType 1 relevant!
-                                questObj: {},      //Bei Typ 1: Array mit richtiger und falschen Antworten, um sie am Ende anzuzeigen
-                                answerType: 3,     //Art der Antwort: Multiple Choice tlh->en, 2) Multiple Choice en->tlh, 3) en anzeigen, klingonisches Wort eingeben 4) direkte Eingabe der Antwort
-                                questPoints: 10     //Punkte die diese Frage wert ist
-                            },
-                            ],
-                            allowRandom: true,    //Should we shuffle the questions?
-                            curQuest: -1,           //Index of current question, not set by creator but used by engine
-                            points2Win: 100
-                        };
-                        var tmpString = JSON.stringify(tmpObj);
-                        var myquestObj = JSON.parse(tmpString);
-                    
-                        gameTalk = intLoadQuestObj(gameTalk, myquestObj);
-            
-            */
-            gameTalk.retMes = "Loading file";
-        }
     }
 
     return gameTalk;
