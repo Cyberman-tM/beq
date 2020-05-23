@@ -107,9 +107,15 @@ function intLoadQuest(gameTalk) {
             logger.info("in response");
             var tmpJSON = response.getBody();
             logger.info(tmpJSON);
-            var tmpQO = JSON.parse(tmpJSON);
 
-                logger.info("find");
+            try {
+                var tmpQO = JSON.parse(tmpJSON);
+            } catch (e) {
+                logger.info(e);
+            }
+
+
+            logger.info("find");
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
                 if (item.name == myQuest)
