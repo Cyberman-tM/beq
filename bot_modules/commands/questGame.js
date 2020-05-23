@@ -109,8 +109,6 @@ function intLoadQuest(gameTalk) {
             logger.info(tmpJSON);
             var tmpQO = JSON.parse(tmpJSON);
 
-            try
-            {
                 logger.info("find");
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
@@ -131,11 +129,6 @@ function intLoadQuest(gameTalk) {
             }
             logger.info("quest loaded!");
             infoPlayer.send("Quest received and stored as " + myQuest);
-        }
-        catch(error)
-        {
-            logger.info(error);
-        }
         });
     }
 
