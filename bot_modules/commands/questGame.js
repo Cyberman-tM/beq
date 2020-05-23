@@ -107,7 +107,7 @@ function startQuest(gameTalk)
     if (myQuest != undefined)
     {
         gameTalk = intLoadQuestObj(gameTalk, myQuest)
-        gameTalk.retMes = "Questionaire loaded, ready to start!";
+        gameTalk.retMes = "Questionaire loaded, ready to begin!";
     }
 
     return gameTalk;

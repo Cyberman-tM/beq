@@ -1,11 +1,11 @@
 var Discord = require('discord.js');
 var winston = require('winston');
 var logger = winston.createLogger({
-    level: 'info',
-    format: winston.format.json(),
-    transports: [
-        new winston.transports.Console()
-    ]
+	level: 'info',
+	format: winston.format.json(),
+	transports: [
+		new winston.transports.Console()
+	]
 });
 var beq = require('./beq_engine.js');
 var DData = require('./bot_modules/external/discord_data.js');
@@ -449,7 +449,7 @@ function processMessage(bot, messageDJS) {
 				var p_beSimple = args[9]; //Simple output - no frills, delete command message
 				var p_showS = args[10]; //Show sources (if available)
 				var p_showC = args[11]; //Show Category
-				var p_uid   = args[12]; //Unique Word ID
+				var p_uid = args[12]; //Unique Word ID
 				var p_special = args[13]; //Unlisted commands, directly given to the beq Engine, must be prefixed by "spec="
 
 				if (beqTalk.transLang == undefined)
@@ -564,7 +564,7 @@ function processMessage(bot, messageDJS) {
 		*/
 		//Warum hatte ich das?
 		//if (args[1] != undefined && args[1] != null)
-			//args[1] = args[1].toLowerCase();
+		//args[1] = args[1].toLowerCase();
 
 		var gameTalk = {};
 		var userGameID = userGame[messageDJS.author.userID];
@@ -574,22 +574,21 @@ function processMessage(bot, messageDJS) {
 		if (userGameID == undefined)
 			userGameID = null;
 
-		//Special cases: spectate, load
+		//Super special case: spectate - should supply its own game id
 		if (args[0] == "spectate")
-		{
 			if (args[1] != undefined)
 				userGameID = args[1];
+
+		//Super special case: load - load a questionaire from an URL
+		if (args[0] == "load") {
+			gameTalk.command = "load";
+			gameTalk.args = args.slice(1, 999).join(' ');
+
+			//Current "player" is needed for feedback, but we don't actually store anything
+			gameTalk.curPlayer = messageDJS.author;
+			gameTalk = questGame.GameEngine(gameTalk);
+			sndMessage = gameTalk.retMes;
 		}
-		else if (args[0] == "load")
-			{
-				gameTalk.command = "load";
-				gameTalk.args = args.slice(1, 999).join(' ');				
-				gameTalk.curPlayer = messageDJS.author;
-				
-				gameTalk = questGame.GameEngine(gameTalk);
-				gameData[userGameID] = gameTalk;
-				sndMessage = gameTalk.retMes;
-			}
 
 		//No user game ID yet - join or create?
 		if (userGameID == null) {
@@ -614,30 +613,31 @@ function processMessage(bot, messageDJS) {
 
 			//Now to check the rest of the commands
 			if (args[0] == "join" || args[0] == "create") {
-				gameTalk.command = "add";				
+				gameTalk.command = "add";
 			}
-			else if (args[0] == "targetpoints"){
+			else if (args[0] == "targetpoints") {
 				gameTalk.command = "settarget";
 				gameTalk.args = args[1];
 			}
 			else if (args[0].startsWith("::")) {
-				gameTalk.command = "sendanswer";				
+				gameTalk.command = "sendanswer";
 				gameTalk.args = args.slice(1, 999).join(' ');
 			}
-			else if (args[0] == "++")
-			{
+			else if (args[0] == "++") {
 				gameTalk.command = "getquestion";
 				gameTalk.args = 4;
 			}
-			else if (args[0] == "??")
-			{
+			else if (args[0] == "??") {
 				gameTalk.command = "NOP";
 				gameTalk.retMes = "Game ID: " + userGameID;
-			}				
-			else if (args[0] == "spectate")
-			{
+			}
+			else if (args[0] == "spectate") {
 				gameTalk.command = "spectate";
 				gameTalk.args = messageDJS.channel;
+			}
+			else if (args[0] == "start") {
+				gameTalk.command = "start";
+				gameTalk.args = args.slice(1, 999).join(' ');
 			}
 
 			gameTalk = questGame.GameEngine(gameTalk);
