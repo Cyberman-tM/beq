@@ -107,34 +107,32 @@ function intLoadQuest(gameTalk) {
             logger.info("in response");
             var tmpJSON = response.getBody();
             logger.info(tmpJSON);
-
+            
+            var tmpQO = {};
             try {
-                var tmpQO = JSON.parse(tmpJSON);
+                tmpQO = JSON.parse(tmpJSON);
             } catch (e) {
-                logger.info(e);
+                logger.info(e.name);
+                logger.info(e.message);
                 logger.info("fehler in json");
             }
 
-
-            logger.info("find");
             //Do we have a quest with this name already?
             var newQuest = allQuests.find(function (item) {
                 if (item.name == myQuest)
                     return true;
             });
-            logger.info("found");
+
             //Yes, overwrite
             if (newQuest != undefined)
                 newQuest.quest = tmpQO;
             else {
-                logger.info("pushing");
                 //No, create new entry in array
                 newQuest = {};
                 newQuest.name = myQuest;
                 newQuest.quest = tmpQO;
                 allQuests.push(newQuest);
             }
-            logger.info("quest loaded!");
             infoPlayer.send("Quest received and stored as " + myQuest);
         });
     }
