@@ -81,7 +81,6 @@ module.exports.GameEngine = function (gameTalk) {
 
     //Functions that need an active player
     if (getCurPlayerIndex(gameTalk) != -1) {
-        logger.info("curpl");
         if (gameTalk.command == "sendanswer")
             gameTalk = sendAnswer(gameTalk);
         else if (gameTalk.command == "getquestion")
@@ -107,7 +106,7 @@ function startQuest(gameTalk)
 
     if (myQuest != undefined)
     {
-        gameTalk = intLoadQuestObj(gameTalk, myQuest)
+        gameTalk = intLoadQuestObj(gameTalk, myQuest.quest);
         gameTalk.retMes = "Questionaire loaded, ready to begin!";
     }
 
