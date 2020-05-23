@@ -93,32 +93,34 @@ module.exports.GameEngine = function (gameTalk) {
 };
 
 function intLoadQuest(gameTalk) {
-    var myUrl = gameTalk.args.split(",")[1];
     var myQuest = gameTalk.args.split(",")[0];
-    gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
-    logger.info(myUrl);
+    var myUrl = gameTalk.args.split(",")[1];
 
-    requestify.get(myUrl).then(function (response) {
-        var tmpQO = JSON.parse(response.getBody());
+    //If we have nothing in myUrl, then something went wrong
+    if (myUrl != undefined) {
+        gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
 
-        //Do we have a quest with this name already?
-        var newQuest = allQuests.find(function (item) {
-            if (item.name == myQuest)
-                return true;
+        requestify.get(myUrl).then(function (response) {
+            var tmpQO = JSON.parse(response.getBody());
+
+            //Do we have a quest with this name already?
+            var newQuest = allQuests.find(function (item) {
+                if (item.name == myQuest)
+                    return true;
+            });
+            //Yes, overwrite
+            if (newQuest != undefined)
+                newQuest.quest = tmpQO;
+            else {
+                //No, create new entry in array
+                newQuest = {};
+                newQuest.name = myQuest;
+                newQuest.quest = tmpQO;
+                allQuests.push(newQuest);
+            }
+            gameTalk.curPlayer.send("Quest received and stored as " + myQuest);
         });
-        //Yes, overwrite
-        if (newQuest != undefined)
-            newQuest.quest= tmpQO;
-        else
-        {
-            //No, create new entry in array
-            newQuest = {};
-            newQuest.name = myQuest;
-            newQuest.quest = tmpQO;
-            allQuests.push(newQuest);
-        }
-        gameTalk.curPlayer.send("Quest received and stored as " + myQuest);
-    });
+    }
 
 }
 
@@ -576,11 +578,12 @@ function getCurPlayerData(gameTalk) {
 //Get current player's INDEX
 function getCurPlayerIndex(gameTalk) {
     var tmpRet = -1;
-    if (gameTalk.intPlayers.length > 0)
-        gameTalk.intPlayers.forEach(function (player, myIndex) {
-            if (player.playerObj.id == gameTalk.curPlayer.id)
-                tmpRet = myIndex;
-        });
+    if (gameTalk.intPlayers != undefined && gameTalk.intPlayer != null)
+        if (gameTalk.intPlayers.length > 0)
+            gameTalk.intPlayers.forEach(function (player, myIndex) {
+                if (player.playerObj.id == gameTalk.curPlayer.id)
+                    tmpRet = myIndex;
+            });
 
     return tmpRet;
 }
