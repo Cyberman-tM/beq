@@ -105,7 +105,9 @@ function intLoadQuest(gameTalk) {
 
         requestify.get(myUrl).then(function (response) {
             logger.info("in response");
-            var tmpQO = JSON.parse(response.getBody());
+            var tmpJSON = response.getBody();
+            logger.info(tmpJSON);
+            var tmpQO = JSON.parse(tmpJSON);
 
             try
             {
