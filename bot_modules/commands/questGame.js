@@ -66,6 +66,8 @@ module.exports.initGame = function (KDBJSon) {
 //Similar to the beqEngine, this is the GameEngine
 module.exports.GameEngine = function (gameTalk) {
 
+    //Default message, in case the function doesn't set anything...
+    gameTalk.retMes = "Everything fine, I guess?";
     //Generic functions that can be called by anyone
     if (gameTalk.command == "NOP") {
         //Do nothing, this is something that needs to be done in the bot
