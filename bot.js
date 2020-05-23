@@ -584,6 +584,7 @@ function processMessage(bot, messageDJS) {
 			{
 				gameTalk.command = "load";
 				gameTalk.args = args.slice(1, 999).join(' ');				
+				gameTalk.curPlayer = messageDJS.author;
 				
 				gameTalk = questGame.GameEngine(gameTalk);
 				gameData[userGameID] = gameTalk;
