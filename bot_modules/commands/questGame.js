@@ -563,7 +563,7 @@ function getCurPlayerData(gameTalk) {
 //Get current player's INDEX
 function getCurPlayerIndex(gameTalk) {
     var tmpRet = -1;
-    if (gameTalk.intPlayers != undefined && gameTalk.intPlayer != null)
+    if (gameTalk.intPlayers != undefined && gameTalk.intPlayers != null)
         if (gameTalk.intPlayers.length > 0)
             gameTalk.intPlayers.forEach(function (player, myIndex) {
                 if (player.playerObj.id == gameTalk.curPlayer.id)
