@@ -96,6 +96,7 @@ function intLoadQuest(gameTalk) {
     var myUrl = gameTalk.args.split(",")[1];
     var myQuest = gameTalk.args.split(",")[0];
     gameTalk.curPlayer.send("Loading Quest " + myQuest + " with URL " + myUrl);
+    logger.info(myUrl);
 
     requestify.get(myUrl).then(function (response) {
         var tmpQO = JSON.parse(response.getBody());
