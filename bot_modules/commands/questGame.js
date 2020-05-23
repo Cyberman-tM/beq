@@ -81,6 +81,7 @@ module.exports.GameEngine = function (gameTalk) {
 
     //Functions that need an active player
     if (getCurPlayerIndex(gameTalk) != -1) {
+        logger.info("curpl");
         if (gameTalk.command == "sendanswer")
             gameTalk = sendAnswer(gameTalk);
         else if (gameTalk.command == "getquestion")
