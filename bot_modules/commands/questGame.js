@@ -110,7 +110,8 @@ function intLoadQuest(gameTalk) {
             
             var tmpQO = {};
             try {
-                tmpQO = JSON.parse(tmpJSON);
+                //tmpQO = JSON.parse(tmpJSON);
+                tmpQO = tmpJSON;
             } catch (e) {
                 logger.info(e.name);
                 logger.info(e.message);
