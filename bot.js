@@ -163,11 +163,14 @@ function processMessage(bot, messageDJS) {
 	}
 	//React to special emoji
 	else if (cmdMagic == '<' && message.substring(1, 3) == "beq")
+	{
+		logger.info(message);
 		if (message.substring(0, 12) == ":beq_en2tlh:>") {
 			cmdMagic = '!';
 			message = message.substring(30);
 			message = "mugh en" + message;
 		}
+	}
 
 	var args = message.substring(0).split(' ');
 	var cmd = args[0];
