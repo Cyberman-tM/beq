@@ -162,10 +162,10 @@ function processMessage(bot, messageDJS) {
 		cmdMagic = '!';
 	}
 	//React to special emoji
-	else if (cmdMagic == ':' && message.substring(0, 3) == "beq")
-		if (message.substring(0, 11) == "beq_en2tlh:") {
+	else if (cmdMagic == '<' && message.substring(1, 3) == "beq")
+		if (message.substring(0, 12) == ":beq_en2tlh:>") {
 			cmdMagic = '"';
-			message = message.substring(11);
+			message = message.substring(12);
 			message = "mugh en" + message;
 		}
 
