@@ -162,7 +162,7 @@ function processMessage(bot, messageDJS) {
 		cmdMagic = '!';
 	}
 	//React to special emoji
-	else if (cmdMagic == '<' && message.substring(1, 3) == "beq")
+	else if (cmdMagic == '<' && message.substring(1, 4) == "beq")
 	{
 		logger.info(message);
 		logger.info(message.substring(0, 12));
