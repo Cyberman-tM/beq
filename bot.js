@@ -161,6 +161,13 @@ function processMessage(bot, messageDJS) {
 		message = "mugh " + message;
 		cmdMagic = '!';
 	}
+	//React to special emoji
+	else if (cmdMagic == ':' && message.substring(0, 3) == "beq")
+		if (message.substring(0, 11) == "beq_en2tlh:") {
+			cmdMagic = '"';
+			message = message.substring(11);
+			message = "mugh en" + message;
+		}
 
 	var args = message.substring(0).split(' ');
 	var cmd = args[0];
