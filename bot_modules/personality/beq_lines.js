@@ -15,7 +15,7 @@ module.exports.idleLines = JSON.stringify(
 	"Dal 'oH. qaD 'oHbe'...",
 	"pItlh",
 	"chaq qepHomDaq maghom'a'?",
-	"mu'mey Doy'? chatlh! SuvnIS mu'meymaj! mu'qaD veS matIv!"
+	"mu'mey Doy'? chatlh! SuvnIS mu'meymaj! mu'qaD veS wItIv!"
 ]);
  
  
