@@ -1,5 +1,5 @@
 /*
-   Auto-Categorize words from boQwI'
+   Create categories from boQwI'
 */
 var requestify = require('requestify');
 var catAPI = require('./../../external/cat_api.js');
@@ -14,8 +14,7 @@ var logger = winston.createLogger({
 });
 
 var bulkCatData = [];
-var bulkWordData = [];
-var bulkC2W = [];
+var bulkCmpCD = [];
 
 module.exports = function (beq_engine) {
     var regexLook = "";
@@ -23,13 +22,12 @@ module.exports = function (beq_engine) {
     var result = "";
 
     bulkCatData = [];
-    bulkWordData = [];
-    bulkC2W = [];
+    bulkCmpCD = [];
+
+    reCreateBaseCats();
 
     //This will probably take some time...
     beq_engine.KDBJSon.forEach(function (item) {
-        //In-memory, everything is normal, but we store uhmal
-        var chkWord = item.tlh + ";;" + item.type;
         var newCategory = "";
 
         //Primitive, but it should do
@@ -39,6 +37,8 @@ module.exports = function (beq_engine) {
             newCategory += ";being_boqwi";
         if (item.type.includes("archaic"))
             newCategory += ";Archaic_boqwi";
+        if (item.type.includes("body"))
+            newCategory += ";Bodypart_boqwi";
         if (item.type.includes("deriv"))
             newCategory += ";derived_boqwi";
         if (item.type.includes("reg"))
@@ -123,81 +123,31 @@ module.exports = function (beq_engine) {
                 newCategory += ";source_qephom_" + result[1];
         }
 
-
         //Besserer Weg?
         if (newCategory.substr(0, 1) == ';')
             newCategory = newCategory.substr(1, 9999);
 
-        newCategory = newCategory.toUpperCase();
         if (newCategory != "") {
-            var catFound = false;
             var newCats = newCategory.split(";");
             newCats.forEach(function (itemCat) {
-                catFound = false;
-                //Store as uhmal
-                chkWord = kTranscode.RCtlh2u(item.tlh) + ";;" + item.type;
 
                 //Add to category bulk array
                 createCat(itemCat, "en", "Taken from boQwI\'");
-                addBulkWord(chkWord);
-                addBulkC2W(itemCat, chkWord);
-
-                
-                //Create category (maybe it exists already, doesn't matter, we get the ID anyway)
-                /*
-                var createCatURL = catAPI.catCreateCat + "&catName=" + itemCat + "&catDLan=en" + "&catDesc=" + fromBoq;
-                requestify.get(createCatURL).then(function (response) {
-                    //Response should be the category id
-                    var KID = response.getBody();
-
-                    //Create word, get ID
-                    requestify.get(catAPI.catAddWord + "&fullWord=" + chkWord).then(function (response) {
-                        var WID = response.getBody();
-
-                        //And finally, add word to category
-                        requestify.get(catAPI.catW2C + "&WID=" + WID + "&KID=" + KID);
-                    });
-
-                });
-                */
             });
         }
     });
-    logger.info("before bulk");
-
-    logger.info(bulkWordData);
-    //Call bulk functions
-    //First: call with basic categories
-    //Then:  call with categories for boQwI' subcategories
-    //Next:  call with words we want to categorize
-    //Finally: call with category <> words
-    var boQbulk = bulkCatData;
-    logger.info(bulkWordData.length);
-
-    //TODO: combine pre-boq bulk + boq-bulk catdata -> one call only
-    reCreateBaseCats();
+       
     requestify.get(catAPI.catWakeup).then(function () {
-        logger.info("wakeup");
-        requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-            logger.info("createcat");
-            bulkCatData = boQbulk;
-            requestify.post(catAPI.catCreateCatBulk, bulkCatData).then(function () {
-                logger.info("bulkword");
-                requestify.post(catAPI.catAddWordBulk, bulkWordData).then(function () {
-                    requestify.post(catAPI.catW2CBulk, bulkC2W);
-                });
-            });
-        });
+        requestify.post(catAPI.catCreateCatBulk, bulkCatData);
     });
-
 };
-
 
 function reCreateBaseCats() {
     //Call order is intended - superkategories need to exist before the subkategorie is created
     createCat("sentence", "en", "Whole sentences that are canon.");
     createCat("source", "en", "First instance of the word, origin.");
     createCat("animal", "en", "Animal names and everything related");
+    createCat("body", "en", "Bodyparts");
     createCat("being", "en", "Beings, as opposed to things.");
     createCat("archaic", "en", "Words rarely used, or outdated versions.");
     createCat("derived", "en", "These words are probably canon, but we don\'t really have confirmation.");
@@ -220,19 +170,19 @@ function reCreateBaseCats() {
     createCat("sentence_proverb_secret", "en", "%%fill in better description");
     createCat("sentence_proverb_replacement", "en", "%%fill in better description");
     createCat("sentence_lyrics", "en", "Song texts.");
-}
-
-function addBulkWord(name) {
-    bulkWordData.push({ "n": name });
-}
-
-function addBulkC2W(nameCat, nameWord) {
-    bulkC2W.push({ "k": nameCat, "w": nameWord });
+    createCat("source_kli_maillist", "en", "%%fill in better description");
 }
 
 function createCat(name, langu, desc) {
     //No creation anymore, just collect for bulk creation
+    name = name.toUpperCase();
 
-    bulkCatData.push({ "n": name, "l": langu, "d": desc });
+    //Doppelte vermeiden - wird hier ev. langsamer, aber dann im Azure schneller
+    newObjStr = name + langu + desc;
+    if (bulkCmpCD.indexOf(newObjStr) < 0) {
+        bulkCatData.push({ "n": name, "l": langu, "d": desc });
+        bulkCmpCD.push(newObjStr);
+    }
+
 }
 

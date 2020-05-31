@@ -12,7 +12,7 @@ module.exports.isDerived = function (wType)
 		return true;
 	else
 		return false;
-}
+};
 
 //Check if entry is hyptothetical
 module.exports.isHyp = function (wType)
@@ -21,7 +21,24 @@ module.exports.isHyp = function (wType)
 		return true;
 	else
 		return false;
-}
+};
+
+//Check if entry is regional
+module.exports.isReg = function(wType)
+{
+	if (wType.indexOf("reg") != -1)
+		return true;
+	else
+		return false;
+};
+
+//Check if entry is alternate spelling
+module.exports.isAlt = function(wType) {
+	if (wType.indexOf("alt") != -1)
+		return true;
+	else
+		return false;
+};
 
 //Get (translate) word Type
 module.exports.getWType = function (wType, tranLang)
@@ -46,6 +63,8 @@ module.exports.getWType = function (wType, tranLang)
 		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Satz';
+		else if (wTypeS == 'reg')
+			wTypeL = 'Regional';
 		else if (wTypeS == 'excl')
 			wTypeL = 'Ausruf';
 		else if (wTypeS == 'adv')
@@ -101,6 +120,8 @@ module.exports.getWType = function (wType, tranLang)
 		}
 		else if (wTypeS == 'sen')
 			wTypeL = 'Sentence';
+		else if (wTypeS == 'reg')
+			wTypeL = 'Regional';
 		else if (wTypeS == 'excl')
 			wTypeL = 'Exclamation';
 		else if (wTypeS == 'adv')
@@ -144,7 +165,7 @@ module.exports.getWType = function (wType, tranLang)
 	   wTypeL += ' (' + module.exports.getSType(wType, tranLang) + ')';
 	
 	return wTypeL;
-}
+};
 
 //Get SENTENCE type - needed for KWOTD
 module.exports.getSType = function (wType, tranLang)
@@ -199,6 +220,8 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Lyrics";
 		else if (wTypeS == "archaic")
 			tmpRet = "Archaic";
+		else if (wTypeS == "bc")
+			tmpRet = "Beginner\'s conversation";
 		else
 			tmpRet = wTypeS;
 	}
@@ -242,9 +265,11 @@ module.exports.getSType = function (wType, tranLang)
 			tmpRet = "Lyrics";
 		else if (wTypeS == "archaic")
 			tmpRet = "Archaic";
+		else if (wTypeS == "bc")
+			tmpRet = "Beginner\'s conversation";
 		else
 			tmpRet = wTypeS;
 	}
 
 	return tmpRet;
-}
+};
