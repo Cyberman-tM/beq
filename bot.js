@@ -166,6 +166,8 @@ function processMessage(bot, messageDJS) {
 	{
 		cmdMagic = '!';
 		logger.info(message);
+		logger.info("sldkfj");
+		logger.info(message.substring(1,5));
 		message = message.substring(31);
 		if (message.substring(0, 12) == ":beq_en2tlh:") {
 			message = "mugh en" + message;
