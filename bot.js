@@ -142,6 +142,7 @@ function processMessage(bot, messageDJS) {
 	//              % => default GAME indicator
 	//              $ => Categorize words
 
+	logger.info(message.substring(1,5));
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
 	// Expected format: COMMAND ARG1 ARG2 ARG3
