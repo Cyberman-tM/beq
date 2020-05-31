@@ -176,11 +176,11 @@ function processMessage(bot, messageDJS) {
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2en:") {
 			message = message.substring(31);
-			message = "mugh tlh" + message + "en";
+			message = "mugh tlh" + message + " en";
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2de:") {
 			message = message.substring(31);
-			message = "mugh tlh" + message + "de";
+			message = "mugh tlh" + message + " de";
 		}
 	}
 
