@@ -182,8 +182,6 @@ function processMessage(bot, messageDJS) {
 			message = message.substring(31);
 			message = "mugh tlh" + message + " de";
 		}
-
-		logger.info(message);
 	}
 
 	var args = message.substring(0).split(' ');
