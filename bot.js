@@ -168,20 +168,22 @@ function processMessage(bot, messageDJS) {
 		cmdMagic = '!';
 		if (message.substring(0, 12) == ":beq_en2tlh:") {
 			message = message.substring(31);
-			message = "mugh en" + message;
+			message = "mugh en " + message;
 		}		
 		else if (message.substring(0, 12) == ":beq_de2tlh:") {
 			message = message.substring(31);
-			message = "mugh de" + message;
+			message = "mugh de " + message;
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2en:") {
 			message = message.substring(31);
-			message = "mugh tlh" + message + "en";
+			message = "mugh tlh " + message + " en";
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2de:") {
 			message = message.substring(31);
-			message = "mugh tlh" + message + "de";
+			message = "mugh tlh " + message + " de";
 		}
+
+		logger.info(message);
 	}
 
 	var args = message.substring(0).split(' ');
