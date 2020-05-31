@@ -29,7 +29,7 @@ var questGame = require('./bot_modules/commands/questGame.js');
 
 //Internal version - package.json would contain another version, but package.json should never reach the client,
 //so it's easier to just have another version number in here...
-var versInt = '2.2.6 - Beq engine forever!';
+var versInt = '2.3.0 - Beq engine forever! Emoji+';
 
 //Can be changed
 var defaultTranslation = 'en';
