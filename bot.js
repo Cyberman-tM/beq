@@ -142,6 +142,7 @@ function processMessage(bot, messageDJS) {
 	//              % => default GAME indicator
 	//              $ => Categorize words
 
+
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
 	// Expected format: COMMAND ARG1 ARG2 ARG3
@@ -162,20 +163,23 @@ function processMessage(bot, messageDJS) {
 		cmdMagic = '!';
 	}
 	//React to special emoji
-	else if (cmdMagic == '<' && message.substring(1, 5) == ":beq")
+	else if (cmdMagic == '<' && message.substring(1, 4) == "beq")
 	{
 		cmdMagic = '!';
-		message = message.substring(31);
 		if (message.substring(0, 12) == ":beq_en2tlh:") {
+			message = message.substring(31);
 			message = "mugh en" + message;
-		}
+		}		
 		else if (message.substring(0, 12) == ":beq_de2tlh:") {
+			message = message.substring(31);
 			message = "mugh de" + message;
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2en:") {
+			message = message.substring(31);
 			message = "mugh tlh" + message + "en";
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2de:") {
+			message = message.substring(31);
 			message = "mugh tlh" + message + "de";
 		}
 	}
