@@ -162,26 +162,20 @@ function processMessage(bot, messageDJS) {
 		cmdMagic = '!';
 	}
 	//React to special emoji
-	else if (cmdMagic == '<' && message.substring(1, 5) == "beq:")
+	else if (cmdMagic == '<' && message.substring(1, 5) == ":beq")
 	{
+		cmdMagic = '!';
+		message = message.substring(31);
 		if (message.substring(0, 12) == ":beq_en2tlh:") {
-			cmdMagic = '!';
-			message = message.substring(31);
 			message = "mugh en" + message;
 		}
 		else if (message.substring(0, 12) == ":beq_de2tlh:") {
-			cmdMagic = '!';
-			message = message.substring(31);
 			message = "mugh de" + message;
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2en:") {
-			cmdMagic = '!';
-			message = message.substring(31);
 			message = "mugh tlh" + message + "en";
 		}
 		else if (message.substring(0, 12) == ":beq_tlh2de:") {
-			cmdMagic = '!';
-			message = message.substring(31);
 			message = "mugh tlh" + message + "de";
 		}
 	}
