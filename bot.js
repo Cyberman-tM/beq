@@ -744,11 +744,10 @@ function BTalk(message) {
 async function playAudio(bot)
 {
 	var channel = bot.channels.get("386545741893468164");
-		channel.join().then(connection => {
+	var connVoice = await channel.join();	
 
-			connection.play('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');
-			connection.leave();		
+			connVoice.play('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');
+			connVoice.leave();		
 			
-		});
 
 }
