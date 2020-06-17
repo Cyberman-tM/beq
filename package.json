@@ -4,7 +4,6 @@
   "description": "helper bot, ask beq",
   "author": "Rejutka Lupex",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
     "discord.js": "^11.6.4",
     "dom-parser": "^0.1.6",
     "ffmpeg-static": "^4.2.4",
