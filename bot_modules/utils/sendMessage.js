@@ -4,7 +4,7 @@ module.exports = function(messageType, bot, channelID, messageString)
 {
    //This should work in discord.js
    if (messageType == 1)
-      bot.channels.fetch(channelID).send(messageString);   
+      bot.channels.fetch(channelID).then( channel => { channel.send(messageString)};
    else
       //Die silently...
       return;
