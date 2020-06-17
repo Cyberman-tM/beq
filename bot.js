@@ -746,8 +746,6 @@ async function playAudio(bot)
 	var channel = bot.channels.get("386545741893468164");
 	var connVoice = await channel.join();	
 
-			connVoice.playFile('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');
-			connVoice.leave();		
-			
+			connVoice.playFile('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');					
 
 }
