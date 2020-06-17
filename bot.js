@@ -749,3 +749,4 @@ async function playAudio(bot)
 			connVoice.playFile('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');					
 
 }
+	
