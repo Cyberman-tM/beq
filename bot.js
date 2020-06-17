@@ -277,7 +277,9 @@ function processMessage(bot, messageDJS) {
 					else
 						sndMessage = rules.de;
 				break;
-
+			case 'yIchu\'':
+				var voiceCon = bot.channels.get('386545741893468164').join();
+				break;
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 			case 'CMDLIST':
 			case 'cmdlist':
