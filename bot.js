@@ -743,10 +743,10 @@ function BTalk(message) {
 
 async function playAudio(bot)
 {
-	var channel = bot.channels.fetch("386545741893468164");
+	var channel = await bot.channels.fetch("386545741893468164");
 	var connVoice = await channel.join();	
 
-			await connVoice.playFile('./gowron_Qapla.mp3');
+			await connVoice.play('./gowron_Qapla.mp3');
 			await connVoice.leave();
 
 }
