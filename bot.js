@@ -743,7 +743,7 @@ function BTalk(message) {
 
 async function playAudio()
 {
-		const channel = bot.channels.cache.get("386545741893468164");					
+	var channel = bot.channels.get("386545741893468164");
 		channel.join().then(connection => {
 
 			connection.play('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');
