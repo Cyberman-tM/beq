@@ -278,7 +278,7 @@ function processMessage(bot, messageDJS) {
 						sndMessage = rules.de;
 				break;
 			case 'yIchu\'':
-				playAudio();
+				playAudio(bot);
 				break;
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 			case 'CMDLIST':
@@ -741,7 +741,7 @@ function BTalk(message) {
 }
 
 
-async function playAudio()
+async function playAudio(bot)
 {
 	var channel = bot.channels.get("386545741893468164");
 		channel.join().then(connection => {
