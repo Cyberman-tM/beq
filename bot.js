@@ -279,6 +279,8 @@ function processMessage(bot, messageDJS) {
 				break;
 			case 'yIchu\'':
 				var voiceCon = bot.channels.get('386545741893468164').join();
+				voiceCon.play('https://svb.tlhingan.at/Misc/Letters/MP3_files/Klingon_sounds_Q_lg.mp3');
+				voiceCon.leave();
 				break;
 			//Liste der Befehle - muß von Hand aktualisiert werden!
 			case 'CMDLIST':
