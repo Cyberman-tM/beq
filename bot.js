@@ -746,6 +746,6 @@ async function playAudio(bot)
 	var channel = bot.channels.get("386545741893468164");
 	var connVoice = await channel.join();	
 
-			connVoice.playFile('./gowron_Qapla.mp3');
+			await connVoice.playFile('./gowron_Qapla.mp3');
 
 }
