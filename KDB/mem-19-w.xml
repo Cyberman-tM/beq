@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -768,7 +768,9 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This sounds like the Chinese word for "crooked" (彎). </column>
+      <column name="hidden_notes">This sounds like the Chinese word for "crooked" (彎).
+
+Obi-Wan Kenobi is a character in Star Wars.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -803,7 +805,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
           <column name="synonyms"></column>
           <column name="antonyms">{wan:v}</column>
           <column name="see_also">{SIH:v}, {job:v}</column>
-          <column name="notes"></column>
+          <column name="notes">This verb can be used for the raising of eyebrows (see {Huy':n}).[2]</column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
           <column name="notes_sv"></column>
@@ -829,7 +831,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {KLI mailing list 2012.01.26:src}</column>
+          <column name="source">[1] {KLI mailing list 2012.01.26:src}, [2] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1096,7 +1098,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="part_of_speech">n</column>
       <column name="definition">months from now</column>
       <column name="definition_de">in ... Monaten</column>
-      <column name="definition_fa">ماه ها از حالا [AUTOTRANSLATED]</column>
+      <column name="definition_fa">... ماه بعد</column>
       <column name="definition_sv">om ... månader</column>
       <column name="definition_ru">через несколько месяцев [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">（幾個）月後</column>
@@ -2289,7 +2291,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
           <column name="notes_pt">Os klingons consideram o número 13 especial por causa do modo como costumavam contar. O número decimal 12 costumava ser expresso como 3 × 3 + 3, e então o sistema ficou complicado. Essa associação permaneceu mesmo depois que os klingons passaram para o sistema de números decimais. [AUTOTRANSLATED]</column>
           <column name="notes_fi">Klingonit pitävät lukua 13 erityisenä sen vuoksi, miten he laskivat. Desimaaliluku 12 ilmaistiin aikanaan 3 × 3 + 3, ja sitten järjestelmä muuttui monimutkaiseksi. Tämä yhdistys säilyi silloinkin, kun Klingons siirtyi desimaalijärjestelmään. [AUTOTRANSLATED]</column>
           <column name="hidden_notes"></column>
-          <column name="components">{wa':n:num}, {maH:n:2,num}, {wej:n:num}</column>
+          <column name="components">{wa'maH:n:num}, {wej:n:num}</column>
           <column name="examples">
 ▶ {qatlh Suvbe' chaH? wa'maH wej.:sen:nolink} "Why aren't they fighting? It's complicated."[1]</column>
           <column name="examples_de"></column>
@@ -2666,7 +2668,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="definition_pt">ainda não</column>
       <column name="definition_fi">ei vielä</column>
       <column name="synonyms"></column>
-      <column name="antonyms">{wejHa':adv:hyp}</column>
+      <column name="antonyms">{wejHa':adv}</column>
       <column name="see_also">{tagha':adv}, {not:adv}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
@@ -2696,6 +2698,49 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">wejHa'</column>
+          <column name="part_of_speech">adv:deriv</column>
+          <column name="definition">already, before now, as of now</column>
+          <column name="definition_de">schon, vor jetzt, zu diesem Zeitpunkt</column>
+          <column name="definition_fa">قبلا ، قبل از الان ، از الان [AUTOTRANSLATED]</column>
+          <column name="definition_sv">redan, innan nu, från och med nu [AUTOTRANSLATED]</column>
+          <column name="definition_ru">уже, до сих пор, на данный момент [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">從現在開始，到現在為止 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">já, antes de agora, a partir de agora [AUTOTRANSLATED]</column>
+          <column name="definition_fi">jo, ennen tätä, tästä lähtien</column>
+          <column name="synonyms"></column>
+          <column name="antonyms">{wej:adv}</column>
+          <column name="see_also">{-Ha':v:suff}, {tagha'Ha':adv:hyp}</column>
+          <column name="notes">A better (though more awkward) characterization of this word is "before or as of a time referenced in the sentence or context". As with "already", this word would be used if one intended to explicitly indicate a change of state or conditions. It does not carry the connotation of impatience or exasperation expressed by "already" which it has in some contexts (such as "Stop already with the fidgeting").[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">wej</column>
@@ -3181,7 +3226,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="part_of_speech">n</column>
       <column name="definition">months ago</column>
       <column name="definition_de">vor ... Monaten</column>
-      <column name="definition_fa">ماه ها قبل [AUTOTRANSLATED]</column>
+      <column name="definition_fa">... ماه پیش</column>
       <column name="definition_sv">för ... månader sedan</column>
       <column name="definition_ru">несколько месяцев назад [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">（幾個）月前</column>
@@ -3353,7 +3398,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="part_of_speech">n</column>
       <column name="definition">candle</column>
       <column name="definition_de">Kerze</column>
-      <column name="definition_fa">شمع [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شمع</column>
       <column name="definition_sv">ljus (stearinljus o.dyl.)</column>
       <column name="definition_ru">свеча</column>
       <column name="definition_zh_HK">蠟燭</column>
@@ -3576,7 +3621,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="definition_fi">kangas, tekstiili</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sut:n}, {paSrIq:n}</column>
+      <column name="see_also">{Sut:n}, {paSrIq:n}, {SupDIng:n}</column>
       <column name="notes">This can be used for textiles or fabric in clothing, sheets, towels, and so on, but generally not for carpets or rugs (except for thin ones).[1]</column>
       <column name="notes_de">Dies kann für Textilien oder Stoffe in Kleidung, Laken, Handtüchern usw. verwendet werden, im Allgemeinen jedoch nicht für Teppiche (außer für dünne).[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این می تواند برای پارچه یا پارچه در لباس ، ورق ، حوله ، و غیره استفاده شود ، اما به طور کلی برای فرش یا فرش (به جز موارد نازک) استفاده نمی شود.[1] [AUTOTRANSLATED]</column>
@@ -4552,7 +4597,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="part_of_speech">n</column>
       <column name="definition">mathematical equation</column>
       <column name="definition_de">mathematische Gleichung</column>
-      <column name="definition_fa">معادله ریاضی [AUTOTRANSLATED]</column>
+      <column name="definition_fa">معادله ریاضی</column>
       <column name="definition_sv">matematisk ekvation [AUTOTRANSLATED]</column>
       <column name="definition_ru">математическое уравнение [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">數學方程</column>
@@ -5102,14 +5147,14 @@ Tämän komennon leikattu klingonimuoto olisi {wIy cha'!:sen@@wIy:n, cha':v} [AU
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wem:v}, {wem:n}, {'Iq:v}, {mIt:v}</column>
-      <column name="notes">{bIwogh:sen:nolink} might be translated "You go too far."</column>
-      <column name="notes_de">{bIwogh:sen:nolink} könnte übersetzt werden "Sie gehen zu weit." [AUTOTRANSLATED]</column>
-      <column name="notes_fa">{bIwogh:sen:nolink} ممکن است ترجمه شود "شما خیلی زیاد بروید". [AUTOTRANSLATED]</column>
-      <column name="notes_sv">{bIwogh:sen:nolink} kan översättas "Du går för långt." [AUTOTRANSLATED]</column>
-      <column name="notes_ru">{bIwogh:sen:nolink} можно перевести как «Вы идете слишком далеко». [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">{bIwogh:sen:nolink}可能會翻譯為「您走得太遠了」。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">{bIwogh:sen:nolink} pode ser traduzido como "Você vai longe demais". [AUTOTRANSLATED]</column>
-      <column name="notes_fi">{bIwogh:sen:nolink} voidaan kääntää "Sinä menet liian pitkälle". [AUTOTRANSLATED]</column>
+      <column name="notes">{bIwogh:sen:nolink} is probably best translated idiomatically as "You go too far."</column>
+      <column name="notes_de">{bIwogh:sen:nolink} wird wahrscheinlich am besten idiomatisch als "Sie gehen zu weit" übersetzt. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">{bIwogh:sen:nolink} احتمالاً بهتر است اصطلاحی به صورت "شما خیلی زیاد می روید" ترجمه شده است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">{bIwogh:sen:nolink} översätts antagligen bäst idiomatiskt som "Du går för långt." [AUTOTRANSLATED]</column>
+      <column name="notes_ru">{bIwogh:sen:nolink}, вероятно, лучше всего идиоматически перевести как «Вы зашли слишком далеко». [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">{bIwogh:sen:nolink}最好用慣用語翻譯為“您走得太遠”。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">{bIwogh:sen:nolink} provavelmente é melhor traduzido idiomicamente como "Você foi longe demais". [AUTOTRANSLATED]</column>
+      <column name="notes_fi">{bIwogh:sen:nolink} on todennäköisesti paras kääntää idiomaattisesti sanalla "Sinä menet liian pitkälle". [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -5200,7 +5245,9 @@ Tämän komennon leikattu klingonimuoto olisi {wIy cha'!:sen@@wIy:n, cha':v} [AU
       <column name="components"></column>
       <column name="examples">
 ▶ {labmeH 'evnagh Se' lo' tlhIngan QumwI'. janmey ngo' lulo'lu'DI' pIj jabbI'ID nISpu' woj.:sen:nolink}
-  "A Klingon communicator sends a signal through subspace radio. Older models were susceptible to radiation."[2]</column>
+  "A Klingon communicator sends a signal through subspace radio. Older models were susceptible to radiation."[2]
+▶ {woj tlhuD tarngeb:sen@@woj:n, tlhuD:v, tarngeb:n} "uranium is radioactive"[3]
+▶ {woj tlhuDbogh tamler:n@@woj:n, tlhuD:v, -bogh:v, tamler:n} "(a) radioactive element"[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5216,7 +5263,7 @@ Tämän komennon leikattu klingonimuoto olisi {wIy cha'!:sen@@wIy:n, cha':v} [AU
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}, [2] {SkyBox 19:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {SkyBox 19:src}, [3] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5777,7 +5824,7 @@ See under {moHaq:n} for the verb prefixes.</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">There are nine types of verb suffixes in Klingon, in addition to the rovers ({lengwI':n}), which do not have a fixed position relative to the other suffix types.
+      <column name="notes_fi">Klingonissa on yhdeksän verbipäätetyyppiä, joita on aina käytettävä oikeassa järjestyksessä. Lisäksi on ns. seikkailijoita ({lengwI':n}), joilla ei ole omaa paikkaa järjestyksessä.
 
 Päätetyyppi 1: itseään/toisiaan
 ▶ {-'egh:v:suff}

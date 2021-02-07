@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -540,7 +540,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
       <column name="definition_ru">Зарабатывать, заслуживать, работать на кого-то</column>
       <column name="definition_zh_HK">賺</column>
       <column name="definition_pt">ganhar, trabalhar para (ativamente)</column>
-      <column name="definition_fi">ansaita, työskennellä (aktiivisesti) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">ansaita, työskennellä jonkin saavuttamiseksi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIgh:n:2}, {Qap:v:1}, {Qu':n}, {vum:v}, {Qoyje':n}</column>
@@ -1379,6 +1379,8 @@ In Japanese, "baka" means "fool" or "idiot".</column>
 ▶ {qol'om:n}
 ▶ {SIrlIy:n}
 ▶ {Sorpuq:n}
+▶ {tarngeb:n}
+▶ {targho'nI':n}
 ▶ {velSo':n}
 ▶ {velSo' 'uSqan:n}
 ▶ {yuHSIQ:n}
@@ -1397,6 +1399,8 @@ In Japanese, "baka" means "fool" or "idiot".</column>
 ▶ {qol'om:n}
 ▶ {SIrlIy:n}
 ▶ {Sorpuq:n}
+▶ {tarngeb:n}
+▶ {targho'nI':n}
 ▶ {velSo':n}
 ▶ {velSo' 'uSqan:n}
 ▶ {yuHSIQ:n}
@@ -1414,6 +1418,8 @@ In Japanese, "baka" means "fool" or "idiot".</column>
 ▶ {qol'om:n}
 ▶ {SIrlIy:n}
 ▶ {Sorpuq:n}
+▶ {tarngeb:n}
+▶ {targho'nI':n}
 ▶ {velSo':n}
 ▶ {velSo' 'uSqan:n}
 ▶ {yuHSIQ:n}
@@ -1634,7 +1640,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes_zh_HK">這是一個數學術語。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é um termo matemático. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on matematiikan termi. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Victor Basta is a character in the movie "Airplane!" He is asked, "What's our vector, victor?"</column>
+      <column name="hidden_notes">Victor Basta is a character in the movie "Airplane!" He is asked, "What's our vector, Victor?"</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3609,6 +3615,49 @@ Sanoa "kun olin X-vuotias", rakennus on esimerkiksi {qaStaHvIS DISwIj javDIch...
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ber</column>
+      <column name="part_of_speech">v:i_c</column>
+      <column name="definition">ovulate, undergo ovulation</column>
+      <column name="definition_de">den Eisprung haben, Vorgang des Follikelsprungs</column>
+      <column name="definition_fa">تخمک گذاری ، تخمک گذاری [AUTOTRANSLATED]</column>
+      <column name="definition_sv">ägglossning, genomgå ägglossning [AUTOTRANSLATED]</column>
+      <column name="definition_ru">овулировать, пройти овуляцию [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">排卵，排卵 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ovular, sofrer ovulação [AUTOTRANSLATED]</column>
+      <column name="definition_fi">ovuloida</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{chI:v}, {chI'ID:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">bergh</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be irritable, be irritated</column>
@@ -3779,6 +3828,49 @@ Sanoa "kun olin X-vuotias", rakennus on esimerkiksi {qaStaHvIS DISwIj javDIch...
       <column name="search_tags_fi"></column>
       <column name="source">[1] {HQ 12.2, Jun. 2003:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bertlham taymey</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">epilogue</column>
+          <column name="definition_de">Nachwort</column>
+          <column name="definition_fa">فرجام [AUTOTRANSLATED]</column>
+          <column name="definition_sv">epilog [AUTOTRANSLATED]</column>
+          <column name="definition_ru">эпилог [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">結語 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">epílogo [AUTOTRANSLATED]</column>
+          <column name="definition_fi">epilogi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">See {taymey:n} for an explanation.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{bertlham:n}, {taymey:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">betgham</column>
@@ -4030,6 +4122,135 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">bewSom</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">mixture of ingredients for producing fermented {HIq:n}</column>
+      <column name="definition_de">Grundstoffe für {HIq:n}</column>
+      <column name="definition_fa">مخلوطی از مواد برای تولید تخمیر شده {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_sv">blandning av ingredienser för framställning av fermenterad {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_ru">смесь ингредиентов для производства ферментированных {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">用於生產發酵{HIq:n}的成分混合物 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">mistura de ingredientes para a produção de fermentado {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_fi">käyneen {HIq:n}in tuottamiseen käytetty seos</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{bewSom pa':n}, {bewSom qach:n}</column>
+      <column name="notes">This is a mixture of ingredients that, after a bit of time, produces fermented {HIq:n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bewSom pa'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">brewery (room)</column>
+          <column name="definition_de">Brauerei (Zimmer)</column>
+          <column name="definition_fa">آبجوسازی (اتاق) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">bryggeri (rum) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">пивоварня (комната) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">啤酒廠（房間） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cervejaria (sala) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">panimo (huone)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{bewSom qach:n}</column>
+          <column name="notes">This might have been shortened from something like {bewSom roghmeH qegh pa':n:nolink}, but this isn't certain.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{bewSom:n}, {pa':n:1}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bewSom qach</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">brewery (building)</column>
+          <column name="definition_de">Brauerei (Gebäude)</column>
+          <column name="definition_fa">آبجوسازی (ساختمان) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">bryggeri (byggnad) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">пивоварня (здание) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">啤酒廠（建築） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cervejaria (edifício) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">panimo (rakennus)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{bewSom pa':n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{bewSom:n}, {qach:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bey</column>
@@ -6658,7 +6879,7 @@ It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the
       <column name="definition_ru">brak'lul (дублирование в частях тела)</column>
       <column name="definition_zh_HK">brak'lul（身體部位冗餘） [AUTOTRANSLATED]</column>
       <column name="definition_pt">brak'lul (redundância em partes do corpo)</column>
-      <column name="definition_fi">brak'lul (ruumiinosien redundanssi) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">brak'lul (ruumiinosien redundanssi)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{raq:v}</column>
@@ -7102,7 +7323,9 @@ It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the
       <column name="notes_zh_HK">例如，該詞將用於描述盒子的內部底部。盒子的{bIS'ub:n:nolink}的另一面是{pIrmuS:n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Por exemplo, esta palavra seria usada para descrever o fundo interno de uma caixa. A outra face da caixa {bIS'ub:n:nolink} é seu {pIrmuS:n}.</column>
       <column name="notes_fi">Tätä sanaa käytetään esimerkiksi kuvaamaan laatikon sisäosaa. Laatikon {bIS'ub:n:nolink} toinen puoli on sen {pIrmuS:n}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">In Ovid's "Metamorphoses", Pyramus and Thisbe are lovers who are separated by being on opposite sides of a wall.</column>
+      <column name="hidden_notes">In Ovid's "Metamorphoses", Pyramus and Thisbe are lovers who are separated by being on opposite sides of a wall.
+
+Speculation: This may have been intended to be {tIS'ub:n:nolink} but was changed due to a transcription error (or another reason).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7166,6 +7389,55 @@ On {KGT p.132:src}, the word is written as {tIb:v:nolink} instead of {bIt:v:noli
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {KGT p.132:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">bItaHrup'a'?</column>
+      <column name="part_of_speech">sen:phr</column>
+      <column name="definition">Are you prepared to continue?</column>
+      <column name="definition_de">Bist du bereit weiterzumachen? [AUTOTRANSLATED]</column>
+      <column name="definition_fa">آیا برای ادامه کار آماده هستید؟ [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Är du beredd att fortsätta? [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Вы готовы продолжить? [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">您準備好繼續嗎？ [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Você está preparado para continuar? [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Oletko valmis jatkamaan?</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an exclamation which serves a similar role to "oh, yeah?" in expressing disbelief or defiance. However, it differs from "oh, yeah?" in that it lacks the sense of exasperation. (Among members of the Federation, "oh, yeah?" is said in the course of an argument when one can think of nothing better to say to make one's next point. For Klingons, exasperation is not an admirable characteristic.) If one Klingon says this to another, one should either stand back or get closer, depending on whether one thinks a fight or stimulating round of curse warfare is about to begin.[1]
+
+The expression carries the element of defiance only when the pronominal prefix is second-person. (The form used when addressing a group is {SutaHrup'a'?:sen@@Su-:v, taH:v:1, -rup:v, -'a':v}) Even with a second-person prefix, in a context which is clearly nonconfrontational, the phrase {bItaHrup'a'?:sen:nolink} or {SutaHrup'a'?:sen:nolink} could be used to convey its literal meaning, "Are you ready to continue?" However, the defiant sense of the expression is more common.[1]
+
+Maltz felt sure that there is a connection between this expression and the expletive {taHqeq:excl}, but he couldn't explain what it was.[1]
+
+For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{bI-:v}, {taH:v:1}, {-rup:v}, {-'a':v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">oh, yeah?, SutaHrup'a'?</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {HQ 12.3, p.10, Sept. 2003:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7647,6 +7919,49 @@ On {KGT p.132:src}, the word is written as {tIb:v:nolink} instead of {bIt:v:noli
       <column name="search_tags_fi"></column>
       <column name="source">[1] {HQ 12.2, Jun. 2003:src}, [2] {paq'batlh p.140-141:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bI'reS taymey</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">prologue</column>
+          <column name="definition_de">Vorwart</column>
+          <column name="definition_fa">پیش گفتار [AUTOTRANSLATED]</column>
+          <column name="definition_sv">prolog [AUTOTRANSLATED]</column>
+          <column name="definition_ru">пролог [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">序幕 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">prólogo [AUTOTRANSLATED]</column>
+          <column name="definition_fi">prologi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">See {taymey:n} for an explanation.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{bI'reS:n}, {taymey:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bo</column>
@@ -7762,7 +8077,9 @@ Kun sitä käytetään {-lu':v}:n kanssa, tämä etuliite tarkoittaa "Joku (mä�
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">matches lip movement</column>
+      <column name="hidden_notes">Matches lip movement.
+
+For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" as {logh bobcho':n@@logh:n, bobcho':n}.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7772,7 +8089,7 @@ Kun sitä käytetään {-lu':v}:n kanssa, tämä etuliite tarkoittaa "Joku (mä�
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">capsule</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7780,7 +8097,7 @@ Kun sitä käytetään {-lu':v}:n kanssa, tämä etuliite tarkoittaa "Joku (mä�
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Pittsburgh Art Tour:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -10850,6 +11167,49 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">buq'ach</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">trombone-like instrument</column>
+      <column name="definition_de">Posaunenartiges Instrument</column>
+      <column name="definition_fa">ساز ترومبون مانند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">trombonliknande instrument [AUTOTRANSLATED]</column>
+      <column name="definition_ru">тромбоноподобный инструмент [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">長號樣樂器 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">instrumento semelhante ao trombone [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs pasuunaa muistuttava soitin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{nItlh gheb:n}</column>
+      <column name="notes">A Terran trombone would be a {tera' buq'ach:n@@tera':n, buq'ach:n}.[1]</column>
+      <column name="notes_de">Eine irdische Posaune wäre ein {tera' buq'ach:n@@tera':n, buq'ach:n}.[1]</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">The "sackbut" ({buq:n}, {'ach:conj}) is a type of trombone.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

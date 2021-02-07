@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -874,7 +874,7 @@ Mikä tahansa paikka, joka on nimenomaisesti tarkoitettu tietyn tehtävän tai t
       <column name="part_of_speech">n</column>
       <column name="definition">line</column>
       <column name="definition_de">Linie, Strich</column>
-      <column name="definition_fa">خط [AUTOTRANSLATED]</column>
+      <column name="definition_fa">خط</column>
       <column name="definition_sv">linje [AUTOTRANSLATED]</column>
       <column name="definition_ru">линия [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">直線</column>
@@ -2406,7 +2406,7 @@ Não confunda isso com uma sociedade no sentido cultural, para a qual veja {nugh
       <column name="definition_fa">همکاری کردن [AUTOTRANSLATED]</column>
       <column name="definition_sv">samarbeta</column>
       <column name="definition_ru">сотрудничать</column>
-      <column name="definition_zh_HK">合作 [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">合作</column>
       <column name="definition_pt">colaborar</column>
       <column name="definition_fi">tehdä yhteistyötä</column>
       <column name="synonyms"></column>
@@ -2467,7 +2467,7 @@ Não confunda isso com uma sociedade no sentido cultural, para a qual veja {nugh
       <column name="definition_fa">دامنه، دارایی ها، قلمرو [AUTOTRANSLATED]</column>
       <column name="definition_sv">domän, egendom, besittning, territorium</column>
       <column name="definition_ru">владения, земля, территория</column>
-      <column name="definition_zh_HK">域名、館藏、領土 [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">領域、家當、領土</column>
       <column name="definition_pt">domínio, explorações, território</column>
       <column name="definition_fi">maa-alue, kiinteistö</column>
       <column name="synonyms"></column>
@@ -3571,7 +3571,7 @@ An earlier translation of this phrase appears in UPN's Star Trek 25th Anniversar
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Coincidence: read it backwards.</column>
       <column name="components">{yIn:n}, {roH:n:hyp}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4580,7 +4580,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="definition_de">Vertrauen ist gut, Kontrolle ist besser.</column>
       <column name="definition_fa">اعتماد کنید، اما تأیید کردن [AUTOTRANSLATED]</column>
       <column name="definition_sv">Lita på men verifiera. [AUTOTRANSLATED]</column>
-      <column name="definition_ru">TRANSLATE</column>
+      <column name="definition_ru">доверяй, но проверяй.</column>
       <column name="definition_zh_HK">信任但要驗證。 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Confie, mas verifique.</column>
       <column name="definition_fi">Luota, mutta varmista.</column>
@@ -4753,7 +4753,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="definition_de">Erntefest</column>
       <column name="definition_fa">جشنواره برداشت [AUTOTRANSLATED]</column>
       <column name="definition_sv">skördefest [AUTOTRANSLATED]</column>
-      <column name="definition_ru">TRANSLATE</column>
+      <column name="definition_ru">Праздник урожая</column>
       <column name="definition_zh_HK">豐收節日 [AUTOTRANSLATED]</column>
       <column name="definition_pt">festival da colheita</column>
       <column name="definition_fi">sadonkorjuujuhla</column>
@@ -5204,7 +5204,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {yIyong 'ej pa' yIQam.:sen@@yI-:v, yong:v, 'ej:conj, pa':n:2, yI-:v, Qam:v} "Get in and stand there!"[2]</column>
+▶ {yIyong 'ej pa' yIQam!:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5220,7 +5220,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {CK:src}</column>
+      <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

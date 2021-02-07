@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -2279,13 +2279,11 @@ The object was confirmed during the Q &amp; A session.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {pa'vo' pagh leghlu'.:sen:nolink} "The room has no view."</column>
-      <column name="examples_de">
-▶ {pa'vo' pagh leghlu'.:sen:nolink} "Das Zimmer hat keinen Ausblick."</column>
+▶ {pa'vo' pagh leghlu'.:sen}</column>
+      <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
-      <column name="examples_ru">
-▶ {pa'vo' pagh leghlu'.:sen:nolink} "Комната не имеет вида."</column>
+      <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -2611,6 +2609,51 @@ The object was confirmed during the Q &amp; A session.</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">lenmeS rop</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">lenmes disease</column>
+      <column name="definition_de">Lenmes-Krankheit</column>
+      <column name="definition_fa">بیماری لنمس [AUTOTRANSLATED]</column>
+      <column name="definition_sv">lenmes sjukdom [AUTOTRANSLATED]</column>
+      <column name="definition_ru">болезнь ленмеса [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">倫姆斯病 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">doença de lenmes [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs sairaus, lenmes-tauti</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a disease caused by a bacterium. Its symptoms include high fever, weakness, and perhaps abdominal pain, headaches, and a skin rash. Klingons tend to avoid talking about it.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">This was requested as a native Klingon equivalent for typhoid fever.
+
+Probably a coincidence: Lieven Lemnes was the author of "Diseases: Their Symptoms and Cures".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">typhoid fever</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">lavantauti</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3552,7 +3595,7 @@ Tätä sanaa voidaan käyttää kuvaannollisesti. On idioomi {let mInDu'Daj; Sep
       <column name="notes_zh_HK">這是金屬化學元素，符號為Hg，原子序數為80。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o elemento químico metálico com o símbolo Hg e o número atômico 80. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on metallinen kemiallinen alkuaine, jolla on symboli Hg ja atominumero 80. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Read backwards, this is {ngIb tel:n@@ngIb:n:1, tel:n} "ankle wings", a reference to the talaria (winged sandals) of the god Mercury.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6347,41 +6390,18 @@ Tarvittaessa matemaattisessa keskustelussa etuliitettä ei käytetä, vaikka nim
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hov leng:n}, {logh mIn:n}</column>
-      <column name="notes">This is the name of a Federation space station.
-
-The text of {SkyBox 99:src} reads:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink}</column>
-      <column name="notes_de">Dies ist der Name einer Raumstation der Föderation.
-
-Der Text von {SkyBox 99:src} lautet:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این نام یک ایستگاه فضایی فدراسیون است.
-
-متن {SkyBox 99:src} می خواند:
-{loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är namnet på en Federations rymdstation.
-
-Texten till {SkyBox 99:src} lyder:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это название космической станции Федерации.
-
-Текст {SkyBox 99:src} гласит:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是聯邦空間站的名稱。
-
-{SkyBox 99:src}的文本為：
-▶{loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o nome de uma estação espacial da Federação.
-
-O texto de {SkyBox 99:src} diz:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink} [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on federaation avaruusaseman nimi.
-
-{SkyBox 99:src}:n teksti kuuluu:
-▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink}</column>
+      <column name="notes">This is the name of a Federation space station.</column>
+      <column name="notes_de">Dies ist der Name einer Raumstation der Föderation.</column>
+      <column name="notes_fa">این نام یک ایستگاه فضایی فدراسیون است.</column>
+      <column name="notes_sv">Detta är namnet på en Federations rymdstation.</column>
+      <column name="notes_ru">Это название космической станции Федерации.</column>
+      <column name="notes_zh_HK">這是聯邦空間站的名稱。</column>
+      <column name="notes_pt">Este é o nome de uma estação espacial da Federação.</column>
+      <column name="notes_fi">Tämä on federaation avaruusaseman nimi.</column>
       <column name="hidden_notes"></column>
       <column name="components">{logh Hop:n}, {Hut:n:num}, {tengchaH:n}</column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {loS... qIb HeHDaq, 'u' SepmeyDaq Sovbe'lu'bogh lenglu'meH He ghoSlu'bogh retlhDaq 'oHtaH. HaDlu'meH, QuSlu'meH, SuDlu'meH lojmIt Da logh Hop Hut tengchaH. vaj loghDaq lenglaHtaH Humanpu'. veH Qav 'oH logh'e'.:sen:nolink}[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -7452,7 +7472,7 @@ Joillakin verbiliitteillä on tarkka merkitys käytettäessä tätä verbiä, ku
       <column name="_id"></column>
       <column name="entry_name">lopno'</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">party, celebration</column>
+      <column name="definition">party, celebration (a specific type of Klingon party or celebration)</column>
       <column name="definition_de">Feier, Fest, "offenes Haus"</column>
       <column name="definition_fa">حزب، جشن [AUTOTRANSLATED]</column>
       <column name="definition_sv">fest, firande</column>
@@ -7463,15 +7483,15 @@ Joillakin verbiliitteillä on tarkka merkitys käytettäessä tätä verbiä, ku
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{lop:v}, {lop:n}, {nentay:n}, {yupma':n}</column>
-      <column name="notes">This is an event to which the spirits of ancestors are invited.</column>
-      <column name="notes_de">Dies ist eine Veranstaltung, zu der die Geister der Ahnen eingeladen sind. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این رویدادی است که روح اجداد به آن دعوت شده است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en händelse som förfädernas andar är inbjudna till. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это событие, на которое приглашаются духи предков. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這項活動邀請了祖先的精神。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é um evento para o qual os espíritos dos antepassados ​​são convidados. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on tapahtuma, johon kutsutaan esi-isien henkiä. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="notes">This is an event to which the spirits of ancestors are invited.[2]</column>
+      <column name="notes_de">Dies ist eine Veranstaltung, zu der die Geister der Ahnen eingeladen sind.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این رویدادی است که روح اجداد به آن دعوت شده است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är en händelse som förfädernas andar är inbjudna till.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это событие, на которое приглашаются духи предков.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這項活動邀請了祖先的精神。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é um evento para o qual os espíritos dos antepassados ​​são convidados.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on tapahtuma, johon kutsutaan esi-isien henkiä.[2] [AUTOTRANSLATED]</column>
+      <column name="hidden_notes">The gloss in {KGT:src} says simply "party, celebration". The definition has been changed for clarity based on the information from {KCD:src}.</column>
       <column name="components">{lop:n}, {no':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -9004,7 +9024,7 @@ Tämä etuliite pudotetaan joskus tuntemattomista syistä. Vaikka virhe onkin, t
       <column name="synonyms"></column>
       <column name="antonyms">{yuv:v}</column>
       <column name="see_also">{leQ:n}, {luHwI' tIH:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This is used for pulling when the pulling is sudden or done with a jerk. This verb can generally be used where either {Hur:v} or {Hoq:v} might otherwise be used, but not in the case of pulling back a bowstring.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -9023,14 +9043,14 @@ Tämä etuliite pudotetaan joskus tuntemattomista syistä. Vaikka virhe onkin, t
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
       <column name="search_tags">pull</column>
-      <column name="search_tags_de"></column>
+      <column name="search_tags_de">rausreißen, reißen</column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru">тянуть</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="search_tags_fi">vetää</column>
+      <column name="source">[1] {TKD:src}, [2] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9313,7 +9333,9 @@ Tämä etuliite pudotetaan joskus tuntemattomista syistä. Vaikka virhe onkin, t
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This looks like "they ride it", but it's probably a coincidence.</column>
+      <column name="hidden_notes">This looks like "they ride it", but it's probably a coincidence.
+
+This word was suggested by Marc Okrand to translate "asylum" (in the sense of "refuge" or "sanctuary") for the Pittsburgh Art Tour.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -9323,7 +9345,7 @@ Tämä etuliite pudotetaan joskus tuntemattomista syistä. Vaikka virhe onkin, t
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">asylum, sanctuary</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -9331,7 +9353,7 @@ Tämä etuliite pudotetaan joskus tuntemattomista syistä. Vaikka virhe onkin, t
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Pittsburgh Art Tour:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

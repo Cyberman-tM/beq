@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -557,6 +557,49 @@
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tlham rI'gheS</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">gravity deflector, parachute</column>
+      <column name="definition_de">Schwerkraft-Deflektor, Fallschirm</column>
+      <column name="definition_fa">انحراف گرانش ، چتر نجات [AUTOTRANSLATED]</column>
+      <column name="definition_sv">gravitation deflector, fallskärm [AUTOTRANSLATED]</column>
+      <column name="definition_ru">гравитационный дефлектор, парашют [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">重力偏轉器，降落傘 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">defletor de gravidade, pára-quedas [AUTOTRANSLATED]</column>
+      <column name="definition_fi">painovoimansuuntain, laskuvarjo</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an apparatus that creates some sort of force field that counters gravity when descending. The old-fashioned contraption that resembles an umbrella is informally called an {'alwI':n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1382,6 +1425,49 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">tlhay</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">embalm</column>
+      <column name="definition_de">einbalsamieren</column>
+      <column name="definition_fa">مومیایی کردن [AUTOTRANSLATED]</column>
+      <column name="definition_sv">balsamera [AUTOTRANSLATED]</column>
+      <column name="definition_ru">бальзамировать [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">防腐 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">embalsamar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">palsamoida</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{jItuj'ep:n}</column>
+      <column name="notes">This refers to infusing a dead body with some sort of fluid to preserve it. Long ago, Klingons used to do this, but now the practice is observed by only a few Houses.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">tlhay'</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be tame, be domesticated</column>
@@ -1796,7 +1882,7 @@
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Clem Kadiddlehopper was a country bumpkin character portrayed by Red Skelton.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1989,6 +2075,7 @@
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
+      <!-- Possibly a reference to Arthur C. Clarke's "The Treasure of the Great Reef", or to Clerke Reef. -->
       <column name="_id"></column>
       <column name="entry_name">tlher'aq</column>
       <column name="part_of_speech">n</column>
@@ -2303,7 +2390,7 @@
       <column name="definition_fi">savu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qul:n}, {meQ:v}, {tlhoD:v}, {mIrSam:n}, {toba'qo:n}</column>
+      <column name="see_also">{qul:n}, {meQ:v:1}, {tlhoD:v}, {mIrSam:n}, {toba'qo:n}</column>
       <column name="notes">To say "to smoke" (as in inhale nicotine), use {tlhIch pur:sen@@tlhIch:n, pur:v}.[2] To smoke other kinds of plants, it's also possible to say {por pur:sen}.[3]</column>
       <column name="notes_de">Verwenden Sie {tlhIch pur:sen@@tlhIch:n, pur:v}.[2], um "zu rauchen" (wie beim Einatmen von Nikotin). Um andere Arten von Pflanzen zu rauchen, können Sie auch {por pur:sen}.[3] sagen [AUTOTRANSLATED]</column>
       <column name="notes_fa">برای گفتن "سیگار کشیدن" (مانند نیکوتین استنشاقی) ، از {tlhIch pur:sen@@tlhIch:n, pur:v}.[2] استفاده کنید برای سیگار کشیدن انواع دیگر گیاهان ، همچنین می توان گفت {por pur:sen}.[3] [AUTOTRANSLATED]</column>
@@ -2811,7 +2898,7 @@ In many languages, the endonym for its speakers means something like "our own pe
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">own</column>
+      <column name="search_tags">own, unique</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3720,7 +3807,7 @@ On idioomi, {Hem; tlhIngan rur@@Hem:v, tlhIngan:n, rur:v}. [AUTOTRANSLATED]</col
       <column name="see_also">{ghel:v}, {yu':v}, {jang:v}, {qoy':v}, {poQ:v}</column>
       <column name="notes">This verb is used to make a request, whereas {ghel:v} is used for asking a question.[3]
 
-The object of this verb is the person of whom the request is made, or {'e':n:pro} referring to the action which is requested.</column>
+The object of this verb can be the person of whom the request is made, or {'e':n:pro} referring to the action which is requested.</column>
       <column name="notes_de">Dieses Verb wird verwendet, um eine Anfrage zu stellen, während {ghel:v} zum Stellen einer Frage verwendet wird.[3]
 
 Das Objekt dieses Verbs ist die Person, von der die Anfrage gestellt wird, oder {'e':n:pro}, die sich auf die angeforderte Aktion bezieht. [AUTOTRANSLATED]</column>
@@ -3739,7 +3826,7 @@ O objeto deste verbo é a pessoa de quem a solicitação é feita, ou {'e':n:pro
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {lutlhob; naDevvo' vaS'a'Daq majaHlaH'a'?:sen:nolink} "They ask him, can we get to the Great Hall from here?"[4]
+▶ {lutlhob; naDevvo' vaS'a'Daq majaHlaH'a'?:sen@@lu-:v, tlhob:v, naDev:n, -vo':n, vaS'a':n, -Daq:n, ma-:v, jaH:v, -laH:v, -'a':v} "They ask him, can we get to the Great Hall from here?"[4]
 ▶ {juDev 'ej Dujvam ra'wI' DagheS 'e' vItlhob:sen}
 ▶ {molor luSuvmeH:sen:nolink}
    {nuHmeychaj Suq:sen:nolink}
@@ -4000,7 +4087,7 @@ Voidaan sanoa joko {B tlhogh A:sen:nolink} "{A:sen:nolink} naimisiin {B:sen:noli
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhoj</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:t_c</column>
       <column name="definition">realize</column>
       <column name="definition_de">realisieren</column>
       <column name="definition_fa">پی بردن [AUTOTRANSLATED]</column>
@@ -4913,6 +5000,49 @@ This was defined as "almost, nearly, virtually, not quite" in {KGT:src}. The "ba
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKDA:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tlho' Huch</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">tip (money)</column>
+          <column name="definition_de">Trinkgeld</column>
+          <column name="definition_fa">نکته (پول) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">tips (pengar) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">чаевые (деньги) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">小費、酒錢</column>
+          <column name="definition_pt">gorjeta (dinheiro) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">tippi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{chuv:n:2}, {mebpa'mey:n}, {Qe':n}</column>
+          <column name="notes">In Klingon hotels, there is no tipping because there is no service. The concept of tipping is weird to Klingons, but a tip could be called this.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{tlho':n}, {Huch:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlho'</column>
@@ -5408,7 +5538,7 @@ Some people believe that this word means "to expel exhaust", based on its simila
       <column name="definition_fi">olla täytetty</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{teb:v}</column>
       <column name="notes">The difference between {tlhutmoH:v@@tlhut:v, -moH:v} and {ghoD:v} is that for the latter, the container is used to hold or store what you're putting into it, such as a pinata, whereas {tlhut:v:nolink} is used for filling something to have a certain shape or look, such as with taxidermy and stuffed animals.</column>
       <column name="notes_de">Der Unterschied zwischen {tlhutmoH:v@@tlhut:v, -moH:v} und {ghoD:v} besteht darin, dass für letzteres der Behälter verwendet wird, um das zu speichern, was Sie hineinlegen, z. B. eine Pinata, während {tlhut:v:nolink} verwendet wird, um etwas zu füllen, das eine bestimmte Form oder ein bestimmtes Aussehen hat, wie z mit Präparatoren und Stofftieren. [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
@@ -5440,7 +5570,7 @@ Some people believe that this word means "to expel exhaust", based on its simila
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhutlh</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:t_c</column>
       <column name="definition">drink</column>
       <column name="definition_de">trinken</column>
       <column name="definition_fa">نوشیدن [AUTOTRANSLATED]</column>
@@ -5452,7 +5582,7 @@ Some people believe that this word means "to expel exhaust", based on its simila
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'oj:v}, {ghup:v}, {'ep:v:1}, {Sop:v}</column>
-      <column name="notes"></column>
+      <column name="notes">See under {tlhej:v} and {'e' qa':sen} for more examples.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5462,7 +5592,10 @@ Some people believe that this word means "to expel exhaust", based on its simila
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {bIjatlh 'e' yImev. yItlhutlh!:sen}
+▶ {Dochvetlh vItlhutlhlaHbe'.:sen}
+▶ {tlhutlhmeH HIq ngeb qaq law' bIQ qaq puS.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>

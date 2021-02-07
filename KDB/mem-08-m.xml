@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -617,7 +617,7 @@ Pakollinen verbin etuliite, kun kohde on {maH:n:1h,nolink}, on {gho-:v:pref}. [A
       <column name="part_of_speech">n</column>
       <column name="definition">protein</column>
       <column name="definition_de">Protein, Eiweiß</column>
-      <column name="definition_fa">پروتئین [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پروتئین</column>
       <column name="definition_sv">protein [AUTOTRANSLATED]</column>
       <column name="definition_ru">белок [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">蛋白 [AUTOTRANSLATED]</column>
@@ -1235,6 +1235,49 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2014.11.26:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maqDar</column>
+      <column name="part_of_speech">excl</column>
+      <column name="definition">epithet, mak'dar</column>
+      <column name="definition_de">mak'dar, klingonische Beleidigung</column>
+      <column name="definition_fa">epithet ، mak'dar [AUTOTRANSLATED]</column>
+      <column name="definition_sv">epitel, mak'dar [AUTOTRANSLATED]</column>
+      <column name="definition_ru">эпитет, мак'дар [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">瑪卡達爾 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">epíteto, mak'dar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs haukkumasana, mak'dar</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}, [2] {DS9 - The House of Quark:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2700,14 +2743,14 @@ It's unclear what sense of "fair" is meant by this word.</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
-          <column name="notes">The literal meaning of this idiomatic expression is "to sing a different battle song".</column>
-          <column name="notes_de">Die wörtliche Bedeutung dieses idiomatischen Ausdrucks ist "ein anderes Kampflied singen". [AUTOTRANSLATED]</column>
-          <column name="notes_fa">معنای تحت اللفظی این اصطلاح اصطلاحاً "آواز خواندن آهنگ جنگی متفاوت" است. [AUTOTRANSLATED]</column>
-          <column name="notes_sv">Den bokstavliga betydelsen av detta idiomatiska uttryck är "att sjunga en annan stridssång". [AUTOTRANSLATED]</column>
-          <column name="notes_ru">Буквальное значение этого идиоматического выражения - «петь другую боевую песню». [AUTOTRANSLATED]</column>
-          <column name="notes_zh_HK">這種慣用語的字面意思是「唱另一首戰歌」。 [AUTOTRANSLATED]</column>
-          <column name="notes_pt">O significado literal dessa expressão idiomática é "cantar uma canção de batalha diferente". [AUTOTRANSLATED]</column>
-          <column name="notes_fi">Tämän idiomaattisen ilmaisun kirjaimellinen merkitys on "laulaa erilainen taistelulaulu". [AUTOTRANSLATED]</column>
+          <column name="notes">The literal meaning of this idiomatic expression is "to sing a different battle song". When uttered, it is frequently preceded by {DaH:adv} or {toH:excl}.</column>
+          <column name="notes_de">Die wörtliche Bedeutung dieses idiomatischen Ausdrucks ist "ein anderes Kampflied singen". Wenn es ausgesprochen wird, wird häufig {DaH:adv} oder {toH:excl} vorangestellt. [AUTOTRANSLATED]</column>
+          <column name="notes_fa">معنای تحت اللفظی این اصطلاح اصطلاحی "خواندن یک آهنگ جنگی متفاوت" است. هنگامی که تلفظ می شود ، اغلب با {DaH:adv} یا {toH:excl} مقدم است. [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Den bokstavliga betydelsen av detta idiomatiska uttryck är "att sjunga en annan stridssång". När det uttalas föregås det ofta av {DaH:adv} eller {toH:excl}. [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Буквальное значение этого идиоматического выражения - «спеть другую боевую песню». При произнесении ему часто предшествует {DaH:adv} или {toH:excl}. [AUTOTRANSLATED]</column>
+          <column name="notes_zh_HK">這種慣用語的字面意思是「唱另一首戰歌」。說出來時，通常在{DaH:adv}或{toH:excl}之後。 [AUTOTRANSLATED]</column>
+          <column name="notes_pt">O significado literal desta expressão idiomática é "cantar uma canção de batalha diferente". Quando pronunciado, é freqüentemente precedido por {DaH:adv} ou {toH:excl}. [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Tämän idiomaattisen ilmaisun kirjaimellinen merkitys on "laulaa erilainen taistelulaulu". Kun se lausutaan, sitä edeltää usein {DaH:adv} tai {toH:excl}. [AUTOTRANSLATED]</column>
           <column name="hidden_notes"></column>
           <column name="components">{may' bom:n}, {pIm:v}, {bom:v}</column>
           <column name="examples">
@@ -3290,6 +3333,49 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">may'ron raS</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">piano (Terran musical instrument)</column>
+          <column name="definition_de">Klavier (Terranisches Musikinstrument)</column>
+          <column name="definition_fa">پیانو (ساز موسیقی Terran) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">piano (Terran musikinstrument) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">фортепиано (терранский музыкальный инструмент) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">鋼琴（德蘭樂器） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">piano (instrumento musical terráqueo) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">piano</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{HIvje'He:n}</column>
+          <column name="notes">There is no instrument like a piano in traditional Klingon culture, but Klingons have seen them and use this term to refer to one. This is made up of {may'ron:n}, a Klingon instrument reminiscent of an accordian, and {raS:n} "table", as if an instrument of this type is a {may'ron:n:nolink} built into a table. Even though the term ignores the fact that a piano or harpsicord creates sound via vibrating strings, it's used for all of these keyboard instruments anyway. If clarification is needed, a piano or harpsicord could be a {SIrgh may'ron raS:n@@SIrgh:n, may'ron:n, raS:n}. To distinguish a piano from a harpsicord, one could use {SIrgh pangwI' may'ron raS:n@@SIrgh:n, pang:v, -wI':v, may'ron:n, raS:n} for harpsicord and {SIrgh moqwI' may'ron raS:n@@SIrgh:n, moq:v, -wI':v, may'ron:n, raS:n} for piano. (Occasionally, and in appropriate contexts, these could be shortened by leaving out the {may'ron:n}.) An organ (if it is necessary to distinguish it from these other instruments) would be a {SuS may'ron raS:n@@SuS:n, may'ron:n, raS:n}, even though that's a bit redundant.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{may'ron:n}, {raS:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ma'</column>
@@ -3476,7 +3562,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="definition_fi">hotelli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{pa'mey:n:hyp}</column>
+      <column name="see_also">{tlho' Huch:n}, {pa'mey:n:hyp}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4124,7 +4210,7 @@ Harkitse {lon:v}, jos haluat ilmaista henkilön tai esineen (eikä sijainnin) j�
       <column name="part_of_speech">n</column>
       <column name="definition">plastic</column>
       <column name="definition_de">Plastik, Kunstoff</column>
-      <column name="definition_fa">پلاستیک [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پلاستیک</column>
       <column name="definition_sv">plast</column>
       <column name="definition_ru">пластик, пластмасса</column>
       <column name="definition_zh_HK">塑料、膠</column>
@@ -4161,6 +4247,49 @@ Harkitse {lon:v}, jos haluat ilmaista henkilön tai esineen (eikä sijainnin) j�
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">mep vol</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">plastic sheet, vinyl</column>
+          <column name="definition_de">Plastikfolie, Vinyl [AUTOTRANSLATED]</column>
+          <column name="definition_fa">ورق پلاستیک ، وینیل [AUTOTRANSLATED]</column>
+          <column name="definition_sv">plastplåt, vinyl [AUTOTRANSLATED]</column>
+          <column name="definition_ru">пластиковый лист, винил [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">塑料板，乙烯基 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">folha de plástico, vinil [AUTOTRANSLATED]</column>
+          <column name="definition_fi">muovilevy, vinyyli</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{mep:n}, {vol:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Pittsburgh Art Tour:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meq</column>
@@ -4382,7 +4511,7 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meQ</column>
-      <column name="part_of_speech">v:ambi</column>
+      <column name="part_of_speech">v:1,ambi</column>
       <column name="definition">burn</column>
       <column name="definition_de">brennen, verbrennen</column>
       <column name="definition_fa">سوزاندن [AUTOTRANSLATED]</column>
@@ -4394,11 +4523,11 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mIQ:v}</column>
-      <column name="notes">If there is no object, then the subject is the thing burning, e.g., {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] If there is an object, then the subject is burning the object, e.g., {to'waQ meQ vutwI'.}[3] {meQ:v:nolink} can also be used adjectivally, e.g., {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'@@Ha'DIbaH:n:1, -mey:n, meQ:v, Sop:v, 'e':n, tIv:v, tera'ngan:n, -pu':n}.[4]</column>
+      <column name="notes">If there is no object, then the subject is the thing burning, e.g., {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] If there is an object, then the subject is burning the object, e.g., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} can also be used adjectivally, e.g., {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Если нет объекта, тогда субъект это вещь, которая горит, например {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] Если есть объект, тогда субъект сжигает объект, например., {to'waQ meQ vutwI'.}[3] {meQ:v:nolink} может также использоваться для прикладных вещей, например, {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'@@Ha'DIbaH:n:1, -mey:n, meQ:v, Sop:v, 'e':n, tIv:v, tera'ngan:n, -pu':n}.[4]</column>
+      <column name="notes_ru">Если нет объекта, тогда субъект это вещь, которая горит, например {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] Если есть объект, тогда субъект сжигает объект, например., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} может также использоваться для прикладных вещей, например, {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
@@ -4412,7 +4541,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">burnt</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4422,32 +4551,32 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {TKW p.111:src}, [3] {KGT p.191:src}, [4] {CK:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">meQboghnom</column>
-      <column name="part_of_speech">n:archaic,deriv</column>
-      <column name="definition">Kahless' revolutionary banner</column>
-      <column name="definition_de">Revolutionsflagge des Kahless</column>
-      <column name="definition_fa">پرچم انقلابی Kahless [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Kahless 'revolutionerande banner [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Флаг революции Кейлеса</column>
-      <column name="definition_zh_HK">「凱勒斯」的革命旗幟</column>
-      <column name="definition_pt">bandeira revolucionária do Kahless</column>
-      <column name="definition_fi">Kahlessin vallankumouslippu</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{joqwI':n}</column>
-      <column name="notes">This is "the banner of unity and revolution" used by {qeylIS'e' lIjlaHbe'bogh vay':n:name} to rally his troops.</column>
-      <column name="notes_de">Dies ist "das Banner der Einheit und Revolution", mit dem {qeylIS'e' lIjlaHbe'bogh vay':n:name} seine Truppen versammelt. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این "پرچم اتحاد و انقلاب" است که توسط {qeylIS'e' lIjlaHbe'bogh vay':n:name} برای تجمع نیروهای خود استفاده شده است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är "banden för enhet och revolution" som används av {qeylIS'e' lIjlaHbe'bogh vay':n:name} för att samla sina trupper. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это "флаг единства и революции" использовался {qeylIS'e' lIjlaHbe'bogh vay':n:name} чтобы сплотить его войска.</column>
-      <column name="notes_zh_HK">這是唐諾蘭特用來集結部隊的「團結與革命的旗幟」。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta é "a bandeira da unidade e da revolução" usada por {qeylIS'e' lIjlaHbe'bogh vay':n:name} para reunir suas tropas. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on "yhtenäisyyden ja vallankumouksen lippu", jota {qeylIS'e' lIjlaHbe'bogh vay':n:name} käyttää joukkojensa kokoamiseksi. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components">{meQ:v}, {bogh:v}, {nom:adv}</column>
-      <column name="examples">
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">meQboghnom</column>
+          <column name="part_of_speech">n:archaic,deriv</column>
+          <column name="definition">Kahless' revolutionary banner</column>
+          <column name="definition_de">Revolutionsflagge des Kahless</column>
+          <column name="definition_fa">پرچم انقلابی Kahless [AUTOTRANSLATED]</column>
+          <column name="definition_sv">Kahless 'revolutionerande banner [AUTOTRANSLATED]</column>
+          <column name="definition_ru">Флаг революции Кейлеса</column>
+          <column name="definition_zh_HK">「凱勒斯」的革命旗幟</column>
+          <column name="definition_pt">bandeira revolucionária do Kahless</column>
+          <column name="definition_fi">Kahlessin vallankumouslippu</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{joqwI':n}</column>
+          <column name="notes">This is "the banner of unity and revolution" used by {qeylIS'e' lIjlaHbe'bogh vay':n:name} to rally his troops.</column>
+          <column name="notes_de">Dies ist "das Banner der Einheit und Revolution", mit dem {qeylIS'e' lIjlaHbe'bogh vay':n:name} seine Truppen versammelt. [AUTOTRANSLATED]</column>
+          <column name="notes_fa">این "پرچم اتحاد و انقلاب" است که توسط {qeylIS'e' lIjlaHbe'bogh vay':n:name} برای تجمع نیروهای خود استفاده شده است. [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Detta är "banden för enhet och revolution" som används av {qeylIS'e' lIjlaHbe'bogh vay':n:name} för att samla sina trupper. [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Это "флаг единства и революции" использовался {qeylIS'e' lIjlaHbe'bogh vay':n:name} чтобы сплотить его войска.</column>
+          <column name="notes_zh_HK">這是唐諾蘭特用來集結部隊的「團結與革命的旗幟」。 [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Esta é "a bandeira da unidade e da revolução" usada por {qeylIS'e' lIjlaHbe'bogh vay':n:name} para reunir suas tropas. [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Tämä on "yhtenäisyyden ja vallankumouksen lippu", jota {qeylIS'e' lIjlaHbe'bogh vay':n:name} käyttää joukkojensa kokoamiseksi. [AUTOTRANSLATED]</column>
+          <column name="hidden_notes"></column>
+          <column name="components">{meQ:v:1}, {bogh:v}, {nom:adv}</column>
+          <column name="examples">
 ▶ {nIteb chegh molor ngIq ghoqwI':sen:nolink}
    {joqwI''e' cha'bogh qeylIS:sen:nolink}
    {luDel 'e' ra' molor:sen:nolink}
@@ -4460,10 +4589,10 @@ This was also used for the "logic" menu (instructions about program flow control
   "They reply it is the meQboghnom,
    The banner of unity
    And revolution."</column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru">
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru">
 ▶ {nIteb chegh molor ngIq ghoqwI':sen:nolink}
    {joqwI''e' cha'bogh qeylIS:sen:nolink}
    {luDel 'e' ra' molor:sen:nolink}
@@ -4476,32 +4605,75 @@ This was also used for the "logic" menu (instructions about program flow control
   "Они ответили, что это "Мекборном",
    Флаг единства
    И революции."</column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.138-139:src}</column>
-    </table>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {paq'batlh p.138-139:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">meQtaHbogh qachDaq Suv qoH neH.</column>
+          <column name="part_of_speech">sen:phr</column>
+          <column name="definition">Only a fool fights in a burning house.</column>
+          <column name="definition_de">Nur ein Narr kämpft in einem brennenden Haus.</column>
+          <column name="definition_fa">فقط یک احمقانه در یک خانه سوزان می جنگد. [AUTOTRANSLATED]</column>
+          <column name="definition_sv">Bara en dåre slåss i ett brinnande hus. [AUTOTRANSLATED]</column>
+          <column name="definition_ru">Только глупец сражается в горящем доме</column>
+          <column name="definition_zh_HK">只有傻瓜在燃燒的房屋裡打架。</column>
+          <column name="definition_pt">Apenas um tolo luta em uma casa em chamas.</column>
+          <column name="definition_fi">Vain tyhmä taistelee palavassa talossa.</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{meQ:v:1}, {-taH:v}, {-bogh:v}, {qach:n}, {-Daq:n}, {Suv:v}, {qoH:n}, {neH:adv}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {TKW p.111:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">meQtaHbogh qachDaq Suv qoH neH.</column>
-      <column name="part_of_speech">sen:phr</column>
-      <column name="definition">Only a fool fights in a burning house.</column>
-      <column name="definition_de">Nur ein Narr kämpft in einem brennenden Haus.</column>
-      <column name="definition_fa">فقط یک احمقانه در یک خانه سوزان می جنگد. [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Bara en dåre slåss i ett brinnande hus. [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Только глупец сражается в горящем доме</column>
-      <column name="definition_zh_HK">只有傻瓜在燃燒的房屋裡打架。</column>
-      <column name="definition_pt">Apenas um tolo luta em uma casa em chamas.</column>
-      <column name="definition_fi">Vain tyhmä taistelee palavassa talossa.</column>
-      <column name="synonyms"></column>
+      <column name="entry_name">meQ</column>
+      <column name="part_of_speech">v:2,i_c,slang</column>
+      <column name="definition">climax (sexual)</column>
+      <column name="definition_de">Höhepunkt erreichten (sexuell)</column>
+      <column name="definition_fa">اوج (جنسی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">klimax (sexuell) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">климакс (сексуальный) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">高潮（性） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">clímax (sexual) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">saada orgasmi</column>
+      <column name="synonyms">{ghuch:v}</column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes"></column>
@@ -4513,7 +4685,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{meQ:v}, {-taH:v}, {-bogh:v}, {qach:n}, {-Daq:n}, {Suv:v}, {qoH:n}, {neH:adv}</column>
+      <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4522,7 +4694,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">orgasm</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4530,7 +4702,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKW p.111:src}</column>
+      <column name="source">[1] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4590,7 +4762,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="definition_fi">olla yhdistetty, sekoitettu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tIr:v}, {DuD:v}, {SuyDar:n}</column>
+      <column name="see_also">{tIr:v}, {DuD:v}, {SuyDar:n}, {tay'taHbe' 'Iw bIQ je.:sen}</column>
       <column name="notes">This is also used in a physics context, where it refers to the phenomenon of quantum superposition.</column>
       <column name="notes_de">Dies wird auch in einem physikalischen Kontext verwendet, wo es sich auf das Phänomen der Quantenüberlagerung bezieht. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این نیز در زمینه فیزیک مورد استفاده قرار می گیرد ، جایی که به پدیده ابراز کوانتومی اشاره دارد. [AUTOTRANSLATED]</column>
@@ -5073,7 +5245,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="definition_fi">neliö</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{buq'Ir:n}, {gho:n}, {mey':n}, {letbaQ:n}, {loS reD mey':n}</column>
+      <column name="see_also">{buq'Ir:n}, {gho:n}, {mey':n}, {letbaQ:n}, {loS reD mey':n}, {chenHa' meyrI':sen}</column>
       <column name="notes">This is technically a {letbaQ HoS:n@@letbaQ:n, HoS:v}.
 
 This word can also refer to the "diamond" suit in a deck of playing cards (see {Degh:n:1}).[2]</column>
@@ -6167,7 +6339,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="definition_fi">uppopaistaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{meQ:v}, {'Im:v}</column>
+      <column name="see_also">{meQ:v:1}, {'Im:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6728,7 +6900,7 @@ This was clarified to mean "mental confusion" at {qep'a' 24 (2017):src}.</column
       <column name="definition_fi">kypärä, päähine, hattu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mIv je DaS:n}, {nach:n}</column>
+      <column name="see_also">{mIv je DaS:n}, {nach:n}, {namyaS:n}</column>
       <column name="notes">In {TNK:src}, {mIv:n:1,nolink} is used for "hat".
 
 See {mIvDaq pogh cha':sen} for an idiom involving {mIv:n:nolink}.</column>
@@ -7025,7 +7197,7 @@ Tämän sanaston alkuperä on {HenrI' vagh:n:name}, {wIlyam SeQpIr:n:name}: n n�
 A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is also used for "census" or "headcount".[2]</column>
       <column name="notes_de">Dies ist eine Narbe als Folge einer Verletzung (egal wie diese entstanden ist).[1]
 
-A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is also used for "census" or "headcount".[2]</column>
+A tally or score is kept by counting {mIvwa'mey:n@@mIvwa':n, -mey:n}. This is also used for "census" or "headcount".[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
@@ -7044,7 +7216,7 @@ Laskenta {mIvwa'mey:n@@mIvwa':n, -mey:n} lasketaan yhteen tai pisteet. Tätä k�
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">tally, score</column>
+      <column name="search_tags">tally, score, census, headcount</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7065,7 +7237,7 @@ Laskenta {mIvwa'mey:n@@mIvwa':n, -mey:n} lasketaan yhteen tai pisteet. Tätä k�
       <column name="definition_ru">подсчет, статистика [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">統計分析、統計 [AUTOTRANSLATED]</column>
       <column name="definition_pt">análise de dados, estatísticas</column>
-      <column name="definition_fi">analyysi, tilastot [AUTOTRANSLATED]</column>
+      <column name="definition_fi">tulosanalyysi, tilasto</column>
       <column name="synonyms">{mI' poj:n}</column>
       <column name="antonyms"></column>
       <column name="see_also">{pe''egh:v}</column>
@@ -7394,7 +7566,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="definition_ru">анализ чисел, статистика [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">數字分析、統計 [AUTOTRANSLATED]</column>
           <column name="definition_pt">análise numérica, estatísticas</column>
-          <column name="definition_fi">number analysis, statistics [AUTOTRANSLATED]</column>
+      <column name="definition_fi">lukuanalyysi, tilasto</column>
           <column name="synonyms">{mIvwa'mey poj:n}</column>
           <column name="antonyms"></column>
           <column name="see_also">{pe''egh:v}</column>
@@ -7432,7 +7604,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">mathematics</column>
           <column name="definition_de">Mathematik</column>
-          <column name="definition_fa">ریاضیات [AUTOTRANSLATED]</column>
+          <column name="definition_fa">ریاضیات</column>
           <column name="definition_sv">matematik [AUTOTRANSLATED]</column>
           <column name="definition_ru">математика [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">數學</column>
@@ -8946,7 +9118,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="definition_fi">kaapu, viitta; iltapuku?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sut:n}, {ngup:n:1}, {paH:n}, {'eSqa':n}</column>
+      <column name="see_also">{Sut:n}, {ngup:n:1}, {paH:n}, {'eSqa':n}, {namyaS:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9094,7 +9266,7 @@ Huomaa, että sydämenlyönnissä käytetty verbi on {joq:v}.[1, p.75] [AUTOTRAN
       <column name="definition_fa">کره [AUTOTRANSLATED]</column>
       <column name="definition_sv">sfär</column>
       <column name="definition_ru">Сфера</column>
-      <column name="definition_zh_HK">領域 [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">球體</column>
       <column name="definition_pt">esfera</column>
       <column name="definition_fi">pallo</column>
       <column name="synonyms"></column>
@@ -11288,7 +11460,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tap:v}</column>
-      <column name="notes"></column>
+      <column name="notes">Lightning ({pe'bIl:n}) may be said to do this to something.[3]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -11326,7 +11498,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.159:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.159:src}, [3] {Pittsburgh Art Tour:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -11334,7 +11506,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">hammer</column>
       <column name="definition_de">Hammer</column>
-      <column name="definition_fa">چکش [AUTOTRANSLATED]</column>
+      <column name="definition_fa">چکش</column>
       <column name="definition_sv">hammare</column>
       <column name="definition_ru">молоток [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">錘子</column>
@@ -11682,6 +11854,49 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">mutchoH</column>
+      <column name="part_of_speech">n:alt,deriv</column>
+      <column name="definition">{Hovje'voH:n}</column>
+      <column name="definition_de">{Hovje'voH:n}</column>
+      <column name="definition_fa">{Hovje'voH:n}</column>
+      <column name="definition_sv">{Hovje'voH:n}</column>
+      <column name="definition_ru">{Hovje'voH:n}</column>
+      <column name="definition_zh_HK">{Hovje'voH:n}</column>
+      <column name="definition_pt">{Hovje'voH:n}</column>
+      <column name="definition_fi">{Hovje'voH:n}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{mut:n}, {choH:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">mutwa'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">protozoan</column>
@@ -11826,7 +12041,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The {paq'batlh:src} example suggests that the subject becomes a part or member of the object. The medical instrument example seems to suggest otherwise, but device names are often abbreviated.</column>
+      <column name="hidden_notes">The definitions of {muvmoH:v}, {muvtay:n}, and the {paq'batlh:src} example imply that the subject becomes a part or member of the object. The medical instrument example seems to suggest otherwise, but device names are often abbreviated.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {tuj muvwI':n}
@@ -12067,6 +12282,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
+      <!-- Arabic "معجم"? -->
       <column name="_id"></column>
       <column name="entry_name">mu'ghom</column>
       <column name="part_of_speech">n:deriv</column>
@@ -12082,7 +12298,6 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes"></column>
-      <!-- Arabic "معجم"? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>

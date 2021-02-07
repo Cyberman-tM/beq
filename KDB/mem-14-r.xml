@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -1196,7 +1196,7 @@ Tätä verbiä voidaan käyttää myös ilmaisemaan käsite, että kahdella asia
       <column name="definition_fi">siemen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tIr:n}, {tI:n}, {Do'ol raS'IS:n}</column>
+      <column name="see_also">{tIr:n}, {tI:n}, {qet'uy:n}, {Do'ol raS'IS:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1443,7 +1443,7 @@ On olemassa klingonin idioomi {'IQ; rav rur@@'IQ:v, rav:n:1, rur:v}.[2] [AUTOTRA
       <column name="examples">
 ▶ {QujwI' ghom rav:sen:nolink}: {cha'; 'aqroS:sen:nolink}: {jav:sen:nolink} "2 to 6 players"[2]
 ▶ {rav cha' 'uj(mey) 'aqroS loS 'uj(mey) 'ab:sen@@rav ...:sen, cha':n:num, 'uj:n, -mey:n, 'aqroS ...:sen, loS:n:1,num, 'uj:n, -mey:n, 'ab:v} "has a length between two and four ujes" (it's at least two ujes and no more than four)[1]
-▶ {rav DaSjaj 'aqroS buqjaj maghom:sen@@rav:n:2, DaSjaj:n, 'aqroS:n:2, buqjaj:n, ma-:v, ghom;v} "we meet between Monday and Friday", "we meet at some point between Monday and Friday"[1]</column>
+▶ {rav DaSjaj 'aqroS buqjaj maghom:sen@@rav:n:2, DaSjaj:n, 'aqroS:n:2, buqjaj:n, ma-:v, ghom:v} "we meet between Monday and Friday", "we meet at some point between Monday and Friday"[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1700,7 +1700,7 @@ Tämän sanan ensimmäinen osa on {rav:n:1} "lattia", mutta toinen osa ei liity 
           <column name="definition_sv">genetiker [AUTOTRANSLATED]</column>
           <column name="definition_ru">генетик [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">遺傳學家 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">geneticista [AUTOTRANSLATED]</column>
+          <column name="definition_pt">geneticista</column>
           <column name="definition_fi">geneetikko</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -2577,7 +2577,7 @@ Muille monikulmioille, joilla on yhtäläiset sivut / kulmat, {HoS:v}: ää käy
       <column name="definition_fi">vuotaa (verta)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'Iw:n}, {'aD:n}</column>
+      <column name="see_also">{'Iw:n}, {'aD:n}, {chI:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3824,6 +3824,49 @@ o      <column name="definition_sv">Det är alltid de modiga som dör.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rem'ay'</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">diaphragm, thoracic diaphragm</column>
+      <column name="definition_de">Zwerchfell (Körperteil)</column>
+      <column name="definition_fa">دیافراگم ، دیافراگم قفسه سینه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">membran, bröstmembran [AUTOTRANSLATED]</column>
+      <column name="definition_ru">диафрагма, грудная диафрагма [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">diaphragm肌，胸膜 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">diafragma, diafragma torácico [AUTOTRANSLATED]</column>
+      <column name="definition_fi">pallea</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tagh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">This appears to be composed from {rem:v} and {'ay':n}.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ren</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">design, map out, plan</column>
@@ -4483,7 +4526,7 @@ Tämä on sama sana kuin verbi {ret:v}.[2][1] [AUTOTRANSLATED]</column>
       <column name="part_of_speech">n:being</column>
       <column name="definition">citizen</column>
       <column name="definition_de">Einwohner, Stadtbewohner</column>
-      <column name="definition_fa">شهروند [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شهروند</column>
       <column name="definition_sv">medborgare</column>
       <column name="definition_ru">гражданин</column>
       <column name="definition_zh_HK">公民 [AUTOTRANSLATED]</column>
@@ -6059,7 +6102,7 @@ Tämä viittaa myös musteeseen, kuten kumileimasimeen ({toqwIn:n}).[2] [AUTOTRA
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components">{begh:n:inhpl}</column>
-      <column name="examples"></column>
+      <column name="examples">{tlham rI'gheS:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>

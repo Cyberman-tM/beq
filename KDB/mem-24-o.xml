@@ -13,14 +13,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
+      <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa ääneen eikä mihinkään kirjaimeen tai kuvioon. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -143,7 +143,7 @@
       <column name="synonyms"></column>
       <column name="antonyms">{wan:v}</column>
       <column name="see_also">{SIH:v}, {rutlh:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This verb can be used for the raising of eyebrows (see {Huy':n}).[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -151,7 +151,7 @@
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Obi-Wan Kenobi is a character in Star Wars.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -169,7 +169,7 @@
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 26 (2019):src}</column>
+      <column name="source">[1] {qep'a' 26 (2019):src}, [2] {cha' monmey:src} ({Saarbrücken qepHom'a' 2020:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3223,7 +3223,7 @@ Kaikilla Klingonin kappaleilla on {'o'meghmey:n:nolink}. Jos kappale haihtuu kun
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ba'Suq:n}, {yu'egh:n}</column>
-      <column name="notes"></column>
+      <column name="notes">This refers to soapy stuff (or similar things such as ocean foam, beer head, etc.). It's not used for hard substances like styrofoam, but styrofoam could be described as {'o'nI' Sub:n@@'o'nI':n, Sub:v:1} "solid foam".[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3241,7 +3241,7 @@ Kaikilla Klingonin kappaleilla on {'o'meghmey:n:nolink}. Jos kappale haihtuu kun
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">styrofoam</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3249,7 +3249,7 @@ Kaikilla Klingonin kappaleilla on {'o'meghmey:n:nolink}. Jos kappale haihtuu kun
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2020.03.30:src}</column>
+      <column name="source">[1] {KLI mailing list 2020.03.30:src}, [2] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
