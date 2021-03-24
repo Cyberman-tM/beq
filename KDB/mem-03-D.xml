@@ -99,7 +99,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Da-</column>
-      <column name="part_of_speech">v:pref</column>
+      <column name="part_of_speech">v:pref,klcp1</column>
       <column name="definition">you-him/her/it/them</column>
       <column name="definition_de">du-ihn/sie/es/sie (pl.)</column>
       <column name="definition_fa">شما او / او / آن / آنها [AUTOTRANSLATED]</column>
@@ -278,7 +278,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dach</column>
-      <column name="part_of_speech">v:1,i</column>
+      <column name="part_of_speech">v:1,i,klcp1</column>
       <column name="definition">be absent</column>
       <column name="definition_de">abwesend sein</column>
       <column name="definition_fa">غایب بودن [AUTOTRANSLATED]</column>
@@ -625,7 +625,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DaHjaj</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">today</column>
       <column name="definition_de">heute</column>
       <column name="definition_fa">امروز</column>
@@ -867,7 +867,7 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Daj</column>
-      <column name="part_of_speech">v:1,is</column>
+      <column name="part_of_speech">v:1,is,klcp1</column>
       <column name="definition">be interesting</column>
       <column name="definition_de">interessant sein</column>
       <column name="definition_fa">جالب باشد [AUTOTRANSLATED]</column>
@@ -887,7 +887,7 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src} suggests that {Daj:v:nolink} and {qetlh:v:nolink} are opposites.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -997,7 +997,7 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dal</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be boring</column>
       <column name="definition_de">langweilig sein</column>
       <column name="definition_fa">خسته کننده بودن [AUTOTRANSLATED]</column>
@@ -1017,9 +1017,12 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This is "dull".</column>
+      <column name="hidden_notes">This is "dull".
+
+The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src} suggests that {Daj:v:nolink} and {qetlh:v:nolink} are opposites. The example sentence suggests that {Dal:v:nolink} is absence of {Daj:v:nolink}.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {Dal pagh jagh.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1037,49 +1040,49 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">Dal pagh jagh.</column>
-      <column name="part_of_speech">sen:phr</column>
-      <column name="definition">No enemy is boring.</column>
-      <column name="definition_de">Kein Feind ist langweilig.</column>
-      <column name="definition_fa">دشمن خسته کننده نیست [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Ingen fiende är tråkig. [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Никаких врагов - это скучно.</column>
-      <column name="definition_zh_HK">沒有敵人是無聊的。</column>
-      <column name="definition_pt">Nenhum inimigo é entediante.</column>
-      <column name="definition_fi">Yksikään vihollinen ei ole tylsä.</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{Dal:v}, {pagh:n:1h}, {jagh:n}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKW p.201:src}</column>
-    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">Dal pagh jagh.</column>
+          <column name="part_of_speech">sen:phr</column>
+          <column name="definition">No enemy is boring.</column>
+          <column name="definition_de">Kein Feind ist langweilig.</column>
+          <column name="definition_fa">دشمن خسته کننده نیست [AUTOTRANSLATED]</column>
+          <column name="definition_sv">Ingen fiende är tråkig. [AUTOTRANSLATED]</column>
+          <column name="definition_ru">Никаких врагов - это скучно.</column>
+          <column name="definition_zh_HK">沒有敵人是無聊的。</column>
+          <column name="definition_pt">Nenhum inimigo é entediante.</column>
+          <column name="definition_fi">Yksikään vihollinen ei ole tylsä.</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{Dal:v}, {pagh:n:1h}, {jagh:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {TKW p.201:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dam</column>
@@ -1257,7 +1260,7 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dap</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">nonsense</column>
       <column name="definition_de">Unsinn</column>
       <column name="definition_fa">مزخرف [AUTOTRANSLATED]</column>
@@ -2014,7 +2017,7 @@ Hyväksyttävä tapa muotoilla tämä vaatimus kysymykseksi on {nuq DaDab?:sen:n
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DaS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">boot</column>
       <column name="definition_de">Stiefel</column>
       <column name="definition_fa">بوت کردن [AUTOTRANSLATED]</column>
@@ -2919,7 +2922,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Degh</column>
-      <column name="part_of_speech">n:2</column>
+      <column name="part_of_speech">n:2,klcp1</column>
       <column name="definition">helm</column>
       <column name="definition_de">Steuer</column>
       <column name="definition_fa">هلم [AUTOTRANSLATED]</column>
@@ -3006,7 +3009,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
       <!-- Not "deriv" because not derived from {Degh:v} + {-wI':v}. -->
       <column name="_id"></column>
       <column name="entry_name">DeghwI'</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">helmsman</column>
       <column name="definition_de">Steuermann</column>
       <column name="definition_fa">راننده</column>
@@ -3179,7 +3182,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Del</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">describe</column>
       <column name="definition_de">beschreiben</column>
       <column name="definition_fa">توصیف کردن</column>
@@ -3903,7 +3906,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DeS</column>
-      <column name="part_of_speech">n:1,body</column>
+      <column name="part_of_speech">n:1,body,klcp1</column>
       <column name="definition">arm (body part)</column>
       <column name="definition_de">Arm (Körperteil)</column>
       <column name="definition_fa">دست، بازو</column>
@@ -4118,7 +4121,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dev</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">lead, guide</column>
       <column name="definition_de">leiten, führen</column>
       <column name="definition_fa">سرب، راهنمای [AUTOTRANSLATED]</column>
@@ -4249,7 +4252,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">De'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">data, information</column>
       <column name="definition_de">Daten, Information(en)</column>
       <column name="definition_fa">اطلاعات، داده</column>
@@ -4685,7 +4688,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
       <!-- Not "deriv" because not derived from {De'} + {wI'}. -->
       <column name="_id"></column>
       <column name="entry_name">De'wI'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">computer</column>
       <column name="definition_de">Computer</column>
       <column name="definition_fa">کامپیوتر</column>
@@ -5516,7 +5519,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
       <column name="definition_ru">используйте пигментную палочку, рисуйте пигментной палочкой [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">使用顏料棒、塗上顏料棒 [AUTOTRANSLATED]</column>
       <column name="definition_pt">use um bastão de pigmento, pinte com um bastão de pigmento</column>
-      <column name="definition_fi">käyttää maalitikkua?, maalata maalitikulla?</column>
+      <column name="definition_fi">piirtää, maalata, käyttää maalitikkua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wev:v}, {rItlh:n}, {DIjwI':n}, {ngoH:v:2}, {vol:n}, {DIj:v:1}</column>
@@ -5543,11 +5546,11 @@ Detta verb kan användas för att producera en visuell bild även om ingen färg
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">Tämän verbin kohde on asia, jota koskettaa {rItlh naQ:n}, esimerkiksi {nagh beQ:n}. Koska {DIj:v:2,nolink} on jo liitetty {nagh beQ:n:nolink}: ään, se voidaan jättää pois. Jos kuitenkin maalataan tai piirretään jollekin muulle kuin {nagh beQ:n:nolink}: lle, se on määriteltävä.
+      <column name="notes_fi">Verbin objekti on pinta, jolle maalitikulla ({rItlh naQ:n}) piirretään, yleensä kivitaulu ({nagh beQ:n}). Koska {DIj:v:2,nolink} assosioituu vahvasti {nagh beQ:n:nolink}:iin, on se oletus jos objektia ei ole. Jos pinta on jokin muu kuin {nagh beQ:n:nolink}, on se selkeyden vuoksi hyvä kertoa.
 
-Piirrettävän asian määrittämiseksi voidaan käyttää verbejä {cha':v} tai {nargh:v:0}. Jälkimmäinen tarkoittaa sekä "esiintymistä" että "paeta", ja samanlainen kuin {qon:v}: n käyttö musiikin säveltämisessä tai kirjoitusten kirjoittamisessa, sen käyttö viittaa siihen, että kuva on jo olemassa ja {DIjwI':n} jotenkin mahdollistaa sen paeta ja ilmestyä. Yleensä {nargh:v:0,nolink}: tä käytetään liitetiedoston {-moH:v} kanssa, mutta sitä on myös mahdollista käyttää ilman, vaikka tätä rakennetta kuullaan harvemmin. {cha':v:nolink}-versio on yleisempi epävirallisissa asetuksissa ja {nargh:v:nolink} (yleensä {narghmoH:v:nolink}) -versio on yleisempi kirjallisuudessa tai taiteesta käytävissä keskusteluissa.
+Piirrettävän asia voidaan määritelllä verbillä {cha':v} (näyttää) tai {nargh:v:0} (ilmestyä, paeta, karata). Jälkimmäinen verbi on samanlainen kuin kirjoittamisen ja säveltämisen yhteydessä käytettävä {qon:v}: kuvan ajatellaan olevan jo olemassa ja maalaaja ({DIjwI':n}) mahdollistaa sen pakenemisen ja ilmestymisen. Yleensä {nargh:v:0,nolink}-verbiä käytetään {-moH:v}-päätteen kanssa, vaikka sen käyttäminen ilman päätettä on myös sallittua joskin harvinaisempaa. {cha':v:nolink}-verbin käyttäminen on yleisempää epämuodollisemmissa tilanteissa ja {nargh:v:nolink} (yleensä {narghmoH:v:nolink})-verbi on yleisempi kirjallisuudessa ja taiteessa käytävissä keskusteluissa.
 
-Tätä verbiä voidaan käyttää visuaalisen kuvan tuottamiseen, vaikka siinä ei olisikaan maalia tai pigmenttitikkua, esimerkiksi lyijykynällä tai laitteella tai tietokoneohjelmalla.[2][2][2] [AUTOTRANSLATED]</column>
+Tätä verbiä käytetään myös muunlaisesta piirtämisestä kuin maalitikulla maalaamisesta. Sitä voi käyttää esimerkiksi kynällä tai tietokoneella piirtämisestä.[2]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
@@ -5563,7 +5566,13 @@ Tätä verbiä voidaan käyttää visuaalisen kuvan tuottamiseen, vaikka siinä 
       <column name="examples_ru"></column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
+      <column name="examples_fi">
+▶ {DI'raq Dacha'meH nagh beQ yIDIj:sen:nolink} "Maalaa lammas kivitaululle!"[2]
+▶ {DI'raq Dacha'meH yIDIj:sen:nolink} "Maalaa kuva lampaasta!"[2]
+▶ {DI'raq DanarghmoHmeH nagh beQ yIDIj:sen:nolink} "Maalaa lammas kivitaululle!"[2]
+▶ {DI'raq DanarghmoHmeH yIDIj:sen:nolink} "Maalaa kuva lampaasta!"[2]
+▶ {narghmeH DI'raq (nagh beQ) yIDIj:sen:nolink} "Maalaa lammas (kivitaululle)!"[2]
+▶ {DI'raq Dacha'meH nav yIDIj:sen:nolink} or {DI'raq DanarghmoHmeH nav yIDIj:sen:nolink} "Piirrä lammas paperille!"[2]</column>
       <column name="search_tags">draw, paint</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
@@ -5620,7 +5629,7 @@ Tätä verbiä voidaan käyttää visuaalisen kuvan tuottamiseen, vaikka siinä 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DIl</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">pay for</column>
       <column name="definition_de">etw. bezahlen</column>
       <column name="definition_fa">برای پرداخت [AUTOTRANSLATED]</column>
@@ -5885,7 +5894,7 @@ The description originally given in the {KLI:src} New Klingon Words list says th
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DIp</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">noun</column>
       <column name="definition_de">Nomen, Substantiv</column>
       <column name="definition_fa">اسم [AUTOTRANSLATED]</column>
@@ -6025,7 +6034,7 @@ Liitetyyppi 5: sijamuodot
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DIr</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">skin</column>
       <column name="definition_de">Haut</column>
       <column name="definition_fa">پوست</column>
@@ -6037,14 +6046,14 @@ Liitetyyppi 5: sijamuodot
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{veD:n}, {ghISDen:n}, {quHvaj:n}, {veDDIr:n}, {Surgh:v}</column>
-      <column name="notes">This word takes the suffix {-Du':n:suff} when it refers to skin still on the body, and {-mey:n:suff} otherwise.[2]</column>
-      <column name="notes_de">Dieses Wort hat das Suffix {-Du':n:suff}, wenn es sich auf noch am Körper befindliche Haut bezieht, und ansonsten {-mey:n:suff}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این کلمه پسوند {-Du':n:suff} را می گیرد ، هنگامی که به پوست هنوز هم روی بدن است و {-mey:n:suff} در غیر این صورت.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta ord tar suffixet {-Du':n:suff} när det hänvisar till hud som fortfarande finns på kroppen, och {-mey:n:suff} annars.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это слово принимает суффикс {-Du':n:suff} когда оно относится к коже, что все еще на теле, и {-mey:n:suff} в остальных случаях.[2]</column>
-      <column name="notes_zh_HK">當這個詞表示皮膚仍然在身體上時，它的後綴為{-Du':n:suff}，否則為{-mey:n:suff}。[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta palavra usa o sufixo {-Du':n:suff} quando se refere à pele ainda no corpo e {-mey:n:suff} em caso contrário.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä sana vie loppuliitteen {-Du':n:suff}, kun se viittaa vielä kehossa olevaan ihoon, ja {-mey:n:suff} muuten.[2] [AUTOTRANSLATED]</column>
+      <column name="notes">This word takes the suffix {-Du':n:suff} when it refers to skin still on the body, and {-mey:n:suff} otherwise.[2] (But see {nagh DIr:n} for how to form the plural when it is used to refer to an animal shell.)</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes">"Deer" skin.</column>
       <column name="components"></column>
       <column name="examples">
@@ -6421,7 +6430,7 @@ Liitetyyppi 5: sijamuodot
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DIS</column>
-      <column name="part_of_speech">n:2</column>
+      <column name="part_of_speech">n:2,klcp1</column>
       <column name="definition">year (Klingon)</column>
       <column name="definition_de">Jahr</column>
       <column name="definition_fa">سال (تقویم کلینگانی)</column>
@@ -7420,7 +7429,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Doch</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">thing</column>
       <column name="definition_de">Ding</column>
       <column name="definition_fa">چیز</column>
@@ -7944,7 +7953,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Doj</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be impressive</column>
       <column name="definition_de">beeindruckend sein</column>
       <column name="definition_fa">موثر باشد [AUTOTRANSLATED]</column>
@@ -8385,7 +8394,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Doq</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be orange, red</column>
       <column name="definition_de">orange sein, rot sein</column>
       <column name="definition_fa">نارنجی، قرمز بودن</column>
@@ -9148,7 +9157,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Doy'</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be tired</column>
       <column name="definition_de">müde sein</column>
       <column name="definition_fa">خسته بودن</column>
@@ -9234,7 +9243,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Do'</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be fortunate, lucky</column>
       <column name="definition_de">Glück haben</column>
       <column name="definition_fa">خوش شانس، خوش شانس [AUTOTRANSLATED]</column>
@@ -10153,7 +10162,7 @@ Tätä verbiä käytetään parantamaan abstraktimpaa luonnetta, kuten tila, tai
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Duj</column>
-      <column name="part_of_speech">n:1</column>
+      <column name="part_of_speech">n:1,klcp1</column>
       <column name="definition">ship, vessel</column>
       <column name="definition_de">Schiff, Raumschiff</column>
       <column name="definition_fa">کشتی، سفینه، وسیله نقلیه</column>
@@ -10681,7 +10690,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dung</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">area above, area overhead</column>
       <column name="definition_de">Bereich über, oberhalb</column>
       <column name="definition_fa">منطقه بالا، منطقه بالاسری</column>

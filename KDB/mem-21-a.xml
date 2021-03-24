@@ -811,7 +811,7 @@ A German word for "vein" is "Ader".</column>
       <column name="definition_sv">fallskärm [AUTOTRANSLATED]</column>
       <column name="definition_ru">парашют [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">降落傘 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">pára-quedas [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pára-quedas</column>
       <column name="definition_fi">laskuvarjo</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1608,7 +1608,7 @@ Kun sitä käytetään ihmisiin, se voi tarkoittaa vain kirjaimellista kivenmuut
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ang</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">show, reveal</column>
       <column name="definition_de">zeigen, enthüllen</column>
       <column name="definition_fa">نشان می دهد، نشان می دهد [AUTOTRANSLATED]</column>
@@ -1876,7 +1876,7 @@ Kun sitä käytetään ihmisiin, se voi tarkoittaa vain kirjaimellista kivenmuut
       <column name="definition_sv">avgifter, vägtull [AUTOTRANSLATED]</column>
       <column name="definition_ru">сборы, пошлины [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">會費，通行費 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">dívidas, pedágio [AUTOTRANSLATED]</column>
+      <column name="definition_pt">imposto, tributo</column>
       <column name="definition_fi">vero, maksu, tulli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -2435,7 +2435,7 @@ Harkitse muissa yhteyksissä verbiliitteen {-qu':v} käyttöä. Esimerkiksi: {no
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'aqroS ...</column>
-      <column name="part_of_speech">sen:alt</column>
+      <column name="part_of_speech">sen:alt,noanki</column>
       <column name="definition">{rav ... 'aqroS ...:sen}</column>
       <column name="definition_de">{rav ... 'aqroS ...:sen}</column>
       <column name="definition_fa">{rav ... 'aqroS ...:sen}</column>
@@ -2652,7 +2652,7 @@ The request was for the plant. Presumably, the fruit be {'aquta' naH:n@@'aquta':
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ar</column>
-      <column name="part_of_speech">ques</column>
+      <column name="part_of_speech">ques:klcp1</column>
       <column name="definition">how many? how much?</column>
       <column name="definition_de">wie viel/e?</column>
       <column name="definition_fa">چند تا؟ چقدر؟ [AUTOTRANSLATED]</column>
@@ -3061,7 +3061,7 @@ Liiton 24 tunnin järjestelmää ({tera' poH:n}) käytetään joskus planeettoje
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'av</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">guard</column>
       <column name="definition_de">bewachen</column>
       <column name="definition_fa">نگهبان [AUTOTRANSLATED]</column>

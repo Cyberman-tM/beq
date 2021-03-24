@@ -73,12 +73,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">ghorgh pa'wIjDaq jIchegh?</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">When can I return to my room?</column>
-      <column name="definition_de">Wann kann ich in mein Zimmer zurückkehren? [AUTOTRANSLATED]</column>
+      <column name="definition_de">Wann kann ich in mein Zimmer zurückkehren?</column>
       <column name="definition_fa">چه زمانی می توانم به اتاقم برگردم؟ [AUTOTRANSLATED]</column>
       <column name="definition_sv">När kan jag återvända till mitt rum? [AUTOTRANSLATED]</column>
       <column name="definition_ru">Когда я могу вернуться в свою комнату?</column>
       <column name="definition_zh_HK">我什麼時候可以回到房間？ [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Quando posso voltar para o meu quarto? [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Quando posso voltar para o meu quarto?</column>
       <column name="definition_fi">Milloin voin palata huoneeseeni? [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -121,7 +121,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_sv">Terrans tycker om att äta brända djur. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Терраны любят есть сожженных животных. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">人族喜歡吃燒掉的動物。 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Os terráqueos gostam de comer animais queimados. [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Os terráqueos gostam de comer animais queimados.</column>
       <column name="definition_fi">Maapallolaiset nauttivat paistettujen eläinten syömisestä.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -159,12 +159,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">naDev vay' DaSov'a'?</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Do you know anyone here?</column>
-      <column name="definition_de">Kennen Sie hier jemanden? [AUTOTRANSLATED]</column>
+      <column name="definition_de">Kennen Sie hier jemanden?</column>
       <column name="definition_fa">آیا کسی را در اینجا می شناسید؟ [AUTOTRANSLATED]</column>
       <column name="definition_sv">Känner du någon här? [AUTOTRANSLATED]</column>
       <column name="definition_ru">Вы здесь кого-нибудь знаете? [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">你認識這裡的人嗎？ [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Você conhece alguém aqui? [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Você conhece alguém aqui?</column>
       <column name="definition_fi">Tunnetko ketään täällä? [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -202,12 +202,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">naDev vay' vISovbe'.</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">I don't know anyone here.</column>
-      <column name="definition_de">Ich kenne hier niemanden. [AUTOTRANSLATED]</column>
+      <column name="definition_de">Ich kenne hier niemanden.</column>
       <column name="definition_fa">من اینجا کسی را نمی شناسم. [AUTOTRANSLATED]</column>
       <column name="definition_sv">Jag känner ingen här. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Я никого здесь не знаю. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">我在這裡不認識任何人。 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Eu não conheço ninguém aqui. [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Eu não conheço ninguém aqui.</column>
       <column name="definition_fi">En tunne ketään täällä. [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -245,12 +245,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">naDevvo' jIleghlaHchu'be'.</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">I can't see well from here.</column>
-      <column name="definition_de">Ich kann von hier aus nicht gut sehen. [AUTOTRANSLATED]</column>
+      <column name="definition_de">Ich kann von hier aus nicht gut sehen.</column>
       <column name="definition_fa">من از اینجا خوب نمی بینم [AUTOTRANSLATED]</column>
       <column name="definition_sv">Jag kan inte se bra härifrån. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Я плохо вижу отсюда. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">我從這裡看不見。 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Não consigo ver bem daqui. [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Não consigo ver bem daqui.</column>
       <column name="definition_fi">En näe täältä. [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -336,7 +336,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_sv">Rummet har ingen utsikt. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Комната не имеет вида.</column>
       <column name="definition_zh_HK">房間裡沒有風景。 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">O quarto não tem vista. [AUTOTRANSLATED]</column>
+      <column name="definition_pt">O quarto não tem vista.</column>
       <column name="definition_fi">Huoneesta ei ole näköalaa.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -474,12 +474,12 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="entry_name">yIyong 'ej pa' yIQam!</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Get in and stand there!</column>
-      <column name="definition_de">Steig ein und steh da! [AUTOTRANSLATED]</column>
+      <column name="definition_de">Steig ein und steh da!</column>
       <column name="definition_fa">وارد شوید و آنجا بایستید! [AUTOTRANSLATED]</column>
       <column name="definition_sv">Gå in och stå där! [AUTOTRANSLATED]</column>
       <column name="definition_ru">Садись и стой там! [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">進站在那裡！ [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Entre e fique aí! [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Entre e fique aí!</column>
       <column name="definition_fi">Mene sisään ja seiso siellä! [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4386,6 +4386,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
         </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">bambu'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">bamboo</column>
+      <column name="definition_de">Bambus</column>
+      <column name="definition_fa">بامبو</column>
+      <column name="definition_sv">bambu</column>
+      <column name="definition_ru">бамбук [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">竹</column>
+      <column name="definition_pt">bambu</column>
+      <column name="definition_fi">bambu</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{SIyech:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 25 (2018):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">barbara' ma'rIch</column>
       <column name="part_of_speech">n:name</column>
       <column name="definition">Barbara March</column>
@@ -5084,7 +5127,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Dresden [AUTOTRANSLATED]</column>
       <column name="definition_ru">Дрезден [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">德累斯頓 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Dresden [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Dresden</column>
       <column name="definition_fi">Dresden [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5428,7 +5471,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Rouen [AUTOTRANSLATED]</column>
       <column name="definition_ru">Руан [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">魯昂 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Rouen [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Rouen</column>
       <column name="definition_fi">Rouen [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5858,7 +5901,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Le Havre [AUTOTRANSLATED]</column>
       <column name="definition_ru">Гавр [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">勒阿弗爾 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Le Havre [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Le Havre</column>
       <column name="definition_fi">Le Havre [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -6849,7 +6892,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Normandie [AUTOTRANSLATED]</column>
       <column name="definition_ru">Нормандия [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">諾曼底 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Normandia [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Normandia</column>
       <column name="definition_fi">Normandia [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -7021,7 +7064,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">pasta, nudlar, spagetti [AUTOTRANSLATED]</column>
       <column name="definition_ru">макароны, лапша, спагетти [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">意大利面，麵條，意大利面 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">macarrão, macarrão, espaguete [AUTOTRANSLATED]</column>
+      <column name="definition_pt">macarrão, massa, espaguete</column>
       <column name="definition_fi">pasta, nuudeli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -7922,6 +7965,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">qo'vID wa'maH Hut</column>
+      <column name="part_of_speech">n:alt,noanki</column>
+      <column name="definition">{qoro'na javtIm:n}</column>
+      <column name="definition_de">{qoro'na javtIm:n}</column>
+      <column name="definition_fa">{qoro'na javtIm:n}</column>
+      <column name="definition_sv">{qoro'na javtIm:n}</column>
+      <column name="definition_ru">{qoro'na javtIm:n}</column>
+      <column name="definition_zh_HK">{qoro'na javtIm:n}</column>
+      <column name="definition_pt">{qoro'na javtIm:n}</column>
+      <column name="definition_fi">{qoro'na javtIm:n}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">quba'</column>
       <column name="part_of_speech">n:place</column>
       <column name="definition">Cuba</column>
@@ -8145,7 +8231,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Rhen [AUTOTRANSLATED]</column>
       <column name="definition_ru">Рейн [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">萊茵河 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Rhine [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Rhine</column>
       <column name="definition_fi">Rein [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8188,7 +8274,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">rom [AUTOTRANSLATED]</column>
       <column name="definition_ru">Рим [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">羅馬 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Roma [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Roma</column>
       <column name="definition_fi">Rooma</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8447,7 +8533,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_sv">Not [AUTOTRANSLATED]</column>
       <column name="definition_ru">Сена [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">罾 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Seine [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Sena</column>
       <column name="definition_fi">Seine [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9011,12 +9097,12 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="entry_name">tera' rop bIr</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">common cold (mistranslation)</column>
-      <column name="definition_de">Erkältung (Fehlübersetzung) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Erkältung (Fehlübersetzung)</column>
       <column name="definition_fa">سرماخوردگی (ترجمه غلط) [AUTOTRANSLATED]</column>
       <column name="definition_sv">förkylning (felöversättning) [AUTOTRANSLATED]</column>
       <column name="definition_ru">простуда (неправильный перевод) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">普通感冒（誤譯） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">resfriado comum (tradução incorreta) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">resfriado comum (tradução incorreta)</column>
       <column name="definition_fi">flunssa (huono käännös)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9704,7 +9790,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="definition_sv">arabiskt språk [AUTOTRANSLATED]</column>
       <column name="definition_ru">арабский язык [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">阿拉伯語</column>
-      <column name="definition_pt">linguagem árabe [AUTOTRANSLATED]</column>
+      <column name="definition_pt">linguagem árabe</column>
       <column name="definition_fi">arabian kieli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -11137,7 +11223,7 @@ Ein besonderer Dank richtet sich an Marc Okrand ({marq 'oqranD:n:name}) für das
 Также возможно использовать альтернативную раскладку:
     k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
 
-Если вы столкнетесь с какими-либо проблемами, или у вас появятся предложения, пожалуйста отправьте сообщение на {email at De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}
+Если вы столкнетесь с какими-либо проблемами, или у вас появятся предложения, пожалуйста отправьте сообщение на {email at De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
 
 Поддержите Клингонский язык, купив {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src}, и другую продукцию, связанную со Стар Трэком и Клингонами , от Pocket Books, Simon &amp; Schuster, and Paramount/Viacom/CBS Entertainment.
 
@@ -11164,13 +11250,13 @@ Sanoja voi hakea painamalla "Hae"-nappia (suurennuslasia) ja kirjoittamalla haku
 
 Sanojen ääntämyksen voi kuunnella erikseen ladattavalla {puhesyntetisaattorilla:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}.
 
-On suositeltavaa ladata {klingoninkielinen asettelu ASK-näppäimistölle:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Toinen vaihtoehto on ottaa käyttöön alla olevat korvaukset (ns. "xifan hol") asetusvalikossa:
+On suositeltavaa ladata {klingoninkielinen asettelu ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}-näppäimistölle. Toinen vaihtoehto on ottaa käyttöön alla olevat korvaukset (ns. "xifan hol") asetusvalikossa:
     c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
     i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
 On myös toinen versio, missä q ja k on vaihdettu:
     k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
 
-Jos sinulla on ongelmia, ota yhteys ohjelman tekijään {sähköpostitse osoitteeseen De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
+Jos sinulla on ongelmia, ota yhteys ohjelman tekijään sähköpostitse osoitteeseen {De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
 
 Tue klingonin kielen kehitystä ostamalla {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src} ja muita klingoniin tai Star Trekiin liittyviä tuotteita Pocket Booksilta, Simon &amp; Schusterilta ja Paramountilta/Viacomilta/CBS Entertainmentilta.
 
@@ -13539,7 +13625,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tIb</column>
-      <column name="part_of_speech">v:alt</column>
+      <column name="part_of_speech">v:alt,is,noanki</column>
       <column name="definition">{bIt:v}</column>
       <column name="definition_de">{bIt:v}</column>
       <column name="definition_fa">{bIt:v}</column>
@@ -13552,13 +13638,13 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes">This word appears on {KGT p.132:src}, but based on the context it is clearly a typo for {bIt:v}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
+      <column name="notes_de">Dieses Wort erscheint auf {KGT p.132:src}, ist aber aufgrund des Kontexts eindeutig ein Tippfehler für {bIt:v}. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این کلمه در {KGT p.132:src} ظاهر می شود ، اما بر اساس متن به وضوح یک اشتباه تایپی برای {bIt:v} است. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Det här ordet visas på {KGT p.132:src}, men baserat på sammanhanget är det helt klart en skrivfel för {bIt:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru"></column>
+      <column name="notes_ru">Это слово появляется на {KGT p.132:src}, но, судя по контексту, это явно опечатка для {bIt:v}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這個詞出現在{KGT p.132:src}上，但是根據上下文，它顯然是{bIt:v}的錯字。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta palavra aparece em {KGT p.132:src}, mas com base no contexto, é claramente um erro de digitação para {bIt:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">Tämä sana esiintyy {KGT p.132:src}: ssä, mutta kontekstin perusteella se on selvästi kirjoitusvirhe {bIt:v}: lle. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>

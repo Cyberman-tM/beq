@@ -44,7 +44,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eb</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">opportunity, chance, opening</column>
       <column name="definition_de">Möglichkeit, Gelegenheit</column>
       <column name="definition_fa">فرصت، فرصت، باز کردن [AUTOTRANSLATED]</column>
@@ -80,7 +80,7 @@ Em um bar Klingon, o barman ({chom:n}) grita {'eb Qav:n} para "última chamada" 
       <column name="notes_fi">Mahdollisuuden sanotaan olevan kiinni ({jon:v}), ja jos joku menettää mahdollisuuden, sen sanotaan paenneen ({nargh:v:2}) .[3] "Aikaa tappaa" tarkoittaa {'ebmey jonHa':sen}.[5]
 
 Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelusta".[4] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as "opportunity" in {TKD:src} and as "chance, opening" in {KGT:src}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {jIpaSqu'mo' narghpu' qaSuchmeH 'eb.:sen:nolink} "Because I'm very late, the opportunity to visit you has escaped."[3]
@@ -200,7 +200,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="definition_sv">apparater för destillering {HIq:n} [AUTOTRANSLATED]</column>
       <column name="definition_ru">аппарат для перегонки {HIq:n} [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">蒸餾裝置{HIq:n} [AUTOTRANSLATED]</column>
-      <column name="definition_pt">aparelho para destilar {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_pt">aparelho para destilar {HIq:n}</column>
       <column name="definition_fi">{HIq:n}in tislauslaite</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -243,7 +243,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
           <column name="definition_sv">destilleri (rum) [AUTOTRANSLATED]</column>
           <column name="definition_ru">винокурня (помещение) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">釀酒廠（房間） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">destilaria (sala) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">destilaria (sala)</column>
           <column name="definition_fi">tislaamo (huone)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -286,7 +286,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
           <column name="definition_sv">destilleri (byggnad) [AUTOTRANSLATED]</column>
           <column name="definition_ru">винокурня (здание) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">釀酒廠（建築） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">destilaria (edifício) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">destilaria (edifício)</column>
           <column name="definition_fi">tislaamo (rakennus)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -329,7 +329,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="definition_sv">klimax (sexuell) [AUTOTRANSLATED]</column>
       <column name="definition_ru">климакс (сексуальный) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">高潮（性） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">clímax (sexual) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">clímax (sexual)</column>
       <column name="definition_fi">orgasmi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -774,7 +774,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eH</column>
-      <column name="part_of_speech">excl</column>
+      <column name="part_of_speech">excl:klcp1</column>
       <column name="definition">Ready!</column>
       <column name="definition_de">Bereit! Stillgestanden!</column>
       <column name="definition_fa">آماده! [AUTOTRANSLATED]</column>
@@ -794,7 +794,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">該表達表示說話者將要發出命令。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta expressão indica que o falante está prestes a dar um comando. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä lauseke osoittaa, että puhuja on antamassa komentoa. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is written "Ready!" in {TKD 5.5:src}, but as "ready" in the word lists.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -817,7 +817,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ej</column>
-      <column name="part_of_speech">conj</column>
+      <column name="part_of_speech">conj:klcp1</column>
       <column name="definition">and (joining sentences)</column>
       <column name="definition_de">und (zwischen Sätzen)</column>
       <column name="definition_fa">و (جملات پیوستن) [AUTOTRANSLATED]</column>
@@ -1272,7 +1272,7 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'el</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">enter, go in</column>
       <column name="definition_de">betreten, hineingehen</column>
       <column name="definition_fa">وارد شوید [AUTOTRANSLATED]</column>
@@ -1670,7 +1670,7 @@ This was revealed to a small group in 2006 at {qep'a' 13:src}, but only posted t
           <column name="definition_sv">säkerhetsnål [AUTOTRANSLATED]</column>
           <column name="definition_ru">английская булавка [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">安全別針 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">pino de segurança [AUTOTRANSLATED]</column>
+          <column name="definition_pt">pino de segurança</column>
           <column name="definition_fi">hakaneula</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -1895,7 +1895,7 @@ It was clarified during the Q &amp; A session that this word and {Hergh:n:nolink
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eng</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">cloud</column>
       <column name="definition_de">Wolke</column>
       <column name="definition_fa">ابر</column>

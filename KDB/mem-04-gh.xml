@@ -260,7 +260,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghaH</column>
-      <column name="part_of_speech">n:pro</column>
+      <column name="part_of_speech">n:pro,klcp1</column>
       <column name="definition">he, she, him, her</column>
       <column name="definition_de">er, sie (ihn, ihm, ihr, usw.)</column>
       <column name="definition_fa">او</column>
@@ -401,7 +401,7 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghaj</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">have, possess</column>
       <column name="definition_de">haben, besitzen</column>
       <column name="definition_fa">داشتن</column>
@@ -1057,7 +1057,7 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghap</column>
-      <column name="part_of_speech">conj</column>
+      <column name="part_of_speech">conj:klcp1</column>
       <column name="definition">or, either/or (joining nouns)</column>
       <column name="definition_de">entweder/oder (bei Substantiven)</column>
       <column name="definition_fa">یا، یا / (پیوند اسم ها) [AUTOTRANSLATED]</column>
@@ -1411,7 +1411,7 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="definition_sv">indikera, signalera [AUTOTRANSLATED]</column>
       <column name="definition_ru">указать, сигнал [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">指示，信號 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">indicar sinal [AUTOTRANSLATED]</column>
+      <column name="definition_pt">indicar, sinalizar</column>
       <column name="definition_fi">ilmaista, antaa merkki</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -2231,7 +2231,7 @@ In the list of vocabulary used in {KCD:src} which was given to the KLI in advanc
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghegh</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be rough</column>
       <column name="definition_de">rau, grob, nicht glatt sein</column>
       <column name="definition_fa">خشن بودن [AUTOTRANSLATED]</column>
@@ -3435,7 +3435,7 @@ Yleisempi termi musiikkia soittavalle ryhmälle (kaikenkokoisille) on {QoQ ghom:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghIch</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">nose</column>
       <column name="definition_de">Nase</column>
       <column name="definition_fa">بینی، دماغه</column>
@@ -3709,7 +3709,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghIH</column>
-      <column name="part_of_speech">v:1,is</column>
+      <column name="part_of_speech">v:1,is,klcp1</column>
       <column name="definition">be messy, sloppy</column>
       <column name="definition_de">unordentlich, schlampig, unsauber, nachlässig sein</column>
       <column name="definition_fa">خجالت بکش [AUTOTRANSLATED]</column>
@@ -3796,7 +3796,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghIj</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">scare</column>
       <column name="definition_de">jdn. erschrecken</column>
       <column name="definition_fa">ترساندن</column>
@@ -4976,7 +4976,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghItlh</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">manuscript</column>
       <column name="definition_de">Manuskript, Schreiben</column>
       <column name="definition_fa">نسخه خطی [AUTOTRANSLATED]</column>
@@ -5020,7 +5020,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghItlh</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">engrave, incise, mark (upon), write</column>
       <column name="definition_de">schreiben, eingravieren, einritzen</column>
       <column name="definition_fa">حکاکی کردن، برش دادن، علامت گذاری (بر)، نوشتن [AUTOTRANSLATED]</column>
@@ -5219,7 +5219,7 @@ Em {TNK:src}, {ghItlhwI':n:nolink} é usado para "caneta" e {ghojmeH ghItlhwI':n
           <column name="definition_sv">markeringskort, blädderblock [AUTOTRANSLATED]</column>
           <column name="definition_ru">маркерная доска, флип-чарт [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">標記板，活動掛圖 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">quadro de marcadores, flip chart [AUTOTRANSLATED]</column>
+          <column name="definition_pt">quadro marcador, flip chart</column>
           <column name="definition_fi">tussitaulu, fläppitaulu</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -5870,7 +5870,7 @@ Armeijan nousevassa järjestyksessä sotilaallisia yhteenottoja kuvaavia verbej�
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghobe'</column>
-      <column name="part_of_speech">excl</column>
+      <column name="part_of_speech">excl:klcp1</column>
       <column name="definition">no (answer to a question)</column>
       <column name="definition_de">nein (Antwort auf eine Frage)</column>
       <column name="definition_fa">نه (پاسخ به سوال) [AUTOTRANSLATED]</column>
@@ -6058,7 +6058,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghoD</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">stuff</column>
       <column name="definition_de">stopfen, füllen, ausstopfen</column>
       <column name="definition_fa">چیز [AUTOTRANSLATED]</column>
@@ -6103,7 +6103,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghogh</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">voice</column>
       <column name="definition_de">Stimme</column>
       <column name="definition_fa">صدای [AUTOTRANSLATED]</column>
@@ -6275,7 +6275,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghoj</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">learn</column>
       <column name="definition_de">lernen</column>
       <column name="definition_fa">فرا گرفتن [AUTOTRANSLATED]</column>
@@ -6330,14 +6330,14 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is a lesson as in a textbook, and not in the sense of "Let this be a lesson to you!", which is {ghuH:n}. It can also be used to express "tutorial about X", as {X ghojmeH mIw:n:nolink}.</column>
-      <column name="notes_de">Dies ist eine Lektion wie in einem Lehrbuch und nicht im Sinne von "Lass dies eine Lektion für dich sein!", Was {ghuH:n} ist. Es kann auch verwendet werden, um "Tutorial über X" als {X ghojmeH mIw:n:nolink} auszudrücken. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این یک درس مانند یک کتاب درسی است ، و نه به معنای "بگذارید این یک درس برای شما باشد!" ، که {ghuH:n} است. همچنین می تواند برای بیان "آموزش درباره X" ، به عنوان {X ghojmeH mIw:n:nolink} ، استفاده شود. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en lektion som i en lärobok, och inte i betydelsen "Låt detta vara en lektion för dig!", Som är {ghuH:n}. Det kan också användas för att uttrycka "handledning om X", som {X ghojmeH mIw:n:nolink}. [AUTOTRANSLATED]</column>
+      <column name="notes">This is a lesson as in a textbook, and not in the sense of "Let this be a lesson to you!", which is {ghuH:n}. It can also be used to express "tutorial about X", as {X ghojmeH mIw:n:nolink}.[1]</column>
+      <column name="notes_de">Dies ist eine Lektion wie in einem Lehrbuch und nicht im Sinne von "Lass dies eine Lektion für dich sein!", Was {ghuH:n} ist. Es kann auch verwendet werden, um "Tutorial über X" als {X ghojmeH mIw:n:nolink} auszudrücken.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این یک درس مانند یک کتاب درسی است ، و نه به معنای "بگذارید این یک درس برای شما باشد!" ، که {ghuH:n} است. همچنین می تواند برای بیان "آموزش درباره X" ، به عنوان {X ghojmeH mIw:n:nolink} ، استفاده شود.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är en lektion som i en lärobok, och inte i betydelsen "Låt detta vara en lektion för dig!", Som är {ghuH:n}. Det kan också användas för att uttrycka "handledning om X", som {X ghojmeH mIw:n:nolink}.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Это относится к уроку, наподобие того, что в тетради или в учебнике. Слово нельзя использовать в выражениях, наподобие "Пусть это будет тебе уроком!". Для подобных слов смотрите {ghuH:n}. Также может быть использовано, чтобы сказать "руководство о ..." {X ghojmeH mIw:n:nolink}.</column>
-      <column name="notes_zh_HK">這是一本課本，就像在教科書中一樣，並不是「讓這對您來說就是一課！」（{ghuH:n}）。它也可以用來表示「關於X的教程」，例如{X ghojmeH mIw:n:nolink}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta é uma lição como em um livro didático, e não no sentido de "Que isso seja uma lição para você!", Que é {ghuH:n}. Também pode ser usado para expressar "tutorial sobre X", como {X ghojmeH mIw:n:nolink}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on oppitunti kuten oppikirjassa, eikä merkityksessä "Olkoon tämä sinulle oppitunti!", Joka on {ghuH:n}. Sitä voidaan käyttää myös ilmaisemaan "opetusohjelma X: stä" {X ghojmeH mIw:n:nolink}-muodossa. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是一本課本，就像在教科書中一樣，並不是「讓這對您來說就是一課！」（{ghuH:n}）。它也可以用來表示「關於X的教程」，例如{X ghojmeH mIw:n:nolink}。[1] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Esta é uma lição como em um livro didático, e não no sentido de "Que isso seja uma lição para você!", Que é {ghuH:n}. Também pode ser usado para expressar "tutorial sobre X", como {X ghojmeH mIw:n:nolink}.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on oppitunti kuten oppikirjassa, eikä merkityksessä "Olkoon tämä sinulle oppitunti!", Joka on {ghuH:n}. Sitä voidaan käyttää myös ilmaisemaan "opetusohjelma X: stä" {X ghojmeH mIw:n:nolink}-muodossa.[1] [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{ghoj:v}, {-meH:v}, {mIw:n}</column>
       <column name="examples"></column>
@@ -6708,7 +6708,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghom</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">band, group, party</column>
       <column name="definition_de">Gruppe, Partei</column>
       <column name="definition_fa">دسته، گروه، حزب</column>
@@ -6728,7 +6728,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
       <column name="notes_zh_HK">僅用於人群。 （單詞「 {mu'ghom:n}」是一個例外。）[3] [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso é usado apenas para grupos de pessoas. (A palavra {mu'ghom:n} é uma exceção.)[3] [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tätä käytetään vain ihmisryhmille. (Sana {mu'ghom:n} on poikkeus.)[3] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as "group, party" in {TKD:src} and as "band, group, party" in {KGT:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6752,7 +6752,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
       <!-- There is a hyphen in "rendez-vous" on p.86 of {TKD:src}, but only because it happens to coincide with a line-break. -->
       <column name="_id"></column>
       <column name="entry_name">ghom</column>
-      <column name="part_of_speech">v:ambi</column>
+      <column name="part_of_speech">v:ambi,klcp1</column>
       <column name="definition">meet, encounter, assemble, rendezvous</column>
       <column name="definition_de">treffen, begegnen</column>
       <column name="definition_fa">ملاقات، برخورد، ملاقات، ملاقات [AUTOTRANSLATED]</column>
@@ -7185,7 +7185,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghop</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">hand</column>
       <column name="definition_de">Hand</column>
       <column name="definition_fa">دست (از مچ تا سر انگشتان)</column>
@@ -7530,7 +7530,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghor</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">break</column>
       <column name="definition_de">brechen</column>
       <column name="definition_fa">زنگ تفريح [AUTOTRANSLATED]</column>
@@ -7619,7 +7619,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghorgh</column>
-      <column name="part_of_speech">ques</column>
+      <column name="part_of_speech">ques:klcp1</column>
       <column name="definition">when?</column>
       <column name="definition_de">wann</column>
       <column name="definition_fa">کِی؟ چه زمانی؟</column>
@@ -7827,7 +7827,7 @@ Um de seus lendários antepassados ​​também foi chamado de "Gorkon", mas o 
       <column name="notes_fi">Kansleri Gorkon ({ghorqan Qang:n:nolink}) yritti tehdä rauhan federaation kanssa Kirkin aikaan. Kenraali Chang petti hänet (katso {cheng:n:name}).
 
 Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta nimi lausuttiin hänen aikanaan {ghorqon:n:name}.[1] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">He appeared in {Star Trek VI:src}.</column>
+      <column name="hidden_notes">He appeared in {Star Trek VI:src}. His name is an amalgamation of Gorbachev (see {ghIlaSnoS:n}) and Lincoln.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7936,7 +7936,7 @@ Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghoS</column>
-      <column name="part_of_speech">v:1,t_c</column>
+      <column name="part_of_speech">v:1,t_c,klcp1</column>
       <column name="definition">approach, go away from, proceed, come, follow (a course)</column>
       <column name="definition_de">etw. nähern, weggehen, entfernen</column>
       <column name="definition_fa">رویکرد، از بین برود، ادامه دهید، بیا، دنبال (یک دوره) [AUTOTRANSLATED]</column>
@@ -8026,7 +8026,7 @@ Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghot</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">person (humanoid)</column>
       <column name="definition_de">Person</column>
       <column name="definition_fa">شخص (انسان) [AUTOTRANSLATED]</column>
@@ -8171,7 +8171,7 @@ Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghov</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">recognize</column>
       <column name="definition_de">erkennen</column>
       <column name="definition_fa">تشخیص [AUTOTRANSLATED]</column>
@@ -8583,7 +8583,7 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="definition_sv">klimax (sexuell) [AUTOTRANSLATED]</column>
       <column name="definition_ru">климакс (сексуальный) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">高潮（性） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">clímax (sexual) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">clímax (sexual)</column>
       <column name="definition_fi">saada orgasmi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8845,7 +8845,7 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="definition_sv">sväng, vrid [AUTOTRANSLATED]</column>
       <column name="definition_ru">шарнир, вертлюг [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">旋轉 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">pivô, giro [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pivotar, girar sobre um eixo</column>
       <column name="definition_fi">kääntyä, kiertyä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9065,7 +9065,7 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="synonyms"></column>
       <column name="antonyms">{Qey':v}, {bIr:v}</column>
       <column name="see_also">{tuj:v}, {Hat:n}, {buj:v}</column>
-      <column name="notes"></column>
+      <column name="notes">The temperature words really are about temperature and not about effect or perception, so that clothing, for example, is not said to be "hot" or "cold" in Klingon.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -9073,9 +9073,9 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The example makes clear that this word refers to temperature, and not to perception, emotion, or character.
+      <column name="hidden_notes">The clarification that temperature words are not about effect or perception was made during the Q &amp; A session at {qep'a' 27 (2020):src}.
 
-It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the temperature words really are about temperature and not about effect or perception, so that clothing, for example, is not said to be "hot" or "cold" in Klingon.</column>
+The example also makes clear that "be warm" refers to temperature, and not to perception, emotion, or character.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {ghun 'Iw HIq, rap boqrat chej.} "The bokrat liver is as warm as the bloodwine."[1]</column>
@@ -9143,7 +9143,7 @@ It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghung</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be hungry</column>
       <column name="definition_de">hungrig sein, hunger haben</column>
       <column name="definition_fa">گرسنه بودن [AUTOTRANSLATED]</column>

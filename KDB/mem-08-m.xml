@@ -44,7 +44,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ma-</column>
-      <column name="part_of_speech">v:pref</column>
+      <column name="part_of_speech">v:pref,klcp1</column>
       <column name="definition">we-none</column>
       <column name="definition_de">wir (kein Objekt)</column>
       <column name="definition_fa">ما هیچ کدام [AUTOTRANSLATED]</column>
@@ -218,7 +218,7 @@ Possibly a reference to the fairy Queen Mab in Romeo and Juliet, who is known fo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mach</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be small</column>
       <column name="definition_de">klein sein</column>
       <column name="definition_fa">کوچک بودن</column>
@@ -486,7 +486,7 @@ René Magritte painted "La Trahison des images".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maH</column>
-      <column name="part_of_speech">n:1,pro</column>
+      <column name="part_of_speech">n:1,pro,klcp1</column>
       <column name="definition">we, us</column>
       <column name="definition_de">wir, uns</column>
       <column name="definition_fa">ما</column>
@@ -700,7 +700,7 @@ Pakollinen verbin etuliite, kun kohde on {maH:n:1h,nolink}, on {gho-:v:pref}. [A
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maj</column>
-      <column name="part_of_speech">excl</column>
+      <column name="part_of_speech">excl:klcp1</column>
       <column name="definition">good (expressing satisfaction)</column>
       <column name="definition_de">Gut!</column>
       <column name="definition_fa">خوبه!</column>
@@ -759,7 +759,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">majQa'</column>
-      <column name="part_of_speech">excl</column>
+      <column name="part_of_speech">excl:klcp1</column>
       <column name="definition">well done, very good</column>
       <column name="definition_de">Gut gemacht! Sehr gut!</column>
       <column name="definition_fa">آفرین!</column>
@@ -1246,7 +1246,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition_sv">epitel, mak'dar [AUTOTRANSLATED]</column>
       <column name="definition_ru">эпитет, мак'дар [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">瑪卡達爾 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">epíteto, mak'dar [AUTOTRANSLATED]</column>
+      <column name="definition_pt">mak'dar, um insulto klingon</column>
       <column name="definition_fi">eräs haukkumasana, mak'dar</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1853,7 +1853,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">moon</column>
       <column name="definition_de">Mond</column>
       <column name="definition_fa">ماه</column>
@@ -1898,7 +1898,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maS</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">prefer</column>
       <column name="definition_de">bevorzugen</column>
       <column name="definition_fa">ترجیح می دهند [AUTOTRANSLATED]</column>
@@ -2471,7 +2471,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maw'</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be crazy</column>
       <column name="definition_de">verrückt sein</column>
       <column name="definition_fa">دیوانه شو [AUTOTRANSLATED]</column>
@@ -2645,7 +2645,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">may'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">battle</column>
       <column name="definition_de">Kampf, Schlacht</column>
       <column name="definition_fa">نبرد [AUTOTRANSLATED]</column>
@@ -3343,7 +3343,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
           <column name="definition_sv">piano (Terran musikinstrument) [AUTOTRANSLATED]</column>
           <column name="definition_ru">фортепиано (терранский музыкальный инструмент) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">鋼琴（德蘭樂器） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">piano (instrumento musical terráqueo) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">piano (instrumento musical terráqueo)</column>
           <column name="definition_fi">piano</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -3871,7 +3871,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mej</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">leave, depart</column>
       <column name="definition_de">verlassen, abfahren, weggehen</column>
       <column name="definition_fa">ترک، ترک [AUTOTRANSLATED]</column>
@@ -4252,12 +4252,12 @@ Harkitse {lon:v}, jos haluat ilmaista henkilön tai esineen (eikä sijainnin) j�
           <column name="entry_name">mep vol</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">plastic sheet, vinyl</column>
-          <column name="definition_de">Plastikfolie, Vinyl [AUTOTRANSLATED]</column>
+          <column name="definition_de">Plastikfolie, Vinyl</column>
           <column name="definition_fa">ورق پلاستیک ، وینیل [AUTOTRANSLATED]</column>
           <column name="definition_sv">plastplåt, vinyl [AUTOTRANSLATED]</column>
           <column name="definition_ru">пластиковый лист, винил [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">塑料板，乙烯基 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">folha de plástico, vinil [AUTOTRANSLATED]</column>
+          <column name="definition_pt">folha de plástico, vinil</column>
           <column name="definition_fi">muovilevy, vinyyli</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -4293,7 +4293,7 @@ Harkitse {lon:v}, jos haluat ilmaista henkilön tai esineen (eikä sijainnin) j�
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meq</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">reason, motive, logical thinking, topic, subject, theme</column>
       <column name="definition_de">Grund, Motiv, Anlass, Thema</column>
       <column name="definition_fa">دلیل، انگیزه، تفکر منطقی، موضوع، موضوع، موضوع [AUTOTRANSLATED]</column>
@@ -4511,7 +4511,7 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meQ</column>
-      <column name="part_of_speech">v:1,ambi</column>
+      <column name="part_of_speech">v:1,ambi,klcp1</column>
       <column name="definition">burn</column>
       <column name="definition_de">brennen, verbrennen</column>
       <column name="definition_fa">سوزاندن [AUTOTRANSLATED]</column>
@@ -4671,7 +4671,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="definition_sv">klimax (sexuell) [AUTOTRANSLATED]</column>
       <column name="definition_ru">климакс (сексуальный) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">高潮（性） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">clímax (sexual) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">clímax (sexual)</column>
       <column name="definition_fi">saada orgasmi</column>
       <column name="synonyms">{ghuch:v}</column>
       <column name="antonyms"></column>
@@ -4707,7 +4707,7 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mer</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">surprise</column>
       <column name="definition_de">überraschen</column>
       <column name="definition_fa">تعجب [AUTOTRANSLATED]</column>
@@ -4770,7 +4770,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="notes_ru">Это также используется в контексте физики, где это относится к явлению квантовой суперпозиции. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這也用在物理環境中，它指的是量子疊加現象。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso também é usado no contexto da física, onde se refere ao fenômeno da superposição quântica. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä käytetään myös fysiikan yhteydessä, jossa se viittaa kvantti-superposition ilmiöön. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Fysiikkakontekstissa tämä sana voi viitata kvanttisuperpositioon.</column>
       <column name="hidden_notes">"Merge".</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -5054,7 +5054,7 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mev</column>
-      <column name="part_of_speech">v:ambi</column>
+      <column name="part_of_speech">v:ambi,klcp1</column>
       <column name="definition">stop, cease</column>
       <column name="definition_de">stoppen, aufhören (etwas zu tun)</column>
       <column name="definition_fa">توقف، متوقف [AUTOTRANSLATED]</column>
@@ -6543,7 +6543,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mIS</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be confused, mixed up</column>
       <column name="definition_de">verwirrt, durcheinander, konfus sein</column>
       <column name="definition_fa">اشتباه گرفته شود، مخلوط شود [AUTOTRANSLATED]</column>
@@ -7945,7 +7945,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mob</column>
-      <column name="part_of_speech">v:1,is</column>
+      <column name="part_of_speech">v:1,is,klcp1</column>
       <column name="definition">be alone</column>
       <column name="definition_de">alleine, einsam sein</column>
       <column name="definition_fa">تنها بودن [AUTOTRANSLATED]</column>
@@ -8117,7 +8117,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">moD</column>
-      <column name="part_of_speech">v:i</column>
+      <column name="part_of_speech">v:i,klcp1</column>
       <column name="definition">hurry</column>
       <column name="definition_de">sich beeilen</column>
       <column name="definition_fa">عجله کردن [AUTOTRANSLATED]</column>
@@ -8458,7 +8458,7 @@ In British English, this word refers to what would be called a general irregular
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">moj</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">become</column>
       <column name="definition_de">werden</column>
       <column name="definition_fa">تبدیل شدن به [AUTOTRANSLATED]</column>
@@ -10141,7 +10141,7 @@ Morskanin murre ei lisää loppuliitettä {-'e':n:suff} aiheen substantiiville l
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mu-</column>
-      <column name="part_of_speech">v:pref</column>
+      <column name="part_of_speech">v:pref,klcp1</column>
       <column name="definition">he/she/it-me, they-me</column>
       <column name="definition_de">er/sie/es/sie(pl.)-mich</column>
       <column name="definition_fa">او / او / آن-من، آنها-من [AUTOTRANSLATED]</column>
@@ -10227,7 +10227,7 @@ Morskanin murre ei lisää loppuliitettä {-'e':n:suff} aiheen substantiiville l
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">much</column>
-      <column name="part_of_speech">v:1,t_c</column>
+      <column name="part_of_speech">v:1,t_c,klcp1</column>
       <column name="definition">present</column>
       <column name="definition_de">präsentieren</column>
       <column name="definition_fa">حضور، اجرا (موسیقی) [AUTOTRANSLATED]</column>
@@ -10974,7 +10974,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mugh</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">translate</column>
       <column name="definition_de">übersetzen</column>
       <column name="definition_fa">ترجمه کردن</column>
@@ -11190,7 +11190,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">muj</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be wrong</column>
       <column name="definition_de">inkorrekt, falsch sein</column>
       <column name="definition_fa">اشتباه</column>
@@ -11675,7 +11675,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">muS</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">hate, detest</column>
       <column name="definition_de">hassen, verabscheuen, starke Abneigung haben, Animositäten hegen</column>
       <column name="definition_fa">نفرت، نفرت [AUTOTRANSLATED]</column>
@@ -12241,7 +12241,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mu'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">word</column>
       <column name="definition_de">Wort</column>
       <column name="definition_fa">کلمه</column>
@@ -12285,7 +12285,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <!-- Arabic "معجم"? -->
       <column name="_id"></column>
       <column name="entry_name">mu'ghom</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,klcp1</column>
       <column name="definition">dictionary</column>
       <column name="definition_de">Wörterbuch</column>
       <column name="definition_fa">فرهنگ لغت [AUTOTRANSLATED]</column>
@@ -12586,7 +12586,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mu'tay'</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,klcp1</column>
       <column name="definition">vocabulary</column>
       <column name="definition_de">Vokabeln, Wortschatz</column>
       <column name="definition_fa">واژگان [AUTOTRANSLATED]</column>
@@ -12629,7 +12629,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mu'tlhegh</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,klcp1</column>
       <column name="definition">sentence</column>
       <column name="definition_de">Satz</column>
       <column name="definition_fa">جمله [AUTOTRANSLATED]</column>

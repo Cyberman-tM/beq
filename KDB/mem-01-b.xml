@@ -44,7 +44,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bach</column>
-      <column name="part_of_speech">v:t_c,weap</column>
+      <column name="part_of_speech">v:t_c,weap,klcp1</column>
       <column name="definition">shoot</column>
       <column name="definition_de">schießen</column>
       <column name="definition_fa">(تیر) زدن</column>
@@ -105,7 +105,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bach</column>
-      <column name="part_of_speech">n:weap</column>
+      <column name="part_of_speech">n:weap,klcp1</column>
       <column name="definition">shot</column>
       <column name="definition_de">Schuss</column>
       <column name="definition_fa">گلوله</column>
@@ -371,7 +371,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">baH</column>
-      <column name="part_of_speech">v:t_c,weap</column>
+      <column name="part_of_speech">v:t_c,weap,klcp1</column>
       <column name="definition">fire (torpedo, rocket, missile)</column>
       <column name="definition_de">feuern</column>
       <column name="definition_fa">(موشک و غیره) انداختن</column>
@@ -489,7 +489,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">baHwI'</column>
-      <column name="part_of_speech">n:weap,being,deriv</column>
+      <column name="part_of_speech">n:weap,being,deriv,klcp1</column>
       <column name="definition">gunner</column>
       <column name="definition_de">Schütze</column>
       <column name="definition_fa">تفنگدار [AUTOTRANSLATED]</column>
@@ -663,49 +663,6 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">bambu'</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">bamboo</column>
-      <column name="definition_de">Bambus</column>
-      <column name="definition_fa">بامبو</column>
-      <column name="definition_sv">bambu</column>
-      <column name="definition_ru">бамбук [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">竹</column>
-      <column name="definition_pt">bambu</column>
-      <column name="definition_fi">bambu</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{SIyech:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 25 (2018):src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">ban</column>
       <column name="part_of_speech">v:is</column>
       <column name="definition">be bruised</column>
@@ -793,7 +750,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bang</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">love, one who is loved</column>
       <column name="definition_de">Geliebte/r</column>
       <column name="definition_fa">عاشق</column>
@@ -2486,7 +2443,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ba'</column>
-      <column name="part_of_speech">v:i_c</column>
+      <column name="part_of_speech">v:i_c,klcp1</column>
       <column name="definition">sit</column>
       <column name="definition_de">sitzen</column>
       <column name="definition_fa">نشستن</column>
@@ -2916,7 +2873,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bej</column>
-      <column name="part_of_speech">v:1,t_c</column>
+      <column name="part_of_speech">v:1,t_c,klcp1</column>
       <column name="definition">watch</column>
       <column name="definition_de">schauen, mit den Augen beobachten</column>
       <column name="definition_fa">تماشا کردن</column>
@@ -3003,7 +2960,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bel</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be pleased</column>
       <column name="definition_de">vergnügt sein</column>
       <column name="definition_fa">خوشحال می شود [AUTOTRANSLATED]</column>
@@ -3046,7 +3003,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bel</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">pleasure</column>
       <column name="definition_de">Vergnügen, Spaß</column>
       <column name="definition_fa">لذت [AUTOTRANSLATED]</column>
@@ -3623,7 +3580,7 @@ Sanoa "kun olin X-vuotias", rakennus on esimerkiksi {qaStaHvIS DISwIj javDIch...
       <column name="definition_sv">ägglossning, genomgå ägglossning [AUTOTRANSLATED]</column>
       <column name="definition_ru">овулировать, пройти овуляцию [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">排卵，排卵 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ovular, sofrer ovulação [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ovular, ter ovulação</column>
       <column name="definition_fi">ovuloida</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3838,7 +3795,7 @@ Sanoa "kun olin X-vuotias", rakennus on esimerkiksi {qaStaHvIS DISwIj javDIch...
           <column name="definition_sv">epilog [AUTOTRANSLATED]</column>
           <column name="definition_ru">эпилог [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">結語 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">epílogo [AUTOTRANSLATED]</column>
+          <column name="definition_pt">epílogo</column>
           <column name="definition_fi">epilogi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -4132,7 +4089,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="definition_sv">blandning av ingredienser för framställning av fermenterad {HIq:n} [AUTOTRANSLATED]</column>
       <column name="definition_ru">смесь ингредиентов для производства ферментированных {HIq:n} [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">用於生產發酵{HIq:n}的成分混合物 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">mistura de ingredientes para a produção de fermentado {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_pt">mistura de ingredientes para a produção de fermentação de {HIq:n}</column>
       <column name="definition_fi">käyneen {HIq:n}in tuottamiseen käytetty seos</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4175,7 +4132,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
           <column name="definition_sv">bryggeri (rum) [AUTOTRANSLATED]</column>
           <column name="definition_ru">пивоварня (комната) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">啤酒廠（房間） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">cervejaria (sala) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cervejaria (sala)</column>
           <column name="definition_fi">panimo (huone)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -4218,7 +4175,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
           <column name="definition_sv">bryggeri (byggnad) [AUTOTRANSLATED]</column>
           <column name="definition_ru">пивоварня (здание) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">啤酒廠（建築） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">cervejaria (edifício) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cervejaria (edifício)</column>
           <column name="definition_fi">panimo (rakennus)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -4477,7 +4434,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">be'</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">female, woman</column>
       <column name="definition_de">Frau, Weibchen</column>
       <column name="definition_fa">زن، ماده</column>
@@ -4567,7 +4524,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">be'Hom</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:deriv,being,klcp1</column>
       <column name="definition">girl</column>
       <column name="definition_de">Mädchen, weibliches Kind</column>
       <column name="definition_fa">دختر </column>
@@ -4610,7 +4567,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">be'nal</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">wife</column>
       <column name="definition_de">Ehefrau, Gattin</column>
       <column name="definition_fa">زن، همسر، زوجه، خانم</column>
@@ -4653,7 +4610,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">be'nI'</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">sister</column>
       <column name="definition_de">Schwester</column>
       <column name="definition_fa">خواهر</column>
@@ -4739,7 +4696,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bI-</column>
-      <column name="part_of_speech">v:pref</column>
+      <column name="part_of_speech">v:pref,klcp1</column>
       <column name="definition">you-none</column>
       <column name="definition_de">du (ohne Objekt)</column>
       <column name="definition_fa">تو هیچی نیستی [AUTOTRANSLATED]</column>
@@ -4921,7 +4878,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIH</column>
-      <column name="part_of_speech">n:pro</column>
+      <column name="part_of_speech">n:pro,klcp1</column>
       <column name="definition">they, them (incapable of language)</column>
       <column name="definition_de">sie (pl.), ihnen (Gegenstände)</column>
       <column name="definition_fa">آنها، آنها (ناتوان از زبان) [AUTOTRANSLATED]</column>
@@ -5727,7 +5684,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/NpFDKTzIN
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIng</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">area below, area under</column>
       <column name="definition_de">Unten, Bereich unterhalb</column>
       <column name="definition_fa">منطقه زیر، منطقه تحت</column>
@@ -5913,7 +5870,7 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIQ</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">water</column>
       <column name="definition_de">Wasser</column>
       <column name="definition_fa">اب</column>
@@ -6825,7 +6782,7 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIr</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be cold</column>
       <column name="definition_de">kalt sein</column>
       <column name="definition_fa">سرد بودن</column>
@@ -6837,20 +6794,21 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
       <column name="synonyms"></column>
       <column name="antonyms">{tuj:v}, {ghun:v:2}</column>
       <column name="see_also">{Qey':v}, {chuch:n}, {peD:v}, {buj:v}, {Hat:n}</column>
-      <column name="notes">There is an idiom, {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}.</column>
-      <column name="notes_de">Es gibt eine Redewendung, {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">یک اصطلاح ، {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v} وجود دارد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Det finns ett formspråk, {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Существует идиома {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">有一個成語，{bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Existe um idioma, {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">On idioomi {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AUTOTRANSLATED]</column>
+      <column name="notes">The temperature words really are about temperature and not about effect or perception, so that clothing, for example, is not said to be "hot" or "cold" in Klingon.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes">A cold "beer", or alternatively, "brrrr" is the sound one makes when one is cold.
 
-It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the temperature words really are about temperature and not about effect or perception, so that clothing, for example, is not said to be "hot" or "cold" in Klingon.</column>
+The clarification that temperature words are not about effect or perception was made during the Q &amp; A session at {qep'a' 27 (2020):src}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {bortaS bIr jablu'DI' reH QaQqu' nay'.:sen}</column>
+▶ {bortaS bIr jablu'DI' reH QaQqu' nay'.:sen}
+▶ {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6866,7 +6824,7 @@ It was clarified during the Q &amp; A session at {qep'a' 27 (2020):src} that the
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {qep'a' 27 (2020):src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 27 (2020):src}, [3] {KGT p.129:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7348,7 +7306,7 @@ Speculation: This may have been intended to be {tIS'ub:n:nolink} but was changed
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIt</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be nervous, uneasy</column>
       <column name="definition_de">nervös, unruhig sein</column>
       <column name="definition_fa">عصبی، ناراحت کننده بودن [AUTOTRANSLATED]</column>
@@ -7395,12 +7353,12 @@ On {KGT p.132:src}, the word is written as {tIb:v:nolink} instead of {bIt:v:noli
       <column name="entry_name">bItaHrup'a'?</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">Are you prepared to continue?</column>
-      <column name="definition_de">Bist du bereit weiterzumachen? [AUTOTRANSLATED]</column>
+      <column name="definition_de">Bist du bereit weiterzumachen?</column>
       <column name="definition_fa">آیا برای ادامه کار آماده هستید؟ [AUTOTRANSLATED]</column>
       <column name="definition_sv">Är du beredd att fortsätta? [AUTOTRANSLATED]</column>
       <column name="definition_ru">Вы готовы продолжить? [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">您準備好繼續嗎？ [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Você está preparado para continuar? [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Você está preparado para continuar?</column>
       <column name="definition_fi">Oletko valmis jatkamaan?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -7929,7 +7887,7 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
           <column name="definition_sv">prolog [AUTOTRANSLATED]</column>
           <column name="definition_ru">пролог [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">序幕 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">prólogo [AUTOTRANSLATED]</column>
+          <column name="definition_pt">prólogo</column>
           <column name="definition_fi">prologi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -9378,14 +9336,14 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tI'rIl:n}, {nungmaH:n}</column>
-      <column name="notes">Which plural suffix this takes depends on the type of symbiont. In the case of Trill (see {tI'rIlngan:n}) symbionts, the suffix {-pu':n:suff} is used.</column>
+      <column name="notes">Which plural suffix this takes depends on the type of symbiont. In the case of Trill (see {tI'rIlngan:n}) symbionts, the suffix {-pu':n:suff} is used. In the case of a parasite, use {-mey:n:suff}.</column>
       <column name="notes_de">Die Wahl der Mehrzahl-Bildung hängt von der Art des Symbionten ab. Bei Trill-Symbionten (siehe {tI'rIlngan:n}) wird das Suffix {-pu':n:suff} verwendet. Falls es sich um einen Parasiten handelt, verwendet man {-mey:n:suff}.</column>
-      <column name="notes_fa">کدام پسوند جمع در این مورد بستگی به نوع Symiont دارد. در مورد نمادهای تریل (نگاه کنید به {tI'rIlngan:n}) از پسوند {-pu':n:suff} استفاده می شود. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Vilket flertalssuffiks detta tar beror på typen av symbiont. När det gäller Trill (se {tI'rIlngan:n}) -symbioner används suffixet {-pu':n:suff}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Какой суффикс множественного числа это принимает, зависит от типа симбионта. В случае симбионтов Trill (см. {tI'rIlngan:n}) используется суффикс {-pu':n:suff}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這採用哪個後綴取決於共生體的類型。對於Trill（請參見{tI'rIlngan:n}）共鳴符，將使用後綴{-pu':n:suff}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">O sufixo plural usado depende do tipo de simbionte. No caso dos simbiontes Trill (consulte {tI'rIlngan:n}), o sufixo {-pu':n:suff} é usado. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Se, minkä monikkomuodon tämä tarvitsee, riippuu symbiontin tyypistä. Trill-symbiontien (katso {tI'rIlngan:n}) tapauksessa käytetään loppuliitettä {-pu':n:suff}. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این که کدام پسوند جمع به کار می رود به نوع همزیست بستگی دارد. در مورد همزیست های Trill (به {tI'rIlngan:n} مراجعه کنید) ، از پسوند {-pu':n:suff} استفاده می شود. در مورد انگلی ، از {-mey:n:suff} استفاده کنید. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Vilket flertalssuffiks detta tar beror på typen av symbiont. När det gäller Trill-symbioner (se {tI'rIlngan:n}) används suffixet {-pu':n:suff}. I fallet med en parasit, använd {-mey:n:suff}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Какой суффикс множественного числа это займет, зависит от типа симбионта. В случае симбионтов Trill (см. {tI'rIlngan:n}) используется суффикс {-pu':n:suff}. В случае паразита используйте {-mey:n:suff}. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這採用哪個後綴取決於共生體的類型。對於Trill共鳴器（請參閱{tI'rIlngan:n}），使用後綴{-pu':n:suff}。如果是寄生蟲，請使用{-mey:n:suff}。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">O sufixo de plural que isso leva depende do tipo de simbionte. No caso dos simbiontes Trill (consulte {tI'rIlngan:n}), o sufixo {-pu':n:suff} é usado. No caso de um parasita, use {-mey:n:suff}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Se, minkä monikkomuodon tämä tarvitsee, riippuu symbiontin tyypistä. Trill-symbiontien (katso {tI'rIlngan:n}) symbiontien tapauksessa käytetään pääte {-pu':n:suff}. Käytä loista {-mey:n:suff}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">The plural suffix this word takes was clarified during the Q &amp; A session.</column>
       <column name="components">{boq:n:1}, {yIn:n}</column>
       <column name="examples"></column>
@@ -9712,7 +9670,7 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bortaS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">revenge</column>
       <column name="definition_de">Rache, Vergeltung</column>
       <column name="definition_fa">انتقام گرفتن [AUTOTRANSLATED]</column>
@@ -9945,7 +9903,7 @@ On myös siihen liittyvä idioomi {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AU
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bot</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">prevent, block, prohibit</column>
       <column name="definition_de">hindern, abwehren, blockieren, verhindern</column>
       <column name="definition_fa">جلوگیری، مسدود کردن، ممنوعیت [AUTOTRANSLATED]</column>
@@ -10819,7 +10777,7 @@ Lupauksen tarinassa todetaan, että:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">buD</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be lazy</column>
       <column name="definition_de">faul sein</column>
       <column name="definition_fa">تنبل بودن [AUTOTRANSLATED]</column>
@@ -11178,7 +11136,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="definition_sv">trombonliknande instrument [AUTOTRANSLATED]</column>
       <column name="definition_ru">тромбоноподобный инструмент [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">長號樣樂器 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">instrumento semelhante ao trombone [AUTOTRANSLATED]</column>
+      <column name="definition_pt">instrumento semelhante ao trombone</column>
       <column name="definition_fi">eräs pasuunaa muistuttava soitin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -11269,7 +11227,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This verb is also used to express the concept of "leap year" ({bur DIS:sen}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -11297,6 +11255,50 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="search_tags_fi"></column>
       <column name="source">[1] {HQ 12.4, Dec. 2003:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bur DIS</column>
+          <column name="part_of_speech">sen:phrase</column>
+          <column name="definition">leap year</column>
+          <column name="definition_de">Schaltjahr</column>
+          <column name="definition_fa">سال کبیسه</column>
+          <column name="definition_sv">skottår</column>
+          <column name="definition_ru">високосный год</column>
+          <column name="definition_zh_HK">閏年</column>
+          <column name="definition_pt">ano bissexto</column>
+          <column name="definition_fi">karkausvuosi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">To express the concept of a "leap year", just use the verb {bur:v} with {DIS:n:2}.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes">This was revealed to provide Klingon subtitles for the 50th anniversary of the German children's TV show "Die Sendung mit der Maus".</column>
+          <column name="components">{bur:v}, {DIS:n:2}</column>
+          <column name="examples">
+▶ {qatlh bur 'op DISmey?:sen@@qatlh:ques, bur:v, 'op:n, DIS:n:2, -mey:n}[1]</column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2021.03.07:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">burgh</column>
@@ -11386,7 +11388,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">buS</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">concentrate on, focus on, think only about</column>
       <column name="definition_de">auf etwas konzentrieren, auf eine Sache achten</column>
       <column name="definition_fa">تمرکز بر روی، تمرکز بر روی، فکر کردن فقط در مورد [AUTOTRANSLATED]</column>
@@ -11925,7 +11927,7 @@ Tämä voi viitata {DuH:n}: n "luokkaan" (eli siihen liittyvään ryhmään) {Se
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bu'</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">sergeant</column>
       <column name="definition_de">Unteroffizier, Maat, Sergeant</column>
       <column name="definition_fa">سرباز [AUTOTRANSLATED]</column>

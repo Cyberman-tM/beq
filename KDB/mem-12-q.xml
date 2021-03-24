@@ -44,7 +44,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qa-</column>
-      <column name="part_of_speech">v:pref</column>
+      <column name="part_of_speech">v:pref,klcp1</column>
       <column name="definition">I-you</column>
       <column name="definition_de">ich-dich</column>
       <column name="definition_fa">من ... شما [AUTOTRANSLATED]</column>
@@ -87,7 +87,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qab</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be bad</column>
       <column name="definition_de">böse, schlecht sein</column>
       <column name="definition_fa">بد بودن [AUTOTRANSLATED]</column>
@@ -130,7 +130,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qab</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">face</column>
       <column name="definition_de">Gesicht</column>
       <column name="definition_fa">صورت [AUTOTRANSLATED]</column>
@@ -346,7 +346,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qach</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">building, structure</column>
       <column name="definition_de">Gebäude</column>
       <column name="definition_fa">ساختمان</column>
@@ -984,7 +984,7 @@ On idioomi {ghung; qagh rur@@ghung:v, qagh:n, rur:v}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qaH</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">sir</column>
       <column name="definition_de">Sir, Lord, Herr</column>
       <column name="definition_fa">آقا [AUTOTRANSLATED]</column>
@@ -1289,7 +1289,7 @@ On {KGT p.81:src}, it is claimed that there is no noun meaning "color", but this
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qam</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">foot</column>
       <column name="definition_de">Fuß</column>
       <column name="definition_fa">پا (از مچ پا به پایین)</column>
@@ -1504,7 +1504,7 @@ On {KGT p.81:src}, it is claimed that there is no noun meaning "color", but this
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qan</column>
-      <column name="part_of_speech">v:1,is</column>
+      <column name="part_of_speech">v:1,is,klcp1</column>
       <column name="definition">be old (not young)</column>
       <column name="definition_de">alt sein (nicht jung)</column>
       <column name="definition_fa">پیر، مسن</column>
@@ -2218,12 +2218,12 @@ Tätä sanaa käytetään ihmisiin ja eläimiin[2] [AUTOTRANSLATED]</column>
           <column name="entry_name">qar'a'?</column>
           <column name="part_of_speech">sen:phr</column>
           <column name="definition">Is that so?</column>
-          <column name="definition_de">Ist das so? [AUTOTRANSLATED]</column>
+          <column name="definition_de">Ist das so?</column>
           <column name="definition_fa">آیا چنین است؟ [AUTOTRANSLATED]</column>
           <column name="definition_sv">Är det så? [AUTOTRANSLATED]</column>
           <column name="definition_ru">Это так? [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">是這樣嗎？ [AUTOTRANSLATED]</column>
-          <column name="definition_pt">É assim mesmo? [AUTOTRANSLATED]</column>
+          <column name="definition_pt">É assim mesmo?</column>
           <column name="definition_fi">Onko näin?</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -2653,7 +2653,7 @@ In British English, this word refers to what would be called a "trapezium".</col
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qaS</column>
-      <column name="part_of_speech">v:i</column>
+      <column name="part_of_speech">v:i,klcp1</column>
       <column name="definition">occur, happen</column>
       <column name="definition_de">passieren, sich ereignen</column>
       <column name="definition_fa">اتفاق می افتد، اتفاق می افتد [AUTOTRANSLATED]</column>
@@ -3003,7 +3003,7 @@ In British English, this word refers to what would be called a "trapezium".</col
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qatlh</column>
-      <column name="part_of_speech">ques</column>
+      <column name="part_of_speech">ques:klcp1</column>
       <column name="definition">why?</column>
       <column name="definition_de">warum?</column>
       <column name="definition_fa">چرا؟</column>
@@ -3142,7 +3142,7 @@ No English definition was originally given for this word, so it was given the de
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qaw</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">remember</column>
       <column name="definition_de">sich erinnern an, an etwas denken</column>
       <column name="definition_fa">یاد آوردن [AUTOTRANSLATED]</column>
@@ -3336,28 +3336,28 @@ Joku, jolla on erinomainen muisti, voidaan sanoa olevan {qaw pov:n@@qaw:n, pov:v
           <column name="see_also"></column>
           <column name="notes">Based on the example, the subject does the reminding, the object is the thing remembered, and the person who is reminded is marked with {-vaD:n}.
 
-    More generally, it seems that when {-moH:v} is added to a verb {X:sen:nolink} which takes an object, the resulting bivalent verb {XmoH:sen:nolink} takes the same object, while the original subject of {X:sen:nolink} becomes the beneficiary of {XmoH:sen:nolink} and is marked with {-vaD:n}.</column>
+More generally, it seems that when {-moH:v} is added to a verb {X:sen:nolink} which takes an object, the resulting bivalent verb {XmoH:sen:nolink} takes the same object, while the original subject of {X:sen:nolink} becomes the beneficiary of {XmoH:sen:nolink} and is marked with {-vaD:n}.</column>
           <column name="notes_de">Anhand des Beispiels erinnert das Subjekt daran, das Objekt ist das, woran man sich erinnert, und die Person, an die erinnert wird, ist mit {-vaD:n} markiert.
 
-    Allgemeiner scheint es, dass, wenn {-moH:v} zu einem Verb {X:sen:nolink} hinzugefügt wird, das ein Objekt nimmt, das resultierende zweiwertige Verb {XmoH:sen:nolink} dasselbe Objekt nimmt, während das ursprüngliche Subjekt von {X:sen:nolink} der Nutznießer von {XmoH:sen:nolink} wird und mit {-vaD:n} markiert ist. [AUTOTRANSLATED]</column>
+Allgemeiner scheint es, dass, wenn {-moH:v} zu einem Verb {X:sen:nolink} hinzugefügt wird, das ein Objekt nimmt, das resultierende zweiwertige Verb {XmoH:sen:nolink} dasselbe Objekt nimmt, während das ursprüngliche Subjekt von {X:sen:nolink} der Nutznießer von {XmoH:sen:nolink} wird und mit {-vaD:n} markiert ist. [AUTOTRANSLATED]</column>
           <column name="notes_fa">براساس مثال ، موضوع یادآوری را انجام می دهد ، موضوع چیزی است که به یاد می آورد ، و کسی که یادآوری می شود با {-vaD:n} مشخص شده است.
 
-    به طور کلی ، به نظر می رسد وقتی {-moH:v} به فعل {X:sen:nolink} اضافه می شود که یک شیء را می گیرد ، فعل دو ظرفیتی حاصل می شود {XmoH:sen:nolink} همان شیء را می گیرد ، در حالی که موضوع اصلی {X:sen:nolink} به نفع {XmoH:sen:nolink} می شود و با {-vaD:n} مشخص می شود. [AUTOTRANSLATED]</column>
+به طور کلی ، به نظر می رسد وقتی {-moH:v} به فعل {X:sen:nolink} اضافه می شود که یک شیء را می گیرد ، فعل دو ظرفیتی حاصل می شود {XmoH:sen:nolink} همان شیء را می گیرد ، در حالی که موضوع اصلی {X:sen:nolink} به نفع {XmoH:sen:nolink} می شود و با {-vaD:n} مشخص می شود. [AUTOTRANSLATED]</column>
           <column name="notes_sv">Baserat på exemplet påminner motivet, objektet är det som kommer ihåg, och personen som påminns markeras med {-vaD:n}.
 
-    Mer generellt verkar det som om {-moH:v} läggs till ett verb {X:sen:nolink} som tar ett objekt, det resulterande bivalenta verbet {XmoH:sen:nolink} tar samma objekt, medan det ursprungliga ämnet för {X:sen:nolink} blir mottagaren av {XmoH:sen:nolink} och markeras med {-vaD:n}. [AUTOTRANSLATED]</column>
+Mer generellt verkar det som om {-moH:v} läggs till ett verb {X:sen:nolink} som tar ett objekt, det resulterande bivalenta verbet {XmoH:sen:nolink} tar samma objekt, medan det ursprungliga ämnet för {X:sen:nolink} blir mottagaren av {XmoH:sen:nolink} och markeras med {-vaD:n}. [AUTOTRANSLATED]</column>
           <column name="notes_ru">Основываясь на примере, субъект осуществляет напоминание, объектом является вещь, которую напоминают, а лицо, которому напоминают, помечено суффиксом {-vaD:n}.
 
-    В более общем смысле, похоже, что когда {-moH:v} добавлен к глаголу {X:sen:nolink} который принимает объект, то итоговый бивалентный глагол {XmoH:sen:nolink} принимает тот же объект, в то время, как оригинальный субъект {X:sen:nolink} становится бенефициаром {XmoH:sen:nolink} и отмечен суффиксом {-vaD:n}.</column>
+В более общем смысле, похоже, что когда {-moH:v} добавлен к глаголу {X:sen:nolink} который принимает объект, то итоговый бивалентный глагол {XmoH:sen:nolink} принимает тот же объект, в то время, как оригинальный субъект {X:sen:nolink} становится бенефициаром {XmoH:sen:nolink} и отмечен суффиксом {-vaD:n}.</column>
           <column name="notes_zh_HK">根據示例，對象進行提醒，對像是被記住的事物，被提醒的人被標記為{-vaD:n}。
 
-    更一般地說，似乎在將{-moH:v}添加到帶賓語的動詞{X:sen:nolink}時，所得的二價動詞{XmoH:sen:nolink}帶有相同的賓語，而{X:sen:nolink}的原始主語成為{XmoH:sen:nolink}的受益者，並標有{-vaD:n}。 [AUTOTRANSLATED]</column>
+更一般地說，似乎在將{-moH:v}添加到帶賓語的動詞{X:sen:nolink}時，所得的二價動詞{XmoH:sen:nolink}帶有相同的賓語，而{X:sen:nolink}的原始主語成為{XmoH:sen:nolink}的受益者，並標有{-vaD:n}。 [AUTOTRANSLATED]</column>
           <column name="notes_pt">Com base no exemplo, o sujeito faz a lembrança, o objeto é a coisa lembrada e a pessoa lembrada é marcada com {-vaD:n}.
 
-    Mais genericamente, parece que quando {-moH:v} é adicionado a um verbo {X:sen:nolink} que leva um objeto, o verbo bivalente resultante {XmoH:sen:nolink} leva o mesmo objeto, enquanto o sujeito original de {X:sen:nolink} torna-se o beneficiário de {XmoH:sen:nolink} e é marcado com {-vaD:n}. [AUTOTRANSLATED]</column>
+Mais genericamente, parece que quando {-moH:v} é adicionado a um verbo {X:sen:nolink} que leva um objeto, o verbo bivalente resultante {XmoH:sen:nolink} leva o mesmo objeto, enquanto o sujeito original de {X:sen:nolink} torna-se o beneficiário de {XmoH:sen:nolink} e é marcado com {-vaD:n}. [AUTOTRANSLATED]</column>
           <column name="notes_fi">Esimerkin perusteella aihe tekee muistutuksen, esine on muistettava asia ja muistutettava henkilö merkitään tekstillä {-vaD:n}.
 
-    Yleisemmin näyttää siltä, ​​että kun {-moH:v} lisätään objektin ottavaan verbiin {X:sen:nolink}, tuloksena oleva kaksiarvoinen verbi {XmoH:sen:nolink} vie saman objektin, kun taas {X:sen:nolink}: n alkuperäinen aihe tulee {XmoH:sen:nolink}: n edunsaajaksi ja on merkitty {-vaD:n}: llä. [AUTOTRANSLATED]</column>
+Yleisemmin näyttää siltä, ​​että kun {-moH:v} lisätään objektin ottavaan verbiin {X:sen:nolink}, tuloksena oleva kaksiarvoinen verbi {XmoH:sen:nolink} vie saman objektin, kun taas {X:sen:nolink}: n alkuperäinen aihe tulee {XmoH:sen:nolink}: n edunsaajaksi ja on merkitty {-vaD:n}: llä. [AUTOTRANSLATED]</column>
           <column name="hidden_notes"></column>
           <column name="components">{qaw:v}, {-moH:v}</column>
           <column name="examples">
@@ -3559,7 +3559,7 @@ This is confirmed as intransitive since {qaw'moH:v} was also glossed as "make so
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qaySar</column>
-      <column name="part_of_speech">n:name,fic,alt</column>
+      <column name="part_of_speech">n:name,fic,alt,noanki</column>
       <column name="definition">{yulyuS qaySar:n:name}</column>
       <column name="definition_de">{yulyuS qaySar:n:name}</column>
       <column name="definition_fa">{yulyuS qaySar:n:name}</column>
@@ -3645,7 +3645,7 @@ This is confirmed as intransitive since {qaw'moH:v} was also glossed as "make so
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qay'</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be a problem, be a hassle</column>
       <column name="definition_de">ein Problem darstellen</column>
       <column name="definition_fa">یک مشکل، بدون هیچ زحمتی [AUTOTRANSLATED]</column>
@@ -4454,7 +4454,7 @@ Sana itsessään tarkoittaa "kaiken alkuperää" tai "kaiken alkua" tai vastaava
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qech</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">idea</column>
       <column name="definition_de">Idee</column>
       <column name="definition_fa">اندیشه [AUTOTRANSLATED]</column>
@@ -4669,8 +4669,8 @@ Sana itsessään tarkoittaa "kaiken alkuperää" tai "kaiken alkua" tai vastaava
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qej</column>
-      <column name="part_of_speech">v:is</column>
-      <column name="definition">grouchy, mean</column>
+      <column name="part_of_speech">v:is,klcp1</column>
+      <column name="definition">be grouchy, mean</column>
       <column name="definition_de">bösartig, gemein, sauer</column>
       <column name="definition_fa">پر زرق و برق، متوسط [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara vresig, vara grinig, vara elak, vara tarvlig</column>
@@ -4769,31 +4769,35 @@ Sana itsessään tarkoittaa "kaiken alkuperää" tai "kaiken alkua" tai vastaava
       <column name="see_also"></column>
       <column name="notes">This means lower the head slightly whether or not the head is again raised. So, among other things, it can refer to nodding to the beat of music or nodding off (falling asleep). The subject might be, for example, {nach:n} "head" (even though this might be considered redundant) or the nodder. It does not take an object.[1]
 
-This verb refers only to the motion, not what such a motion may or may not indicate. To express that the nodding means something, such as agreement, one might say {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} or {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. In some cultures, nodding may indicate something other than agreement, so one might say something like {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3]</column>
-      <column name="notes_de">Dies bedeutet, dass der Kopf leicht abgesenkt wird, unabhängig davon, ob der Kopf erneut angehoben wird. So kann es sich unter anderem darauf beziehen, im Takt der Musik zu nicken oder einzuschlafen. Das Subjekt des Verbes könnte der "Kopf" {nach:n} "Kopf" sein (wobei man dies als überflüssig betrachten könnte) oder die nickende Person. Das Verb nimmt kein Objekt.[1]
+This verb refers only to the motion, not what such a motion may or may not indicate. To express that the nodding means something, such as agreement, use {Qochbe':v} with this verb. In some cultures, nodding may indicate something other than agreement, so one might use {yaj:v} with this verb. See the examples.[2]</column>
+      <column name="notes_de">Dies bedeutet, dass Sie den Kopf leicht absenken müssen, unabhängig davon, ob der Kopf erneut angehoben wird oder nicht. So kann es sich unter anderem darauf beziehen, im Takt der Musik zu nicken oder einzuschlafen (einzuschlafen). Das Thema könnte beispielsweise {nach:n} "Kopf" (obwohl dies als redundant angesehen werden könnte) oder der Knoten sein. Es wird kein Objekt benötigt.[1]
 
-Dieses Verb bezieht sich nur auf die Bewegung, nicht darauf, was eine solche Bewegung anzeigen kann oder nicht. Um auszudrücken, dass das Nicken etwas bedeutet, wie zum Beispiel Übereinstimmung, könnte man {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} oder {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n} sagen. In einigen Kulturen kann das Nicken auf etwas anderes als Übereinstimmung hinweisen, also könnte man etwas wie {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] sagen [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این بدان معنی است که سر مجدداً بلند شده یا نشود ، سر را کمی پایین بیاورید. بنابراین ، از جمله چیزهای دیگر ، می تواند اشاره به نق زدن به ضربان موسیقی یا سر تکان دادن (خواب رفتن) باشد. موضوع ممکن است به عنوان مثال ، "سر" {nach:n} (حتی اگر این کار اضافی در نظر گرفته شود) یا سر تکان دادن باشد. این یک شی را نمی گیرد.[1]
+Dieses Verb bezieht sich nur auf die Bewegung, nicht darauf, was eine solche Bewegung anzeigen kann oder nicht. Verwenden Sie {Qochbe':v} mit diesem Verb, um auszudrücken, dass das Nicken etwas bedeutet, z. B. Übereinstimmung. In einigen Kulturen kann das Nicken auf etwas anderes als Übereinstimmung hinweisen, daher könnte man {yaj:v} mit diesem Verb verwenden. Siehe die Beispiele.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این بدان معنی است که سر مجدداً بلند شده یا نشود ، سر را کمی پایین بیاورید. بنابراین ، از جمله چیزهای دیگر ، می تواند اشاره به نق زدن به ضربان موسیقی یا سر تکان دادن (خواب رفتن) باشد. موضوع ممکن است به عنوان مثال ، "سر" {nach:n} (حتی اگر این کار اضافی در نظر گرفته شود) یا تکان دادن سر باشد. این یک شی را نمی گیرد.[1]
 
-این فعل فقط به حرکت اشاره دارد ، نه آنچه ممکن است چنین حرکتی نشان دهد یا نشان ندهد. برای بیان اینکه سر تکان دادن به معنای چیزی است ، مانند توافق ، می توان گفت {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} یا {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. در بعضی از فرهنگ ها ، نق زدن با سر ممکن است چیزی غیر از توافق را نشان دهد ، بنابراین ممکن است چیزی مانند {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n} گفته شود. [3] [AUTOTRANSLATED]</column>
+این فعل فقط به حرکت اشاره دارد ، نه آنچه ممکن است چنین حرکتی نشان دهد یا نشان ندهد. برای بیان اینکه تکون دادن به معنی معنی است ، مانند توافق ، از {Qochbe':v} با این فعل استفاده کنید. در بعضی از فرهنگ ها ، تکان دادن سر ممکن است چیزی غیر از توافق را نشان دهد ، بنابراین ممکن است شخص از {yaj:v} با این فعل استفاده کند. مثالها را ببینید. [2] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta innebär att du sänker huvudet något oavsett om huvudet åter höjs eller inte. Så bland annat kan det referera till att nicka i takt med musiken eller att nicka av (somna). Ämnet kan till exempel vara {nach:n} "huvud" (även om detta kan anses vara överflödigt) eller nicket. Det tar inte ett objekt.[1]
 
-Detta verb refererar bara till rörelsen, inte vad en sådan rörelse kan eller inte kan indikera. För att uttrycka att nickningen betyder något, till exempel överenskommelse, kan man säga {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} eller {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. I vissa kulturer kan nickning indikera något annat än överenskommelse, så man kan säga något som {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это означает, что слегка опустите голову независимо от того, поднята она снова или нет. Так, среди прочего, это может относиться к киванию в такт музыке или кивке (засыпание). Субъектом может быть, например, «голова» {nach:n} (даже если это может считаться избыточным) или кивок. Он не принимает объект.[1]
+Detta verb refererar bara till rörelsen, inte vad en sådan rörelse kan eller inte kan indikera. För att uttrycka att nickningen betyder något, till exempel överenskommelse, använd {Qochbe':v} med detta verb. I vissa kulturer kan nickning indikera något annat än överenskommelse, så man kan använda {yaj:v} med detta verb. Se exemplen. [2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это означает, что слегка опустите голову независимо от того, поднята она снова или нет. Так, среди прочего, это может относиться к киванию в такт музыке или кивке (засыпание). Субъектом может быть, например, {nach:n} «голова» (даже если это может считаться избыточным) или кивок. Он не принимает объект.[1]
 
-Этот глагол относится только к движению, а не к тому, что такое движение может или не может указывать. Чтобы выразить, что кивок что-то означает, например, согласие, можно сказать {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} или {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. В некоторых культурах кивок может означать нечто иное, чем согласие, поэтому можно сказать что-то вроде {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這意味著無論是否再次抬起頭部，都要稍微降低頭部。因此，除其他外，它可以指點拍音樂節拍或點頭睡著（入睡）。例如，主題可能是{nach:n}「頭」（即使這可能被認為是多餘的）或點頭。它不帶對象。[1]
+Этот глагол относится только к движению, а не к тому, что такое движение может или не может указывать. Чтобы выразить, что кивок что-то означает, например, согласие, используйте {Qochbe':v} с этим глаголом. В некоторых культурах кивок может означать нечто иное, чем согласие, поэтому с этим глаголом можно использовать {yaj:v}. См. Примеры.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這意味著無論是否再次抬起頭部，都要稍微降低頭部。因此，除其他外，它可以指點拍音樂或點頭（入睡）。例如，主題可能是{nach:n}“頭”（即使這可能被認為是多餘的）或點頭。它不帶對象。[1]
 
-這個動詞僅指運動，而不是運動所指示的內容。為了表達點頭的意思，例如達成協議，可以說{Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n}或{Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}。在某些文化中，點頭可能表示協議以外的其他內容，因此有人可能會說類似{yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] [AUTOTRANSLATED]</column>
+這個動詞僅指運動，而不是運動所指示的內容。為了表達點頭的意思，例如達成協議，請在動詞中使用{Qochbe':v}。在某些文化中，點頭可能表示協議以外的其他內容，因此有人可以在此動詞上使用{yaj:v}。參見示例.[2] [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso significa abaixar ligeiramente a cabeça, quer ela esteja novamente levantada ou não. Portanto, entre outras coisas, pode referir-se a acenar com a cabeça ao ritmo da música ou cochilar (adormecer). O assunto pode ser, por exemplo, {nach:n} "cabeça" (mesmo que isso possa ser considerado redundante) ou o nodder. Não requer um objeto.[1]
 
-Este verbo se refere apenas ao movimento, não o que tal movimento pode ou não indicar. Para expressar que acenar com a cabeça significa algo, como concordância, pode-se dizer {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} ou {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. Em algumas culturas, acenar com a cabeça pode indicar algo diferente de concordância, então pode-se dizer algo como {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä tarkoittaa, että päätä lasketaan hieman, riippumatta siitä, onko pää jälleen nostettu vai ei. Joten se voi muun muassa viitata nyökkäykseen musiikin tahtiin tai nyökkäykseen (nukahtaminen). Kohde voi olla esimerkiksi {nach:n} "pää" (vaikka tätä voidaan pitää tarpeettomana) tai nyökkääjä. Se ei vie objektia.[1]
+Este verbo se refere apenas ao movimento, não o que tal movimento pode ou não indicar. Para expressar que acenar com a cabeça significa algo, como concordância, use {Qochbe':v} com este verbo. Em algumas culturas, acenar com a cabeça pode indicar algo diferente de concordância, então pode-se usar {yaj:v} com este verbo. Veja os exemplos.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä tarkoittaa, että päätä lasketaan hieman, riippumatta siitä, nostetaanko päätä uudelleen. Joten se voi tarkoittaa muun muassa nyökkäystä musiikin tahtiin tai nyökkäystä (nukahtamista). Kohde voi olla esimerkiksi {nach:n} "pää" (vaikka tätä voidaan pitää tarpeettomana) tai nyökkääjä. Se ei vie objektia.[1]
 
-Tämä verbi viittaa vain liikkeeseen, ei siihen, mitä tällainen liike voi tai ei voi osoittaa. Sen ilmaisemiseksi, että nyökkäys tarkoittaa jotain, kuten sopimusta, voidaan sanoa {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} tai {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}. Joissakin kulttuureissa nyökkäys voi viitata mihinkään muuhun kuin sopimukseen, joten voidaan sanoa jotain {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n}.[3] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">This refers to the motion, not any particular meaning (such as nodding to indicate "yes" in some cultures). This was clarified during the Q &amp; A session.[1]</column>
+Tämä verbi viittaa vain liikkeeseen, ei siihen, mitä tällainen liike voi tai ei voi osoittaa. Käytä {Qochbe':v} tämän verbin kanssa ilmaisemaan, että nyökkäys tarkoittaa jotain, kuten sopimusta. Joissakin kulttuureissa nyökkäys voi viitata mihinkään muuhun kuin sopimukseen, joten voidaan käyttää {yaj:v} tätä verbiä. Katso esimerkit.[2] [AUTOTRANSLATED]</column>
+      <column name="hidden_notes">That this refers to the motion, and not any particular meaning (such as nodding to indicate "yes" in some cultures), was clarified at the {qep'a':src} during the Q &amp; A session.[1] Furthermore, examples sentences were given in the booklet for the {qepHom'a':src} that year.[2] Note that both of these events were online only, due to {qo'vID wa'maH Hut:n}.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {Qochbe' vaj qel nachDaj:sen@@Qochbe':v, vaj:adv, qel:v:2, nach:n, -Daj:n} "He/she agrees so his/her head nods."[2]
+▶ {Qochbe' 'e' ghaSmeH qel nachDaj:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, nach:n, -Daj:n} "His/her head nods in order to indicate that he/she agrees."[2]
+▶ {Qochbe' 'e' ghaSmeH qel ghaH:sen@@Qochbe':v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n} "He/she nods in order to indicate that he/she agrees."[2]
+▶ {yaj 'e' ghaSmeH qel ghaH:sen@@yaj:v, 'e':n, ghaS:v, -meH:v, qel:v:2, ghaH:n} "He/she nods to signal that he/she understands."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4988,7 +4992,7 @@ The information about the length comes from {The Star Trek Encyclopedia, 4th ed.
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qem</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">bring</column>
       <column name="definition_de">bringen</column>
       <column name="definition_fa">آوردن [AUTOTRANSLATED]</column>
@@ -5134,7 +5138,7 @@ No {paq'batlh:src}, os {qempa'QeH:n:nolink} são os espíritos ancestrais enfure
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qeng</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">carry, convey</column>
       <column name="definition_de">tragen, befördern</column>
       <column name="definition_fa">حمل، انتقال [AUTOTRANSLATED]</column>
@@ -5283,7 +5287,7 @@ Samankaltaisuus "Kapteeni Kangin" ({qeng HoD:n@@qeng:n, HoD:n}) kanssa on sattum
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qep</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">meeting</column>
       <column name="definition_de">Treffen, Begegnung</column>
       <column name="definition_fa">ملاقات [AUTOTRANSLATED]</column>
@@ -5464,7 +5468,7 @@ Klingonin kieli-instituutin virallinen vuosikonferenssi tunnetaan nimellä {qep'
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qeq</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">practice, train, prepare</column>
       <column name="definition_de">vorbereiten, trainieren, üben</column>
       <column name="definition_fa">تمرین، آموزش، آماده سازی [AUTOTRANSLATED]</column>
@@ -5609,7 +5613,7 @@ Kouluttaa todella hyvin, työskennellä siinä todella paljon ja saavuttaa aiotu
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qeS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">advice</column>
       <column name="definition_de">Rat (Empfehlung)</column>
       <column name="definition_fa">مشاوره [AUTOTRANSLATED]</column>
@@ -5652,7 +5656,7 @@ Kouluttaa todella hyvin, työskennellä siinä todella paljon ja saavuttaa aiotu
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qeS</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">advise</column>
       <column name="definition_de">(be)raten</column>
       <column name="definition_fa">توصیه دادن</column>
@@ -5797,7 +5801,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qet</column>
-      <column name="part_of_speech">v:i</column>
+      <column name="part_of_speech">v:i,klcp1</column>
       <column name="definition">run, jog</column>
       <column name="definition_de">rennen, laufen</column>
       <column name="definition_fa">اجرا کردن [AUTOTRANSLATED]</column>
@@ -5891,7 +5895,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
       <column name="definition_sv">kott [AUTOTRANSLATED]</column>
       <column name="definition_ru">сосновая шишка [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">松果 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Pinha [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Pinha</column>
       <column name="definition_fi">käpy</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5927,7 +5931,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qetlh</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be dull, uninteresting</column>
       <column name="definition_de">stumpf, fade, uninteressant sein</column>
       <column name="definition_fa">خسته کننده و بی علاقه باشید [AUTOTRANSLATED]</column>
@@ -5947,7 +5951,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src} suggests that {Daj:v:nolink} and {qetlh:v:nolink} are opposites.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6099,7 +6103,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qevpob</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">jowl, cheek</column>
       <column name="definition_de">Backe, Kiefer</column>
       <column name="definition_fa">جولیا، گونه [AUTOTRANSLATED]</column>
@@ -6119,7 +6123,7 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as "cheek" in {TKD:src} and as "jowl, cheek" in {KGT:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6427,7 +6431,7 @@ Hänen paluunsa ennustetaan Lupauksen tarinassa, jossa todetaan seuraavaa:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qeylIS</column>
-      <column name="part_of_speech">n:name,fic,alt</column>
+      <column name="part_of_speech">n:name,fic,alt,noanki</column>
       <column name="definition">{qeylIS'e' lIjlaHbe'bogh vay':n:name}</column>
       <column name="definition_de">{qeylIS'e' lIjlaHbe'bogh vay':n:name}</column>
       <column name="definition_fa">{qeylIS'e' lIjlaHbe'bogh vay':n:name}</column>
@@ -7032,7 +7036,7 @@ Hänen paluunsa ennustetaan Lupauksen tarinassa, jossa todetaan seuraavaa:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qIH</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">meet (for the first time)</column>
       <column name="definition_de">begegnen (zum ersten Mal treffen)</column>
       <column name="definition_fa">ملاقات (برای اولین بار) [AUTOTRANSLATED]</column>
@@ -7075,7 +7079,7 @@ Hänen paluunsa ennustetaan Lupauksen tarinassa, jossa todetaan seuraavaa:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qIj</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be black</column>
       <column name="definition_de">schwarz sein</column>
       <column name="definition_fa">سیاه باشد [AUTOTRANSLATED]</column>
@@ -7249,7 +7253,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qIm</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">pay attention, concentrate</column>
       <column name="definition_de">aufpassen, konzentrieren</column>
       <column name="definition_fa">توجه کردن، تمرکز کردن</column>
@@ -7400,7 +7404,8 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="notes_fi">Tämä on kauden yleinen sana. Esimerkiksi {qImroq tuj:n@@qImroq:n, tuj:v} olisi jotain "kesää" maan päällä. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">"McCormick" is a brand of food seasoning.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {qaStaHvIS qImroq bIrqu', nuqDaq Qong valqe'mey?:sen@@qaS:v, -taH:v, -vIS:v, qImroq:n, bIr:v, -qu':v, nuqDaq:ques, Qong:v, valqe':n, -mey:n}[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -7408,7 +7413,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">summer, winter</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7416,7 +7421,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 23 (2016):src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}, [2] {KLI mailing list 2021.03.07:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7594,7 +7599,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qIrq</column>
-      <column name="part_of_speech">n:name,fic,alt</column>
+      <column name="part_of_speech">n:name,fic,alt,noanki</column>
       <column name="definition">{jemS tIy qIrq:n:name}</column>
       <column name="definition_de">{jemS tIy qIrq:n:name}</column>
       <column name="definition_fa">{jemS tIy qIrq:n:name}</column>
@@ -7909,7 +7914,7 @@ Note that {qItbe'@@qIt:v, -be':v} means "impossible".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qIv</column>
-      <column name="part_of_speech">n:body</column>
+      <column name="part_of_speech">n:body,klcp1</column>
       <column name="definition">knee</column>
       <column name="definition_de">Knie</column>
       <column name="definition_fa">زانو</column>
@@ -8621,7 +8626,7 @@ On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qoH</column>
-      <column name="part_of_speech">n:being</column>
+      <column name="part_of_speech">n:being,klcp1</column>
       <column name="definition">fool</column>
       <column name="definition_de">Narr</column>
       <column name="definition_fa">احمق [AUTOTRANSLATED]</column>
@@ -8750,7 +8755,7 @@ On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qoj</column>
-      <column name="part_of_speech">conj</column>
+      <column name="part_of_speech">conj:klcp1</column>
       <column name="definition">or, and/or (joining sentences)</column>
       <column name="definition_de">und/oder (zwischen Sätzen)</column>
       <column name="definition_fa">یا، و / یا (پیوستن به احکام) [AUTOTRANSLATED]</column>
@@ -8881,7 +8886,7 @@ On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qoleq</column>
-      <column name="part_of_speech">n:name,fic,alt</column>
+      <column name="part_of_speech">n:name,fic,alt,noanki</column>
       <column name="definition">{qo'leq:n:name}</column>
       <column name="definition_de">{qo'leq:n:name}</column>
       <column name="definition_fa">{qo'leq:n:name}</column>
@@ -9513,7 +9518,7 @@ On toinenkin verbi, {gher:v}, jota käytetään luetteloiden ja vastaavien kokoa
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qorDu'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">family</column>
       <column name="definition_de">Familie</column>
       <column name="definition_fa">خانواده [AUTOTRANSLATED]</column>
@@ -9834,7 +9839,7 @@ Sitä voidaan käyttää myös laitteeseen, jota jotkut ihmiset käyttävät vau
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qoS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">birthday</column>
       <column name="definition_de">Geburtstag</column>
       <column name="definition_fa">روز تولد [AUTOTRANSLATED]</column>
@@ -10280,7 +10285,7 @@ Sitä voidaan käyttää myös laitteeseen, jota jotkut ihmiset käyttävät vau
       <column name="definition_ru">мокрота, слизь, флегма</column>
       <column name="definition_zh_HK">痰 [AUTOTRANSLATED]</column>
       <column name="definition_pt">catarro</column>
-      <column name="definition_fi">lima</column>
+      <column name="definition_fi">lima (kurkussa)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hugh:n}, {ghup:v}, {tuy':v}, {'IqnaH:n}</column>
@@ -10291,7 +10296,7 @@ Sitä voidaan käyttää myös laitteeseen, jota jotkut ihmiset käyttävät vau
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">Tämä viittaa limaan mitä kertyy kurkkuun kun on kipeä.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -10985,7 +10990,7 @@ Voit ilmaista ajatuksen jostakin alueen pään välisestä pisteestä (ehkä tun
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qul</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">fire</column>
       <column name="definition_de">Feuer</column>
       <column name="definition_fa">آتش</column>
@@ -11387,7 +11392,7 @@ There is no one way to say "firefighter". Some options are {qul SuvwI':n} "fire 
           <column name="definition_sv">eldutmanare [AUTOTRANSLATED]</column>
           <column name="definition_ru">пожарный претендент [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">火挑戰者 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">desafiador de fogo [AUTOTRANSLATED]</column>
+          <column name="definition_pt">desafiador de fogo</column>
           <column name="definition_fi">palomies, tulen haastaja</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -11430,7 +11435,7 @@ There is no one way to say "firefighter". Some options are {qul SuvwI':n} "fire 
           <column name="definition_sv">brand krigare, brandman [AUTOTRANSLATED]</column>
           <column name="definition_ru">огненный воин, пожарный [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">消防員，消防員 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">guerreiro do fogo, bombeiro [AUTOTRANSLATED]</column>
+          <column name="definition_pt">guerreiro do fogo, bombeiro</column>
           <column name="definition_fi">palomies, tulisoturi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -11516,7 +11521,7 @@ There is no one way to say "firefighter". Some options are {qul SuvwI':n} "fire 
           <column name="definition_sv">eldtamer [AUTOTRANSLATED]</column>
           <column name="definition_ru">укротитель огня [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">馴火者 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">domador de fogo [AUTOTRANSLATED]</column>
+          <column name="definition_pt">domador de fogo</column>
           <column name="definition_fi">palomies, tulen kesyttäjä</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -11768,7 +11773,7 @@ There is no one way to say "firefighter". Some options are {qul SuvwI':n} "fire 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qun</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">history</column>
       <column name="definition_de">Geschichte (historisch)</column>
       <column name="definition_fa">تاریخ</column>
@@ -12545,7 +12550,7 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">quS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">chair</column>
       <column name="definition_de">Stuhl</column>
       <column name="definition_fa">صندلی</column>
@@ -13020,7 +13025,7 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">quv</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:klcp1</column>
       <column name="definition">honor</column>
       <column name="definition_de">Ehre</column>
       <column name="definition_fa">افتخار و احترام [AUTOTRANSLATED]</column>
@@ -13081,7 +13086,7 @@ Huomaa, että {ghaj:v}: ta ja {Hutlh:v}: ää voidaan käyttää tämän substan
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">quv</column>
-      <column name="part_of_speech">v:is</column>
+      <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be honored, be honorable</column>
       <column name="definition_de">geehrt, ehrenswert sein</column>
       <column name="definition_fa">افتخار بزرگی است [AUTOTRANSLATED]</column>
