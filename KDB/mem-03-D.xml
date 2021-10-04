@@ -332,7 +332,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="definition_fi">olla huolimaton, olla hajamielinen, olla keskittymätön</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jeH:v}, {SaH:v:2}, {Dach:v:1}</column>
+      <column name="see_also">{jeH:v}, {SaH:v:2}, {Dach:v:1}, {tab:v}</column>
       <column name="notes">This applies to a person who is not focused on the task at hand.[1, p.149]</column>
       <column name="notes_de">Dies gilt für eine Person, die sich nicht auf die jeweilige Aufgabe konzentriert.[1, p.149] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این مربوط به شخصی است که در این کار روی کار متمرکز نشده باشد. [1, p.149] [AUTOTRANSLATED]</column>
@@ -1130,6 +1130,49 @@ The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src}
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">DamSayrotlh</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">hippopotamus, hippo</column>
+      <column name="definition_de">Nilpferd</column>
+      <column name="definition_fa">اسب آبی ، اسب آبی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">flodhäst, flodhäst [AUTOTRANSLATED]</column>
+      <column name="definition_ru">бегемот, бегемот [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">河馬，河馬 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">hipopótamo</column>
+      <column name="definition_fi">eräs virtahepoa muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is the closest Klingon equivalent to a hippo.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Damu'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">crease</column>
@@ -1256,6 +1299,49 @@ The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src}
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 27 (2020):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Dang</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">focus</column>
+      <column name="definition_de">scharfstellen, fokussieren</column>
+      <column name="definition_fa">تمرکز [AUTOTRANSLATED]</column>
+      <column name="definition_sv">fokus [AUTOTRANSLATED]</column>
+      <column name="definition_ru">фокус [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">重點 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">focar</column>
+      <column name="definition_fi">tarkentaa, fokusoida (kuvaa)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This means to make (an image) less blurry.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">It was confirmed that this is transitive during the Q &amp; A session, and that one can focus one's eyes.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2568,6 +2654,49 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">DayqIr</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">honey</column>
+      <column name="definition_de">Honig</column>
+      <column name="definition_fa">عسل [AUTOTRANSLATED]</column>
+      <column name="definition_sv">honung [AUTOTRANSLATED]</column>
+      <column name="definition_ru">медовый [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">蜜糖 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">mel</column>
+      <column name="definition_fi">hunaja</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{jutngev:n}</column>
+      <column name="notes">This refers to the viscous, sweet fluid produced from plant nectar.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">DayquS</column>
       <column name="part_of_speech">n:fic</column>
       <column name="definition">type of plant, dikus plant</column>
@@ -2631,7 +2760,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
       <column name="notes_ru">Это второй высший ранг в {QaS:n:1h}.</column>
       <column name="notes_zh_HK">這是{QaS:n:1h}的第二高等級。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o segundo posto mais alto de {QaS:n:1h}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on {QaS:n:1h}: n toiseksi korkein sijoitus. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on miehistön ({QaS:n:1h}) toiseksi korkein sotilasarvo.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -3290,7 +3419,9 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
       <column name="notes_fi"></column>
       <column name="hidden_notes">This word was awarded to {Qov:n:name} as a Friend of Maltz, hence the Canadian spelling in the definition.
 
-In {DSC - The Vulcan Hello:src}, the albino Voq's (see {voq:n:name}) skin colour was described as {Dem:v:nolink}.</column>
+In {DSC - The Vulcan Hello:src}, the albino Voq's (see {voq:n:name}) skin colour was described as {Dem:v:nolink}.
+
+When asked if this was a pun about democratic governments being more transparent, Marc Okrand has said that it was not.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3827,7 +3958,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
       <column name="definition_sv">vara girande, vara svängande (flygmaskin rör nosen till höger eller vänster)</column>
       <column name="definition_ru">рыскание (нос самолета указывает влево или вправо) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">平擺</column>
-      <column name="definition_pt">guinada (nariz da aeronave aponta para a esquerda ou direita)</column>
+      <column name="definition_pt">guinar (nariz da aeronave aponta para a esquerda ou direita)</column>
       <column name="definition_fi">kääntyä (lentokoneen kääntyminen pystyakselin suhteen)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3870,7 +4001,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
       <column name="definition_sv">bagage, bröstkorg, kista [AUTOTRANSLATED]</column>
       <column name="definition_ru">сундук, сундук, ящик [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">箱</column>
-      <column name="definition_pt">tronco, peito, caixa</column>
+      <column name="definition_pt">tronco, peito</column>
       <column name="definition_fi">arkku, kirstu, laatikko</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3992,7 +4123,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">DeSqIv</column>
-          <column name="part_of_speech">n:body</column>
+          <column name="part_of_speech">n:deriv,body</column>
           <column name="definition">elbow</column>
           <column name="definition_de">Ellenbogen</column>
           <column name="definition_fa">ارنج</column>
@@ -5433,7 +5564,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Der:v:2}.[1] [AUTOTR
       <column name="definition_ru">лист Дигна [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">digna葉 [AUTOTRANSLATED]</column>
       <column name="definition_pt">folha de digna</column>
-      <column name="definition_fi">dignan lehti</column>
+      <column name="definition_fi">eräs ruokalaji, dignan lehti</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -5548,7 +5679,7 @@ Detta verb kan användas för att producera en visuell bild även om ingen färg
       <column name="notes_pt"></column>
       <column name="notes_fi">Verbin objekti on pinta, jolle maalitikulla ({rItlh naQ:n}) piirretään, yleensä kivitaulu ({nagh beQ:n}). Koska {DIj:v:2,nolink} assosioituu vahvasti {nagh beQ:n:nolink}:iin, on se oletus jos objektia ei ole. Jos pinta on jokin muu kuin {nagh beQ:n:nolink}, on se selkeyden vuoksi hyvä kertoa.
 
-Piirrettävän asia voidaan määritelllä verbillä {cha':v} (näyttää) tai {nargh:v:0} (ilmestyä, paeta, karata). Jälkimmäinen verbi on samanlainen kuin kirjoittamisen ja säveltämisen yhteydessä käytettävä {qon:v}: kuvan ajatellaan olevan jo olemassa ja maalaaja ({DIjwI':n}) mahdollistaa sen pakenemisen ja ilmestymisen. Yleensä {nargh:v:0,nolink}-verbiä käytetään {-moH:v}-päätteen kanssa, vaikka sen käyttäminen ilman päätettä on myös sallittua joskin harvinaisempaa. {cha':v:nolink}-verbin käyttäminen on yleisempää epämuodollisemmissa tilanteissa ja {nargh:v:nolink} (yleensä {narghmoH:v:nolink})-verbi on yleisempi kirjallisuudessa ja taiteessa käytävissä keskusteluissa.
+Piirrettävä asia voidaan määritellä verbillä {cha':v} (näyttää) tai {nargh:v:0} (ilmestyä, paeta, karata). Jälkimmäinen verbi on samanlainen kuin kirjoittamisen ja säveltämisen yhteydessä käytettävä {qon:v}: kuvan ajatellaan olevan jo olemassa ja maalaaja ({DIjwI':n}) mahdollistaa sen pakenemisen ja ilmestymisen. Yleensä {nargh:v:0,nolink}-verbiä käytetään {-moH:v}-päätteen kanssa, vaikka sen käyttäminen ilman päätettä on myös sallittua joskin harvinaisempaa. {cha':v:nolink}-verbin käyttäminen on yleisempää epämuodollisemmissa tilanteissa ja {nargh:v:nolink} (yleensä {narghmoH:v:nolink})-verbi on yleisempi kirjallisuudessa ja taiteessa käytävissä keskusteluissa.
 
 Tätä verbiä käytetään myös muunlaisesta piirtämisestä kuin maalitikulla maalaamisesta. Sitä voi käyttää esimerkiksi kynällä tai tietokoneella piirtämisestä.[2]</column>
       <column name="hidden_notes"></column>
@@ -5860,10 +5991,10 @@ The description originally given in the {KLI:src} New Klingon Words list says th
       <column name="definition_zh_HK">紡 [AUTOTRANSLATED]</column>
       <column name="definition_pt">girar</column>
       <column name="definition_fi">pyöriä</column>
-      <column name="synonyms">{jIr:v}</column>
+      <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jIrmoH:v:1}</column>
-      <column name="notes"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is generally used for things spinning or rotating continuously or for a long time, while {jIr:v} is used when the thing rotates partially or once or for a few times. For example, one would {jIrmoH:v:2} the steering wheel of a car, while the tires {DIng:v:nolink}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5871,7 +6002,7 @@ The description originally given in the {KLI:src} New Klingon Words list says th
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">MO implied at {Saarbrücken qepHom'a' 2011:src} that {DIng:v:nolink} is intransitive by saying that it works in the same way as {jIr:v:nolink}, but did not elaborate on the exact difference between the two verbs.</column>
+      <column name="hidden_notes">MO implied at {Saarbrücken qepHom'a' 2011:src} that {DIng:v:nolink} is intransitive by saying that it works in the same way as {jIr:v:nolink}, but did not elaborate on the exact difference between the two verbs. The clarification was later provided in a message to the mailing list in 2021, which also confirmed that it is intransitive.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5889,7 +6020,7 @@ The description originally given in the {KLI:src} New Klingon Words list says th
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2021.03.26:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5989,7 +6120,7 @@ Liitetyyppi 2: luku
 ▶ {-Du':n:suff}
 ▶ {-mey:n:suff}
 
-Liitetyyppi 3: täsmennys
+Liitetyyppi 3: suhtautuminen
 ▶ {-qoq:n:suff}
 ▶ {-Hey:n:suff}
 ▶ {-na':n:suff}
@@ -6643,7 +6774,7 @@ Sekä kardinaalinumerot ({DISjaj wa':n@@DISjaj:n, wa':n:num}) että järjestysnu
       <column name="definition_ru">Дискавери</column>
       <column name="definition_zh_HK">發現號（星艦）</column>
       <column name="definition_pt">Descoberta</column>
-      <column name="definition_fi">löytö</column>
+      <column name="definition_fi">Discovery</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Senjo':n:name}, {Hov leng:n}</column>
@@ -6654,7 +6785,7 @@ Sekä kardinaalinumerot ({DISjaj wa':n@@DISjaj:n, wa':n:num}) että järjestysnu
       <column name="notes_ru">Это название корабля Федерации.</column>
       <column name="notes_zh_HK">這是聯邦星艦的名稱。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o nome de uma nave estelar da Federação. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on federaation tähtialuksen nimi. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on erään Liiton tähtialuksen nimi.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -6993,6 +7124,49 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">DI'</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">edit, revise, correct, modify</column>
+      <column name="definition_de">überarbeiten, korrigieren, lektorieren</column>
+      <column name="definition_fa">ویرایش ، اصلاح ، اصلاح ، اصلاح [AUTOTRANSLATED]</column>
+      <column name="definition_sv">redigera, revidera, korrigera, modifiera [AUTOTRANSLATED]</column>
+      <column name="definition_ru">редактировать, исправлять, исправлять, изменять [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">編輯，修改，更正，修改 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">editar, revisar, corrigir, modificar</column>
+      <column name="definition_fi">muokata, tarkistaa, korjata, editoida</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This means to review something for the purpose of making or suggesting changes.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7908,7 +8082,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Dojmey</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,plural</column>
       <column name="definition">mass, masses, multitude, a very large but indeterminate group of something</column>
       <column name="definition_de">Massen, Mengen, eine große aber unbekannte Anzahl von Gegenständen oder Personen</column>
       <column name="definition_fa">توده، توده ها، جمعیت، یک گروه بسیار بزرگ اما نامعلوم چیزی است [AUTOTRANSLATED]</column>
@@ -7975,7 +8149,8 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {DojneS mIplIj.:sen@@Doj:v, -neS:v, mIp:n, -lIj:n} "Your wealth is impressive, your honor."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -7991,10 +8166,10 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {PK:src}</column>
     </table>
     <table name="mem">
-      <!-- Some people believe that "entity" was a typo for "entirety", based on the second definition. However, from the example, it seems that this word really does mean "entity", in the sense of a "unit" or "whole". -->
+      <!-- Some people believe that "entity" was a typo for "entirety", based on the second definition. However, from the {wa' Dol nIvDaq...} example, it seems that this word really does mean "entity", in the sense of a "unit" or "whole". -->
       <column name="_id"></column>
       <column name="entry_name">Dol</column>
       <column name="part_of_speech">n</column>
@@ -8726,7 +8901,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_sv">eskortera</column>
       <column name="definition_ru">сопровождать, эскортировать</column>
       <column name="definition_zh_HK">護送</column>
-      <column name="definition_pt">escoltar</column>
+      <column name="definition_pt">escoltar, acompanhar</column>
       <column name="definition_fi">saattaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8771,7 +8946,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_ru">конец (периода времени) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">結束（一段時間） [AUTOTRANSLATED]</column>
       <column name="definition_pt">fim (de um período de tempo)</column>
-      <column name="definition_fi">loppua (ajanjaksosta, resurssista tms.)</column>
+      <column name="definition_fi">loppua (ajanjaksosta)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{rIn:v}</column>
@@ -8782,7 +8957,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="notes_ru">Предметом этого глагола является период или единица времени, например, месяц. Это не должно быть событие, окончание которого контролируется (см. {van:v:2}, {ghang:v}). [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">此動詞的主題是一個時期或時間單位，例如一個月。這不應是事件的結束可以控制的事件（有關此事件，請參閱{van:v:2}，{ghang:v}）。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">O assunto desse verbo é um período ou unidade de tempo, como um mês. Não deve ser um evento cujo final tenha algum controle (para o qual consulte {van:v:2}, {ghang:v}). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämän verbin aihe on jakso tai aikayksikkö, kuten kuukausi. Sen ei pitäisi olla tapahtuma, jonka loppua hallitaan jonkin verran (katso {van:v:2}, {ghang:v}). [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämän verbin subjekti on ajanjakso (esim. kuukausi), joka loppuu itsestään. Jos joku lopettaa ajanjakson tai tapahtuman, tämän verbin sijasta sanotaan {van:v:2} tai {ghang:v}.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
@@ -8801,7 +8976,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">päättyä</column>
       <column name="source">[1] {HQ 12.2, Jun. 2003:src}, [2] {KLI mailing list 2012.03.30:src}</column>
     </table>
     <table name="mem">
@@ -10609,7 +10784,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="definition_sv">ta (sig) en tupplur</column>
       <column name="definition_ru">вздремнуть</column>
       <column name="definition_zh_HK">小憩 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">cochilo</column>
+      <column name="definition_pt">cochilar</column>
       <column name="definition_fi">ottaa torkut</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -10742,9 +10917,9 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="definition_zh_HK">中午</column>
       <column name="definition_pt">meio dia</column>
       <column name="definition_fi">keskipäivä</column>
-      <column name="synonyms"></column>
+      <column name="synonyms">{pemjep:n}</column>
       <column name="antonyms">{ramjep:n:1}</column>
-      <column name="see_also">{megh:n}, {po:n}, {pov:n}, {pemjep:n}</column>
+      <column name="see_also">{megh:n}, {po:n}, {pov:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -10912,7 +11087,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="definition_sv">hugga, sticka ned, genomborra</column>
       <column name="definition_ru">колоть, наносить удар холодным оружием</column>
       <column name="definition_zh_HK">刺 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">punhalada</column>
+      <column name="definition_pt">apunhalar</column>
       <column name="definition_fi">puukottaa, pistää (terävällä esineellä)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -11146,7 +11321,7 @@ Katso erillinen piikki, kuten panos, kohdasta {wIl:n}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Шкуры ящериц Дюрани</column>
       <column name="definition_zh_HK">Durani蜥蜴皮 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Peles de lagarto Durani</column>
-      <column name="definition_fi">duranin nahat</column>
+      <column name="definition_fi">eräs elintarvike, duranin nahat</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Duran lung:n}, {DIr:n}</column>
@@ -11500,7 +11675,7 @@ A distinção entre um {DuS:n:nolink} e um {chetvI':n:1} tem a ver com como o pr
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Duy</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:being</column>
       <column name="definition">agent, emissary</column>
       <column name="definition_de">Botschafter, Vertreter</column>
       <column name="definition_fa">عامل، فرستاده [AUTOTRANSLATED]</column>

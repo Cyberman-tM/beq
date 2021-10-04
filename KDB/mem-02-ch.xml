@@ -139,7 +139,7 @@
       <column name="definition_ru">пирог, фруктовое пирожное, торт, клецка</column>
       <column name="definition_zh_HK">餡餅、餡餅、餃子 [AUTOTRANSLATED]</column>
       <column name="definition_pt">torta, bolo, bolinho de massa</column>
-      <column name="definition_fi">piirakka, torttu, myky?, pasteija?, patee?</column>
+      <column name="definition_fi">piirakka, pasteija</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chab:n:2}, {chabHom:n}</column>
@@ -168,7 +168,7 @@
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">piiras, kakku, torttu, myky, nyytti</column>
       <column name="source">[1] {TKDA:src}</column>
     </table>
     <table name="mem">
@@ -3597,7 +3597,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="definition_sv">hoppa av (politiskt)</column>
       <column name="definition_ru">отступиться, нарушить долг</column>
       <column name="definition_zh_HK">缺陷 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">defeito</column>
+      <column name="definition_pt">se tornar um apóstata, mudar para o lado do inimigo</column>
       <column name="definition_fi">loikata (vihollismaahan)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3773,7 +3773,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="definition_sv">upptåg [AUTOTRANSLATED]</column>
       <column name="definition_ru">шалость [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">開玩笑、做惡作劇</column>
-      <column name="definition_pt">pegadinha</column>
+      <column name="definition_pt">pregar peças</column>
       <column name="definition_fi">tehdä pila jollekulle</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4127,14 +4127,14 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">General Chang ({cheng Sa':n:nolink}) served under Chancellor Gorkon (see {ghorqon:n:name}), and betrayed him when he tried to make peace with the Federation.</column>
-      <column name="notes_de">General Chang ({cheng Sa':n:nolink}) diente unter Kanzler Gorkon (siehe {ghorqon:n:name}) und verriet ihn, als er versuchte, Frieden mit der Föderation zu schließen. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">ژنرال چانگ ({cheng Sa':n:nolink}) تحت ریاست صدراعظم گوركون (به عنوان خوانده شده {ghorqon:n:name}) مشغول خدمت بود ، و هنگام تلاش برای برقراری صلح با فدراسیون به وی خیانت كرد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">General Chang ({cheng Sa':n:nolink}) tjänade under kansler Gorkon (se {ghorqon:n:name}) och förrådde honom när han försökte göra fred med federationen. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Генерал Чанг ({cheng Sa':n:nolink}) служил под началом канцлера Горкона (см. {ghorqon:n:name}) и предал его, когда он пытался заключить мир с Федерацией. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">張將軍（{cheng Sa':n:nolink}）在Gorkon總理（見{ghorqon:n:name}）的領導下服役，並在他試圖與聯邦和解時背叛了他。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">O general Chang ({cheng Sa':n:nolink}) serviu sob o chanceler Gorkon (ver {ghorqon:n:name}) e o traiu quando ele tentou fazer as pazes com a Federação. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Kenraali Chang ({cheng Sa':n:nolink}) palveli liittokansleri Gorkonin alaisuudessa (katso {ghorqon:n:name}) ja petti hänet, kun hän yritti tehdä rauhan federaation kanssa. [AUTOTRANSLATED]</column>
+      <column name="notes">General Chang ({cheng Sa':n:name,nolink}) served under Chancellor Gorkon (see {ghorqon:n:name}), and betrayed him when he tried to make peace with the Federation.</column>
+      <column name="notes_de">General Chang ({cheng Sa':n:name,nolink}) diente unter Kanzler Gorkon (siehe {ghorqon:n:name}) und verriet ihn, als er versuchte, Frieden mit der Föderation zu schließen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">ژنرال چانگ ({cheng Sa':n:name,nolink}) تحت ریاست صدراعظم گوركون (به عنوان خوانده شده {ghorqon:n:name}) مشغول خدمت بود ، و هنگام تلاش برای برقراری صلح با فدراسیون به وی خیانت كرد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">General Chang ({cheng Sa':n:name,nolink}) tjänade under kansler Gorkon (se {ghorqon:n:name}) och förrådde honom när han försökte göra fred med federationen. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Генерал Чанг ({cheng Sa':n:name,nolink}) служил под началом канцлера Горкона (см. {ghorqon:n:name}) и предал его, когда он пытался заключить мир с Федерацией. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">張將軍（{cheng Sa':n:name,nolink}）在Gorkon總理（見{ghorqon:n:name}）的領導下服役，並在他試圖與聯邦和解時背叛了他。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">O general Chang ({cheng Sa':n:name,nolink}) serviu sob o chanceler Gorkon (ver {ghorqon:n:name}) e o traiu quando ele tentou fazer as pazes com a Federação. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Kenraali Chang ({cheng Sa':n:name,nolink}) palveli liittokansleri Gorkonin alaisuudessa (katso {ghorqon:n:name}) ja petti hänet, kun hän yritti tehdä rauhan federaation kanssa. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">He appeared in {Star Trek VI:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -4230,9 +4230,9 @@ Verbetet {ver:v:1} kan också användas för att prata om tornado och virvelvind
       <column name="notes_zh_HK">請注意，這是克林崗語中的動詞。在克林貢，有人說「龍捲風」，類似於用英語說「下雨」。
 
 動詞{ver:v:1}也可以用來談論龍捲風和旋風。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Observe que este é um verbo em Klingon. Em Klingon, diz-se "it tornadoes", semelhante a como se diz "it rains" em inglês.
+      <column name="notes_pt">Observe que este é um verbo em Klingon. Em Klingon, diz-se "está tornado", semelhante a como se diz "esta chovendo" em inglês.
 
-O verbo {ver:v:1} também pode ser usado para falar sobre tornados e redemoinhos. [AUTOTRANSLATED]</column>
+O verbo {ver:v:1} também pode ser usado para falar sobre tornados e redemoinhos.</column>
       <column name="notes_fi">Huomaa, että tämä on verbi klingonissa. Klingonissa sanotaan "se tornadot", samalla tavalla kuin sanotaan "sataa" englanniksi.
 
 Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTOTRANSLATED]</column>
@@ -4256,6 +4256,49 @@ Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTO
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">cheqwI'</column>
+          <column name="part_of_speech">n:deriv,alt</column>
+          <column name="definition">{lunglIH:n}</column>
+          <column name="definition_de">{lunglIH:n}</column>
+          <column name="definition_fa">{lunglIH:n}</column>
+          <column name="definition_sv">{lunglIH:n}</column>
+          <column name="definition_ru">{lunglIH:n}</column>
+          <column name="definition_zh_HK">{lunglIH:n}</column>
+          <column name="definition_pt">{lunglIH:n}</column>
+          <column name="definition_fi">{lunglIH:n}</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{cheq:v}, {-wI':v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 28 (2021):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">cheqotlhchugh maHaghbe''a'? cheDuQchugh mareghbe''a'? cheQIHchugh manoDbe''a'?</column>
@@ -4326,23 +4369,25 @@ Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTO
       <column name="components"></column>
       <column name="examples">
 ▶ {ngoch luchermeH 'ej wo' San luwuqmeH pa' ghom tlhIngan yejquv DevwI'pu'.:sen:nolink} "There, the leaders of the Klingon High Council meet to determine policy and decide upon the fate of the Empire."[2]
+▶ {boq lucherDI' tlhIngan wo' romuluS Hov wo' je So'wI' cham Suqpu' tlhIngan wo'.:sen:nolink} "Cloaking technology was gained through an alliance with the Romulan Star Empire"[3]
 ▶ {vaj ruS cher 'Iw:sen:nolink}
    {rap cha' ghot HoS rap cha' ghot vuD:sen:nolink}
    {chen yIn ruS:sen:nolink}
   "So the bond was sealed in blood
    Of two equal in body and thought,
-   The bond of life."[3]</column>
+   The bond of life."[4]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
 ▶ {ngoch luchermeH 'ej wo' San luwuqmeH pa' ghom tlhIngan yejquv DevwI'pu'.:sen:nolink} "Здесь, лидеры Клингонского высшего совета встречаются, чтобы определять политику (задавать курс) и решать судьбу империи."[2]
+▶ {boq lucherDI' tlhIngan wo' romuluS Hov wo' je So'wI' cham Suqpu' tlhIngan wo'.:sen:nolink} "Cloaking technology was gained through an alliance with the Romulan Star Empire"[3]
 ▶ {vaj ruS cher 'Iw:sen:nolink}
    {rap cha' ghot HoS rap cha' ghot vuD:sen:nolink}
    {chen yIn ruS:sen:nolink}
   "Так связь была скрыта в крови
    в теле и в мыслях,
-   Связь жизни."[3]</column>
+   Связь жизни."[4]</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -4354,7 +4399,7 @@ Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTO
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {SkyBox 25:src}, [3] {paq'batlh p.136-137:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {SkyBox 25:src}, [3] {SkyBox 33:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src}), [4] {paq'batlh p.136-137:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4508,7 +4553,7 @@ Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTO
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The "Chesterfield" coat is a type of overcoat.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4551,7 +4596,7 @@ Verbillä {ver:v:1} voidaan myös puhua tornadoista ja pyörremyrskyistä. [AUTO
       <column name="notes_zh_HK">在{voSpegh Sep:n}的方言中，它指的是任何外套或夾克（其他克林崗人將其稱為{wep:n:1}）。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">No dialeto de {voSpegh Sep:n}, isso se refere a qualquer casaco ou jaqueta (o que outros klingons chamariam de {wep:n:1}). [AUTOTRANSLATED]</column>
       <column name="notes_fi">{voSpegh Sep:n}: n murteessa tämä viittaa mihin tahansa takkiin tai takkiin (mitä muut klingonit kutsuisivat {wep:n:1}: ksi). [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The "Chesterfield" coat is a type of overcoat.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4690,7 +4735,7 @@ A distinção entre um {chetvI':n:nolink} e um {DuS:n} tem a ver com como o proj
       <column name="definition_sv">separera, dela, avskilja</column>
       <column name="definition_ru">Разделять</column>
       <column name="definition_zh_HK">分開、分離</column>
-      <column name="definition_pt">separado</column>
+      <column name="definition_pt">separar</column>
       <column name="definition_fi">erottaa, erotella, jakaa, irrottaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4769,6 +4814,49 @@ Reverse of {vech:v}.</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {s.k 1998.12.07:src} (reprinted in {HQ 8.1, p.9, Mar. 1999:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">cheyIS</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">cephalopod</column>
+      <column name="definition_de">Kopffüßer</column>
+      <column name="definition_fa">سفالوپود [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bläckfisk [AUTOTRANSLATED]</column>
+      <column name="definition_ru">головоногие моллюски [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">頭足類 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">cefalópode</column>
+      <column name="definition_fi">eräs mustekalaa muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{pIpyuS:n}, {nevroD:n}</column>
+      <column name="notes">This is a squid-like Klingon creature.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4958,7 +5046,7 @@ This word is defined in {TKD:src} as "rule, reign, run" and additionally in {KGT
       <column name="definition_sv">erkänna</column>
       <column name="definition_ru">Признавать</column>
       <column name="definition_zh_HK">承認</column>
-      <column name="definition_pt">Admitem</column>
+      <column name="definition_pt">admitir</column>
       <column name="definition_fi">myöntää, tunnustaa</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tem:v}</column>
@@ -5184,7 +5272,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="definition_ru">обрезать, остригать (волосы)</column>
       <column name="definition_zh_HK">剪裁、修剪（頭髮） [AUTOTRANSLATED]</column>
       <column name="definition_pt">cortar, aparar (cabelo)</column>
-      <column name="definition_fi">leikata (hiukset)</column>
+      <column name="definition_fi">leikata (hiuksia, ruohoa, tms.)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jIb:n}, {pob:n}, {pe':v}, {magh:n}</column>
@@ -5195,7 +5283,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="notes_ru">Это слово может использоваться, чтобы резать или подстригать другие вещи, такие как трава, полоски на одежде, ногти и т. Д.[2] [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">此詞可用於剪切或修剪其他事物，例如草，衣服上的條紋，指甲等。[2] [AUTOTRANSLATED]</column>
       <column name="notes_pt">Essa palavra pode ser usada para cortar ou aparar outras coisas, como grama, franjas na roupa, unhas, etc.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä sanaa voidaan käyttää leikkaamaan tai leikkaamaan muita asioita, kuten ruohoa, hapsut vaatteissa, kynnet jne.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä sana viittaa hiusten, kynsien, vaatteiden hapsujen, ruohon, tms. leikkaamiseen.[2]</column>
       <column name="hidden_notes">One "chip"s away at hair.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -5493,7 +5581,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="definition_fi">kohtu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qey'Hav:n}, {yatlh:v}, {ghu:n}, {chI:v}, {ber:v}</column>
+      <column name="see_also">{qey'Hav:n}, {yatlh:v}, {ghu:n}, {chI:v}, {ber:v}, {mayvIm:n}, {QImHal:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5785,13 +5873,13 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="entry_name">choH</column>
       <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">alter, change</column>
-      <column name="definition_de">sich (ver)ändern, wechsein</column>
+      <column name="definition_de">(ver)ändern, umwandeln</column>
       <column name="definition_fa">تغییر، تغییر [AUTOTRANSLATED]</column>
       <column name="definition_sv">ändras, förändras</column>
       <column name="definition_ru">изменить(состояние), преобразовать</column>
       <column name="definition_zh_HK">改變</column>
       <column name="definition_pt">alterar, mudar</column>
-      <column name="definition_fi">muuttaa, muuttua</column>
+      <column name="definition_fi">muuttaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{choH:n}, {ngaD:v}, {ratlh:v}, {-choH:v}, {ghe':v}</column>
@@ -5819,7 +5907,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
       <column name="search_tags">update</column>
-      <column name="search_tags_de"></column>
+      <column name="search_tags_de">verändern, ändern</column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru">обновить</column>
@@ -6312,7 +6400,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="definition_sv">bita</column>
       <column name="definition_ru">Кусать, откусить</column>
       <column name="definition_zh_HK">咬</column>
-      <column name="definition_pt">mordida</column>
+      <column name="definition_pt">morder</column>
       <column name="definition_fi">purra, suudella</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -6337,7 +6425,7 @@ Se en föreställning av {HIchop!:sen:lyr} av Jen Usellis: {YouTube video:url:ht
 觀看Jen Usellis演唱的{HIchop!:sen:lyr}：{YouTube video:url:http://youtu.be/v2bjc6U0tjI} [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta palavra também pode denotar um beijo no estilo klingon.[4]
 
-Assista a uma performance de {HIchop!:sen:lyr} de Jen Usellis: {YouTube video:url:http://youtu.be/v2bjc6U0tjI} [AUTOTRANSLATED]</column>
+Assista a uma performance de {HIchop!:sen:lyr} de Jen Usellis: {YouTube video:url:http://youtu.be/v2bjc6U0tjI}</column>
       <column name="notes_fi">Tämä sana voi merkitä myös klingonityylistä suudelmaa.[4]
 
 Katso Jen Usellisin {HIchop!:sen:lyr}-esitys: {YouTube video:url:http://youtu.be/v2bjc6U0tjI} [AUTOTRANSLATED]</column>
@@ -6816,7 +6904,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
       <column name="definition_ru">восьмой тон нонатонической музыки [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">第八音非音樂音階 [AUTOTRANSLATED]</column>
       <column name="definition_pt">oitavo tom da escala musical não-atônica</column>
-      <column name="definition_fi">nonatoonisen musiikkiasteikon kahdeksas sävel</column>
+      <column name="definition_fi">yhdeksänsävelisen musiikkiasteikon kahdeksas sävel</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chorgh:n:1} (number)</column>
@@ -6901,7 +6989,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
       <column name="definition_sv">överge</column>
       <column name="definition_ru">дезертировать</column>
       <column name="definition_zh_HK">背棄、叛逃</column>
-      <column name="definition_pt">deserto</column>
+      <column name="definition_pt">desertar</column>
       <column name="definition_fi">hylätä (kylä, rakennus tms.), jättää autioksi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -6991,6 +7079,49 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">choSom</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">quartz</column>
+      <column name="definition_de">Quarz</column>
+      <column name="definition_fa">کوارتز [AUTOTRANSLATED]</column>
+      <column name="definition_sv">kvarts [AUTOTRANSLATED]</column>
+      <column name="definition_ru">кварц [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">石英 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">quartzo</column>
+      <column name="definition_fi">kvartsi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qut:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Quartz is 7 ({Soch:n:1}) on the Mohs mineral scale of hardness.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">chot</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">murder</column>
@@ -6999,7 +7130,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
       <column name="definition_sv">mörda</column>
       <column name="definition_ru">убивать</column>
       <column name="definition_zh_HK">謀殺</column>
-      <column name="definition_pt">assassinato</column>
+      <column name="definition_pt">assassinar</column>
       <column name="definition_fi">murhata</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -7525,7 +7656,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{QIj:v}, {chuH:v:1}</column>
-      <column name="notes"></column>
+      <column name="notes">The object of this verb is the person who wants clarification.[2, p.149]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -8173,7 +8304,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", the British expre
       <column name="definition_fi">eräs jyrsijä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qorvIt:n}, {HaS:v}</column>
+      <column name="see_also">{qorvIt:n}, {lIS'ab:n}, {HaS:v}</column>
       <column name="notes">According to the glossary of {A Burning House:src}, this is a rodent that mostly lives underground and makes an annoying noise. Its name literally means "one which is noisy".</column>
       <column name="notes_de">Laut dem Glossar von {A Burning House:src} handelt es sich um ein Nagetier, das hauptsächlich unter der Erde lebt und ein störendes Geräusch macht. Sein Name bedeutet wörtlich "einer, der laut ist". [AUTOTRANSLATED]</column>
       <column name="notes_fa">با توجه به واژه نامه {A Burning House:src} ، این جوندگان است که بیشتر در زیر زمین زندگی می کند و سر و صدای آزار دهنده ای ایجاد می کند. نام آن به معنای واقعی کلمه به معنای "یکی از نویز" است. [AUTOTRANSLATED]</column>
@@ -8472,7 +8603,7 @@ In the {TNG:src} novel {Power Hungry:src}, this was described as a four-stringed
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">chuvmey</column>
-      <column name="part_of_speech">n:plural</column>
+      <column name="part_of_speech">n:deriv,plural</column>
       <column name="definition">leftovers (grammatical term)</column>
       <column name="definition_de">Übrigbleibsel (gramm. Begriff)</column>
       <column name="definition_fa">باقی مانده (اصطلاح گرامری) [AUTOTRANSLATED]</column>
@@ -8603,7 +8734,7 @@ Katso Gowronin sanovan {chuyDaH yIlaQ!:sen:nolink}: {YouTube video:url:http://yo
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">työntömoottorit, moottorit</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
@@ -8616,7 +8747,7 @@ Katso Gowronin sanovan {chuyDaH yIlaQ!:sen:nolink}: {YouTube video:url:http://yo
       <column name="definition_sv">vara ny</column>
       <column name="definition_ru">Быть новым</column>
       <column name="definition_zh_HK">新</column>
-      <column name="definition_pt">seja novo</column>
+      <column name="definition_pt">ser novo</column>
       <column name="definition_fi">olla uusi</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ngo':v}</column>

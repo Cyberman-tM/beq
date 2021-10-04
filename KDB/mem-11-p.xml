@@ -587,6 +587,49 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">paghur</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">hermit, recluse</column>
+      <column name="definition_de">Einsiedler</column>
+      <column name="definition_fa">گوشه نشین ، گوشه گیر [AUTOTRANSLATED]</column>
+      <column name="definition_sv">eremit, ensam [AUTOTRANSLATED]</column>
+      <column name="definition_ru">отшельник, отшельник [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">隱士，隱士 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">eremita recluso</column>
+      <column name="definition_fi">erakko</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Hermit crabs belong to the superfamily Paguroidea.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">paH</column>
       <column name="part_of_speech">n</column>
       <column name="definition">gown, dress</column>
@@ -1658,7 +1701,7 @@ Katso myös hypoteettinen samanlainen kieliopillinen rakenne kohdasta {tIq'ghob:
       <column name="definition_ru">клингонское растение, напоминающее корицу [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">肉桂樣克林崗植物 [AUTOTRANSLATED]</column>
       <column name="definition_pt">planta Klingon tipo canela</column>
-      <column name="definition_fi">eräs kanelia muistuttava klingonien kasvi</column>
+      <column name="definition_fi">eräs kanelia muistuttava kasvi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -1733,6 +1776,49 @@ Katso myös hypoteettinen samanlainen kieliopillinen rakenne kohdasta {tIq'ghob:
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {TNK:src}, [3] {KLI mailing list 2019.01.22:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">paSlogh tuQ DaS</column>
+          <column name="part_of_speech">sen:idiom</column>
+          <column name="definition">be inside-out</column>
+          <column name="definition_de">das Innere nach Außen gedreht sein</column>
+          <column name="definition_fa">درون و بیرون بودن [AUTOTRANSLATED]</column>
+          <column name="definition_sv">vara inifrån och ut [AUTOTRANSLATED]</column>
+          <column name="definition_ru">быть наизнанку [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">內外兼修 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">ser de dentro para fora</column>
+          <column name="definition_fi">"Saappaat pitävät sukkia", olla nurinpäin</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">In usage, this might be preceded by something like {ghIH wep:sen@@ghIH:v:1, wep:n:1} (or {Soy' wep:sen@@Soy':v:2, wep:n:1}) "the shirt is sloppy/disheveled".[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes">The example mixes the Rukevet and Vospeg dialects, but this isn't noted and is probably just a mistake.</column>
+          <column name="components">{paSlogh:n}, {tuQ:v}, {DaS:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags">inside out</column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 28 (2021):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">paSrIq</column>
@@ -2586,7 +2672,7 @@ O {bIS'ub:n} de um {pa':n:1h,nolink} é o seu {rav:n:1} e o {'aqroS:n:1} é o se
       <column name="definition_ru">здесь, там, вон там, около этого, поблизости, неподалёку, тут</column>
       <column name="definition_zh_HK">那裡、那邊</column>
       <column name="definition_pt">lá, ali, por aí</column>
-      <column name="definition_fi">siellä, sielläpäin</column>
+      <column name="definition_fi">siellä, sielläpäin, tuolla, tuollapäin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naDev:n}, {Dat:n}, {vogh:n}</column>
@@ -2597,7 +2683,7 @@ O {bIS'ub:n} de um {pa':n:1h,nolink} é o seu {rav:n:1} e o {'aqroS:n:1} é o se
       <column name="notes_ru">Это слово является омофонным с {pa':n:1}. В качестве указания места, {pa':n:2,nolink} никогда не принимает суффикс {-Daq:n:suff}, и может только означать "здесь" ({TKD 3.3.5:src}). В противоположность к {pa'Daq:n:nolink} может означать "в комнате".</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt">Esta palavra é homofônica com {pa':n:1}. Como locativo, {pa':n:2,nolink} nunca usa o sufixo {-Daq:n:suff} e pode apenas significar "lá" ({TKD 3.3.5:src}). Por outro lado, {pa'Daq:n:nolink} só pode significar "na sala". [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä sana on homofoninen sanalle {pa':n:1}. Paikannusaineena {pa':n:2,nolink} ei koskaan ota liitettä {-Daq:n:suff}, ja se voi tarkoittaa vain "siellä" ({TKD 3.3.5:src}). Sitä vastoin {pa'Daq:n:nolink} voi tarkoittaa vain "huoneessa". [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä ja sana {pa':n:1} 'huone' ovat homonyymejä. Tämä sana ei koskaan ota liitettä {-Daq:n:suff}, eli {pa':n:2,nolink} tarkoittaa "siellä" ({TKD 3.3.5:src}) ja {pa'Daq:n:nolink} tarkoittaa "huoneessa".</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
@@ -2933,7 +3019,7 @@ O {bIS'ub:n} de um {pa':n:1h,nolink} é o seu {rav:n:1} e o {'aqroS:n:1} é o se
       <column name="definition_ru">Покинуть комнату! [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">離開這個房間！ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Saia da sala!</column>
-      <column name="definition_fi">Poistu huoneesta! [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Poistu huoneesta!</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -3028,7 +3114,7 @@ Yleensä kun olotilaa kuvaavaa verbiä käytetään välttämättömänä, sen k
       <column name="definition_fi">eräs torpedon muotoinen hedelmä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HaH:v:2}, {Hurgh:n}, {tera' peb'ot:n}</column>
+      <column name="see_also">{naH:n}, {HaH:v:2}, {Hurgh:n}, {tera' peb'ot:n}</column>
       <column name="notes">This is soaked in {chanDoq:n} and eaten.</column>
       <column name="notes_de">Dies wird in {chanDoq:n} eingeweicht und gegessen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این در {chanDoq:n} خیس شده و خورده می شود. [AUTOTRANSLATED]</column>
@@ -3036,7 +3122,7 @@ Yleensä kun olotilaa kuvaavaa verbiä käytetään välttämättömänä, sen k
       <column name="notes_ru">Это пропитано в {chanDoq:n} и съедено. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">將其浸泡在{chanDoq:n}中並食用。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">É embebido em {chanDoq:n} e comido. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä liotetaan {chanDoq:n}: ssä ja syödään. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä kurkkua muistuttava hedelmä liuotetaan marinadissa ({chanDoq:n}) ja syödään.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -3142,7 +3228,8 @@ Tätä verbiä voidaan käyttää myös muihin asioihin, joiden putoava liike mu
       <column name="notes_fi">Tätä verbiä voidaan käyttää myös ilman esinettä. Katso {pegh:v:2}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">In {TKD:src}, this is defined in the K-E side as "keep something secret", and in the E-K side as "secret, keep something secret".</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {ghoSmeH yIpegh.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3331,7 +3418,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_ru">Возраст включения</column>
       <column name="definition_zh_HK">包容時代 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Idade da Inclusão</column>
-      <column name="definition_fi">Age of Inclusion [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs aikuistumisrituaali, Mukaan ottamisen ikä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{nenghep:n}</column>
@@ -3592,9 +3679,9 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_zh_HK">正午</column>
       <column name="definition_pt">meio dia</column>
       <column name="definition_fi">keskipäivä</column>
-      <column name="synonyms"></column>
+      <column name="synonyms">{DungluQ:n}</column>
       <column name="antonyms">{ramjep:n:1}</column>
-      <column name="see_also">{DungluQ:n}, {megh:n}, {pem:n}, {pov:n}</column>
+      <column name="see_also">{megh:n}, {pem:n}, {pov:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3807,7 +3894,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_ru">ток [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">當前 [AUTOTRANSLATED]</column>
       <column name="definition_pt">corrente</column>
-      <column name="definition_fi">(sähkö)virta</column>
+      <column name="definition_fi">virta</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'IrmeD:n}, {marQen:n}</column>
@@ -3836,7 +3923,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">virtaus</column>
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
@@ -4020,7 +4107,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="entry_name">per</column>
       <column name="part_of_speech">n</column>
       <column name="definition">label</column>
-      <column name="definition_de">kennzeichnen, einen Namen zuweisen</column>
+      <column name="definition_de">Kennzeichen, Label</column>
       <column name="definition_fa">برچسب [AUTOTRANSLATED]</column>
       <column name="definition_sv">etikett, namn</column>
       <column name="definition_ru">ярлык, метка, этикетка, маркировка, бирка, пометка</column>
@@ -4277,7 +4364,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">petaQ</column>
-      <column name="part_of_speech">excl</column>
+      <column name="part_of_speech">excl:epithet</column>
       <column name="definition">epithet</column>
       <column name="definition_de">Beleidigung</column>
       <column name="definition_fa">اپیدرم [AUTOTRANSLATED]</column>
@@ -5115,7 +5202,7 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
           <column name="part_of_speech">sen:phr</column>
           <column name="definition">It's not my fault.</column>
           <column name="definition_de">Es war nicht meine Schuld.</column>
-          <column name="definition_fa">تقصیر من نیست. [AUTOTRANSLATED]</column>
+          <column name="definition_fa">تقصیر من نیست.</column>
           <column name="definition_sv">Det är inte mitt fel. [AUTOTRANSLATED]</column>
           <column name="definition_ru">Это не моя вина.</column>
           <column name="definition_zh_HK">這不是我的錯。 [AUTOTRANSLATED]</column>
@@ -5642,7 +5729,7 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="definition_ru">быть немотивированным [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">沒有動力 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser desmotivado</column>
-      <column name="definition_fi">olla motivoimaton</column>
+      <column name="definition_fi">olla motivoitumaton, epäkiinnostunut</column>
       <column name="synonyms"></column>
       <column name="antonyms">{pIl:v}</column>
       <column name="see_also">{SaHHa':v}</column>
@@ -5671,7 +5758,7 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">apaattinen</column>
       <column name="source">[1] {KLI mailing list 2010.09.01:src}</column>
     </table>
     <table name="mem">
@@ -6118,7 +6205,7 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="definition_fi">eräs eläin, pipius</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{pIpyuS pach:n}</column>
+      <column name="see_also">{pIpyuS pach:n}, {cheyIS:n}</column>
       <column name="notes">Its claws are used as food and require breaking.</column>
       <column name="notes_de">Seine Krallen werden als Nahrung verwendet und müssen gebrochen werden. [AUTOTRANSLATED]</column>
       <column name="notes_fa">پنجه های آن به عنوان غذا استفاده می شود و به شکستن احتیاج دارد. [AUTOTRANSLATED]</column>
@@ -6355,7 +6442,7 @@ Muita aikayksikköjä käytetään {pIq:n:nolink}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">{pIqaD:n:nolink}: n toiminnasta tiedetään vähän, paitsi että se ei ole aakkoset.[2] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">If interpreted as a sentence, {pIqaD:sen@@pI-:v, qaD:v} literally means "we challenge you".
 
-In the promotional posters and videos for {DSC:src}, as well as in the backgrounds of the sets, Klingon is written in {pIqaD:n:nolink} treating the symbols as an alphabet. The mapping between the twenty-six symbols and Okrand's Latin transcription has a one-to-one grapheme-phoneme correspondence (e.g., so that {tlh:sen:nolink} is written as one symbol), and originated from an unknown source at Paramount and was popularised by the Klingon Language Institute.</column>
+Prior to {DSC:src}, the {pIqaD:n:nolink} seen in the shows, movies, and videogames were arranged based on aesthetics and had no relation to the language. Some of the same sequences of symbols were even used to mean different things in different contexts. In {DSC:src}, both within the show itself and in promotional posters and videos released prior to its debut, Klingon is written in {pIqaD:n:nolink} treating the symbols as an alphabet. The mapping between the twenty-six symbols and Okrand's Latin transcription has a one-to-one grapheme-phoneme correspondence (e.g., so that {tlh:sen:nolink} is written as one symbol), and originated from an unknown source at Paramount and was popularised by the Klingon Language Institute. There is no official explanation for why {pIqaD:n:nolink} is an alphabet in {DSC:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7570,7 +7657,7 @@ Sitä voidaan käyttää myös typografiassa "lihavoidun" fontin kuvaamiseen. Ka
       <column name="definition_sv">klippa av, korta av</column>
       <column name="definition_ru">обрезать, подрезать</column>
       <column name="definition_zh_HK">夾 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">grampo</column>
+      <column name="definition_pt">grampear</column>
       <column name="definition_fi">leikata, lyhentää</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8011,49 +8098,6 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT p.117:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">polonyuS</column>
-      <column name="part_of_speech">n:name,fic</column>
-      <column name="definition">Polonius</column>
-      <column name="definition_de">Polonius</column>
-      <column name="definition_fa">پولونیوس</column>
-      <column name="definition_sv">Polonius [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Полоний (персонаж Гамлета)</column>
-      <column name="definition_zh_HK">波洛涅斯</column>
-      <column name="definition_pt">Polonius</column>
-      <column name="definition_fi">Polonius</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{Hamlet:n:name}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {Hamlet:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8821,7 +8865,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
           <column name="definition_ru">ученый, изучающий функции организма [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">研究身體功能的科學家 [AUTOTRANSLATED]</column>
           <column name="definition_pt">cientista que estuda funções corporais</column>
-      <column name="definition_fi">ruumiintoimintoja tutkiva tutkija</column>
+          <column name="definition_fi">ruumiintoimintoja tutkiva tutkija</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also">{porghQeD:n}, {tej:n}</column>
@@ -9564,7 +9608,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_ru">кипящее червивое вино</column>
       <column name="definition_zh_HK">煮沸的酒 [AUTOTRANSLATED]</column>
       <column name="definition_pt">vinho de sangue fervente</column>
-      <column name="definition_fi">eräs juoma, kiehuva matoviini</column>
+      <column name="definition_fi">eräs alkoholijuoma, kiehuva matoviini</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -10444,7 +10488,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_ru">пасть, падать, терпеть крах</column>
       <column name="definition_zh_HK">跌</column>
       <column name="definition_pt">cair</column>
-      <column name="definition_fi">pudota</column>
+      <column name="definition_fi">kaatua, pudota</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{peD:v}, {chagh:v}, {qaw':v}</column>
@@ -10474,7 +10518,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">kaataa, pudottaa</column>
       <column name="source">[1] {TKD:src}, [2] {s.k 1999.11.05:src} (reprinted in {HQ 8.4, p.9, Dec. 1999:src})</column>
     </table>
     <table name="mem">
@@ -10882,7 +10926,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">lapsi, jälkeläinen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{vav:n}, {SoS:n}, {Qup:v}, {nortlham:n}, {HojnIy:n}</column>
+      <column name="see_also">{vav:n}, {SoS:n}, {Qup:v}, {nortlham:n}, {mayvIm:n}, {HojnIy:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -11129,7 +11173,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">puqnI'</column>
-          <column name="part_of_speech">n</column>
+          <column name="part_of_speech">n:being</column>
           <column name="definition">grandchild</column>
           <column name="definition_de">Enkelkind</column>
           <column name="definition_fa">نوه</column>
@@ -11493,9 +11537,11 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Based on the examples, this verb can be used for both atmospheric and space flight.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {Hoch tlhIngan DujDaq So'wI' jomlu'. puvtaHbogh Duj ngabmoHlaw' So'wI'.:sen:nolink} "All Klingon vessels are equipped with a cloaking device, allowing the ship to fly in a state of practical invisibility."[2]
+▶ {puvbogh targh yIjal@@puv:v, -bogh:v, targh:n, yI-:v, jal:v} "Think about a flying targ."[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -11511,7 +11557,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {SkyBox 33:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src}), [3] {Saarbrücken qepHom'a' 2015:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -11669,7 +11715,7 @@ Phaseria vastaava Klingon on {nISwI':n}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">шип, шип ботинка</column>
       <column name="definition_zh_HK">穗、靴子穗 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ponta da bota</column>
-      <column name="definition_fi">piikki, saapaspiikki [AUTOTRANSLATED]</column>
+      <column name="definition_fi">saappaan sarvi tai piikki</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{DaSpu':n}, {DuQwI':n}, {pu':n:1}</column>
@@ -11974,4 +12020,47 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 14 (2007):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">pu'porgh 'oQqar</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">ginger</column>
+      <column name="definition_de">Ingwer</column>
+      <column name="definition_fa">زنجبیل [AUTOTRANSLATED]</column>
+      <column name="definition_sv">ingefära [AUTOTRANSLATED]</column>
+      <column name="definition_ru">имбирь [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">生薑 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">gengibre</column>
+      <column name="definition_fi">inkivääri</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">Sometimes {'oQqar:n} is omitted.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">A folk etymology says that the word "ginger" comes from the Sanskrit for "horn-body" ({pu':n:3}, {porgh:n}).</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>

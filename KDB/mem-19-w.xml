@@ -96,7 +96,7 @@
       <column name="definition_ru">радио [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">無線電 [AUTOTRANSLATED]</column>
       <column name="definition_pt">radio</column>
-      <column name="definition_fi">radio</column>
+      <column name="definition_fi">radio(vastaanotin)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wab labwI':n}, {Se':n}, {rI'Se':n}, {chaDvay':n}</column>
@@ -107,7 +107,7 @@
       <column name="notes_ru">Это относится к устройству, которое получает (но не отправляет) аудиосигнал. Для устройства, используемого для двусторонней связи, см. {Se' HablI':n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指接收（但不發送）音頻信號的設備。有關用於雙向通訊的設備，請參閱{Se' HablI':n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Refere-se a um dispositivo que recebe (mas não envia) um sinal de áudio. Para o dispositivo usado para comunicação bidirecional, consulte {Se' HablI':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä viittaa laitteeseen, joka vastaanottaa (mutta ei lähetä) äänisignaalia. Katso kaksisuuntaiseen viestintään käytettävä laite kohdasta {Se' HablI':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa laitteeseen, joka vastaanottaa (mutta ei lähetä) äänisignaalia. Lähetin-vastaanotin on {Se' HablI':n}.</column>
       <column name="hidden_notes"></column>
       <column name="components">{wab:n}, {Hev:v}, {-wI':v}</column>
       <column name="examples"></column>
@@ -125,7 +125,7 @@
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">radiovastaanotin, vastaanotin</column>
       <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
@@ -584,7 +584,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="definition_ru">охотиться на</column>
       <column name="definition_zh_HK">打獵</column>
       <column name="definition_pt">caçar</column>
-      <column name="definition_fi">metsästää</column>
+      <column name="definition_fi">metsästää, kalastaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chon:n}, {gheD:n}, {wamwI':n}, {ghab:v}</column>
@@ -595,7 +595,7 @@ Não confunda isso com {mum:v}, que significa "gosto" no sentido de perceber sab
       <column name="notes_ru">Это также используется для рыбалки.[2] [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這也用於捕魚。[2] [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso também é usado para a pesca.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">-</column>
       <column name="hidden_notes">"Hunt the Wumpus" was an early computer game.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -1416,7 +1416,7 @@ Obi-Wan Kenobi is a character in Star Wars.</column>
       <column name="definition_ru">база (военная)</column>
       <column name="definition_zh_HK">基地（軍事）</column>
       <column name="definition_pt">base (termo militar)</column>
-      <column name="definition_fi">sotilastukikohta</column>
+      <column name="definition_fi">tukikohta</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{raQ:n}, {HoS waw':n}, {jem'IH:n}</column>
@@ -3013,7 +3013,7 @@ Obi-Wan Kenobi is a character in Star Wars.</column>
       <column name="definition_fi">viehättävää (käytetään vain ironisesti)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{meQHam:adv}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3022,7 +3022,7 @@ Obi-Wan Kenobi is a character in Star Wars.</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">Third time's a charm.</column>
+      <column name="hidden_notes">Third ({wej:n:num}) time ({poH:n}) is the charm.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3900,18 +3900,18 @@ Vaikka käytetty toteutus voi olla mitä tahansa, ei ole yleistä käyttää tä
       <column name="definition_ru">рота (воинская часть) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">公司（軍事單位） [AUTOTRANSLATED]</column>
       <column name="definition_pt">companhia (unidade militar)</column>
-      <column name="definition_fi">komppania (sotilasyksikkö)</column>
+      <column name="definition_fi">(aluksen) miehistö</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{wey jolpat:n}, {ghotpu' tamey:n}</column>
-      <column name="notes">This is a ship's full complement of personnel, crew plus officers.</column>
-      <column name="notes_de">Dies ist die vollständige Besetzung eines Schiffes mit Personal, Besatzung und Offizieren. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این یک مکمل کامل از پرسنل ، خدمه به علاوه افسران است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är ett fartygs kompletta komplement av personal, besättning plus officerare. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это полный комплект корабельного персонала, экипажа и офицеров. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是船舶人員，船員和高級職員的完整補充。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o complemento completo de pessoal, tripulação e oficiais de um navio. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on aluksen täydellinen henkilökunta, miehistö ja upseerit. [AUTOTRANSLATED]</column>
+      <column name="notes">This is a ship's full complement of personnel, crew ({beq:n}) plus officers ({yaS:n}).[1, p.50]</column>
+      <column name="notes_de">Dies ist die vollständige Besetzung eines Schiffes aus Personal, Besatzung ({beq:n}) und Offizieren ({yaS:n}) .[1, p.50] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این یک مکمل کامل از پرسنل ، خدمه کشتی ({beq:n}) به علاوه افسران ({yaS:n}) است. [1, p.50] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är ett fartygs kompletta antal personal, besättning ({beq:n}) plus befäl ({yaS:n}). [1, p.50] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это полный укомплектованный судном персонал, экипаж ({beq:n}) и офицеры ({yaS:n}).[1, p.50] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是船舶的全部人員，船員（{beq:n}）和高級管理人員（{yaS:n}）。[1, p.50] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o complemento total de pessoal, tripulação ({beq:n}) mais oficiais ({yaS:n}) .[1, p.50] de um navio. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa aluksen henkilökuntaan mukaan lukien merimiehet ({beq:n}) ja upseerit ({yaS:n}).[1, p.50]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -4122,7 +4122,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="definition_sv">massaker [AUTOTRANSLATED]</column>
       <column name="definition_ru">бойня [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">屠殺 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">massacre</column>
+      <column name="definition_pt">massacrar</column>
       <column name="definition_fi">surmata, teurastaa (joukoittain)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4159,7 +4159,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">wIgh</column>
-      <column name="part_of_speech">n:klcp1</column>
+      <column name="part_of_speech">n:klcp1,being</column>
       <column name="definition">genius</column>
       <column name="definition_de">Genie</column>
       <column name="definition_fa">نابغه [AUTOTRANSLATED]</column>
@@ -4545,54 +4545,6 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">wIlyam SeQpIr</column>
-      <column name="part_of_speech">n:name</column>
-      <column name="definition">Wil'yam Shex'pir</column>
-      <column name="definition_de">Wil'yam Shex'pir</column>
-      <column name="definition_fa">ویلیام شکسپیر</column>
-      <column name="definition_sv">William Shakespeare</column>
-      <column name="definition_ru">Вильям Шекспир</column>
-      <column name="definition_zh_HK">威廉·莎士比亞</column>
-      <column name="definition_pt">Wil'yam Shex'pir</column>
-      <column name="definition_fi">Wil'yam Shex'pir</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">
-▶ {Hamlet:n:name}
-▶ {'antonI':n:name}
-▶ {tlhI'yopatra':n:name}
-▶ {HenrI' vagh:n:name}
-▶ {yulyuS qaySar:n:name}</column>
-      <column name="notes">This is the name of a famous Klingon playwright.</column>
-      <column name="notes_de">Dies ist der Name eines berühmten klingonischen Dramatikers. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این نام یک نمایشنامه‌نویس معروف کلیینگون است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är namnet på en berömd Klingon dramatiker. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это имя известного клингонского драматурга. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是著名的克林崗劇作家的名字。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o nome de um famoso dramaturgo Klingon. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on kuuluisan Klingonin näytelmäkirjailijan nimi. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">William Shakespeare</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {Hamlet:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">wItte'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">mathematical equation</column>
@@ -4668,7 +4620,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">break off</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4776,7 +4728,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="definition_ru">тактическое отображение</column>
       <column name="definition_zh_HK">戰術展示 [AUTOTRANSLATED]</column>
       <column name="definition_pt">display tático</column>
-      <column name="definition_fi">taktinen näyttö</column>
+      <column name="definition_fi">taktinen näkymä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{cha':v}, {HaSta:n}, {tlhat:n}</column>
@@ -4787,7 +4739,7 @@ Kun sitä käytetään {-lu':v}: n kanssa, tämä etuliite tarkoittaa "Joku (mä
       <column name="notes_ru">Это относится к абстрактной схеме поля битвы, которая отображается на {jIH:n:2}. Сравните это с {HaSta:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指戰場的抽象示意圖，該示意圖顯示在{jIH:n:2}上。將此與{HaSta:n}進行對比。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere a um esquema abstrato de um campo de batalha, exibido em um {jIH:n:2}. Compare isso com {HaSta:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä viittaa taistelukentän abstraktiin kaavioon, joka näytetään {jIH:n:2}-tiedostossa. Kontrasti tämä {HaSta:n}: lla. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Aluksen näytöllä ({jIH:n:2}) voi näkyä valokuvaa aluksen ulkopuolelta ({HaSta:n}) tai taktinen kaavio taistelukentästä ({wIy:n:nolink}).</column>
       <column name="hidden_notes">The first ever line of Klingon spoken on-screen was {wIy cha':sen@@wIy:n, cha':v}, in {Star Trek I:src}.</column>
       <column name="components"></column>
       <column name="examples">
@@ -5152,7 +5104,7 @@ Tämän komennon leikattu klingonimuoto olisi {wIy cha'!:sen@@wIy:n, cha':v} [AU
       <column name="notes_fa">{bIwogh:sen:nolink} احتمالاً بهتر است اصطلاحی به صورت "شما خیلی زیاد می روید" ترجمه شده است. [AUTOTRANSLATED]</column>
       <column name="notes_sv">{bIwogh:sen:nolink} översätts antagligen bäst idiomatiskt som "Du går för långt." [AUTOTRANSLATED]</column>
       <column name="notes_ru">{bIwogh:sen:nolink}, вероятно, лучше всего идиоматически перевести как «Вы зашли слишком далеко». [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">{bIwogh:sen:nolink}最好用慣用語翻譯為“您走得太遠”。 [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">{bIwogh:sen:nolink}最好用慣用語翻譯為「您走得太遠」。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">{bIwogh:sen:nolink} provavelmente é melhor traduzido idiomicamente como "Você foi longe demais". [AUTOTRANSLATED]</column>
       <column name="notes_fi">{bIwogh:sen:nolink} on todennäköisesti paras kääntää idiomaattisesti sanalla "Sinä menet liian pitkälle". [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
@@ -5711,7 +5663,7 @@ Tämän komennon leikattu klingonimuoto olisi {wIy cha'!:sen@@wIy:n, cha':v} [AU
       <column name="definition_sv">haka</column>
       <column name="definition_ru">подбородок</column>
       <column name="definition_zh_HK">下巴 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">cadeia, sequência</column>
+      <column name="definition_pt">queixo</column>
       <column name="definition_fi">leuka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5848,7 +5800,7 @@ Päätetyyppi 5: passiivi/kykeneminen
 ▶ {-lu':v:suff}
 ▶ {-laH:v:suff}
 
-Päätetyyppi 6: täsmennyspäätteet
+Päätetyyppi 6: suhtautuminen
 ▶ {-chu':v:suff}
 ▶ {-bej:v:suff}
 ▶ {-law':v:suff}
@@ -5860,7 +5812,7 @@ Päätetyyppi 7: aspekti
 ▶ {-taH:v:suff}
 ▶ {-lI':v:suff}
 
-Päätetyyppi 8: kunniapääte
+Päätetyyppi 8: kunnioituspääte
 ▶ {-neS:v:suff}
 
 Päätetyyppi 9: kieliopilliset päätteet
@@ -5876,7 +5828,7 @@ Päätetyyppi 9: kieliopilliset päätteet
 ▶ {-jaj:v:suff}
 ▶ {-ghach:v:suff}
 
-Seikkalijat:
+Seikkailijat:
 ▶ {-be':v:suff}
 ▶ {-Qo':v:suff}
 ▶ {-Ha':v:suff}
@@ -6814,4 +6766,133 @@ Jos ihmisen silmät ovat "herkkiä valolle", ne voivat olla herkkiä {wovtaHghac
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">wuvchuq</column>
+          <column name="part_of_speech">v:i_c,deriv</column>
+          <column name="definition">be entangled (quantum physics)</column>
+          <column name="definition_de">verschränkt sein (Quantenphysik)</column>
+          <column name="definition_fa">گرفتار شدن (فیزیک کوانتوم) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">bli intrasslad (kvantfysik) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">быть запутанным (квантовая физика) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">被糾纏（量子物理學） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">ser entrelaçado (física quântica)</column>
+          <column name="definition_fi">olla lomittunut (kvanttimekaniikka)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{mergh:v}</column>
+          <column name="notes">This is used in quantum physics, but is maybe more general. The subject of the verb could be, for example, {pay'an:n}.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{wuv:v}, {-chuq:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 28 (2021):src}</column>
+        </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wu'</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be mystical, be esoteric, be occult</column>
+      <column name="definition_de">mystisch sein, esoterisch sein, okkult sein</column>
+      <column name="definition_fa">عرفانی ، باطنی ، غیبی باشید [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara mystisk, vara esoterisk, vara ockult [AUTOTRANSLATED]</column>
+      <column name="definition_ru">быть мистическим, быть эзотерическим, быть оккультным [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">神秘，深奧，神秘 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser místico, ser esotérico, ser oculto</column>
+      <column name="definition_fi">olla mystinen, esoteerinen, okkulttinen, salatieteellinen</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wu'tIbIS:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">"Woo".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wu'tIbIS</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">superstition</column>
+      <column name="definition_de">Aberglaube</column>
+      <column name="definition_fa">خرافات [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vidskepelse [AUTOTRANSLATED]</column>
+      <column name="definition_ru">суеверие [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">迷信 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">superstição</column>
+      <column name="definition_fi">taikausko</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wu':v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">{wu':v} plus TBS, a television channel which used to be known as the "Superstation".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>

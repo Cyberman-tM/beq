@@ -47,7 +47,17 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">Vitsi menee näin:
+
+▶ {Doq'a' SuvwI'pu'?:sen:nolink}
+  "Ovatko soturit punaisia?"
+
+▶ {ghobe'. SuD.:sen:nolink}
+  "Ei. He ovat vihreitä."
+
+({SuD:v:0} tarkoittaa sekä "olla vihreä" että "ottaa riski".)
+
+Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</column>
       <column name="hidden_notes">The verb {SuD:v:0} means both "be green" and "take a risk". Also, Starfleet "redshirts" are infamous for dying.</column>
       <column name="components">{Doq:v}, {-'a':v}, {SuvwI':n}, {-pu':n}</column>
       <column name="examples"></column>
@@ -79,7 +89,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Когда я могу вернуться в свою комнату?</column>
       <column name="definition_zh_HK">我什麼時候可以回到房間？ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Quando posso voltar para o meu quarto?</column>
-      <column name="definition_fi">Milloin voin palata huoneeseeni? [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Milloin voin palata huoneeseeni?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -134,7 +144,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Since {tera'nganpu':n@@tera'ngan:n, -pu':n} is plural, and {'e':n:pro} is singular, there should be a prefix {lu-:v} on {tIv:v}.</column>
       <column name="components">{Ha'DIbaH:n:1}, {-mey:n}, {meQ:v:1}, {Sop:v}, {'e':n}, {tIv:v}, {tera'ngan:n}, {-pu':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -165,7 +175,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Вы здесь кого-нибудь знаете? [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">你認識這裡的人嗎？ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Você conhece alguém aqui?</column>
-      <column name="definition_fi">Tunnetko ketään täällä? [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Tiedätkö ketään täällä?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naDev vay' vISovbe'.:sen}</column>
@@ -208,7 +218,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Я никого здесь не знаю. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">我在這裡不認識任何人。 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Eu não conheço ninguém aqui.</column>
-      <column name="definition_fi">En tunne ketään täällä. [AUTOTRANSLATED]</column>
+      <column name="definition_fi">En tiedä ketään täällä.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naDev vay' DaSov'a'?:sen}</column>
@@ -251,7 +261,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Я плохо вижу отсюда. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">我從這裡看不見。 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Não consigo ver bem daqui.</column>
-      <column name="definition_fi">En näe täältä. [AUTOTRANSLATED]</column>
+      <column name="definition_fi">En näe tästä hyvin.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -448,7 +458,22 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">
+Vitsi menee näin:
+
+▶ {Qo'noSDaq paw cha' DIvI' beq.:sen:nolink}
+  "Kaksi Liiton matruusia saapuu Kronosiin."
+
+▶ {tlhIngan 'avwI' lughom.:sen@@tlhIngan:n, 'avwI':n, lu-:v, ghom:v}
+  "He tapaavat klingonivartijan."
+
+▶ {lutlhob; naDevvo' vaS'a'Daq majaHlaH'a'?:sen@@lu-:v, tlhob:v, naDev:n, -vo':n, vaS'a':n, -Daq:n, ma-:v, jaH:v, -laH:v, -'a':v}
+  "He pyytävät häneltä: 'Voimmeko mennä täältä Suureen Saliin?'"
+
+▶ {jang 'avwI'; lIchopbe'chugh ghewmey.:sen@@jang:v, 'avwI':n, lI-:v, chop:v, -be':v, -chugh:v, ghew:n, -mey:n}
+  "Vartija vastaa: 'Jos hyönteiset eivät pure teitä.'"
+
+Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</column>
       <column name="hidden_notes"></column>
       <column name="components">{Qo'noS:n}, {-Daq:n}, {paw:v}, {cha':n}, {DIvI':n}, {beq:n}</column>
       <column name="examples"></column>
@@ -480,7 +505,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Садись и стой там! [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">進站在那裡！ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Entre e fique aí!</column>
-      <column name="definition_fi">Mene sisään ja seiso siellä! [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Mene sisään ja seiso siellä!</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -523,7 +548,7 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="definition_ru">Заключенный говорит охраннику ... [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">一名囚犯對警衛說……</column>
       <column name="definition_pt">Um prisioneiro diz ao guarda ...</column>
-      <column name="definition_fi">Vanki sanoo vartijalle ...</column>
+      <column name="definition_fi">Vanki sanoo vartijalle...</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -552,7 +577,25 @@ Watch a lesson on this joke: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</co
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">Vitsi menee näin:
+
+▶ {'avwI'vaD jatlh qama'; jIghung.:sen@@'avwI':n, -vaD:n, jatlh:v, qama':n, jI-:v, ghung:v}
+  "Vanki sanoo vartijalle: 'Olen nälkäinen.'"
+
+▶ {jang 'avwI'; jIghung je.:sen@@jang:v, 'avwI':n, jI-:v, ghung:v, je:adv}
+  "Vartija vastaa: 'Olen myös nälkäinen.'"
+
+▶ {jatlh qama'; jI'oj.:sen@@jatlh:v, qama':n, jI-:v, 'oj:v}
+  "Vanki sanoo: 'Olen janoinen.'"
+
+▶ {jang 'avwI'; jI'oj je.:sen@@jang:v, 'avwI':n, jI-:v, 'oj:v, je:adv}
+  "Vartija vastaa: 'Olen myös janoinen.'"
+
+▶ {jatlh qama'; jIDoy'qu'.:sen@@jatlh:v, qama':n, jI-:v, Doy':v, -qu':v}
+  "Vanki sanoo: 'Olen hyvin väsynyt.'"
+
+▶ {jatlh 'avwI'; jIDoy'be'.:sen@@jatlh:v, 'avwI':n, jI-:v, Doy':v, -be':v}
+  "Vartija sanoo: 'Minä en ole väsynyt.'"</column>
       <column name="hidden_notes"></column>
       <column name="components">{'avwI':n}, {-vaD:n}, {jatlh:v}, {qama':n}</column>
       <column name="examples"></column>
@@ -5033,6 +5076,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">choSan</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Korea</column>
+      <column name="definition_de">Korea</column>
+      <column name="definition_fa">کشور کره [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Korea [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Корея [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">朝鮮、韓國</column>
+      <column name="definition_pt">Coréia</column>
+      <column name="definition_fi">Korea</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">Both this term and {Hanghuq:n:place} are used. Klingons are very confused by this.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">"Chosŏn" is the name used for (unified) Korea in North Korea and by ethnic Koreans living in China and Japan.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Da'lar</column>
       <column name="part_of_speech">n</column>
       <column name="definition">dollar</column>
@@ -5128,7 +5214,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Дрезден [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">德累斯頓 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Dresden</column>
-      <column name="definition_fi">Dresden [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Dresden</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -5472,7 +5558,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Руан [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">魯昂 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Rouen</column>
-      <column name="definition_fi">Rouen [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Rouen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -5589,6 +5675,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Hanghuq</column>
+      <column name="part_of_speech">n:place,alt</column>
+      <column name="definition">{choSan:n}</column>
+      <column name="definition_de">{choSan:n}</column>
+      <column name="definition_fa">{choSan:n}</column>
+      <column name="definition_sv">{choSan:n}</column>
+      <column name="definition_ru">{choSan:n}</column>
+      <column name="definition_zh_HK">{choSan:n}</column>
+      <column name="definition_pt">{choSan:n}</column>
+      <column name="definition_fi">{choSan:n}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">"Hanguk" is the name used for (unified) Korea in South Korea.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5902,7 +6031,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Гавр [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">勒阿弗爾 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Le Havre</column>
-      <column name="definition_fi">Le Havre [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Le Havre</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -6277,6 +6406,92 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2018.02.06:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">mangtay</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Thailand</column>
+      <column name="definition_de">Thailand</column>
+      <column name="definition_fa">تایلند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Thailand [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Таиланд [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">泰國 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Tailândia</column>
+      <column name="definition_fi">Thaimaa</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maqIy</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">Maquis (Resistance)</column>
+      <column name="definition_de">Maquis (Widerstand)</column>
+      <column name="definition_fa">Maquis (Resistance) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Maquis (Motståndsrörelse)</column>
+      <column name="definition_ru">Маки</column>
+      <column name="definition_zh_HK">Maquis (Resistance) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Maquis (resistência)</column>
+      <column name="definition_fi">Maquis-vastarintaliike</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword from Federation Standard, and refers to a resistance movement operating in the Demilitarized Zone between Federation and Cardassian space.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6893,7 +7108,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Нормандия [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">諾曼底 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Normandia</column>
-      <column name="definition_fi">Normandia [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Normandia</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Sen:n}, {ghuwan:n}, {la'avghe:n}</column>
@@ -7311,6 +7526,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">pIlIpIynaS</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">the Philippines</column>
+      <column name="definition_de">Die Philippinen</column>
+      <column name="definition_fa">فیلیپین</column>
+      <column name="definition_sv">Filippinerna</column>
+      <column name="definition_ru">Филиппины</column>
+      <column name="definition_zh_HK">菲律賓</column>
+      <column name="definition_pt">Filipinas</column>
+      <column name="definition_fi">Filippiinit</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8232,7 +8490,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Рейн [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">萊茵河 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Rhine</column>
-      <column name="definition_fi">Rein [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Rein</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -8263,6 +8521,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Qugh 5, Feb. 2021:src} ({KLI mailing list 2021.02.04:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">romanI'ya'</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Romania</column>
+      <column name="definition_de">Rumänien</column>
+      <column name="definition_fa">رومانی</column>
+      <column name="definition_sv">Rumänien</column>
+      <column name="definition_ru">Румыния</column>
+      <column name="definition_zh_HK">羅馬尼亞</column>
+      <column name="definition_pt">Romênia</column>
+      <column name="definition_fi">Romania</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8392,6 +8693,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Sam</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">shawm</column>
+      <column name="definition_de">Schalmei</column>
+      <column name="definition_fa">شال [AUTOTRANSLATED]</column>
+      <column name="definition_sv">skalmeja [AUTOTRANSLATED]</column>
+      <column name="definition_ru">средневековый музыкальный инструмент типа гобоя [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">嗩吶</column>
+      <column name="definition_pt">shawm</column>
+      <column name="definition_fi">skalmeija (keskiaikainen puhellinsoitin)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword from Federation Standard, and refers to a type of wind instrument.</column>
+      <column name="notes_de">Dies ist ein Lehnwort von Federation Standard und bezieht sich auf eine Art Blasinstrument. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این یک وام از فدراسیون استاندارد است و به نوعی از سازهای بادی اشاره دارد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är ett lånord från Federation Standard och avser en typ av vindinstrument. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это заимствованное слово из стандарта Федерации и относится к типу духовых инструментов. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是聯邦標準（Federation Standard）的藉詞，是一種管樂器。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Esta é uma palavra de empréstimo da Federation Standard e refere-se a um tipo de instrumento de sopro. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on Federation Standardin laina ja viittaa puhallinsoittotyyppiin. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8534,7 +8878,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Сена [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">罾 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Sena</column>
-      <column name="definition_fi">Seine [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Seine</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghuwan:n}, {la'avghe:n}</column>
@@ -9392,6 +9736,49 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">vIyetnam</column>
+      <column name="part_of_speech">n:place</column>
+      <column name="definition">Vietnam</column>
+      <column name="definition_de">Vietnam</column>
+      <column name="definition_fa">ویتنام</column>
+      <column name="definition_sv">Vietnam</column>
+      <column name="definition_ru">Вьетнам</column>
+      <column name="definition_zh_HK">越南</column>
+      <column name="definition_pt">Vietnã</column>
+      <column name="definition_fi">Vietnam</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -10844,7 +11231,7 @@ För att beskriva ett "kursivt" teckensnitt kan {chongHa':v@@chong:v:1, -Ha':v} 
 Для описания «курсивного» шрифта можно использовать {chongHa':v@@chong:v:1, -Ha':v}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">它的首都是{roma':n}。
 
-為了描述“斜體”字體，可以使用{chongHa':v@@chong:v:1, -Ha':v}。 [AUTOTRANSLATED]</column>
+為了描述「斜體」字體，可以使用{chongHa':v@@chong:v:1, -Ha':v}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Sua capital é {roma':n}.
 
 Para descrever uma fonte "itálica", {chongHa':v@@chong:v:1, -Ha':v} pode ser usado. [AUTOTRANSLATED]</column>
@@ -11001,6 +11388,831 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="source">[1] {Sepqep wa'DIch:src} ({KLI mailing list 2019.11.10:src})</column>
     </table>
 
+    <!-- Section: Hamlet -->
+    <!-- These were borrowed/stolen from Klingon into Federation Standard. -->
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">bernarDo</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Bernardo</column>
+      <column name="definition_de">Bernardo</column>
+      <column name="definition_fa">برناردو</column>
+      <column name="definition_sv">Bernardo</column>
+      <column name="definition_ru">Бернардо</column>
+      <column name="definition_zh_HK">「貝納多」</column>
+      <column name="definition_pt">Bernardo</column>
+      <column name="definition_fi">Bernardo</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghertlhuD</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Gertrude</column>
+      <column name="definition_de">Gertrud</column>
+      <column name="definition_fa">گرترود</column>
+      <column name="definition_sv">Gertrude [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Гертруда [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">格特魯德 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Gertrude</column>
+      <column name="definition_fi">Gertrude</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghIlDeSten</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Guildenstern</column>
+      <column name="definition_de">Gildenstern</column>
+      <column name="definition_fa">گیلداستنر [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Guildenstern [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Гильденстерн [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">吉爾登斯 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Guildenstern</column>
+      <column name="definition_fi">Guildenstern</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}, {roSenQatlh:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghorqon</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Gorkon (legendary)</column>
+      <column name="definition_de">Gorkon (legendärer Vorfahre)</column>
+      <column name="definition_fa">گورکون (افسانه ای) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Gorkon (legendarisk förfader)</column>
+      <column name="definition_ru">Горкон (легендарный)</column>
+      <column name="definition_zh_HK">「戈爾康」（傳說中的祖先）</column>
+      <column name="definition_pt">Gorkon (lendário)</column>
+      <column name="definition_fi">Gorkon (legendaarinen esi-isä)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">The reference in {Hamlet:src} is not to the Chancellor ({ghorqan:n:name}) who sought peace with the Federation, but to one of his legendary ancestors.[2]</column>
+      <column name="notes_de">Der Verweis in {Hamlet:src} bezieht sich nicht auf den Kanzler ({ghorqan:n:name}), der Frieden mit der Föderation suchte, sondern auf einen seiner legendären Vorfahren.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">مرجع در {Hamlet:src} مربوط به صدراعظم ({ghorqan:n:name}) نیست که به دنبال صلح با فدراسیون بود ، بلکه به یکی از اجداد افسانه ای وی است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Hänvisningen i {Hamlet:src} är inte till kanslern ({ghorqan:n:name}) som sökte fred med federationen, utan till en av hans legendariska förfäder.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">В {Hamlet:src} упоминается не ({ghorqan:n:name}), кто стремился заключить мир с Федерацией, а один из его предков</column>
+      <column name="notes_zh_HK">{Hamlet:src}中的提法不是要尋求與聯邦和平的總理（{ghorqan:n:name}），而是他的一位傳奇祖先。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">A referência em {Hamlet:src} não é para o Chanceler ({ghorqan:n:name}) que buscou a paz com a Federação, mas para um de seus ancestrais lendários.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">{Hamlet:src}-viite ei koske liittokanslerille ({ghorqan:n:name}), joka etsi rauhaa federaation kanssa, vaan yhteen hänen legendaarisista esi-isistään.[2] [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}, [2] {KLI mailing list 2018.07.01:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Hamlet</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Hamlet</column>
+      <column name="definition_de">Hamlet</column>
+      <column name="definition_fa">هملت</column>
+      <column name="definition_sv">Liten by [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Гамлет</column>
+      <column name="definition_zh_HK">哈姆雷特</column>
+      <column name="definition_pt">Aldeia</column>
+      <column name="definition_fi">Hamlet</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{taH pagh taHbe'.:sen}</column>
+      <column name="notes">This is the name of a famous play by {wIlyam SeQpIr:n:name}, and also the name of its eponymous protagonist.</column>
+      <column name="notes_de">Dies ist der Name eines bekannten Stücks von {wIlyam SeQpIr:n:name}, als auch dessen Hauptfigur.</column>
+      <column name="notes_fa">این نام یک نمایشنامه معروف توسط {wIlyam SeQpIr:n:name} است ، و همچنین نام شخصیت پیش نویس آن است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är namnet på ett berömt stycke av {wIlyam SeQpIr:n:name}, och även namnet på dess namngivna huvudperson. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Название известной пьесы, автором которой является {wIlyam SeQpIr:n:name}, а также имя одноименного протагониста.</column>
+      <column name="notes_zh_HK">這是{wIlyam SeQpIr:n:name}著名戲劇的名稱，也是其同名主角的名字。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o nome de uma peça famosa de {wIlyam SeQpIr:n:name}, e também o nome de seu protagonista homônimo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on {wIlyam SeQpIr:n:name}: n kuuluisan näytelmän nimi ja samannimisen päähenkilön nimi. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Horey'So</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Horatio</column>
+      <column name="definition_de">Horatio</column>
+      <column name="definition_fa">هوراشیو</column>
+      <column name="definition_sv">Horatio [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Горацио [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">霍雷肖</column>
+      <column name="definition_pt">Horatio</column>
+      <column name="definition_fi">Horatio</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">layerteS</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Laertes</column>
+      <column name="definition_de">Laertes</column>
+      <column name="definition_fa">لائرتس [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Laertes [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Лаэрт [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">萊爾提斯 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Laertes</column>
+      <column name="definition_fi">Laertes</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">marSe'luS</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Marcellus</column>
+      <column name="definition_de">Marcellus</column>
+      <column name="definition_fa">مارسلوس [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Marcellus [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Марцелл</column>
+      <column name="definition_zh_HK">馬塞勒斯 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Marcellus</column>
+      <column name="definition_fi">Marcellus</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">polonyuS</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Polonius</column>
+      <column name="definition_de">Polonius</column>
+      <column name="definition_fa">پولونیوس</column>
+      <column name="definition_sv">Polonius [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Полоний (персонаж Гамлета)</column>
+      <column name="definition_zh_HK">波洛涅斯</column>
+      <column name="definition_pt">Polonius</column>
+      <column name="definition_fi">Polonius</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">qaySar</column>
+      <column name="part_of_speech">n:name,fic,alt,noanki</column>
+      <column name="definition">{yulyuS qaySar:n:name}</column>
+      <column name="definition_de">{yulyuS qaySar:n:name}</column>
+      <column name="definition_fa">{yulyuS qaySar:n:name}</column>
+      <column name="definition_sv">{yulyuS qaySar:n:name}</column>
+      <column name="definition_ru">{yulyuS qaySar:n:name}</column>
+      <column name="definition_zh_HK">{yulyuS qaySar:n:name}</column>
+      <column name="definition_pt">{yulyuS qaySar:n:name}</column>
+      <column name="definition_fi">{yulyuS qaySar:n:name}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">qornelyuS</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Cornelius</column>
+      <column name="definition_de">Cornelius</column>
+      <column name="definition_fa">کورنلیوس [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Cornelius [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Корнелий</column>
+      <column name="definition_zh_HK">科尼利厄斯 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Cornelius</column>
+      <column name="definition_fi">Cornelius</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">reynalDo</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Reynaldo</column>
+      <column name="definition_de">Reynaldo</column>
+      <column name="definition_fa">رینالدو [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Reynaldo [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Рейнальдо [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">雷納爾多 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Reynaldo</column>
+      <column name="definition_fi">Reynaldo</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">roSenQatlh</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Rosencrantz</column>
+      <column name="definition_de">Rosencrantz</column>
+      <column name="definition_fa">روزنکرانتز [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Rosencrantz [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Розенкранц</column>
+      <column name="definition_zh_HK">羅森克蘭茨 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Rosencrantz</column>
+      <column name="definition_fi">Rosencrantz</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}, {ghIlDeSten:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SeQpIr</column>
+      <column name="part_of_speech">n:name,alt,noanki</column>
+      <column name="definition">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_de">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_fa">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_sv">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_ru">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_zh_HK">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_pt">{wIlyam SeQpIr:n:name}</column>
+      <column name="definition_fi">{wIlyam SeQpIr:n:name}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">His original Klingon name was never spoken in {Star Trek VI:src}, where he was only referred to as "Shakespeare".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Star Trek VI:src}, [2] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">veranchISqo</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Francisco</column>
+      <column name="definition_de">Francisco</column>
+      <column name="definition_fa">فرانسیسکو [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Francisco [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Франциско [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">弗朗西斯科 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Francisco</column>
+      <column name="definition_fi">Francisco</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">voltImaD</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Voltimand</column>
+      <column name="definition_de">Voltimand</column>
+      <column name="definition_fa">ولیمانداند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Voltimand [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Вольтиманд [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">Voltimand [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Voltimand</column>
+      <column name="definition_fi">Voltimand</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">vortIbraS</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Fortinbras</column>
+      <column name="definition_de">Fortinbras</column>
+      <column name="definition_fa">فورتینبراس [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Fortinbras [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Фортинбрас [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">福丁布拉 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Fortinbras</column>
+      <column name="definition_fi">Fortinbras</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hamlet:n:name}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wIlyam SeQpIr</column>
+      <column name="part_of_speech">n:name</column>
+      <column name="definition">Wil'yam Shex'pir</column>
+      <column name="definition_de">Wil'yam Shex'pir</column>
+      <column name="definition_fa">ویلیام شکسپیر</column>
+      <column name="definition_sv">William Shakespeare</column>
+      <column name="definition_ru">Вильям Шекспир</column>
+      <column name="definition_zh_HK">威廉·莎士比亞</column>
+      <column name="definition_pt">Wil'yam Shex'pir</column>
+      <column name="definition_fi">Wil'yam Shex'pir</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">
+▶ {Hamlet:n:name}
+▶ {'antonI':n:name}
+▶ {tlhI'yopatra':n:name}
+▶ {HenrI' vagh:n:name}
+▶ {yulyuS qaySar:n:name}</column>
+      <column name="notes">This is the name of a famous Klingon playwright.</column>
+      <column name="notes_de">Dies ist der Name eines berühmten klingonischen Dramatikers. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این نام یک نمایشنامه‌نویس معروف کلیینگون است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är namnet på en berömd Klingon dramatiker. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это имя известного клингонского драматурга. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是著名的克林崗劇作家的名字。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o nome de um famoso dramaturgo Klingon. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on kuuluisan Klingonin näytelmäkirjailijan nimi. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">William Shakespeare</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">yulyuS qaySar</column>
+      <column name="part_of_speech">n:name,fic</column>
+      <column name="definition">Julius Caesar</column>
+      <column name="definition_de">Iulius Caesar</column>
+      <column name="definition_fa">ژولیوس سزار</column>
+      <column name="definition_sv">Julius Caesar [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Юлий Цезарь [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">尤利烏斯·凱撒</column>
+      <column name="definition_pt">Julius Caesar</column>
+      <column name="definition_fi">Julius Caesar</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{maS'e' So'bogh pagh:n}</column>
+      <column name="notes">This is the name of a play by {wIlyam SeQpIr:n:name}, and also the name of its titular character.</column>
+      <column name="notes_de">Dies ist der Name eines Stücks von {wIlyam SeQpIr:n:name} und auch der Name seines Titelcharakters. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این نام یک نمایشنامه توسط {wIlyam SeQpIr:n:name} و همچنین نام شخصیت تیتراژ آن است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är namnet på en pjäs av {wIlyam SeQpIr:n:name}, och även namnet på dess titelfigur. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это название пьесы {wIlyam SeQpIr:n:name}, а также название ее титульного персонажа. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{wIlyam SeQpIr:n:name}的戲劇的名稱，也是其名義人物的名稱。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o nome de uma peça de {wIlyam SeQpIr:n:name}, e também o nome de seu personagem titular. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on {wIlyam SeQpIr:n:name}: n näytelmän nimi ja myös sen nimimerkki. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Hamlet:src}</column>
+    </table>
+
     <!-- Section: Other -->
     <!-- These are generally not from Marc Okrand, but TV scriptwriters and other Star Trek authors. -->
     <table name="mem">
@@ -11155,6 +12367,8 @@ To begin searching, simply press the "Search" (magnifying glass) button and type
 
 To hear the sounds of Klingon, you need to install a {Text-To-Speech engine:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}.
 
+To chat with other Klingon speakers, join the {KLI Discord server:url:https://www.kli.org/activities/discord/}.
+
 It is recommended to install the {Klingon Keyboard for ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Otherwise, to make it easier to type Klingon on a mobile keyboard, the following shorthand (called "xifan hol") can be enabled under the Preferences menu:
     c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
     i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
@@ -11184,6 +12398,8 @@ Special thanks to Marc Okrand ({marq 'oqranD:n:name}) for creating the Klingon l
 Um eine Suche zu starten, Klicke auf das Suchsymbol (die Lupe) und gib etwas in das Suchfeld ein.
 
 Um die klingonischen Wörter zu hören, muss die {Vorlesesoftware:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine} installiert werden.
+
+Um dich mit anderen Klingonisch-Sprechern auszutauschen, besuche den {KLI Discord-Server:url:https://www.kli.org/activities/discord/}.
 
 Es wird empfohlen, die {klingonische Tastatur für ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan} zu installieren. Um auf einer kleinen Tastatur einfacher Klingonisch einzugeben, kann in den Einstellungen die folgende vereinfachte Eingabemethode ("xifan hol" genannt) aktiviert werden:
     c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
@@ -11217,6 +12433,8 @@ Ein besonderer Dank richtet sich an Marc Okrand ({marq 'oqranD:n:name}) für das
 
 Чтобы услышать звуки на Клингонском языке, вам необходимо установить {Text-To-Speech engine:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}
 
+Для общения с другими изучающими клингонский присоединяйтесь к {KLI Discord server:url:https://www.kli.org/activities/discord/} серверу.
+
 Рекомендуется установить {Klingon Keyboard for ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Тем не менее, чтобы облегчить процесс печати текста на клингонском на мобильной клавиатуре, стеганография (под названием "xifan hol")  может быть активирована в меню Preferences:
     c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
     i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
@@ -11243,12 +12461,45 @@ DSC {pIqaD:n:nolink} font: {Quvar:n:name,nolink} (Ливен Л. Литар)
 
 Особая благодарность Марку Окранду ({marq 'oqranD:n:name}) за создание Клингонского языка.</column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
+      <column name="notes_pt">{tlhIngan Hol boQwI':n:nolink} "Assistente Klingon" - versão do banco de dados [[VERSION]].
+
+Para começar a pesquisar, basta pressionar o botão "Pesquisar" (lupa) e digitar na caixa de pesquisa.
+
+Para ouvir os sons do Klingon, você precisa instalar um {leitor de texto:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}.
+
+Para conversar com outrass pessoas que falam Klingon, junte-se ao {servidor do KLI no Discord:url:https://www.kli.org/activities/discord/}.
+
+Recomenda-se instalar o {Klingon Keyboard for ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}. Caso contrário, para tornar mais fácil digitar Klingon em um teclado móvel, a seguinte forma abreviada (chamada "xifan hol") pode ser ativada no menu Preferências:
+    c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
+    i ▶ {I:sen:nolink} / k ▶ {Q:sen:nolink} / s ▶ {S:sen:nolink} / x ▶ {tlh:sen:nolink} / z ▶ {':sen:nolink}
+Também é possível escolher o mapeamento de teclado alternativo:
+    k ▶ {q:sen:nolink} / q ▶ {Q:sen:nolink}
+
+Se você encontrar algum problema ou tiver alguma sugestão, envie-me um {email para De.vID.jonpIn@gmail.com:url:mailto:De.vID.jonpIn@gmail.com?subject=boQwI%27%20feedback&amp;body=Device:%20%0D%0AAndroid%20version:%20%0D%0A}.
+
+Por favor, apóie o idioma Klingon comprando {The Klingon Dictionary:src}, {Klingon for the Galactic Traveler:src}, {The Klingon Way:src}, {Conversational Klingon:src}, {Power Klingon:src}, e outros produtos Klingon e Star Trek de Pocket Books, Simon &amp; Schuster, e Paramount/Viacom/CBS Entertainment.
+
+Klingon, Star Trek e marcas relacionadas são marcas comerciais da CBS Studios, Inc. e são usadas de acordo com as diretrizes de "uso justo".
+
+Programação Android : {De'vID:n:name}
+Porte Flutter para (iOS) : Daniel Dadap
+Dados Klingon-English : {De'vID:n:name,nolink}, com ajuda de outros
+Tradução Alemã : {Quvar:n:name} (Lieven L. Litaer)
+Tradução Sueca : {Klingonska Akademien:url:http://klingonska.org/}
+Tradução Russa : Кирилл Шилов, Дэниел Дэдеп and Sirglin (Ольга Косарева)
+Tradução Portuguesa : Thiago Matos
+Tradução Finlandesa : Iikka Hauhio
+TNG {pIqaD:n} fonte: Almirante {qurgh lungqIj:n:name,nolink} do {Klingon Assault Group:url:http://www.kag.org/}
+DSC {pIqaD:n:nolink} fonte: {Quvar:n:name,nolink} (Lieven L. Litaer)
+
+Agradecimentos especiais para Marc Okrand ({marq 'oqranD:n:name}) por criar a Língua Klingon.</column>
       <column name="notes_fi">{tlhIngan Hol boQwI':n:nolink} "Klingonin kieliavustaja" - tietokantaversio [[VERSION]].
 
 Sanoja voi hakea painamalla "Hae"-nappia (suurennuslasia) ja kirjoittamalla hakusanan tekstikenttään.
 
 Sanojen ääntämyksen voi kuunnella erikseen ladattavalla {puhesyntetisaattorilla:url:https://play.google.com/store/apps/details?id=org.tlhInganHol.android.klingonttsengine}.
+
+Jos haluat keskustella muiden klingoninpuhujien kanssa, tule KLI:n {Discord-palvelimelle:url:https://www.kli.org/activities/discord/}.
 
 On suositeltavaa ladata {klingoninkielinen asettelu ASK:url:https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.tlhIngan}-näppäimistölle. Toinen vaihtoehto on ottaa käyttöön alla olevat korvaukset (ns. "xifan hol") asetusvalikossa:
     c ▶ {ch:sen:nolink} / d ▶ {D:sen:nolink} / f ▶ {ng:sen:nolink} / g ▶ {gh:sen:nolink} / h ▶ {H:sen:nolink} /
@@ -11551,7 +12802,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">{DSC - The War Without, The War Within:src}</column>
+      <column name="source">[1] {DSC - The War Without, The War Within:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -11869,15 +13120,15 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIntaq:n:1}</column>
-      <column name="notes">In {TNG - Firstborn:src}, K'mtar is the gin'tak to the House of Mogh.[1] In the glossary to {A Burning House:src}, it is claimed that this word and {ghIntaq:n:1} are in fact the same word.[2]</column>
-      <column name="notes_de">In {TNG - Firstborn:src} ist K'mtar der Gin'tak des Hauses Mogh.[1] Im Glossar zu {A Burning House:src} wird behauptet, dass dieses Wort und {ghIntaq:n:1} tatsächlich dasselbe Wort sind.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">در {TNG - Firstborn:src} ، K'mtar gin'tak به خانه Mogh.[1] در واژه نامه {A Burning House:src} ، ادعا می شود که این کلمه و {ghIntaq:n:1} در واقع همان کلمه هستند.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">I {TNG - Firstborn:src} är K'mtar gin'tak till House of Mogh.[1] I ordlistan till {A Burning House:src} hävdas att detta ord och {ghIntaq:n:1} i själva verket är samma ord.[2] [AUTOTRANSLATED]</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt">No {TNG - Firstborn:src}, K'mtar é o gin'tak da Casa de Mogh.[1] No glossário do {A Burning House:src}, alega-se que esta palavra e {ghIntaq:n:1} são de fato a mesma palavra.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">In {TNG - Firstborn:src}, K'mtar is the gin'tak to the House of Mogh.[1] In the glossary to {A Burning House:src}, it is claimed that this word and {ghIntaq:n:1} are in fact the same word.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -12557,14 +13808,14 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is a hypothetical component that is found in {loDnal:n}, {be'nal:n}, {nalqaD:n}, as well as {'e'nal:n}. According to {KCD:src}, {nal:n:hyp,nolink} is not used as a word on its own.</column>
-      <column name="notes_de">Dies ist eine hypothetische Komponente, die in {loDnal:n}, {be'nal:n}, {nalqaD:n} sowie {'e'nal:n} enthalten ist. Laut {KCD:src} wird {nal:n:hyp,nolink} nicht als eigenständiges Wort verwendet. [AUTOTRANSLATED]</column>
+      <column name="notes">This is a hypothetical component that is found in {loDnal:n}, {be'nal:n}, {'e'nal:n} (and the words for various relatives by marriage), {nalqaD:n}, as well as {lIwnal:n}. According to {KCD:src}, {nal:n:hyp,nolink} is not used as a word on its own.</column>
+      <column name="notes_de"></column>
       <column name="notes_fa"></column>
-      <column name="notes_sv">Detta är en hypotetisk komponent som finns i {loDnal:n}, {be'nal:n}, {nalqaD:n} samt {'e'nal:n}. Enligt {KCD:src} används {nal:n:hyp,nolink} inte som ett ord på egen hand. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это гипотетический компонент, который находится в {loDnal:n}, {be'nal:n}, {nalqaD:n}, а также в {'e'nal:n}. Согласно {KCD:src}, {nal:n:hyp,nolink} не используется как слово само по себе. [AUTOTRANSLATED]</column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt">Este é um componente hipotético encontrado em {loDnal:n}, {be'nal:n}, {nalqaD:n} e também em {'e'nal:n}. De acordo com {KCD:src}, {nal:n:hyp,nolink} não é usado como uma palavra por si só. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on hypoteettinen komponentti, joka löytyy kohdista {loDnal:n}, {be'nal:n}, {nalqaD:n} ja {'e'nal:n}. {KCD:src}: n mukaan {nal:n:hyp,nolink}: ta ei käytetä yksinään sanana. [AUTOTRANSLATED]</column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -12674,7 +13925,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pa'mey</column>
-      <column name="part_of_speech">n:deriv,hyp</column>
+      <column name="part_of_speech">n:deriv,plural,hyp</column>
       <column name="definition">quarters, living quarters</column>
       <column name="definition_de">Quartiere</column>
       <column name="definition_fa">چهارم، چهارم زندگی [AUTOTRANSLATED]</column>
@@ -13841,49 +15092,6 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">tlhargh</column>
-      <column name="part_of_speech">n:hyp</column>
-      <column name="definition">scout?</column>
-      <column name="definition_de">Scout? Kundschafter?</column>
-      <column name="definition_fa">دیده بانی؟ [AUTOTRANSLATED]</column>
-      <column name="definition_sv">spana? [AUTOTRANSLATED]</column>
-      <column name="definition_ru">разведчик? [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">偵察？ [AUTOTRANSLATED]</column>
-      <column name="definition_pt">escoteiro?</column>
-      <column name="definition_fi">tiedustelija?</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This element is known only from {tlharghDuj:n}. It seems to be a noun, but the existence of {HIvDuj:n:nolink} and {qughDuj:n:nolink} suggests that there may be an unknown verb {tlhargh:v:hyp,nolink} "to scout".</column>
-      <column name="notes_de">Dieses Element ist nur aus {tlharghDuj:n} bekannt. Es scheint ein Substantiv zu sein, aber die Existenz von {HIvDuj:n:nolink} und {qughDuj:n:nolink} legt nahe, dass es ein unbekanntes Verb {tlhargh:v:hyp,nolink} "to scout" gibt. [AUTOTRANSLATED]</column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv">Detta element är endast känt från {tlharghDuj:n}. Det verkar vara ett substantiv, men förekomsten av {HIvDuj:n:nolink} och {qughDuj:n:nolink} antyder att det kan finnas ett okänt verb {tlhargh:v:hyp,nolink} "till scout". [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Этот элемент известен только из {tlharghDuj:n}. Кажется, это существительное, но существование {HIvDuj:n:nolink} и {qughDuj:n:nolink} предполагает, что может существовать неизвестный глагол {tlhargh:v:hyp,nolink} «разведать». [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">僅從{tlharghDuj:n}知道此元素。它似乎是一個名詞，但是{HIvDuj:n:nolink}和{qughDuj:n:nolink}的存在表明可能有一個未知的動詞{tlhargh:v:hyp,nolink}「要偵察」。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source"></column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">tlhIngan wo' Daq'a' bo'elpu'!</column>
       <column name="part_of_speech">sen:phr</column>
       <column name="definition">You have entered the jurisdiction of the Klingon Empire.</column>
@@ -14070,12 +15278,12 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is an unknown element found in {'eDSeHcha:n}. Following the example of {lolSeHcha:n}, this should be a verb related to aircraft landing or take-off. This element or a homophone is also found in {'eDjen:n}.</column>
-      <column name="notes_de">Dies ist ein unbekanntes Element in {'eDSeHcha:n}. Nach dem Beispiel von {lolSeHcha:n} sollte dies ein Verb sein, das sich auf die Landung oder den Start von Flugzeugen bezieht. Dieses Element oder ein Homophon ist auch in {'eDjen:n} enthalten. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این یک عنصر ناشناخته است که در {'eDSeHcha:n} یافت می شود. به دنبال نمونه {lolSeHcha:n} ، این باید یک فعل مربوط به فرود یا برخاست هواپیما باشد. این عنصر یا یک هوموفون نیز در {'eDjen:n} یافت می شود. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är ett okänt element som finns i {'eDSeHcha:n}. Enligt exemplet med {lolSeHcha:n} bör detta vara ett verb relaterat till flygplanets landning eller start. Detta element eller en homofon finns också i {'eDjen:n}. [AUTOTRANSLATED]</column>
+      <column name="notes">This is an unknown element found in {'eDSeHcha:n}. Following the example of {lolSeHcha:n}, this should be a verb related to aircraft landing or take-off. Perhaps it is the same word as {'eD:v:1} and taking off or landing is somehow related to crawling in the Klingon way of thinking.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
       <column name="notes_ru"></column>
-      <column name="notes_zh_HK">這是在{'eDSeHcha:n}中發現的未知元素。以{lolSeHcha:n}為例，這應該是與飛機著陸或起飛有關的動詞。在{'eDjen:n}中也可以找到該元素或同音字。 [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>

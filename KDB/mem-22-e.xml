@@ -384,7 +384,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="notes_ru">Это 4-й ранг {yaS:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是{yaS:n}的第四等級。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o 4º ranking do {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on {yaS:n}: n 4. sijoitus. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) neljänneksi korkein sotilasarvo.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -613,7 +613,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
       <column name="definition_fi">ryömiä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qIv:n}, {tor:v:1}</column>
+      <column name="see_also">{qIv:n}, {tor:v:1}, {ngov:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -665,8 +665,8 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這指的是{nguq:v}的人。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Refere-se a uma pessoa que é {nguq:v}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä viittaa henkilöön, joka on {nguq:v}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Mister Ed is a famous horse from television, and {jen:v} means "high". An arrogant person is said to be sitting on a "high horse".</column>
-      <column name="components">{'eD:n:hyp,nolink} or {'eD:v:1}, {jen:v:is}</column>
+      <column name="hidden_notes">Mister Ed is a famous horse from television, and {jen:v} means "high". An arrogant person is said to be sitting on a "high horse". Since {'eD:v:1} means "crawl", perhaps this refers to a person who thinks they are high up when they are actually crawling.</column>
+      <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -739,7 +739,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">третий тон неатонической музыкальной гаммы [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">非音階音階的第三音 [AUTOTRANSLATED]</column>
       <column name="definition_pt">terceiro tom da escala musical não-atônica</column>
-      <column name="definition_fi">nonatoonisen musiikkiasteikon kolmas sävel</column>
+      <column name="definition_fi">yhdeksänsävelisen musiikkiasteikon kolmas sävel</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -1047,6 +1047,52 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'ejyaH</column>
+      <column name="part_of_speech">n:num</column>
+      <column name="definition">infinity</column>
+      <column name="definition_de">Unendlichkeit</column>
+      <column name="definition_fa">بی نهایت [AUTOTRANSLATED]</column>
+      <column name="definition_sv">oändlighet [AUTOTRANSLATED]</column>
+      <column name="definition_ru">бесконечность [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">無窮 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">infinito</column>
+      <column name="definition_fi">ääretön</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This can be used anywhere a number is used.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Backwards of {Hay je:sen@@Hay:n:2, je:conj}. "To infinity and beyond" is the catchphrase of Buzz Lightyear in the Toy Story films.
+
+The example {'ejyaHlogh:adv:nolink} was given during the Q &amp; A session.</column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {'ejyaHlogh:adv@@'ejyaH:n, -logh:n:suff}</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'ejyo'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">Starfleet</column>
@@ -1142,7 +1188,7 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
       <column name="definition_ru">Командование операций Звездного Флота [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">星際艦隊作戰司令部 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Comando de Operações da Frota Estelar</column>
-      <column name="definition_fi">Tähtilaivaston operaatioiden johto?</column>
+      <column name="definition_fi">Tähtilaivaston laivaston johto</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'ejyo' ra'ghomquv:n}</column>
@@ -1577,7 +1623,7 @@ This was revealed to a small group in 2006 at {qep'a' 13:src}, but only posted t
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'emrIgh</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:being</column>
       <column name="definition">ancestor</column>
       <column name="definition_de">Vorfahre, Ahne</column>
       <column name="definition_fa">اجداد [AUTOTRANSLATED]</column>
@@ -1805,6 +1851,49 @@ Se vaatii loppuliitteen {-Du':n}, vaikka sitä käytettäisiin metaforisesti.[2]
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'enno</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">lens</column>
+      <column name="definition_de">Linse</column>
+      <column name="definition_fa">عدسی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">lins [AUTOTRANSLATED]</column>
+      <column name="definition_ru">линза [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">鏡片 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">lente</column>
+      <column name="definition_fi">linssi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{jo':v:2}, {jo'Ha':v}, {'al'on:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'enteD</column>
       <column name="part_of_speech">n</column>
       <column name="definition">drug</column>
@@ -1915,7 +2004,7 @@ It was clarified during the Q &amp; A session that this word and {Hergh:n:nolink
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">England has a reputation for being cloudy.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {jul So' 'eng.:sen@@jul:n, So':v:1, 'eng:n} (it's pretty cloudy)[2]
@@ -2365,7 +2454,7 @@ Tätä sanaa ei pidä sekoittaa {'eQway:n}-sanaan. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">LSD is short for Lys"erg"ic Acid Diethylamide.
+      <column name="hidden_notes">LSD is short for Lys"erg"ic Acid Diethylamide, which was first obtained from the ergot fungus.
 
 This was rumoured to have been revealed at {qep'a' 26 (2019):src}, and was officially revealed at {qep'a' 27 (2020):src}. The transitivity was confirmed during the Q &amp; A session.</column>
       <column name="components"></column>

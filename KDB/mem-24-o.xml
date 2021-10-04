@@ -96,7 +96,7 @@
       <column name="definition_ru">О для муза огня [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">O為火繆斯 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Oh! para uma musa de fogo</column>
-      <column name="definition_fi">Oi Tuulen muusa</column>
+      <column name="definition_fi">Oi Tulen runotar/muusa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -313,7 +313,7 @@ The original description said "sharp and poisonous", but it was clarified that M
       <column name="definition_ru">тоннель, трубопровод</column>
       <column name="definition_zh_HK">隧道、管路</column>
       <column name="definition_pt">túnel, conduto</column>
-      <column name="definition_fi">tunneli, putki</column>
+      <column name="definition_fi">tunneli, putki, kaapeli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chob:n}, {vegh:v}, {DIn:n}, {qa'rI':n}, {qatlhDa':n}, {qung:n}, {ghImwI':n}</column>
@@ -325,9 +325,11 @@ The original description said "sharp and poisonous", but it was clarified that M
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as just "tunnel" in {TKD:src}. The "conduit" definition comes from the {BoP:src} poster.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {HoS QaymeH 'och:n}
+▶ {nuH HoS 'och:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -342,7 +344,7 @@ The original description said "sharp and poisonous", but it was clarified that M
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">johto</column>
       <column name="source">[1] {TKD:src}, [2] {BoP:src}</column>
     </table>
     <table name="mem">
@@ -619,7 +621,7 @@ Verbien etuliitteet, kun {'oH:n:nolink} on objekti:
 ▶ {chaH:n} / {bIH:n}: {'oH:n:nolink} = {lu-:v:pref}
 
 Pakollinen verbin etuliite, kun kohde on {'oH:n:nolink}, on {yI-:v:pref}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The Russian word for "it" is "он" (which looks like {'oH:n:nolink} when written in Cyrillic script).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -959,7 +961,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">jokin, joku</column>
       <column name="source">[1] {KGT:src}, [2] {SkyBox 7:src}</column>
     </table>
     <table name="mem">
@@ -1064,7 +1066,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
       <column name="definition_sv">sjunka [AUTOTRANSLATED]</column>
       <column name="definition_ru">раковина [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">沉沒、下沉</column>
-      <column name="definition_pt">pia</column>
+      <column name="definition_pt">afundar</column>
       <column name="definition_fi">upota, vajota</column>
       <column name="synonyms"></column>
       <column name="antonyms">{'al:v:1}, {'ay:v}</column>
@@ -1154,7 +1156,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
       <column name="definition_fi">koralli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tlher'aq:n}</column>
+      <column name="see_also">{tlher'aq:n}, {qeSnoDmaj:n}</column>
       <column name="notes">This refers to a colony of marine polyps.</column>
       <column name="notes_de">Dies bezieht sich auf eine Kolonie von Meerespolypen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به مستعمره پولیپ های دریایی اشاره دارد. [AUTOTRANSLATED]</column>
@@ -1211,6 +1213,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
       <column name="examples">
 ▶ {gharlIq 'oQqar:n}
 ▶ {patat 'oQqar:n}
+▶ {pu'porgh 'oQqar:n}
 ▶ {qe'rot 'oQqar:n}
 ▶ {'anyan 'oQqar:n}</column>
       <column name="examples_de"></column>
@@ -1444,6 +1447,49 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2018.12.09:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'orgh</column>
+      <column name="part_of_speech">v:i</column>
+      <column name="definition">skitter</column>
+      <column name="definition_de">gleiten, rutschen</column>
+      <column name="definition_fa">اسکیت باز [AUTOTRANSLATED]</column>
+      <column name="definition_sv">skitter [AUTOTRANSLATED]</column>
+      <column name="definition_ru">бегать [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">掠奪者 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">deslizar</column>
+      <column name="definition_fi">kipittää, viilettää, vilistää</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ngov:v}, {lung:n}, {ghew:n}</column>
+      <column name="notes">This might be applied to a startled lizard or bug.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2295,7 +2341,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="definition_fi">kvanttiteoria, kvanttimekaniikka, kvanttifysiikka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'otlh:n}, {HapQeD:n}, {'otlhtej:n}, {QeD:n}, {SuyDar:n}</column>
+      <column name="see_also">{'otlh:n}, {HapQeD:n}, {'otlhtej:n}, {QeD:n}, {SuyDar:n}, {mergh:v}, {wuvchuq:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2716,7 +2762,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="_id"></column>
       <column name="entry_name">'oy'naQ</column>
       <column name="part_of_speech">n:deriv</column>
-      <column name="definition">painstick</column>
+      <column name="definition">painstik</column>
       <column name="definition_de">Schmerzstock</column>
       <column name="definition_fa">بدجنس [AUTOTRANSLATED]</column>
       <column name="definition_sv">smärtbatong, smärtstav, smärtstång</column>
@@ -2735,7 +2781,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This is spelled "painstik" (without the "c") throughout Star Trek canon, except in {TKDA:src} where it is spelled "painstick".</column>
+      <column name="hidden_notes">This is spelled "painstik" (without the "c") throughout Star Trek canon. It is also spelled this way in {TKW:src}, {KGT:src}, and {SkyBox 32:src} (which is even titled "Painstik"). However, it is misspelled as "painstick" in {TKDA:src} and {SkyBox 9:src}.</column>
       <column name="components">{'oy':n}, {naQ:n:1}</column>
       <column name="examples">
 ▶ {'oy'naQ Dalo'be'chugh not nenghep lop puq.:sen}
@@ -2750,7 +2796,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">painstik, pain stick</column>
+      <column name="search_tags">painstick, pain stick</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3043,7 +3089,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi">Tämä on rumpu, jonka iho on venytetty molempien päiden yli[1, p.75] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">"Olive oil". An oil drum is covered on both ends.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3308,7 +3354,7 @@ Kaikilla Klingonin kappaleilla on {'o'meghmey:n:nolink}. Jos kappale haihtuu kun
       <column name="definition_fi">molekyyli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HeySel:n}, {tamler:n}, {yugh:v}, {pay'an:n}</column>
+      <column name="see_also">{HeySel:n}, {tamler:n}, {yugh:v}, {pay'an:n}, {ghalmov:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

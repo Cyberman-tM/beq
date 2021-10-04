@@ -124,7 +124,7 @@
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">sähköposti</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
@@ -622,7 +622,7 @@ Jongleeraaminen eli esineiden heittäminen ilmaan ja kiinniottaminen rytmikkää
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jaghla'</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,being</column>
       <column name="definition">enemy commander</column>
       <column name="definition_de">feindlicher Commander</column>
       <column name="definition_fa">فرمانده دشمن [AUTOTRANSLATED]</column>
@@ -728,13 +728,15 @@ Jongleeraaminen eli esineiden heittäminen ilmaan ja kiinniottaminen rytmikkää
       <column name="notes_zh_HK"></column>
       <column name="notes_pt">Se o prefixo do verbo indicar um objeto, o sujeito está indo para um destino associado ao objeto, que pode ser marcado com {-Daq:n}. Se o prefixo do verbo não indicar nenhum objeto, o destino não será especificado. Nesse caso, um substantivo marcado com {-Daq:n:nolink} indica o local onde o "ir" está ocorrendo.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fi">Jos verbin etuliite osoittaa objektin, kohde menee kohteeseen liittyvään kohteeseen, joka voidaan merkitä {-Daq:n}-merkinnällä. Jos verbin etuliite ei osoita mitään objektia, kohde on määrittelemätön. Tällöin {-Daq:n:nolink}: lla merkitty substantiivi osoittaa sijainnin, jossa "menee".[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Some canon sentences don't seem to follow the grammar described in {HQ 7.4:src}, instead using a prefix indicating no object to indicate travel to the destination marked with {-Daq:n:nolink}.</column>
+      <column name="hidden_notes">Some canon sentences don't seem to follow the grammar described in {HQ 7.4:src}, instead using a prefix indicating no object to indicate travel to the destination marked with {-Daq:n:nolink}.
+
+In {TKD 7.1:src}, the sentence {jolpa'Daq yIjaH:sen:nolink} is used to illustrate that noun suffixes may be dropped in clipped Klingon, producing the sentence {jolpa' yIjaH!:sen}</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {bIQtIqDaq jIjaH.:sen:nolink} "I go in the river."  This means: I'm moving along in the river, traveling in the river.[2]
 ▶ {bIQtIq vIjaH.:sen:nolink} or {bIQtIqDaq vIjaH.:sen:nolink} (the {-Daq:n:nolink} is optional)  This means: I'm moving along to the river, traveling to the river.[2]
 ▶ {bIghHa' yIjaH:sen:nolink} "Go to jail"[3]
-▶ {Ha', ... wIjaH!:sen} "Come, let's go to ... !"</column>
+▶ {Ha', ... wIjaH!:sen} </column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -742,7 +744,7 @@ Jongleeraaminen eli esineiden heittäminen ilmaan ja kiinniottaminen rytmikkää
 ▶ {bIQtIqDaq jIjaH.:sen:nolink} "Я иду в реку."  Это значит: "Я перехожу через реку, пересекаю реку".[2]
 ▶ {bIQtIq vIjaH.:sen:nolink} или {bIQtIqDaq vIjaH.:sen:nolink} ({-Daq:n:nolink} опционален)  Это значит: "Я перехожу через реку, пересекаю реку".[2]
 ▶ {bIghHa' yIjaH:sen:nolink} "Отправляйся в тюрьму"[3]
-▶ {Ha', ... wIjaH!:sen} "Давай, пойдем ... !"</column>
+▶ {Ha', ... wIjaH!:sen} </column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -1269,7 +1271,7 @@ Klingonissa otsikot ovat yleensä nimen perässä, joten "kapteeni Jean-Luc Pica
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jantor</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:being</column>
       <column name="definition">witness</column>
       <column name="definition_de">Zeuge</column>
       <column name="definition_fa">شاهد [AUTOTRANSLATED]</column>
@@ -1401,7 +1403,7 @@ Klingonissa otsikot ovat yleensä nimen perässä, joten "kapteeni Jean-Luc Pica
       <column name="definition_fi">olla rohkea</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{yoH:v}</column>
+      <column name="see_also">{yoH:v}, {toDuj:n}, {qajunpaQ:n}</column>
       <column name="notes">To describe a "bold" font, see {pI':v}.</column>
       <column name="notes_de">Informationen zum Beschreiben einer "fetten" Schriftart finden Sie unter {pI':v}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">برای توصیف یک قلم "جسورانه" ، به {pI':v} مراجعه کنید. [AUTOTRANSLATED]</column>
@@ -1836,7 +1838,7 @@ Huomaa, että Klingonissa "syvää avaruutta" kutsutaan {logh Hop:n}, kirjaimell
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jat</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:body</column>
       <column name="definition">tongue</column>
       <column name="definition_de">Zunge</column>
       <column name="definition_fa">زبان [AUTOTRANSLATED]</column>
@@ -2346,7 +2348,7 @@ In the {msn:src} newsgroup message, it says only that the verb prefix indicating
       <column name="definition_ru">шестой тон неатонической музыкальной гаммы [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">第六音非音階音階 [AUTOTRANSLATED]</column>
       <column name="definition_pt">sexto tom da escala musical não-eletrônica</column>
-      <column name="definition_fi">nonatoonisen musiikkiasteikon kuudes sävel</column>
+      <column name="definition_fi">yhdeksänsävelisen musiikkiasteikon kuudes sävel</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jav:n:1} (number)</column>
@@ -2517,7 +2519,7 @@ In the {msn:src} newsgroup message, it says only that the verb prefix indicating
       <column name="definition_sv">småprata, samtala</column>
       <column name="definition_ru">болтать, вести непринужденную беседу, вести разговор</column>
       <column name="definition_zh_HK">聊 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">bate-papo</column>
+      <column name="definition_pt">bater papo</column>
       <column name="definition_fi">jutella, rupatella</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -2685,6 +2687,7 @@ In {TKD:src} this word is defined as "lord" only, same as {joH:n:nolink}. Howeve
       <column name="source">[1] {TKD:src}, [2] {HQ 7.4, Dec. 1998:src}</column>
     </table>
     <table name="mem">
+      <!-- The paq'batlh example is a known error. Fix for 2ed. -->
       <column name="_id"></column>
       <column name="entry_name">ja'chuq</column>
       <column name="part_of_speech">v:t_c,deriv</column>
@@ -2742,7 +2745,7 @@ In {TKD:src} this word is defined as "lord" only, same as {joH:n:nolink}. Howeve
       <column name="definition_ru">Название древней церемонии посвящения</column>
       <column name="definition_zh_HK">繼承儀式（古代） [AUTOTRANSLATED]</column>
       <column name="definition_pt">ritual de sucessão (antigo)</column>
-      <column name="definition_fi">muinainen vallanperimysrituaali</column>
+      <column name="definition_fi">eräs muinainen vallanperimysrituaali</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ja'chuq:v}, {SonchIy:n}, {cho'tay:n:hyp}</column>
@@ -2908,7 +2911,7 @@ The {msn:src} example had a typo: {ghoHtah:sen:nolink} instead of {ghoHtaH:sen:n
       <column name="definition_ru">маскировать, делать неузнаваемым, скрывать</column>
       <column name="definition_zh_HK">偽裝 [AUTOTRANSLATED]</column>
       <column name="definition_pt">disfarçar</column>
-      <column name="definition_fi">naamioida, naamioitua?, puvustaa, pukeutua?</column>
+      <column name="definition_fi">naamioida, puvustaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{toj:v}, {ghet:v}, {jech:n}</column>
@@ -3167,7 +3170,7 @@ The {msn:src} example had a typo: {ghoHtah:sen:nolink} instead of {ghoHtaH:sen:n
       <column name="definition_sv">vara tankspridd, vara disträ</column>
       <column name="definition_ru">быть рассеянным</column>
       <column name="definition_zh_HK">開小差 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ser distraído</column>
+      <column name="definition_pt">ser distraído (estar mentalmente ausente)</column>
       <column name="definition_fi">olla (henkisesti) poissaoleva, olla ajatuksissaan</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3676,7 +3679,7 @@ Huomaa, että {jemS:n:nolink} ja {qIrq:n:nolink} eivät noudata oikeaa klingonif
       <column name="definition_ru">тарелка для еды</column>
       <column name="definition_zh_HK">碟（單數）</column>
       <column name="definition_pt">prato (para comer)</column>
-      <column name="definition_fi">lautaset</column>
+      <column name="definition_fi">lautanen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{De' jengva':n}, {Huch jengva':n}</column>
@@ -3687,7 +3690,7 @@ Huomaa, että {jemS:n:nolink} ja {qIrq:n:nolink} eivät noudata oikeaa klingonif
       <column name="notes_ru">Это также можно использовать для обозначения блюдца (см. {Dargh HIvje':n}). [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這也可以用來指碟（參見{Dargh HIvje':n}）。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso também pode ser usado para se referir a um pires (consulte {Dargh HIvje':n}). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä voidaan käyttää myös viittaamaan lautaseen (katso {Dargh HIvje':n}). [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä voi käyttää teelautasesta (katso {Dargh HIvje':n}).</column>
       <column name="hidden_notes"></column>
       <column name="components">{ngop:n:inhpl}</column>
       <column name="examples"></column>
@@ -3722,7 +3725,7 @@ Huomaa, että {jemS:n:nolink} ja {qIrq:n:nolink} eivät noudata oikeaa klingonif
       <column name="definition_fi">pistää esiin, törröttää jostakin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DuQ:v:1}</column>
+      <column name="see_also">{DuQ:v:1}, {bet:v}</column>
       <column name="notes">The object is the thing from which the subject protrudes.</column>
       <column name="notes_de">Das Objekt ist das Ding, aus dem das Subjekt herausragt. [AUTOTRANSLATED]</column>
       <column name="notes_fa">موضوع چیزی است که موضوع از آن بیرون می کند. [AUTOTRANSLATED]</column>
@@ -4010,7 +4013,7 @@ All of the following can be translated as "I participate in the {qepHom@@qep:n, 
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">register</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4031,7 +4034,7 @@ All of the following can be translated as "I participate in the {qepHom@@qep:n, 
       <column name="definition_ru">шторм, буря, гроза</column>
       <column name="definition_zh_HK">風暴 [AUTOTRANSLATED]</column>
       <column name="definition_pt">tempestade</column>
-      <column name="definition_fi">myrskytä, ukkostaa</column>
+      <column name="definition_fi">myrskytä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{muD Dotlh:n}, {SIS:v}, {SuS:n}, {muD:n:2}, {raw:v}, {tuD:v}, {pe'bIl:n}, {Heq:v}, {cheq:v}, {vung:v}</column>
@@ -4694,7 +4697,7 @@ Tätä verbiä käytetään sonetissa 116, jossa sen nimenomainen aihe on {muD:n
       <column name="entry_name">jIb</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">execute by hanging</column>
-      <column name="definition_de">hängen, exekutieren</column>
+      <column name="definition_de">hängen, exekutieren durch erhängen</column>
       <column name="definition_fa">اعدام با حلق آویز [AUTOTRANSLATED]</column>
       <column name="definition_sv">kör genom att hänga [AUTOTRANSLATED]</column>
       <column name="definition_ru">казнить [AUTOTRANSLATED]</column>
@@ -5085,7 +5088,7 @@ Pakollinen verbin etuliite, kun kohde on {jIH:n:1h,nolink}, on {HI-:v:pref}. [AU
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jIl</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:being</column>
       <column name="definition">neighbor</column>
       <column name="definition_de">Nachbar</column>
       <column name="definition_fa">همسایه [AUTOTRANSLATED]</column>
@@ -5464,6 +5467,49 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
         </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">jInbo'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">bias</column>
+      <column name="definition_de">Voreingenommenheit</column>
+      <column name="definition_fa">جانبداری [AUTOTRANSLATED]</column>
+      <column name="definition_sv">partiskhet [AUTOTRANSLATED]</column>
+      <column name="definition_ru">предвзятость [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">偏見 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">viés</column>
+      <column name="definition_fi">ennakkoluulo, ennakkoasenne, vinouma</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">There is also an idiom, {ghu' neS:n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Jimmy "Jimbo" Wales is a co-founder of Wikipedia, about which there have been many discussions of various biases.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">jInjoq</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">type of bread</column>
@@ -5636,6 +5682,49 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">jIqlem</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">strap</column>
+      <column name="definition_de">Gurt, Riemen</column>
+      <column name="definition_fa">بند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">rem [AUTOTRANSLATED]</column>
+      <column name="definition_ru">ремень [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">帶子 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">alça, cinta</column>
+      <column name="definition_fi">hihna, remmi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qogh:n:1}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">jIr</column>
       <column name="part_of_speech">v:i_c</column>
       <column name="definition">rotate, twirl</column>
@@ -5645,11 +5734,11 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
       <column name="definition_ru">вращать, вертеть [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">旋轉</column>
       <column name="definition_pt">girar, rodopiar</column>
-      <column name="definition_fi">pyöriä, kieppua</column>
-      <column name="synonyms">{DIng:v}</column>
+      <column name="definition_fi">pyöriä, pyörähtää</column>
+      <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{jIrmoH:v:1}, {jIr:excl}</column>
-      <column name="notes"></column>
+      <column name="see_also">{jIr:excl}, {jIrmoH:v:1}</column>
+      <column name="notes">This is used when the thing rotates partially or once or for a few times, while {DIng:v} is generally used for things spinning or rotating continuously or for a long time. For example, one would {jIrmoH:v:2} the steering wheel of a car, while the tires {DIng:v:nolink}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5674,8 +5763,8 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="search_tags_fi">kieppua, pyörähtää</column>
+      <column name="source">[1] {KGT:src}, [2] {KLI mailing list 2021.03.26:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5731,7 +5820,7 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
       <column name="definition_ru">кривошип [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">曲柄 [AUTOTRANSLATED]</column>
       <column name="definition_pt">manivelar (causar rotação)</column>
-      <column name="definition_fi">kammeta</column>
+      <column name="definition_fi">pyörittää, pyöräyttää</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{QaplaStep:n}</column>
@@ -5994,7 +6083,7 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
       <column name="definition_fi">rikollinen, roisto, pahantekijä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chIvo':n}</column>
+      <column name="see_also">{chIvo':n}, {vIrveq:n}</column>
       <column name="notes">This word is similar to {HeSwI':n}, which is used to refer to someone who breaks a law. This word connotes, in addition, being evil.[1]</column>
       <column name="notes_de">Dieses Wort ähnelt {HeSwI':n}, das verwendet wird, um sich auf jemanden zu beziehen, der gegen ein Gesetz verstößt. Dieses Wort bedeutet außerdem, böse zu sein.[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این کلمه شبیه {HeSwI':n} است ، که برای مراجعه به کسی که قانونی را نقض می کند ، استفاده می شود. علاوه بر این ، این کلمه بد است.[1] [AUTOTRANSLATED]</column>
@@ -6465,7 +6554,7 @@ Jos haluat ilmaista toiveesi tapahtumisesta, katso {-jaj:v}. [AUTOTRANSLATED]</c
       <column name="definition_sv">luta sig ned, böja sig, luta framåt</column>
       <column name="definition_ru">наклоняться, нагибаться, сутулиться</column>
       <column name="definition_zh_HK">哈腰 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">curvar, dobrar</column>
+      <column name="definition_pt">inclinar-se</column>
       <column name="definition_fi">kyyristyä, kumartua, koukistua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -6725,7 +6814,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="_id"></column>
       <column name="entry_name">jol</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">transport beam</column>
+      <column name="definition">transporter beam</column>
       <column name="definition_de">Transporterstrahl</column>
       <column name="definition_fa">پرتو حمل و نقل [AUTOTRANSLATED]</column>
       <column name="definition_sv">transporterstråle</column>
@@ -6744,7 +6833,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This is better known as a "transporter beam", but {TKD:src} uses "transport beam" consistently.</column>
+      <column name="hidden_notes">This is defined and translated consistently as "transport beam" throughout {TKD:src}. However, it is more commonly known as the "transporter beam", and this definition is given in the {KCD:src} Language Lab.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {jol yIchu'!:sen}</column>
@@ -6755,7 +6844,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">transporter beam</column>
+      <column name="search_tags">transport beam</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -6763,7 +6852,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KCD:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6814,7 +6903,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="_id"></column>
       <column name="entry_name">jolpa'</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">transport room</column>
+      <column name="definition">transporter room</column>
       <column name="definition_de">Transporterraum</column>
       <column name="definition_fa">اتاق حمل و نقل [AUTOTRANSLATED]</column>
       <column name="definition_sv">transporterrum</column>
@@ -6833,7 +6922,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is defined and translated consistently as "transport room" throughout {TKD:src}. However, it is more commonly known as the "transporter room", and this definition is used on the {BoP:src} poster.</column>
       <column name="components">{jol:n}, {pa':n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6843,7 +6932,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">transport room</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -6851,7 +6940,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {BoP:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6876,7 +6965,9 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">According to {TKD 7.1:src}, this is the clipped version of {jolpa'Daq yIjaH:sen:nolink}.
+
+The term "transport room" (rather than the more common "transporter room") is used throughout {TKD:src}, and this usage is preserved here.</column>
       <column name="components">{jolpa':n}, {yI-:v}, {jaH:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6886,7 +6977,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">Go to the transporter room!</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7007,7 +7098,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_zh_HK">觀看Gowron這樣說：{YouTube video:url:http://youtu.be/Tvtfxst0IJ8} [AUTOTRANSLATED]</column>
       <column name="notes_pt">Assista Gowron dizer o seguinte: {YouTube video:url:http://youtu.be/Tvtfxst0IJ8} [AUTOTRANSLATED]</column>
       <column name="notes_fi">Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/Tvtfxst0IJ8} [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The term "transport beam" (rather than the more common "transporter beam") is used throughout {TKD:src}, and this usage is preserved here.</column>
       <column name="components">{jol:n}, {yI-:v}, {chu':v:2}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7017,7 +7108,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">Activate the transporter beam!</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7608,7 +7699,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="definition_ru">махать, колыхаться, развеваться, трепетать</column>
       <column name="definition_zh_HK">皮瓣、撲動、波浪 [AUTOTRANSLATED]</column>
       <column name="definition_pt">movimentar abas, vibrar</column>
-      <column name="definition_fi">lepattaa, hulmuta, aaltoilla</column>
+      <column name="definition_fi">lepattaa, hulmuta, aaltoilla; (sydämestä) sykkiä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{laq:v:1}, {joqwI':n}</column>
@@ -7673,7 +7764,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="search_tags_ru">сердцебиение</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">syke</column>
       <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
     </table>
     <table name="mem">
@@ -7787,7 +7878,8 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="notes_fi"></column>
       <column name="hidden_notes">You "rib" someone when you make a joke about them.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {cha'maH cha' joQDu':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8116,7 +8208,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="definition_sv">skvallra, sprida rykten</column>
       <column name="definition_ru">сплетни, слухи, болтовня</column>
       <column name="definition_zh_HK">八卦 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">fofoca</column>
+      <column name="definition_pt">fofocar</column>
       <column name="definition_fi">juoruta, juoruilla</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8332,7 +8424,7 @@ In the "Radio Times Star Trek 30th Anniversary Special Issue", Lady Di (Diana, P
       <column name="definition_ru">быть нелегким</column>
       <column name="definition_zh_HK">不安 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser inquieto</column>
-      <column name="definition_fi">ole levoton</column>
+      <column name="definition_fi">olla levoton</column>
       <column name="synonyms"></column>
       <column name="antonyms">{jot:v:1}</column>
       <column name="see_also">{bIt:v}, {ngoj:v}</column>
@@ -8520,7 +8612,10 @@ In the novel {Sarek:src}, the word {be'joy':n} is used for a form of ritualized 
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {jopwI' jo':n}
+▶ {tal jo':n}
+▶ {tel SeHwI' jo':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8541,7 +8636,7 @@ In the novel {Sarek:src}, the word {be'joy':n} is used for a form of ritualized 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jo'</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:1,t_c</column>
       <column name="definition">blow into a container of some kind</column>
       <column name="definition_de">in ein Behältnis hineinblasen</column>
       <column name="definition_fa">ضربه به یک ظرف از نوع [AUTOTRANSLATED]</column>
@@ -8577,7 +8672,7 @@ Se {-Daq:n} for usado, isso implica um erro: o ar foi soprado em direção ao ob
       <column name="notes_fi">Tämä tarkoittaa "täytä, täytä ilmalla, räjäytä". Tätä käytetään ilmapallon, paperipussin, kuplan ja niin edelleen puhaltamiseen. Toisin kuin {SuS:v}, ilma jää loukkuun esineeseen, johon on puhallettu, eikä se voi tulla ulos, ennen kuin se päästetään ulos (tai asia rikkoutuu).
 
 Jos käytetään {-Daq:n}, se tarkoittaa epäonnistumista: ilmaa puhallettiin kohti kohdetta, mutta ohitettiin se. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">"Bazooka Joe" is the mascot of the Bazooka brand of bubble gum. {ba'Suq'a' jo':sen@@ba'Suq:n, -'a':n, jo':v} means "he blows a great bubble".</column>
+      <column name="hidden_notes">"Bazooka Joe" is the mascot of the Bazooka brand of bubble gum. {ba'Suq'a' jo':sen@@ba'Suq:n, -'a':n, jo':v:1} means "he blows a great bubble".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8597,6 +8692,92 @@ Jos käytetään {-Daq:n}, se tarkoittaa epäonnistumista: ilmaa puhallettiin ko
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}</column>
     </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">jo'</column>
+      <column name="part_of_speech">v:2,t_c</column>
+      <column name="definition">zoom in on</column>
+      <column name="definition_de">zoomen, heranzoomen</column>
+      <column name="definition_fa">بزرگنمایی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">zooma in [AUTOTRANSLATED]</column>
+      <column name="definition_ru">увеличивать масштаб [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">放大 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">aumentar o zoom</column>
+      <column name="definition_fi">lähentää, tarkentaa johonkin, zoomata</column>
+      <column name="synonyms"></column>
+      <column name="antonyms">{jo'Ha':v}</column>
+      <column name="see_also">{'enno:n}</column>
+      <column name="notes">The object is the image. In context, {Sach:v:2} can be used for "be magnified".[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">To "blow up" (see {jo':v:1}) an image means to zoom in on it.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
+    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">jo'Ha'</column>
+          <column name="part_of_speech">v:t_c,deriv</column>
+          <column name="definition">zoom out</column>
+          <column name="definition_de">herauszoomen</column>
+          <column name="definition_fa">کوچک نمایی [AUTOTRANSLATED]</column>
+          <column name="definition_sv">zooma ut [AUTOTRANSLATED]</column>
+          <column name="definition_ru">уменьшить [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">縮小 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">Reduzir o zoom</column>
+          <column name="definition_fi">loitontaa, zoomata pois jostakin</column>
+          <column name="synonyms"></column>
+          <column name="antonyms">{jo':v:2}</column>
+          <column name="see_also">{'enno:n}</column>
+          <column name="notes">This is applied to something that was previously zoomed in on.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 28 (2021):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jo'ley'</column>
@@ -9056,7 +9237,7 @@ Jos käytetään {-Daq:n}, se tarkoittaa epäonnistumista: ilmaa puhallettiin ko
       <column name="definition_fi">aurinko</column>
       <column name="synonyms">{Hov:n}</column>
       <column name="antonyms"></column>
-      <column name="see_also">{muD Dotlh:n}, {DIS:n:2}, {bav:v}, {yuQ:n}, {maS:n}, {namchIl:n}</column>
+      <column name="see_also">{muD Dotlh:n}, {DIS:n:2}, {bav:v}, {yuQ:n}, {maS:n}, {namchIl:n}, {naptop:n}</column>
       <column name="notes">See {wov:v} for how to describe a sunny day.</column>
       <column name="notes_de">Unter {wov:v} befinden sich Informationen zur Beschreibung eines sonnigen Tages.</column>
       <column name="notes_fa">برای توصیف یک روز آفتابی به {wov:v} مراجعه کنید. [AUTOTRANSLATED]</column>
@@ -9332,6 +9513,49 @@ Jos käytetään {-Daq:n}, se tarkoittaa epäonnistumista: ilmaa puhallettiin ko
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {Klingon Monopoly:src}, [3] {paq'batlh:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">jutngev</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">nectar</column>
+      <column name="definition_de">Nektar</column>
+      <column name="definition_fa">شهد [AUTOTRANSLATED]</column>
+      <column name="definition_sv">nektar [AUTOTRANSLATED]</column>
+      <column name="definition_ru">нектар [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">花蜜 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">néctar</column>
+      <column name="definition_fi">mesi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{DayqIr:n}, {'InSong:n}</column>
+      <column name="notes">This refers to the sweet liquid secreted by flowers to attract pollinating insects and birds.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
