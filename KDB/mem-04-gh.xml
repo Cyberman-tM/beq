@@ -721,7 +721,7 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
       <column name="definition_fi">vilkaista</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{legh:v}</column>
+      <column name="see_also">{legh:v}, {chotlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3839,7 +3839,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
-      <!-- We don't follow the same order as in the actual sentence because the analysis has to attach {-jaj} to a verb. -->
+      <!-- We don't follow the same order in the components as in the actual sentence because the analysis has to attach {-jaj} to a verb. -->
       <column name="_id"></column>
       <column name="entry_name">ghIj qet jaghmeyjaj.</column>
       <column name="part_of_speech">sen:phr,archaic</column>
@@ -3854,14 +3854,14 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jIlajneS.:sen}</column>
-      <column name="notes">This sentence is archaic. It is ungrammatical in modern standard Klingon.</column>
-      <column name="notes_de">Dieser Satz ist archaisch. Es ist ungrammatisch im modernen klingonischen Standard. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این جمله باستانی است. در استاندارد مدرن کلینگون غیرقابل توصیف است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Denna mening är arkaisk. Det är ungrammatiskt i modern standard Klingon. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Предложение является архаичным</column>
-      <column name="notes_zh_HK">這句話是過時的。在現代標準克林崗語中，它是不合語法的。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta frase é arcaica. Não é gramatical no padrão moderno Klingon. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä lause on arkaainen. Se on epägammaattinen nykyaikaisessa Klingon-standardissa. [AUTOTRANSLATED]</column>
+      <column name="notes">This sentence is archaic (see {no' Hol:n}). It is ungrammatical in modern standard Klingon.</column>
+      <column name="notes_de">Dieser Satz ist archaisch (see {no' Hol:n}). Es ist ungrammatisch im modernen klingonischen Standard. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این جمله باستانی است. در استاندارد مدرن کلینگون غیرقابل توصیف است. (see {no' Hol:n}) [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Denna mening är arkaisk (see {no' Hol:n}). Det är ungrammatiskt i modern standard Klingon. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Предложение является архаичным (see {no' Hol:n}) [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這句話是過時的。在現代標準克林崗語中，它是不合語法的。(see {no' Hol:n}) [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Esta frase é arcaica (see {no' Hol:n}). Não é gramatical no padrão moderno Klingon. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä lause on arkaainen (see {no' Hol:n}). Se on epägammaattinen nykyaikaisessa Klingon-standardissa. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{ghIj:v}, {-jaj:v}, {qet:v}, {jagh:n}, {-mey:n}</column>
       <column name="examples"></column>
@@ -4331,7 +4331,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="definition_fi">viedä joku sotaoikeuteen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bo'DIj:n}</column>
+      <column name="see_also">{bo'DIj:n}, {mIwba':n}</column>
       <column name="notes">The object of this verb is the person charged and subject to trial (or actually tried) by a military tribunal. The subject is whoever brought the indictment.[2]</column>
       <column name="notes_de">Der Gegenstand dieses Verbs ist die Person, die von einem Militärgericht angeklagt und vor Gericht gestellt (oder tatsächlich vor Gericht gestellt) wird. Das Thema ist, wer auch immer die Anklage erhoben hat.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">هدف این فعل ، شخصی است که توسط دادگاه نظامی متهم شده و تحت محاکمه قرار می گیرد (یا در حقیقت محاکمه شده است). موضوع هر کسی است که کیفرخواست را وارد کند.[2] [AUTOTRANSLATED]</column>
@@ -4870,7 +4870,10 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {bIQ ghItmoHwI':n}
+▶ {ghItwI':n}
+▶ {SeS ghItwI':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4902,7 +4905,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="definition_fi">geysir</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{bIQ ghItmoHwI':n}</column>
       <column name="notes">If steam is emitted, say {SeS ghItwI':n} instead.</column>
       <column name="notes_de">Wenn Dampf abgegeben wird, sagen Sie stattdessen {SeS ghItwI':n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">اگر بخار ساطع می شود ، به جای آن بگویید {SeS ghItwI':n}. [AUTOTRANSLATED]</column>
@@ -7248,7 +7251,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
           <column name="notes_zh_HK">這是傳統上顯示在{nuH bey':n}上的項目之一。這是一種與盾牌平衡使用的灌腸裝置.[1] [AUTOTRANSLATED]</column>
           <column name="notes_pt"></column>
           <column name="notes_fi">Tämä on yksi tavaroista, jotka perinteisesti näytetään {nuH bey':n}-tiedostossa. Se on suolenpoistolaite, jota käytetään tasapainossa suojan kanssa.[1] [AUTOTRANSLATED]</column>
-          <column name="hidden_notes"></column>
+          <column name="hidden_notes">This was only spoken on {KCD:src}. The written form later appeared in the {Saarbrücken qepHom'a' 2019:src} booklet.</column>
           <column name="components">{ghop:n}, {'etlh:n}</column>
           <column name="examples"></column>
           <column name="examples_de"></column>
@@ -9300,7 +9303,7 @@ MO confirmed at {Saarbrücken qepHom'a' 2011:src} that {ghur:v:nolink} is intran
       <column name="definition_ru">быть готовым, готовиться к запуску</column>
       <column name="definition_zh_HK">準備（發射）</column>
       <column name="definition_pt">esteja preparado, pronto (a lançar)</column>
-      <column name="definition_fi">olla laukaisuvalmis</column>
+      <column name="definition_fi">valmistautua laukaisemaan</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{baH:v}, {cha:n}, {peng:n}, {qeq:v}, {ghuH:v}, {ghuS:v:2}</column>

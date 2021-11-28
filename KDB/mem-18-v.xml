@@ -1914,6 +1914,49 @@ Val Kilmer portrayed Batman in the movie "Batman Forever".</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">vatlhmoH</column>
+          <column name="part_of_speech">v:t_c,deriv</column>
+          <column name="definition">roll up (a scroll)</column>
+          <column name="definition_de">aufrollen (eine Schriftrolle) [AUTOTRANSLATED]</column>
+          <column name="definition_fa">جمع کردن (یک طومار) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">rulla ihop (en rulla) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">свернуть (свиток) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">捲起（捲軸） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">enrolar (um pergaminho) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">kääriä rullalle</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{tetlh:n}, {Qumran:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{vatlh:v}, {-moH:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {QelIS boqHarmey:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vav</column>
@@ -2555,7 +2598,7 @@ To express the ideas of indefinite subject and ability at the same time, it is n
       <column name="definition_fi">turkki</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{DIr:n}, {veDDIr:n}, {jIb:n}</column>
+      <column name="see_also">{DIr:n}, {veDDIr:n}, {pob:n}, {jIb:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3949,7 +3992,7 @@ Yleisempi termi tälle on {qatru':n:nolink}. [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hut'In vIl:n}</column>
-      <column name="notes"></column>
+      <column name="notes">In context, this can also refer to a button for clothing (see {Sut veragh:n}).</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4883,7 +4926,7 @@ When used with {-lu':v}, this prefix means "Someone (indefinite subject) does so
       <column name="definition_fi">eräs kissan kaltainen eläin, v'gro</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tI'qa' vIghro':n}, {ghISnar:n}, {'Imyagh:excl}, {Huy:v:1}, {Saj:n}, {lIS'ab:n}</column>
+      <column name="see_also">{tI'qa' vIghro':n}, {ghISnar:n}, {'Imyagh:excl}, {Huy:v:1}, {Saj:n}, {lIS'ab:n}, {pu'veng:n:2}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5147,6 +5190,7 @@ Katso idioomaattinen ilmaisu, jota käytetään käskemään jotakuta liikkumaan
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
     <table name="mem">
+      <!-- A reference to someone named "Phil"? -->
       <column name="_id"></column>
       <column name="entry_name">vIl</column>
       <column name="part_of_speech">n</column>
@@ -5162,7 +5206,6 @@ Katso idioomaattinen ilmaisu, jota käytetään käskemään jotakuta liikkumaan
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes"></column>
-      <!-- A reference to someone named "Phil"? -->
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5248,15 +5291,15 @@ Katso idioomaattinen ilmaisu, jota käytetään käskemään jotakuta liikkumaan
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghul:n}</column>
-      <column name="notes">The suggestion was made at {qep'a' 16 (2009):src} that a {vIlHom:n:nolink} could be a single ridge in a {Quch:n}.</column>
-      <column name="notes_de">Der Vorschlag wurde bei {qep'a' 16 (2009):src} gemacht, dass ein {vIlHom:n:nolink} ein einzelner Grat in einem {Quch:n} sein könnte. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این پیشنهاد در {qep'a' 16 (2009):src} که {vIlHom:n:nolink} می تواند یک خط الراس تک در {Quch:n} باشد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Förslaget gjordes vid {qep'a' 16 (2009):src} att en {vIlHom:n:nolink} kan vara en enda kam i en {Quch:n}. [AUTOTRANSLATED]</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt">A sugestão foi feita em {qep'a' 16 (2009):src} de que um {vIlHom:n:nolink} poderia ser uma única crista em um {Quch:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Ehdotus tehtiin kohdassa {qep'a' 16 (2009):src}, että {vIlHom:n:nolink} voisi olla yksi harjanne {Quch:n}: ssa. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">The suggestion was made at {qep'a' 16 (2009):src} that a {vIlHom:n:nolink} could be a single ridge in a {Quch:n}. This was affirmed by MO.</column>
       <column name="components">{vIl:v:1} or {vIl:n:2,hyp,nolink}, {Hom:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>

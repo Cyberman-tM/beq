@@ -921,7 +921,7 @@ Aikaelementtinä {DaHjaj:n} edeltää kaikkia adverbaaleja.[2][2][2][1, sec. 6.7
       <column name="definition_fi">todistaa, testata (tuloksettomasti)</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tob:v}</column>
-      <column name="see_also">{'ol:v}, {waH:v:1}, {nuD:v}, {poj:v}, {Daj:v:1}</column>
+      <column name="see_also">{'ol:v}, {woq:v}, {waH:v:1}, {nuD:v}, {poj:v}, {Daj:v:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1521,94 +1521,94 @@ The sentence {tlhIngan yoH Daj verengan yoH qetlh:sen:nolink} on {KGT p.179:src}
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKDA:src}, [2] {Klingon Monopoly:src}</column>
     </table>
-    <table name="mem">
-      <!-- Even though this has only appeared in a deleted scene, its meaning is clear from its components, so treat it as canon. -->
-      <column name="_id"></column>
-      <column name="entry_name">Daq'a'</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">jurisdiction, territory</column>
-      <column name="definition_de">Terrirorium, Gebiet</column>
-      <column name="definition_fa">صلاحیت، قلمرو [AUTOTRANSLATED]</column>
-      <column name="definition_sv">jurisdiktion, territorium [AUTOTRANSLATED]</column>
-      <column name="definition_ru">юрисдикция, территория</column>
-      <column name="definition_zh_HK">轄區、領土</column>
-      <column name="definition_pt">jurisdição, território</column>
-      <column name="definition_fi">hallinnollinen alue, tuomiopiiri</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{teblaw':n}, {yer:n}</column>
-      <column name="notes">This word has appeared only in a deleted scene from the 2009 {Star Trek:src} movie.</column>
-      <column name="notes_de">Dieses Wort ist nur in einer gelöschten Szene aus dem {Star Trek:src}-Film 2009 enthalten. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این کلمه فقط در یک صحنه حذف شده از فیلم {Star Trek:src} 2009 ظاهر شده است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta ord har bara dykt upp i en raderad scen från {Star Trek:src}-filmen 2009. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это слово появилось только в удалённой сцене фильма {Star Trek:src} 2009.</column>
-      <column name="notes_zh_HK">這個詞僅出現在2009年{Star Trek:src}電影的刪除場景中。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta palavra apareceu apenas em uma cena excluída do filme {Star Trek:src} de 2009. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä sana on esiintynyt vain poistetussa kohtauksessa vuoden 2009 {Star Trek:src}-elokuvasta. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components">{Daq:n}, {-'a':n}</column>
-      <column name="examples">
+        <table name="mem">
+          <!-- Even though this has only appeared in a deleted scene, its meaning is clear from its components, so treat it as canon. -->
+          <column name="_id"></column>
+          <column name="entry_name">Daq'a'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">jurisdiction, territory</column>
+          <column name="definition_de">Terrirorium, Gebiet</column>
+          <column name="definition_fa">صلاحیت، قلمرو [AUTOTRANSLATED]</column>
+          <column name="definition_sv">jurisdiktion, territorium [AUTOTRANSLATED]</column>
+          <column name="definition_ru">юрисдикция, территория</column>
+          <column name="definition_zh_HK">轄區、領土</column>
+          <column name="definition_pt">jurisdição, território</column>
+          <column name="definition_fi">hallinnollinen alue, tuomiopiiri</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{teblaw':n}, {yer:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes">This word has appeared only in a deleted scene from the 2009 {Star Trek:src} movie. In the released edit of the deleted scene, the actor clearly says {Daq'a':n:nolink}, but there is no official transcript of the line in Klingon. Its meaning comes from context, but it is really just the noun {Daq:n} plus the suffix {-'a':n:suff}.</column>
+          <column name="components">{Daq:n}, {-'a':n}</column>
+          <column name="examples">
 ▶ {tlhIngan wo' Daq'a' bo'elpu'!:sen}</column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {Star Trek 2009 deleted scene:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">Daq noy</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">landmark (not a building)</column>
-      <column name="definition_de">Landmarke, Wahrzeichen (kein Gebäude)</column>
-      <column name="definition_fa">برجسته (نه یک ساختمان) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">landmärke (inte en byggnad) [AUTOTRANSLATED]</column>
-      <column name="definition_ru">ориентир (не здание) [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">地標（非建築物）</column>
-      <column name="definition_pt">ponto de referência (não um edifício)</column>
-      <column name="definition_fi">nähtävyys (ei rakennus)</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{qach noy:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{Daq:n}, {noy:v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
-    </table>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Star Trek 2009 deleted scene:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">Daq noy</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">landmark (not a building)</column>
+          <column name="definition_de">Landmarke, Wahrzeichen (kein Gebäude)</column>
+          <column name="definition_fa">برجسته (نه یک ساختمان) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">landmärke (inte en byggnad) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">ориентир (не здание) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">地標（非建築物）</column>
+          <column name="definition_pt">ponto de referência (não um edifício)</column>
+          <column name="definition_fi">nähtävyys (ei rakennus)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{qach noy:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{Daq:n}, {noy:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DaqwIj vISovbe'.</column>
@@ -1819,7 +1819,7 @@ Hyväksyttävä tapa muotoilla tämä vaatimus kysymykseksi on {nuq DaDab?:sen:n
       <column name="notes_zh_HK">有一個成語，{jej; Daqtagh rur}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Existe um idioma, {jej; Daqtagh rur}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">On idioomi {jej; Daqtagh rur}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">{SkyBox 2:src} is about this weapon, though it's never actually named on it. See the example under {taj:n:nolink}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3409,7 +3409,7 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
       <column name="synonyms"></column>
       <column name="antonyms">{chum:v}</column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Something which gradually vanishes (in terms of becoming less and less visible) may be said to {DemchoH:v@@Dem:v, -choH:v}. (Note that gradually does not necessarily mean slowly.) This might describe what people see when they are watching someone beaming away with a transporter beam. Once that person is gone, might use {ngab:v} to describe them. Using {loj:v} would be appropriate if one is focusing on the incremental disappearance of the person.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3421,7 +3421,9 @@ Tätä verbiä voidaan soveltaa lentokoneisiin, joista ks. {Dav:v:2}.[1] [AUTOTR
 
 In {DSC - The Vulcan Hello:src}, the albino Voq's (see {voq:n:name}) skin colour was described as {Dem:v:nolink}.
 
-When asked if this was a pun about democratic governments being more transparent, Marc Okrand has said that it was not.</column>
+The context for the explanation from {QelIS boqHarmey:src} is what would be the right word to use for the gradual disappearance of the Cheshire Cat.
+
+When asked if this was a pun about democratic governments being more transparent, Marc Okrand has said that it was not. ({KLI mailing list 2021.07.28:src})</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -3439,7 +3441,7 @@ When asked if this was a pun about democratic governments being more transparent
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 23 (2016):src}</column>
+      <column name="source">[1] {qep'a' 23 (2016):src}, [2] {QelIS boqHarmey:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7223,7 +7225,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_ru">овец [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">羊</column>
       <column name="definition_pt">ovelha</column>
-      <column name="definition_fi">lammas</column>
+      <column name="definition_fi">eräs lammasta muistuttava eläin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{gha'cher:n}, {bolmaq:n:extcan}</column>
@@ -7234,7 +7236,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="notes_ru">Это пушистое, пушистое, мохнатое клингонское животное. Баран будет {DI'raq loD:n@@DI'raq:n, loD:n}, а овца будет {DI'raq be':n@@DI'raq:n, be':n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是一種蓬鬆的，毛茸茸的克林崗動物。公羊是{DI'raq loD:n@@DI'raq:n, loD:n}，母羊是{DI'raq be':n@@DI'raq:n, be':n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é um animal Klingon fofo, felpudo e felpudo. Um carneiro seria um {DI'raq loD:n@@DI'raq:n, loD:n} e uma ovelha seria um {DI'raq be':n@@DI'raq:n, be':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on pörröinen, villavainen, pörröinen klingonilainen eläin. Jäärä olisi {DI'raq loD:n@@DI'raq:n, loD:n} ja uuhi olisi {DI'raq be':n@@DI'raq:n, be':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on pörröinen ja villavainen klingoneläin. Uros eli pässi on {DI'raq loD:n@@DI'raq:n, loD:n} ja naaras eli uuhi on {DI'raq be':n@@DI'raq:n, be':n}.</column>
       <column name="hidden_notes">The Dirac equation failed to predict the Lamb shift.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -7252,7 +7254,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">pässi, uuhi</column>
       <column name="source">[1] {KLI mailing list 2018.08.31:src}, [2] {The Little Prince:src}</column>
     </table>
     <table name="mem">
@@ -8212,7 +8214,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {TKW:src}, [3] {paq'batlh p.102-103:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {TKW:src}, [3] {paq'batlh 1ed p.102-103:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8345,11 +8347,10 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="source">[1] {Saarbrücken qepHom'a' 2014:src}</column>
     </table>
     <table name="mem">
-      <!-- Possibly means "face" in the geometric sense. -->
       <column name="_id"></column>
       <column name="entry_name">Dop</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">side</column>
+      <column name="definition">side (direction, face)</column>
       <column name="definition_de">Seite</column>
       <column name="definition_fa">سمت [AUTOTRANSLATED]</column>
       <column name="definition_sv">sida</column>
@@ -8359,16 +8360,20 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="definition_fi">sivu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{lurgh:n}, {reD:n:2}</column>
-      <column name="notes">In {Klingon Monopoly:src}, {Dop:n:nolink} is used to indicate one face of a playing card.</column>
-      <column name="notes_de">In {Klingon Monopoly:src} wird {Dop:n:nolink} verwendet, um eine Seite einer Spielkarte anzuzeigen. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">در {Klingon Monopoly:src} ، از {Dop:n:nolink} برای نشان دادن یک صورت کارت بازی استفاده می شود. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">I {Klingon Monopoly:src} används {Dop:n:nolink} för att indikera en sida på ett spelkort. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">В {Klingon Monopoly:src} {Dop:n:nolink} используется для обозначения одного лица игральной карты. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">在{Klingon Monopoly:src}中，{Dop:n:nolink}用於指示紙牌的一個面。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Em {Klingon Monopoly:src}, {Dop:n:nolink} é usado para indicar uma face de um baralho. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Kohdassa {Klingon Monopoly:src} {Dop:n:nolink} käytetään osoittamaan pelikortin yhtä kasvoa. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="see_also">{lurgh:n}</column>
+      <column name="notes">This refers to a direction like "left" and "right", and not to the side surface of an object which also has a front and a back, for which see {reD:n:3}.[4]
+
+In {Klingon Monopoly:src}, {Dop:n:nolink} is used to indicate one face of a playing card.[3]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Based on usage, its homophony with {Dop:v:1}, and information revealed at {Saarbrücken qepHom'a' 2021:src}, this word refers to something which has a definite opposite side, like the "face" of a playing card or a polygon, as opposed to {reD:n:3,nolink}, which refers to the "side" of something which is more 3-dimensional.
+
+This was defined as "side". The clarification "direction, face" was added to differentiate it from {reD:n:3,nolink}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {DopDaq qul yIchenmoH QobDI' ghu'.:sen}[2]
@@ -8390,7 +8395,7 @@ This was defined as "be stuck" with an explanation, along with a bunch of other 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {PK:src}, [3] {Klingon Monopoly:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {PK:src}, [3] {Klingon Monopoly:src}, [4] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -10336,6 +10341,49 @@ Tätä verbiä käytetään parantamaan abstraktimpaa luonnetta, kuten tila, tai
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">DuHSum</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">lobster-like animal</column>
+      <column name="definition_de">hummerähnliches Tier [AUTOTRANSLATED]</column>
+      <column name="definition_fa">حیوان خرچنگ مانند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hummerliknande djur [AUTOTRANSLATED]</column>
+      <column name="definition_ru">животное, похожее на лобстера [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">像龍蝦的動物 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">animal parecido com lagosta [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs hummeria muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{bIQDep:n}</column>
+      <column name="notes">This is a Klingon animal found in the water which has a huge claw.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Duj</column>
       <column name="part_of_speech">n:1,klcp1</column>
       <column name="definition">ship, vessel</column>
@@ -10776,6 +10824,49 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Dul</column>
+      <column name="part_of_speech">v:i_c</column>
+      <column name="definition">sigh</column>
+      <column name="definition_de">Seufzen [AUTOTRANSLATED]</column>
+      <column name="definition_fa">آه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">suck [AUTOTRANSLATED]</column>
+      <column name="definition_ru">вздох [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">嘆 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">suspirar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">huokaista</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">It's explicitly noted that this verb takes no object.[1]</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Dum</column>
       <column name="part_of_speech">v:i</column>
       <column name="definition">nap</column>
@@ -11178,7 +11269,7 @@ The logo of Star Alliance, the largest airline alliance on Earth, is often paint
       <column name="definition_fi">piikki</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{lIghon DuQwI' pogh:n}, {pu':n:2}</column>
+      <column name="see_also">{lIghon DuQwI' pogh:n}, {pu':n:2}, {DuQwI'Hom:n}</column>
       <column name="notes">This is used to refer to the spikes attached to {pogh:n}, {ghanjaq:n}, {'alngegh:n}, and so on.
 
 For a stand-alone spike such as a stake, see {wIl:n}.</column>
@@ -11248,7 +11339,11 @@ Katso erillinen piikki, kuten panos, kohdasta {wIl:n}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tätä käytetään viittaamaan pieniin piikkeihin, jotka löytyvät sivulta {Daqtagh:n}.[1, p.61] [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{DuQ:v:1}, {-wI':v}, {-Hom:n}</column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {SuvwI' taj:sen:nolink}
+   {lI'qu' tlhIngan may' taj. not Hub'eghrupHa' lo'wI'. taj DopmeyDaq nargh cha' tajHom. ghop luQan tajHommey. pe'laH je. moQDaq DuQwI'Hommey jej tu'lu'. pay' HIvDI' lo'wI' pagh mupDI' QIHchu' bIH.:sen:nolink}
+  "Blade of the Warrior
+   The Klingon battle knife is designed primarily for versatility of use, so that the user is never caught at a disadvantage. Two small, secondary blades eject from the knife's sides, providing both a hand guard and another set of cutting edges. A brutally spiked pommel fastens the hilt together to provide a damaging surprise attack or give a devastating backhand stroke."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -11264,7 +11359,7 @@ Katso erillinen piikki, kuten panos, kohdasta {wIl:n}. [AUTOTRANSLATED]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {SkyBox 2:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -11439,6 +11534,49 @@ Katso erillinen piikki, kuten panos, kohdasta {wIl:n}. [AUTOTRANSLATED]</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2019:src}</column>
     </table>
+      <table name="mem">
+        <column name="_id"></column>
+        <column name="entry_name">Durghang qung</column>
+        <column name="part_of_speech">n:deriv</column>
+        <column name="definition">keyhole</column>
+        <column name="definition_de">Schlüsselloch</column>
+        <column name="definition_fa">سوراخ قفل [AUTOTRANSLATED]</column>
+        <column name="definition_sv">låshål [AUTOTRANSLATED]</column>
+        <column name="definition_ru">отверстие для замка [AUTOTRANSLATED]</column>
+        <column name="definition_zh_HK">鎖孔 [AUTOTRANSLATED]</column>
+        <column name="definition_pt">buraco de fechadura [AUTOTRANSLATED]</column>
+        <column name="definition_fi">avaimenreikä</column>
+        <column name="synonyms"></column>
+        <column name="antonyms"></column>
+        <column name="see_also"></column>
+        <column name="notes"></column>
+        <column name="notes_de"></column>
+        <column name="notes_fa"></column>
+        <column name="notes_sv"></column>
+        <column name="notes_ru"></column>
+        <column name="notes_zh_HK"></column>
+        <column name="notes_pt"></column>
+        <column name="notes_fi"></column>
+        <column name="hidden_notes"></column>
+        <column name="components">{Durghang:n}, {qung:n}</column>
+        <column name="examples"></column>
+        <column name="examples_de"></column>
+        <column name="examples_fa"></column>
+        <column name="examples_sv"></column>
+        <column name="examples_ru"></column>
+        <column name="examples_zh_HK"></column>
+        <column name="examples_pt"></column>
+        <column name="examples_fi"></column>
+        <column name="search_tags"></column>
+        <column name="search_tags_de"></column>
+        <column name="search_tags_fa"></column>
+        <column name="search_tags_sv"></column>
+        <column name="search_tags_ru"></column>
+        <column name="search_tags_zh_HK"></column>
+        <column name="search_tags_pt"></column>
+        <column name="search_tags_fi"></column>
+        <column name="source">[1] {QelIS boqHarmey:src}</column>
+      </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DuS</column>

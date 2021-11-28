@@ -961,14 +961,14 @@ Katso "päivät sitten" ja "päivät nyt" kohdat {Hu':n} ja {leS:n}. [AUTOTRANSL
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'uSgheb:n}</column>
-      <column name="notes">The verb {jach:v} can describe what a {jajlo' Qa':n:nolink} does.</column>
-      <column name="notes_de">Das Verb {jach:v} kann beschreiben, was ein {jajlo' Qa':n:nolink} tut.</column>
+      <column name="notes">The verb {jach:v} can describe what a {jajlo' Qa':n:nolink} does.[2]</column>
+      <column name="notes_de">Das Verb {jach:v} kann beschreiben, was ein {jajlo' Qa':n:nolink} tut.[2]</column>
       <column name="notes_fa"></column>
-      <column name="notes_sv">Verbetet {jach:v} kan beskriva vad en {jajlo' Qa':n:nolink} gör. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Глагол {jach:v} может описывать, что делает {jajlo' Qa':n:nolink}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Verbetet {jach:v} kan beskriva vad en {jajlo' Qa':n:nolink} gör.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Глагол {jach:v} может описывать, что делает {jajlo' Qa':n:nolink}.[2] [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt">O verbo {jach:v} pode descrever o que um {jajlo' Qa':n:nolink} faz. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Verbi {jach:v} voi kuvata mitä {jajlo' Qa':n:nolink} tekee. [AUTOTRANSLATED]</column>
+      <column name="notes_pt">O verbo {jach:v} pode descrever o que um {jajlo' Qa':n:nolink} faz.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Verbi {jach:v} voi kuvata mitä {jajlo' Qa':n:nolink} tekee.[2] [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{jajlo':n}, {Qa':n:1}</column>
       <column name="examples"></column>
@@ -2843,7 +2843,7 @@ Substantiivien lisäksi {je:sen:nolink} voi seurata myös verbiä. Katso {je:adv
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {SkyBox cards:src}, [3] {SkyBox 3:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src}), [4] {paq'batlh p.102-103:src}, [5] {Klingon Monopoly:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {SkyBox cards:src}, [3] {SkyBox 3:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src}), [4] {paq'batlh 1ed p.102-103:src}, [5] {Klingon Monopoly:src}</column>
     </table>
     <table name="mem">
       <!-- This is an adverbial, despite not being labeled as such in TKD. -->
@@ -4192,7 +4192,7 @@ Tätä verbiä käytetään sonetissa 116, jossa sen nimenomainen aihe on {muD:n
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">There is a (wrong) folk etymology that the origin of the term "jaywalking" comes from the shape of the letter "J", which traces the itinerary of a jaywalker.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4576,14 +4576,30 @@ Tätä verbiä käytetään sonetissa 116, jossa sen nimenomainen aihe on {muD:n
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chIp:v}, {SIrgh:n}, {veD:n}, {qur'ep:n}, {wan:v}, {tIy:v}</column>
-      <column name="notes">This refers only to hair on the top of the head, and not to facial hair (see {rol:n} and {loch:n}) or body hair (see {pob:n}).[2]</column>
-      <column name="notes_de">Dies bezieht sich nur auf Haare auf der Oberseite des Kopfes und nicht auf Gesichtshaare (siehe {rol:n} und {loch:n}) oder Körperhaare (siehe {pob:n}) .[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این فقط مربوط به موهای بالای سر است ، و نه موهای صورت (به {rol:n} و {loch:n}) یا موهای بدن (مراجعه کنید به {pob:n}).[2] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta avser endast hår på toppen av huvudet och inte ansiktshår (se {rol:n} och {loch:n}) eller kroppshår (se {pob:n}).[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это относится только к волосам на верхней части головы, а не на лице (смотрите {rol:n} и {loch:n}) или теле (сотрите {pob:n}).[2]</column>
-      <column name="notes_zh_HK">這僅是指頭頂的頭髮，而不是指面部毛髮（請參見{rol:n}和{loch:n}）或體毛（請參見{pob:n}）。[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Refere-se apenas aos cabelos na parte superior da cabeça, e não aos pêlos faciais (consulte {rol:n} e {loch:n}) ou pêlos do corpo (consulte {pob:n}).[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä viittaa vain pään yläosassa oleviin hiuksiin, ei kasvojen hiuksiin (katso {rol:n} ja {loch:n}) tai vartalokarvoihin (katso {pob:n}).[2] [AUTOTRANSLATED]</column>
+      <column name="notes">This refers only to hair on the top of the head, and not to facial hair (see {rol:n} and {loch:n}) or body hair (see {pob:n}).[2]
+
+Animals do not have {jIb:n:nolink}, but {pob:n:nolink}.[3]</column>
+      <column name="notes_de">Dies bezieht sich nur auf Haare auf der Oberseite des Kopfes und nicht auf Gesichtshaare (siehe {rol:n} und {loch:n}) oder Körperhaare (siehe {pob:n}).[2]
+
+Tiere haben kein {jIb:n:nolink}, aber {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این فقط به موهای بالای سر اشاره دارد، و نه به موهای صورت (به {rol:n} و {loch:n} مراجعه کنید) یا موهای بدن (به {pob:n} مراجعه کنید).[2].
+
+حیوانات {jIb:n:nolink} ندارند، اما {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta avser endast hår på toppen av huvudet och inte ansiktshår (se {rol:n} och {loch:n}) eller kroppshår (se {pob:n}).[2]
+
+Djur har inte {jIb:n:nolink}, men {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это относится только к волосам на верхней части головы, а не на лице (смотрите {rol:n} и {loch:n}) или теле (сотрите {pob:n}).[2]
+
+У животных нет {jIb:n:nolink}, но {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這僅指頭頂的頭髮，而不是面部毛髮（參見 {rol:n} 和 {loch:n}）或體毛（參見 {pob:n}）。[2]
+
+動物沒有 {jIb:n:nolink}，但 {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Refere-se apenas aos cabelos na parte superior da cabeça, e não aos pêlos faciais (consulte {rol:n} e {loch:n}) ou pêlos do corpo (consulte {pob:n}).[2]
+
+Animais não têm {jIb:n:nolink}, mas {pob:n:nolink}.[3][2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä viittaa vain pään yläosassa oleviin hiuksiin, ei kasvojen hiuksiin (katso {rol:n} ja {loch:n}) tai vartalokarvoihin (katso {pob:n}).[2]
+
+Eläimillä ei ole {jIb:n:nolink}, vaan {pob:n:nolink}.[3] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">The "cut of someone's jib" is an idiom referring to their appearance.</column>
       <column name="components"></column>
       <column name="examples">
@@ -4603,7 +4619,7 @@ Tätä verbiä käytetään sonetissa 116, jossa sen nimenomainen aihe on {muD:n
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {qep'a' 24 (2017):src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 24 (2017):src}, [3] {KLI mailing list 2021.11.11:src}</column>
     </table>
         <table name="mem">
           <!-- Is this plural? -->
@@ -7688,6 +7704,49 @@ The term "transport room" (rather than the more common "transporter room") is us
           <column name="source">[1] {KGT p.115:src}</column>
         </table>
     <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">joq</column>
+      <column name="part_of_speech">conj:klcp1</column>
+      <column name="definition">or, and/or (joining nouns)</column>
+      <column name="definition_de">und/oder (zwischen Substantiven)</column>
+      <column name="definition_fa">یا، و / یا (پیوند اسم ها) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">eller, och/eller</column>
+      <column name="definition_ru">или, и/или(объединяет существительные)</column>
+      <column name="definition_zh_HK">或者、和/或（加入名詞） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ou, e/ou (juntando nomes)</column>
+      <column name="definition_fi">tai, ja/tai (inklusiivinen tai) (yhdistää substantiivilausekkeita)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{je:conj}, {ghap:conj}, {qoj:conj}</column>
+      <column name="notes">This follows the final noun.</column>
+      <column name="notes_de">Dies folgt dem letzten Substantiv. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این زیر اسم نهایی است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta följer det slutliga substantivet. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Следует за последним существительным</column>
+      <column name="notes_zh_HK">這是最後一個名詞。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isto segue o substantivo final. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä seuraa lopullista substantiivia. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
       <!-- TODO: Fix Russian. -->
       <column name="_id"></column>
       <column name="entry_name">joq</column>
@@ -7764,95 +7823,95 @@ The term "transport room" (rather than the more common "transporter room") is us
       <column name="search_tags_ru">сердцебиение</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi">syke</column>
+      <column name="search_tags_fi">liehua, syke</column>
       <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">joq</column>
-      <column name="part_of_speech">conj:klcp1</column>
-      <column name="definition">or, and/or (joining nouns)</column>
-      <column name="definition_de">und/oder (zwischen Substantiven)</column>
-      <column name="definition_fa">یا، و / یا (پیوند اسم ها) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">eller, och/eller</column>
-      <column name="definition_ru">или, и/или(объединяет существительные)</column>
-      <column name="definition_zh_HK">或者、和/或（加入名詞） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ou, e/ou (juntando nomes)</column>
-      <column name="definition_fi">tai, ja/tai (inklusiivinen tai) (yhdistää substantiivilausekkeita)</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{je:conj}, {ghap:conj}, {qoj:conj}</column>
-      <column name="notes">This follows the final noun.</column>
-      <column name="notes_de">Dies folgt dem letzten Substantiv. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این زیر اسم نهایی است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta följer det slutliga substantivet. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Следует за последним существительным</column>
-      <column name="notes_zh_HK">這是最後一個名詞。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isto segue o substantivo final. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä seuraa lopullista substantiivia. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">joqwI'</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">flag</column>
-      <column name="definition_de">Flagge, Fahne</column>
-      <column name="definition_fa">پرچم</column>
-      <column name="definition_sv">flagga</column>
-      <column name="definition_ru">флаг</column>
-      <column name="definition_zh_HK">旗</column>
-      <column name="definition_pt">bandeira</column>
-      <column name="definition_fi">lippu</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{joq:v}, {Degh:n:1}, {pIlghIm:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{joq:v}, {-wI':v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
-    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">joqwI'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">flag</column>
+          <column name="definition_de">Flagge, Fahne</column>
+          <column name="definition_fa">پرچم</column>
+          <column name="definition_sv">flagga</column>
+          <column name="definition_ru">флаг</column>
+          <column name="definition_zh_HK">旗</column>
+          <column name="definition_pt">bandeira</column>
+          <column name="definition_fi">lippu</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{joq:v}, {Degh:n:1}, {pIlghIm:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{joq:v}, {-wI':v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {TKD:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">joqmoH</column>
+          <column name="part_of_speech">v:t_c,deriv</column>
+          <column name="definition">wave (a fan or anything else)</column>
+          <column name="definition_de">fächern</column>
+          <column name="definition_fa">تکان دادن یک فن [AUTOTRANSLATED]</column>
+          <column name="definition_sv">vinka en fläkt [AUTOTRANSLATED]</column>
+          <column name="definition_ru">помахать веером [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">揮一揮扇子 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">acenar um leque [AUTOTRANSLATED]</column>
+          <column name="definition_fi">heiluttaa (lippua, viuhkaa, tms.)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{SuS mIjDang:n}, {rewve' mIjDang:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{joq:v}, {-moH:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi">liehuttaa, löyhytellä, leyhytellä</column>
+          <column name="source">[1] {QelIS boqHarmey:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">joQ</column>

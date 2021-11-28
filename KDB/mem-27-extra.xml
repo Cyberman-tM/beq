@@ -4306,7 +4306,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Вам никто не нужен, кроме вас самих! [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">除了自己，您不需要任何人！ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Você não precisa de ninguém além de si mesmos!</column>
-      <column name="definition_fi">Kannattele itse itseäsi!</column>
+      <column name="definition_fi">Kannatelkaa itse itseänne!</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4317,7 +4317,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">"Et tarvitsee ketään muuta kuin itsesi."</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -5546,6 +5546,49 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2019.04.01:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghI'van</column>
+      <column name="part_of_speech">n:anim,fic</column>
+      <column name="definition">gryphon</column>
+      <column name="definition_de">Greif</column>
+      <column name="definition_fa">gryphon [AUTOTRANSLATED]</column>
+      <column name="definition_sv">gryphon [AUTOTRANSLATED]</column>
+      <column name="definition_ru">gryphon [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">gryphon [AUTOTRANSLATED]</column>
+      <column name="definition_pt">gryphon [AUTOTRANSLATED]</column>
+      <column name="definition_fi">aarnikotka, griippi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an animal from Terran mythology with the body of a lion and the wings of an eagle.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi">Maapallolainen myyttinen eläin, jolla on leijonan alaruumis ja kotkan siivet sekä yläruumis.</column>
+      <column name="hidden_notes">The definition uses the spelling from Lewis Carroll's "Alice's Adventures in Wonderland", because it was requested to translate that book, but this is more commonly spelled as "griffin" (or sometimes "griffon") in English.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">griffin, griffon</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9355,7 +9398,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="entry_name">tanje'rIn</column>
       <column name="part_of_speech">n:food</column>
       <column name="definition">tangerine</column>
-      <column name="definition_de">Tangerine</column>
+      <column name="definition_de">Mandarine</column>
       <column name="definition_fa">نارنگی [AUTOTRANSLATED]</column>
       <column name="definition_sv">mandarin [AUTOTRANSLATED]</column>
       <column name="definition_ru">мандарин [AUTOTRANSLATED]</column>
@@ -9384,7 +9427,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
       <column name="search_tags">mandarin, clementine</column>
-      <column name="search_tags_de">Mandarine, Clementine</column>
+      <column name="search_tags_de">Tangerine, Clementine</column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
@@ -10909,7 +10952,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
       <column name="definition_ru">Европа</column>
       <column name="definition_zh_HK">歐洲</column>
       <column name="definition_pt">Europa</column>
-      <column name="definition_fi">Euroopassa</column>
+      <column name="definition_fi">Eurooppa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tera':n}, {yuwey:n}, {'ewro:n}</column>
@@ -14931,7 +14974,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Degh:n:1}</column>
-      <column name="notes">In {Klingon Academy:src}, the symbol of the Klingon Empire (the imperial trefoil) is said to be called the "Heart of Virtue", or {tIq'ghob:n:nolink} "in the ancient tongue", by General Chang ({cheng:n:name}). In modern standard Klingon, "Heart of Virtue" would be {ghob tIq:n:nolink}. The two words are transposed in the manner of {paq'batlh:n}.
+      <column name="notes">The symbol of the Klingon Empire (the imperial trefoil) is said to be called the "Heart of Virtue", or {tIq'ghob:n:nolink} "in the ancient tongue" (see {no' Hol:n}), by General Chang ({cheng:n:name}). In modern standard Klingon, "Heart of Virtue" would be {ghob tIq:n:nolink}. The two words are transposed in the manner of {paq'batlh:n}.
 
 The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, and duty.</column>
       <column name="notes_de"></column>
@@ -14959,7 +15002,7 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source"></column>
+      <column name="source">[1] {Klingon Academy:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

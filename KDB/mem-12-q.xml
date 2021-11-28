@@ -2870,7 +2870,7 @@ In British English, this word refers to what would be called a "trapezium".</col
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qat</column>
-      <column name="part_of_speech">v:1,t</column>
+      <column name="part_of_speech">v:1,t_c</column>
       <column name="definition">wrap, encase</column>
       <column name="definition_de">wickeln, umhüllen</column>
       <column name="definition_fa">بسته بندی، بسته بندی [AUTOTRANSLATED]</column>
@@ -2882,7 +2882,7 @@ In British English, this word refers to what would be called a "trapezium".</col
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">The subject wraps or encases the object.[2, p.76]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -2890,7 +2890,9 @@ In British English, this word refers to what would be called a "trapezium".</col
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">Cats were mummified in ancient Egypt.</column>
+      <column name="hidden_notes">This word appeared with the definition "wrap" in the K-E word list in {TKD:src}, but was missing from the E-K side. The definition "wrap, encase" appeared on {KGT p.76:src}, and the word was listed with the definition "encase" in both K-E and E-K word lists (separately from {qat:v:2}). The usage in the book ("the players are sad to {qat:v:1,nolink} the song") confirms the verb is transitive.
+
+Cats were mummified in ancient Egypt.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2914,7 +2916,7 @@ In British English, this word refers to what would be called a "trapezium".</col
       <!-- Maybe a reference to Cat Stevens? -->
       <column name="_id"></column>
       <column name="entry_name">qat</column>
-      <column name="part_of_speech">v:2,t</column>
+      <column name="part_of_speech">v:2,t_c</column>
       <column name="definition">accompany (singing) with instrumental music</column>
       <column name="definition_de">(Gesang) musikalisch begleiten</column>
       <column name="definition_fa">همراه (آواز خواندن) با موسیقی سازنده [AUTOTRANSLATED]</column>
@@ -2926,7 +2928,7 @@ In British English, this word refers to what would be called a "trapezium".</col
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">Most Klingon music is vocal. When there is an instrumental component to a song, the players are said to {qat:v:2,nolink} the song.[2, p.76]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -5459,7 +5461,7 @@ Samankaltaisuus "Kapteeni Kangin" ({qeng HoD:n@@qeng:n, HoD:n}) kanssa on sattum
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
-      <!-- Don't annotation as "deriv" because the bad grammar breaks the parser. -->
+      <!-- Don't annotate as "deriv" because the bad grammar breaks the parser. -->
       <column name="_id"></column>
       <column name="entry_name">qepHom'a'</column>
       <column name="part_of_speech">n</column>
@@ -5696,6 +5698,92 @@ Kouluttaa todella hyvin, työskennellä siinä todella paljon ja saavuttaa aiotu
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">qer</column>
+      <column name="part_of_speech">v:i_c</column>
+      <column name="definition">shrink (get smaller)</column>
+      <column name="definition_de">schrumpfen (kleiner werden) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کوچک شدن (کوچکتر شدن) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">krympa (bli mindre) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">сжаться (стать меньше) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">收縮（變小） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">encolher (ficar menor) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">kutistua</column>
+      <column name="synonyms"></column>
+      <column name="antonyms">{Qa:v}, {qerHa':v}</column>
+      <column name="see_also">{mach:v}, {QaHa':v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">pienentyä</column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
+    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">qerHa'</column>
+          <column name="part_of_speech">v:i_c,deriv</column>
+          <column name="definition">un-shrink (grow back to original size)</column>
+          <column name="definition_de">entschrumpfen (zur Originalgröße zurückwachsen) [AUTOTRANSLATED]</column>
+          <column name="definition_fa">un-shrink (به اندازه اصلی رشد کنید) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">un-shrink (växa tillbaka till originalstorlek) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">не усаживаться (вернуться к исходному размеру) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">不收縮（恢復到原來的大小） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">não encolher (voltar ao tamanho original) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">kasvaa takaisin alkuperäiseen kokoon</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{Qa:v}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {QelIS boqHarmey:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qerjIq</column>
@@ -6533,7 +6621,6 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
       <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
     <table name="mem">
-      <!-- This may have originally been intended to be "Khaless" (خالص), the Arabic or Persian word for "pure". -->
       <column name="_id"></column>
       <column name="entry_name">qeylIS'e' lIjlaHbe'bogh vay'</column>
       <column name="part_of_speech">n:name,fic,deriv</column>
@@ -6547,40 +6634,40 @@ Kuuluisa kirjailija {Qa'taq:n:name} kirjoitti kommentin tähän teokseen. [AUTOT
       <column name="definition_fi">Kahless Unohtumaton</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{luqara':n:name}, {moratlh:n:name}, {qanjIt:n:name}, {qeylIS bov:n}, {qeylIS bov nubwI':n}, {meQboghnom:n}, {bo'retlh:n}</column>
-      <column name="notes">Kahless is the legendary first Klingon Emperor who united the Klingon people.
+      <column name="see_also">{luqara':n:name}, {moratlh:n:name}, {qanjIt:n:name}, {qeylIS bov:n}, {qeylIS bov nubwI':n}, {meQboghnom:n}, {bo'retlh:n}, {tIquvma:n:name}</column>
+      <column name="notes">Kahless is the legendary first Klingon Emperor, who united the Klingon people. There are two versions of his title. The older version, {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1}, is applied to Kahless only, while the newer version {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} may be applied to Kahless and other leaders/heroes as well. It would be a sign of extreme arrogance or disrespect to use the older version for anyone other than Kahless.[2]
 
 His return is prophesied in the Story of the Promise, which states that:
 ▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}</column>
-      <column name="notes_de">Kahless ist der legendäre erste klingonische Kaiser, der das klingonische Volk vereinte.
+      <column name="notes_de">Kahless ist der legendäre erste klingonische Kaiser, der das klingonische Volk vereinte. Es gibt zwei Versionen seines Titels. Die ältere Version {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1} wird nur auf Kahless angewendet, während die neuere Version {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} auch auf Kahless und andere Anführer/Helden angewendet werden kann. Es wäre ein Zeichen extremer Arroganz oder Respektlosigkeit, die ältere Version für andere als Kahless zu verwenden.[2]
 
 Seine Rückkehr wird in der Geschichte der Verheißung prophezeit, in der es heißt:
 ▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_fa">Kahless اولین امپراتور کلینگون افسانه ای است که مردم کلینگون را متحد کرده است.
+      <column name="notes_fa">Kahless اولین امپراتور افسانه ای کلینگون است که مردم کلینگون را متحد کرد. دو نسخه از عنوان او وجود دارد. نسخه قدیمی تر ، {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1} ، فقط برای Kahless اعمال می شود ، در حالی که نسخه جدیدتر {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} ممکن است برای Kahless و سایر رهبران/قهرمانان نیز اعمال شود. این می تواند نشانه ای از گستاخی شدید یا بی احترامی به استفاده از نسخه قدیمی برای هر کسی غیر از Kahless باشد.
 
-بازگشت او در داستان نوید پیشگویی شده است ، که می گوید:
-{ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Kahless är den legendariska första Klingon-kejsaren som förenade Klingon-folket.
+بازگشت او در داستان وعده ، پیش بینی شده است که می گوید:
+ON {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Kahless är den legendariska första Klingon -kejsaren som förenade Klingon -folket. Det finns två versioner av hans titel. Den äldre versionen, {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1}, tillämpas endast på Kahless, medan den nyare versionen {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} kan tillämpas på Kahless och andra ledare/hjältar också. Det skulle vara ett tecken på extrem arrogans eller respektlöshet att använda den äldre versionen för någon annan än Kahless.[2]
 
-Hans återkomst profeteras i berättelsens berättelse, som säger att:
+Hans återkomst är profeterad i Löfteberättelsen, som säger att:
 ▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Кейлесс незабываемый был легендарным первым Клингонским императором, кто объединил Клингонский народ.
+      <column name="notes_ru">Калесс - легендарный первый клингонский император, объединивший клингонский народ. Есть две версии его титула. Старая версия, {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1}, применяется только к Kahless, в то время как новая версия {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} может быть применена также к Kahless и другим лидерам / героям. Было бы признаком крайнего высокомерия или неуважения использовать старую версию для кого-либо, кроме Калесса.
 
-Его возвращение предначертано в истории обещания, которая гласит:
-▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}</column>
-      <column name="notes_zh_HK">卡赫萊斯（Kahless）是傳說中的第一個克林崗皇帝，團結了克林崗人民。
+Его возвращение предсказано в Истории обетования, в которой говорится, что:
+▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">卡赫萊斯（Kahless）是傳說中的第一個克林崗皇帝，團結了克林崗人民。他的書名有兩個版本。舊版本 {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1} 僅適用於 Kahless，而新版本 {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} 也可能適用於 Kahless 和其他領導者/英雄。對 Kahless.[2] 以外的任何人使用舊版本將是極端傲慢或不尊重的表現
 
 他的回歸在《無盡的故事》中有預言，其中指出：
-▶{ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Kahless é o lendário primeiro imperador Klingon que uniu o povo Klingon.
+▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Kahless é o lendário primeiro imperador Klingon que uniu o povo Klingon. Existem duas versões de seu título. A versão mais antiga, {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1}, é aplicada apenas a Kahless, enquanto a versão mais recente {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} pode ser aplicada a Kahless e outros líderes / heróis também. Seria um sinal de extrema arrogância ou desrespeito usar a versão mais antiga para qualquer pessoa que não seja Kahless.[2]
 
 Seu retorno é profetizado na História da Promessa, que afirma que:
 ▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Kahless on legendaarinen ensimmäinen Klingonin keisari, joka yhdisti klingonilaiset.
+      <column name="notes_fi">Kahless on legendaarinen ensimmäinen klingonikeisari, joka yhdisti klingonilaiset. Hänen nimestään on kaksi versiota. Vanhempaa versiota {qeylIS lIjlaHbogh pagh:n:name@@qeylIS:n, lIj:v, -laH:v, -bogh:v, pagh:n:1} sovelletaan vain Kahlessiin, kun taas uudempaa versiota {qeylIS'e' lIjlaHbe'bogh vay':n:name,nolink} voidaan soveltaa Kahlessiin ja muihin johtajiin/sankareihin. Olisi merkki äärimmäisestä ylimielisyydestä tai kunnioittamattomuudesta käyttää vanhempaa versiota kenellekään muulle kuin Kahlessille.
 
-Hänen paluunsa ennustetaan Lupauksen tarinassa, jossa todetaan seuraavaa:
-▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">This has also been translated as {qeylIS lIjlaHbogh pagh:sen:nolink} in the {paq'batlh:src}.</column>
+Hänen paluunsa on ennustettu Lupauksen tarinassa, jossa todetaan seuraavaa:
+▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}[2] [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
       <column name="components">{qeylIS:n:name}, {-'e':n}, {lIj:v}, {-laH:v}, {-be':v}, {-bogh:v}, {vay':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -6598,7 +6685,7 @@ Hänen paluunsa ennustetaan Lupauksen tarinassa, jossa todetaan seuraavaa:
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {SkyBox 8:src}</column>
+      <column name="source">[1] {SkyBox 8:src}, [2] {paq'batlh 2ed:src} ({KLI mailing list 2021.10.10:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7436,7 +7523,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="definition_fi">kiinnittää huomiota johonkin, keskittyä johonkin</column>
       <column name="synonyms"></column>
       <column name="antonyms">{qImHa':v}</column>
-      <column name="see_also">{buS:v}, {paQ:v}</column>
+      <column name="see_also">{buS:v}, {paQ:v}, {chotlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7748,7 +7835,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{moq:v}, {tlhaw':v}, {weq:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This can be used for knocking (on a door, etc.).[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7767,7 +7854,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">punch</column>
+      <column name="search_tags">punch, knock</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -7775,7 +7862,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi">iskeä</column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {QelIS boqHarmey:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9204,18 +9291,18 @@ On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:
       <column name="definition_ru">ядро, сердечник, сердцевина, сущность, эссенция</column>
       <column name="definition_zh_HK">核心、本質 [AUTOTRANSLATED]</column>
       <column name="definition_pt">núcleo, essência</column>
-      <column name="definition_fi">perusolemus, ydin</column>
+      <column name="definition_fi">perusolemus, ydin; ydinjoukko</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SuqSIv:n}, {ghanroq:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes">This can refer to the core of a group of people.</column>
+      <column name="notes_de">Dies kann sich auf den Kern einer Gruppe von Personen beziehen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این می تواند به هسته گروهی از مردم اشاره کند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta kan hänvisa till kärnan i en grupp människor. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это может относиться к ядру группы людей. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這可以指一群人的核心。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso pode se referir ao núcleo de um grupo de pessoas. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä voi viitata ihmisryhmän ydinjoukkoon.</column>
       <column name="hidden_notes">"Kor". See {jan qalI'qoS:n:name}.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -13060,7 +13147,7 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">{quS:n:nolink} + "slab".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -13181,14 +13268,14 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'aq:v}, {ghut:v}</column>
-      <column name="notes">This refers to making a prediction which is fraudulent or suspected to be fraudulent, or if it's a carnival act or the like (see {ghIchDep:n}).</column>
-      <column name="notes_de">Dies ist eine Vorhersage, wie es unechte Wahrsager machen, d.h. ohne wahre Fakten, oder wenn es sich um eine Karnevalshandlung oder ähnliches handelt (siehe {ghIchDep:n}). [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این بدان معنی است که پیش بینی ای را تقلب کرده یا گمان می کنید کلاهبرداری باشد ، یا اینکه این یک کارناوال یا مانند آن است (به {ghIchDep:n} مراجعه کنید). [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till att göra en förutsägelse som är bedräglig eller misstänks vara bedräglig, eller om det är en karnevalshandling eller liknande (se {ghIchDep:n}). [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Относится к совершению предсказания, являющегося мошенническим или которое может таким быть, или если это карнавальное действо или что-то подобное этому (см. {ghIchDep:n}). [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是指做出欺詐性或懷疑欺詐性的預測，或者是否為狂歡節之類的預測（請參閱{ghIchDep:n}）。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isso se refere a fazer uma previsão que é fraudulenta ou suspeita de ser fraudulenta, ou se é um ato de carnaval ou algo semelhante (consulte {ghIchDep:n}). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä viittaa ennusteen tekemiseen, joka on petollinen tai epäillään petokseksi, tai jos se on karnevaaliteko tai vastaava (katso {ghIchDep:n}). [AUTOTRANSLATED]</column>
+      <column name="notes">This refers to making a prediction which is fraudulent or suspected to be fraudulent, or if it's a carnival act or the like (see {ghIchDep:n}).[1] A fortune-teller at a carnival would not describe themselves as a {qutwI':n@@qut:v, -wI':v}, but others might.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes">That is, this is a prediction made based on a crystal ({qut:n}) ball.</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -13207,7 +13294,7 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 24 (2017):src}</column>
+      <column name="source">[1] {qep'a' 24 (2017):src}, [2] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

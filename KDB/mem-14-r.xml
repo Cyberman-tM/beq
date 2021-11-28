@@ -43,6 +43,49 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">rab</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be gigantic, be huge, be humongous</column>
+      <column name="definition_de">gigantisch sein, riesig sein</column>
+      <column name="definition_fa">غول پیکر باشید، بزرگ باشید، بزرگ باشید [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara gigantisk, vara enorm, vara enorm [AUTOTRANSLATED]</column>
+      <column name="definition_ru">быть гигантским, быть огромным, быть огромным [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">變得巨大，變得巨大，變得巨大 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">seja gigante, seja enorme, seja enorme [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla jättimäinen, valtava, suunnaton</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tIn:v}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">jättiläismäinen</column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rach</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">invigorate, fortify, strengthen</column>
@@ -615,7 +658,7 @@
       <column name="definition_ru">быть ответственным за</column>
       <column name="definition_zh_HK">對...負責任 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser responsável por</column>
-      <column name="definition_fi">olla vastuussa jostakin</column>
+      <column name="definition_fi">vastata jostakin, olla vastuussa jostakin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -626,7 +669,7 @@
       <column name="notes_ru">Это значит "быть за старшего, иметь власть над кем-то". Будет странным для этого глагола использоваться без объекта.[2]</column>
       <column name="notes_zh_HK">這意味著「負責，有權力」。不帶賓語使用該動詞將很奇怪。 {ngoy':v}.[2]的含義有些重疊 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso significa "estar no comando, ter autoridade sobre". Seria estranho que esse verbo fosse usado sem um objeto. Existe alguma sobreposição de significado com {ngoy':v}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä tarkoittaa "olla vastuussa, sinulla on valta". Olisi outoa, että tätä verbiä käytetään ilman esinettä. Merkityksessä on jonkin verran päällekkäisyyttä {ngoy':v}.[2]: n kanssa [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Olisi outoa käyttää tätä ilman objektia. Merkitys on osittain päällekkäinen verbin {ngoy':v} kanssa.[2]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -658,7 +701,7 @@
       <column name="definition_ru">быть одинаковым, быть идентичным</column>
       <column name="definition_zh_HK">相同、一樣</column>
       <column name="definition_pt">ser o mesmo</column>
-      <column name="definition_fi">olla sama, identtinen</column>
+      <column name="definition_fi">olla sama, samanlainen, yhtäläinen</column>
       <column name="synonyms">{nIb:v}</column>
       <column name="antonyms">{pIm:v}</column>
       <column name="see_also">{Sar:v}, {rur:v}, {nel:v}, {... X law' ... X puS:sen}</column>
@@ -2537,15 +2580,15 @@ Muille monikulmioille, joilla on yhtäläiset sivut / kulmat, {HoS:v}: ää käy
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mey':n}, {Dop:n}</column>
-      <column name="notes">This word refers to the side of a polygon. Its only appearance in canon has been between a number and one of {mey':n} or {'Impey':n}.</column>
-      <column name="notes_de">Dieses Wort bezieht sich auf die Seite eines Polygons. Sein einziges Auftreten im Kanon war zwischen einer Zahl und einer von {mey':n} oder {'Impey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این کلمه به ضلع یک ضرب اشاره دارد. تنها ظاهر آن در کانن بین یک شماره و یکی از {mey':n} یا {'Impey':n} بوده است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta ord hänvisar till sidan av en polygon. Dess enda utseende i kanon har varit mellan ett nummer och ett av {mey':n} eller {'Impey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это слово относится к стороне многоугольника. Его единственное появление в каноне было между числом и одним из {mey':n} или {'Impey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這個詞是指多邊形的一面。它在佳能中的唯一出現在{mey':n}或{'Impey':n}之間。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta palavra se refere ao lado de um polígono. Sua única aparência no cânone foi entre um número e um de {mey':n} ou {'Impey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä sana viittaa monikulmion sivuun. Sen ainoa esiintyminen kaanonissa on ollut numeron ja yhden välillä {mey':n} tai {'Impey':n}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="notes">In geometry, this word refers to the side of a polygon.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">In the geometry usage, this word's only appearance in canon has been between a number and one of {mey':n} or {'Impey':n}.</column>
       <column name="components"></column>
       <column name="examples">{loS reD mey':n}, {vagh reD mey':n}</column>
       <column name="examples_de"></column>
@@ -2563,7 +2606,54 @@ Muille monikulmioille, joilla on yhtäläiset sivut / kulmat, {HoS:v}: ää käy
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2014.01.27:src}</column>
+      <column name="source">[1] {KLI mailing list 2014.01.27:src}, [2] {QelIS boqHarmey:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">reD</column>
+      <column name="part_of_speech">n:3</column>
+      <column name="definition">side (exterior surface)</column>
+      <column name="definition_de">Seite (von etwas) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">طرف (چیزی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">sida (av något) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">сторона (чего-то) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">（某物的）側面 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">lado (de algo) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">sivupuoli</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is an extension of {reD:n:1} to refer to an object's surface which is not the top, bottom, front, or back. In this context, the front of the object is its {logh'ob:n:2} and the back is its {Sa'Hut:n:2}.[1; 2]
+
+Even when applied to a person or an animal, this doesn't take the suffix {-Du':n:suff}, because it refers to an area and not a specific body part. This word does not mean "side" in the sense of one of two opposite directions such as "left" and "right" or "top" and "bottom", for which see {Dop:n}.[3]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">An explanation of {logh'ob:n:2,nolink}, {Sa'Hut:n:2,nolink}, and {reD:n:3,nolink} was given during the Q &amp; A session at {Saarbrücken qepHom'a' 2021:src}.
+
+This was defined as "side". The clarification "exterior surface" was added based on the explanation, and to differentiate it from {Dop:n:nolink}.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {QelIS boqHarmey:src}, [2] {KLI mailing list 2021.11.15:src}, [3] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4214,7 +4304,7 @@ o      <column name="definition_sv">Det är alltid de modiga som dör.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">reS</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:1,t_c</column>
       <column name="definition">conjure, cast (a spell)</column>
       <column name="definition_de">verzaubern, einen Zauberspruch sprechen</column>
       <column name="definition_fa">التماس، بازیگری (یک طلسم) [AUTOTRANSLATED]</column>
@@ -4226,14 +4316,14 @@ o      <column name="definition_sv">Det är alltid de modiga som dör.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'IDnar:n}, {'IDnar pIn'a':n}</column>
-      <column name="notes">One can say either {tlheH reS@@tlheH:n, reS:v} or just {reS:sen:nolink} for "he/she casts a spell". It's unclear if anything other than {tlheH:n} can be the object of {reS:v:nolink}.</column>
-      <column name="notes_de">Man kann entweder {tlheH reS@@tlheH:n, reS:v} oder nur {reS:sen:nolink} für "er / sie spricht einen Zauber" sagen. Es ist unklar, ob etwas anderes als {tlheH:n} das Objekt von {reS:v:nolink} sein kann. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">می توان گفت {tlheH reS@@tlheH:n, reS:v} یا فقط {reS:sen:nolink} را برای "او طلسم می کند" می گوید. مشخص نیست که آیا چیزی غیر از {tlheH:n} می تواند موضوع {reS:v:nolink} باشد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Man kan säga antingen {tlheH reS@@tlheH:n, reS:v} eller bara {reS:sen:nolink} för "han / hon sätter en besvärjelse". Det är oklart om något annat än {tlheH:n} kan vara föremål för {reS:v:nolink}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Можно сказать или {tlheH reS@@tlheH:n, reS:v} или просто {reS:sen:nolink} для "он / она читает заклинание". Неясно, может ли что-либо кроме {tlheH:n} быть объектом {reS:v:nolink}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">可以說{tlheH reS@@tlheH:n, reS:v}或{reS:sen:nolink}都是「他/她施了咒語」。不清楚{reS:v:nolink}的對像是否可以是{tlheH:n}以外的其他對象。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Pode-se dizer {tlheH reS@@tlheH:n, reS:v} ou apenas {reS:sen:nolink} para "ele / ela lança um feitiço". Não está claro se algo diferente de {tlheH:n} pode ser o objeto de {reS:v:nolink}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Voidaan sanoa joko {tlheH reS@@tlheH:n, reS:v} tai vain {reS:sen:nolink} sanoille "hän loitsee". On epäselvää, voiko jokin muu kuin {tlheH:n} olla {reS:v:nolink}: n kohde. [AUTOTRANSLATED]</column>
+      <column name="notes">One can say either {tlheH reS@@tlheH:n, reS:v:1} or just {reS:sen:nolink} for "he/she casts a spell". It's unclear if anything other than {tlheH:n} can be the object of {reS:v:1,nolink}.</column>
+      <column name="notes_de">Man kann entweder {tlheH reS@@tlheH:n, reS:v:1} oder nur {reS:sen:nolink} für "er / sie spricht einen Zauber" sagen. Es ist unklar, ob etwas anderes als {tlheH:n} das Objekt von {reS:v:1,nolink} sein kann. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">می توان گفت {tlheH reS@@tlheH:n, reS:v:1} یا فقط {reS:sen:nolink} را برای "او طلسم می کند" می گوید. مشخص نیست که آیا چیزی غیر از {tlheH:n} می تواند موضوع {reS:v:1,nolink} باشد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Man kan säga antingen {tlheH reS@@tlheH:n, reS:v:1} eller bara {reS:sen:nolink} för "han / hon sätter en besvärjelse". Det är oklart om något annat än {tlheH:n} kan vara föremål för {reS:v:1,nolink}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Можно сказать или {tlheH reS@@tlheH:n, reS:v:1} или просто {reS:sen:nolink} для "он / она читает заклинание". Неясно, может ли что-либо кроме {tlheH:n} быть объектом {reS:v:1,nolink}. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">可以說{tlheH reS@@tlheH:n, reS:v:1}或{reS:sen:nolink}都是「他/她施了咒語」。不清楚{reS:v:1,nolink}的對像是否可以是{tlheH:n}以外的其他對象。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Pode-se dizer {tlheH reS@@tlheH:n, reS:v:1} ou apenas {reS:sen:nolink} para "ele / ela lança um feitiço". Não está claro se algo diferente de {tlheH:n} pode ser o objeto de {reS:v:1,nolink}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Voidaan sanoa joko {tlheH reS@@tlheH:n, reS:v:1} tai vain {reS:sen:nolink} sanoille "hän loitsee". On epäselvää, voiko jokin muu kuin {tlheH:n} olla {reS:v:1,nolink}: n kohde. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -4254,6 +4344,49 @@ o      <column name="definition_sv">Det är alltid de modiga som dör.</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2016.11.25:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">reS</column>
+          <column name="part_of_speech">v:2,t_c</column>
+          <column name="definition">grow (flowers/plant/vegetables)</column>
+          <column name="definition_de">wachsen (Blumen/Pflanze/Gemüse) [AUTOTRANSLATED]</column>
+          <column name="definition_fa">رشد (گل/گیاه/سبزیجات) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">växa (blommor/växter/grönsaker) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">расти (цветы / растение / овощи) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">成長（花卉/植物/蔬菜） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">crescer (flores / planta / vegetais) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">kasvattaa (kasveja)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{wIj:v}, {poch:v}, {nenchoH:v}, {Qa:v}</column>
+          <column name="notes">The object is the plant which is grown by the subject.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi">-</column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {QelIS boqHarmey:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">reStav</column>
@@ -4693,6 +4826,49 @@ Tämä on sama sana kuin verbi {ret:v}.[2][1] [AUTOTRANSLATED]</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 23 (2016):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">rewve' mIjDang</column>
+      <column name="part_of_speech">n:alt,deriv</column>
+      <column name="definition">{SuS mIjDang:n}</column>
+      <column name="definition_de">{SuS mIjDang:n}</column>
+      <column name="definition_fa">{SuS mIjDang:n}</column>
+      <column name="definition_sv">{SuS mIjDang:n}</column>
+      <column name="definition_ru">{SuS mIjDang:n}</column>
+      <column name="definition_zh_HK">{SuS mIjDang:n}</column>
+      <column name="definition_pt">{SuS mIjDang:n}</column>
+      <column name="definition_fi">{SuS mIjDang:n}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{rewve':n}, {mIjDang:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {QelIS boqHarmey:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5373,30 +5549,30 @@ Tämän verbin refleksiivisellä muodolla on erityinen merkitys. Katso selitys a
       <column name="synonyms"></column>
       <column name="antonyms">{tagh:v}</column>
       <column name="see_also">{pItlh:excl}, {bertlham:n}, {Dor:v:2}, {ghang:v}, {van:v:2}, {'o'megh:n}</column>
-      <column name="notes">By itself, {rIn:v:nolink} is used in radio transmissions to indicate end of transmission, similar to "over".
+      <column name="notes">This verb is used with the suffix {-taH:v} to form {rIntaH:v}, a construction used to indicate finality (cf. the suffix {-ta':v}).[1]
 
-This verb is used with the suffix {-taH:v} to form {rIntaH:v}, a construction used to indicate finality (cf. the suffix {-ta':v}).</column>
-      <column name="notes_de">{rIn:v:nolink} wird für sich genommen bei Funkübertragungen verwendet, um das Ende der Übertragung anzuzeigen, ähnlich wie bei "Over".
+By itself, {rIn:v:nolink} is used in radio transmissions to indicate end of transmission, similar to "over".[2]</column>
+      <column name="notes_de">Dieses Verb wird mit dem Suffix {-taH:v} verwendet, um {rIntaH:v} zu bilden, eine Konstruktion, die verwendet wird, um die Endgültigkeit anzuzeigen (vgl. das Suffix {-ta':v}).[1]
 
-Dieses Verb wird mit dem Suffix {-taH:v} verwendet, um {rIntaH:v} zu bilden, eine Konstruktion, die zur Angabe der Endgültigkeit verwendet wird (vgl. Das Suffix {-ta':v}). [AUTOTRANSLATED]</column>
-      <column name="notes_fa">به خودی خود ، {rIn:v:nolink} در انتقال رادیویی برای نشان دادن پایان انتقال ، مشابه "بیش از" استفاده می شود.
+{rIn:v:nolink} allein wird in Funkübertragungen verwendet, um das Ende der Übertragung anzuzeigen, ähnlich wie "over".[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این فعل با پسوند {-taH:v} برای تشکیل {rIntaH:v} استفاده می شود ، ساختاری که برای نشان دادن نهایی به کار می رود (نک. پسوند {-ta':v}).[1]
 
-این فعل با پسوند {-taH:v} برای شکل دادن {rIntaH:v} ، ساختاری که برای نشان دادن نهایی استفاده می شود (به عنوان مثال پسوند {-ta':v}) استفاده می شود. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">{rIn:v:nolink} används i sig själv i radiosändningar för att indikera slutet av överföringen, liknande "över".
+به تنهایی ، {rIn:v:nolink} در انتقال رادیویی برای نشان دادن پایان انتقال ، شبیه به "بیش از" استفاده می شود. [2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta verb används med suffixet {-taH:v} för att bilda {rIntaH:v}, en konstruktion som används för att indikera finalitet (jfr suffixet {-ta':v}). [1]
 
-Detta verb används med suffixet {-taH:v} för att bilda {rIntaH:v}, en konstruktion som används för att indikera slutlighet (jfr. Suffixet {-ta':v}). [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Сам по себе, {rIn:v:nolink} используется в радио передачах, чтобы обозначить окончание передаваемого сообщения, что очень похоже на "конец связи".
+I sig självt används {rIn:v:nolink} i radiosändningar för att indikera slutet på överföringen, liknande "över" .[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Глагол используется вместе с суффиксом {-taH:v} чтобы сформировать {rIntaH:v}, т.е конструкцию, чтобы обозначить завершение процесса (сравните с суффиксом {-ta':v}).[1]
 
-Глагол используется вместе с суффиксом {-taH:v} чтобы сформировать {rIntaH:v}, т.е конструкцию, чтобы обозначить завершение процесса (сравните с суффиксом {-ta':v}).</column>
-      <column name="notes_zh_HK">{rIn:v:nolink}本身在無線電傳輸中用於指示傳輸結束，類似於「 over」。
+Сам по себе, {rIn:v:nolink} используется в радио передачах, чтобы обозначить окончание передаваемого сообщения, что очень похоже на "конец связи".[2]</column>
+      <column name="notes_zh_HK">該動詞與後綴 {-taH:v} 一起使用以形成 {rIntaH:v}，該結構用於表示終結（參見後綴 {-ta':v}）。[1]
 
-該動詞與後綴{-taH:v}一起使用以形成{rIntaH:v}，這是一種用於指示終結性的結構（請參見後綴{-ta':v}）。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Por si só, {rIn:v:nolink} é usado em transmissões de rádio para indicar o fim da transmissão, semelhante a "encerrado".
+{rIn:v:nolink} 本身在無線電傳輸中用於指示傳輸結束，類似於“over”。 [2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este verbo é usado com o sufixo {-taH:v} para formar {rIntaH:v}, uma construção usada para indicar finalidade (cf. o sufixo {-ta':v}) .[1]
 
-Este verbo é usado com o sufixo {-taH:v} para formar {rIntaH:v}, uma construção usada para indicar finalidade (cf. o sufixo {-ta':v}). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Itse asiassa {rIn:v:nolink}: tä käytetään radiolähetyksissä osoittamaan lähetyksen loppu, samanlainen kuin "yli".
+Por si só, {rIn:v:nolink} é usado em transmissões de rádio para indicar o fim da transmissão, semelhante a "over" .[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä verbiä käytetään loppuliitteen {-taH:v} kanssa muodostaen {rIntaH:v}, rakenteen, jota käytetään osoittamaan lopullisuutta (vrt. Loppuliite {-ta':v}).[1]
 
-Tätä verbiä käytetään loppuliitteen {-taH:v} kanssa muodostaen {rIntaH:v}, rakenteen, jota käytetään osoittamaan lopullisuutta (vrt. Loppuliite {-ta':v}). [AUTOTRANSLATED]</column>
+Itse asiassa {rIn:v:nolink}: tä käytetään radiolähetyksissä osoittamaan lähetyksen loppu, samanlainen kuin "yli".[2] [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -5415,7 +5591,7 @@ Tätä verbiä käytetään loppuliitteen {-taH:v} kanssa muodostaen {rIntaH:v},
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Star Trek VI:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6311,7 +6487,7 @@ Tämä viittaa myös musteeseen, kuten kumileimasimeen ({toqwIn:n}).[2] [AUTOTRA
       <column name="definition_fi">ylävartalo, torso</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{porgh:n}, {logh'ob:n}, {chor:n:1}, {Dub:n}, {joQ:n:1}, {DeS:n:1}, {'uS:n}, {volchaH:n}, {mong:n}, {nach:n}, {tIq:n}</column>
+      <column name="see_also">{porgh:n}, {logh'ob:n:1}, {chor:n:1}, {Dub:n}, {joQ:n:1}, {DeS:n:1}, {'uS:n}, {volchaH:n}, {mong:n}, {nach:n}, {tIq:n}</column>
       <column name="notes">Do not confuse this with {ro':n}.</column>
       <column name="notes_de">Verwechseln Sie dies nicht mit {ro':n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این را با {ro':n} اشتباه نگیرید. [AUTOTRANSLATED]</column>
@@ -9103,14 +9279,14 @@ This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SIp:n}, {vuj:v}, {ghIm:v}</column>
-      <column name="notes">The gas produced is called {SIp:n} (a general word for gas of any kind) or {Qep'It:n} (a gas produced within the body).[1] To distinguish between gas emission from different orifices, use a phrase involving {nuj:n}, {Hugh:n}, or {Sa'Hut:n}.[2]</column>
+      <column name="notes">The gas produced is called {SIp:n} (a general word for gas of any kind) or {Qep'It:n} (a gas produced within the body).[1] To distinguish between gas emission from different orifices, use a phrase involving {nuj:n}, {Hugh:n}, or {Sa'Hut:n:1}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
-      <column name="notes_sv">Den producerade gasen kallas {SIp:n} (ett allmänt ord för gas av alla slag) eller {Qep'It:n} (en gas som produceras i kroppen).[1] För att skilja mellan gasutsläpp från olika öppningar, använd en fras som involverar {nuj:n}, {Hugh:n} eller {Sa'Hut:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Получаемый газ называется {SIp:n} (общее слово для газа любого вида) или {Qep'It:n} (газ, вырабатываемый внутри тела).[1] Чтобы различать выбросы газа из разных отверстий, используйте фразу, включающую {nuj:n}, {Hugh:n} или {Sa'Hut:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">產生的氣體稱為{SIp:n}（任何種類的氣體的通用詞）或{Qep'It:n}（體內產生的氣體）。[1]要區分不同孔的氣體排放，請使用涉及{nuj:n}，{Hugh:n}或{Sa'Hut:n}的短語。[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">O gás produzido é chamado {SIp:n} (uma palavra geral para qualquer tipo de gás) ou {Qep'It:n} (um gás produzido no corpo).[1] Para distinguir entre emissão de gases de diferentes orifícios, use uma frase envolvendo {nuj:n}, {Hugh:n} ou {Sa'Hut:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tuotettua kaasua kutsutaan nimellä {SIp:n} (yleinen sana kaikenlaiselle kaasulle) tai {Qep'It:n} (kehossa tuotettu kaasu).[1]{nuj:n}{Hugh:n}{Sa'Hut:n}[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Den producerade gasen kallas {SIp:n} (ett allmänt ord för gas av alla slag) eller {Qep'It:n} (en gas som produceras i kroppen).[1] För att skilja mellan gasutsläpp från olika öppningar, använd en fras som involverar {nuj:n}, {Hugh:n} eller {Sa'Hut:n:1}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Получаемый газ называется {SIp:n} (общее слово для газа любого вида) или {Qep'It:n} (газ, вырабатываемый внутри тела).[1] Чтобы различать выбросы газа из разных отверстий, используйте фразу, включающую {nuj:n}, {Hugh:n} или {Sa'Hut:n:1}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">產生的氣體稱為{SIp:n}（任何種類的氣體的通用詞）或{Qep'It:n}（體內產生的氣體）。[1]要區分不同孔的氣體排放，請使用涉及{nuj:n}，{Hugh:n}或{Sa'Hut:n:1}的短語。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">O gás produzido é chamado {SIp:n} (uma palavra geral para qualquer tipo de gás) ou {Qep'It:n} (um gás produzido no corpo).[1] Para distinguir entre emissão de gases de diferentes orifícios, use uma frase envolvendo {nuj:n}, {Hugh:n} ou {Sa'Hut:n:1}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tuotettua kaasua kutsutaan nimellä {SIp:n} (yleinen sana kaikenlaiselle kaasulle) tai {Qep'It:n} (kehossa tuotettu kaasu).[1]{nuj:n}{Hugh:n}{Sa'Hut:n:1}[2] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">From the Latin "eructare", or the English "eructation". The belch definition came from {HQ 12.4:src}[1]. It was expanded to also mean fart in a message to the {KLI mailing list:src}.[2]</column>
       <column name="components"></column>
       <column name="examples"></column>
