@@ -104,8 +104,6 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon, 
         }
         );
        
-       logger.info(KDBNCount);
-
         //Make sure everything's here (sometimes the german is missing)
         if (emptyStruct.de == '' || emptyStruct.de == undefined)
             emptyStruct.de = emptyStruct.en;
