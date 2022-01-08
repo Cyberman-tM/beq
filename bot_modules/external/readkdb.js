@@ -18,7 +18,7 @@ var logger = winston.createLogger({
     ]
 });
 
-module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) {
+module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon, KDBNCount, KDBVCount) {
     //Read boQwI' xml files to build up internal JSON database
     var xmlFiles = fs.readdirSync('./KDB/');
     var xml = '';
@@ -72,6 +72,12 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon) 
                         break;
                     case 'part_of_speech':
                         emptyStruct.type = item.firstChild.text;
+                      
+                        if (emptyStruct.type == "n" || emptyStruct.type.startsWith("n:") )
+                           KDBNCount++;
+                        else if (emptyStruct.type == "v" || emptyStruct.type.startsWith("v:") )
+                           KDBVCount++;
+                      
                         break;
                     case 'definition':
                         emptyStruct.en = item.firstChild.text;

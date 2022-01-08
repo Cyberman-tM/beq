@@ -81,9 +81,12 @@ module.exports.Engine = function (beqTalk) {
 		module.exports.KDBVPJSon = []; //All verb prefixes
 		module.exports.KDBVSJSon = []; //All verb suffixes
 		module.exports.KDBNSJSon = []; //All noun suffixes
+		module.exports.KDBNCount = 0;  //Count of nouns
+		module.exports.KDBVCount = 0;  //Count of verbs
 
 		//Load XML data
-		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon,
+		        module.exports.KDBNCount, module.exports.KDBVCount);
 	}
 
 	var tmpTxt = "";
@@ -95,7 +98,7 @@ module.exports.Engine = function (beqTalk) {
 			tmpTxt += 'Text recoding version: ' + kTranscode.versInt + beqTalk.newline;
 			tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 			tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
-			tmpTxt += module.exports.KDBJSon.length + ' words in database.' + beqTalk.newline;
+			tmpTxt += module.exports.KDBJSon.length + ' entries in database.' + beqTalk.newline;
 			tmpTxt += beqTalk.newline;
 			beqTalk.message = tmpTxt;
 			break;
