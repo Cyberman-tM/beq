@@ -72,8 +72,6 @@ module.exports = function (KDBJSon, KDBPHJSon, KDBVPJSon, KDBVSJSon, KDBNSJSon, 
                         break;
                     case 'part_of_speech':
                         emptyStruct.type = item.firstChild.text;
-                      logger.info(emptyStruct.type);
-                      logger.info(emptyStruct.type.startsWith("n:"));
                         if (emptyStruct.type == "n" || emptyStruct.type.startsWith("n:") )
                            KDBNCount++;
                         else if (emptyStruct.type == "v" || emptyStruct.type.startsWith("v:") )
