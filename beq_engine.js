@@ -99,6 +99,7 @@ module.exports.Engine = function (beqTalk) {
 			tmpTxt += 'Running since ' + module.exports.startDateTime + beqTalk.newline;
 			tmpTxt += beqTalk.newline + 'Klingon Database from De\'vIDs boQwI\', ' + module.exports.KDBVer + beqTalk.newline;
 			tmpTxt += module.exports.KDBJSon.length + ' entries in database.' + beqTalk.newline;
+			tmpTxt += module.exports.KDBNCount + ' Nouns and ' + module.exports.KDBVCount + ' verbs' + beqTalk.newline;
 			tmpTxt += beqTalk.newline;
 			beqTalk.message = tmpTxt;
 			break;
