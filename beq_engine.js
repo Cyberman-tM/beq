@@ -85,7 +85,8 @@ module.exports.Engine = function (beqTalk) {
 		module.exports.KDBVCount = 0;  //Count of verbs
 
 		//Load XML data
-		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon);
+		readXML(module.exports.KDBJSon, module.exports.KDBPHJSon, module.exports.KDBVPJSon, module.exports.KDBVSJSon, module.exports.KDBNSJSon,
+		        module.exports.KDBNCount, module.exports.KDBVCount);
 	}
 
 	var tmpTxt = "";
