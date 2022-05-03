@@ -10,7 +10,6 @@
     "latest-version": "^5.1.0",
     "request": "^2.88.2",
     "requestify": "^0.2.5",
-    "restify": "^8.5.1",
     "winston": "^3.3.3",
     "xmldoc": "^1.1.2"
   }
