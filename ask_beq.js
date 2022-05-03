@@ -4,7 +4,7 @@ var versInt = '0.1.3	- Using the beq Engine!';
 var startDateTime = new Date().toLocaleString();
 
 var url = require('url');
-var restify = require('restify');
+//var restify = require('restify');
 var beq = require('./beq_engine.js');
 var beqTalkRaw = JSON.parse(beq.beqTalkDef);   //Example
 
@@ -123,7 +123,8 @@ function respond(req, res, next) {
   
   next();
 }
-
+/*
+Check restify for updates before restarting!
 var server = restify.createServer();
 
 server.get('ask_beq', respond);
@@ -139,5 +140,5 @@ server.listen(process.env.PORT || 5000, function()
 	beqTalk = beq.Engine(beqTalk);
 	console.log(beqTalk.message);
 });
-
+*/
 //--------------------------------------
