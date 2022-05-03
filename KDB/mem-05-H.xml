@@ -674,7 +674,7 @@ The request was for a musteloid (otter-like or wolverine-like animal).</column>
       <column name="definition_sv">sirap, sirap, en vätska mestadels gjord av socker [AUTOTRANSLATED]</column>
       <column name="definition_ru">патока, сироп, жидкость, в основном состоящая из сахара [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">糖漿，糖漿，一種主要由糖製成的液體 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">melaço, xarope, um líquido feito principalmente de açúcar [AUTOTRANSLATED]</column>
+      <column name="definition_pt">melaço, xarope, um líquido feito principalmente de açúcar</column>
       <column name="definition_fi">eräs siirappinen neste</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1239,7 +1239,7 @@ The request was for a musteloid (otter-like or wolverine-like animal).</column>
       <column name="antonyms"></column>
       <column name="see_also">{Haq:n}, {Haq:v:2}</column>
       <column name="notes">This word has a negative connotation in Klingon culture.[1]</column>
-      <column name="notes_de">Dieses Wort hat eine negative Konnotation in der klingonischen Kultur.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_de">Dieses Wort hat eine negative Konnotation in der klingonischen Kultur.[1]</column>
       <column name="notes_fa">این کلمه در فرهنگ کلینگون تأثیر منفی دارد.[1] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta ord har en negativ konnotation i Klingon-kulturen.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Слово имеет негативный оттенок в Клингонской культуре.[1]</column>
@@ -1282,7 +1282,7 @@ The request was for a musteloid (otter-like or wolverine-like animal).</column>
       <column name="antonyms"></column>
       <column name="see_also">{mun:v}, {nIS:v}, {Haq:v:1}</column>
       <column name="notes">This word has a negative connotation in Klingon culture.[1]</column>
-      <column name="notes_de">Dieses Wort hat eine negative Konnotation in der klingonischen Kultur.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_de">Dieses Wort hat eine negative Konnotation in der klingonischen Kultur.[1]</column>
       <column name="notes_fa">این کلمه در فرهنگ کلینگون تأثیر منفی دارد.[1] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta ord har en negativ konnotation i Klingon-kulturen.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Это слово имеет отрицательный оттенок в клингонской культуре.[1] [AUTOTRANSLATED]</column>
@@ -1308,6 +1308,49 @@ The request was for a musteloid (otter-like or wolverine-like animal).</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT p.151:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Haq</column>
+      <column name="part_of_speech">v:3,t,slang</column>
+      <column name="definition">tinker</column>
+      <column name="definition_de">basteln</column>
+      <column name="definition_fa">قلع و قمع [AUTOTRANSLATED]</column>
+      <column name="definition_sv">knåpa [AUTOTRANSLATED]</column>
+      <column name="definition_ru">возиться [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">修補匠 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">consertar (mexer para tentar consertár)</column>
+      <column name="definition_fi">värkätä, väsäillä</column>
+      <column name="synonyms">{tav neH:sen}, {'urgh neH:sen}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This literally means "perform surgery on" ({Haq:v:1}) and is used only if the tinkerer really knows what they're doing.</column>
+      <column name="notes_de">Dies bedeutet wörtlich "jemanden operieren" ({Haq:v:1}) und wird nur verwendet, wenn die bastelnde Person genau weiß, was sie macht.</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt">Isso significa literalmente "realizar cirurgia" ({Haq:v:1}) e é usado apenas se o consertador realmente souber o que está fazendo</column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2473,7 +2516,7 @@ Hyväksy kaksintaistelu sanomalla {vISo'be':sen@@vI-:v, So':v:1, -be':v} "En pii
       <column name="notes_fi">Katso eri tavoista lihan valmistamiseksi {wamwI' Ha'DIbaH:n}, {voDleH Ha'DIbaH:n} ja {qeyvaq Ha'DIbaH:n}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">A lip movement match for "animal".
 
-This was defined as "meat" in {TKD:src}, but as "meat, animal" in {TKDA:src}.</column>
+This was defined as "animal" in {TKD:src}, but as "meat, animal" in {TKDA:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4278,12 +4321,12 @@ Katso sormiin liittyvät verbit kohdasta {nItlh:n}. [AUTOTRANSLATED]</column>
       <column name="entry_name">Her'IS</column>
       <column name="part_of_speech">n:anim</column>
       <column name="definition">bird with a long neck and long legs</column>
-      <column name="definition_de">Vogel mit langem Hals, langen Beinen [AUTOTRANSLATED]</column>
+      <column name="definition_de">Vogel mit langem Hals and langen Beinen</column>
       <column name="definition_fa">پرنده ای با گردن بلند، پاهای بلند [AUTOTRANSLATED]</column>
       <column name="definition_sv">fågel med lång hals, långa ben [AUTOTRANSLATED]</column>
       <column name="definition_ru">птица с длинной шеей, длинными ногами [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">脖子長腿長的鳥 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">pássaro com pescoço comprido, pernas compridas [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pássaro com pescoço e pernas compridas</column>
       <column name="definition_fi">eräs flamingoa muistuttava lintu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4296,7 +4339,7 @@ Katso sormiin liittyvät verbit kohdasta {nItlh:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi">Tämä viittaa erääseen lintuun, jolla on pitkä nokka ja jalat.</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The original request behind this word was to translate "flamingo". The heron and the ibis are also birds with a long neck and long legs.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4339,7 +4382,7 @@ Katso sormiin liittyvät verbit kohdasta {nItlh:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The original request behind this word was to translate "flamingo".</column>
+      <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4935,7 +4978,7 @@ Katso sormiin liittyvät verbit kohdasta {nItlh:n}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">потеть, потеть [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">流汗、出汗</column>
       <column name="definition_pt">suar, transpirar</column>
-      <column name="definition_fi">hiki</column>
+      <column name="definition_fi">hikoilla</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SuynIj:n}</column>
@@ -5390,12 +5433,12 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/KArQlviVX
       <column name="entry_name">HIl</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">make someone's presence known</column>
-      <column name="definition_de">die Anwesenheit von jemandem bekannt machen [AUTOTRANSLATED]</column>
+      <column name="definition_de">die Anwesenheit von jemandem ankündigen</column>
       <column name="definition_fa">حضور کسی را معلوم کن [AUTOTRANSLATED]</column>
       <column name="definition_sv">göra någons närvaro känd [AUTOTRANSLATED]</column>
       <column name="definition_ru">сделать чье-то присутствие известным [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">讓人知道某人的存在 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">tornar a presença de alguém conhecida [AUTOTRANSLATED]</column>
+      <column name="definition_pt">tornar a presença de alguém conhecida</column>
       <column name="definition_fi">tehdä jonkun läsnäolo tunnetuksi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5418,7 +5461,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/KArQlviVX
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">announce</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -5433,12 +5476,12 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/KArQlviVX
           <column name="entry_name">HIl'egh</column>
           <column name="part_of_speech">v:i_c,deriv</column>
           <column name="definition">make oneself's presence known</column>
-          <column name="definition_de">sich bemerkbar machen [AUTOTRANSLATED]</column>
+          <column name="definition_de">auf sichselbst aufmerksam machen</column>
           <column name="definition_fa">حضور خود را نشان دهد [AUTOTRANSLATED]</column>
           <column name="definition_sv">göra sig känd [AUTOTRANSLATED]</column>
           <column name="definition_ru">заявить о себе [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">讓自己的存在為人所知 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">dar a conhecer a sua presença [AUTOTRANSLATED]</column>
+          <column name="definition_pt">fazer a sua presença conhecida</column>
           <column name="definition_fi">tehdä oma läsnäolo tunnetuksi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -5461,7 +5504,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/KArQlviVX
           <column name="examples_zh_HK"></column>
           <column name="examples_pt"></column>
           <column name="examples_fi"></column>
-          <column name="search_tags"></column>
+          <column name="search_tags">announce</column>
           <column name="search_tags_de"></column>
           <column name="search_tags_fa"></column>
           <column name="search_tags_sv"></column>
@@ -5784,12 +5827,12 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/KArQlviVX
       <column name="entry_name">HIt</column>
       <column name="part_of_speech">v:t</column>
       <column name="definition">think, have an inner conversation</column>
-      <column name="definition_de">mit sich selbst sprechen, denken [AUTOTRANSLATED]</column>
+      <column name="definition_de">denken, in Gedanken ein Selbstgespräch führen</column>
       <column name="definition_fa">با خود صحبت کن، فکر کن [AUTOTRANSLATED]</column>
       <column name="definition_sv">tala till sig själv, tänka [AUTOTRANSLATED]</column>
       <column name="definition_ru">говорить сам с собой, думать [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">自言自語，思考 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">fala consigo mesmo, pensa [AUTOTRANSLATED]</column>
+      <column name="definition_pt">fala consigo mesmo, pensar</column>
       <column name="definition_fi">puhua itselleen päänsä sisällä, ajatella</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -10140,6 +10183,49 @@ Tätä verbiä käytetään myös tavallisille monikulmioille ja polyhedeille.[2
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Ho' SIryoD</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">braces on teeth</column>
+      <column name="definition_de">Zahnspange</column>
+      <column name="definition_fa">braces on teeth [AUTOTRANSLATED]</column>
+      <column name="definition_sv">braces on teeth [AUTOTRANSLATED]</column>
+      <column name="definition_ru">braces on teeth [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">braces on teeth [AUTOTRANSLATED]</column>
+      <column name="definition_pt">aparelho dental</column>
+      <column name="definition_fi">hammasraudat</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{Ho':n:1}, {SIryoD:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">Ho' teywI'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">toothbrush</column>
@@ -11694,7 +11780,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/tAK-hgXMH
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {Hung buv rav:sen}: {patlh Hut:sen:nolink}[2]</column>
+▶ {Hung buv rav:n}[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>

@@ -2371,12 +2371,12 @@ Maltz ei tiennyt yleistä verbiä tälle[1] [AUTOTRANSLATED]</column>
       <column name="entry_name">Sa'Hut</column>
       <column name="part_of_speech">n:2</column>
       <column name="definition">back (exterior surface)</column>
-      <column name="definition_de">zurück (von etwas) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Rückseite (außen)</column>
       <column name="definition_fa">پشت (از چیزی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">tillbaka (av något) [AUTOTRANSLATED]</column>
       <column name="definition_ru">назад (чего-то) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">回到（某物） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">de volta (de algo) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">lado de trás, verso (de algo)</column>
       <column name="definition_fi">takapuoli, takaosa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -3878,12 +3878,12 @@ Jotkut {Qo'noS:n}:n tunnetuista alueista ovat:
       <column name="entry_name">SetqIn</column>
       <column name="part_of_speech">adv</column>
       <column name="definition">alternatively, instead, rather</column>
-      <column name="definition_de">alternativ, stattdessen, eher [AUTOTRANSLATED]</column>
+      <column name="definition_de">alternativ, stattdessen, eher</column>
       <column name="definition_fa">در عوض، در عوض، بلکه [AUTOTRANSLATED]</column>
       <column name="definition_sv">alternativt istället snarare [AUTOTRANSLATED]</column>
       <column name="definition_ru">альтернативно, вместо этого, скорее [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">或者，相反，而是 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">alternativamente, em vez disso, [AUTOTRANSLATED]</column>
+      <column name="definition_pt">alternativamente, em vez disso, em vez</column>
       <column name="definition_fi">vaihtoehtoisesti, sen sijaan, mieluummin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4354,7 +4354,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="entry_name">Se' HablI'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">radio</column>
-      <column name="definition_de">Radio</column>
+      <column name="definition_de">Radio, Funk</column>
       <column name="definition_fa">رادیو</column>
       <column name="definition_sv">radio [AUTOTRANSLATED]</column>
       <column name="definition_ru">радио [AUTOTRANSLATED]</column>
@@ -6003,7 +6003,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
       <column name="notes_fi">Tämä on vanha sana. Maltz piti tästä paremmin kuin {may' Sut:n:nolink}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">{Ho' SIryoD:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8820,12 +8820,17 @@ This verb is also used for the encryption of data (see {So':v:2}).</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">Jos kohdetta ei ole, piiloutuu aihe (esim. {nuqDaq So'taH yaS?:sen:nolink}[1]). Jos objektia on, kohde piilottaa objektin (esim. {Duj So':sen:nolink} tai {Duj So'lu'pu':sen:nolink}[2]).
-
-Tätä verbiä käytetään myös tietojen salaamiseen (katso {So':v:2}). [AUTOTRANSLATED]</column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes">"Show".</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.:sen}
+▶ {HIvmeH Duj So'lu'.:sen}
+▶ {maS'e' loQ So'be'bogh QIb:n}
+▶ {maS'e' So'bogh pagh:n}
+▶ {qabwIj vISo'be'.:sen}
+▶ {yISo'rup.:sen}
+▶ {yISo'Ha'rup, yIghuS.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8885,7 +8890,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">häive</column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2014:src}</column>
     </table>
         <table name="mem">
@@ -8929,7 +8934,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
           <column name="search_tags_ru"></column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
+          <column name="search_tags_fi">häive</column>
           <column name="source">[1] {Star Trek III:src}</column>
         </table>
         <table name="mem">
@@ -9019,7 +9024,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
           <column name="search_tags_ru"></column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
+          <column name="search_tags_fi">häive</column>
           <column name="source">[1] {TKD:src}, [2] {SkyBox 33:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src})</column>
         </table>
         <table name="mem">
@@ -9062,7 +9067,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
           <column name="search_tags_ru"></column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
+          <column name="search_tags_fi">häive</column>
           <column name="source">[1] {BoP:src}</column>
         </table>
         <table name="mem">
@@ -10714,7 +10719,7 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
       <column name="definition_sv">handhållen fläkt [AUTOTRANSLATED]</column>
       <column name="definition_ru">портативный вентилятор [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">手持風扇 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ventilador de mão [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ventilador de mão</column>
       <column name="definition_fi">viuhka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -10881,12 +10886,12 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
           <column name="entry_name">Sut veragh</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">button (clothing)</column>
-          <column name="definition_de">Knopf (Kleidung) [AUTOTRANSLATED]</column>
+          <column name="definition_de">Knopf (an Kleidung)</column>
           <column name="definition_fa">دکمه (لباس) [AUTOTRANSLATED]</column>
           <column name="definition_sv">knapp (kläder) [AUTOTRANSLATED]</column>
           <column name="definition_ru">пуговица (одежда) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">鈕扣（衣服） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">botão (roupa) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">botão (roupa)</column>
           <column name="definition_fi">nappi (vaatteessa)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>

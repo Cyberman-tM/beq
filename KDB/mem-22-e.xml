@@ -373,7 +373,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="definition_ru">бригадир</column>
       <column name="definition_zh_HK">準將 [AUTOTRANSLATED]</column>
       <column name="definition_pt">brigadeiro</column>
-      <column name="definition_fi">prikaatinkenraali</column>
+      <column name="definition_fi">prikaatikenraali</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -571,7 +571,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
-          <column name="notes"></column>
+          <column name="notes">If the cards were organized by suit, and within each suit the cards were in numerical order, then not only would one have an {'echletHom vey:n:nolink}, one would also have four {'echletHom qolmey:n@@'echletHom:n, qol:n:2h, -mey:n}.[2]</column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
           <column name="notes_sv"></column>
@@ -597,7 +597,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {qep'a' 25 (2018):src}</column>
+          <column name="source">[1] {qep'a' 25 (2018):src}, [2] {Saarbrücken qepHom'a' 2021:src}</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1025,7 +1025,9 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The request which resulted in this word was categorised as a body part question by the requester, but it seems the word isn't a body part.</column>
+      <column name="hidden_notes">{je:adv} "too" + {latlh:n} "more".
+
+The request which resulted in this word was categorised as a body part question by the requester, but it seems the word isn't a body part.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1772,7 +1774,7 @@ This was revealed to a small group in 2006 at {qep'a' 13:src}, but only posted t
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The negative existential particle in Hebrew is אין (ʔen).</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>

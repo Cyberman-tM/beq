@@ -2077,8 +2077,8 @@ The following example shows that the verb of quality can take a suffix:
       <column name="source">[1] {TKDA:src}</column>
     </table>
     <table name="mem">
-      <column name="_id"></column>
       <!-- This may be a reference to Klingonist {lay'tel SIvten:n:name,nolink}, or {lay'SIv:n:name} for short. -->
+      <column name="_id"></column>
       <column name="entry_name">la'SIv</column>
       <column name="part_of_speech">n:anim</column>
       <column name="definition">turtle, tortoise</column>
@@ -2119,6 +2119,49 @@ The following example shows that the verb of quality can take a suffix:
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2012.08.03:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">la'yIgh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">spice</column>
+      <column name="definition_de">Gewürz</column>
+      <column name="definition_fa">spice [AUTOTRANSLATED]</column>
+      <column name="definition_sv">spice [AUTOTRANSLATED]</column>
+      <column name="definition_ru">spice [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">spice [AUTOTRANSLATED]</column>
+      <column name="definition_pt">especiaria</column>
+      <column name="definition_fi">mauste</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2950,7 +2993,7 @@ Tätä sanaa voidaan käyttää viittaamaan matkustamiseen erityistarkoituksessa
       <column name="definition_ru">фастфуд, дорожная еда</column>
       <column name="definition_zh_HK">旅遊食品、快餐</column>
       <column name="definition_pt">comida de viagem, fast food</column>
-      <column name="definition_fi">pikaruoka</column>
+      <column name="definition_fi">noutoruoka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -2972,14 +3015,14 @@ Tätä sanaa voidaan käyttää viittaamaan matkustamiseen erityistarkoituksessa
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">takeaway, take-away, take away, takeout, take-out, take out</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">pikaruoka</column>
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
@@ -4573,7 +4616,7 @@ Tätä sanaa voidaan käyttää kuvaannollisesti. On idioomi {let mInDu'Daj; Sep
       <column name="notes_zh_HK">這個想法是動詞的主語看起來或表現得像其他東西（或某人）或代表其他東西（或某人）。像{ghet:v}一樣，它沒有欺詐或任何卑鄙的含義。對像是被模擬的事物或被模仿的人。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">A idéia é que o sujeito do verbo se pareça ou se comporte com algo (ou alguém) ou represente algo (ou alguém). Como o {ghet:v}, ele não tem conotação de fraude ou qualquer coisa oculta. O objeto é a coisa que está sendo simulada ou a pessoa que está sendo representada. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Ajatuksena on, että verbin aihe näyttää tai käyttäytyy kuin jotain (tai joku) tai edustaa jotain (tai jotakuta) muuta. Kuten {ghet:v}, sillä ei ole merkitystä petoksille eikä mitään aliarvioitua. Kohde on simuloitu asia tai toisena henkilönä esiintyminen. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The lowercase "L" and uppercase "I" look alike and are often confused when Klingon is written in a sans serif typeface.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {'IDnar pIn'a' lIl:sen@@'IDnar pIn'a':n, lIl:v} "he/she impersonates a wizard (non-fraudulently)"</column>
@@ -4721,7 +4764,9 @@ Kun tietokone (tai tietokonejärjestelmä) on verkossa, sanotaan että se "jakaa
       <column name="notes_zh_HK">這只是{lIn:v:1}在計算機網絡環境中的應用。 Klingons認為在線的計算機（或計算機系統）是「共享」的。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta é apenas a aplicação do {lIn:v:1} a um contexto de rede de computadores. Os klingons pensam em um computador (ou sistema de computador) que está online como "compartilhamento". [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on vain {lIn:v:1} -sovelluksen käyttö tietokoneverkkokontekstissa. Klingonit ajattelevat tietokonetta (tai tietokonejärjestelmää), joka on verkossa "jakamisena". [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">The definition was not given. It's just explained that going online would use the verb {lIn:v:2,nolink}.</column>
+      <column name="hidden_notes">On"lin"e.
+
+The definition was not given. It's just explained that going online would use the verb {lIn:v:2,nolink}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5254,7 +5299,7 @@ Kun tietokone (tai tietokonejärjestelmä) on verkossa, sanotaan että se "jakaa
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">mouse, rat</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -6135,7 +6180,7 @@ Tarvittaessa matemaattisessa keskustelussa etuliitettä ei käytetä, vaikka nim
       <column name="definition_fi">veli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{be'nI':n}</column>
+      <column name="see_also">{be'nI':n}, {qongmeS:n}</column>
       <column name="notes">A "brother-in-law" is {loDnI' loDnal:n@@loDnI':n, loDnal:n} or {be'nI' loDnal:n@@be'nI':n, loDnal:n}.</column>
       <column name="notes_de">Ein "Schwager" ist {loDnI' loDnal:n@@loDnI':n, loDnal:n} oder {be'nI' loDnal:n@@be'nI':n, loDnal:n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
@@ -6644,12 +6689,12 @@ Tarvittaessa matemaattisessa keskustelussa etuliitettä ei käytetä, vaikka nim
       <column name="entry_name">logh'ob</column>
       <column name="part_of_speech">n:2</column>
       <column name="definition">front (exterior surface)</column>
-      <column name="definition_de">vor (vor etwas) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Vorderseite (außen)</column>
       <column name="definition_fa">جلو (از چیزی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">framför (för något) [AUTOTRANSLATED]</column>
       <column name="definition_ru">перед (чего-то) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">（某物的）前面 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">frente (de algo) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">frente (de algo)</column>
       <column name="definition_fi">etupuoli, etuosa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>

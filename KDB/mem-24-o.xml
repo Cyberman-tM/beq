@@ -974,7 +974,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
           <column name="definition_sv">nth [AUTOTRANSLATED]</column>
           <column name="definition_ru">nth [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">第 n 個 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">enésimo [AUTOTRANSLATED]</column>
+          <column name="definition_pt">enésimo</column>
           <column name="definition_fi">"n:s", mielivaltainen kohta sarjassa</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -1066,7 +1066,7 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
           <column name="definition_sv">flera gånger [AUTOTRANSLATED]</column>
           <column name="definition_ru">несколько раз [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">幾次 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">várias vezes [AUTOTRANSLATED]</column>
+          <column name="definition_pt">várias vezes</column>
           <column name="definition_fi">useita kertoja</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -1104,12 +1104,12 @@ Um verbo comumente usado com {'olQan:n:nolink} é {'uch:v:1}. [AUTOTRANSLATED]</
           <column name="entry_name">'op ret</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">at some point in the past</column>
-          <column name="definition_de">irgendwann in der Vergangenheit [AUTOTRANSLATED]</column>
+          <column name="definition_de">irgendwann in der Vergangenheit</column>
           <column name="definition_fa">در مقطعی در گذشته [AUTOTRANSLATED]</column>
           <column name="definition_sv">någon gång i det förflutna [AUTOTRANSLATED]</column>
           <column name="definition_ru">в какой-то момент в прошлом [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">在過去的某個時候 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">em algum ponto no passado [AUTOTRANSLATED]</column>
+          <column name="definition_pt">em algum ponto no passado</column>
           <column name="definition_fi">jonakin hetkenä menneisyydessä</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -2522,7 +2522,7 @@ Tämä sana on myös kirjoitettu {'orghenya'ngan:n:nolink}. [AUTOTRANSLATED]</co
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">In 2014, following the definition of {'otlhQeD:n}, this was glossed as "the corresponding scientist, someone who studies quantum mechanics". It was subsequently given the stand-alone definition of "quantum physicist" in 2015.</column>
+      <column name="hidden_notes">In 2014, following the definition of {'otlhQeD:n}, it was stated that "a practician of that is an {'otlhtej:n:nolink}". It was subsequently given the stand-alone definition of "quantum physicist" in 2015.</column>
       <column name="components">{'otlh:n}, {tej:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>

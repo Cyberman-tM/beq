@@ -1239,7 +1239,7 @@ Do not confuse this suffix with the pronoun {'e':n:pro}.</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The example from {TKD:src} contains an error: the {jI-:sen:nolink} prefix was omitted by mistake.[1]
+      <column name="hidden_notes">The example from {TKD:src} contains an error: the {jI-:sen:nolink} prefix was omitted by mistake.[8]
 
 In {HQ 4.2:src}, this suffix is also described as a focus marker.[4]</column>
       <column name="components"></column>
@@ -1264,7 +1264,7 @@ In {HQ 4.2:src}, this suffix is also described as a focus marker.[4]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD 3.3.5:src}, [2] {TKD 6.3:src}, [3] {TKDA 6.7:src}, [4] {HQ 4.2, p.5-6, Jun. 1995:src}, [5] {KGT p.23:src}, [6] {SkyBox cards:src}, [7] {paq'batlh 1ed p.102-103:src}</column>
+      <column name="source">[1] {TKD 3.3.5:src}, [2] {TKD 6.3:src}, [3] {TKDA 6.7:src}, [4] {HQ 4.2, p.5-6, Jun. 1995:src}, [5] {KGT p.23:src}, [6] {SkyBox cards:src}, [7] {paq'batlh 1ed p.102-103:src}, [8] {KLI mailing list 2021.12.21:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1281,17 +1281,32 @@ In {HQ 4.2:src}, this suffix is also described as a focus marker.[4]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">When this suffix is used, the verb prefix must indicate "no object".</column>
-      <column name="notes_de">Wenn dieses Suffix verwendet wird, muss das Verbpräfix "kein Objekt" angeben. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">هنگامی که از این پسوند استفاده می شود ، پیشوند فعل باید "no object" باشد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">När detta suffix används måste verbprefixet indikera "inget objekt". [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Когда этот суффикс используется, префикс глагола должен указывать «нет объекта». [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">使用此後綴時，動詞前綴必須指示「無對象」。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Quando esse sufixo é usado, o prefixo do verbo deve indicar "nenhum objeto". [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Kun tätä pääteosaa käytetään, verbin etuliitteen on ilmoitettava "ei objektia". [AUTOTRANSLATED]</column>
+      <column name="notes">When this suffix is used, the verb prefix must indicate "no object".[1]
+
+For machines, mechanical devices, automatic doors, etc., this suffix can indicate that something happens "automatically".[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes">"Ego".</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {boq'egh:v}
+▶ {boqHa''egh:v}
+▶ {HIl'egh:v}
+▶ {HoH'egh:v}
+▶ {jIb'egh:v}
+▶ {pe''egh:v}
+▶ {tatlh'egh:v}
+▶ {potlhbe'chugh yay qatlh pe''eghlu'?:sen}
+▶ {'ang'eghQo' quv Hutlhbogh jagh neH ghobtaHvIS ghaH.:sen}
+▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.:sen}
+▶ {pewuv'egh!:sen}
+▶ {poS'eghmoH lojmIt:sen@@poS:v, -'egh:v, -moH:v, lojmIt:n} "the door opens automatically" (literally, "the door opens itself")[2]
+▶ {'or'egh muD Duj:sen@@'or:v, -'egh:v, muD Duj:n} "the airplane runs automatically, the airplane is on autopilot" (literally, "the airplane operates itself")[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1307,7 +1322,7 @@ In {HQ 4.2:src}, this suffix is also described as a focus marker.[4]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD 4.2.1:src}</column>
+      <column name="source">[1] {TKD 4.2.1:src}, [2] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

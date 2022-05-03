@@ -3463,6 +3463,49 @@ It's unclear what sense of "fair" is meant by this word.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ma'egh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">premiere</column>
+      <column name="definition_de">Premiere, Erstaufführung</column>
+      <column name="definition_fa">premiere [AUTOTRANSLATED]</column>
+      <column name="definition_sv">premiere [AUTOTRANSLATED]</column>
+      <column name="definition_ru">premiere [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">premiere [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pré-estreia, premiere</column>
+      <column name="definition_fi">ensi-ilta</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ma'to'vor</column>
       <column name="part_of_speech">n</column>
       <column name="definition">Mauk-to'Vor ritual</column>
@@ -3477,7 +3520,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="antonyms"></column>
       <column name="see_also">{ma'veq:n}, {'aDanjI':n:extcan}</column>
       <column name="notes">A death ritual that allows one who has lost honor to die well and go to Sto-Vo-Kor by being honorably killed by a House-mate or someone equally close.</column>
-      <column name="notes_de">Ein Todesritual, das es jemandem, der die Ehre verloren hat, ermöglicht, gut zu sterben und nach Sto-Vo-Kor zu gehen, indem er von einem Mitbewohner oder einer ähnlich nahen Person ehrenvoll getötet wird. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Ein Todesritual, das es jemandem, der die Ehre verloren hat, ermöglicht, gut zu sterben und nach Sto-Vo-Kor zu gehen, indem er von einem Mitbewohner oder einer ähnlich nahen Person ehrenvoll getötet wird.</column>
       <column name="notes_fa">مراسم مرگ که به کسی که افتخار خود را از دست داده اجازه می دهد تا به خوبی مرد و به استو-و-کور برود با افتخار توسط یک همسر مجلس یا کسی که به همان اندازه نزدیک کشته شود. [AUTOTRANSLATED]</column>
       <column name="notes_sv">En dödsritual som gör att en som har tappat ära att dö väl och gå till Sto-Vo-Kor genom att hederligt dödas av en kamrat eller någon lika nära. [AUTOTRANSLATED]</column>
       <column name="notes_ru">Смертельный ритуал, который позволяет тому, кто потерял честь, умереть достойно и почить в Стовокорре, будучи убитым. Ритуал проводит член дома, в котором состоит Клингон, или кто-то достаточно близкий.</column>
@@ -4141,12 +4184,12 @@ There are situations in which a Klingon might actually say {DaH jImeH:sen:nolink
       <column name="entry_name">mel'ogh</column>
       <column name="part_of_speech">n</column>
       <column name="definition">chrysalis</column>
-      <column name="definition_de">Puppe [AUTOTRANSLATED]</column>
+      <column name="definition_de">Puppe, verpupptes Insekt</column>
       <column name="definition_fa">کریسالیس [AUTOTRANSLATED]</column>
       <column name="definition_sv">puppa [AUTOTRANSLATED]</column>
       <column name="definition_ru">куколка [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">蛹 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">crisálida [AUTOTRANSLATED]</column>
+      <column name="definition_pt">crisálida, pupa, ninfa</column>
       <column name="definition_fi">(hyönteisen) kotelo</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4570,6 +4613,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
+      <!-- TODO: Russian (and possibly Finnish) notes need to be updated to match the English one. -->
       <column name="_id"></column>
       <column name="entry_name">meQ</column>
       <column name="part_of_speech">v:1,ambi,klcp1</column>
@@ -4580,21 +4624,33 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="definition_ru">гореть, сжигать, обжечь, спалить, получить ожог</column>
       <column name="definition_zh_HK">燒</column>
       <column name="definition_pt">queimar</column>
-      <column name="definition_fi">polttaa, palaa</column>
+      <column name="definition_fi">palaa; polttaa, kypsentää (lihaa); olla poltettu, kypsennetty</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mIQ:v}</column>
-      <column name="notes">If there is no object, then the subject is the thing burning, e.g., {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] If there is an object, then the subject is burning the object, e.g., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} can also be used adjectivally, e.g., {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]</column>
+      <column name="notes">If there is no object, then the subject is the thing burning, e.g., {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] If there is an object, then the subject is burning the object, e.g., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} can also be used adjectivally, e.g., {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4] In addition to this verb's usage with an object, the form {meQmoH:v@@meQ:v:1, -moH:v} is used to mean "set on fire, burn" (see examples).[5]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru">Если нет объекта, тогда субъект это вещь, которая горит, например {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] Если есть объект, тогда субъект сжигает объект, например., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} может также использоваться для прикладных вещей, например, {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
+      <column name="notes_fi">Tällä verbillä on kolme merkitystä. Se on joko intransitiivinen "palaa" (esim. {meQtaHbogh qachDaq Suv qoH neH.:sen}[2]), jolla on normaalisti kausatiivi "polttaa, sytyttää tuleen" {meQmoH:v:nolink}[5]. Ainakin ruoan yhteydessä sillä on myös transitiivinen merkitys "polttaa, kypsentää" (esim. {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3]) ja adjektiivinen merkitys "olla poltettu, kypsennetty" (esim. {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]).</column>
       <column name="hidden_notes">In the sentence from {CK:src}, {tIv:sen:nolink} should have been {lutIv:sen:nolink} since {tera'nganpu':n:nolink} is plural.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {jIbDaj lumeQmoH:sen:nolink}
+   {jIbDaj lumeQmoH:sen:nolink}
+   {qul bIQtIq qulHommey:sen:nolink}
+  "Sparks from the fire river
+   Caught his hair,
+   Caught his hair."[5]
+▶ {qeylIS Qaw' 'e' nIDmeH:sen:nolink}
+   {yerDaj weH molor:sen:nolink}
+   {'ej juH qachDaj meQmoH:sen:nolink}
+  "Molor did not destroy Kahless
+   By burning his house
+   Or ravaging his lands."[5]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4610,7 +4666,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {TKW p.111:src}, [3] {KGT p.191:src}, [4] {CK:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {TKW p.111:src}, [3] {KGT p.191:src}, [4] {CK:src}, [5] {paq'batlh p.86-87,114-115:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
@@ -5872,7 +5928,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">mIllogh qol</column>
-          <column name="part_of_speech">n</column>
+          <column name="part_of_speech">n:deriv</column>
           <column name="definition">animation, cartoon</column>
           <column name="definition_de">Animation, Zeichentrick</column>
           <column name="definition_fa">انیمیشن ، کارتون [AUTOTRANSLATED]</column>
@@ -5884,7 +5940,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
-          <column name="notes">This refers to animation only, and not to printed cartoons in the newspaper.[1]</column>
+          <column name="notes">This refers to animation only, and not to printed cartoons in the newspaper.[1] Even though {qol:n:2h} refers to a multitude of things, they are being treated as a collection, so one would say {qolmey:n@@qol:n:2h, -mey:n} for multiple cartoons.[2]</column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
           <column name="notes_sv"></column>
@@ -5892,8 +5948,8 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
           <column name="notes_zh_HK"></column>
           <column name="notes_pt"></column>
           <column name="notes_fi"></column>
-          <column name="hidden_notes">At the Q &amp; A session at {Saarbrücken qepHom'a' 2021:src}, it was explained that {qol:n:nolink} is a noun, but its meaning was not revealed.[2]</column>
-          <column name="components">{mIllogh:n}, {qol:n:hyp,nolink}</column>
+          <column name="hidden_notes">At the Q &amp; A session at {Saarbrücken qepHom'a' 2021:src}, it was explained that {qol:n:2h,nolink} is a noun, but its meaning was not revealed then. The meaning was subsequently revealed in the booklet, which was published later.[2]</column>
+          <column name="components">{mIllogh:n}, {qol:n:2h}</column>
           <column name="examples"></column>
           <column name="examples_de"></column>
           <column name="examples_fa"></column>
@@ -7519,7 +7575,7 @@ The appropriate word for a surgery scar was explained during the Q &amp; A sessi
       <column name="definition_fi">menettely, prosessi, kehityskulku?; askel, vaihe (prosessissa); resepti, kaava</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nab:n}, {HIl'aD:n}</column>
+      <column name="see_also">{nab:n}, {HIl'aD:n}, {Deryat:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7555,12 +7611,12 @@ This was used to refer to a concept in computer programming, namely, a compartme
       <column name="entry_name">mIwba'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">trial (legal)</column>
-      <column name="definition_de">Gerichtsverfahren (legal) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Gerichtsverfahren</column>
       <column name="definition_fa">محاکمه (قانونی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">rättegång (laglig) [AUTOTRANSLATED]</column>
       <column name="definition_ru">суд (юридический) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">審判（法律） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">julgamento (legal) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">julgamento (legal)</column>
       <column name="definition_fi">oikeudenkäynti, oikeusprosessi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -7891,7 +7947,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="definition_fi">matematiikka</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
-          <column name="see_also">{mI' tej:n}, {ghIqtu':n}, {wItte':n}</column>
+          <column name="see_also">{mI'tej:n}, {ghIqtu':n}, {wItte':n}</column>
           <column name="notes"></column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
@@ -7922,7 +7978,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
         </table>
         <table name="mem">
           <column name="_id"></column>
-          <column name="entry_name">mI' tej</column>
+          <column name="entry_name">mI'tej</column>
           <column name="part_of_speech">n:being,deriv</column>
           <column name="definition">mathematician</column>
           <column name="definition_de">Mathematiker</column>
@@ -7943,7 +7999,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="notes_zh_HK"></column>
           <column name="notes_pt"></column>
           <column name="notes_fi"></column>
-          <column name="hidden_notes">This word appeared in the booklet with a space, despite {mI'QeD:n:nolink} (revealed earlier) and {'otlhtej:n} (in the same booklet) being written without a space.</column>
+          <column name="hidden_notes">This word was printed in the {Saarbrücken qepHom'a' 2016:src} booklet with a space. In a clarification about terminology for sciences and scientists printed in the {Saarbrücken qepHom'a' 2019:src} booklet, this was implied to be an error.</column>
           <column name="components">{mI':n}, {tej:n}</column>
           <column name="examples"></column>
           <column name="examples_de"></column>
@@ -7953,7 +8009,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="examples_zh_HK"></column>
           <column name="examples_pt"></column>
           <column name="examples_fi"></column>
-          <column name="search_tags">mI'tej</column>
+          <column name="search_tags">mI' tej</column>
           <column name="search_tags_de"></column>
           <column name="search_tags_fa"></column>
           <column name="search_tags_sv"></column>
@@ -7961,7 +8017,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}</column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2016:src}, [2] {Saarbrücken qepHom'a' 2019:src}</column>
         </table>
         <table name="mem">
           <column name="_id"></column>
@@ -8021,7 +8077,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{moQbara':n}, {marvargh:n}, {mI'wI':n}, {pIqcho':n}</column>
-      <column name="notes"></column>
+      <column name="notes">The object of this verb can be exercises such as {jeqpel:n} or {ngolpel:n}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -8047,7 +8103,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8232,7 +8288,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
       <column name="definition_ru">быть одному, быть одиноким</column>
       <column name="definition_zh_HK">一個人 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser sozinho</column>
-      <column name="definition_fi">olla yksin, olla yksinäinen</column>
+      <column name="definition_fi">olla yksin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tay':v}, {nIteb:adv}, {neH:adv}, {'ub:v}</column>
@@ -9395,7 +9451,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="definition_ru">роба, халат, мантия</column>
       <column name="definition_zh_HK">長袍</column>
       <column name="definition_pt">roupão</column>
-      <column name="definition_fi">kaapu, viitta; iltapuku?</column>
+      <column name="definition_fi">kaapu, viitta</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Sut:n}, {ngup:n:1}, {paH:n}, {'eSqa':n}, {namyaS:n}</column>
@@ -9407,7 +9463,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">To "mope around" is an activity stereotypically done in a bathrobe.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -12608,7 +12664,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="entry_name">muylIS</column>
       <column name="part_of_speech">n:body</column>
       <column name="definition">eyelash</column>
-      <column name="definition_de">Augenlid</column>
+      <column name="definition_de">Wimper</column>
       <column name="definition_fa">مژه</column>
       <column name="definition_sv">ögonhår [AUTOTRANSLATED]</column>
       <column name="definition_ru">ресница [AUTOTRANSLATED]</column>

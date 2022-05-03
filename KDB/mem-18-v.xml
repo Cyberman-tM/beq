@@ -1919,12 +1919,12 @@ Val Kilmer portrayed Batman in the movie "Batman Forever".</column>
           <column name="entry_name">vatlhmoH</column>
           <column name="part_of_speech">v:t_c,deriv</column>
           <column name="definition">roll up (a scroll)</column>
-          <column name="definition_de">aufrollen (eine Schriftrolle) [AUTOTRANSLATED]</column>
+          <column name="definition_de">aufrollen (z.B. eine Schriftrolle)</column>
           <column name="definition_fa">جمع کردن (یک طومار) [AUTOTRANSLATED]</column>
           <column name="definition_sv">rulla ihop (en rulla) [AUTOTRANSLATED]</column>
           <column name="definition_ru">свернуть (свиток) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">捲起（捲軸） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">enrolar (um pergaminho) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">enrolar (um pergaminho)</column>
           <column name="definition_fi">kääriä rullalle</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -2211,7 +2211,7 @@ Toisin kuin {pIl:v}, tämä viittaa itse motivaatioon. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Visually, "v" and "y" look triangular and there are two "y"s.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4486,7 +4486,7 @@ Em {Klingon Monopoly:src}, "Estacionamento gratuito" é traduzido como {vergh 'a
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{chovnatlh:n}, {'aplo':n}</column>
-      <column name="notes"></column>
+      <column name="notes">If the things in the set are connected or arranged in some way, then an appropriate word might be {qol:n:2h}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4516,7 +4516,7 @@ Em {Klingon Monopoly:src}, "Estacionamento gratuito" é traduzido como {vergh 'a
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {Klingon Monopoly:src}</column>
+      <column name="source">[1] {Klingon Monopoly:src}, [2] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5927,7 +5927,7 @@ Katso idioomaattinen ilmaisu, jota käytetään käskemään jotakuta liikkumaan
       <column name="entry_name">vIt</column>
       <column name="part_of_speech">v:t,klcp1</column>
       <column name="definition">tell the truth</column>
-      <column name="definition_de">wahrheit sprechen</column>
+      <column name="definition_de">die Wahrheit sprechen</column>
       <column name="definition_fa">حقیقت را بگو [AUTOTRANSLATED]</column>
       <column name="definition_sv">säga sanningen</column>
       <column name="definition_ru">говорить правду</column>

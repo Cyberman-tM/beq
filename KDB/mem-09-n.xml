@@ -99,7 +99,7 @@
       <column name="definition_fi">suunnitelma, menettely</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mIw:n}, {nab:v}</column>
+      <column name="see_also">{mIw:n}, {nab:v}, {Deryat:n}</column>
       <column name="notes">This word refers to the planning of an event, and not to the plan of a physical object (i.e., a blueprint, which would be a {pu'jIn:n}).</column>
       <column name="notes_de">Dieses Wort bezieht sich auf die Planung eines Ereignisses und nicht auf den Plan eines physischen Objekts (d. H. Eine Blaupause, die eine {pu'jIn:n} wäre). [AUTOTRANSLATED]</column>
       <column name="notes_fa">این کلمه به برنامه ریزی یک رویداد و نه به برنامه ریزی یک شیء فیزیکی اشاره دارد (یعنی یک طرح که می تواند یک {pu'jIn:n} باشد). [AUTOTRANSLATED]</column>
@@ -3477,7 +3477,7 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">Нег'Вар(название крейсера)</column>
       <column name="definition_zh_HK">Negh'Var（船隻） [AUTOTRANSLATED]</column>
       <column name="definition_pt">Negh'Var (navio)</column>
-      <column name="definition_fi">eräs alusluokka, Negh'Var</column>
+      <column name="definition_fi">eräs alustyyppi, Negh'Var</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Duj:n:1}</column>
@@ -4541,12 +4541,12 @@ Kun sitä käytetään esineisiin, jotka tulevat pareittain, kuten sukat ja käs
       <column name="entry_name">neSngech</column>
       <column name="part_of_speech">n:anim</column>
       <column name="definition">dormouse-like animal</column>
-      <column name="definition_de">Siebenschläfer-ähnliches Tier [AUTOTRANSLATED]</column>
+      <column name="definition_de">Siebenschläfer-ähnliches Tier</column>
       <column name="definition_fa">حیوان خوابگاه مانند [AUTOTRANSLATED]</column>
       <column name="definition_sv">dormliknande djur [AUTOTRANSLATED]</column>
       <column name="definition_ru">сонеподобное животное [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">像睡鼠的動物 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">animal semelhante a arganazes [AUTOTRANSLATED]</column>
+      <column name="definition_pt">animal semelhante ao arganaz (semelhante ao tuco-tuco) </column>
       <column name="definition_fi">eräs pähkinähiirtä muistuttava eläin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5741,7 +5741,7 @@ A line which was cut from {Star Trek Into Darkness:src} reveals that the person 
       <column name="definition_fi">polttoaine</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{yItQet:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8818,7 +8818,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_zh_HK">它遠不及{qa'rol:n}這麼大，這確實很大。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Não é nem de longe tão grande quanto um {qa'rol:n}, que é realmente grande. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Se ei ole läheskään yhtä suuri kuin {qa'rol:n}, mikä on todella iso. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">This is a reference to "The Raven" by Poe.</column>
+      <column name="hidden_notes">This is a reference to "The Raven" by Poe, in which the word "nevermore" ({not:adv}, {-qa':v}) is repeated.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -9893,7 +9893,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="notes">This is a loanword, but the direction of borrowing is unclear.[2; 3; 4] The victim is the object of the verb.[4]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -9919,7 +9919,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {KLI mailing list 1996.12.27:src}, [3] {KLI mailing list 1997.09.18:src}, [4] {KLI mailing list 2004.08.05:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

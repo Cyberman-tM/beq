@@ -902,7 +902,7 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
       <column name="definition_fi">kirja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghItlh:n}, {Se'vIr:n}, {yorgh:n}, {HommaH:n}</column>
+      <column name="see_also">{ghItlh:n}, {Se'vIr:n}, {yorgh:n}, {HommaH:n}, {bertlham 'echlet:n}, {bI'reS 'echlet:n}, {wIlHay:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2047,14 +2047,14 @@ Huomaa, että tähtijärjestelmän Klingon-termi on {Hovtay':n}. [AUTOTRANSLATED
       <column name="hidden_notes">"Patch".</column>
       <column name="components"></column>
       <column name="examples">
-▶ {Hung buv rav:sen}: {patlh Hut:sen:nolink} "Classified Level 9 and Above"[3]
+▶ {Hung buv rav:n}[3]
 ▶ {qaSDI' nenghep, qa' patlh chu' chav tlhIngan SuvwI'.:sen:nolink} "The Age of Ascension marks a new level of spiritual attainment by a Klingon warrior."[4]
 ▶ {SIQwI' lu'oy'moHmeH juppu'Daj 'oy'naQmey lo' chaH. SuvwI' qa' patlh veb chavlaHmeH tlhIngan lo'chu' chaH. toDujDaj toblu'.:sen:nolink} "The Painstik is employed by friends of the recipent who use the devices to inflict pain in a manner which will allow the Klingon to attain a higher state of spirituality as a warrior, proving his mettle."[5]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
-▶ {Hung buv rav:sen}: {patlh Hut:sen:nolink} "Объявленный уровень от 9 и выше"[3]
+▶ {Hung buv rav:n}[3]
 ▶ {qaSDI' nenghep, qa' patlh chu' chav tlhIngan SuvwI'.:sen:nolink} "Возраст взросления знаменует новый уровень духовных достижений Клингонским воином."[4]
 ▶ {SIQwI' lu'oy'moHmeH juppu'Daj 'oy'naQmey lo' chaH. SuvwI' qa' patlh veb chavlaHmeH tlhIngan lo'chu' chaH. toDujDaj toblu'.:sen:nolink} "Посох боли употребляется друзьями посвящаемого, которые используют устройство, чтобы причинить боль способом, который позволит Клингону достигнуть более высокого духовного состояния, как воин, доказывая его храбрость."[5]</column>
       <column name="examples_zh_HK"></column>
@@ -5480,7 +5480,9 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">It's unclear whether this means the subject has a cautious distrust of someone or something (as in "the Klingon was suspicious of others"), or if the subject is causing a sense of cautious distrust (as in "a suspicious package"). That's likely a deliberate joke (i.e., the definition of this word is itself suspicious).
+
+The homophony with {pIH:v:1} might indicate that they are the same word, and that the subject is suspicious in the sense of expecting something unspecified. The word {nub:v:nolink} also seems to cover the "causing suspicion" meaning.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7985,7 +7987,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">säilyttää, säästää</column>
       <column name="synonyms"></column>
       <column name="antonyms">{polHa':v}</column>
-      <column name="see_also">{choq:v}, {toD:v}, {boS:v}</column>
+      <column name="see_also">{choq:v}, {toD:v}, {boS:v}, {ngeq:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8308,7 +8310,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This sentence does not appear explicitly in {TKD:src}, but can be constructed using nothing but the vocabulary and grammar presented in it.[1] The sentence in {paq'batlh:src} has a typo: it says {pongwI''e':sen:nolink} rather than {pongwIj'e':sen:nolink}.[2]</column>
+      <column name="hidden_notes">The sentence in {paq'batlh:src} has a typo in the 1st edition: it says {pongwI''e':sen:nolink} rather than {pongwIj'e':sen:nolink}.[2] This is corrected in the 2nd edition.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {luqara' 'oH pongwIj'e'.:sen:nolink}[2]</column>
@@ -8327,7 +8329,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.127:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 1ed p.127:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8654,7 +8656,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">hengittää lehtien (savua)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{qa'nabIS:n}</column>
       <column name="notes">This is probably shortened from {por tlhIch pur:sen@@por:n, tlhIch:n, pur:v}.</column>
       <column name="notes_de">Dies wird wahrscheinlich von {por tlhIch pur:sen@@por:n, tlhIch:n, pur:v} abgekürzt. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این احتمالاً از {por tlhIch pur:sen@@por:n, tlhIch:n, pur:v} کوتاه شده است. [AUTOTRANSLATED]</column>
@@ -9431,7 +9433,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">olla taitava, etevä</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tlhIb:v}</column>
-      <column name="see_also">{'um:v}, {Han:v}, {Doj:v}, {po'wI':n}</column>
+      <column name="see_also">{'um:v}, {Han:v}, {Doj:v}, {po'wI':n}, {re'lIng:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -10080,7 +10082,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="entry_name">puj</column>
       <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be weak</column>
-      <column name="definition_de">schwach, ohne kraft sein</column>
+      <column name="definition_de">schwach, ohne Kraft sein</column>
       <column name="definition_fa">ضعیف بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara svag</column>
       <column name="definition_ru">быть слабым, быть немощным, быть ослабленным, быть щуплым</column>
@@ -12071,12 +12073,12 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="entry_name">pu'veng</column>
       <column name="part_of_speech">n:1</column>
       <column name="definition">twig</column>
-      <column name="definition_de">Zweig [AUTOTRANSLATED]</column>
+      <column name="definition_de">Zweig</column>
       <column name="definition_fa">شاخه [AUTOTRANSLATED]</column>
       <column name="definition_sv">kvist [AUTOTRANSLATED]</column>
       <column name="definition_ru">веточка [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">枝條 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">galho [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ramo</column>
       <column name="definition_fi">risu, varpu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -12114,12 +12116,12 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="entry_name">pu'veng</column>
       <column name="part_of_speech">n:2,body</column>
       <column name="definition">cat's whiskers</column>
-      <column name="definition_de">Katzenschnurrbart [AUTOTRANSLATED]</column>
+      <column name="definition_de">Schnurrhaar (einer Katze)</column>
       <column name="definition_fa">سبیل های گربه [AUTOTRANSLATED]</column>
       <column name="definition_sv">kattens morrhår [AUTOTRANSLATED]</column>
       <column name="definition_ru">усы кошки [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">貓的鬍鬚 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">bigodes de gato [AUTOTRANSLATED]</column>
+      <column name="definition_pt">bigodes de gato</column>
       <column name="definition_fi">kissan viikset</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
