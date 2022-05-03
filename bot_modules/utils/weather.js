@@ -2,6 +2,9 @@
    Weather forecast, translated into klingon
    
 */
+
+/* Restart work if necessary
+
 var request = require('request');
 var TDData   = require('./../external/discord_data.js');
 
@@ -25,3 +28,5 @@ module.exports.getWeather = function(cityIDs)
 	logger.info(weatherResponse);
 	
 }
+
+*/
