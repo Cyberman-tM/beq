@@ -1,7 +1,6 @@
 /*
    Shell function for re-categorization of KDB
 */
-var requestify = require('requestify');
 var catAPI = require('./../../external/cat_api.js');
 var kTranscode = require('./../../utils/recode.js');
 var winston = require('winston');

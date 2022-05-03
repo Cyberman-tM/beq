@@ -6,7 +6,6 @@
    function RETRIEVE => get  JSON object from another server
 */
 
-var requestify = require('requestify');
 var DData = require('/bot_modules/external/discord_data.js');
 
 module.exports.store = function(objName, objData)
