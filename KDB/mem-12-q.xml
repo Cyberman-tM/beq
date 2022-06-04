@@ -3744,7 +3744,7 @@ This is confirmed as intransitive since {qaw'moH:v} was also glossed as "make so
       <column name="definition_fi">(lapsen) vanhempi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{SoS:n}, {vav:n}</column>
+      <column name="see_also">{SoS:n}, {vav:n}, {pal'ar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5178,31 +5178,15 @@ The information about the length comes from {The Star Trek Encyclopedia, 4th ed.
       <column name="definition_fi">esivanhempi, esi-isä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'ISyar:n}</column>
-      <column name="notes">This refers to a cultural or societal ancestor or forebearer (who is not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.
-
-In the {paq'batlh:src}, the {qempa'QeH:n:nolink} are the enraged (see {QeH:v}) ancestral spirits populating {ghe'tor:n}.[2]</column>
-      <column name="notes_de">Dies bezieht sich auf einen kulturellen oder gesellschaftlichen Vorfahren oder Vorfahren (der nicht unbedingt durch Blut verwandt ist). Einen direkten Vorfahren finden Sie unter {'emrIgh:n}.
-
-In {paq'batlh:src} sind {qempa'QeH:n:nolink} die wütenden (siehe {QeH:v}) Ahnengeister, die {ghe'tor:n}.[2] bevölkern [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این به یک نیاکان فرهنگی یا اجتماعی یا پیشگامان (که لزوماً با خون ارتباط ندارد) اشاره دارد. برای یک جد مستقیم ، به {'emrIgh:n} مراجعه کنید.
-
-در {paq'batlh:src} ، {qempa'QeH:n:nolink} عصبانی هستند (به {QeH:v} مراجعه کنید) ارواح اجدادی جمعیت {ghe'tor:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta avser en kulturell eller samhällelig förfader eller föregångare (som inte nödvändigtvis är släkt med blod). För en direkt förfader, se {'emrIgh:n}.
-
-I {paq'batlh:src} är {qempa'QeH:n:nolink} de förargade spritarna (se {QeH:v}) som fyller {ghe'tor:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это относится к культурному или социальному предку или предку (который не обязательно связан кровью). Для прямого предка, см. {'emrIgh:n}.
-
-В {paq'batlh:src}, {qempa'QeH:n:nolink} являются разъяренными (см. {QeH:v}) родовыми душами, населяющими {ghe'tor:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是指文化或社會的祖先或先輩（不一定與血緣關係）。有關直接祖先的信息，請參閱{'emrIgh:n}。
-
-在{paq'batlh:src}中，{qempa'QeH:n:nolink}是充滿生氣的祖傳精神（請參閱{QeH:v}），它們遍布{ghe'tor:n}。[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Refere-se a um ancestral ou antepassado cultural ou social (que não está necessariamente relacionado ao sangue). Para um ancestral direto, consulte {'emrIgh:n}.
-
-No {paq'batlh:src}, os {qempa'QeH:n:nolink} são os espíritos ancestrais enfurecidos (consulte {QeH:v}) que povoam {ghe'tor:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä viittaa kulttuuriseen tai yhteiskunnalliseen esi-isään tai esivanhempaan (joka ei välttämättä ole verisukulainen). Katso suoraa esi-isää kohdasta {'emrIgh:n}.
-
-{paq'batlh:src}-ohjelmassa {qempa'QeH:n:nolink} ovat raivostuneita (katso {QeH:v}) esi-isiä, jotka asuttavat {ghe'tor:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="see_also">{'ISyar:n}, {qempa'QeH:n}</column>
+      <column name="notes">This refers to a cultural or societal ancestor or forebearer (who is not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.[2]</column>
+      <column name="notes_de">Dies bezieht sich auf einen kulturellen oder gesellschaftlichen Vorfahren oder Vorfahren (der nicht unbedingt durch Blut verwandt ist). Einen direkten Vorfahren finden Sie unter {'emrIgh:n}.</column>
+      <column name="notes_fa">این به یک نیاکان فرهنگی یا اجتماعی یا پیشگامان (که لزوماً با خون ارتباط ندارد) اشاره دارد. برای یک جد مستقیم ، به {'emrIgh:n} مراجعه کنید.</column>
+      <column name="notes_sv">Detta avser en kulturell eller samhällelig förfader eller föregångare (som inte nödvändigtvis är släkt med blod). För en direkt förfader, se {'emrIgh:n}.</column>
+      <column name="notes_ru">Это относится к культурному или социальному предку или предку (который не обязательно связан кровью). Для прямого предка, см. {'emrIgh:n}.</column>
+      <column name="notes_zh_HK">這是指文化或社會的祖先或先輩（不一定與血緣關係）。有關直接祖先的信息，請參閱{'emrIgh:n}。</column>
+      <column name="notes_pt">Refere-se a um ancestral ou antepassado cultural ou social (que não está necessariamente relacionado ao sangue). Para um ancestral direto, consulte {'emrIgh:n}.</column>
+      <column name="notes_fi">Tämä viittaa kulttuuriseen tai yhteiskunnalliseen esi-isään tai esivanhempaan (joka ei välttämättä ole verisukulainen). Katso suoraa esi-isää kohdasta {'emrIgh:n}.</column>
       <column name="hidden_notes">"Forebear" (see {qem:v} and {-pa':v}).</column>
       <column name="components">{no':n:inhpl}</column>
       <column name="examples"></column>
@@ -5213,7 +5197,7 @@ No {paq'batlh:src}, os {qempa'QeH:n:nolink} são os espíritos ancestrais enfure
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">qempa'QeH</column>
+      <column name="search_tags"></column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -5221,7 +5205,52 @@ No {paq'batlh:src}, os {qempa'QeH:n:nolink} são os espíritos ancestrais enfure
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.108-109:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 26 (2019):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">qempa'QeH</column>
+      <column name="part_of_speech">n:being,deriv</column>
+      <column name="definition">Qempa'keh, the Warriors of the Dead</column>
+      <column name="definition_de">Qempa'keh, die Krieger der Toten [AUTOTRANSLATED]</column>
+      <column name="definition_fa">قمپاکه، رزمندگان مردگان [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Qempa'keh, de dödas krigare [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Кемпа'ке, воины мертвых [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">Qempa'keh，死者的勇士 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Qempa'keh, os Guerreiros dos Mortos [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Qempa'keh, kuolleiden soturit [AUTOTRANSLATED]</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">These are the enraged ({QeH:v}) ancestral spirits ({qempa':n}) populating {ghe'tor:n}.[1]
+
+This word is a fossilized form. It refers to a unique group, the "proudest spirits of Gre'thor". Generally speaking, this word wouldn't be pluralized (but behaves grammatically like a plural).[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{qempa':n}, {QeH:v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {paq'batlh:src}, [2] {KLI mailing list 2022.05.27:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8891,31 +8920,17 @@ Maltz näytti haluttomalta puhua mitä tämä oikein on[3][2] [AUTOTRANSLATED]</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tuQmoH:v}, {Qoy:v}, {peghmey vIttlhegh:n}</column>
-      <column name="notes">This expression literally means "take off one's belt". It derives its slang meaning from the homophony between {qogh:n:1} and {qogh:n:2}.
+      <column name="notes">This expression literally means "take off one's belt". It derives its slang meaning from the homophony between {qogh:n:1} and {qogh:n:2}.[1]
 
-It's unclear why the expression uses {tuQmoHHa':v:nolink} and not {tuQHa'moH:v}. One possibility is that {tuQmoH:v} is so common that some Klingons treat it as a verb in its own right, rather than as the verb {tuQ:v} plus the suffix {-moH:v}.[2]</column>
-      <column name="notes_de">Dieser Ausdruck bedeutet wörtlich "den Gürtel abnehmen". Es leitet seine umgangssprachliche Bedeutung aus der Homophonie zwischen {qogh:n:1} und {qogh:n:2} ab.
-
-Es ist unklar, warum der Ausdruck {tuQmoHHa':v:nolink} und nicht {tuQHa'moH:v} verwendet. Eine Möglichkeit besteht darin, dass {tuQmoH:v} so häufig vorkommt, dass einige Klingonen es als eigenständiges Verb behandeln und nicht als Verb {tuQ:v} plus dem Suffix {-moH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این عبارت به معنای واقعی کلمه به معنای "کمربند بریدن یک نفر" است. معنای عامیانه آن را از همسانی بین {qogh:n:1} و {qogh:n:2} مشتق می کند.
-
-مشخص نیست که چرا این عبارت از {tuQmoHHa':v:nolink} استفاده می کند و نه {tuQHa'moH:v}. یک احتمال این است که {tuQmoH:v} آنقدر معمول است که برخی از کلینگونها به جای فعل {tuQ:v} به علاوه پسوند {-moH:v}.[2] ، آن را به عنوان یک فعل در نظر می گیرند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta uttryck betyder bokstavligen "ta av sig bältet". Det härleder sin slangbetydelse från homofonin mellan {qogh:n:1} och {qogh:n:2}.
-
-Det är oklart varför uttrycket använder {tuQmoHHa':v:nolink} och inte {tuQHa'moH:v}. En möjlighet är att {tuQmoH:v} är så vanligt att vissa klingon behandlar det som ett verb i sig själv, snarare än som verbet {tuQ:v} plus suffixet {-moH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это выражение буквально означает «снять пояс». Его сленговое значение происходит от гомофонии между {qogh:n:1} и {qogh:n:2}.
-
-Непонятно, почему в выражении используется {tuQmoHHa':v:nolink}, а не {tuQHa'moH:v}. Одна из возможностей состоит в том, что {tuQmoH:v} настолько распространен, что некоторые клингоны рассматривают его как самостоятельный глагол, а не как глагол {tuQ:v} с суффиксом {-moH:v}.[2]. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這個表述的字面意思是「脫下腰帶」。它的語源自{qogh:n:1}和{qogh:n:2}之間的諧音。
-
-目前尚不清楚為什麼該表達式使用{tuQmoHHa':v:nolink}而不使用{tuQHa'moH:v}。一種可能是{tuQmoH:v}非常普遍，以至於某些克林崗人將其視為一個動詞，而不是動詞{tuQ:v}加上後綴{-moH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta expressão significa literalmente "tirar o cinto". Seu significado de gíria deriva da homofonia entre {qogh:n:1} e {qogh:n:2}.
-
-Não está claro por que a expressão usa {tuQmoHHa':v:nolink} e não {tuQHa'moH:v}. Uma possibilidade é que {tuQmoH:v} seja tão comum que alguns Klingons o tratam como um verbo por si só, em vez do verbo {tuQ:v} mais o sufixo {-moH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä ilmaisu tarkoittaa kirjaimellisesti "riisua vyö". Se saa slangin merkityksensä {qogh:n:1}: n ja {qogh:n:2}: n välisestä homofoniasta.
-
-On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:v}. Yksi mahdollisuus on, että {tuQmoH:v} on niin yleinen, että jotkut klingonit käsittelevät sitä omana verbinä eikä verbinä {tuQ:v} plus pääte {-moH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">The {msn:src} source does not explicitly discuss {tuQmoHHa':v:nolink}. The example given is {quvmoH'egh:sen@@quvmoH:v, -'egh:v}, where the suffixes are switched for rhetorical effect.</column>
+The unusual suffix placement ({tuQmoHHa':v:nolink} rather than {tuQHa'moH:v}) occurs in this idiom only.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
 ▶ {qogh vItuQmoHHa'pu':sen:nolink} "I've taken off my belt; your secret is safe with me."</column>
@@ -8934,7 +8949,7 @@ On epäselvää, miksi lauseke käyttää {tuQmoHHa':v:nolink} eikä {tuQHa'moH:
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {HQ 2.4, p.17, Dec. 1993:src}, [2] {msn 1997.11.30:src} (repeated in {s.k 1998.02.23:src})</column>
+      <column name="source">[1] {HQ 2.4, p.17, Dec. 1993:src}, [2] {KLI mailing list 2022.05.20:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9671,7 +9686,7 @@ On toinenkin verbi, {gher:v}, jota käytetään luetteloiden ja vastaavien kokoa
       <column name="definition_fi">sisarus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{be'nI':n}, {loDnI':n}</column>
+      <column name="see_also">{be'nI':n}, {loDnI':n}, {pal'ar:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9972,7 +9987,7 @@ On toinenkin verbi, {gher:v}, jota käytetään luetteloiden ja vastaavien kokoa
       <column name="definition_fi">perhe</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tuq:n}, {tuqnIgh:n}</column>
+      <column name="see_also">{pal'ar:n}, {tuq:n}, {tuqnIgh:n}, {chuD:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>

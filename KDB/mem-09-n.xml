@@ -1250,7 +1250,7 @@ Não confunda esta palavra com {naQjej:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">While this word was created as a retrofit (see the example sentence), its creation may also have been influenced by its similarity to {naS:v} and {natlh:v:2}.</column>
+      <column name="hidden_notes">While this word was created as a backfit (see the example sentence), its creation may also have been influenced by its similarity to {naS:v} and {natlh:v:2}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.:sen}</column>
@@ -2537,7 +2537,7 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">It is unclear if {tlhuch:v} "exhaust" means "to use something up completely".</column>
       <column name="components"></column>
       <column name="examples">
-▶ {nIn Hoch natlhlu'pu':sen@@nIn:n, Hoch:n, natlh:v:1, -lu':v, -pu':v} "All the fuel has been consumed"[1, p.155]
+▶ {nIn Hoch natlhlu'pu':sen}
 ▶ {HoS law'qu' natlhmo' So'wI' QaptaHvIS So'wI' QaplaHbe' nuHmey.:sen:nolink} "Due to the tremendous energy drain of a cloaking device, weapons cannot be discharged while the cloak is in operation."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3671,15 +3671,17 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/JyeePTUXVa8}
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The example Klingon sentence was presented to Marc Okrand by Chris Lipscombe. Okrand then translated it into English.</column>
+      <column name="hidden_notes">The first example Klingon sentence was presented to Marc Okrand by Chris Lipscombe. Okrand then translated it into English.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {tlhIngan Hol neHHa' vIjatlh.:sen@@tlhIngan Hol:n, neHHa':adv, vI-:v, jatlh:v} "I speak not only Klingon", as in "I speak many languages including Klingon".</column>
+▶ {tlhIngan Hol neHHa' vIjatlh.:sen@@tlhIngan Hol:n, neHHa':adv, vI-:v, jatlh:v} "I speak not only Klingon", as in "I speak many languages including Klingon".[1]
+▶ {chaH neHHa' wovmoH jul:sen@@chaH:n, neHHa':adv, wov:v, -moH:v, jul:n} "the sun lit up not only them"[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
-▶ {tlhIngan Hol neHHa' vIjatlh.:sen@@tlhIngan Hol:n, neHHa':adv, vI-:v, jatlh:v} "Я говорю не только на Клингонском", или "Я говорю на многих языках, включая Клингонский".</column>
+▶ {tlhIngan Hol neHHa' vIjatlh.:sen@@tlhIngan Hol:n, neHHa':adv, vI-:v, jatlh:v} "Я говорю не только на Клингонском", или "Я говорю на многих языках, включая Клингонский".[1]
+▶ {chaH neHHa' wovmoH jul:sen@@chaH:n, neHHa':adv, wov:v, -moH:v, jul:n} "the sun lit up not only them"[2]</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -3691,7 +3693,7 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/JyeePTUXVa8}
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2017.07.28:src}</column>
+      <column name="source">[1] {KLI mailing list 2017.07.28:src}, [2] {paq'batlh 2ed:src} ({KLI mailing list 2022.05.27:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5753,6 +5755,7 @@ A line which was cut from {Star Trek Into Darkness:src} reveals that the person 
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
+▶ {nIn Hoch natlhlu'pu':sen}
 ▶ {nIn 'ar wIghaj?:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -9116,7 +9119,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'ISyar:n}</column>
-      <column name="notes">This refers to cultural or societal ancestors or forebearers (who are not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.</column>
+      <column name="notes">This refers to cultural or societal ancestors or forebearers (who are not necessarily related by blood). For a direct ancestor, see {'emrIgh:n}.[2]</column>
       <column name="notes_de">Dies bezieht sich auf kulturelle oder gesellschaftliche Vorfahren oder Vorfahren (die nicht unbedingt durch Blut verwandt sind). Einen direkten Vorfahren finden Sie unter {'emrIgh:n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به اجداد فرهنگی یا اجتماعی یا پیشکسوتان (که لزوماً با خون ارتباط ندارند) اشاره دارد. برای یک جد مستقیم ، به {'emrIgh:n} مراجعه کنید. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta avser kulturella eller samhälleliga förfäder eller förfäder (som inte nödvändigtvis är släkt med blod). För en direkt förfäder, se {'emrIgh:n}. [AUTOTRANSLATED]</column>
@@ -9142,7 +9145,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {qep'a' 26 (2019):src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
