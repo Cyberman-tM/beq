@@ -17,6 +17,7 @@ Can also deliver proverbs on demand (punnily named KWOTD, although it doesn't de
 Actual work is done by the beq Engine, see #3.
 
 # 2) A web service made with the "Restify" module (very nice to use!) which takes URL parameters and returns a JSON-Objekt.
+(This is basically dead.)
 Basically the same functionality as the bot, at least with regard to translation.
 This is because:
 
