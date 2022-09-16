@@ -92,8 +92,6 @@ module.exports.Engine = function (beqTalk) {
 	var isSlang = false;
 	var isDeriv = false;
 	
-	logger.info(beqTalk.command);
-	
 	switch (beqTalk.command) {
 		case 'yIngu\'':
 			tmpTxt = 'Beq engine, version ' + module.exports.versInt + beqTalk.newline;
@@ -465,7 +463,6 @@ module.exports.Engine = function (beqTalk) {
 			beqTalk.gotResult = false;
 			beqTalk.failure = true;
 	}
-	logger.info("Return");
 	return beqTalk;
 };
 
