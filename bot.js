@@ -96,7 +96,6 @@ bot.on('messageUpdate', function (oldMessage, newMessage) {
 });
 
 bot.on('message', function (messageDJS) {
-	logger.info(messageDJS.content);
 	processMessage(this, messageDJS);
 });
 
