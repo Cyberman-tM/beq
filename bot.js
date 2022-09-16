@@ -92,6 +92,7 @@ bot.on('ready', function (evt) {
 );
 
 bot.on('messageUpdate', function (oldMessage, newMessage) {
+	logger.info("messageUpdate");
 	processMessage(this, newMessage);
 });
 
