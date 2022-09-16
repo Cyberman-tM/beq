@@ -111,7 +111,6 @@ function processMessage(bot, messageDJS) {
 	var message = messageDJS.content;
 	var cmdMagic = ''; //Magic character that tells us its a command
 	
-	logger.info(messageDJS);
 	logger.info(message);
 	
 	//Any message shorter than 2 characters cannot be sent to us
