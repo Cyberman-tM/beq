@@ -465,6 +465,7 @@ module.exports.Engine = function (beqTalk) {
 			beqTalk.gotResult = false;
 			beqTalk.failure = true;
 	}
+	logger.info("Return");
 	return beqTalk;
 };
 
