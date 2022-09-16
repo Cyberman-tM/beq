@@ -96,6 +96,7 @@ bot.on('messageUpdate', function (oldMessage, newMessage) {
 });
 
 bot.on('message', function (messageDJS) {
+	logger.info(messageDJS.author);
 	processMessage(this, messageDJS);
 });
 
@@ -110,8 +111,6 @@ function processMessage(bot, messageDJS) {
 	var channelID = messageDJS.channel.id;
 	var message = messageDJS.content;
 	var cmdMagic = ''; //Magic character that tells us its a command
-	
-	logger.info(messageDJS.cleanContent);
 	
 	//Any message shorter than 2 characters cannot be sent to us
 	//That would leave one character for "Hey bot!" and one character for the command
