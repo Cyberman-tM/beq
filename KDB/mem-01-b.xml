@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo.</column>
@@ -48,11 +48,11 @@
       <column name="definition">pepper (capsicum)</column>
       <column name="definition_de">Paprika</column>
       <column name="definition_fa">فلفل (فلفل دلمه ای) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">paprika (paprika) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">peppar</column>
       <column name="definition_ru">перец (стручковый перец) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">胡椒（辣椒） [AUTOTRANSLATED]</column>
       <column name="definition_pt">pimenta (capsicum)</column>
-      <column name="definition_fi">paprika</column>
+      <column name="definition_fi">eräs paprikaa muistuttava kasvi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{naH:n}</column>
@@ -87,7 +87,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bach</column>
-      <column name="part_of_speech">v:t_c,weap,klcp1</column>
+      <column name="part_of_speech">v:t_c,klcp1,weap</column>
       <column name="definition">shoot</column>
       <column name="definition_de">schießen</column>
       <column name="definition_fa">(تیر) زدن</column>
@@ -148,7 +148,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bach</column>
-      <column name="part_of_speech">n:weap,klcp1</column>
+      <column name="part_of_speech">n:klcp1,weap</column>
       <column name="definition">shot</column>
       <column name="definition_de">Schuss</column>
       <column name="definition_fa">گلوله</column>
@@ -206,7 +206,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
       <column name="notes">See {KGT p.145:src} for an explanation of this verb.</column>
       <column name="notes_de">Siehe {KGT p.145:src} für Details zu diesem Verb.</column>
       <column name="notes_fa">برای توضیح این فعل به {KGT p.145:src} مراجعه کنید. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Se {KGT p.145:src} för en förklaring av detta verb. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Se {KGT p.145:src} för en förklaring av detta verb.</column>
       <column name="notes_ru">Смотрите {KGT p.145:src} для объяснения этого глагола. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">有關此動詞的說明，請參見{KGT p.145:src}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Veja {KGT p.145:src} para uma explicação deste verbo. [AUTOTRANSLATED]</column>
@@ -414,7 +414,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">baH</column>
-      <column name="part_of_speech">v:t_c,weap,klcp1</column>
+      <column name="part_of_speech">v:t_c,klcp1,weap</column>
       <column name="definition">fire (torpedo, rocket, missile)</column>
       <column name="definition_de">feuern</column>
       <column name="definition_fa">(موشک و غیره) انداختن</column>
@@ -532,7 +532,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">baHwI'</column>
-      <column name="part_of_speech">n:weap,being,deriv,klcp1</column>
+      <column name="part_of_speech">n:being,deriv,klcp1,weap</column>
       <column name="definition">gunner</column>
       <column name="definition_de">Schütze</column>
       <column name="definition_fa">تفنگدار [AUTOTRANSLATED]</column>
@@ -1286,7 +1286,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes">The father of T'vis. See {tI'vIS:n}.</column>
       <column name="notes_de">Vater von T'vis. Siehe {tI'vIS:n}.</column>
       <column name="notes_fa">پدر تویس. به {tI'vIS:n} مراجعه کنید. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Fadern till T'vis. Se {tI'vIS:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Far till T'vis. Se {tI'vIS:n}.</column>
       <column name="notes_ru">Отец Т'виса. Смотрите {tI'vIS:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">T'vis的父親。參見{tI'vIS:n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">O pai de T'vis. Consulte {tI'vIS:n}. [AUTOTRANSLATED]</column>
@@ -1325,7 +1325,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="definition_fi">(puun) oksa, haara</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sor:n}, {por:n}, {Qechjem'a':n}, {pu'veng:n:1}</column>
+      <column name="see_also">{Sor:n}, {por:n}, {Qechjem'a':n}, {pu'veng:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1635,7 +1635,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="definition">vector</column>
       <column name="definition_de">Vektor</column>
       <column name="definition_fa">وکتور [AUTOTRANSLATED]</column>
-      <column name="definition_sv">vektor [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vektor</column>
       <column name="definition_ru">вектор [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">向量</column>
       <column name="definition_pt">vetor</column>
@@ -1646,7 +1646,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes">This is a mathematics term.</column>
       <column name="notes_de">Dies ist ein mathematischer Begriff.</column>
       <column name="notes_fa">این یک اصطلاح ریاضی است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en matematisk term. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är en matematisk term.</column>
       <column name="notes_ru">Это математический термин. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是一個數學術語。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é um termo matemático. [AUTOTRANSLATED]</column>
@@ -1737,7 +1737,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes_zh_HK">與{quv:n}.[2]相比，此詞指的是更宏大，更籠統的哲學概念。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta palavra refere-se a um conceito filosófico mais grandioso, mais geral, em comparação com {quv:n}.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä sana viittaa suurempaan, yleisempään filosofiseen käsitteeseen verrattuna {quv:n}: een.[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Reverse of {tlhab:n}.</column>
+      <column name="hidden_notes">"Battle". Reverse of {tlhab:n}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1955,7 +1955,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The reason that it's {noDnISbe' vay':sen:nolink} and not {noDnISbe'lu':sen:nolink} is because multiple uses of {-lu':v} (see the note in that entry) would refer to the same indefinite subject.</column>
       <column name="components">{batlh:adv}, {Hegh:v}, {-lu':v}, {-chugh:v}, {noD:v}, {-nIS:v}, {-be':v}, {vay':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2286,7 +2286,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="definition">circumference</column>
       <column name="definition_de">Kreisumfang</column>
       <column name="definition_fa">دور [AUTOTRANSLATED]</column>
-      <column name="definition_sv">omkrets [AUTOTRANSLATED]</column>
+      <column name="definition_sv">omkrets</column>
       <column name="definition_ru">длина окружности [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">圓周</column>
       <column name="definition_pt">circunferência</column>
@@ -2641,7 +2641,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes">The {yor:n} of a {qach:n}, and the top face of a {pa' beb:n}.</column>
       <column name="notes_de">Das {yor:n} eines {qach:n} und die Oberseite eines {pa' beb:n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">{yor:n} یک {qach:n} ، و چهره بالای {pa' beb:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">{yor:n} på en {qach:n} och toppytan på en {pa' beb:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">{yor:n} på en {qach:n} och ovansidan av en {pa' beb:n}.</column>
       <column name="notes_ru">{yor:n} {qach:n} и верхняя грань {pa' beb:n}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">{qach:n}的{yor:n}和{pa' beb:n}的頂面。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">O {yor:n} de um {qach:n} e a face superior de um {pa' beb:n}. [AUTOTRANSLATED]</column>
@@ -2669,7 +2669,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">beb mutlhwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">roofer, roof layer</column>
       <column name="definition_de">Dachdecker</column>
       <column name="definition_fa">روکش، لایه سقف [AUTOTRANSLATED]</column>
@@ -2755,7 +2755,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">begh</column>
-      <column name="part_of_speech">n:fic,inhpl</column>
+      <column name="part_of_speech">n:inhpl,fic</column>
       <column name="definition">deflectors</column>
       <column name="definition_de">Deflektoren</column>
       <column name="definition_fa">دفاعی [AUTOTRANSLATED]</column>
@@ -3519,7 +3519,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">beq pa'mey</column>
-      <column name="part_of_speech">n:deriv,plural</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">non-commissioned crew quarters</column>
       <column name="definition_de">Mannschaftsquartiere</column>
       <column name="definition_fa">محوطه خدمه غیرقانونی [AUTOTRANSLATED]</column>
@@ -3652,7 +3652,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
       <column name="definition">ovulate, undergo ovulation</column>
       <column name="definition_de">den Eisprung haben, Vorgang des Follikelsprungs</column>
       <column name="definition_fa">تخمک گذاری ، تخمک گذاری [AUTOTRANSLATED]</column>
-      <column name="definition_sv">ägglossning, genomgå ägglossning [AUTOTRANSLATED]</column>
+      <column name="definition_sv">ovulera, lossa ägg, genomgå ägglossning</column>
       <column name="definition_ru">овулировать, пройти овуляцию [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">排卵，排卵 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ovular, ter ovulação</column>
@@ -3692,7 +3692,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
       <column name="_id"></column>
       <column name="entry_name">bergh</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be irritable, be irritated</column>
+      <column name="definition">be irritable</column>
       <column name="definition_de">reizbar sein, gereizt sein</column>
       <column name="definition_fa">تحریک پذیر باشد، تحریک شود [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara irritabel, vara lättretlig, vara retlig</column>
@@ -3721,7 +3721,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">be irritated</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -3731,49 +3731,49 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">berghmoH</column>
-      <column name="part_of_speech">v:t_c,deriv</column>
-      <column name="definition">irritate</column>
-      <column name="definition_de">irritieren</column>
-      <column name="definition_fa">تحریک [AUTOTRANSLATED]</column>
-      <column name="definition_sv">irritera</column>
-      <column name="definition_ru">Раздражать</column>
-      <column name="definition_zh_HK">惱怒、惹火</column>
-      <column name="definition_pt">irritar</column>
-      <column name="definition_fi">ärsyttää</column>
-      <column name="synonyms">{nuQ:v}, {yIv:v:2}</column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{bergh:v}, {-moH:v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT p.167:src}</column>
-    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">berghmoH</column>
+          <column name="part_of_speech">v:t_c,deriv</column>
+          <column name="definition">irritate</column>
+          <column name="definition_de">irritieren</column>
+          <column name="definition_fa">تحریک [AUTOTRANSLATED]</column>
+          <column name="definition_sv">irritera</column>
+          <column name="definition_ru">Раздражать</column>
+          <column name="definition_zh_HK">惱怒、惹火</column>
+          <column name="definition_pt">irritar</column>
+          <column name="definition_fi">ärsyttää</column>
+          <column name="synonyms">{nuQ:v}, {yIv:v:2}</column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{bergh:v}, {-moH:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KGT p.167:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bertlham</column>
@@ -3785,7 +3785,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
       <column name="definition_ru">Конец, окончание( оперы, игры, истории, речи)</column>
       <column name="definition_zh_HK">結幕（歌劇、戲劇、故事、演講）</column>
       <column name="definition_pt">fim (de uma ópera, peça, história, discurso)</column>
-      <column name="definition_fi">(oopperan, näytelmän, tarunan, puheen) loppu</column>
+      <column name="definition_fi">(oopperan, näytelmän, tarinan, puheen) loppu</column>
       <column name="synonyms"></column>
       <column name="antonyms">{bI'reS:n}</column>
       <column name="see_also">{rIn:v}, {Dor:v:2}, {ghang:v}, {van:v:2}, {'o'megh:n}</column>
@@ -3992,7 +3992,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">betleH</column>
-      <column name="part_of_speech">n:weap,fic</column>
+      <column name="part_of_speech">n:fic,weap</column>
       <column name="definition">type of hand weapon, bat'leth</column>
       <column name="definition_de">Bat'leth (Handwaffe)</column>
       <column name="definition_fa">نوع سلاح دست، بتله [AUTOTRANSLATED]</column>
@@ -4066,12 +4066,12 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}, [2] {KGT:src}, [3] {SkyBox 8:src}, [4] {s.k 1998.10.20:src}, [5] {paq'batlh p.138-139:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT:src}, [3] {SkyBox 8:src}, [4] {s.k 1998.10.20:src}, [5] {paq'batlh 2ed p.140-141:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">betleH bey'</column>
-          <column name="part_of_speech">n:weap,deriv,fic</column>
+          <column name="part_of_speech">n:deriv,fic,weap</column>
           <column name="definition">bat'leth display</column>
           <column name="definition_de">Bat'leth-Ständer</column>
           <column name="definition_fa">نمایشگر bat'leth [AUTOTRANSLATED]</column>
@@ -4161,7 +4161,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="definition">aluminum</column>
       <column name="definition_de">Aluminium</column>
       <column name="definition_fa">آلومینیوم [AUTOTRANSLATED]</column>
-      <column name="definition_sv">aluminium [AUTOTRANSLATED]</column>
+      <column name="definition_sv">aluminium</column>
       <column name="definition_ru">алюминий [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">鋁</column>
       <column name="definition_pt">alumínio</column>
@@ -4204,7 +4204,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="definition">mixture of ingredients for producing fermented {HIq:n}</column>
       <column name="definition_de">Grundstoffe für {HIq:n}</column>
       <column name="definition_fa">مخلوطی از مواد برای تولید تخمیر شده {HIq:n} [AUTOTRANSLATED]</column>
-      <column name="definition_sv">blandning av ingredienser för framställning av fermenterad {HIq:n} [AUTOTRANSLATED]</column>
+      <column name="definition_sv">blandning av ingredienser för framställning av fermenterad {HIq:n}</column>
       <column name="definition_ru">смесь ингредиентов для производства ферментированных {HIq:n} [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">用於生產發酵{HIq:n}的成分混合物 [AUTOTRANSLATED]</column>
       <column name="definition_pt">mistura de ingredientes para a produção de fermentação de {HIq:n}</column>
@@ -4642,7 +4642,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">be'Hom</column>
-      <column name="part_of_speech">n:deriv,being,klcp1</column>
+      <column name="part_of_speech">n:being,deriv,klcp1</column>
       <column name="definition">girl</column>
       <column name="definition_de">Mädchen, weibliches Kind</column>
       <column name="definition_fa">دختر </column>
@@ -4786,7 +4786,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="notes">A planet in the Federation. Its inhabitants are telepaths.</column>
       <column name="notes_de">Ein Planet in der Föderation. Seine Bewohner sind Telepathen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">سیاره ای در فدراسیون. ساکنان آن telepath هستند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">En planet i federationen. Dess invånare är telepaths. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">En planet i federationen. Dess invånare är telepater.</column>
       <column name="notes_ru">Планета в составе Федерации. Населена телепатами.</column>
       <column name="notes_zh_HK">聯邦中的一顆行星。它的居民是心靈感應者。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Um planeta na Federação. Seus habitantes são telepatas. [AUTOTRANSLATED]</column>
@@ -5465,7 +5465,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/NpFDKTzIN
       <column name="definition">whim</column>
       <column name="definition_de">Laune</column>
       <column name="definition_fa">هوی و هوس [AUTOTRANSLATED]</column>
-      <column name="definition_sv">infall [AUTOTRANSLATED]</column>
+      <column name="definition_sv">infall, nyck</column>
       <column name="definition_ru">прихоть [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">心血來潮 [AUTOTRANSLATED]</column>
       <column name="definition_pt">pessoa caprichosa (temperamento)</column>
@@ -5935,7 +5935,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/NpFDKTzIN
       <column name="_id"></column>
       <column name="entry_name">bIp</column>
       <column name="part_of_speech">n:num</column>
-      <column name="definition">hundred thousand</column>
+      <column name="definition">hundred thousand (number-forming element)</column>
       <column name="definition_de">hundert Tausend</column>
       <column name="definition_fa">صدهزار</column>
       <column name="definition_sv">hundratusen (nummerbildande element)</column>
@@ -5946,7 +5946,9 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/NpFDKTzIN
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mI':n}, {netlh:n:num}, {'uy':n:num}</column>
-      <column name="notes">Note that the Klingon word for "hundred thousand" is independent of the words for "hundred" ({vatlh:n:num}) and "thousand" ({SaD:n:num}). The Klingon {bIp:n:num,nolink} is equivalent to the "lakh" which is used in South Asian numbering systems on Earth.
+      <column name="notes">This is a number-forming element, and not itself a number. The number 100,000 (one hundred thousand) is {wa'nIp:n:num,nolink} in Klingon.
+
+Note that the Klingon number-forming element for "hundred thousand" is independent of the words for "hundred" ({vatlh:n:num}) and "thousand" ({SaD:n:num}). The Klingon {bIp:n:num,nolink} is equivalent to the "lakh" which is used in South Asian numbering systems on Earth.
 
 For tens of millions, one could combine {maH:n:2,num} with {'uy':n:num,nolink} or {vatlh:n:num} with {bIp:n:num}.[2]</column>
       <column name="notes_de">Beachten Sie, dass das klingonische Wort für "hunderttausend" unabhängig von den Wörtern für "hundert" ({vatlh:n:num}) und "tausend" ({SaD:n:num}) ist. Das klingonische {bIp:n:num,nolink} entspricht dem "lakh", das in südasiatischen Nummerierungssystemen auf der Erde verwendet wird.
@@ -6030,6 +6032,49 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">bIp'uy'</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">hundred billion (number-forming element)</column>
+      <column name="definition_de">hundert Milliarden (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">صد میلیارد (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hundra miljarder (nummerbildande element)</column>
+      <column name="definition_ru">сто миллиардов (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">千億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">cem bilhões (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">sata miljardia</column>
+      <column name="synonyms">{vatlhSaghan:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{bIp:n:num}, {'uy':n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6421,50 +6466,6 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
           <column name="source">[1] {KGT p.120:src}</column>
         </table>
         <table name="mem">
-          <!-- The clarification was told by Marc Okrand to Belora and others at lunch during the qepHom. Confirmed by Quvar. -->
-          <column name="_id"></column>
-          <column name="entry_name">bIQDep</column>
-          <column name="part_of_speech">n:anim,deriv</column>
-          <column name="definition">fish, sea creature</column>
-          <column name="definition_de">Fisch</column>
-          <column name="definition_fa">ماهی، موجود دریایی</column>
-          <column name="definition_sv">fisk</column>
-          <column name="definition_ru">Рыба, морское существо</column>
-          <column name="definition_zh_HK">魚、海洋生物</column>
-          <column name="definition_pt">peixe, criatura do mar</column>
-          <column name="definition_fi">kala, meriolento</column>
-          <column name="synonyms"></column>
-          <column name="antonyms"></column>
-          <column name="see_also">{nIwqen:n}, {DuHSum:n}</column>
-          <column name="notes">This covers most animals that live in the sea, such as dolphins, whales, fish, and octopuses, but not smaller animals such as shrimps or water bugs, or amphibians. Every {ghotI':n} is a {bIQDep:n:nolink}, but not every {bIQDep:n:nolink} is a {ghotI':n:nolink}.[2]</column>
-          <column name="notes_de">Dies gilt für die meisten im Meer lebenden Tiere wie Delfine, Wale, Fische und Tintenfische, nicht jedoch für kleinere Tiere wie Garnelen oder Wasserwanzen oder Amphibien. Jedes {ghotI':n} ist ein {bIQDep:n:nolink}, aber nicht jedes {bIQDep:n:nolink} ist ein {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
-          <column name="notes_fa">این شامل بیشتر حیواناتی است که در دریا زندگی می کنند ، مانند دلفین ها ، نهنگ ها ، ماهی ها و اختاپوسها ، اما حیوانات کوچکتر مانند میگو یا اشکالات آب یا دوزیستان نیز نیستند. هر {ghotI':n} یک {bIQDep:n:nolink} است ، اما همه {bIQDep:n:nolink} یک {ghotI':n:nolink}.[2] نیست [AUTOTRANSLATED]</column>
-          <column name="notes_sv">Detta täcker de flesta djur som lever i havet, till exempel delfiner, valar, fiskar och bläckfiskar, men inte mindre djur som räkor eller vattenbuggar eller amfibier. Varje {ghotI':n} är en {bIQDep:n:nolink}, men inte varje {bIQDep:n:nolink} är en {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
-          <column name="notes_ru">Охватывает большинство животных, что живут в море, таких как дельфины, киты, рыба, а также осьминоги, но не животных поменьше таких как креветки или водяные жуки, или амфибии. Каждый {ghotI':n} является {bIQDep:n:nolink}, но не каждый {bIQDep:n:nolink} является {ghotI':n:nolink}.[2]</column>
-          <column name="notes_zh_HK">它涵蓋了大多數生活在海洋中的動物，例如海豚，鯨魚，魚類和章魚，但不包括較小的動物，例如蝦或水蟲或兩棲動物。每個{ghotI':n}都是{bIQDep:n:nolink}，但不是每個{bIQDep:n:nolink}都是{ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
-          <column name="notes_pt">Isso abrange a maioria dos animais que vivem no mar, como golfinhos, baleias, peixes e polvos, mas não animais menores, como camarões ou insetos aquáticos, ou anfíbios. Todo {ghotI':n} é um {bIQDep:n:nolink}, mas nem todo {bIQDep:n:nolink} é um {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
-          <column name="notes_fi">Tämä koskee useimpia meressä eläviä eläimiä, kuten delfiinejä, valaita, kaloja ja mustekaloja, mutta ei pienempiä eläimiä, kuten katkarapuja, vesibugeja tai sammakkoeläimiä. Jokainen {ghotI':n} on {bIQDep:n:nolink}, mutta jokainen {bIQDep:n:nolink} ei ole {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
-          <column name="hidden_notes">This was defined as "fish" in {KGT:src}[1], but was clarified to refer to any sea or water-based creature later.[2]</column>
-          <column name="components">{bIQ:n}, {Dep:n}</column>
-          <column name="examples"></column>
-          <column name="examples_de"></column>
-          <column name="examples_fa"></column>
-          <column name="examples_sv"></column>
-          <column name="examples_ru"></column>
-          <column name="examples_zh_HK"></column>
-          <column name="examples_pt"></column>
-          <column name="examples_fi"></column>
-          <column name="search_tags"></column>
-          <column name="search_tags_de"></column>
-          <column name="search_tags_fa"></column>
-          <column name="search_tags_sv"></column>
-          <column name="search_tags_ru"></column>
-          <column name="search_tags_zh_HK"></column>
-          <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
-          <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2015:src}</column>
-        </table>
-        <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">bIQ SeHjan</column>
           <column name="part_of_speech">n:deriv</column>
@@ -6549,6 +6550,50 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
           <column name="source">[1] {qep'a' 27 (2020):src}</column>
+        </table>
+        <table name="mem">
+          <!-- The clarification was told by Marc Okrand to Belora and others at lunch during the qepHom. Confirmed by Quvar. -->
+          <column name="_id"></column>
+          <column name="entry_name">bIQDep</column>
+          <column name="part_of_speech">n:anim,deriv</column>
+          <column name="definition">fish, sea creature</column>
+          <column name="definition_de">Fisch</column>
+          <column name="definition_fa">ماهی، موجود دریایی</column>
+          <column name="definition_sv">fisk</column>
+          <column name="definition_ru">Рыба, морское существо</column>
+          <column name="definition_zh_HK">魚、海洋生物</column>
+          <column name="definition_pt">peixe, criatura do mar</column>
+          <column name="definition_fi">kala, meriolento</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{nIwqen:n}, {DuHSum:n}</column>
+          <column name="notes">This covers most animals that live in the sea, such as dolphins, whales, fish, and octopuses, but not smaller animals such as shrimps or water bugs, or amphibians. Every {ghotI':n} is a {bIQDep:n:nolink}, but not every {bIQDep:n:nolink} is a {ghotI':n:nolink}.[2]</column>
+          <column name="notes_de">Dies gilt für die meisten im Meer lebenden Tiere wie Delfine, Wale, Fische und Tintenfische, nicht jedoch für kleinere Tiere wie Garnelen oder Wasserwanzen oder Amphibien. Jedes {ghotI':n} ist ein {bIQDep:n:nolink}, aber nicht jedes {bIQDep:n:nolink} ist ein {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
+          <column name="notes_fa">این شامل بیشتر حیواناتی است که در دریا زندگی می کنند ، مانند دلفین ها ، نهنگ ها ، ماهی ها و اختاپوسها ، اما حیوانات کوچکتر مانند میگو یا اشکالات آب یا دوزیستان نیز نیستند. هر {ghotI':n} یک {bIQDep:n:nolink} است ، اما همه {bIQDep:n:nolink} یک {ghotI':n:nolink}.[2] نیست [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Detta täcker de flesta djur som lever i havet, till exempel delfiner, valar, fiskar och bläckfiskar, men inte mindre djur som räkor eller vattenbuggar eller amfibier. Varje {ghotI':n} är en {bIQDep:n:nolink}, men inte varje {bIQDep:n:nolink} är en {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Охватывает большинство животных, что живут в море, таких как дельфины, киты, рыба, а также осьминоги, но не животных поменьше таких как креветки или водяные жуки, или амфибии. Каждый {ghotI':n} является {bIQDep:n:nolink}, но не каждый {bIQDep:n:nolink} является {ghotI':n:nolink}.[2]</column>
+          <column name="notes_zh_HK">它涵蓋了大多數生活在海洋中的動物，例如海豚，鯨魚，魚類和章魚，但不包括較小的動物，例如蝦或水蟲或兩棲動物。每個{ghotI':n}都是{bIQDep:n:nolink}，但不是每個{bIQDep:n:nolink}都是{ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Isso abrange a maioria dos animais que vivem no mar, como golfinhos, baleias, peixes e polvos, mas não animais menores, como camarões ou insetos aquáticos, ou anfíbios. Todo {ghotI':n} é um {bIQDep:n:nolink}, mas nem todo {bIQDep:n:nolink} é um {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Tämä koskee useimpia meressä eläviä eläimiä, kuten delfiinejä, valaita, kaloja ja mustekaloja, mutta ei pienempiä eläimiä, kuten katkarapuja, vesibugeja tai sammakkoeläimiä. Jokainen {ghotI':n} on {bIQDep:n:nolink}, mutta jokainen {bIQDep:n:nolink} ei ole {ghotI':n:nolink}.[2] [AUTOTRANSLATED]</column>
+          <column name="hidden_notes">This was defined as "fish" in {KGT:src}[1], but was clarified to refer to any sea or water-based creature later.[2]</column>
+          <column name="components">{bIQ:n}, {Dep:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KGT:src}, [2] {Saarbrücken qepHom'a' 2015:src}</column>
         </table>
         <table name="mem">
           <column name="_id"></column>
@@ -6662,7 +6707,7 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
           <column name="hidden_notes"></column>
           <column name="components">{bIQ:n}, {tIq:v} or {tIq:n} or a homophonous element</column>
           <column name="examples">
-▶ {SIqral bIQtIq:n}[2]
+▶ {SIqral bIQtIq:n}
 ▶ {QIStaq qul bIQtIqHomDaq:sen:nolink}
    {'etlhDaj vo' nuch:sen:nolink}
   "The coward threw his sword
@@ -6682,7 +6727,7 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {TKD:src}, [2] {paq'batlh p.76-77:src}</column>
+          <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.84-85:src}</column>
         </table>
         <table name="mem">
           <column name="_id"></column>
@@ -6730,49 +6775,6 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
         </table>
         <table name="mem">
           <column name="_id"></column>
-          <column name="entry_name">bIQ'a'Daq 'oHtaH 'etlh'e'.</column>
-          <column name="part_of_speech">sen:idiom</column>
-          <column name="definition">The sword is in the ocean.</column>
-          <column name="definition_de">Das Schwert ist im Ozean.</column>
-          <column name="definition_fa">شمشیر در اقیانوس است.</column>
-          <column name="definition_sv">Svärdet är i havet.</column>
-          <column name="definition_ru">Меч находится в океане.</column>
-          <column name="definition_zh_HK">劍在海洋中。</column>
-          <column name="definition_pt">A espada está no oceano.</column>
-          <column name="definition_fi">Miekka on meressä.</column>
-          <column name="synonyms"></column>
-          <column name="antonyms"></column>
-          <column name="see_also">{rIntaH:v}</column>
-          <column name="notes">This idiom means that something has ended, and it is impossible to return to the previous condition.</column>
-          <column name="notes_de">Diese Redewendung bedeutet, dass etwas beendet ist und es unmöglich ist, zum vorherigen Zustand zurückzukehren. [AUTOTRANSLATED]</column>
-          <column name="notes_fa">این اصطلاح به این معنی است که چیزی به پایان رسیده است و بازگشت به شرایط قبلی غیرممکن است. [AUTOTRANSLATED]</column>
-          <column name="notes_sv">Detta formspråk innebär att något har slutat, och det är omöjligt att återgå till det tidigare tillståndet. [AUTOTRANSLATED]</column>
-          <column name="notes_ru">Эта идиома означает, что что-либо закончилось, и это невозможно вернуть в предыдущее состояние.</column>
-          <column name="notes_zh_HK">這個成語意味著某些事情已經結束，並且不可能返回到先前的狀態。 [AUTOTRANSLATED]</column>
-          <column name="notes_pt">Esse idioma significa que algo terminou e é impossível retornar à condição anterior. [AUTOTRANSLATED]</column>
-          <column name="notes_fi">Tämä sanonta tarkoittaa, että jokin on päättynyt, ja on mahdotonta palata edelliseen tilaan. [AUTOTRANSLATED]</column>
-          <column name="hidden_notes"></column>
-          <column name="components"></column>
-          <column name="examples"></column>
-          <column name="examples_de"></column>
-          <column name="examples_fa"></column>
-          <column name="examples_sv"></column>
-          <column name="examples_ru"></column>
-          <column name="examples_zh_HK"></column>
-          <column name="examples_pt"></column>
-          <column name="examples_fi"></column>
-          <column name="search_tags"></column>
-          <column name="search_tags_de"></column>
-          <column name="search_tags_fa"></column>
-          <column name="search_tags_sv"></column>
-          <column name="search_tags_ru"></column>
-          <column name="search_tags_zh_HK"></column>
-          <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
-          <column name="source">[1] {KGT p.121:src}</column>
-        </table>
-        <table name="mem">
-          <column name="_id"></column>
           <column name="entry_name">bIQ'a' HeH</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">beach</column>
@@ -6813,6 +6815,49 @@ Kymmenien miljoonien kohdalla {maH:n:2,num} voidaan yhdistää {'uy':n:num,nolin
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
           <column name="source">[1] {TNK:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">bIQ'a'Daq 'oHtaH 'etlh'e'.</column>
+          <column name="part_of_speech">sen:idiom</column>
+          <column name="definition">The sword is in the ocean.</column>
+          <column name="definition_de">Das Schwert ist im Ozean.</column>
+          <column name="definition_fa">شمشیر در اقیانوس است.</column>
+          <column name="definition_sv">Svärdet är i havet.</column>
+          <column name="definition_ru">Меч находится в океане.</column>
+          <column name="definition_zh_HK">劍在海洋中。</column>
+          <column name="definition_pt">A espada está no oceano.</column>
+          <column name="definition_fi">Miekka on meressä.</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{rIntaH:v}</column>
+          <column name="notes">This idiom means that something has ended, and it is impossible to return to the previous condition.</column>
+          <column name="notes_de">Diese Redewendung bedeutet, dass etwas beendet ist und es unmöglich ist, zum vorherigen Zustand zurückzukehren. [AUTOTRANSLATED]</column>
+          <column name="notes_fa">این اصطلاح به این معنی است که چیزی به پایان رسیده است و بازگشت به شرایط قبلی غیرممکن است. [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Detta formspråk innebär att något har slutat, och det är omöjligt att återgå till det tidigare tillståndet. [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Эта идиома означает, что что-либо закончилось, и это невозможно вернуть в предыдущее состояние.</column>
+          <column name="notes_zh_HK">這個成語意味著某些事情已經結束，並且不可能返回到先前的狀態。 [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Esse idioma significa que algo terminou e é impossível retornar à condição anterior. [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Tämä sanonta tarkoittaa, että jokin on päättynyt, ja on mahdotonta palata edelliseen tilaan. [AUTOTRANSLATED]</column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KGT p.121:src}</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7005,7 +7050,7 @@ The clarification about clothing was made during the Q &amp; A session at {qep'a
       <column name="definition_fi">brak'lul (ruumiinosien redundanssi)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{raq:v}</column>
+      <column name="see_also">{raq:v}, {re'chIv:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7181,7 +7226,7 @@ The clarification about clothing was made during the Q &amp; A session at {qep'a
       <column name="notes">It is unknown what "bregit" means.</column>
       <column name="notes_de">Es ist nicht bekannt, was "Bregit" bedeutet. [AUTOTRANSLATED]</column>
       <column name="notes_fa">معلوم نیست که "Bregit" به چه معنی است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Det är okänt vad "bregit" betyder. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det är okänt vad "bregit" betyder.</column>
       <column name="notes_ru">Неизвестно, что данное слово означает.</column>
       <column name="notes_zh_HK">未知「 bregit」是什麼意思。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Não se sabe o que "bregit" significa. [AUTOTRANSLATED]</column>
@@ -7209,7 +7254,7 @@ The clarification about clothing was made during the Q &amp; A session at {qep'a
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIreQtagh</column>
-      <column name="part_of_speech">n:fic,food,deriv</column>
+      <column name="part_of_speech">n:deriv,fic,food</column>
       <column name="definition">bregit lung</column>
       <column name="definition_de">Bregit-Lunge</column>
       <column name="definition_fa">رگ رگ [AUTOTRANSLATED]</column>
@@ -7272,7 +7317,7 @@ The clarification about clothing was made during the Q &amp; A session at {qep'a
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Even though {TKD:src} says that {-bej:v} (and other type 6 verb suffixes) are about the speaker's certainty about what's being said, in this sentence this uncertainty seems to be applied to the subject.</column>
       <column name="components">{bI-:v}, {Sov:v}, {-bej:v}, {-be':v}, {-DI':v}, {tI-:v}, {mer:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7520,7 +7565,7 @@ On {KGT p.132:src}, the word is written as {tIb:v:nolink} instead of {bIt:v:noli
       <column name="definition">Are you prepared to continue?</column>
       <column name="definition_de">Bist du bereit weiterzumachen?</column>
       <column name="definition_fa">آیا برای ادامه کار آماده هستید؟ [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Är du beredd att fortsätta? [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Är du beredd att fortsätta?</column>
       <column name="definition_ru">Вы готовы продолжить? [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">您準備好繼續嗎？ [AUTOTRANSLATED]</column>
       <column name="definition_pt">Você está preparado para continuar?</column>
@@ -7662,7 +7707,7 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
       <column name="definition_fi">sopeutua, tottua, mukautua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{ma':v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -8040,7 +8085,7 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {HQ 12.2, Jun. 2003:src}, [2] {paq'batlh p.140-141:src}</column>
+      <column name="source">[1] {HQ 12.2, Jun. 2003:src}, [2] {paq'batlh 2ed p.142-143:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
@@ -8272,7 +8317,7 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
       <column name="definition">splash</column>
       <column name="definition_de">Platschen</column>
       <column name="definition_fa">چلپ چلوپ [AUTOTRANSLATED]</column>
-      <column name="definition_sv">stänk [AUTOTRANSLATED]</column>
+      <column name="definition_sv">stänk, plask, skvätt</column>
       <column name="definition_ru">всплеск [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">濺 [AUTOTRANSLATED]</column>
       <column name="definition_pt">respingo</column>
@@ -8320,7 +8365,7 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
       <column name="definition_ru">Сиять, быть блестящим</column>
       <column name="definition_zh_HK">閃耀、閃光</column>
       <column name="definition_pt">brilhante, ser brilhante</column>
-      <column name="definition_fi">kiiltää, olla kiiltävä</column>
+      <column name="definition_fi">olla kiiltävä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIch:n}, {bochmoHwI':n}, {wov:v}, {chorgh:v}</column>
@@ -8335,7 +8380,13 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {ghIchwIj DabochmoHchugh ghIchlIj qanob.:sen}</column>
+▶ {ghIchwIj DabochmoHchugh ghIchlIj qanob.:sen}
+▶ {qeylIS betleH bochvo':sen:nolink}
+   {'et Duj wovmoHwI'mey:sen:nolink}
+   {tugh nab 'ogh qeylIS:sen:nolink}
+  "The lights from the ship
+   Reflect on his bat'leth,
+   Soon Kahless will devise a plan."[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8350,8 +8401,8 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {KGT p.133:src}</column>
+      <column name="search_tags_fi">kiiltää</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.133:src}, [3] {paq'batlh 2ed p.102-103:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -8399,7 +8450,7 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">boD</column>
-      <column name="part_of_speech">n:reg,body</column>
+      <column name="part_of_speech">n:body,reg</column>
       <column name="definition">forehead</column>
       <column name="definition_de">Stirn</column>
       <column name="definition_fa">پیشانی</column>
@@ -9199,7 +9250,7 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="notes">This is a physics term.</column>
       <column name="notes_de">Dies ist ein physikalischer Begriff. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این یک اصطلاح فیزیک است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en fysiktermer. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är en fysikterm.</column>
       <column name="notes_ru">Это физический термин.</column>
       <column name="notes_zh_HK">這是一個物理術語。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é um termo da física. [AUTOTRANSLATED]</column>
@@ -9624,7 +9675,7 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="definition">symbiont</column>
       <column name="definition_de">Symbiont</column>
       <column name="definition_fa">سیمینت [AUTOTRANSLATED]</column>
-      <column name="definition_sv">symbiont [AUTOTRANSLATED]</column>
+      <column name="definition_sv">symbiont</column>
       <column name="definition_ru">симбионт [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">共生體</column>
       <column name="definition_pt">simbionte</column>
@@ -9964,6 +10015,52 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
       <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">
+      <!-- https://youtu.be/5G_v20YlwWc?t=3600 -->
+      <column name="_id"></column>
+      <column name="entry_name">borgh</column>
+      <column name="part_of_speech">n:being,fic</column>
+      <column name="definition">Borg</column>
+      <column name="definition_de">Borg [AUTOTRANSLATED]</column>
+      <column name="definition_fa">بورگ [AUTOTRANSLATED]</column>
+      <column name="definition_sv">borg</column>
+      <column name="definition_ru">Борг [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">博格 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Borg [AUTOTRANSLATED]</column>
+      <column name="definition_fi">borg</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qoq:n}</column>
+      <column name="notes">Watch the lecture on Klingon (by Marc Okrand) in which this word appears: {YouTube video:url:https://youtu.be/5G_v20YlwWc?t=3600}</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">This was spoken by MO in response to a question about how to say "Borg" or "Vulcan" in Klingon.
+
+It's unclear if this is a loanword from English or if it's the Borg's native name. It's never been explained why the name for the Borg is so close to the English word "cyborg".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {LangFest 2019:src}</column>
+    </table>
+    <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">borghel</column>
       <column name="part_of_speech">n:anim</column>
@@ -10020,7 +10117,7 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
       <column name="definition_fi">kosto</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{noD:v}, {bortaS DIb:n}</column>
+      <column name="see_also">{noD:v}, {DItlh:v}, {bortaS DIb:n}</column>
       <column name="notes">There is an idiom, {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}.</column>
       <column name="notes_de">Es gibt die Redewendung {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}.</column>
       <column name="notes_fa">یک اصطلاح ، {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v} وجود دارد. [AUTOTRANSLATED]</column>
@@ -10435,7 +10532,7 @@ Tätä sanaa käytetään myös matematiikassa (katso {botlh:n:2}). [AUTOTRANSLA
       <column name="definition">median (used in math)</column>
       <column name="definition_de">Mittelwert</column>
       <column name="definition_fa">متوسط ​​(مورد استفاده در ریاضی) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">median (inom matematik)</column>
+      <column name="definition_sv">median (i matematik)</column>
       <column name="definition_ru">Медиана (используется в математике) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">中位數（用於數學） [AUTOTRANSLATED]</column>
       <column name="definition_pt">mediana (usada em matemática)</column>
@@ -11030,10 +11127,10 @@ Die Geschichte des Versprechens besagt, dass:
 
 داستان نوید می گوید:
 {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_sv">En planet i Klingon Empire. Enligt Klingon-mytologin är det här {qeylIS'e' lIjlaHbe'bogh vay':n:name} kommer att återvända.
+      <column name="notes_sv">En planet i det klingonska imperiet. Enligt den klingonska mytologin är det hit {qeylIS'e' lIjlaHbe'bogh vay':n:name} kommer att återvända.
 
-Story of the Promise säger att:
-▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
+Historien om löftet säger:
+▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}</column>
       <column name="notes_ru">Планета в Клингонской империи. В соответствии с клингонской мифологией, здесь {qeylIS'e' lIjlaHbe'bogh vay':n:name} вернётся.
 
 История обещания:
@@ -11163,7 +11260,7 @@ Lupauksen tarinassa todetaan, että:
       <column name="definition">be neither warm nor cool (temperature)</column>
       <column name="definition_de">weder warm noch kalt sein (Temperatur)</column>
       <column name="definition_fa">نه گرم باشد و نه خنک (دما) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">vara varken varm eller sval (temperatur) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara ljummen</column>
       <column name="definition_ru">не быть ни теплым, ни прохладным (температура) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">不冷不熱（溫度） [AUTOTRANSLATED]</column>
       <column name="definition_pt">não ser nem quente nem frio (temperatura)</column>
@@ -11251,7 +11348,7 @@ The clarification about clothing was made during the Q &amp; A session at {qep'a
       <column name="definition">absorb</column>
       <column name="definition_de">absorbieren</column>
       <column name="definition_fa">جذب [AUTOTRANSLATED]</column>
-      <column name="definition_sv">absorbera [AUTOTRANSLATED]</column>
+      <column name="definition_sv">absorbera</column>
       <column name="definition_ru">абсорбировать [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">吸收 [AUTOTRANSLATED]</column>
       <column name="definition_pt">absorver</column>
@@ -11472,7 +11569,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="definition">trombone-like instrument</column>
       <column name="definition_de">Posaunenartiges Instrument</column>
       <column name="definition_fa">ساز ترومبون مانند [AUTOTRANSLATED]</column>
-      <column name="definition_sv">trombonliknande instrument [AUTOTRANSLATED]</column>
+      <column name="definition_sv">trombonliknande instrument</column>
       <column name="definition_ru">тромбоноподобный инструмент [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">長號樣樂器 [AUTOTRANSLATED]</column>
       <column name="definition_pt">instrumento semelhante ao trombone</column>
@@ -11684,15 +11781,15 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">burgh quD</column>
-      <column name="part_of_speech">n:fic,food</column>
-      <column name="definition">naturally produced [qud]</column>
-      <column name="definition_de">natürlich hergestelltes [qud]</column>
-      <column name="definition_fa">به طور طبیعی تولید می شود [qud] [AUTOTRANSLATED]</column>
-      <column name="definition_sv">naturligt framställd [qud]</column>
-      <column name="definition_ru">Произведено естественным путем</column>
-      <column name="definition_zh_HK">自然產生的《qud》</column>
-      <column name="definition_pt">produzido naturalmente [qud]</column>
-      <column name="definition_fi">luonnollisesti tuotettu [qud]</column>
+      <column name="part_of_speech">n:deriv,fic,food</column>
+      <column name="definition">naturally produced {quD:n:nolink}</column>
+      <column name="definition_de">natürlich hergestelltes {quD:n:nolink}</column>
+      <column name="definition_fa">به طور طبیعی تولید می شود {quD:n:nolink} [AUTOTRANSLATED]</column>
+      <column name="definition_sv">naturligt framställd {quD:n:nolink}</column>
+      <column name="definition_ru">Произведено естественным путем {quD:n:nolink}</column>
+      <column name="definition_zh_HK">自然產生的{quD:n:nolink}</column>
+      <column name="definition_pt">produzido naturalmente {quD:n:nolink}</column>
+      <column name="definition_fi">luonnollisesti tuotettu {quD:n:nolink}</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{quD:n}, {'un quD:n}</column>
@@ -11704,8 +11801,8 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="notes_zh_HK">{Su'lop:n}以動物為食，{Suqqa':v}為動物。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">{Su'lop:n} alimentado a um animal e {Suqqa':v}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">{Su'lop:n} syötetään eläimelle ja {Suqqa':v}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">The K-E side says [kud] instead of [qud].</column>
-      <column name="components"></column>
+      <column name="hidden_notes">The definition actually says "naturally produced kud" in the K-E word list and "naturally produced qud" in the E-K word list.</column>
+      <column name="components">{burgh:n}, {quD:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -11822,7 +11919,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="definition">thought, notion</column>
       <column name="definition_de">Gedanke, Begriff</column>
       <column name="definition_fa">فکر ، مفهوم [AUTOTRANSLATED]</column>
-      <column name="definition_sv">tanke, föreställning [AUTOTRANSLATED]</column>
+      <column name="definition_sv">tanke, föreställning</column>
       <column name="definition_ru">мысль, понятие [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">思想，觀念 [AUTOTRANSLATED]</column>
       <column name="definition_pt">pensamento, noção</column>
@@ -11908,7 +12005,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="definition">plutonium</column>
       <column name="definition_de">Plutonium</column>
       <column name="definition_fa">پلوتونیوم [AUTOTRANSLATED]</column>
-      <column name="definition_sv">plutonium [AUTOTRANSLATED]</column>
+      <column name="definition_sv">plutonium</column>
       <column name="definition_ru">плутоний [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">钚</column>
       <column name="definition_pt">plutônio</column>

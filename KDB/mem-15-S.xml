@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -189,7 +189,7 @@
       <column name="synonyms"></column>
       <column name="antonyms">{Dej:v}</column>
       <column name="see_also">{Sach:v:2}, {Sev:v}, {ngaS:v}, {tInmoH:v}</column>
-      <column name="notes"></column>
+      <column name="notes">The subject is what's undergoing expansion.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -197,7 +197,7 @@
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is used erroneously in a line in the {paq'batlh:src}: {qo'maj wISachmeH maSuv:sen:nolink}.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {mataHmeH maSachnIS.:sen}</column>
@@ -246,9 +246,9 @@ In the context of zooming (see {jo':v:2}), this can be used for "be magnified".[
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {paq SachmoH.:sen@@paq:n:1h, Sach:v:2, -moH:v} (if someone makes an expanded version of a book)
-▶ {Sach paq.:sen@@Sach:v:2, paq:n:1h} "the book expands"
-▶ {paq Sach:n@@paq:n:1h, Sach:v:2} "an extended book"</column>
+▶ {paq SachmoH.:sen@@paq:n:1h, Sach:v:2, -moH:v} (if someone makes an expanded version of a book)[1]
+▶ {Sach paq.:sen@@Sach:v:2, paq:n:1h} "the book expands"[1]
+▶ {paq Sach:n@@paq:n:1h, Sach:v:2} "an extended book"[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -270,7 +270,7 @@ In the context of zooming (see {jo':v:2}), this can be used for "be magnified".[
       <column name="_id"></column>
       <column name="entry_name">SaD</column>
       <column name="part_of_speech">n:num</column>
-      <column name="definition">thousand</column>
+      <column name="definition">thousand (number-forming element)</column>
       <column name="definition_de">Tausend</column>
       <column name="definition_fa">هزار</column>
       <column name="definition_sv">tusen (nummerbildande element)</column>
@@ -283,7 +283,9 @@ In the context of zooming (see {jo':v:2}), this can be used for "be magnified".[
       <column name="see_also">{mI':n}, {vatlh:n:num}, {netlh:n:num}</column>
       <column name="notes">Another variant of this word which is used with roughly equal frequency is {SanID:n:num,nolink}.
 
-Note that Klingon has words for "ten thousand" ({netlh:n:num}) and "hundred thousand" ({bIp:n:num}) which are independent of the word for "thousand".
+This is a number-forming element, and not itself a number. The number 1000 (one thousand) is {wa'SaD:n:num,nolink} in Klingon.
+
+Note that Klingon has number-forming elements for "ten thousand" ({netlh:n:num}) and "hundred thousand" ({bIp:n:num}) which are independent of the word for "thousand".
 
 While {SaD law':n:nolink} is a grammatical expression, {SaDmey:n:nolink} is not.[3]</column>
       <column name="notes_de">Eine andere Variante dieses Wortes, die ungefähr gleich häufig verwendet wird, ist {SanID:n:num,nolink}.
@@ -321,13 +323,13 @@ Vaikka {SaD law':n:nolink} on kieliopillinen lauseke, {SaDmey:n:nolink} ei ole.[
    {wej boghbogh nuvpu' San chenmoH:sen:nolink}
   "In one single move,
    Kahless decided the fate
-   Of thousands, and those to come."[2, p.170-171]
+   Of thousands, and those to come."[2, p.166-167]
 ▶ {tlheDDI' quvmoHmeH:sen:nolink}
    {veng HeHDaq lutlha':sen:nolink}
    {SaD law' nuvpu':sen:nolink}
   "Thousands followed him
    To the edge of the city,
-   To bid him farewell."[2, p.180-181]</column>
+   To bid him farewell."[2, p.176-177]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -343,7 +345,93 @@ Vaikka {SaD law':n:nolink} on kieliopillinen lauseke, {SaDmey:n:nolink} ei ole.[
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {Saarbrücken qepHom'a' 2019:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}, [3] {Saarbrücken qepHom'a' 2019:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SaDbIp</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">hundred million (number-forming element)</column>
+      <column name="definition_de">hundert Millionen (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">صد میلیون (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hundra miljoner (nummerbildande element)</column>
+      <column name="definition_ru">сто миллионов (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">cem milhões (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">sata miljoonaa</column>
+      <column name="synonyms">{SanIDbIp:n}, {vatlh'uy':n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{SaD:n:num}, {bIp:n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SaDSaghan</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">trillion (number-forming element)</column>
+      <column name="definition_de">Billion (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">تریلیون (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">biljon (nummerbildande element)</column>
+      <column name="definition_ru">триллион (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">萬億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">trilhão (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">tuhat miljardia</column>
+      <column name="synonyms">{SanIDSaghan:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{SaD:n:num}, {Saghan:n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -435,7 +523,7 @@ Vaikka {SaD law':n:nolink} on kieliopillinen lauseke, {SaDmey:n:nolink} ei ole.[
       <column name="_id"></column>
       <column name="entry_name">Saghan</column>
       <column name="part_of_speech">n:num</column>
-      <column name="definition">billion</column>
+      <column name="definition">billion (number-forming element)</column>
       <column name="definition_de">Milliarde</column>
       <column name="definition_fa">میلیارد</column>
       <column name="definition_sv">miljard [AUTOTRANSLATED]</column>
@@ -726,13 +814,13 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
    {HuDmey Sal ghIq ghIr:sen:nolink}
   "And Kahless traveled to
    His beloved Saq'sub
-   Over the mountains"[2, p.114-115]
+   Over the mountains"[2, p.120-121]
 ▶ {QIStaq 'emDaq jenchoH jul:sen:nolink}
    {yor DungDaq Salta'DI':sen:nolink}
    {tagh HarghchuqmeH poH:sen:nolink}
   "The sun rises high behind the Kri'stak
    When it rises over its top
-   It is time to do battle"[2, p.164-165]</column>
+   It is time to do battle"[2, p.162-163]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -748,7 +836,7 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {KLI mailing list 2018.02.10:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}, [3] {KLI mailing list 2018.02.10:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -835,7 +923,7 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.166-167:src}, [3] {KLI mailing list 2018.01.08:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.166-167:src}, [3] {KLI mailing list 2018.01.08:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -922,6 +1010,92 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SanIDbIp</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">hundred million (number-forming element)</column>
+      <column name="definition_de">hundert Millionen (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">صد میلیون (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hundra miljoner (nummerbildande element)</column>
+      <column name="definition_ru">сто миллионов (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">cem milhões (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">sata miljoonaa</column>
+      <column name="synonyms">{SaDbIp:n}, {vatlh'uy':n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{SanID:n:num}, {bIp:n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">SanIDSaghan</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">trillion (number-forming element)</column>
+      <column name="definition_de">Billion (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">تریلیون (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">biljoner (nummerbildande element) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">триллион (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">萬億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">trilhão (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">tuhat miljardia</column>
+      <column name="synonyms">{SaDSaghan:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{SanID:n:num}, {Saghan:n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1270,8 +1444,8 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Saq</column>
-      <column name="part_of_speech">v:i</column>
-      <column name="definition">land; set down on land (like a bird)</column>
+      <column name="part_of_speech">v:i_c</column>
+      <column name="definition">land (alight on the ground, like a bird)</column>
       <column name="definition_de">landen (wie ein Vogel)</column>
       <column name="definition_fa">زمین؛ زمینی (مانند یک پرنده) [AUTOTRANSLATED]</column>
       <column name="definition_sv">landa, landsätta, gå i land</column>
@@ -1282,15 +1456,17 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ngun:v}, {tlhot:v}, {puH:n}</column>
-      <column name="notes">If a bird lands on a tree, the verb {ngun:v} is used, and if on water, then {tlhot:v}.</column>
-      <column name="notes_de">Wenn ein Vogel auf einem Baum landet, wird das Verb {ngun:v} verwendet, und wenn er sich auf dem Wasser befindet, dann {tlhot:v}. [AUTOTRANSLATED]</column>
+      <column name="notes">If a bird lands on a tree, the verb {ngun:v} is used, and if on water, then {tlhot:v}.[2] The landing site (see {SaqDaq:n}) is marked with {-Daq:n:suff}.[4]</column>
+      <column name="notes_de"></column>
       <column name="notes_fa"></column>
-      <column name="notes_sv">Om en fågel landar på ett träd används verbet {ngun:v}, och om det är på vatten, då {tlhot:v}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv"></column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
-      <column name="notes_pt">Se um pássaro pousar em uma árvore, o verbo {ngun:v} será usado e, se estiver na água, {tlhot:v}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Jos lintu laskeutuu puuhun, käytetään verbiä {ngun:v} ja jos vedessä, niin {tlhot:v}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Land "shark" from SNL.</column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Land "shark" from SNL.
+
+This was defined as "land" in {TKD:src}. The clarification was added based on {HQ 10.4:src}, which says "the verb {Saq:v:nolink} is used if the bird alights on the ground".</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {SaqtaHvIS toQDuj wa'vatlh loS vI' jav chorgh 'uj 'ab 'oH:sen:nolink} "Landing Formation Height: 36.46 M"[3]
@@ -1326,7 +1502,7 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="definition_fi">laskeutumispaikka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{Saq:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1336,7 +1512,7 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{Saq:v} or {Saq:n:hyp,nolink}, {Daq:n}</column>
+      <column name="components">{Saq:v:nolink} or {Saq:n:hyp,nolink}, {Daq:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1445,14 +1621,14 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="_id"></column>
       <column name="entry_name">SaqSub</column>
       <column name="part_of_speech">n:place,fic</column>
-      <column name="definition">Saq'Sub</column>
-      <column name="definition_de">Saq'Sub</column>
-      <column name="definition_fa">Saq'Sub [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Saq'Sub [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Saq'Sub [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">Saq'Sub [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Saq'Sub</column>
-      <column name="definition_fi">Saq'Sub</column>
+      <column name="definition">Saq'sub</column>
+      <column name="definition_de">Saq'sub</column>
+      <column name="definition_fa">Saq'sub [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Saq'sub [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Saq'sub [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">Saq'sub [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Saq'sub</column>
+      <column name="definition_fi">Saq'sub</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -1464,7 +1640,7 @@ Tätä sanaa ei käytetä lajittelujärjestykseen.[3] [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi">Tämä on {qeylIS'e' lIjlaHbe'bogh vay':n:name}: n syntyperäinen alue {Qo'noS:n:place}: lla ja hänen omaisuutensa sijainti. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was apparently intended to mean "hero's land". The inventor of the word either made a mistake in looking up "land" (which, as a noun, should be {puH:n} rather than {Saq:v}), or simply preferred the look or sound of "Saq'sub".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2294,14 +2470,14 @@ Maltz ei tiennyt yleistä verbiä tälle[1] [AUTOTRANSLATED]</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the 2nd rank of {yaS:n}.</column>
-      <column name="notes_de">Dies ist der 2. Rang von {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این دومین رتبه {yaS:n} است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är den andra rankningen av {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это 2-й ранг {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是{yaS:n}的第二等級。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o 2º ranking do {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) toiseksi korkein sotilasarvo.</column>
+      <column name="notes">This is the 2nd rank of {yaS:n}.[2]</column>
+      <column name="notes_de">Dies ist der 2. Rang von {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این دومین رتبه {yaS:n} است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är den andra rankningen av {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это 2-й ранг {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{yaS:n}的第二等級。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o 2º ranking do {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) toiseksi korkein sotilasarvo.[2]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -2320,7 +2496,7 @@ Maltz ei tiennyt yleistä verbiä tälle[1] [AUTOTRANSLATED]</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.52:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2481,7 +2657,7 @@ This word appears only in the body of {KGT:src} and not in the glossary.</column
       <column name="definition">torch</column>
       <column name="definition_de">Fackel</column>
       <column name="definition_fa">مشعل [AUTOTRANSLATED]</column>
-      <column name="definition_sv">fackla, handhållen lampa</column>
+      <column name="definition_sv">fackla</column>
       <column name="definition_ru">факел [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">火炬</column>
       <column name="definition_pt">tocha</column>
@@ -2915,7 +3091,7 @@ This word appears only in the body of {KGT:src} and not in the glossary.</column
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">SenwI'</column>
-          <column name="part_of_speech">n:deriv,body</column>
+          <column name="part_of_speech">n:body,deriv</column>
           <column name="definition">thumb (adult)</column>
           <column name="definition_de">Daumen (eines Erwachsenen)</column>
           <column name="definition_fa">انگشت شست (بالغ) [AUTOTRANSLATED]</column>
@@ -3146,7 +3322,7 @@ Koska tämä on muu kuin klingonilainen nimi, siinä on jonkin verran vaihtelua 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Senjaw</column>
-      <column name="part_of_speech">n:name,fic,alt</column>
+      <column name="part_of_speech">n:name,alt,fic</column>
       <column name="definition">{Senjo':n:name}</column>
       <column name="definition_de">{Senjo':n:name}</column>
       <column name="definition_fa">{Senjo':n:name}</column>
@@ -3704,7 +3880,7 @@ Jotkut {Qo'noS:n}:n tunnetuista alueista ovat:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SermanyuQ</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:place,fic</column>
       <column name="definition">Sherman's Planet</column>
       <column name="definition_de">Shermans Planet</column>
       <column name="definition_fa">سیاره شرمن [AUTOTRANSLATED]</column>
@@ -3837,7 +4013,7 @@ Jotkut {Qo'noS:n}:n tunnetuista alueista ovat:
       <column name="definition">subject</column>
       <column name="definition_de">Subjekt</column>
       <column name="definition_fa">موضوع [AUTOTRANSLATED]</column>
-      <column name="definition_sv">ämne [AUTOTRANSLATED]</column>
+      <column name="definition_sv">subjekt (grammatisk term)</column>
       <column name="definition_ru">тема [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">學科 [AUTOTRANSLATED]</column>
       <column name="definition_pt">sujeito</column>
@@ -3848,7 +4024,7 @@ Jotkut {Qo'noS:n}:n tunnetuista alueista ovat:
       <column name="notes">This is a grammar term.</column>
       <column name="notes_de">Dies ist ein Grammatikbegriff. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این یک اصطلاح گرامر است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en grammatisk term. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är en grammatisk term.</column>
       <column name="notes_ru">Это грамматический термин. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是一個語法術語。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é um termo gramatical. [AUTOTRANSLATED]</column>
@@ -4572,7 +4748,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {KLI mailing list 2019.04.09:src}, [4] {DSC - Such Sweet Sorrow, Part 2:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.150-151:src}, [3] {KLI mailing list 2019.04.09:src}, [4] {DSC - Such Sweet Sorrow, Part 2:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4836,7 +5012,7 @@ The existence of the homophonous noun {Sev:n} may suggest that Klingons view the
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SIjwI'</column>
-      <column name="part_of_speech">n:food,deriv</column>
+      <column name="part_of_speech">n:deriv,food</column>
       <column name="definition">type of knife (used for food preparation)</column>
       <column name="definition_de">Messer zur Essenszubereitung</column>
       <column name="definition_fa">نوع چاقو (برای تهیه غذا استفاده می شود) [AUTOTRANSLATED]</column>
@@ -5305,7 +5481,7 @@ Jotkut vertailulämpötilat {SImyon:sen:nolink}-asteikolle (vasen) vs. Celsius (
       <column name="definition_fi">kova, jäykkä hius tai säie; harjas</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{yachwI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5418,7 +5594,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">SIqwI'</column>
-          <column name="part_of_speech">n:deriv,body</column>
+          <column name="part_of_speech">n:body,deriv</column>
           <column name="definition">index finger, first finger</column>
           <column name="definition_de">Zeigefinger</column>
           <column name="definition_fa">انگشت اشاره، انگشت اول [AUTOTRANSLATED]</column>
@@ -5504,7 +5680,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SIqral</column>
-      <column name="part_of_speech">n:place,fic,alt,noanki</column>
+      <column name="part_of_speech">n:place,alt,fic,noanki</column>
       <column name="definition">{SIqral bIQtIq:n}</column>
       <column name="definition_de">{SIqral bIQtIq:n}</column>
       <column name="definition_fa">{SIqral bIQtIq:n}</column>
@@ -5733,7 +5909,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
       <column name="definition_fi">olla uniikki, ennenkuulumaton</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{chab chu':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5776,7 +5952,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
       <column name="definition_fi">naru, lanka, rihma, säie, kuitu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tlhegh:n}, {qoSta':n}, {wal:v}</column>
+      <column name="see_also">{tlhegh:n}, {qoSta':n}, {wal:v}, {ma'lI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5942,7 +6118,7 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
       <column name="definition">silver</column>
       <column name="definition_de">Silber</column>
       <column name="definition_fa">نقره [AUTOTRANSLATED]</column>
-      <column name="definition_sv">silver- [AUTOTRANSLATED]</column>
+      <column name="definition_sv">silver</column>
       <column name="definition_ru">Серебряный [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">銀 [AUTOTRANSLATED]</column>
       <column name="definition_pt">prata</column>
@@ -6023,6 +6199,49 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">SIr'eq</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">unit of radioactive decay</column>
+      <column name="definition_de">Einheit des radioaktiven Zerfalls</column>
+      <column name="definition_fa">واحد تجزیه رادیواکتیو [AUTOTRANSLATED]</column>
+      <column name="definition_sv">enhet för radioaktivt sönderfall [AUTOTRANSLATED]</column>
+      <column name="definition_ru">единица радиоактивного распада [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">放射性衰變單位 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">unidade de decaimento radioativo [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs radioaktiivisen hajoamisen yksikkö</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{woj:v}</column>
+      <column name="notes">It's unknown how this compares to the becquerel.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">SIr'o'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">network, web, mesh, lattice, nexus</column>
@@ -6089,11 +6308,9 @@ Jos työvälinettä käytetään tyypillisesti sormen suorittamaan toimintaan, v
       <column name="notes_fi">Tämä verbi voi ottaa objektin. Sen aihe on yleensä ilmoittamaton.[2] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">It's the sound of rain falling.
 
-The sentence from {paq'batlh:src} has been replaced in the 2nd edition with a different one which uses {ghay:v} instead.</column>
+The sentence {chaHDaq SIStaHvIS negh 'Iw:sen:nolink} "[While they were] showered with the soldiers' blood" appeared in {paq'batlh 1ed p.136-137:src}, but this sentence was replaced in the 2ed with one which uses {ghay:v:nolink} instead.</column>
       <column name="components"></column>
-      <column name="examples">
-▶ {ghIq QavwI'chaj DuQchu' qeylIS betleH chaHDaq SIStaHvIS negh 'Iw:sen:nolink}
-  "Then Kahless's bat'leth pierced the last of them, showered with the soldiers' blood."[3]</column>
+      <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6109,7 +6326,7 @@ The sentence from {paq'batlh:src} has been replaced in the 2nd edition with a di
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 1998.05.28:src}, [3] {paq'batlh 1ed p.136-137:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 1998.05.28:src}</column>
     </table>
     <table name="mem">
       <!-- Not "deriv" because {SIS:n:hyp} is hypothetical. -->
@@ -6518,14 +6735,14 @@ The sentence from {paq'batlh:src} has been replaced in the 2nd edition with a di
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the 7th rank of {yaS:n}.</column>
-      <column name="notes_de">Dies ist der 7. Rang von {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این رتبه هفتم {yaS:n} است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är den 7: e rankningen av {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это 7-й ранг {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是{yaS:n}的第七位。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o 7º ranking do {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) seitsemänneksi korkein sotilasarvo.</column>
+      <column name="notes">This is the 7th rank of {yaS:n}.[2]</column>
+      <column name="notes_de">Dies ist der 7. Rang von {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این رتبه هفتم {yaS:n} است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är den 7: e rankningen av {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это 7-й ранг {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{yaS:n}的第七位。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o 7º ranking do {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) seitsemänneksi korkein sotilasarvo.[2]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -6544,7 +6761,7 @@ The sentence from {paq'batlh:src} has been replaced in the 2nd edition with a di
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT p.52:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6983,7 +7200,7 @@ The {SkyBox 21:src} example appears to be missing a conjunction.</column>
       <column name="definition_ru">высокая кухня [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">高級美食 [AUTOTRANSLATED]</column>
       <column name="definition_pt">culinaria Haute (fina)</column>
-      <column name="definition_fi">haute cuisine, gurmeeruoanlaitto</column>
+      <column name="definition_fi">haute cuisine, gurmeeruoka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -7665,49 +7882,6 @@ The {SkyBox 21:src} example appears to be missing a conjunction.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">Soq</column>
-      <column name="part_of_speech">v:t_c,alt,noanki</column>
-      <column name="definition">{Suq:v}</column>
-      <column name="definition_de">{Suq:v}</column>
-      <column name="definition_fa">{Suq:v}</column>
-      <column name="definition_sv">{Suq:v}</column>
-      <column name="definition_ru">{Suq:v}</column>
-      <column name="definition_zh_HK">{Suq:v}</column>
-      <column name="definition_pt">{Suq:v}</column>
-      <column name="definition_fi">{Suq:v}</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is a typo for {Suq:v:nolink} which appeared in {HQ 6.2:src} in the transcription of {SkyBox 33:src}. The word is spelled correctly as {Suq:v:nolink} on the card itself.</column>
-      <column name="notes_de">Dies ist ein Tippfehler für {Suq:v:nolink}, der in {HQ 6.2:src} in der Transkription von {SkyBox 33:src} enthalten ist. Das Wort wird auf der Karte selbst korrekt als {Suq:v:nolink} geschrieben. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این یک تایپی برای {Suq:v:nolink} است که در {HQ 6.2:src} در رونویسی از {SkyBox 33:src} ظاهر شده است. این کلمه به صورت صحیح به عنوان {Suq:v:nolink} روی خود کارت نوشته شده است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en skrivfel för {Suq:v:nolink} som visades i {HQ 6.2:src} i transkriptionen av {SkyBox 33:src}. Ordet stavas korrekt som {Suq:v:nolink} på själva kortet. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это опечатка для {Suq:v:nolink}, которая появилась в {HQ 6.2:src} в транскрипции {SkyBox 33:src}. Слово написано правильно как {Suq:v:nolink} на самой карте. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是{SkyBox 33:src}轉錄中出現在{HQ 6.2:src}中的{Suq:v:nolink}的錯字。該單詞本身在卡上的拼寫正確為{Suq:v:nolink}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é um erro de digitação para {Suq:v:nolink} que apareceu em {HQ 6.2:src} na transcrição de {SkyBox 33:src}. A palavra está escrita corretamente como {Suq:v:nolink} no próprio cartão. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on kirjoitusvirhe {Suq:v:nolink}: lle, joka ilmestyi {HQ 6.2:src}: ssa {SkyBox 33:src}: n transkriptiossa. Sana on kirjoitettu oikein nimellä {Suq:v:nolink} itse kortilla. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {HQ 6.2, p.9, Jun. 1997:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">SoQ</column>
       <column name="part_of_speech">v:is,klcp1</column>
       <column name="definition">be closed, shut</column>
@@ -7760,7 +7934,7 @@ The {SkyBox 21:src} example appears to be missing a conjunction.</column>
       <column name="definition_ru">речь, лекция, адрес [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">演講、講座、演講 [AUTOTRANSLATED]</column>
       <column name="definition_pt">discurso, palestra</column>
-      <column name="definition_fi">puhe, luento, puheenvuoro</column>
+      <column name="definition_fi">puhe, puheenvuoro, luento, oppitunti</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jatlh:v}</column>
@@ -7849,7 +8023,7 @@ The {SkyBox 21:src} example appears to be missing a conjunction.</column>
       <column name="definition_fi">puu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{lav:n}, {por:n}, {bartIq:n}, {Qechjem'a':n}, {pu'veng:n:1}, {tI:n}, {perletlh:n}, {qet'uy:n}</column>
+      <column name="see_also">{lav:n}, {por:n}, {bartIq:n}, {Qechjem'a':n}, {pu'veng:n}, {tI:n}, {perletlh:n}, {qet'uy:n}</column>
       <column name="notes">There is an idiom, {lugh; Sor rur@@lugh:v, Sor:n, rur:v}[2], which may be connected to the verb {Sor:v}.
 
 This word can also refer to the "club" suit in a deck of playing cards (see {Degh:n:1}).[3]</column>
@@ -8325,7 +8499,7 @@ Tämä sana voi viitata myös "klubipukuun" pelikorttipakassa (katso {Degh:n:1})
           <!-- This is here, rather than in the examples file, for symmetry with {vavoy:n}, which does appear in canon. -->
           <column name="_id"></column>
           <column name="entry_name">SoSoy</column>
-          <column name="part_of_speech">n:deriv,being</column>
+          <column name="part_of_speech">n:being,deriv</column>
           <column name="definition">mommy</column>
           <column name="definition_de">Mami</column>
           <column name="definition_fa">مامان [AUTOTRANSLATED]</column>
@@ -8756,7 +8930,7 @@ Tämä sana voi viitata myös "klubipukuun" pelikorttipakassa (katso {Degh:n:1})
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Soy'</column>
-      <column name="part_of_speech">v:2,reg,is</column>
+      <column name="part_of_speech">v:2,is,reg</column>
       <column name="definition">be messy</column>
       <column name="definition_de">unordentlich sein</column>
       <column name="definition_fa">ببخشید [AUTOTRANSLATED]</column>
@@ -8799,7 +8973,7 @@ Tämä sana voi viitata myös "klubipukuun" pelikorttipakassa (katso {Degh:n:1})
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">So'</column>
-      <column name="part_of_speech">v:1,ambi,klcp1</column>
+      <column name="part_of_speech">v:1,t_c,klcp1</column>
       <column name="definition">hide, cloak</column>
       <column name="definition_de">verstecken</column>
       <column name="definition_fa">پنهان ، پنهان [AUTOTRANSLATED]</column>
@@ -8807,11 +8981,11 @@ Tämä sana voi viitata myös "klubipukuun" pelikorttipakassa (katso {Degh:n:1})
       <column name="definition_ru">прятаться [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">隱藏，披風 [AUTOTRANSLATED]</column>
       <column name="definition_pt">esconder, camuflar</column>
-      <column name="definition_fi">piiloutua, verhoutua; piilottaa</column>
+      <column name="definition_fi">piilottaa</column>
       <column name="synonyms"></column>
       <column name="antonyms">{So'Ha':v:1}</column>
       <column name="see_also"></column>
-      <column name="notes">If there is no object, then the subject is the one hiding (e.g., {nuqDaq So'taH yaS?:sen:nolink}[1]). If there is an object, then the subject is hiding the object (e.g., {Duj So':sen:nolink} "He/she cloaks the ship" or {Duj So'lu'pu':sen:nolink} "The ship is cloaked"[2]).
+      <column name="notes">The subject of this verb hides the object (or hides something in general, if there's no object).[3]
 
 This verb is also used for the encryption of data (see {So':v:2}).</column>
       <column name="notes_de"></column>
@@ -8820,10 +8994,14 @@ This verb is also used for the encryption of data (see {So':v:2}).</column>
       <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes">"Show".</column>
+      <column name="notes_fi">Tätä verbiä voi soveltaa myös datan salaamiseen (ks. {So':v:2}).</column>
+      <column name="hidden_notes">"Show".
+
+The example {nuqDaq So'taH yaS?:sen:nolink} on {TKD p.69:src} is in error. As written, it would mean "Where is the officer hiding [something]?"[3]</column>
       <column name="components"></column>
       <column name="examples">
+▶ {Duj So':sen:nolink} "He/she cloaks the ship"[2]
+▶ {Duj So'lu'pu':sen:nolink} "The ship is cloaked"[2]
 ▶ {ghach jIvvo' naH. DaH pIghvamDaq So''eghtaH.:sen}
 ▶ {HIvmeH Duj So'lu'.:sen}
 ▶ {maS'e' loQ So'be'bogh QIb:n}
@@ -8845,13 +9023,13 @@ This verb is also used for the encryption of data (see {So':v:2}).</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD p.69:src}, [2] {KGT p.55:src}</column>
+      <column name="search_tags_fi">verhoutua, häive</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.55:src}, [3] {KLI mailing list 2022.06.10:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">So'</column>
-      <column name="part_of_speech">v:2,ambi</column>
+      <column name="part_of_speech">v:2,t_c</column>
       <column name="definition">encrypt</column>
       <column name="definition_de">verschlüsseln</column>
       <column name="definition_fa">رمزگذاری [AUTOTRANSLATED]</column>
@@ -8871,9 +9049,7 @@ This verb is also used for the encryption of data (see {So':v:2}).</column>
       <column name="notes_zh_HK">這只是{So':v:1}對數據的應用。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é apenas um aplicativo de {So':v:1} para dados. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on vain {So':v:1} -sovelluksen tietoja. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">"Show".
-
-Despite the English definition, it may be the case that the grammar follows {So':v:1,nolink}, and that the subject is encrypted if there is no object.</column>
+      <column name="hidden_notes">"Show".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8890,13 +9066,13 @@ Despite the English definition, it may be the case that the grammar follows {So'
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi">häive</column>
+      <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2014:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">So'Ha'</column>
-          <column name="part_of_speech">v:1,ambi,deriv</column>
+          <column name="part_of_speech">v:1,t_c,deriv</column>
           <column name="definition">unhide, decloak</column>
           <column name="definition_de">enttarnen</column>
           <column name="definition_fa">از بین بردن ، رها کردن [AUTOTRANSLATED]</column>
@@ -8904,7 +9080,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
           <column name="definition_ru">показать, деклоак [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">取消隱藏，隱藏 [AUTOTRANSLATED]</column>
           <column name="definition_pt">exibir, descamuflar</column>
-          <column name="definition_fi">paljastaa itsensä, poistaa verhoutuminen; paljastaa jokin (piilotettu)</column>
+          <column name="definition_fi">paljastaa jokin (piilotettu)</column>
           <column name="synonyms"></column>
           <column name="antonyms">{So':v:1}</column>
           <column name="see_also">{So'wI' yIchu'Ha'!:sen}</column>
@@ -8940,7 +9116,7 @@ Despite the English definition, it may be the case that the grammar follows {So'
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">So'Ha'</column>
-          <column name="part_of_speech">v:2,ambi,deriv</column>
+          <column name="part_of_speech">v:2,t_c,deriv</column>
           <column name="definition">decrypt</column>
           <column name="definition_de">entschlüsseln</column>
           <column name="definition_fa">رمزگشایی [AUTOTRANSLATED]</column>
@@ -9712,7 +9888,7 @@ This term is gender-neutral and "godparent" is a good approximation. If a gender
    {tlhIngan wo' voDleH moj Sughlu':sen:nolink}
   "Kahless united the tribes of Kronos,
    And provided them with the laws of honor.
-   He was crowned emperor of the Klingon Empire."[2]</column>
+   He was crowned Emperor of the Klingon Empire."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -9728,7 +9904,7 @@ This term is gender-neutral and "godparent" is a good approximation. If a gender
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}, [2] {paq'batlh p.178-179:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {paq'batlh 2ed p.174-177:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9881,6 +10057,49 @@ In a message to the {KLI mailing list 2021.02.28:src}, Maltz even said the Kling
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}, [2] {HQ 7.4, p.9-10, Dec. 1998:src}, [3] {Klingon Monopoly:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Sumlugh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">definition (as in a monolingual dictionary)</column>
+      <column name="definition_de">Definition</column>
+      <column name="definition_fa">تعریف (مانند فرهنگ لغت تک زبانه) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">definition (som i en enspråkig ordbok) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">определение (как в одноязычном словаре) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">定義（如在單語詞典中） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">definição (como em um dicionário monolíngue) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">määritelmä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{jIyweS:n}</column>
+      <column name="notes">This refers to how a word would be defined in the same language. See {ghaS:v} for how to express "X means Y".[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -10230,7 +10449,7 @@ In a message to the {KLI mailing list 2021.02.28:src}, Maltz even said the Kling
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Suqqa'</column>
-      <column name="part_of_speech">v:deriv,t_c</column>
+      <column name="part_of_speech">v:t_c,deriv</column>
       <column name="definition">prepare kud in a specific way</column>
       <column name="definition_de">Kud auf besondere Weise herstellen</column>
       <column name="definition_fa">kud را به روش خاصی آماده کردن [AUTOTRANSLATED]</column>
@@ -10626,7 +10845,7 @@ In a message to the {KLI mailing list 2021.02.28:src}, Maltz even said the Kling
       <column name="definition_ru">удар (в духовой инструмент), чтобы произвести звук [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">吹（進入管樂器）產生聲音 [AUTOTRANSLATED]</column>
       <column name="definition_pt">soprar (em instrumento de sopro) para produzir som</column>
-      <column name="definition_fi">puhaltaa (puhallinsoittimeen) äänen tuottamiseksi</column>
+      <column name="definition_fi">puhaltaa (jonkin läpi tai ohi), soittaa (puhallinsoitinta)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{SuS:n}, {rIl:v:2}, {chu':v:3}</column>
@@ -10766,7 +10985,7 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
       <column name="definition_fi">vaatetus, vaatteet</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{HIp:n}, {mop:n}, {jech:n}, {rejghun:n}, {weSjech:n}</column>
+      <column name="see_also">{HIp:n}, {mop:n}, {jech:n}, {rejghun:n}, {weSjech:n}, {yIvbeH:n:1}, {yopwaH:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -10978,7 +11197,7 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
       <column name="definition_ru">Сто-Во-Кор [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">STO-VO-韓 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Sto-Vo-Kor</column>
-      <column name="definition_fi">Sto-Vo-Kor</column>
+      <column name="definition_fi">eräs myyttinen paikka, Sto-Vo-Kor</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{QI'tu':n}</column>
@@ -10990,7 +11209,9 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
       <column name="notes_zh_HK">尊貴死者的來世，所有真正的戰士死後與永恆的戰鬥死去。最接近天堂的克林崗語。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">A vida após a morte dos mortos honrados, onde todos os verdadeiros guerreiros vão depois que morrem para lutar uma batalha eterna. O Klingon mais próximo equivalente ao céu. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Kunnioitettujen kuolleiden jälkimaailma, johon kaikki todelliset soturit menevät kuolemansa jälkeen taistelemaan ikuista taistelua. Lähin taivasta vastaava Klingon. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">Used by DeCandido in 2001 novel {Diplomatic Implausibility:src}; confirmed by MO at {qep'a' 17 (2010):src}.</column>
+      <column name="hidden_notes">Klingon spelling used by DeCandido in 2001 novel {Diplomatic Implausibility:src}; confirmed by MO at {qep'a' 17 (2010):src}.
+
+The way this word has appeared in English has been inconsistent between whether hyphens or apostrophes separate the three parts, and whether each part is capitalized. It's written "Sto-Vo-Kor" on {TKW p.144:src}, the script to {TNG - Rightful Heir:src}, and in {Diplomatic Implausibility:src}, which is the convention followed here. However, it has also been spelled "Sto'Vo'Kor" and "Sto-vo-kor" in some materials. The latter way appears in the {paq'batlh:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -11277,7 +11498,7 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">SuvwI'</column>
-          <column name="part_of_speech">n:deriv,being,klcp1</column>
+          <column name="part_of_speech">n:being,deriv,klcp1</column>
           <column name="definition">warrior</column>
           <column name="definition_de">Krieger</column>
           <column name="definition_fa">جنگجو، مبارز</column>
@@ -11620,49 +11841,6 @@ Tätä voidaan käyttää myös kynttilän puhaltamiseen ({weQ:n}). Toisin kuin 
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">Su'ghar qut</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">sugar</column>
-      <column name="definition_de">Zucker</column>
-      <column name="definition_fa">قند [AUTOTRANSLATED]</column>
-      <column name="definition_sv">socker</column>
-      <column name="definition_ru">сахар [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">糖 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">açúcar</column>
-      <column name="definition_fi">sokeri</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{na'ran:n}, {HaQchor:n}, {Halrov:n}</column>
-      <column name="notes">In {TNK:src}, sugar (common table sugar) is translated as {Su'ghar qutmey:n:nolink}. Presumably, then, a single {Su'ghar qut:n:nolink} would be one grain of sugar.</column>
-      <column name="notes_de">In {TNK:src} wird Zucker (gewöhnlicher Haushaltszucker) als {Su'ghar qutmey:n:nolink} übersetzt. Vermutlich wäre dann ein einzelnes {Su'ghar qut:n:nolink} ein Zuckerkorn. [AUTOTRANSLATED]</column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv">I {TNK:src} översätts socker (vanligt bordsocker) till {Su'ghar qutmey:n:nolink}. Förmodligen skulle en enda {Su'ghar qut:n:nolink} vara ett sockerkorn. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">В {TNK:src} сахар (обычный столовый сахар) переводится как {Su'ghar qutmey:n:nolink}. Предположительно, тогда один {Su'ghar qut:n:nolink} будет одним зерном сахара. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi">{TNK:src}-ohjelmassa sokeri (tavallinen ruokasokeri) käännetään nimellä {Su'ghar qutmey:n:nolink}. Oletettavasti yksi {Su'ghar qut:n:nolink} olisi siis yksi sokerirake. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TNK:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">Su'lop</column>
       <column name="part_of_speech">n:fic,food</column>
       <column name="definition">type of food</column>
@@ -11793,6 +11971,49 @@ Seuraavissa esimerkeissä voidaan käyttää tiettyä sormen tai varpaan nimeä 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2015:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Su'roq</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">floor, level, storey</column>
+      <column name="definition_de">Boden, Ebene, Geschoss [AUTOTRANSLATED]</column>
+      <column name="definition_fa">طبقه، سطح، طبقه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">våning, plan, våning [AUTOTRANSLATED]</column>
+      <column name="definition_ru">этаж, уровень, этаж [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">地板，水平，樓層 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">andar, andar, andar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">kerros, taso</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This refers to a floor or level in a building, or the level of a platform, and so on. The ground floor is {Su'roq wa'DIch:n@@Su'roq:n, wa'DIch:n:num}, followed by {Su'roq cha'DIch:n@@Su'roq:n, cha'DIch:n:1,num}, and so on. The basement is {qach DIS:n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

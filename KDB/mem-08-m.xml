@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -95,7 +95,7 @@
       <column name="definition_ru">соглашение, договорённость, контракт</column>
       <column name="definition_zh_HK">條約、合同、承諾、協議</column>
       <column name="definition_pt">tratado, acordo, contrato, compromisso</column>
-      <column name="definition_fi">sopimus, sitoomus</column>
+      <column name="definition_fi">sopimus, sitoumus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{qI':v:1}, {Sutlh:v}</column>
@@ -314,7 +314,7 @@ René Magritte painted "La Trahison des images".</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maghwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">traitor</column>
       <column name="definition_de">Verräter</column>
       <column name="definition_fa">خائن، خیانتکار</column>
@@ -582,8 +582,8 @@ Pakollinen verbin etuliite, kun kohde on {maH:n:1h,nolink}, on {gho-:v:pref}. [A
       <column name="definition_fi">kymmenen (vain yhdyssanan jälkiosana)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{wa':n:num}, {vatlh:n:num}</column>
-      <column name="notes">Note that this is a number-forming element, and not itself a number. The number ten is {wa'maH:n:num}, literally "one ten", in Klingon.</column>
+      <column name="see_also">{mI':n}, {wa':n:num}, {vatlh:n:num}</column>
+      <column name="notes">This is a number-forming element, and not itself a number. The number 10 (ten) is {wa'maH:n:num}, literally "one ten", in Klingon.</column>
       <column name="notes_de">Beachten Sie, dass dies ein zahlenbildendes Element ist und nicht selbst eine Zahl. Die Nummer zehn ist {wa'maH:n:num}, wörtlich "eins zehn", auf Klingonisch. [AUTOTRANSLATED]</column>
       <column name="notes_fa">توجه داشته باشید که این یک عنصر تشکیل دهنده عدد است و نه خود یک عدد. شماره ده {wa'maH:n:num} است ، به معنای واقعی کلمه "یک ده" ، در کلینگون. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Observera att detta är ett nummerbildande element och inte i sig ett nummer. Nummer tio är {wa'maH:n:num}, bokstavligen "en tio", i Klingon. [AUTOTRANSLATED]</column>
@@ -696,6 +696,92 @@ Pakollinen verbin etuliite, kun kohde on {maH:n:1h,nolink}, on {gho-:v:pref}. [A
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maHSaghan</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">ten billion (number-forming element)</column>
+      <column name="definition_de">zehn Milliarden (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ده میلیارد (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">tio miljarder (nummerbildande element)</column>
+      <column name="definition_ru">десять миллиардов (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">100億（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">dez bilhões (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">kymmenen miljardia</column>
+      <column name="synonyms">{vatlhbIp:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{maH:n:2,num}, {Saghan:n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maH'uy'</column>
+      <column name="part_of_speech">n:num,deriv</column>
+      <column name="definition">ten million (number-forming element)</column>
+      <column name="definition_de">zehn Millionen (zahlenbildendes Element) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ده میلیون (عنصر تشکیل دهنده اعداد) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">tio miljoner (nummerbildande element)</column>
+      <column name="definition_ru">десять миллионов (числообразующий элемент) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">一千萬（數字形成元素） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">dez milhões (elemento formador de número) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">kymmenen miljoonaa</column>
+      <column name="synonyms">{vatlhbIp:n}</column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{maH:n:2,num}, {'uy':n:num}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 27 (2020):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -931,7 +1017,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">majyang mutlhwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">tiler, tile layer</column>
       <column name="definition_de">Fliesenleger</column>
       <column name="definition_fa">کاشی کاری، لایه کاشی [AUTOTRANSLATED]</column>
@@ -1064,7 +1150,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mang</column>
-      <column name="part_of_speech">n:inhps,being</column>
+      <column name="part_of_speech">n:being,inhps</column>
       <column name="definition">soldier</column>
       <column name="definition_de">Soldat</column>
       <column name="definition_fa">سرباز</column>
@@ -1150,7 +1236,7 @@ The writers who came up with this apparently looked up words for "good" and "nig
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mangHom</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">cadet</column>
       <column name="definition_de">Kadett</column>
       <column name="definition_fa">کاردان [AUTOTRANSLATED]</column>
@@ -1286,7 +1372,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition">epithet, mak'dar</column>
       <column name="definition_de">mak'dar, klingonische Beleidigung</column>
       <column name="definition_fa">epithet ، mak'dar [AUTOTRANSLATED]</column>
-      <column name="definition_sv">epitel, mak'dar [AUTOTRANSLATED]</column>
+      <column name="definition_sv">mak'dar (epitet)</column>
       <column name="definition_ru">эпитет, мак'дар [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">瑪卡達爾 [AUTOTRANSLATED]</column>
       <column name="definition_pt">mak'dar, um insulto klingon</column>
@@ -1379,7 +1465,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition_fi">kaveri, ystävä (miehen läheinen miesystävä)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{chaj:n}, {jup:n}, {ruS:n}</column>
+      <column name="see_also">{chaj:n}, {yIr'ach:n}, {jup:n}, {ruS:n}</column>
       <column name="notes">This word is used by one male in addressing another male who is a close friend. Use of this word in other contexts may be considered insulting or offensive. The word may derive from {may' qoch:n@@may':n, qoch:n}. It is not uncommon for a Klingon father to address his son as {maqoch:n:nolink}, but not the other way around.</column>
       <column name="notes_de">Dieses Wort wird von einem Mann verwendet, um einen anderen Mann anzusprechen, der ein enger Freund ist. Die Verwendung dieses Wortes in anderen Kontexten kann als beleidigend oder beleidigend angesehen werden. Das Wort kann von {may' qoch:n@@may':n, qoch:n} abgeleitet sein. Es ist nicht ungewöhnlich, dass ein klingonischer Vater seinen Sohn als {maqoch:n:nolink} anspricht, aber nicht umgekehrt. [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
@@ -1407,6 +1493,51 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">maqSung</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">bee, wasp</column>
+      <column name="definition_de">Biene, Wespe [AUTOTRANSLATED]</column>
+      <column name="definition_fa">زنبور، زنبور [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bi, geting [AUTOTRANSLATED]</column>
+      <column name="definition_ru">пчела, оса [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">蜜蜂、黃蜂 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">abelha, vespa [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs mehiläistä tai ampiaista muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{lachvoH:n}</column>
+      <column name="notes">This is the closest thing to a Terran bee or wasp. When necessary to specify a honey bee, it's simply {DayqIr maqSung:n@@DayqIr:n, maqSung:n}. A common way to specify a wasp is {maqSung qej:n@@maqSung:n, qej:v}.[1]
+
+The queen is called the {maqSung SoS:n@@maqSung:n, SoS:n} or {maqSung SoS'a':n@@maqSung:n, SoS:n, -'a':n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">mehiläinen, ampiainen</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1461,7 +1592,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 17 (2010):src}, [2] {'u':src}, [3] {paq'batlh p.62-63:src}</column>
+      <column name="source">[1] {qep'a' 17 (2010):src}, [2] {'u':src}, [3] {paq'batlh 2ed p.72-73:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1513,7 +1644,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition">In order to succeed, we attack.</column>
       <column name="definition_de">Wir greifen an um zu gewinnen.</column>
       <column name="definition_fa">برای موفقیت، ما حمله می کنیم. [AUTOTRANSLATED]</column>
-      <column name="definition_sv">För att lyckas attackerar vi. [AUTOTRANSLATED]</column>
+      <column name="definition_sv">För att nå framgång, attackerar vi.</column>
       <column name="definition_ru">С целью преуспеть, мы атакуем</column>
       <column name="definition_zh_HK">為了成功，我們進行攻擊。</column>
       <column name="definition_pt">Para ter sucesso, atacamos.</column>
@@ -1595,7 +1726,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">marwI'</column>
-      <column name="part_of_speech">n:deriv,body</column>
+      <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">big toe, first toe</column>
       <column name="definition_de">großer Zehe, erster Zehe</column>
       <column name="definition_fa">انگشت پا، انگشت پا [AUTOTRANSLATED]</column>
@@ -1728,7 +1859,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition">eddy (water)</column>
       <column name="definition_de">Wirbelstrom (Wasser)</column>
       <column name="definition_fa">گرد و غبار (آب) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">virvel (vatten) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">virvel, virvelström</column>
       <column name="definition_ru">Эдди (вода) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">渦流（水） [AUTOTRANSLATED]</column>
       <column name="definition_pt">redemoinho (água)</column>
@@ -1739,7 +1870,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="notes">This refers to a movement of water.</column>
       <column name="notes_de">Dies bezieht sich auf eine Bewegung von Wasser. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به حرکت آب اشاره دارد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta avser en rörelse av vatten. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">En rörelse i vatten.</column>
       <column name="notes_ru">Это относится к движению воды. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指水的運動。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere a um movimento da água. [AUTOTRANSLATED]</column>
@@ -1814,7 +1945,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="definition">Klingon ballet</column>
       <column name="definition_de">Klingonisches Ballet</column>
       <column name="definition_fa">باله کلینگون [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Klingon balett [AUTOTRANSLATED]</column>
+      <column name="definition_sv">klingonsk balett</column>
       <column name="definition_ru">Клингон балет [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">克林崗芭蕾舞團 [AUTOTRANSLATED]</column>
       <column name="definition_pt">balé Klingon</column>
@@ -1849,53 +1980,6 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 26 (2019):src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS</column>
-      <column name="part_of_speech">n:klcp1</column>
-      <column name="definition">moon</column>
-      <column name="definition_de">Mond</column>
-      <column name="definition_fa">ماه</column>
-      <column name="definition_sv">måne</column>
-      <column name="definition_ru">луна</column>
-      <column name="definition_zh_HK">月</column>
-      <column name="definition_pt">lua</column>
-      <column name="definition_fi">kuu</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{jar:n}, {bav:v}, {SIbDoH:n}, {Hov:n}, {yuQ:n}, {jul:n}, {naptop:n}</column>
-      <column name="notes">The Klingon moon is named {pIraqSIS:n}.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples">
-▶ {maS So'lu'chu'bogh:n}
-▶ {maS'e' loQ So'be'bogh QIb:n}
-▶ {maS'e' loQ So'lu'bogh:n}
-▶ {maS'e' So'bogh pagh:n}</column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">satellite</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1943,20 +2027,20 @@ This was used to translate "print" or "output" (i.e., display something to the u
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">maSwov</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">moonlight</column>
-      <column name="definition_de">Mondlicht</column>
-      <column name="definition_fa">مهتاب [AUTOTRANSLATED]</column>
-      <column name="definition_sv">månljus</column>
-      <column name="definition_ru">Лунный свет</column>
-      <column name="definition_zh_HK">月光</column>
-      <column name="definition_pt">luz da lua</column>
-      <column name="definition_fi">kuutamo</column>
+      <column name="entry_name">maS</column>
+      <column name="part_of_speech">n:klcp1</column>
+      <column name="definition">moon</column>
+      <column name="definition_de">Mond</column>
+      <column name="definition_fa">ماه</column>
+      <column name="definition_sv">måne</column>
+      <column name="definition_ru">луна</column>
+      <column name="definition_zh_HK">月</column>
+      <column name="definition_pt">lua</column>
+      <column name="definition_fi">kuu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
+      <column name="see_also">{jar:n}, {bav:v}, {SIbDoH:n}, {Hov:n}, {yuQ:n}, {jul:n}, {naptop:n}, {joSraD:n}</column>
+      <column name="notes">The Klingon moon is named {pIraqSIS:n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1965,8 +2049,12 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {wov:n:hyp,nolink}</column>
-      <column name="examples"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {maS So'lu'chu'bogh:n}
+▶ {maS'e' loQ So'be'bogh QIb:n}
+▶ {maS'e' loQ So'lu'bogh:n}
+▶ {maS'e' So'bogh pagh:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1974,7 +2062,7 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">satellite</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -1984,237 +2072,281 @@ This was used to translate "print" or "output" (i.e., display something to the u
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS'e' loQ So'lu'bogh</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">mostly full moon</column>
-      <column name="definition_de">meist Vollmond, Halbmond [AUTOTRANSLATED]</column>
-      <column name="definition_fa">عمدتا ماه کامل، ماه غده ای [AUTOTRANSLATED]</column>
-      <column name="definition_sv">mestadels fullmåne, gibbös måne [AUTOTRANSLATED]</column>
-      <column name="definition_ru">в основном полная луна, выпуклая луна [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">大部分是滿月，凸月 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">principalmente lua cheia, lua gigante [AUTOTRANSLATED]</column>
-      <column name="definition_fi">enimmäkseen täysikuu, tyhjäkuu [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{maS:n}, {maS So'lu'chu'bogh:n}, {maS'e' loQ So'be'bogh QIb:n}, {maS'e' So'bogh pagh:n}</column>
-      <column name="notes">The technical term for this in astronomy is a gibbous moon.</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {-'e':n}, {loQ:adv}, {So':v:1}, {-lu':v}, {-bogh:v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">gibbous moon</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS So'lu'chu'bogh</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">new moon</column>
-      <column name="definition_de">Neumond [AUTOTRANSLATED]</column>
-      <column name="definition_fa">ماه نو [AUTOTRANSLATED]</column>
-      <column name="definition_sv">ny måne [AUTOTRANSLATED]</column>
-      <column name="definition_ru">Новолуние [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">新月 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">lua Nova [AUTOTRANSLATED]</column>
-      <column name="definition_fi">uusi kuu [AUTOTRANSLATED]</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS'e' So'bogh pagh:n}, {maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {So':v:1}, {-lu':v}, {-chu':v}, {-bogh:v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS'e' loQ So'be'bogh QIb</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">crescent moon</column>
-      <column name="definition_de">Halbmond</column>
-      <column name="definition_fa">هلال ماه [AUTOTRANSLATED]</column>
-      <column name="definition_sv">halv måne [AUTOTRANSLATED]</column>
-      <column name="definition_ru">полумесяц</column>
-      <column name="definition_zh_HK">月牙</column>
-      <column name="definition_pt">lua crescente</column>
-      <column name="definition_fi">kuunsirppi</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS So'lu'chu'bogh:n}, {maS'e' So'bogh pagh:n}</column>
-      <column name="notes">This expression is used to describe the shape of the {betleH:n}.[1]
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">maS So'lu'chu'bogh</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">new moon</column>
+          <column name="definition_de">Neumond [AUTOTRANSLATED]</column>
+          <column name="definition_fa">ماه نو [AUTOTRANSLATED]</column>
+          <column name="definition_sv">nymåne</column>
+          <column name="definition_ru">Новолуние [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">新月 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">lua Nova [AUTOTRANSLATED]</column>
+          <column name="definition_fi">uusikuu</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS'e' So'bogh pagh:n}, {maS'e' loQ So'be'bogh QIb:n}, {tab:v}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {So':v:1}, {-lu':v}, {-chu':v}, {-bogh:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">maS'e' loQ So'lu'bogh</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">mostly full moon</column>
+          <column name="definition_de">meist Vollmond, Halbmond [AUTOTRANSLATED]</column>
+          <column name="definition_fa">عمدتا ماه کامل، ماه غده ای [AUTOTRANSLATED]</column>
+          <column name="definition_sv">fullmåne, mestadels full måne</column>
+          <column name="definition_ru">в основном полная луна, выпуклая луна [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">大部分是滿月，凸月 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">principalmente lua cheia, lua gigante [AUTOTRANSLATED]</column>
+          <column name="definition_fi">lähes täysikuu</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{maS:n}, {maS So'lu'chu'bogh:n}, {maS'e' loQ So'be'bogh QIb:n}, {maS'e' So'bogh pagh:n}, {tab:v}</column>
+          <column name="notes">The technical term for this in astronomy is a gibbous moon.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {-'e':n}, {loQ:adv}, {So':v:1}, {-lu':v}, {-bogh:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags">gibbous moon</column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">maS'e' loQ So'be'bogh QIb</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">crescent moon</column>
+          <column name="definition_de">Halbmond</column>
+          <column name="definition_fa">هلال ماه [AUTOTRANSLATED]</column>
+          <column name="definition_sv">halvmåne</column>
+          <column name="definition_ru">полумесяц</column>
+          <column name="definition_zh_HK">月牙</column>
+          <column name="definition_pt">lua crescente</column>
+          <column name="definition_fi">kuunsirppi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS So'lu'chu'bogh:n}, {maS'e' So'bogh pagh:n}, {tab:v}</column>
+          <column name="notes">This expression is used to describe the shape of the {betleH:n}.[1]
 
 Another way to refer to the crescent moon is {maS'e' loQHa' So'lu'bogh:n}.[2]</column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru">Выражение использовано для того, чтобы описать форму {betleH:n}.[1]
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru">Выражение использовано для того, чтобы описать форму {betleH:n}.[1]
 
 Another way to refer to the crescent moon is {maS'e' loQHa' So'lu'bogh:n}.[2]</column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {-'e':n}, {loQ:adv}, {So':v:1}, {-be':v}, {-bogh:v}, {QIb:n}</column>
-      <column name="examples">
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {-'e':n}, {loQ:adv}, {So':v:1}, {-be':v}, {-bogh:v}, {QIb:n}</column>
+          <column name="examples">
 ▶ {nuH'e' qengbogh mangghomvam:sen:nolink}
-   {luDel 'e' ra' molor:sen:nolink}
+   {Del 'e' ra' molor:sen:nolink}
    {lujang maS'e' loQ So'be'bogh QIb lurur:sen:nolink}
   "Molor asks them
    What weapons this army carries,
    They reply, shaped as the crescent moon."</column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru">
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru">
 ▶ {nuH'e' qengbogh mangghomvam:sen:nolink}
-   {luDel 'e' ra' molor:sen:nolink}
+   {Del 'e' ra' molor:sen:nolink}
    {lujang maS'e' loQ So'be'bogh QIb lurur:sen:nolink}
   "Молор спросил их
    Какое оружие несет в руках эта армия,
    Они ответили, что оно изогнуто в виде полумесяца."</column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.138-139:src}, [2] {KLI mailing list 2022.05.27:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS'e' So'bogh pagh</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">full moon</column>
-      <column name="definition_de">Vollmond</column>
-      <column name="definition_fa">ماه کامل [AUTOTRANSLATED]</column>
-      <column name="definition_sv">fullmåne [AUTOTRANSLATED]</column>
-      <column name="definition_ru">полнолуние [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">滿月</column>
-      <column name="definition_pt">lua cheia</column>
-      <column name="definition_fi">täysikuu</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS So'lu'chu'bogh:n}, {maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="notes">In the original Klingon version of {yulyuS qaySar:n:name} (Julius Caesar), the titular character is warned to beware the {maS'e' So'bogh pagh:n:nolink}. It is unclear why this was changed to the "ides" of March in the translation.[1]</column>
-      <column name="notes_de">In der klingonischen Originalversion von {yulyuS qaySar:n:name} (Julius Caesar) wird der Titelcharakter gewarnt, sich vor {maS'e' So'bogh pagh:n:nolink} zu hüten. Es ist unklar, warum dies in der Übersetzung in die "ides" von März geändert wurde.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">در نسخه اصلی کلینگون {yulyuS qaySar:n:name} (جولیوس سزار) ، به شخصیت اصلی گفته می شود که از {maS'e' So'bogh pagh:n:nolink} مراقب باشید. هنوز مشخص نیست که چرا این ترجمه به "ایدز" ماه مارس در ترجمه تغییر یافته است.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">I den ursprungliga Klingon-versionen av {yulyuS qaySar:n:name} (Julius Caesar) varnas titelpersonen för att se upp för {maS'e' So'bogh pagh:n:nolink}. Det är oklart varför detta ändrades till "iderna" i mars i översättningen.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">В оригинальной клингонской версии {yulyuS qaySar:n:name} (Юлий Цезарь) титульный персонаж предупрежден, чтобы остерегаться {maS'e' So'bogh pagh:n:nolink}. Неясно, почему это было изменено на «иды» марта в переводе.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt">Na versão original em klingon de {yulyuS qaySar:n:name} (Julius Caesar), o personagem titular é avisado para tomar cuidado com o {maS'e' So'bogh pagh:n:nolink}. Não está claro por que isso foi alterado para os "ides" de março na tradução.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">{yulyuS qaySar:n:name}: n (Julius Caesar) alkuperäisessä klingoniversiossa nimimerkkiä varoitetaan varovaisuudesta {maS'e' So'bogh pagh:n:nolink}: n kanssa. On epäselvää, miksi tämä muutettiin käännöksessä maaliskuun "ideiksi" .[1] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {-'e':n}, {So':v:1}, {-bogh:v}, {pagh:n:1h}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">ides</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2015.03.22:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">maS'e' loQHa' So'lu'bogh</column>
-      <column name="part_of_speech">n:deriv,alt</column>
-      <column name="definition">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_de">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_fa">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_sv">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_ru">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_zh_HK">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_pt">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="definition_fi">{maS'e' loQ So'be'bogh QIb:n}</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{maS:n}, {-'e':n}, {loQHa':adv}, {So':v:1}, {-lu':v}, {-bogh:v}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
-    </table>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {paq'batlh 2ed p.140-141:src}, [2] {KLI mailing list 2022.05.27:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">maS'e' So'bogh pagh</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">full moon</column>
+          <column name="definition_de">Vollmond</column>
+          <column name="definition_fa">ماه کامل [AUTOTRANSLATED]</column>
+          <column name="definition_sv">fullmåne</column>
+          <column name="definition_ru">полнолуние [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">滿月</column>
+          <column name="definition_pt">lua cheia</column>
+          <column name="definition_fi">täysikuu</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{maS:n}, {maS'e' loQ So'lu'bogh:n}, {maS So'lu'chu'bogh:n}, {maS'e' loQ So'be'bogh QIb:n}, {tab:v}</column>
+          <column name="notes">In the original Klingon version of {yulyuS qaySar:n:name} (Julius Caesar), the titular character is warned to beware the {maS'e' So'bogh pagh:n:nolink}. It is unclear why this was changed to the "ides" of March in the translation.[1]</column>
+          <column name="notes_de">In der klingonischen Originalversion von {yulyuS qaySar:n:name} (Julius Caesar) wird der Titelcharakter gewarnt, sich vor {maS'e' So'bogh pagh:n:nolink} zu hüten. Es ist unklar, warum dies in der Übersetzung in die "ides" von März geändert wurde.[1] [AUTOTRANSLATED]</column>
+          <column name="notes_fa">در نسخه اصلی کلینگون {yulyuS qaySar:n:name} (جولیوس سزار) ، به شخصیت اصلی گفته می شود که از {maS'e' So'bogh pagh:n:nolink} مراقب باشید. هنوز مشخص نیست که چرا این ترجمه به "ایدز" ماه مارس در ترجمه تغییر یافته است.[1] [AUTOTRANSLATED]</column>
+          <column name="notes_sv">I den ursprungliga Klingon-versionen av {yulyuS qaySar:n:name} (Julius Caesar) varnas titelpersonen för att se upp för {maS'e' So'bogh pagh:n:nolink}. Det är oklart varför detta ändrades till "iderna" i mars i översättningen.[1] [AUTOTRANSLATED]</column>
+          <column name="notes_ru">В оригинальной клингонской версии {yulyuS qaySar:n:name} (Юлий Цезарь) титульный персонаж предупрежден, чтобы остерегаться {maS'e' So'bogh pagh:n:nolink}. Неясно, почему это было изменено на «иды» марта в переводе.[1] [AUTOTRANSLATED]</column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt">Na versão original em klingon de {yulyuS qaySar:n:name} (Julius Caesar), o personagem titular é avisado para tomar cuidado com o {maS'e' So'bogh pagh:n:nolink}. Não está claro por que isso foi alterado para os "ides" de março na tradução.[1] [AUTOTRANSLATED]</column>
+          <column name="notes_fi">{yulyuS qaySar:n:name}: n (Julius Caesar) alkuperäisessä klingoniversiossa nimimerkkiä varoitetaan varovaisuudesta {maS'e' So'bogh pagh:n:nolink}: n kanssa. On epäselvää, miksi tämä muutettiin käännöksessä maaliskuun "ideiksi" .[1] [AUTOTRANSLATED]</column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {-'e':n}, {So':v:1}, {-bogh:v}, {pagh:n:1h}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags">ides</column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2015.03.22:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">maS'e' loQHa' So'lu'bogh</column>
+          <column name="part_of_speech">n:alt,deriv</column>
+          <column name="definition">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_de">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_fa">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_sv">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_ru">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_zh_HK">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_pt">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="definition_fi">{maS'e' loQ So'be'bogh QIb:n}</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {-'e':n}, {loQHa':adv}, {So':v:1}, {-lu':v}, {-bogh:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2022.05.27:src}</column>
+        </table>
+        <table name="mem">
+          <!-- Placed after the moon phase entries to keep those together. -->
+          <column name="_id"></column>
+          <column name="entry_name">maSwov</column>
+          <column name="part_of_speech">n</column>
+          <column name="definition">moonlight</column>
+          <column name="definition_de">Mondlicht</column>
+          <column name="definition_fa">مهتاب [AUTOTRANSLATED]</column>
+          <column name="definition_sv">månljus</column>
+          <column name="definition_ru">Лунный свет</column>
+          <column name="definition_zh_HK">月光</column>
+          <column name="definition_pt">luz da lua</column>
+          <column name="definition_fi">kuutamo</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{maS:n}, {wov:n:hyp,nolink}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {TKD:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mataHmeH maSachnIS.</column>
@@ -2477,7 +2609,7 @@ Another way to refer to the crescent moon is {maS'e' loQHa' So'lu'bogh:n}.[2]</c
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mavje'</column>
-      <column name="part_of_speech">n:reg,body</column>
+      <column name="part_of_speech">n:body,reg</column>
       <column name="definition">liver</column>
       <column name="definition_de">Leber</column>
       <column name="definition_fa">کبد، جگر</column>
@@ -2991,7 +3123,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {paq'batlh p.xix:src}</column>
+          <column name="source">[1] {paq'batlh 2ed p.32:src}</column>
         </table>
         <table name="mem">
           <column name="_id"></column>
@@ -3018,7 +3150,8 @@ It's unclear what sense of "fair" is meant by this word.</column>
           <column name="notes_fi"></column>
           <column name="hidden_notes"></column>
           <column name="components">{may':n}, {ngeb:v}</column>
-          <column name="examples"></column>
+          <column name="examples">
+▶ {may' ngeb tIv Hoch.:sen:nolink} "Everyone enjoys a mock battle."[1]</column>
           <column name="examples_de"></column>
           <column name="examples_fa"></column>
           <column name="examples_sv"></column>
@@ -3567,7 +3700,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="definition_fi">mukauttaa, mukautua, adaptoida</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{moS:v}</column>
+      <column name="see_also">{moS:v}, {bItlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3641,6 +3774,49 @@ It's unclear what sense of "fair" is meant by this word.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ma'lI'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">fibre</column>
+      <column name="definition_de">Faser [AUTOTRANSLATED]</column>
+      <column name="definition_fa">فیبر [AUTOTRANSLATED]</column>
+      <column name="definition_sv">fiber [AUTOTRANSLATED]</column>
+      <column name="definition_ru">волокно [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">纖維 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">fibra [AUTOTRANSLATED]</column>
+      <column name="definition_fi">kuitu</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{SIrgh:n}, {tlhegh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">fiber</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ma'to'vor</column>
       <column name="part_of_speech">n</column>
       <column name="definition">Mauk-to'Vor ritual</column>
@@ -3704,7 +3880,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="notes_ru">М'Век это церемониальный нож, используемый для ритуала Мактовор ({ma'to'vor:n}).</column>
       <column name="notes_zh_HK">「 M'veQ」是「 Mauk To'Vor」（{ma'to'vor:n}）儀式中使用的禮刀。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">O "M'veQ" é uma faca cerimonial usada no ritual de "Mauk To'Vor" ({ma'to'vor:n}). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">"M’eQ" on seremoniallinen veitsi, jota käytetään "Mauk To'Vor" ({ma'to'vor:n}) -rituaalissa. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">"M'eQ" on seremoniallinen veitsi, jota käytetään "Mauk To'Vor" ({ma'to'vor:n}) -rituaalissa. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">This word's spelling was confirmed by MO. However, in the glossary to the non-canon {A Good Day to Die:src}, DeCandido writes this as {mevaq:n:nolink} "mevak dagger".</column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -3723,7 +3899,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {DS9 - Sons of Mogh:src}, [2] {KLI mailing list 1999.02.12:src}, [3] {KLI mailing list 2010.12.29:src}, [4] {paq'batlh p.184:src}</column>
+      <column name="source">[1] {DS9 - Sons of Mogh:src}, [2] {KLI mailing list 1999.02.12:src}, [3] {KLI mailing list 2010.12.29:src}, [4] {paq'batlh 2ed p.180-181:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3771,7 +3947,7 @@ It's unclear what sense of "fair" is meant by this word.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mebpa'mey</column>
-      <column name="part_of_speech">n:deriv,plural</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">hotel</column>
       <column name="definition_de">Hotel</column>
       <column name="definition_fa">هتل</column>
@@ -3879,7 +4055,9 @@ It's unclear what sense of "fair" is meant by this word.</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This is the reverse of {ghem:n}.</column>
+      <column name="hidden_notes">This is the reverse of {ghem:n}.
+
+The movie "When Harry Met Sally" has an infamous lunch scene. Sally is played by Meg Ryan.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4670,7 +4848,7 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meqleH</column>
-      <column name="part_of_speech">n:weap,fic</column>
+      <column name="part_of_speech">n:fic,weap</column>
       <column name="definition">type of weapon, mek'leth</column>
       <column name="definition_de">Mek'leth (Waffe)</column>
       <column name="definition_fa">نوع سلاح ، mek'leth [AUTOTRANSLATED]</column>
@@ -4754,44 +4932,48 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
-      <!-- TODO: Russian (and possibly Finnish) notes need to be updated to match the English one. -->
       <column name="_id"></column>
       <column name="entry_name">meQ</column>
-      <column name="part_of_speech">v:1,ambi,klcp1</column>
-      <column name="definition">burn</column>
+      <column name="part_of_speech">v:1,i_c,klcp1</column>
+      <column name="definition">burn, be on fire</column>
       <column name="definition_de">brennen, verbrennen</column>
       <column name="definition_fa">سوزاندن [AUTOTRANSLATED]</column>
       <column name="definition_sv">brinna</column>
       <column name="definition_ru">гореть, сжигать, обжечь, спалить, получить ожог</column>
       <column name="definition_zh_HK">燒</column>
       <column name="definition_pt">queimar</column>
-      <column name="definition_fi">palaa; polttaa, kypsentää (lihaa); olla poltettu, kypsennetty</column>
+      <column name="definition_fi">palaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mIQ:v}</column>
-      <column name="notes">If there is no object, then the subject is the thing burning, e.g., {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] If there is an object, then the subject is burning the object, e.g., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} can also be used adjectivally, e.g., {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4] In addition to this verb's usage with an object, the form {meQmoH:v@@meQ:v:1, -moH:v} is used to mean "set on fire, burn" (see examples).[5]</column>
+      <column name="see_also"></column>
+      <column name="notes">In general usage, the meaning of this verb is that the subject is on fire. {meQmoH:v@@meQ:v:1, -moH:v} would be used if the subject sets the object on fire.[4]
+
+Due to the influence of {mIQ:v}, this verb is used differently in the context of food preparation. There, the subject of this verb burns the object ({meQ:v:2}). As well, it can be used adjectivally for something that is burnt ({meQ:v:3}).[4]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">Если нет объекта, тогда субъект это вещь, которая горит, например {meQtaHbogh qachDaq Suv qoH neH.:sen}[2] Если есть объект, тогда субъект сжигает объект, например., {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3] {meQ:v:1,nolink} может также использоваться для прикладных вещей, например, {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]</column>
+      <column name="notes_ru"></column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">Tällä verbillä on kolme merkitystä. Se on joko intransitiivinen "palaa" (esim. {meQtaHbogh qachDaq Suv qoH neH.:sen}[2]), jolla on normaalisti kausatiivi "polttaa, sytyttää tuleen" {meQmoH:v:nolink}[5]. Ainakin ruoan yhteydessä sillä on myös transitiivinen merkitys "polttaa, kypsentää" (esim. {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:1, vutwI':n}[3]) ja adjektiivinen merkitys "olla poltettu, kypsennetty" (esim. {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[4]).</column>
-      <column name="hidden_notes">In the sentence from {CK:src}, {tIv:sen:nolink} should have been {lutIv:sen:nolink} since {tera'nganpu':n:nolink} is plural.</column>
+      <column name="notes_fi">"Polttaa" on {meQmoH:v@@meQ:v:1, -moH:v} [4].
+
+Ruoanlaiton yhteydessä verbiä käytetään voi käyttää transitiivisessa merkityksessä "polttaa, kypsentää" (ks. {meQ:v:2}) tai adjektiivina "olla poltettu, kypsennetty" (ks. {meQ:v:3}) johtuen verbin {mIQ:v} vaikutuksesta [4].</column>
+      <column name="hidden_notes">This was originally defined just as "burn" in {TKD:src}. Its definition was clarified to "burn, be on fire", and its special usage in food preparation contexts explained, in a message to the mailing list.[4]</column>
       <column name="components"></column>
       <column name="examples">
+▶ {meQtaHbogh qachDaq Suv qoH neH.:sen}[2]
 ▶ {jIbDaj lumeQmoH:sen:nolink}
    {jIbDaj lumeQmoH:sen:nolink}
    {qul bIQtIq qulHommey:sen:nolink}
   "Sparks from the fire river
    Caught his hair,
-   Caught his hair."[5]
+   Caught his hair."[3, p.92-93]
 ▶ {qeylIS Qaw' 'e' nIDmeH:sen:nolink}
    {yerDaj weH molor:sen:nolink}
    {'ej juH qachDaj meQmoH:sen:nolink}
   "Molor did not destroy Kahless
    By burning his house
-   Or ravaging his lands."[5]</column>
+   Or ravaging his lands."[3, p.120-121]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4806,8 +4988,8 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {TKW p.111:src}, [3] {KGT p.191:src}, [4] {CK:src}, [5] {paq'batlh p.86-87,114-115:src}</column>
+      <column name="search_tags_fi">polttaa</column>
+      <column name="source">[1] {TKD:src}, [2] {TKW p.111:src}, [3] {paq'batlh 2ed:src}, [4] {KLI mailing list 2022.06.10:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
@@ -4841,9 +5023,9 @@ This was also used for the "logic" menu (instructions about program flow control
   "One by one Molor's scouts return,
    He asks them which banner
    Kahless marches under."
-   {lujang meQboghnom 'oH:sen:nolink}
-   {yeqchuqchu'taHghach:sen:nolink}
-   {Daw' je joqwI':sen:nolink}
+  {lujang meQboghnom 'oH:sen:nolink}
+   {yeqchuqtaHghach Daw' je:sen:nolink}
+   {'oS joqwI':sen:nolink}
   "They reply it is the meQboghnom,
    The banner of unity
    And revolution."</column>
@@ -4857,9 +5039,9 @@ This was also used for the "logic" menu (instructions about program flow control
   "Один за одним вернулись разведчики Молора,
    Он спрашивает их, под каким флагом
    Марширует Кейлес"
-   {lujang meQboghnom 'oH:sen:nolink}
-   {yeqchuqchu'taHghach:sen:nolink}
-   {Daw' je joqwI':sen:nolink}
+  {lujang meQboghnom 'oH:sen:nolink}
+   {yeqchuqtaHghach Daw' je:sen:nolink}
+   {'oS joqwI':sen:nolink}
   "Они ответили, что это "Мекборном",
    Флаг единства
    И революции."</column>
@@ -4874,7 +5056,7 @@ This was also used for the "logic" menu (instructions about program flow control
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {paq'batlh p.138-139:src}</column>
+          <column name="source">[1] {paq'batlh 2ed p.138-141:src}</column>
         </table>
         <table name="mem">
           <column name="_id"></column>
@@ -4922,7 +5104,95 @@ This was also used for the "logic" menu (instructions about program flow control
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">meQ</column>
-      <column name="part_of_speech">v:2,i_c,slang</column>
+      <column name="part_of_speech">v:2,t_c</column>
+      <column name="definition">burn, set on fire (food preparation)</column>
+      <column name="definition_de">verbrennen, anzünden (Zubereitung von Speisen) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">سوختن، آتش زدن (تهیه غذا) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bränna, sätta i brand (matlagning) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">сжигать, поджигать (приготовление пищи) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">燃燒，著火（準備食物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">queimar, incendiar (preparação de alimentos) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">polttaa, kypsentää (ruokaa)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">Due to the influence of {mIQ:v}, {meQ:v:1} is used differently in the context of food preparation. In this context, the subject burns the object.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi">Verbin {mIQ:v} vaikutuksesta johtuen {meQ:v:1} "palaa" tarkoittaa ruoanlaiton yhteydessä "polttaa, kypsentää", eli subjekti ei pala, vaan polttaa objektia [2].</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {to'waQ meQ vutwI'.:sen@@to'waQ:n, meQ:v:2, vutwI':n}[1]</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">paistaa</column>
+      <column name="source">[1] {KGT p.191:src}, [2] {KLI mailing list 2022.06.10:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">meQ</column>
+      <column name="part_of_speech">v:3,is</column>
+      <column name="definition">be burnt (food preparation)</column>
+      <column name="definition_de">verbrannt werden (Zubereitung von Speisen) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">سوخته باشد (تهیه غذا) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bli bränd (matlagning) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">сгореть (приготовление пищи) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">被燒毀（食物準備） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser queimado (preparação de alimentos) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla poltettu, kypsennetty (ruoasta)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">Due to the influence of {mIQ:v}, {meQ:v:1} is used differently in the context of food preparation. In this context, it can be used adjectivally for something that is burnt.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi">Verbin {mIQ:v} vaikutuksesta johtuen {meQ:v:1} voi tarkoittaa ruoanlaiton yhteyssä "polttaa, kypsentää" (ks. {meQ:v:2}). Tämän lisäksi sillä on adjektiivinen merkitys "olla poltettu, kypsennetty". [2]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {Ha'DIbaHmey meQ Sop 'e' tIv tera'nganpu'.:sen}[1]</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">paistettu</column>
+      <column name="source">[1] {CK:src}, [2] {KLI mailing list 2022.06.10:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">meQ</column>
+      <column name="part_of_speech">v:4,i_c,slang</column>
       <column name="definition">climax (sexual)</column>
       <column name="definition_de">Höhepunkt erreichten (sexuell)</column>
       <column name="definition_fa">اوج (جنسی) [AUTOTRANSLATED]</column>
@@ -5420,7 +5690,7 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The square brackets in the definition are as they appear on {KGT p.113:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5488,49 +5758,6 @@ This was also used for the "logic" menu (instructions about program flow control
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KLI mailing list 2019.01.22:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">meyIS tIr</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">sweet corn</column>
-      <column name="definition_de">Mais</column>
-      <column name="definition_fa">ذرت شیرین [AUTOTRANSLATED]</column>
-      <column name="definition_sv">majs, sockermajs</column>
-      <column name="definition_ru">сладкая кукуруза [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">甜玉米</column>
-      <column name="definition_pt">milho doce</column>
-      <column name="definition_fi">maissi</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{tIr:n}</column>
-      <column name="notes">This is what Klingons would call Terran sweet corn (maize).</column>
-      <column name="notes_de">Dies ist, was Klingonen terranischen Zuckermais (Mais) nennen würden. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این همان چیزی است که کلینگونز Terran را ذرت شیرین (ذرت) می نامد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är vad Klingons skulle kalla Terran sweet majs (majs). [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это то, что клингоны называют терранской сладкой кукурузой (кукурузой). [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這就是克林崗人所說的人種甜玉米（玉米）。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isso é o que os klingons chamariam de milho doce terráqueo (milho). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä Klingons kutsuisi Terran-sokerimaissiksi (maissi). [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components"></column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">maize</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5602,14 +5829,14 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ra'Duch:n}, {meyrI':n}, {letbaQ:n}, {DujtlhuQ:n}, {'Impey':n}, {tut:n:2}, {yergh:n}</column>
-      <column name="notes">A n-sided polygon is an {n reD mey':n:nolink} for n > 3. For example: {loS reD mey':n}, {vagh reD mey':n}.</column>
-      <column name="notes_de">Ein n-seitiges Polygon ist ein {n reD mey':n:nolink} für n> 3. Zum Beispiel: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">چند ضلعی n یک طرفه {n reD mey':n:nolink} برای n> 3 است. به عنوان مثال: {loS reD mey':n} ، {vagh reD mey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">En n-sidig polygon är en {n reD mey':n:nolink} för n> 3. Till exempel: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">N-сторонний многоугольник - это {n reD mey':n:nolink} для n> 3. Например: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">n邊的多邊形是n> 3的{n reD mey':n:nolink}。例如：{loS reD mey':n}、{vagh reD mey':n}。 [AUTOTRANSLATED]</column>
+      <column name="notes">A n-sided polygon is an {n reD mey':n:nolink} for n &gt; 3. For example: {loS reD mey':n}, {vagh reD mey':n}.</column>
+      <column name="notes_de">Ein n-seitiges Polygon ist ein {n reD mey':n:nolink} für n&gt; 3. Zum Beispiel: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">چند ضلعی n یک طرفه {n reD mey':n:nolink} برای n&gt; 3 است. به عنوان مثال: {loS reD mey':n} ، {vagh reD mey':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">En n-sidig polygon är en {n reD mey':n:nolink} för n&gt; 3. Till exempel: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">N-сторонний многоугольник - это {n reD mey':n:nolink} для n&gt; 3. Например: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">n邊的多邊形是n&gt; 3的{n reD mey':n:nolink}。例如：{loS reD mey':n}、{vagh reD mey':n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">N-puolinen monikulmio on {n reD mey':n:nolink} arvolle n> 3. Esimerkiksi: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">N-puolinen monikulmio on {n reD mey':n:nolink} arvolle n&gt; 3. Esimerkiksi: {loS reD mey':n}, {vagh reD mey':n}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -6021,7 +6248,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {HQ 12.3, Sept. 2003:src}, [2] {paq'batlh p.146-147:src}</column>
+      <column name="source">[1] {HQ 12.3, Sept. 2003:src}, [2] {paq'batlh 2ed p.146-147:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6068,6 +6295,135 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
     </table>
         <table name="mem">
           <column name="_id"></column>
+          <column name="entry_name">mIllogh meyrI'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">single-panel cartoon</column>
+          <column name="definition_de">einteiliger Zeichentrickfilm [AUTOTRANSLATED]</column>
+          <column name="definition_fa">کارتون تک پنل [AUTOTRANSLATED]</column>
+          <column name="definition_sv">tecknad film med en panel [AUTOTRANSLATED]</column>
+          <column name="definition_ru">однопанельный мультфильм [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">單面闆卡通 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">desenho de painel único [AUTOTRANSLATED]</column>
+          <column name="definition_fi">yhden paneelin sarjakuva</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{mIllogh qol:n}</column>
+          <column name="notes">This expression is used to refer specifically to a single-panel cartoon (like most political cartoons), regardless of whether the shape of the panel is actually a square (see {meyrI':n}) or not. In comparison, the expression {mIllogh mIr:n} is used for comic strips regardless of the number of panels, including for single-panel cartoons.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{mIllogh:n}, {meyrI':n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 29 (2022):src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">mIllogh mIr</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">comic strip, cartoon</column>
+          <column name="definition_de">Comicstrip, Karikatur [AUTOTRANSLATED]</column>
+          <column name="definition_fa">کمیک استریپ، کارتون [AUTOTRANSLATED]</column>
+          <column name="definition_sv">serie, tecknad [AUTOTRANSLATED]</column>
+          <column name="definition_ru">комикс, мультфильм [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">漫畫, 卡通 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">história em quadrinhos, desenho animado [AUTOTRANSLATED]</column>
+          <column name="definition_fi">sarjakuva</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{mIllogh qol:n}</column>
+          <column name="notes">This refers to a non-animated cartoon or comic strip. Despite its literal meaning (see {mIr:n:1}), this is used whether there are a number of panels (as in a comic book or most newspaper comics), or just a single panel (like most political cartoons). To refer to a single-panel cartoon specifically, one usually uses {mIllogh meyrI':n}.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples">{mIllogh:n}, {mIr:n:1}</column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 29 (2022):src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">mIllogh ngutlh</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">hieroglyph, logograph</column>
+          <column name="definition_de">Hieroglyphe</column>
+          <column name="definition_fa">هیروگلیف، لوگوگراف [AUTOTRANSLATED]</column>
+          <column name="definition_sv">hieroglyf, logograf [AUTOTRANSLATED]</column>
+          <column name="definition_ru">иероглиф, логограф [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">象形文字，標識 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">hieróglifo, logografo [AUTOTRANSLATED]</column>
+          <column name="definition_fi">hieroglyfi, logogrammi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">Since {ngutlh:n} refers specifically to symbols used to represent language, this would not be misunderstood as pictogram. (A hierography corresponds to a linguistic element, whereas a pictogram corresponds to a concept or idea.)[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{mIllogh:n}, {ngutlh:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 29 (2022):src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
           <column name="entry_name">mIllogh qol</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">animation, cartoon</column>
@@ -6081,7 +6437,9 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
-          <column name="notes">This refers to animation only, and not to printed cartoons in the newspaper.[1] Even though {qol:n:2h} refers to a multitude of things, they are being treated as a collection, so one would say {qolmey:n@@qol:n:2h, -mey:n} for multiple cartoons.[2]</column>
+          <column name="notes">This refers to animation only, and not to printed cartoons in the newspaper.[1] Even though {qol:n:1h} refers to a multitude of things, they are being treated as a collection, so one would say {qolmey:n@@qol:n:1h, -mey:n} for multiple cartoons.[2]
+
+To refer to a non-animated cartoon, see {mIllogh mIr:n} and {mIllogh meyrI':n}.</column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
           <column name="notes_sv"></column>
@@ -6089,8 +6447,8 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
           <column name="notes_zh_HK"></column>
           <column name="notes_pt"></column>
           <column name="notes_fi"></column>
-          <column name="hidden_notes">At the Q &amp; A session at {Saarbrücken qepHom'a' 2021:src}, it was explained that {qol:n:2h,nolink} is a noun, but its meaning was not revealed then. The meaning was subsequently revealed in the booklet, which was published later.[2]</column>
-          <column name="components">{mIllogh:n}, {qol:n:2h}</column>
+          <column name="hidden_notes">At the Q &amp; A session at {Saarbrücken qepHom'a' 2021:src}, it was explained that {qol:n:1h,nolink} is a noun, but its meaning was not revealed then. The meaning was subsequently revealed in the booklet, which was published later.[2]</column>
+          <column name="components">{mIllogh:n}, {qol:n:1h}</column>
           <column name="examples"></column>
           <column name="examples_de"></column>
           <column name="examples_fa"></column>
@@ -6371,7 +6729,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mInyoD</column>
-      <column name="part_of_speech">n:deriv,body</column>
+      <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">eyelid</column>
       <column name="definition_de">Augenlid</column>
       <column name="definition_fa">پلک چشم</column>
@@ -6770,7 +7128,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="definition_fi">uppopaistaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{meQ:v:1}, {'Im:v}</column>
+      <column name="see_also">{meQ:v:2}, {meQ:v:3}, {'Im:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -6796,13 +7154,13 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">paistaa</column>
       <column name="source">[1] {KGT:src}, [2] {HQ 6.2, p.20, Jun. 1997:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mIQ</column>
-      <column name="part_of_speech">n:reg,body</column>
+      <column name="part_of_speech">n:body,reg</column>
       <column name="definition">forehead</column>
       <column name="definition_de">Stirn</column>
       <column name="definition_fa">پیشانی</column>
@@ -6968,7 +7326,7 @@ Tämä sana voi viitata myös "timanttipukuun" pelikorttipakassa (katso {Degh:n:
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">tupakkapiippu, piippu</column>
       <column name="source">[1] {KLI mailing list 2018.07.03:src}</column>
     </table>
     <table name="mem">
@@ -7148,7 +7506,7 @@ This was clarified to mean "mental confusion" at {qep'a' 24 (2017):src}.</column
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mIStaq</column>
-      <column name="part_of_speech">n:name,fic</column>
+      <column name="part_of_speech">n:name,fic,nodict</column>
       <column name="definition">?Mishtak</column>
       <column name="definition_de">?Mischtak</column>
       <column name="definition_fa">؟ میستک [AUTOTRANSLATED]</column>
@@ -7524,7 +7882,7 @@ Tämän sanaston alkuperä on {HenrI' vagh:n:name}, {wIlyam SeQpIr:n:name}: n n�
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mIv je DaS</column>
-      <column name="part_of_speech">n:deriv,idiom</column>
+      <column name="part_of_speech">n:idiom,deriv</column>
       <column name="definition">fully dressed (as for a ceremonial affair)</column>
       <column name="definition_de">komplett eingekleidet (z.B. für eine Zeremonie)</column>
       <column name="definition_fa">به طور کامل لباس (به عنوان یک روابط تشریفاتی) [AUTOTRANSLATED]</column>
@@ -7804,7 +8162,7 @@ This was used to refer to a concept in computer programming, namely, a compartme
       <column name="definition_fi">kerskailla, ylpeillä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nguq:v}, {'eDjen:n}</column>
+      <column name="see_also">{nguq:v}, {'eDjen:n}, {votlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7847,8 +8205,10 @@ This was used to refer to a concept in computer programming, namely, a compartme
       <column name="definition_fi">luku, numero</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{togh:v}, {mob:v:2}, {mobHa':v}</column>
-      <column name="notes">Number-forming elements include {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n:num}.
+      <column name="see_also">{togh:v}, {mob:v:2}, {mobHa':v}, {Dol mI':n}</column>
+      <column name="notes">Basic number-forming elements include {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n:num}.
+
+A number-forming element must be combined with a number from one to nine, so that 10,000 (ten thousand), for example, is {wa'netlh:n:num,nolink} (and not just {netlh:n:num,nolink}). Combining multiple number-forming elements is possible, so that 10,000,000 (ten million), for example, is {wa'maH'uy':n:num,nolink}.
 
 When a number is used for numbering (labeling), as opposed to counting, it follows the noun. Ordinal numbers are formed with {-DIch:n:num,suff}. Repetitions are formed with {-logh:n:num,suff}.</column>
       <column name="notes_de"></column>
@@ -7856,12 +8216,12 @@ When a number is used for numbering (labeling), as opposed to counting, it follo
       <column name="notes_sv"></column>
       <column name="notes_ru">Элементы для формирования чисел, включают {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n:num}.
 
-Когда число используется для нумерации чего-то, в отличие от счёта, оно следует за существительным. Порядковые номера сформированы с {-DIch:n:num,suff}. Повторы сформированы с помощью {-logh:n:num,suff}.</column>
+A number-forming element must be combined with a number from one to nine, so that 10,000 (ten thousand), for example, is {wa'netlh:n:num,nolink} (and not just {netlh:n:num,nolink}). Combining multiple number-forming elements is possible, so that 10,000,000 (ten million), for example, is {wa'maH'uy':n:num,nolink}.
+
+Когда число используется для нумерации чего-то, в отличие от счёта, оно следует за существительным. Порядковые номера сформированы с {-DIch:n:num,suff}. Повторы сформированы с помощью {-logh:n:num,suff}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">Luku muodostavia elementtejä ovat {maH:n:2,num}, {vatlh:n:num}, {SaD:n:num} ({SanID:n:num}), {netlh:n:num}, {bIp:n:num}, {'uy':n:num}, {Saghan:n:num}.
-
-Kun numeroa käytetään numeroinnissa (merkinnöissä), toisin kuin laskemisessa, se seuraa substantiivia. Järjestysnumerot muodostetaan {-DIch:n:num,suff}: llä. Toistot muodostetaan {-logh:n:num,suff}: llä. [AUTOTRANSLATED]</column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
@@ -8028,7 +8388,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
           <column name="search_tags_ru"></column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
+          <column name="search_tags_fi">numeronoppa, noppa</column>
           <column name="source">[1] {Klingon Monopoly:src}</column>
         </table>
         <table name="mem">
@@ -8249,7 +8609,7 @@ Verbiä {'al:v:2} käytetään satunnaislukuihin ({mI' 'al:n}). [AUTOTRANSLATED]
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mI'wI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">dancer</column>
       <column name="definition_de">Tänzer, Tänzerin</column>
       <column name="definition_fa">رقصنده [AUTOTRANSLATED]</column>
@@ -8867,7 +9227,7 @@ Katso seuraavien pronominien artikkeleista niitä koskevat etuliitteet:
 Katso artikkelissa {pagh:n:1h} objektittoman verbin etuliite, ja artikkelissa {-lu':v:suff} passiivin etuliite.
 
 Katso artikkelissa {wot:n} verbipäätteet.</column>
-      <column name="hidden_notes">The so-called "prefix trick" may be used with some verbs: if a verb has a third-person direct object and a first- or second-person indirect object, the pronomial prefix which normally indicates a first- or second-person object may be used. An example of this is {tIqwIj Sa'angnIS.:sen}[2]</column>
+      <column name="hidden_notes">The so-called "prefix trick" may be used with some verbs: if a verb has a third-person direct object and a first- or second-person indirect object, the pronomial prefix which normally indicates a first- or second-person object may be used. An example of this is {tIqwIj Sa'angnIS.:sen}[2] The "prefix trick" may also work with a third-person indirect object in some situations.[3]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -8885,7 +9245,7 @@ Katso artikkelissa {wot:n} verbipäätteet.</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {msn 1997.06.29:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {msn 1997.06.29:src}, [3] {KLI mailing list 2022.06.11:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9032,7 +9392,7 @@ Klingonissa on viiden tyyppisiä substantiiviliitteitä ja yhdeksän tyyppisiä 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">jälkiliite, liite</column>
       <column name="source">[1] {TKD:src}</column>
     </table>
     <table name="mem">
@@ -9058,7 +9418,7 @@ Klingonissa on viiden tyyppisiä substantiiviliitteitä ja yhdeksän tyyppisiä 
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is written {mojaq:n:nolink} in the K-E word list but {mojaQ:n:nolink} in the E-K word list.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -9131,7 +9491,7 @@ Klingonissa on viiden tyyppisiä substantiiviliitteitä ja yhdeksän tyyppisiä 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.159:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.156-157:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9423,7 +9783,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
       <column name="definition_fi">kaula</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nach:n}, {volchaH:n}, {mong Ha'quj:n}, {mongDech:n}, {'achler:n}, {chayqa':n}, {qayrI'Hom:n}</column>
+      <column name="see_also">{nach:n}, {volchaH:n}, {mong Ha'quj:n}, {waDwach:n}, {mongDech:n}, {'achler:n}, {chayqa':n}, {qayrI'Hom:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9541,7 +9901,7 @@ This word is defined in {KGT:src} as "smile, grin, sneer".[1]  It is explained t
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mong'em</column>
-      <column name="part_of_speech">n:weap,deriv</column>
+      <column name="part_of_speech">n:deriv,weap</column>
       <column name="definition">mong'em maneuver</column>
       <column name="definition_de">Mong'em-Manöver</column>
       <column name="definition_fa">مانور مونگهام [AUTOTRANSLATED]</column>
@@ -10077,7 +10437,7 @@ The request was for "ant(s), formicidae" with the plural in brackets, and the an
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">muurahainen</column>
       <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
@@ -10561,7 +10921,7 @@ The request was for "ant(s), formicidae" with the plural in brackets, and the an
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mo'rISqa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,fic</column>
       <column name="definition">Morska</column>
       <column name="definition_de">Morska</column>
       <column name="definition_fa">مورسکا [AUTOTRANSLATED]</column>
@@ -10938,7 +11298,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
           <column name="_id"></column>
           <column name="entry_name">much jech</column>
           <column name="part_of_speech">n:deriv</column>
-          <column name="definition">costume</column>
+          <column name="definition">costume (e.g., for a stage play)</column>
           <column name="definition_de">Kostüm</column>
           <column name="definition_fa">لباس [AUTOTRANSLATED]</column>
           <column name="definition_sv">kostym [AUTOTRANSLATED]</column>
@@ -10981,7 +11341,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
           <column name="_id"></column>
           <column name="entry_name">muchpa'</column>
           <column name="part_of_speech">n:deriv</column>
-          <column name="definition">auditorium</column>
+          <column name="definition">auditorium (room)</column>
           <column name="definition_de">Auditorium, Hörsaal</column>
           <column name="definition_fa">سالن اجتماعات [AUTOTRANSLATED]</column>
           <column name="definition_sv">hörsal [AUTOTRANSLATED]</column>
@@ -11109,7 +11469,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">muchwI'</column>
-          <column name="part_of_speech">n:deriv,being</column>
+          <column name="part_of_speech">n:being,deriv</column>
           <column name="definition">musician</column>
           <column name="definition_de">Musikant, Musiker</column>
           <column name="definition_fa">نوازنده [AUTOTRANSLATED]</column>
@@ -11215,7 +11575,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="notes_zh_HK">天氣一詞，即大氣層的狀態，與大氣層本身是相同的詞（請參閱{muD:n:2}）。[2] [AUTOTRANSLATED]</column>
       <column name="notes_pt">A palavra clima, que significa o estado da atmosfera, é a mesma que para a própria atmosfera (consulte {muD:n:2}).[2] [AUTOTRANSLATED]</column>
       <column name="notes_fi">Sääsana, joka tarkoittaa ilmakehän tilaa, on sama sana kuin itse ilmakehässä (katso {muD:n:2}).[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">It was confirmed by MO at {Saarbrücken qepHom'a' 2022:src} that this is a reference to the 1961 film "The Sky Above, The Mud Below".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -11518,7 +11878,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="notes_fi"></column>
       <column name="hidden_notes">This is similar to {magh:v}, and as the proverb goes, "a translator is a traitor".</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">{mughwI':n}, {Hoch Holmey mughwI':n}, {mughbogh per:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -12020,7 +12380,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.159:src}, [3] {Pittsburgh Art Tour:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.156-157:src}, [3] {Pittsburgh Art Tour:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -12327,7 +12687,7 @@ Tätä verbiä käytetään myös musiikissa ({much:v:2}) ja taistelulajeissa ({
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {paq'batlh p.114-115:src}</column>
+          <column name="source">[1] {paq'batlh 2ed p.120-121:src}</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -12667,7 +13027,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.179:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.174-175:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -12711,7 +13071,7 @@ Kun sitä levitetään {tlhIm:n}: lle, {mutlh:v:nolink} tarkoittaa maton kokoami
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.179:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.174-175:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -48,7 +48,7 @@
       <column name="definition">grow (increase in size)</column>
       <column name="definition_de">wachsen (an Größe zunehmen)</column>
       <column name="definition_fa">رشد (افزایش اندازه) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">växa (öka i storlek) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">växa</column>
       <column name="definition_ru">расти (увеличиваться в размерах) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">增長（尺寸增加） [AUTOTRANSLATED]</column>
       <column name="definition_pt">crescer (aumentar de tamanho)</column>
@@ -211,7 +211,7 @@
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.158-159:src}, [3] {qep'a' 26 (2019):src}</column>
+      <column name="source">[1] {KGT:src}, [2] {paq'batlh 2ed p.156-157:src}, [3] {qep'a' 26 (2019):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -922,7 +922,7 @@ Não confunda isso com o {qa'raj:n} de nome semelhante. [AUTOTRANSLATED]</column
       <column name="definition">work, function, succeed, win</column>
       <column name="definition_de">funktionieren, gewinnen</column>
       <column name="definition_fa">کار، عملکرد، موفقیت، پیروزی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">jobba, fungera, lyckas, vinna [AUTOTRANSLATED]</column>
+      <column name="definition_sv">arbeta, fungera, lyckas, vinna</column>
       <column name="definition_ru">работать, трудиться, функционировать, выполнять функции, преуспеть, победить, добиться успеха</column>
       <column name="definition_zh_HK">工作、功能、成功、勝利</column>
       <column name="definition_pt">trabalhar, funcionar, ter sucesso, ganhar</column>
@@ -1425,7 +1425,7 @@ Jos haluat kuvailla nautittavaa ruokaa tai musiikkia, katso {'ey:v} ja {DuQ:v:2}
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.96-97:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.102-103:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1473,7 +1473,7 @@ Jos haluat kuvailla nautittavaa ruokaa tai musiikkia, katso {'ey:v} ja {DuQ:v:2}
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">QaS</column>
-      <column name="part_of_speech">n:1h,inhpl,being</column>
+      <column name="part_of_speech">n:being,inhpl,1h</column>
       <column name="definition">troops</column>
       <column name="definition_de">Truppen</column>
       <column name="definition_fa">نیروهای [AUTOTRANSLATED]</column>
@@ -1916,7 +1916,7 @@ Kohdassa {Klingon Monopoly:src} {tlhIngan QaS:n:nolink} on pelissä käytetty ra
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Qay'wI'</column>
-      <column name="part_of_speech">n:deriv,body</column>
+      <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">little toe, fifth toe</column>
       <column name="definition_de">kleinste Zehe</column>
       <column name="definition_fa">انگشت پا، پا پنجم [AUTOTRANSLATED]</column>
@@ -2369,7 +2369,7 @@ Even though {KCD:src} was published before {KGT:src}, the book is listed as the 
       <column name="definition_fi">(kasvin) varsi, ruoti, kanta</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'InSong:n}, {San'emDer:n}, {pu'veng:n:1}</column>
+      <column name="see_also">{'InSong:n}, {San'emDer:n}, {pu'veng:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2925,7 +2925,7 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="definition_fi">kuoppa, kolo</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qung:n}, {taSman:n}, {mol:v}, {mol:n}, {jaQ:v}, {teb:v}, {ghaw:v}</column>
+      <column name="see_also">{qung:n}, {taSman:n}, {mol:v}, {mol:n}, {jaQ:v}, {teb:v}, {ghaw:v}, {joSraD:n}</column>
       <column name="notes">This can be used for a hole in the ground, a hollow in a tree, and so on. The difference between a {QemjIq:n:nolink} and a {qung:n} is that the former can be filled ({teb:v}).[1] (That is, a {QemjIq:n:nolink} is a cavity or depression, while a {qung:n:nolink} is a puncture or perforation.)</column>
       <column name="notes_de">Dies kann für ein Loch im Boden, eine Mulde in einem Baum usw. verwendet werden. Der Unterschied zwischen einem {QemjIq:n:nolink} und einem {qung:n} besteht darin, dass das erstere gefüllt werden kann ({teb:v}) .[1] (dh ein {QemjIq:n:nolink} ist ein Hohlraum oder eine Vertiefung, während ein {qung:n:nolink} eine Punktion oder Perforation ist.) [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
@@ -2953,6 +2953,49 @@ This word was awarded to {janSIy:n:name,nolink} as a Friend of Maltz.</column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi">reikä, aukko</column>
       <column name="source">[1] {KLI mailing list 2012.01.26:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">Qen</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be naked, nude</column>
+      <column name="definition_de">nackt, unbekleidet</column>
+      <column name="definition_fa">برهنه باش، برهنه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara naken, naken [AUTOTRANSLATED]</column>
+      <column name="definition_ru">быть обнаженным, обнаженным [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">赤身裸體 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">estar nu, nu [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla alaston</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4821,7 +4864,7 @@ Sitä käytetään viittaamaan (geometrisen) tähden pisteeseen ({DujtlhuQ:n}).[
       <column name="definition_ru">Кринча, вид животного [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">Krincha、動物的類型 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Krincha, tipo de animal</column>
-      <column name="definition_fi">eräs eläin, Krincha</column>
+      <column name="definition_fi">eräs eläin, krincha</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{lung:n}</column>
@@ -4856,7 +4899,7 @@ Sitä käytetään viittaamaan (geometrisen) tähden pisteeseen ({DujtlhuQ:n}).[
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">QIngheb</column>
-      <column name="part_of_speech">n:weap,fic,deriv</column>
+      <column name="part_of_speech">n:deriv,fic,weap</column>
       <column name="definition">type of spear</column>
       <column name="definition_de">eine Speersorte</column>
       <column name="definition_fa">نوع کپی [AUTOTRANSLATED]</column>
@@ -5302,7 +5345,7 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">QI'lop</column>
-      <column name="part_of_speech">n:fic,deriv</column>
+      <column name="part_of_speech">n:deriv,fic</column>
       <column name="definition">name of a holiday</column>
       <column name="definition_de">Name eines Feiertags</column>
       <column name="definition_fa">نام تعطیلات [AUTOTRANSLATED]</column>
@@ -5314,15 +5357,15 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">In {PK:src}, this is pronounced by Michael Dorn like {Qetlop:sen:nolink}.</column>
-      <column name="notes_de">In {PK:src} wird dies von Michael Dorn wie {Qetlop:sen:nolink} ausgesprochen. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">در {PK:src} ، این توسط مایکل درن مانند {Qetlop:sen:nolink} تلفظ می شود. [AUTOTRANSLATED]</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
       <column name="notes_sv"></column>
-      <column name="notes_ru">В {PK:src}, это произносится Майклом Дорном, как {Qetlop:sen:nolink}.</column>
-      <column name="notes_zh_HK">在{PK:src}中，Michael Dorn像{Qetlop:sen:nolink}一樣發音。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">No {PK:src}, isso é pronunciado por Michael Dorn como {Qetlop:sen:nolink}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Michael Dorn lausuu tämän {PK:src}:ssa muodossa {Qetlop:sen:nolink}.</column>
-      <column name="hidden_notes"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">In {PK:src}, this is pronounced by Michael Dorn like {Qetlop:sen:nolink}. This spelling and pronunciation is used by some fan clubs.</column>
       <column name="components">{QI':n}, {lop:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5431,7 +5474,7 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">QI'tu'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:place,fic</column>
       <column name="definition">Paradise (source of creation in Klingon mythology)</column>
       <column name="definition_de">Paradies (Erschaffungsort in der Klingonischen Mythologie)</column>
       <column name="definition_fa">بهشت (منبع ایجاد در اسطوره کلینگان) [AUTOTRANSLATED]</column>
@@ -5439,7 +5482,7 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
       <column name="definition_ru">Рай (источник происхождения в Клингонской мифологии)</column>
       <column name="definition_zh_HK">天堂（克林崗神話中的創作源泉） [AUTOTRANSLATED]</column>
       <column name="definition_pt">Paraíso (fonte de criação na mitologia klingon)</column>
-      <column name="definition_fi">Paratiisi (luomisen paikka klingonien mytologiassa)</column>
+      <column name="definition_fi">eräs myyttinen paikka, Paratiisi (luomisen paikka klingonien mytologiassa)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Suto'vo'qor:n}, {ghe'tor:n}</column>
@@ -5627,13 +5670,13 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
       <column name="components"></column>
       <column name="examples">
 ▶ {DopDaq qul yIchenmoH QobDI' ghu'.:sen}
-▶ {Qob qo' qeylIS yIqIm:sen:nolink} "Kahless, be aware of danger in all forms."[2, p.56-57]
+▶ {Qob qo' qeylIS yIqIm:sen:nolink} "Kahless, be aware of danger in all forms."[2, p.66-67]
 ▶ {pa' bIQam bIHIvDI':sen:nolink}
    {QIncha' Darur qu' 'ej run:sen:nolink}
    {Qobbogh may' nI' jun:sen:nolink}
   "You stood there, you attack
    Like a krencha, short and fierce,
-   Avoiding long and dangerous battle."[2, p.158-159]</column>
+   Avoiding long and dangerous battle."[2, p.156-157]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5649,7 +5692,7 @@ Ei ole perinteistä klingonilaista tapaa sanoa jotain "hyvää joulua". Lauseke,
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -6163,13 +6206,13 @@ Sopimus ilmaistaan ​​myös idiomaattisella ilmaisulla {wa' DoS wIqIp.:sen:id
    {tugh ngabchu' 'oH:sen:nolink}
   "But now your tower rumbles,
    And soon it will disappear
-   From under your feet."[2, p.158-159]
+   From under your feet."[2, p.156-157]
 ▶ {qeylISvaD jach 'ej beyDaj luqImmo':sen:nolink}
    {yuQDaq ghaHtaHbogh Hoch tlhIngan'e':sen:nolink}
    {Qomqa' Hoch Qo'noS nuvpu':sen:nolink}
   "All of Kronos trembled once more,
    For every Klingon on the planet
-   Followed her cry for Kahless."[2, p.186-187]</column>
+   Followed her cry for Kahless."[2, p.182-183]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6185,7 +6228,7 @@ Sopimus ilmaistaan ​​myös idiomaattisella ilmaisulla {wa' DoS wIqIp.:sen:id
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}</column>
     </table>
     <table name="mem">
       <!-- KGT p.163 says that this is not treated grammatically as a "be" verb. -->
@@ -6537,49 +6580,6 @@ Sopimus ilmaistaan ​​myös idiomaattisella ilmaisulla {wa' DoS wIqIp.:sen:id
         </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">QongmeH Duj</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">sleeper ship</column>
-      <column name="definition_de">Schläferschiff</column>
-      <column name="definition_fa">کشتی خواب [AUTOTRANSLATED]</column>
-      <column name="definition_sv">sovarskepp [AUTOTRANSLATED]</column>
-      <column name="definition_ru">спящий корабль [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">臥舖船 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">navio dorminhoco</column>
-      <column name="definition_fi">makuulaiva</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{qItI'nga':n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes">This term does not appear as such in canon, but {QongmeH qItI'nga' Duj:n:nolink} appears as the translation of "a sleeper ship of this [K'Tinga] class" in {SkyBox 15:src}.[1]</column>
-      <column name="components">{Qong:v}, {-meH:v}, {Duj:n:1}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {SkyBox 15:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src})</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
       <column name="entry_name">Qop</column>
       <column name="part_of_speech">v:1,is</column>
       <column name="definition">be worn out</column>
@@ -6721,7 +6721,7 @@ Sopimus ilmaistaan ​​myös idiomaattisella ilmaisulla {wa' DoS wIqIp.:sen:id
       <column name="definition_fi">musiikki</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{QoQ jan:n}, {bom:n}, {much:n}, {Ham:v}, {pun:v}, {'ISQIm:n}, {'IngSav:n}, {jaghIv:n}, {romta':n}, {Savvanwer:n}</column>
+      <column name="see_also">{QoQ jan:n}, {bom:n}, {much:n}, {Ham:v}, {pun:v}, {'ISQIm:n}, {'IngSav:n}, {jaghIv:n}, {romta':n}, {Savvanwer:n}, {ngap:v}</column>
       <column name="notes">Music is said by Klingons to {jaqmoH:v}, {SeymoH:v}, {tungHa':v}, or {pIlmoH:v}.[1]
 
 This refers to any music, whether vocal or instrumental or both.[2]</column>
@@ -6861,7 +6861,7 @@ Klingonin soittimien tyyppejä ovat: lyömäsoittimet ({'In:n}), tuuli (ei yleis
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Qor</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:t_c</column>
       <column name="definition">fight, battle (very minor fight)</column>
       <column name="definition_de">kämpfen (schwach)</column>
       <column name="definition_fa">مبارزه، نبرد (مبارزه بسیار جزئی) [AUTOTRANSLATED]</column>
@@ -6873,7 +6873,9 @@ Klingonin soittimien tyyppejä ovat: lyömäsoittimet ({'In:n}), tuuli (ei yleis
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Suv:v}, {may':n}</column>
-      <column name="notes">In ascending order of ferocity, the verbs used to describe military confrontations are: {Qor:v:nolink}, {tlhaS:v}, {vay:v}, {lul:v}, {Hargh:v}.</column>
+      <column name="notes">In ascending order of ferocity, the verbs used to describe military confrontations are: {Qor:v:nolink}, {tlhaS:v}, {vay:v}, {lul:v}, {Hargh:v}.
+
+This verb might be appropriate if Klingons engaged in shadowboxing.[1]</column>
       <column name="notes_de">In aufsteigender Reihenfolge der Wildheit werden folgende Verben verwendet, um militärische Konfrontationen zu beschreiben: {Qor:v:nolink}, {tlhaS:v}, {vay:v}, {lul:v}, {Hargh:v}. [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -7045,7 +7047,7 @@ Klingonin soittimien tyyppejä ovat: lyömäsoittimet ({'In:n}), tuuli (ei yleis
       <column name="definition_fi">maata, loikoa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ba':v}, {Hu':v}, {Qam:v}, {tor:v:1}, {Dub:n}</column>
+      <column name="see_also">{ba':v}, {Hu':v}, {Qam:v}, {tor:v:1}, {lav:v}, {Dub:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7772,7 +7774,7 @@ Os klingons consideram os títulos de propriedade ({yer ghajwI' chaw':n}) como u
           <column name="definition_ru">форма (для литья) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">模具（用於鑄造） [AUTOTRANSLATED]</column>
           <column name="definition_pt">molde (para fundição)</column>
-          <column name="definition_fi">muotti (metallin valuuta varten)</column>
+          <column name="definition_fi">muotti (metallin valua varten)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also">{mItlh:v}, {Qu:v}, {vIncha':n}, {baS laSvargh:n}</column>

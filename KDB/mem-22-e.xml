@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -377,14 +377,14 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the 4th rank of {yaS:n}.</column>
-      <column name="notes_de">Dies ist der 4. Rang von {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این چهارمین رتبه از {yaS:n} است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är den fjärde rankingen av {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это 4-й ранг {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是{yaS:n}的第四等級。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o 4º ranking do {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) neljänneksi korkein sotilasarvo.</column>
+      <column name="notes">This is the 4th rank of {yaS:n}.[2]</column>
+      <column name="notes_de">Dies ist der 4. Rang von {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این چهارمین رتبه از {yaS:n} است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är den fjärde rankingen av {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это 4-й ранг {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{yaS:n}的第四等級。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o 4º ranking do {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) neljänneksi korkein sotilasarvo.[2]</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -403,7 +403,7 @@ Baarimikko ({chom:n}) huutaa Klingon-baarissa {'eb Qav:n} "viimeisestä puhelust
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {KGT p.52:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -571,7 +571,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
-          <column name="notes">If the cards were organized by suit, and within each suit the cards were in numerical order, then not only would one have an {'echletHom vey:n:nolink}, one would also have four {'echletHom qolmey:n@@'echletHom:n, qol:n:2h, -mey:n}.[2]</column>
+          <column name="notes">If the cards were organized by suit, and within each suit the cards were in numerical order, then not only would one have an {'echletHom vey:n:nolink}, one would also have four {'echletHom qolmey:n@@'echletHom:n, qol:n:1h, -mey:n}.[2]</column>
           <column name="notes_de"></column>
           <column name="notes_fa"></column>
           <column name="notes_sv"></column>
@@ -656,7 +656,7 @@ Pelikorttipakan pukuja kutsutaan nimellä {Degh:n:1}. [AUTOTRANSLATED]</column>
       <column name="definition_fi">ylimielinen tai kopea henkilö</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{mIy:v}</column>
+      <column name="see_also">{mIy:v}, {votlh:v}</column>
       <column name="notes">This refers to a person who is {nguq:v}.</column>
       <column name="notes_de">Dies bezieht sich auf eine Person, die nicht übersetzt ist. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این مربوط به فردی است که {nguq:v} است. [AUTOTRANSLATED]</column>
@@ -876,7 +876,7 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ej De' vIchel</column>
-      <column name="part_of_speech">adv</column>
+      <column name="part_of_speech">adv:deriv</column>
       <column name="definition">by the way, parenthetically</column>
       <column name="definition_de">übrigens</column>
       <column name="definition_fa">به هر حال ، از نظر والدین [AUTOTRANSLATED]</column>
@@ -888,16 +888,16 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This comes at the beginning of a sentence. This is the full form. In everyday conversation, {'ej:conj} and/or {De':n} (and even {vI-:v:pref}) are often omitted. Klingon grammarians argue about whether the resulting {De'chel:adv} should be considered an adverbial in its own right.</column>
-      <column name="notes_de">Dies kommt am Anfang eines Satzes. Dies ist die vollständige Form. Im alltäglichen Gespräch werden {'ej:conj} und / oder {De':n} (und sogar {vI-:v:pref}) häufig weggelassen. Klingonische Grammatiker streiten darüber, ob das resultierende {De'chel:adv} als eigenständiges Adverbial betrachtet werden sollte. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این در ابتدای یک جمله می آید. این فرم کامل است. در مکالمه روزمره ، {'ej:conj} و / یا {De':n} (و حتی {vI-:v:pref}) غالبا حذف می شوند. گرامرهای کلینگون در مورد اینکه آیا نتیجه گیری {De'chel:adv} نتیجه گرفته باید در نوع خودش یک قید تلقی شود ، استدلال می کنند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta kommer i början av en mening. Detta är den fullständiga formen. I vardagliga konversationer utelämnas ofta {'ej:conj} och / eller {De':n} (och till och med {vI-:v:pref}). Klingons grammatikare argumenterar om huruvida den resulterande {De'chel:adv} bör betraktas som ett adverbial i sig. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это приходит в начале предложения. Это полная форма. В повседневной беседе {'ej:conj} и / или {De':n} (и даже {vI-:v:pref}) часто опускаются. Клингонские грамматики спорят о том, следует ли считать получившийся в результате {De'chel:adv} наречным по своей сути. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是在句子的開頭。這是完整表格。在日常對話中，通常會忽略{'ej:conj}和/或{De':n}（甚至{vI-:v:pref}）。克林崗語語法學家爭論是否應將產生的{De'chel:adv}本身視為副詞。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isso vem no início de uma frase. Este é o formulário completo. Na conversa cotidiana, {'ej:conj} e / ou {De':n} (e até {vI-:v:pref}) são frequentemente omitidos. Os gramáticos de Klingon discutem se o {De'chel:adv} resultante deve ser considerado um adverbial por si só. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä tulee lauseen alkuun. Tämä on koko lomake. Jokapäiväisessä keskustelussa {'ej:conj} ja / tai {De':n} (ja jopa {vI-:v:pref}) jätetään usein pois. Klingonin kielioppilaiset kiistävät, pitäisikö tuloksena olevaa {De'chel:adv}: tä pitää pitää itsenäisenä adverbiaalina. [AUTOTRANSLATED]</column>
+      <column name="notes">This comes at the beginning of a sentence. This is the full form. In everyday conversation, {'ej:conj} and/or {De':n} (and even {vI-:v:pref}) are often omitted. Klingon grammarians argue about whether the resulting {De'chel:adv} should be considered an adverbial in its own right.[1]</column>
+      <column name="notes_de">Dies kommt am Anfang eines Satzes. Dies ist die vollständige Form. Im alltäglichen Gespräch werden {'ej:conj} und / oder {De':n} (und sogar {vI-:v:pref}) häufig weggelassen. Klingonische Grammatiker streiten darüber, ob das resultierende {De'chel:adv} als eigenständiges Adverbial betrachtet werden sollte.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این در ابتدای یک جمله می آید. این فرم کامل است. در مکالمه روزمره ، {'ej:conj} و / یا {De':n} (و حتی {vI-:v:pref}) غالبا حذف می شوند. گرامرهای کلینگون در مورد اینکه آیا نتیجه گیری {De'chel:adv} نتیجه گرفته باید در نوع خودش یک قید تلقی شود ، استدلال می کنند.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta kommer i början av en mening. Detta är den fullständiga formen. I vardagliga konversationer utelämnas ofta {'ej:conj} och / eller {De':n} (och till och med {vI-:v:pref}). Klingons grammatikare argumenterar om huruvida den resulterande {De'chel:adv} bör betraktas som ett adverbial i sig.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это приходит в начале предложения. Это полная форма. В повседневной беседе {'ej:conj} и / или {De':n} (и даже {vI-:v:pref}) часто опускаются. Клингонские грамматики спорят о том, следует ли считать получившийся в результате {De'chel:adv} наречным по своей сути.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是在句子的開頭。這是完整表格。在日常對話中，通常會忽略{'ej:conj}和/或{De':n}（甚至{vI-:v:pref}）。克林崗語語法學家爭論是否應將產生的{De'chel:adv}本身視為副詞。[1] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso vem no início de uma frase. Este é o formulário completo. Na conversa cotidiana, {'ej:conj} e / ou {De':n} (e até {vI-:v:pref}) são frequentemente omitidos. Os gramáticos de Klingon discutem se o {De'chel:adv} resultante deve ser considerado um adverbial por si só.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä tulee lauseen alkuun. Tämä on koko lomake. Jokapäiväisessä keskustelussa {'ej:conj} ja / tai {De':n} (ja jopa {vI-:v:pref}) jätetään usein pois. Klingonin kielioppilaiset kiistävät, pitäisikö tuloksena olevaa {De'chel:adv}: tä pitää pitää itsenäisenä adverbiaalina.[1] [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{'ej:conj}, {De':n}, {vI-:v}, {chel:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -1225,8 +1225,8 @@ The example {'ejyaHlogh:adv:nolink} was given during the Q &amp; A session.</col
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ejyo'waw'</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">star base</column>
+      <column name="part_of_speech">n:deriv</column>
+      <column name="definition">starbase</column>
       <column name="definition_de">Sternenbasis, Raumbasis</column>
       <column name="definition_fa">پایه ستاره [AUTOTRANSLATED]</column>
       <column name="definition_sv">stjärnbas, rymdstation</column>
@@ -1245,7 +1245,7 @@ The example {'ejyaHlogh:adv:nolink} was given during the Q &amp; A session.</col
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was written as "star base" with a space in {TKD:src}.</column>
       <column name="components">{'ejyo':n}, {waw':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1255,7 +1255,7 @@ The example {'ejyaHlogh:adv:nolink} was given during the Q &amp; A session.</col
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">starbase</column>
+      <column name="search_tags">star base</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -1602,7 +1602,7 @@ This was revealed to a small group in 2006 at {qep'a' 13:src}, but only posted t
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">"Emesis".</column>
+      <column name="hidden_notes">"Emesis", or "em"pty stomach.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1645,7 +1645,7 @@ This was revealed to a small group in 2006 at {qep'a' 13:src}, but only posted t
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Backwards of {ghIr:v} "descend" + {me':n} "aunt" = "descendent".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2719,7 +2719,19 @@ This was rumoured to have been revealed at {qep'a' 26 (2019):src}, and was offic
       <column name="notes_fi">Aihe, josta kohde palautuu, on merkitty {-vo':n}-merkinnällä. [AUTOTRANSLATED]</column>
       <column name="hidden_notes">{'et:n:1} is the letter "e", which corresponds to "echo" in Greek.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {qeylIS betleH bochvo':sen:nolink}
+   {'et Duj wovmoHwI'mey:sen:nolink}
+   {tugh nab 'ogh qeylIS:sen:nolink}
+  "The lights from the ship
+   Reflect on his bat'leth,
+   Soon Kahless will devise a plan."[2, p.102-103]
+▶ {lubejtaHvIS Heghna' mInDu':sen:nolink}
+   {betleHvo' veqlargh mInDu' mIghDaq:sen:nolink}
+   {'et tamghay:sen:nolink}
+  "When the eyes of death are upon him,
+   Light reflects off the bat'leth
+   Into Fek'lhr's evil eyes."[2, p.104-105]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2735,7 +2747,7 @@ This was rumoured to have been revealed at {qep'a' 26 (2019):src}, and was offic
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 25 (2018):src}</column>
+      <column name="source">[1] {qep'a' 25 (2018):src}, [2] {paq'batlh 2ed:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2748,7 +2760,7 @@ This was rumoured to have been revealed at {qep'a' 26 (2019):src}, and was offic
       <column name="definition_ru">носовая часть</column>
       <column name="definition_zh_HK">前面 [AUTOTRANSLATED]</column>
       <column name="definition_pt">à frente, à proa</column>
-      <column name="definition_fi">etu- ?</column>
+      <column name="definition_fi">keula, etuosa</column>
       <column name="synonyms"></column>
       <column name="antonyms">{'o':n}</column>
       <column name="see_also">{poS:n}, {nIH:n}, {tlhop:n:1}</column>

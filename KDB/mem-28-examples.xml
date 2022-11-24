@@ -605,7 +605,9 @@ Jos haluat vastata kieltävästi, sano {Qo':excl} "ei, kieltäydyn".</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">Some websites claim that {qaqIHneS:sen@@qa-:v, qIH:v, -neS:v} means "I am honored to meet you", but this actually means "I meet you, your honor" and is only spoken to a social superior. Other websites further compound this error by misspelling the phrase as {qaqItlhneS:sen:nolink}.</column>
+      <column name="hidden_notes">In {TKD:src}, {qaleghneS:sen:nolink} is translated as "I am honored to see you", and is used as an example of the suffix {-neS:v:suff}, which expresses "extreme politeness or deference" and is used "rather infrequently by Klingons". Beginners should probably avoid using this suffix, or at least not make a habit of using it.
+
+Some websites suggest using {qaqIHneS:sen@@qa-:v, qIH:v, -neS:v} for "I am honored to meet you", and this parallels {qaleghneS:sen:nolink} in that it means something like "I meet you, your honor" and is only spoken to a social superior. Other websites further compound this error by misspelling the phrase as {qaqItlhneS:sen:nolink}. A sentence like {qaqIHmo' jIquv:sen:nolink} has a similar meaning, but doesn't have the excessively deferential overtones.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1162,7 +1164,7 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
       <column name="definition">shrink (something)</column>
       <column name="definition_de">reduzieren, klein machen</column>
       <column name="definition_fa">کوچک کردن</column>
-      <column name="definition_sv">krympa (något) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">krympa (något)</column>
       <column name="definition_ru">уменьшать что-то в размерах</column>
       <column name="definition_zh_HK">縮小、縮細</column>
       <column name="definition_pt">encolher (algo)</column>
@@ -1380,7 +1382,7 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">cho'tay</column>
-      <column name="part_of_speech">n:deriv,hyp,fic</column>
+      <column name="part_of_speech">n:deriv,fic,hyp</column>
       <column name="definition">Rite of Succession</column>
       <column name="definition_de">Nachfolgeritus</column>
       <column name="definition_fa">عروسی وحشی [AUTOTRANSLATED]</column>
@@ -1462,6 +1464,49 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source"></column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">DIp DelwI'</column>
+      <column name="part_of_speech">n:deriv,extcan,nodict</column>
+      <column name="definition">adjective</column>
+      <column name="definition_de">Adjektiv [AUTOTRANSLATED]</column>
+      <column name="definition_fa">صفت [AUTOTRANSLATED]</column>
+      <column name="definition_sv">adjektiv (grammatisk term)</column>
+      <column name="definition_ru">имя прилагательное [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">形容詞 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">adjetivo [AUTOTRANSLATED]</column>
+      <column name="definition_fi">adjektiivi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{wot DelwI':n}, {wot tam:n}</column>
+      <column name="notes">This is how a Klingon linguist might describe the concept of an adjective from another language.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{DIp:n}, {Del:v}, {-wI':v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {to'qIpo'na paq chap:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1597,7 +1642,7 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">leng chach mab</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
       <column name="definition">voyage cancellation insurance</column>
       <column name="definition_de">Reiserücktrittsversicherung</column>
       <column name="definition_fa">بیمه لغو سفر [AUTOTRANSLATED]</column>
@@ -1683,7 +1728,7 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mIv'a' javtIm</column>
-      <column name="part_of_speech">n:alt,deriv</column>
+      <column name="part_of_speech">n:alt,deriv,extcan</column>
       <column name="definition">{qoro'na javtIm:n}</column>
       <column name="definition_de">{qoro'na javtIm:n}</column>
       <column name="definition_fa">{qoro'na javtIm:n}</column>
@@ -1726,7 +1771,7 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">muHwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">executioner</column>
       <column name="definition_de">Henker</column>
       <column name="definition_fa">جلاد، دژخیم، سیاف</column>
@@ -1856,18 +1901,18 @@ Jos puhuttelet ylempiäsi, harkitse {-neS:v:suff}-päätteen käyttämistä.</co
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngongmeH Duj</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
       <column name="definition">experimental ship</column>
       <column name="definition_de">Experimentier-Schiff</column>
       <column name="definition_fa">کشتی آزمایشی</column>
-      <column name="definition_sv">experimentellt skepp [AUTOTRANSLATED]</column>
+      <column name="definition_sv">experimentellt skepp</column>
       <column name="definition_ru">экспериментальный корабль</column>
       <column name="definition_zh_HK">實驗艦</column>
       <column name="definition_pt">navio experimental</column>
       <column name="definition_fi">koealus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{QongmeH Duj:n}</column>
       <column name="notes">This is not a fixed construction, which is why the number {wa':n:num} follows {ngongmeH:v@@ngong:v, -meH:v} and precedes {Duj:n:1} in the example sentence.[2]
 
 See the full example under {So'wI':n}.</column>
@@ -1902,7 +1947,7 @@ See the full example under {So'wI':n}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">puq poH veb</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
       <column name="definition">The Next Generation</column>
       <column name="definition_de">"The Next Generation"</column>
       <column name="definition_fa">نسل بعدی [AUTOTRANSLATED]</column>
@@ -2030,6 +2075,98 @@ See the full example under {So'wI':n}.</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">QongmeH Duj</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
+      <column name="definition">sleeper ship</column>
+      <column name="definition_de">Schläferschiff</column>
+      <column name="definition_fa">کشتی خواب [AUTOTRANSLATED]</column>
+      <column name="definition_sv">sovarskepp [AUTOTRANSLATED]</column>
+      <column name="definition_ru">спящий корабль [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">臥舖船 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">navio dorminhoco</column>
+      <column name="definition_fi">makuulaiva</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{qItI'nga':n}, {ngongmeH Duj:n}</column>
+      <column name="notes">This is not a fixed construction, which is why {qItI'nga':n} follows {QongmeH:v@@Qong:v, -meH:v} and precedes {Duj:n:1} in the example sentence.[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">This term does not appear as such in canon, but {QongmeH qItI'nga' Duj:n:nolink} appears as the translation of "a sleeper ship of this [K'Tinga] class" in {SkyBox 15:src}.[1]
+
+This was not explicitly mentioned in the {Saarbrücken qepHom'a' 2021:src} booklet, but the same comment there that {ngongmeH Duj:n:nolink} is not a fixed construction clearly applies here as well.[2]</column>
+      <column name="components">{Qong:v}, {-meH:v}, {Duj:n:1}</column>
+      <column name="examples">
+▶ {tlhIngan may'Duj, qItI'nga':sen:nolink}
+   {wa'DIch tlhIngan Dujmey luleghlu'pu'bogh rur qItI'nga' Duj. tera' vatlh DIS poH cha'maH wej HochHom lo'lu'taH. tera' vatlh DISpoH cha'maH loS bong QongmeH qItI'nga' Duj tI'ang ghompu' DIvI' 'ejDo' 'entepray'.:sen:nolink}
+  "Klingon Battlecruiser, K'Tinga-Class
+   Similar in configuration to the first Klingon vessels encountered, the K'Tinga-Class remained in use for most of the 23rd century. A sleeper ship of this class, the T'Ong, was encountered in the 24th century by the U.S.S. Enterprise."[2]</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {SkyBox 15:src} (reprinted in {HQ 3.4, p.10-11, Dec. 1994:src}), [2] {Saarbrücken qepHom'a' 2021:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">wot DelwI'</column>
+      <column name="part_of_speech">n:deriv,extcan,nodict</column>
+      <column name="definition">adverb (not in Klingon)</column>
+      <column name="definition_de">Adverb [AUTOTRANSLATED]</column>
+      <column name="definition_fa">قید [AUTOTRANSLATED]</column>
+      <column name="definition_sv">adverb (grammatisk term)</column>
+      <column name="definition_ru">наречие [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">副詞 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">advérbio [AUTOTRANSLATED]</column>
+      <column name="definition_fi">adverbi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{DIp DelwI':n}, {qunI':n}</column>
+      <column name="notes">This is how a Klingon linguist might describe the concept of an adverb from another language.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{wot:n}, {Del:v}, {-wI':v}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {to'qIpo'na paq chap:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">yachwI'</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">brush</column>
@@ -2042,7 +2179,7 @@ See the full example under {So'wI':n}.</column>
       <column name="definition_fi">harja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{teywI':n}</column>
+      <column name="see_also">{teywI':n}, {SIprat:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2074,7 +2211,7 @@ See the full example under {So'wI':n}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yaD pach</column>
-      <column name="part_of_speech">n:deriv,body</column>
+      <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">toenail</column>
       <column name="definition_de">Zeh-Nagel</column>
       <column name="definition_fa">دست و پنجه نرم کردن [AUTOTRANSLATED]</column>
@@ -2620,7 +2757,7 @@ Buy the full "Warrior Woman" album: {Google Play store:url:https://play.google.c
    {rol ghajbogh tIrvo' HIghoS:sen@@rol:n, ghaj:v, -bogh:v, tIr:n, -vo':n, HI-:v, ghoS:v:1}
    {Hoch ram SuDbogh tI SuD retlhDaq:sen@@Hoch:n, ram:n, SuD:v:1, -bogh:v, tI:n, SuD:v:1, retlh:n, -Daq:n}
    {DIng, DIng, qammaj tIDIngmoH:sen@@DIng:v, DIng:v, qam:n, -maj:n, tI-:v, DIng:v, -moH:v}
-   {waqvetlh tItuQ 'ej paHvam vItuQ jIH:sen@@waq:n, -vetlh:n, tI-:v, tuQ:v, 'ej:conj, paH:n, -vam:n, vI-:v, tuQ:v, jIH:n:1}   
+   {waqvetlh tItuQ 'ej paHvam vItuQ jIH:sen@@waq:n, -vetlh:n, tI-:v, tuQ:v, 'ej:conj, paH:n, -vam:n, vI-:v, tuQ:v, jIH:n:1}
    {HIchop:sen:nolink}
    {'ej choS chIS bIngDaq HIchop:sen@@'ej:conj, choS:n, chIS:v, bIng:n, -Daq:n, HI-:v, chop:v}
    {HIDev:sen@@HI-:v, Dev:v}
@@ -2629,14 +2766,14 @@ Buy the full "Warrior Woman" album: {Google Play store:url:https://play.google.c
    {DaH QoQ yIchu':sen@@DaH:adv, QoQ:n, yI-:v, chu':v:3}
    {'ej mI'jaj wewbogh ghew:sen@@'ej:conj, mI':v, -jaj:v, wew:v, -bogh:v, ghew:n}
    {bochtaHmo' maS chIS:sen@@boch:v, -taH:v, -mo':v, maS:n, chIS:v}
-   {DaH HIchop:sen@@DaH:adv, HI-:v, chop:v}   
+   {DaH HIchop:sen@@DaH:adv, HI-:v, chop:v}
    {HIchop:sen:nolink}
    {Duj puylu'pu'bogh retlhDaq:sen@@Duj:n:1, puy:v, -lu':v, -pu':v, -bogh:v, retlh:n, -Daq:n}
    {bang bom tIbom:sen@@bang bom:n, tI-:v, bom:v}
    {jagh Hom tIjaD:sen@@jagh:n, Hom:n:1, tI-:v, jaD:v}
    {HIchuH:sen@@HI-:v, chuH:v:1}
    {tIqwIj'e' qa'ang:sen@@tIq:n, -wIj:n, -'e':n, qa-:v, 'ang:v}
-   {He 'angbogh vavlI' pu'jIn tIQ wItlha'}   
+   {He 'angbogh vavlI' pu'jIn tIQ wItlha'}
    {HIchop:sen:nolink}
    {'ej choS chIS bIngDaq HIchop:sen:nolink}
    {HIDev:sen:nolink}
@@ -3014,7 +3151,7 @@ The lyrics are by Lawrence Schoen, and the accompanying music is by Rich Yampell
       <column name="definition_ru">Уходи из тюрьмы свободно.</column>
       <column name="definition_zh_HK">免費出獄。 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Sair da cadeia livre. [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Poistu vankilasta ilmaiseksi. [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Poistuttuasi vankilasta et anna yhtäkään sotilasta. (Vapaudu vankilasta ilmaiseksi.)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -3049,7 +3186,7 @@ The lyrics are by Lawrence Schoen, and the accompanying music is by Rich Yampell
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIQong'eghqangchoHmoHlaHchu'pu'neSchugh</column>
-      <column name="part_of_speech">v:deriv,i_c</column>
+      <column name="part_of_speech">v:i_c,deriv,nodict</column>
       <column name="definition">meaningless verbal phrase</column>
       <column name="definition_de">bedeutungslose Verbalkonstruktion</column>
       <column name="definition_fa">عبارت شفاهی بی معنی [AUTOTRANSLATED]</column>
@@ -3531,7 +3668,7 @@ The lyrics are by Lawrence Schoen, and the accompanying music is by Rich Yampell
       <column name="definition_ru">Все топливо израсходовано. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">所有的燃料都被消耗掉了。 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Todo o combustível foi consumido. [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Kaikki polttoaine on kulunut. [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Kaikki polttoaine on kulutettu.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -3834,7 +3971,7 @@ Toisin kuin jotkut väittävät, lause "Urkuk lu Stalga" ei tarkoita "rakastan s
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">QaghHommeyHeylIjmo'</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
       <column name="definition">due to your apparent minor errors</column>
       <column name="definition_de">wegen deiner scheinbar kleinen Fehler</column>
       <column name="definition_fa">به دلیل خطاهای جزئی ظاهری شما [AUTOTRANSLATED]</column>

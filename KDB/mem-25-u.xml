@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -810,7 +810,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">'ul pat mutlhwI'</column>
-          <column name="part_of_speech">n:deriv,being</column>
+          <column name="part_of_speech">n:being,deriv</column>
           <column name="definition">electrician</column>
           <column name="definition_de">Elektriker</column>
           <column name="definition_fa">تکنسین برق، برق‌کار</column>
@@ -1051,7 +1051,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
           <column name="examples">
 ▶ {nuv 'umHa' leghchugh veqlargh:sen:nolink}
    {ngoS nuv 'umHa':sen:nolink}
-   {net jatlh:sen:nolink}
+   {jatlhlu':sen:nolink}
   "Those unfit disintegrate
    At the glance of Fek'lhr,
    So it is said."[1]</column>
@@ -1070,7 +1070,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {paq'batlh p.96-97:src}</column>
+          <column name="source">[1] {paq'batlh 2ed p.102-103:src}</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1290,15 +1290,15 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'un quD</column>
-      <column name="part_of_speech">n:deriv,food</column>
-      <column name="definition">artificially produced [qud]</column>
-      <column name="definition_de">künstlich hergestelltes [qud]</column>
-      <column name="definition_fa">مصنوعی تولید شده [qud] [AUTOTRANSLATED]</column>
-      <column name="definition_sv">artificiellt framställd [qud]</column>
-      <column name="definition_ru">искусственно произведенный [qud] [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">人工製作的《qud》</column>
-      <column name="definition_pt">produzido artificialmente [qud]</column>
-      <column name="definition_fi">eräs elintarvike, keinotekoisesti tuotettu [qud]</column>
+      <column name="part_of_speech">n:deriv,fic,food</column>
+      <column name="definition">artificially produced {quD:n:nolink}</column>
+      <column name="definition_de">künstlich hergestelltes {quD:n:nolink}</column>
+      <column name="definition_fa">مصنوعی تولید شده {quD:n:nolink} [AUTOTRANSLATED]</column>
+      <column name="definition_sv">artificiellt framställd {quD:n:nolink}</column>
+      <column name="definition_ru">искусственно произведенный {quD:n:nolink} [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">人工製作的{quD:n:nolink}</column>
+      <column name="definition_pt">produzido artificialmente {quD:n:nolink}</column>
+      <column name="definition_fi">eräs elintarvike, keinotekoisesti tuotettu {quD:n:nolink}</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{quD:n}, {burgh quD:n}</column>
@@ -1310,7 +1310,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
       <column name="notes_zh_HK">這是使用化學品生產的{quD:n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o {quD:n} produzido com produtos químicos. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on {quD:n}, joka on valmistettu kemikaaleilla. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The definition actually says "artificially produced qud" in both K-E and E-K word lists.</column>
       <column name="components">{'un:n}, {quD:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1678,7 +1678,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'urwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">traitor</column>
       <column name="definition_de">Verräter</column>
       <column name="definition_fa">خائن [AUTOTRANSLATED]</column>
@@ -1807,7 +1807,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'urghwI'</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,terran</column>
       <column name="definition">Poker (card game)</column>
       <column name="definition_de">Poker (Kartenspiel)</column>
       <column name="definition_fa">پوکر (بازی کارت) [AUTOTRANSLATED]</column>
@@ -2033,7 +2033,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
       <column name="definition_fi">eräs kastike gladstille</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tlhatlh:n}, {tlhatlh vIychorgh:n}, {Se'tu':n}</column>
+      <column name="see_also">{tlhatlh:n}, {tlhatlh vIychorgh:n}, {Se'tu':n}, {po'lIgh:n}</column>
       <column name="notes">{'uSu':n:nolink} is native to the original inhabitants of the planet Tanganika.[2]</column>
       <column name="notes_de">{'uSu':n:nolink} stammt von den Ureinwohnern des Planeten Tanganika.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">{'uSu':n:nolink} بومی ساکنان اصلی سیاره Tanganika است ..[2] [AUTOTRANSLATED]</column>
@@ -2326,7 +2326,7 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
       <column name="_id"></column>
       <column name="entry_name">'uy'</column>
       <column name="part_of_speech">n:num</column>
-      <column name="definition">million</column>
+      <column name="definition">million (number-forming element)</column>
       <column name="definition_de">Million</column>
       <column name="definition_fa">میلیون</column>
       <column name="definition_sv">miljon (nummerbildande element)</column>
@@ -2337,7 +2337,9 @@ Kolme {'uj:n:nolink} on noin 3'5 ", viisi {'uj:n:nolink} on noin 5'8" ja kuusi {
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mI':n}, {bIp:n:num}, {Saghan:n:num}</column>
-      <column name="notes">For tens of millions, one could combine {maH:n:2,num} with {'uy':n:num,nolink} or {vatlh:n:num} with {bIp:n:num}.[2]
+      <column name="notes">This is a number-forming element, and not itself a number. The number 1,000,000 (one million) is {wa''uy':n:num,nolink} in Klingon.
+
+For tens of millions, one could combine {maH:n:2,num} with {'uy':n:num,nolink} or {vatlh:n:num} with {bIp:n:num}.[2]
 
 For hundreds of millions, the number-forming elements {vatlh'uy':n:num@@vatlh:n, 'uy':n} or {SaDbIp:n:num@@SaD:n, bIp:n} or {SanIDbIp:n:num@@SanID:n, bIp:n} are possible.[3]</column>
       <column name="notes_de">Für zig Millionen könnte man {maH:n:2,num} mit {'uy':n:num,nolink} oder {vatlh:n:num} mit {bIp:n:num}.[2] kombinieren

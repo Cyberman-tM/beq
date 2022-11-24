@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -52,7 +52,7 @@
       <column name="definition_ru">планировать</column>
       <column name="definition_zh_HK">計劃、預定</column>
       <column name="definition_pt">planejar</column>
-      <column name="definition_fi">suunnitella</column>
+      <column name="definition_fi">suunnitella; asettaa (kurssi)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hech:v}, {QuS:v}, {ren:v}, {nab:n}, {Degh:v:slang}</column>
@@ -171,6 +171,49 @@
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">nach Ha'quj</column>
+          <column name="part_of_speech">n:deriv,slang</column>
+          <column name="definition">scarf</column>
+          <column name="definition_de">Schal [AUTOTRANSLATED]</column>
+          <column name="definition_fa">روسری [AUTOTRANSLATED]</column>
+          <column name="definition_sv">scarf [AUTOTRANSLATED]</column>
+          <column name="definition_ru">шарф [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">圍巾 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cachecol [AUTOTRANSLATED]</column>
+          <column name="definition_fi">huivi</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">The non-slang term is {waDwach:n}.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{nach:n}, {Ha'quj:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">naD</column>
@@ -260,7 +303,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">naD tetlh</column>
-      <column name="part_of_speech">n:fic,deriv</column>
+      <column name="part_of_speech">n:deriv,fic</column>
       <column name="definition">Commendation List</column>
       <column name="definition_de">Auszeichnungsliste</column>
       <column name="definition_fa">لیست دلبستگی [AUTOTRANSLATED]</column>
@@ -533,7 +576,7 @@
       <column name="definition_ru">порицание, неодобрение, осуждение</column>
       <column name="definition_zh_HK">discommendation [AUTOTRANSLATED]</column>
       <column name="definition_pt">discomendação</column>
-      <column name="definition_fi">moite, suositus jotakuta vastaan</column>
+      <column name="definition_fi">eräs rituaali, julkinen häpäiseminen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -576,7 +619,7 @@
       <column name="definition_ru">повторное одобрение</column>
       <column name="definition_zh_HK">建議 [AUTOTRANSLATED]</column>
       <column name="definition_pt">re-comendação</column>
-      <column name="definition_fi">jälleensuositus?</column>
+      <column name="definition_fi">eräs rituaali, kunnian palauttaminen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -619,7 +662,7 @@
       <column name="definition_ru">камень, скала, керамический материал</column>
       <column name="definition_zh_HK">岩石、石頭、陶瓷材料 [AUTOTRANSLATED]</column>
       <column name="definition_pt">rocha, pedra, material cerâmico</column>
-      <column name="definition_fi">kivi, keraamiikka</column>
+      <column name="definition_fi">kivi, keramiikka</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'an:v:2}, {Hew:n}, {De'lor:n}, {Hotnagh:n}, {lIvrI':n}, {mISjennegh:n}, {ngIbvay:n}</column>
@@ -838,14 +881,14 @@
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{tlhIl:v}, {tlhIl:n}, {qut:n}</column>
-      <column name="notes">Known types of gemstones include {qevaS:n}, {Separ:n}, {DItlhon:n}, and {patmor:n}.</column>
-      <column name="notes_de">Bekannte Arten von Edelsteinen sind {qevaS:n}, {Separ:n}, {DItlhon:n} und {patmor:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">انواع سنگهای قیمتی مشهور عبارتند از {qevaS:n} ، {Separ:n} ، {DItlhon:n} و {patmor:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Kända typer av ädelstenar inkluderar {qevaS:n}, {Separ:n}, {DItlhon:n} och {patmor:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Известные типы драгоценных камней включают {qevaS:n}, {Separ:n}, {DItlhon:n} и {patmor:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">已知的寶石類型包括{qevaS:n}，{Separ:n}，{DItlhon:n}和{patmor:n}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Os tipos conhecidos de pedras preciosas incluem {qevaS:n}, {Separ:n}, {DItlhon:n} e {patmor:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tunnettuja jalokivityyppejä ovat {qevaS:n}, {Separ:n}, {DItlhon:n} ja {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes">Known types of gemstones include {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n}, and {patmor:n}.</column>
+      <column name="notes_de">Bekannte Arten von Edelsteinen sind {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n} und {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">انواع سنگهای قیمتی مشهور عبارتند از {chanmon:n}, {qevaS:n} ، {Separ:n} ، {DItlhon:n} و {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Kända typer av ädelstenar inkluderar {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n} och {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Известные типы драгоценных камней включают {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n} и {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">已知的寶石類型包括{chanmon:n}, {qevaS:n}，{Separ:n}，{DItlhon:n}和{patmor:n}。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Os tipos conhecidos de pedras preciosas incluem {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n} e {patmor:n}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tunnettuja jalokivityyppejä ovat {chanmon:n}, {qevaS:n}, {Separ:n}, {DItlhon:n} ja {patmor:n}. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{nagh:n}, {boch:v}</column>
       <column name="examples"></column>
@@ -1101,7 +1144,7 @@ Não confunda esta palavra com {naQjej:n}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">naHlet</column>
-      <column name="part_of_speech">n:food,deriv</column>
+      <column name="part_of_speech">n:deriv,food</column>
       <column name="definition">nut, nuts</column>
       <column name="definition_de">Nuss, Nüsse</column>
       <column name="definition_fa">مهره، آجیل [AUTOTRANSLATED]</column>
@@ -1790,7 +1833,7 @@ Não confunda esta palavra com {naQjej:n}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nanwI'</column>
-      <column name="part_of_speech">n:2,deriv,body</column>
+      <column name="part_of_speech">n:2,body,deriv</column>
       <column name="definition">fourth toe</column>
       <column name="definition_de">vierter Zehe</column>
       <column name="definition_fa">انگشت چهارم [AUTOTRANSLATED]</column>
@@ -2873,7 +2916,7 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
       <column name="definition_ru">эскадрилья, эскадра, отряд, дивизион</column>
       <column name="definition_zh_HK">隊 [AUTOTRANSLATED]</column>
       <column name="definition_pt">esquadrão</column>
-      <column name="definition_fi">laivue, eskaaderi</column>
+      <column name="definition_fi">laivue</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -3337,6 +3380,49 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 23 (2016):src}, [2] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">neb mIv</column>
+          <column name="part_of_speech">n:deriv,terran</column>
+          <column name="definition">baseball cap (Terran clothing)</column>
+          <column name="definition_de">Baseballkappe (Terranerkleidung) [AUTOTRANSLATED]</column>
+          <column name="definition_fa">کلاه بیسبال (لباس Terran) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">baseballkeps (Terran-kläder) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">бейсболка (терранская одежда) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">棒球帽（人族服裝） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">boné de beisebol (roupas terráqueas) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">lippalakki</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">This is a kind of Terran clothing. It is also referred to as {neb mIv tun:n@@neb mIv:n, tun:v}, whereas a {neb mIv let:n@@neb mIv:n, let:v} is worn by some batters in the Terran game of baseball.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{neb:n:1}, {mIv:n:1}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nebeylI'</column>
@@ -3426,7 +3512,7 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">negh</column>
-      <column name="part_of_speech">n:inhpl,being</column>
+      <column name="part_of_speech">n:being,inhpl</column>
       <column name="definition">soldiers</column>
       <column name="definition_de">Soldaten</column>
       <column name="definition_fa">سربازان</column>
@@ -3473,7 +3559,7 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
       <column name="definition">Negh'Var (vessel)</column>
       <column name="definition_de">Negh'Var (Schiffsklasse)</column>
       <column name="definition_fa">نجواهر (کشتی) [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Negh'Var (ett skepp)</column>
+      <column name="definition_sv">Negh'Var (namn på rymdskepp)</column>
       <column name="definition_ru">Нег'Вар(название крейсера)</column>
       <column name="definition_zh_HK">Negh'Var（船隻） [AUTOTRANSLATED]</column>
       <column name="definition_pt">Negh'Var (navio)</column>
@@ -3561,7 +3647,15 @@ Tämä adverbi voi myös seurata substantiivia, jolloin se tarkoittaa "vain" tai
 ▶ {not qoHpu''e' neH ghIjlu'.:sen}
 ▶ {Suvlu'taHvIS yapbe' HoS neH.:sen}
 ▶ {wa' DoS neH yIbuS.:sen}
-▶ {'ang'eghQo' quv Hutlhbogh jagh neH ghobtaHvIS ghaH.:sen}</column>
+▶ {'ang'eghQo' quv Hutlhbogh jagh neH ghobtaHvIS ghaH.:sen}
+▶ {tera' DIS wa' Hut vagh Hut, bI'reS puv 'amerI'qa' 'ev chan 'ev X-wa'maH vagh. muDDaq neH muD Dujmey vorgh lu'orlu', 'ach loghDaq puvlaH Dujmey 'orbogh nuv 'e' 'agh X-wa'maH vagh.:sen:nolink}
+  "First flown in 1959, the North American X-15 bridged the gap between human flight in the atmosphere and spaceflight."[2]
+▶ {Dung qo' lupawDI' chaH:sen:nolink}
+   {qeylIS qorDu'Daj je ta''e' neH:sen:nolink}
+   {bop bommey:sen:nolink}
+  "Upon reaching the upper world,
+   No one could speak of anything,
+   But the deeds of Kahless and his kin."[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3576,7 +3670,15 @@ Tämä adverbi voi myös seurata substantiivia, jolloin se tarkoittaa "vain" tai
 ▶ {not qoHpu''e' neH ghIjlu'.:sen}
 ▶ {Suvlu'taHvIS yapbe' HoS neH.:sen}
 ▶ {wa' DoS neH yIbuS.:sen}
-▶ {'ang'eghQo' quv Hutlhbogh jagh neH ghobtaHvIS ghaH.:sen}</column>
+▶ {'ang'eghQo' quv Hutlhbogh jagh neH ghobtaHvIS ghaH.:sen}
+▶ {tera' DIS wa' Hut vagh Hut, bI'reS puv 'amerI'qa' 'ev chan 'ev X-wa'maH vagh. muDDaq neH muD Dujmey vorgh lu'orlu', 'ach loghDaq puvlaH Dujmey 'orbogh nuv 'e' 'agh X-wa'maH vagh.:sen:nolink}
+  "First flown in 1959, the North American X-15 bridged the gap between human flight in the atmosphere and spaceflight."[2]
+▶ {Dung qo' lupawDI' chaH:sen:nolink}
+   {qeylIS qorDu'Daj je ta''e' neH:sen:nolink}
+   {bop bommey:sen:nolink}
+  "Upon reaching the upper world,
+   No one could speak of anything,
+   But the deeds of Kahless and his kin."[3]</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -3588,7 +3690,7 @@ Tämä adverbi voi myös seurata substantiivia, jolloin se tarkoittaa "vain" tai
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD 5.4:src}</column>
+      <column name="source">[1] {TKD 5.4:src}, [2] {Smithsonian GO FLIGHT app:src}, [3] {paq'batlh 2ed p.126-127:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3693,7 +3795,7 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/JyeePTUXVa8}
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KLI mailing list 2017.07.28:src}, [2] {paq'batlh 2ed:src} ({KLI mailing list 2022.05.27:src})</column>
+      <column name="source">[1] {KLI mailing list 2017.07.28:src}, [2] {paq'batlh 2ed p.122-123:src} ({KLI mailing list 2022.05.27:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4240,7 +4342,7 @@ Kun sitä käytetään esineisiin, jotka tulevat pareittain, kuten sukat ja käs
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nentay</column>
-      <column name="part_of_speech">n:fic,deriv</column>
+      <column name="part_of_speech">n:deriv,fic</column>
       <column name="definition">Rite of Ascension</column>
       <column name="definition_de">Ritus des Aufsteigens</column>
       <column name="definition_fa">ریاست آسمانی [AUTOTRANSLATED]</column>
@@ -4641,28 +4743,16 @@ Kun sitä käytetään esineisiin, jotka tulevat pareittain, kuten sukat ja käs
       <column name="see_also">{'e':n:pro}</column>
       <column name="notes">This pronoun is used in a sentence-as-object construction when the second sentence has an indefinite third-person subject (i.e., "one" or "someone").
 
-Sometimes, {'e':n:pro} with {-lu':v} is used instead of {net:n:pro,nolink}. It is not clear why at the moment.</column>
-      <column name="notes_de">Dieses Pronomen wird in einer Satz-als-Objekt-Konstruktion verwendet, wenn der zweite Satz ein unbestimmtes Subjekt einer dritten Person hat (d. H. "Eins" oder "jemand").
-
-Manchmal wird {'e':n:pro} mit {-lu':v} anstelle von {net:n:pro,nolink} verwendet. Es ist im Moment nicht klar warum. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این ضمیر در ساخت یک جمله به عنوان مفعول استفاده می شود وقتی که جمله دوم دارای موضوع نامعین شخص ثالث (یعنی "یک" یا "شخص") باشد.
-
-گاهی اوقات ، به جای {net:n:pro,nolink} از {'e':n:pro} با {-lu':v} استفاده می شود. هنوز مشخص نیست که چرا در حال حاضر. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta pronomen används i en mening-som-objekt-konstruktion när den andra meningen har en obestämd tredje person ämne (dvs "en" eller "någon").
-
-Ibland används {'e':n:pro} med {-lu':v} istället för {net:n:pro,nolink}. Det är inte klart varför just nu. [AUTOTRANSLATED]</column>
+Sometimes, {'e':n:pro} with {-lu':v} is used instead of {net:n:pro,nolink}, because multiple uses of {-lu':v:nolink} in a complex sentence refers back to the same indefinite subject.[5]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
       <column name="notes_ru">Это местоимение используется в конструкции "предложение, как объект", когда второе предложение имеет неопределённый субъект третьего лица (например кто-то или некто).
 
-Иногда, {'e':n:pro} вместе с {-lu':v} используется вместо {net:n:pro,nolink}. На данный момент не совсем ясно, по какой причине.</column>
-      <column name="notes_zh_HK">當第二個句子具有不確定的第三人稱主語（即「一個」或「某人」）時，該代詞用於作為對象的句子構造。
-
-有時，使用帶有{-lu':v}的{'e':n:pro}代替{net:n:pro,nolink}。目前尚不清楚為什麼。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este pronome é usado em uma construção de frase como objeto quando a segunda frase tem um sujeito de terceira pessoa indefinido (ou seja, "um" ou "alguém").
-
-Às vezes, {'e':n:pro} com {-lu':v} é usado em vez de {net:n:pro,nolink}. Não está claro por que no momento. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä pronominia käytetään lause-objektirakenteessa, kun toisessa lauseessa on määrittelemätön kolmannen persoonan aihe (ts. "Yksi" tai "joku").
-
-Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole selvää miksi tällä hetkellä. [AUTOTRANSLATED]</column>
+Иногда, {'e':n:pro} вместе с {-lu':v} используется вместо {net:n:pro,nolink}, because multiple uses of {-lu':v:nolink} in a complex sentence refers back to the same indefinite subject.[5] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
@@ -4705,13 +4795,13 @@ Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD 6.2.5:src}, [2] {TKW p.125:src}, [3] {Klingon Monopoly:src}, [4] {qep'a' 24 (2017):src}</column>
+      <column name="source">[1] {TKD 6.2.5:src}, [2] {TKW p.125:src}, [3] {Klingon Monopoly:src}, [4] {qep'a' 24 (2017):src}, [5] {KLI mailing list 2022.06.11:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">netlh</column>
       <column name="part_of_speech">n:num</column>
-      <column name="definition">ten thousand</column>
+      <column name="definition">ten thousand (number-forming element)</column>
       <column name="definition_de">zehntausend</column>
       <column name="definition_fa">ده هزار</column>
       <column name="definition_sv">tiotusen (nummerbildande element)</column>
@@ -4722,14 +4812,18 @@ Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mI':n}, {SaD:n:num}, {bIp:n:num}</column>
-      <column name="notes">Note that the Klingon word for "ten thousand" is independent of the words for "ten" ({maH:n:2,num}) and "thousand" ({SaD:n:num,nolink}).</column>
-      <column name="notes_de">Beachten Sie, dass das klingonische Wort für "zehntausend" unabhängig von den Wörtern für "zehn" ({maH:n:2,num}) und "tausend" ({SaD:n:num,nolink}) ist. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">توجه داشته باشید که کلمه کلینگون برای "ده هزار" مستقل از کلمات "ده" ({maH:n:2,num}) و "هزار" ({SaD:n:num,nolink}) است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Observera att Klingon-ordet för "tiotusen" är oberoende av orden för "tio" ({maH:n:2,num}) och "tusen" ({SaD:n:num,nolink}). [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Заметьте, что клингонское слово для "десяти тысяч" не зависит от слов "десять" ({maH:n:2,num}) и "тысяча" ({SaD:n:num}).</column>
-      <column name="notes_zh_HK">請注意，「一萬」的克林崗語單詞與「十」（{maH:n:2,num}）和「一千」（{SaD:n:num}）的單詞無關。 [AUTOTRANSLATED]</column>
+      <column name="notes">This is a number-forming element, and not itself a number. The number 10,000 (ten thousand) is {wa'netlh:n:num,nolink}, literally "one ten thousand", in Klingon.
+
+Note that the Klingon number-forming element for "ten thousand" is independent of the words for "ten" ({maH:n:2,num}) and "thousand" ({SaD:n:num,nolink}).</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru">This is a number-forming element, and not itself a number. The number 10,000 (ten thousand) is {wa'netlh:n:num,nolink}, literally "one ten thousand", in Klingon.
+
+Заметьте, что клингонское слово для "десяти тысяч" не зависит от слов "десять" ({maH:n:2,num}) и "тысяча" ({SaD:n:num}). [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
-      <column name="notes_fi">Huomaa, että klingonilainen sana "kymmenentuhatta" on riippumaton sanoista "kymmenen" ({maH:n:2,num}) ja "tuhat" ({SaD:n:num,nolink}). [AUTOTRANSLATED]</column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -4980,15 +5074,15 @@ Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is the 9th rank of {yaS:n}.</column>
-      <column name="notes_de">Dies ist der 9. Rang von {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این رتبه نهم {yaS:n} است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är den 9: e rangordningen för {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это девятый ранг {yaS:n}.</column>
-      <column name="notes_zh_HK">這是{yaS:n}的第9位。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este é o nono ranking do {yaS:n}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) yhdeksäs eli alin sotilasarvo.</column>
-      <column name="hidden_notes"></column>
+      <column name="notes">This is the 9th rank of {yaS:n}.[2]</column>
+      <column name="notes_de">Dies ist der 9. Rang von {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این رتبه نهم {yaS:n} است.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är den 9: e rangordningen för {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это девятый ранг {yaS:n}.[2]</column>
+      <column name="notes_zh_HK">這是{yaS:n}的第9位。[2] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é o nono ranking do {yaS:n}.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on upseeriston ({yaS:n}) yhdeksäs eli alin sotilasarvo.[2]</column>
+      <column name="hidden_notes">In {QelIS boqHarmey:src}, this was used for the "Jack" in a deck of cards.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4998,7 +5092,7 @@ Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">jack</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -5006,7 +5100,7 @@ Joskus {'e':n:pro} ja {-lu':v} käytetään {net:n:pro,nolink}: n sijaan. Ei ole
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.52:src}, [3] {QelIS boqHarmey:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5337,7 +5431,7 @@ Tätä verbiä käytetään ilmaisemaan käsite, että kahdella asialla on sama 
       <column name="search_tags_ru">правый борт</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">tyyrpuuri</column>
       <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.08.05:src}</column>
     </table>
     <table name="mem">
@@ -5603,8 +5697,8 @@ A line which was cut from {Star Trek Into Darkness:src} reveals that the person 
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">nIm qulcher taD</column>
-          <column name="part_of_speech">n:deriv</column>
-          <column name="definition">ice cream</column>
+          <column name="part_of_speech">n:deriv,food,terran</column>
+          <column name="definition">ice cream (Terran food)</column>
           <column name="definition_de">Eis (Glace)</column>
           <column name="definition_fa">بستنی [AUTOTRANSLATED]</column>
           <column name="definition_sv">glass [AUTOTRANSLATED]</column>
@@ -6797,7 +6891,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nItlh Su'nIm</column>
-      <column name="part_of_speech">n:deriv,body</column>
+      <column name="part_of_speech">n:body,deriv</column>
       <column name="definition">fingerprint (ridges on fingertip)</column>
       <column name="definition_de">Fingerabdruck (Rillen auf der Fingerkuppe)</column>
       <column name="definition_fa">اثر انگشت (رگی در نوک انگشت) [AUTOTRANSLATED]</column>
@@ -7229,7 +7323,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.158-159:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.156-157:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7322,7 +7416,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.178-179:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed p.174-175:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -7554,7 +7648,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
       <column name="definition_fi">kostaa, maksaa takaisin samalla mitalla</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{bortaS:n}</column>
+      <column name="see_also">{bortaS:n}, {DItlh:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -7587,7 +7681,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">noDwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">avenger</column>
       <column name="definition_de">Rächer</column>
       <column name="definition_fa">انتقام گیرنده [AUTOTRANSLATED]</column>
@@ -8152,7 +8246,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nong</column>
-      <column name="part_of_speech">v:2,is,slang,archaic,alt</column>
+      <column name="part_of_speech">v:2,is,alt,archaic,slang</column>
       <column name="definition">{qu':v:2,slang}</column>
       <column name="definition_de">{qu':v:2,slang}</column>
       <column name="definition_fa">{qu':v:2,slang}</column>
@@ -8295,14 +8389,14 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{noq:n:1}, {bal:n}</column>
-      <column name="notes">This word takes the suffix {-Du':n}, as it's an extension of the meaning of the anatomical term.</column>
-      <column name="notes_de">Dieses Wort hat das Suffix {-Du':n}, da es eine Erweiterung der Bedeutung des anatomischen Begriffs darstellt. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این کلمه پسوند {-Du':n} را در نظر می گیرد ، زیرا این یک پسوند معنای اصطلاح تشریحی است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta ord tar suffixet {-Du':n}, eftersom det är en förlängning av betydelsen av den anatomiska termen. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это слово имеет суффикс {-Du':n}, так как является расширением значения анатомического термина. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">該詞帶有後綴{-Du':n}，因為它是解剖學術語含義的擴展。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta palavra usa o sufixo {-Du':n}, pois é uma extensão do significado do termo anatômico. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä sana vie päätteen {-Du':n}, koska se on jatkoa anatomisen termin merkitykselle. [AUTOTRANSLATED]</column>
+      <column name="notes">This word is similar to {neb:n:2} in taking the plural suffix {-mey:n}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -8864,7 +8958,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_zh_HK">這也可以用於垂直打開和關閉的門或門之類的東西，例如吊頂門。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso também pode ser usado para coisas como uma porta ou portão que se abre e fecha verticalmente, como um portão. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tätä voidaan käyttää myös esimerkiksi oviin tai portteihin, jotka avautuvat ja sulkeutuvat pystysuunnassa, kuten portcullis. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Stephen Norton was the villain in the last Hercule Poirot novel, Curtain.</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {bIQ notron:n}</column>
@@ -9107,7 +9201,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">no'</column>
-      <column name="part_of_speech">n:inhpl,being</column>
+      <column name="part_of_speech">n:being,inhpl</column>
       <column name="definition">ancestors</column>
       <column name="definition_de">Vorfahren</column>
       <column name="definition_fa">اجداد [AUTOTRANSLATED]</column>
@@ -9201,7 +9295,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
           <column name="definition_ru">предок висит (настенный орнамент) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">祖先壁皮（壁毯）</column>
           <column name="definition_pt">Tapeçaria ancestral (ornamento de parede)</column>
-          <column name="definition_fi">esi-isäseinävaate?</column>
+          <column name="definition_fi">esi-isiltä peritty seinäkoriste</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
@@ -9452,7 +9546,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">no''och</column>
-      <column name="part_of_speech">n:reg,body</column>
+      <column name="part_of_speech">n:body,reg</column>
       <column name="definition">forehead</column>
       <column name="definition_de">Stirn</column>
       <column name="definition_fa">پیشانی</column>
@@ -9927,7 +10021,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuH</column>
-      <column name="part_of_speech">n:1,weap,klcp1</column>
+      <column name="part_of_speech">n:1,klcp1,weap</column>
       <column name="definition">weapon</column>
       <column name="definition_de">Waffe</column>
       <column name="definition_fa">سلاح [AUTOTRANSLATED]</column>
@@ -10015,7 +10109,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuH bey'</column>
-      <column name="part_of_speech">n:weap,deriv,fic</column>
+      <column name="part_of_speech">n:deriv,fic,weap</column>
       <column name="definition">Pride of Weapons</column>
       <column name="definition_de">Waffenständer (Auslage)</column>
       <column name="definition_fa">افتخار اسلحه [AUTOTRANSLATED]</column>
@@ -10058,7 +10152,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuH HoS 'och</column>
-      <column name="part_of_speech">n:deriv,weap,fic</column>
+      <column name="part_of_speech">n:deriv,fic,weap</column>
       <column name="definition">weapon(s) power conduit</column>
       <column name="definition_de">Waffenenergieleitung</column>
       <column name="definition_fa">نیروی سلاح (ها) [AUTOTRANSLATED]</column>
@@ -10187,7 +10281,7 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuHmey</column>
-      <column name="part_of_speech">n:deriv,plural</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">arsenal</column>
       <column name="definition_de">Arsenal</column>
       <column name="definition_fa">انبار مهمات [AUTOTRANSLATED]</column>
@@ -10471,7 +10565,9 @@ It's probably a coincidence, but نوک is also the Persian word for "nipple".</
       <column name="notes_zh_HK"></column>
       <column name="notes_pt">Para se referir ao dia, mês ou ano anterior, considere usar {Hu':n}, {wen:n} e {ben:n:1}, respectivamente. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Jos haluat viitata edelliseen päivään, kuukauteen tai vuoteen, harkitse {Hu':n}-, {wen:n}- ja {ben:n:1}-vastaavien käyttöä. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">While {nungbogh:v:nolink} precedes a noun, {veb:v:nolink} comes after one.</column>
+      <column name="hidden_notes">While {nungbogh:v:nolink} precedes a noun, {veb:v:nolink} comes after one.
+
+In {to'qIpo'na paq chap:src}, {wot nungwI':n@@wot:n, nung:v, -wI':v} is used to translate "pre-verb", a grammatical term which does not exist in Klingon.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -11303,7 +11399,7 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/auqS6FR_RDE}
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuralngan</column>
-      <column name="part_of_speech">n:being,fic,deriv</column>
+      <column name="part_of_speech">n:being,deriv,fic</column>
       <column name="definition">Neuralese</column>
       <column name="definition_de">Neuralese</column>
       <column name="definition_fa">عصبی [AUTOTRANSLATED]</column>
@@ -11413,41 +11509,37 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/auqS6FR_RDE}
       <column name="components"></column>
       <column name="examples">
 ▶ {butlh ghajbogh nuv'e' yIHo'.:sen}
-▶ {QIStaq qoD DISDaq:sen:nolink}
-   {tu''egh qeylIS'e':sen:nolink}
-   {DIS veghlu'chugh:sen:nolink}
-   {pa' Heghpu'bogh nuvpu' qa'pu' tu'lu':sen:nolink}
-  "In the heart of Kri'stak,
-   Kahless finds himself in a cave
+▶ {DIS 'elpu' 'e' tlhoj:sen:nolink}
+   {DISvam veghlu'chugh:sen:nolink}
+   {yInbogh nuvpu' Hutlhbogh qo'Daq pawlu':sen:nolink}
+  "Kahless finds himself in a cave
    Leading to
-   The world beyond the living"[2, p.84-85]
-▶ {ngIq nuv luHoH:sen:nolink} "[They] were killed one by one."[2, p.135]
+   The world beyond the living."[2, p.90-91]
+▶ {ngIq nuv luHoH:sen:nolink} "[They] were killed one by one."[2, p.136-137]
 ▶ {ngIq tonSaw' lo':sen:nolink}
    {SaD law' San chenmoH qeylIS:sen:nolink}
    {wej boghbogh nuvpu' San chenmoH:sen:nolink}
   "In one single move,
    Kahless decided the fate
-   Of thousands, and those to come."[2, p.171]</column>
+   Of thousands, and those to come."[2, p.166-167]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
 ▶ {butlh ghajbogh nuv'e' yIHo'.:sen}
-▶ {QIStaq qoD DISDaq:sen:nolink}
-   {tu''egh qeylIS'e':sen:nolink}
-   {DIS veghlu'chugh:sen:nolink}
-   {pa' Heghpu'bogh nuvpu' qa'pu' tu'lu':sen:nolink}
-  "В сердце Криштака,
-   Кейлесс найдет себя в пещере
+▶ {DIS 'elpu' 'e' tlhoj:sen:nolink}
+   {DISvam veghlu'chugh:sen:nolink}
+   {yInbogh nuvpu' Hutlhbogh qo'Daq pawlu':sen:nolink}
+  "Кейлесс найдет себя в пещере
    Ведущей к
-   Миру, лежащему за пределами мира живых"[2, p.85]
-▶ {ngIq nuv luHoH:sen:nolink} "[Они] были убиты один за другим."[2, p.135]
+   Миру, лежащему за пределами мира живых"[2, p.90-91]
+▶ {ngIq nuv luHoH:sen:nolink} "[Они] были убиты один за другим."[2, p.136-137]
 ▶ {ngIq tonSaw' lo':sen:nolink}
    {SaD law' San chenmoH qeylIS:sen:nolink}
    {wej boghbogh nuvpu' San chenmoH:sen:nolink}
   "Одним движением,
    Кейлес решил судьбу
-   Тысяч, и тех, кто прийдет."[2, p.171]</column>
+   Тысяч, и тех, кто прийдет."[2, p.166-167]</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -11459,7 +11551,7 @@ Katso oppitunti tästä sanasta: {YouTube video:url:http://youtu.be/auqS6FR_RDE}
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {Saarbrücken qepHom'a' 2018:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}, [3] {Saarbrücken qepHom'a' 2018:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>

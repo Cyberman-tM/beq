@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -744,6 +744,92 @@ Begreppet "jungfru" kan uttryckas genom att bokstavligen säga vad en jungfru ä
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ngap</column>
+      <column name="part_of_speech">v</column>
+      <column name="definition">be consonant</column>
+      <column name="definition_de">konsonant, harmonisch sein</column>
+      <column name="definition_fa">همخوان باشد [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara konsonant [AUTOTRANSLATED]</column>
+      <column name="definition_ru">быть согласным [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">輔音 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser consonante [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla sopusointuinen, harmoninen (sävelistä)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms">{ngapHa':v}</column>
+      <column name="see_also">{QoQ:n}, {wab:n}</column>
+      <column name="notes">This is used in the sense of musical consonance or sympathetic vibrations.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
+    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">ngapHa'</column>
+          <column name="part_of_speech">v:deriv</column>
+          <column name="definition">be discordant, dissonant</column>
+          <column name="definition_de">dissonant, unharmonisch sein</column>
+          <column name="definition_fa">ناسازگار، ناسازگار باشد [AUTOTRANSLATED]</column>
+          <column name="definition_sv">vara disharmonisk, dissonant [AUTOTRANSLATED]</column>
+          <column name="definition_ru">быть диссонирующим, диссонирующим [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">不和諧，不和諧 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">ser discordante, dissonante [AUTOTRANSLATED]</column>
+          <column name="definition_fi">olla riitasointuinen, dissonantti (sävelistä)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms">{ngap:v}</column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{ngap:v}, {-Ha':v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 29 (2022):src}</column>
+        </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ngaq</column>
       <column name="part_of_speech">n</column>
       <column name="definition">support (military term)</column>
@@ -1260,7 +1346,7 @@ Voidaan sanoa {mab ngaQmoH:sen@@mab:n:2, ngaQmoH:v:2} ja niin edelleen, mutta t�
           <column name="definition_ru">содержимое (коробки с игрой) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">內容物（遊戲盒） [AUTOTRANSLATED]</column>
           <column name="definition_pt">conteúdo (de uma caixa de jogo) [AUTOTRANSLATED]</column>
-          <column name="definition_fi">sisältö (pelilaatikon) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">laatikko sisältää, "laatikon sisältö" (otsikko)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
@@ -1384,8 +1470,8 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="_id"></column>
       <column name="entry_name">ngat 'atlhqam</column>
       <column name="part_of_speech">n:deriv</column>
-      <column name="definition">a type of mold</column>
-      <column name="definition_de">eine art Pilz</column>
+      <column name="definition">type of mold</column>
+      <column name="definition_de">eine Art Pilz</column>
       <column name="definition_fa">یک نوع قالب [AUTOTRANSLATED]</column>
       <column name="definition_sv">en typ av mögel [AUTOTRANSLATED]</column>
       <column name="definition_ru">тип плесени [AUTOTRANSLATED]</column>
@@ -1597,6 +1683,49 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ngayvo'wan</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">work pants</column>
+      <column name="definition_de">Arbeitshose [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شلوار کار [AUTOTRANSLATED]</column>
+      <column name="definition_sv">arbetsbyxor [AUTOTRANSLATED]</column>
+      <column name="definition_ru">рабочие штаны [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">工作褲 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">calças de trabalho [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs vaate, työhousut</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a kind of Klingon work pants, which may be similar to jeans (see {jIn yopwaH:n}).</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ngay'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">glory</column>
@@ -1665,7 +1794,11 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="notes_fi">Tällä verbillä ei ole objektia, vaan monikollinen subjekti sisältää kaikki osapuolet.</column>
       <column name="hidden_notes">The gloss is actually given as "sex (i.e., perform sex; always subject)", which was considered by some to be unclear. The interpretation that this verb indicates that the subject, which must be plural, are engaged in sexual intercourse with each other, was confirmed by MO in July 2013, after its use in a poster for Stonewall's "Some People Are Gay. Get Over It." campaign.</column>
       <column name="components">{nga':v:hyp,nolink}, {-chuq:v}</column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {chaH vel negh 'Iw ghaylu'pu'mo':sen:nolink}
+   {nga'chuq:sen:nolink}
+  "Showered with the soldiers' blood,
+   They mated"[3]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -1681,7 +1814,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {HQ 1.3, Sept. 1992:src}, [2] {Stonewall campaign 2013:src} ({KLI mailing list 2019.03.22:src})</column>
+      <column name="source">[1] {HQ 1.3, Sept. 1992:src}, [2] {Stonewall campaign 2013:src} ({KLI mailing list 2019.03.22:src}), [3] {paq'batlh 2ed p.138-139:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1773,7 +1906,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <!-- There is a special note in German (not in the English) because people keep suggesting this be changed to the wrong word. -->
       <column name="_id"></column>
       <column name="entry_name">ngech</column>
-      <column name="part_of_speech">n:2,slang,body</column>
+      <column name="part_of_speech">n:2,body,slang</column>
       <column name="definition">woman's cleavage</column>
       <column name="definition_de">Busen einer Frau</column>
       <column name="definition_fa">شکاف زن [AUTOTRANSLATED]</column>
@@ -2258,33 +2391,17 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Daqav:n}, {ngech:n:1}, {ngem:n}</column>
-      <column name="notes">The shore of a lake is its {ngeng HeH:n}.
-
-The lava-filled area of a volcano ({qulHuD:n}) is called its {qul ngeng:n}.[2]</column>
-      <column name="notes_de">Das Ufer eines Sees ist seine {ngeng HeH:n}.
-
-Das mit Lava gefüllte Gebiet eines Vulkans ({qulHuD:n}) wird als {qul ngeng:n}.[2] bezeichnet [AUTOTRANSLATED]</column>
-      <column name="notes_fa">ساحل یک دریاچه {ngeng HeH:n} آن است.
-
-منطقه پر از گدازه های آتشفشان ({qulHuD:n}) به آن {qul ngeng:n}.[2] گفته می شود [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Sjöns strand är dess {ngeng HeH:n}.
-
-Det lavafylta området i en vulkan ({qulHuD:n}) kallas dess {qul ngeng:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Берег озера будет {ngeng HeH:n}.
-
-Заполненная лавой область вулкана, будет ({qulHuD:n}) или {qul ngeng:n}.[2]</column>
-      <column name="notes_zh_HK">湖的岸邊是它的{ngeng HeH:n}。
-
-火山熔岩充滿的區域（{qulHuD:n}）稱為{qul ngeng:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">A margem de um lago é seu {ngeng HeH:n}.
-
-A área cheia de lava de um vulcão ({qulHuD:n}) é chamada de {qul ngeng:n}.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Järven ranta on sen {ngeng HeH:n}.
-
-Tulivuoren laavalla täytettyä aluetta ({qulHuD:n}) kutsutaan sen {qul ngeng:n}: ksi.[2] [AUTOTRANSLATED]</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">{ngeng HeH:n}, {qul ngeng:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2300,7 +2417,7 @@ Tulivuoren laavalla täytettyä aluetta ({qulHuD:n}) kutsutaan sen {qul ngeng:n}
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh p.78-79:src}</column>
+      <column name="source">[1] {TKD:src}</column>
     </table>
         <table name="mem">
           <column name="_id"></column>
@@ -2343,7 +2460,19 @@ No {paq'batlh:src}, a expressão {qul ngeng HeH:n:nolink} é usada para se refer
 {paq'batlh:src}: ssa ilmaisua {qul ngeng HeH:n:nolink} käytetään viittaamaan {qul ngeng:n}: n rantaan {QIStaq:n}: n sisällä, jossa ympäristö on niin vihamielinen elämälle, ettei edes {tlheng'IQ:n} kasvaisi. [AUTOTRANSLATED]</column>
           <column name="hidden_notes"></column>
           <column name="components">{ngeng:n}, {HeH:n}</column>
-          <column name="examples"></column>
+      <column name="examples">
+▶ {mob qeylIS:sen:nolink}
+   {ngeng HeHDaq yIt:sen:nolink}
+   {SanDaj buS vaj 'It:sen:nolink}
+  "And Kahless was alone
+   Walking along the shore,
+   His fate heavy on his shoulders."
+  {qul ngeng HeHDaq:sen:nolink}
+   {ba'taHvIS qeylIS:sen:nolink}
+   {ghoS SuvwI' qan:sen:nolink}
+  "Kahless sits at the shores
+   Of the lake of fire
+   As an old warrior passes by."[2]</column>
           <column name="examples_de"></column>
           <column name="examples_fa"></column>
           <column name="examples_sv"></column>
@@ -2359,7 +2488,7 @@ No {paq'batlh:src}, a expressão {qul ngeng HeH:n:nolink} é usada para se refer
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
           <column name="search_tags_fi"></column>
-          <column name="source">[1] {paq'batlh p.78-79:src}</column>
+          <column name="source">[1] {paq'batlh 2ed p.86-87:src}</column>
         </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2376,14 +2505,14 @@ No {paq'batlh:src}, a expressão {qul ngeng HeH:n:nolink} é usada para se refer
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This is a giant mythical creature which {qotar:n} fought for a day.[1]</column>
-      <column name="notes_de">Dies ist ein riesiges Fabelwesen, gegen das {qotar:n} einen Tag lang gekämpft hat.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این یک موجود اسطوره ای غول پیکر است که {qotar:n} برای یک روز با آن جنگید.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en gigantisk mytisk varelse som {qotar:n} kämpade för en dag.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это гигантское мифическое существо, с которым {qotar:n} боролся за день.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這是{qotar:n}奮戰一天的巨大神話生物。[1] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Esta é uma criatura mítica gigante que {qotar:n} lutou por um dia.[1] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä on jättimäinen myyttinen olento, jota {qotar:n} taisteli päivän ajan.[1] [AUTOTRANSLATED]</column>
+      <column name="notes">This is a giant mythical creature which {qortar:n} fought for a day.[1]</column>
+      <column name="notes_de">Dies ist ein riesiges Fabelwesen, gegen das {qortar:n} einen Tag lang gekämpft hat.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این یک موجود اسطوره ای غول پیکر است که {qortar:n} برای یک روز با آن جنگید.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är en gigantisk mytisk varelse som {qortar:n} kämpade för en dag.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это гигантское мифическое существо, с которым {qortar:n} боролся за день.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{qortar:n}奮戰一天的巨大神話生物。[1] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Esta é uma criatura mítica gigante que {qortar:n} lutou por um dia.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on jättimäinen myyttinen olento, jota {qortar:n} taisteli päivän ajan.[1] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">The origin of this word appears to be a mistranslation by Bing translator, which turns "sea creature" into {ngeng roQ:sen:nolink} (with a space). This was then retroactively "vetted" by Marc Okrand after the book's publication.[2]</column>
       <column name="components">{ngeng:n}, {roQ:n:hyp,nolink}</column>
       <column name="examples"></column>
@@ -2803,7 +2932,7 @@ Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von ausw
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngevwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">seller</column>
       <column name="definition_de">Verkäufer</column>
       <column name="definition_fa">فروشنده [AUTOTRANSLATED]</column>
@@ -2993,7 +3122,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{nagh:n}</column>
-      <column name="notes"></column>
+      <column name="notes">It can suddenly open up and stick out something and grab a piece of food (like a frog does with flies). It doesn't do this very frequently, as it's not hungry very often.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3370,6 +3499,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="source">[1] {qep'a' 28 (2021):src}</column>
     </table>
     <table name="mem">
+      <!-- PB2ED: Add more info here. -->
       <column name="_id"></column>
       <column name="entry_name">ngIq</column>
       <column name="part_of_speech">n</column>
@@ -3384,65 +3514,72 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIq:adv}, {Hoch:n}, {'op:n}</column>
-      <column name="notes">This noun indicates that a single thing is being considered apart from others, or that a sequence of identical things is considered one after another. Like {Hoch:n} and {'op:n}, it precedes what it modifies.</column>
-      <column name="notes_de">Dieses Substantiv zeigt an, dass eine einzelne Sache getrennt von anderen betrachtet wird oder dass eine Folge identischer Dinge nacheinander betrachtet wird. Wie {Hoch:n} und {'op:n} geht es dem voraus, was es ändert. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این اسم نشان می دهد که یک چیز واحد جدا از دیگران در نظر گرفته می شود ، یا اینکه دنباله ای از چیزهای یکسان یکی پس از دیگری در نظر گرفته می شود. مانند {Hoch:n} و {'op:n} ، آنچه را که اصلاح می کند ، مقدم است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta substantiv indikerar att en enskild sak beaktas bortsett från andra, eller att en sekvens av identiska saker betraktas efter varandra. Liksom {Hoch:n} och {'op:n} föregår det vad den modifierar. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это существительное значит, что единственная вещь рассматривается отдельно от остальных, или это последовательность идентичных вещей, рассматриваемых одна за другой. Подобно {Hoch:n} и {'op:n}, оно предшествует тому, что модифицирует.</column>
-      <column name="notes_zh_HK">這個名詞表示單個事物被認為與其他事物分開，或者一系列相同的事物被認為是一個接一個的事物。像{Hoch:n}和{'op:n}一樣，它在修改之前。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Este substantivo indica que uma única coisa está sendo considerada à parte das outras, ou que uma sequência de coisas idênticas é considerada uma após a outra. Como {Hoch:n} e {'op:n}, precede o que modifica. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä substantiivi osoittaa, että yksittäistä asiaa pidetään erillään muista tai että samanlaisten asioiden sarjaa pidetään peräkkäin. Kuten {Hoch:n} ja {'op:n}, se edeltää sitä, mitä se muuttaa. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="notes">This noun indicates that a single thing is being considered apart from others, or that a sequence of identical things is considered one after another. Like {Hoch:n} and {'op:n}, it precedes what it modifies.[4]
+
+{ngIq:n:nolink} is always followed by a noun which is not explicitly plural. In contexts where it refers to multiple things, it can be translated as "each X". When {Hoch:n:nolink} precedes a noun which isn't explicitly plural, it also means "each X". The difference is that {Hoch:n:nolink} focuses on things as members of a group, whereas {ngIq:n:nolink} focuses on the individual things. It's a subtle difference, but a difference nonetheless. In such contexts, {ngIq:n:nolink} has a sequential meaning (whereas {Hoch:n:nolink} does not).[4]
+
+In some contexts, {ngIq:n:nolink} can be translated as "single" or "individual", but it always implies that there are (or could be) other similar things. For example, {ngIq tonSaw':n:nolink} means "one single move" in the sense of "one single move out of several". That is, {ngIq:n:nolink} is used to focus on one move in particular.[4]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">In an article writtten for the {Saarbrücken qepHom'a' 2017:src} booklet, MO wrote that "The description of {ngIq:n:nolink} in {boQwI':n:nolink} is pretty good". This is preserved in the first paragraph in the notes.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {ngIq nuv luHoH:sen:nolink} "[They] were killed one by one."[2, p.135]
+▶ {ngIq nuv luHoH:sen:nolink} "[They] were killed one by one."[2, p.136-137]
 ▶ {nIteb chegh molor ngIq ghoqwI':sen:nolink}
    {joqwI''e' cha'bogh qeylIS:sen:nolink}
    {luDel 'e' ra' molor:sen:nolink}
   "One by one Molor's scouts return,
    He asks them which banner
-   Kahless marches under."[2, p.139]
+   Kahless marches under."[2, p.138-139]
 ▶ {ngIq tonSaw' lo' 'ej tIqDu' lel:sen:nolink}
-   {ngIq tonSaw' lo' 'ej quvqa':sen:nolink}
+   {ngIq tonSaw' lo' 'ej quvqa'moH:sen:nolink}
    {ngIq tonSaw' lo' 'ej rIn may':sen:nolink}
   "In one single move, he removed the hearts,
    In one single move, he restored his honor,
-   In one single move, the battle was done."[2, p.169]
+   In one single move, the battle was done."[2, p.166-167]
 ▶ {ngIq tonSaw' lo':sen:nolink}
    {SaD law' San chenmoH qeylIS:sen:nolink}
    {wej boghbogh nuvpu' San chenmoH:sen:nolink}
   "In one single move,
    Kahless decided the fate
-   Of thousands, and those to come."[2, p.171]
+   Of thousands, and those to come."[2, p.166-167]
 ▶ {ngIq raQ - 150 QaS:sen:nolink} "outposts cost 150 each"[3]
 ▶ {ngIq raQvaD cha'maH vagh QaS yInob.:sen:nolink} "For each outpost pay 25 forces."[3]
-▶ {ngIq gholvo' wa'maH QaS yItlhap.:sen:nolink} "Collect 10 forces from every player."[3]</column>
+▶ {ngIq gholvaD vaghmaH QaS yInob.:sen:nolink} "Pay each player 50 forces."[3]
+▶ {ngIq gholvo' wa'maH QaS yItlhap.:sen:nolink} "Collect 10 forces from every player."[3]
+▶ {ngIq mIch wIHotlh:sen:nolink} "we scan the sectors one by one"[4]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru">
-▶ {ngIq nuv luHoH:sen:nolink} "Они были убиты один за другим."[2, стр.135]
+▶ {ngIq nuv luHoH:sen:nolink} "Они были убиты один за другим."[2, стр.136-137]
 ▶ {nIteb chegh molor ngIq ghoqwI':sen:nolink}
    {joqwI''e' cha'bogh qeylIS:sen:nolink}
    {luDel 'e' ra' molor:sen:nolink}
   "Один за другим вернулись разведчики Молора,
    Он спрашивает их, под каким флагом
-   Марширует Кейлес."[2, стр.139]
+   Марширует Кейлес."[2, стр.138-139]
 ▶ {ngIq tonSaw' lo' 'ej tIqDu' lel:sen:nolink}
-   {ngIq tonSaw' lo' 'ej quvqa':sen:nolink}
+   {ngIq tonSaw' lo' 'ej quvqa'moH:sen:nolink}
    {ngIq tonSaw' lo' 'ej rIn may':sen:nolink}
   "Одним единственным движением, он удалил сердца,
    Одним единственным движением, он восстановил свою честь,
-   Одним единственным движением, битва была окончена."[2, стр.169]
+   Одним единственным движением, битва была окончена."[2, стр.166-167]
 ▶ {ngIq tonSaw' lo':sen:nolink}
    {SaD law' San chenmoH qeylIS:sen:nolink}
    {wej boghbogh nuvpu' San chenmoH:sen:nolink}
   "Одним единственным движением,
    Кейлес решил судьбу
-   Тысяч, и тех, что прийдут."[2, стр.171]
+   Тысяч, и тех, что прийдут."[2, стр.166-167]
 ▶ {ngIq raQ - 150 QaS:sen:nolink} "Заставы стоят 150 каждая"[3]
 ▶ {ngIq raQvaD cha'maH vagh QaS yInob.:sen:nolink} "Для каждой из застав возьмите 25 отрядов."[3]
-▶ {ngIq gholvo' wa'maH QaS yItlhap.:sen:nolink} "Соберите 10 отрядов от каждого игрока."[3]</column>
+▶ {ngIq gholvo' wa'maH QaS yItlhap.:sen:nolink} "Соберите 10 отрядов от каждого игрока."[3]
+▶ {ngIq mIch wIHotlh:sen:nolink} "we scan the sectors one by one"[4]</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
@@ -3454,7 +3591,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {qep'a' 18 (2011):src}, [2] {paq'batlh:src}, [3] {Klingon Monopoly:src}</column>
+      <column name="source">[1] {qep'a' 18 (2011):src}, [2] {paq'batlh 2ed:src}, [3] {Klingon Monopoly:src}, [4] {Saarbrücken qepHom'a' 2017:src} ({KLI mailing list 2017.11.20:src})</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3693,7 +3830,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="definition_fi">rinta, tissi</column>
       <column name="synonyms">{HuD:n:2}</column>
       <column name="antonyms"></column>
-      <column name="see_also">{noq:n:1}, {ngech:n:2}</column>
+      <column name="see_also">{noq:n:1}, {ngech:n:2}, {janIj:n}</column>
       <column name="notes">This refers to a part of female anatomy.</column>
       <column name="notes_de">Dies bezieht sich auf einen Teil der weiblichen Anatomie. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به بخشی از آناتومی زن اشاره دارد. [AUTOTRANSLATED]</column>
@@ -3945,7 +4082,7 @@ One of these was used in the production of the opera {'u':src}.</column>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngogh mutlhwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">brick layer</column>
       <column name="definition_de">Maurer</column>
       <column name="definition_fa">لایه آجر [AUTOTRANSLATED]</column>
@@ -4289,7 +4426,7 @@ One of these was used in the production of the opera {'u':src}.</column>
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">ngomwI'</column>
-          <column name="part_of_speech">n:deriv,being</column>
+          <column name="part_of_speech">n:being,deriv</column>
           <column name="definition">geek</column>
           <column name="definition_de">Geek</column>
           <column name="definition_fa">جک [AUTOTRANSLATED]</column>
@@ -4473,7 +4610,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{waH:v:1}, {tob:v}, {Daj:v:2}, {Qul:v}, {ngong:n}, {Qulpa':n}</column>
-      <column name="notes">See the example under {So'wI':n} (and the explanation under {ngongmeH Duj:n}).</column>
+      <column name="notes">See the example under {So'wI':n}.</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -4481,9 +4618,10 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">See under {ngongmeH Duj:n} for some background information about the example sentence.</column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {ngongmeH wa' DujDaq nuHmey nISbe'bogh So'wI' jomlu'pu'.:sen:nolink} "A cloaking device that doesn't interfere with weapons has been installed on one ship in order to experiment."[1; 2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4499,7 +4637,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {SkyBox 33:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src}), [3] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4645,7 +4783,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="definition_fi">tavoite, tarkoitus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Hech:v}, {meq:n}, {mo':n:2}, {chIch:adv}</column>
+      <column name="see_also">{Hech:v}, {meq:n}, {mo':n:2}, {chIch:adv}, {Ho'latbeD:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4755,7 +4893,7 @@ Tämä sana löytyy myös arkaaisesta lausekkeesta {ngoS tlhogh cha:sen:nolink} 
       <column name="examples">
 ▶ {nuv 'umHa' leghchugh veqlargh:sen:nolink}
    {ngoS nuv 'umHa':sen:nolink}
-   {net jatlh:sen:nolink}
+   {jatlhlu':sen:nolink}
   "Those unfit disintegrate
    At the glance of Fek'lhr,
    So it is said."[3]</column>
@@ -4765,7 +4903,7 @@ Tämä sana löytyy myös arkaaisesta lausekkeesta {ngoS tlhogh cha:sen:nolink} 
       <column name="examples_ru">
 ▶ {nuv 'umHa' leghchugh veqlargh:sen:nolink}
    {ngoS nuv 'umHa':sen:nolink}
-   {net jatlh:sen:nolink}
+   {jatlhlu':sen:nolink}
   "Те, что были непригодными, распались
    Под взглядом Феклира,
    Так было сказано."</column>
@@ -4780,7 +4918,7 @@ Tämä sana löytyy myös arkaaisesta lausekkeesta {ngoS tlhogh cha:sen:nolink} 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {DS9 - The House of Quark:src}, [3] {paq'batlh p.96-97:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {DS9 - The House of Quark:src}, [3] {paq'batlh 2ed p.102-103:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5396,7 +5534,7 @@ Huomaa, että "silloin" tarkoittaa "myöhemmin" on {ghIq:adv}.[1][1] [AUTOTRANSL
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngup'a'</column>
-      <column name="part_of_speech">n:fic,deriv</column>
+      <column name="part_of_speech">n:deriv,fic</column>
       <column name="definition">The Dominion</column>
       <column name="definition_de">Das Dominion</column>
       <column name="definition_fa">سلطنت [AUTOTRANSLATED]</column>
@@ -5450,7 +5588,7 @@ Huomaa, että "silloin" tarkoittaa "myöhemmin" on {ghIq:adv}.[1][1] [AUTOTRANSL
       <column name="definition_fi">olla ylimielinen, kopea, koppava, itserakas, ylpeä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{'eDjen:n}, {le'yo':n}, {Hem:v}, {mIy:v}</column>
+      <column name="see_also">{'eDjen:n}, {le'yo':n}, {Hem:v}, {mIy:v}, {votlh:v}</column>
       <column name="notes">This is an undesirable trait.</column>
       <column name="notes_de">Dies ist eine unerwünschte Eigenschaft. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این یک صفت نامطلوب است. [AUTOTRANSLATED]</column>

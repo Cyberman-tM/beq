@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -957,7 +957,7 @@ Mikä tahansa paikka, joka on nimenomaisesti tarkoitettu tietyn tehtävän tai t
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yan</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:weap</column>
       <column name="definition">sword</column>
       <column name="definition_de">Schwert</column>
       <column name="definition_fa">شمشیر</column>
@@ -1061,7 +1061,7 @@ Tätä sanaa käytetään myös slangina "jouselle", jota käytetään pelaamaan
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yan</column>
-      <column name="part_of_speech">v:t_c</column>
+      <column name="part_of_speech">v:t_c,weap</column>
       <column name="definition">use or manipulate a sword</column>
       <column name="definition_de">ein Schwert handhaben</column>
       <column name="definition_fa">استفاده یا دستکاری شمشیر [AUTOTRANSLATED]</column>
@@ -1104,7 +1104,7 @@ Tätä sanaa käytetään myös slangina "jouselle", jota käytetään pelaamaan
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yanwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv,weap</column>
       <column name="definition">swordfighter</column>
       <column name="definition_de">Schwertkämpfer</column>
       <column name="definition_fa">شمشیرزن [AUTOTRANSLATED]</column>
@@ -1342,7 +1342,7 @@ Sotilasmerkityksen lisäksi tämä sana voi viitata säännöstelyvaltaa käytt�
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {KGT p.50-53:src}, [3] {Saarbrücken qepHom'a' 2021}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.50-53:src}, [3] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1390,7 +1390,7 @@ Sotilasmerkityksen lisäksi tämä sana voi viitata säännöstelyvaltaa käytt�
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yaS pa'mey</column>
-      <column name="part_of_speech">n:deriv,plural</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">officers' quarters</column>
       <column name="definition_de">Offiziersquartiere</column>
       <column name="definition_fa">چهارم افسران [AUTOTRANSLATED]</column>
@@ -1557,7 +1557,7 @@ Sotilasmerkityksen lisäksi tämä sana voi viitata säännöstelyvaltaa käytt�
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}, [2] {paq'batlh p.184-185:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {paq'batlh 2ed p.180-181:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2589,37 +2589,37 @@ Não confunda isso com uma sociedade no sentido cultural, para a qual veja {nugh
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jIj:v}</column>
-      <column name="notes">The subject is the cooperating parties.</column>
-      <column name="notes_de">Gegenstand sind die kooperierenden Parteien. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">موضوع طرفین همکار هستند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Ämnet är de samarbetsvilliga parterna. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Предметом являются сотрудничающие стороны. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">主題是合作方。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">O assunto são as partes que colaboraram. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Aihe on yhteistyössä toimineet osapuolet. [AUTOTRANSLATED]</column>
+      <column name="notes">The subject is the cooperating parties.[3]</column>
+      <column name="notes_de">Gegenstand sind die kooperierenden Parteien.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">موضوع طرفین همکار هستند.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Ämnet är de samarbetsvilliga parterna.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Предметом являются сотрудничающие стороны.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">主題是合作方。[3] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">O assunto são as partes que colaboraram.[3] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Aihe on yhteistyössä toimineet osapuolet.[3] [AUTOTRANSLATED]</column>
       <column name="hidden_notes">This is missing from the K-E side of {TKD:src}.
 
-The subjects cooperate with each other. This does not take an object (or the suffix {-chuq:v:suff}).[3]</column>
+This does not take an object (or the suffix {-chuq:v:suff}).[3]</column>
       <column name="components"></column>
       <column name="examples">
-▶ {nItebHa' molor HI''a':sen:nolink}
-   {SuvvIpghach puj je:sen:nolink}
-   {HarghmeH yeq chaH:sen:nolink}
+▶ {HarghmeH yeq chaH:sen:nolink}
+   {molor HI''a' luSuv:sen:nolink}
+   {lughIjlu'be' 'ej pujHa' 'e' lu'aghmeH Suv:sen:nolink}
   "United to do battle together!
    Against the tyrant Molor!
-   Against fear and against weakness!"[2, p.118-119]
+   Against fear and against weakness!"[2, p.122-123]
 ▶ {nIteb chegh molor ngIq ghoqwI':sen:nolink}
    {joqwI''e' cha'bogh qeylIS:sen:nolink}
    {luDel 'e' ra' molor:sen:nolink}
   "One by one Molor's scouts return,
    He asks them which banner
    Kahless marches under."
-   {lujang meQboghnom 'oH:sen:nolink}
-   {yeqchuqchu'taHghach:sen:nolink}
-   {Daw' je joqwI':sen:nolink}
+  {lujang meQboghnom 'oH:sen:nolink}
+   {yeqchu'taHghach Daw' je:sen:nolink}
+   {'oS joqwI':sen:nolink}
   "They reply it is the meQboghnom,
    The banner of unity
-   And revolution."[2, p.138-139]</column>
+   And revolution."[2, p.138-141]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2635,7 +2635,7 @@ The subjects cooperate with each other. This does not take an object (or the suf
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}, [3] {KLI mailing list 2022.05.27:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}, [3] {KLI mailing list 2022.05.27:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3022,7 +3022,7 @@ Yleensä kun olotilaa kuvaavaa verbiä käytetään välttämättömänä, sen k
       <column name="definition_ru">Триббл</column>
       <column name="definition_zh_HK">符段 [AUTOTRANSLATED]</column>
       <column name="definition_pt">tribble</column>
-      <column name="definition_fi">eräs eläin, trible</column>
+      <column name="definition_fi">eräs eläin, tribble</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIlo'meH:n:extcan}</column>
@@ -4215,7 +4215,7 @@ An earlier translation of this phrase appears in UPN's Star Trek 25th Anniversar
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {'u':src}, [2] {paq'batlh p.181:src}</column>
+      <column name="source">[1] {'u':src}, [2] {paq'batlh 2ed p.176-177:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4319,6 +4319,49 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/HVOJkR51l
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">yIr'ach</column>
+      <column name="part_of_speech">n:being</column>
+      <column name="definition">close friend</column>
+      <column name="definition_de">enge/r Freund/in</column>
+      <column name="definition_fa">دوست صمیمی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">nära vän [AUTOTRANSLATED]</column>
+      <column name="definition_ru">близкие друзья [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">密友 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">amigo próximo [AUTOTRANSLATED]</column>
+      <column name="definition_fi">läheinen ystävä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{maqoch:n}, {chaj:n}</column>
+      <column name="notes">This is gender-neutral.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4517,7 +4560,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/HVOJkR51l
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Backwards of "Texas Tea", a slang term for petroleum popularised by "The Ballad of Jed Clampett", the theme song of The Beverly Hillbillies.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4749,7 +4792,11 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {ghIgh yIvbeH:n}
+▶ {pob yIvbeH:n}
+▶ {po'lo yIvbeH:n}
+▶ {yIvbeH naQHa':n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4810,6 +4857,49 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">yIvbeH naQHa'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">vest, waistcoat</column>
+          <column name="definition_de">Weste [AUTOTRANSLATED]</column>
+          <column name="definition_fa">جلیقه [AUTOTRANSLATED]</column>
+          <column name="definition_sv">väst [AUTOTRANSLATED]</column>
+          <column name="definition_ru">жилет [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">背心 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">colete [AUTOTRANSLATED]</column>
+          <column name="definition_fi">liivi [AUTOTRANSLATED]</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{yIvbeH:n:1}, {naQ:v}, {-Ha':v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yIvoq 'ach lojmItmey yISam.</column>
@@ -4939,6 +5029,49 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2013:src}, [2] {Star Trek Into Darkness:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">yI'De'</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">cervid-like animal</column>
+      <column name="definition_de">Hirsch-ähnliches Tier</column>
+      <column name="definition_fa">حیوانی شبیه دهانه رحم [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hjortdjursliknande djur [AUTOTRANSLATED]</column>
+      <column name="definition_ru">цервидоподобное животное [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">類似子宮的動物 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">animal tipo cervídeo [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs hirveä muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">The TV show Frasier had a character named Eddie ({'eD'Iy:sen:nolink}) Crane played by a dog named "Moose".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">deer, elk, moose</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">hirvi</column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5116,7 +5249,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="_id"></column>
       <column name="entry_name">yoD</column>
       <column name="part_of_speech">n:klcp1</column>
-      <column name="definition">shield</column>
+      <column name="definition">shield (plate of material, not force field)</column>
       <column name="definition_de">Schild</column>
       <column name="definition_fa">سپر [AUTOTRANSLATED]</column>
       <column name="definition_sv">sköld</column>
@@ -5135,7 +5268,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was just defined as "shield" in {TKD:src}. The clarification was added based on the explanation in {KGT:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5603,7 +5736,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="definition_fi">housut</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qogh:n:1}, {yopwaH bID:n}</column>
+      <column name="see_also">{qogh:n:1}, {yopwaH bID:n}, {ngayvo'wan:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5614,7 +5747,8 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
-      <column name="examples"></column>
+      <column name="examples">
+▶ {jIn yopwaH:n}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -5816,7 +5950,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="definition">shelf, bookshelf</column>
       <column name="definition_de">Regal, Bücherregal</column>
       <column name="definition_fa">قفسه، قفسه کتاب</column>
-      <column name="definition_sv">hylla, bokhylla [AUTOTRANSLATED]</column>
+      <column name="definition_sv">hylla, bokhylla</column>
       <column name="definition_ru">полка, книжная полка [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">架子、書架</column>
       <column name="definition_pt">prateleira, estante</column>
@@ -5953,7 +6087,7 @@ Kronosin ({Qo'noS:n}) tunnettuja alueita ovat:
       <column name="definition">invade</column>
       <column name="definition_de">eindringen</column>
       <column name="definition_fa">حمله کردن [AUTOTRANSLATED]</column>
-      <column name="definition_sv">invadera</column>
+      <column name="definition_sv">invadera, inkräkta</column>
       <column name="definition_ru">захватчик</column>
       <column name="definition_zh_HK">入侵 [AUTOTRANSLATED]</column>
       <column name="definition_pt">invadir</column>
@@ -5996,7 +6130,7 @@ Kronosin ({Qo'noS:n}) tunnettuja alueita ovat:
       <column name="definition">intruder</column>
       <column name="definition_de">Eindringling</column>
       <column name="definition_fa">مزاحم [AUTOTRANSLATED]</column>
-      <column name="definition_sv">inkräktare [AUTOTRANSLATED]</column>
+      <column name="definition_sv">inkräktare</column>
       <column name="definition_ru">нарушитель [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">入侵者</column>
       <column name="definition_pt">intruso</column>
@@ -6691,7 +6825,7 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="definition">titanium</column>
       <column name="definition_de">Titan (chemisches Element)</column>
       <column name="definition_fa">تیتانیوم [AUTOTRANSLATED]</column>
-      <column name="definition_sv">titan [AUTOTRANSLATED]</column>
+      <column name="definition_sv">titan (ämne)</column>
       <column name="definition_ru">титан [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">鈦 [AUTOTRANSLATED]</column>
       <column name="definition_pt">titânio</column>
@@ -6867,7 +7001,7 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
       <column name="definition_ru">перехитрить, перехитрить [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">智取</column>
       <column name="definition_pt">levar a melhor em, superar (em esperteza, inteligência)</column>
-      <column name="definition_fi">olla ovelampi kuin</column>
+      <column name="definition_fi">olla ovelampi kuin, hämätä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{yut:v}</column>
@@ -6989,7 +7123,7 @@ The first and second {yu:n:nolink} are not an octave apart, but rather a nonave 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yuQjIjDIvI'</column>
-      <column name="part_of_speech">n:place,fic,deriv</column>
+      <column name="part_of_speech">n:place,deriv,fic</column>
       <column name="definition">United Federation of Planets</column>
       <column name="definition_de">Vereinigte Föderation der Planeten</column>
       <column name="definition_fa">فدراسیون جهانی سیارات [AUTOTRANSLATED]</column>

@@ -8,7 +8,7 @@
          dialogue specific to a scene) should be placed here, while quotations of proverbs and such
          can remain in the main section. (The deciding factor is whether such a sentence would
          normally be found or be useful to look up in a phrasebook. For example, "Activate the
-         transport beam!" or "Help us!" are phrases one might look up, whereas "Gunner, target
+         transporter beam!" or "Help us!" are phrases one might look up, whereas "Gunner, target
          engine only" or "They have betrayed us!" are specific to the scene.)
 
          Note that some Trek canon falls into "non-canon" by the definition of "canon" used by
@@ -144,8 +144,8 @@ Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">Since {tera'nganpu':n@@tera'ngan:n, -pu':n} is plural, and {'e':n:pro} is singular, there should be a prefix {lu-:v} on {tIv:v}.</column>
-      <column name="components">{Ha'DIbaH:n:1}, {-mey:n}, {meQ:v:1}, {Sop:v}, {'e':n}, {tIv:v}, {tera'ngan:n}, {-pu':n}</column>
+      <column name="hidden_notes">Since {tera'nganpu':n@@tera'ngan:n, -pu':n} is plural, and {'e':n:pro} is singular, there should be a prefix {lu-:v} on {tIv:v} if this sentence had been used in a formal situation. See the note under {lu-:v}.</column>
+      <column name="components">{Ha'DIbaH:n:1}, {-mey:n}, {meQ:v:3}, {Sop:v}, {'e':n}, {tIv:v}, {tera'ngan:n}, {-pu':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -765,7 +765,8 @@ Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</
       <column name="definition_fi">Lähetä tiedot... nyt!</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">
+▶ {HablI', Su' labbeH.:sen}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -774,7 +775,7 @@ Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was spoken by Kruge to Valkris. The reason that he used {lI':v:2} while she used {lab:v} seems to be because they're on opposite ends of the transmission, but it's not exactly clear when each verb would be the right one to use.</column>
       <column name="components">{De':n}, {yI-:v}, {lI':v:2}, {DaH:adv}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -808,7 +809,8 @@ Katso video tästä vitsistä: {YouTube video:url:http://youtu.be/HciuEJSpPq0}</
       <column name="definition_fi">Tietokone, olen valmis lähettämään.</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">
+▶ {De' yIlI'... DaH!:sen}</column>
       <column name="notes">This is a command given to a data transceiving device ({HablI':n}).</column>
       <column name="notes_de">Dies ist ein Befehl, der an ein Datenübertragungsgerät ({HablI':n}) gesendet wird. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این فرمانی است که به یک دستگاه انتقال داده ({HablI':n}) داده شده است. [AUTOTRANSLATED]</column>
@@ -3890,7 +3892,8 @@ To address a single person, say {qatlh choneH?:sen@@qatlh:ques, cho-:v, neH:v}</
     </table>
 
     <!-- Section: Sentences from DSC -->
-    <!-- These were NOT written by Marc Okrand, but by other expert Klingonists and thus are of generally high quality. -->
+    <!-- These were NOT written by Marc Okrand, but by other expert Klingonists and thus are of
+         generally high quality. -->
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghetwI' luwIvlu'ta'.</column>
@@ -3941,7 +3944,7 @@ To address a single person, say {qatlh choneH?:sen@@qatlh:ques, cho-:v, neH:v}</
       <column name="definition">Light the Fire.</column>
       <column name="definition_de">Entzündet das Feuer.</column>
       <column name="definition_fa">نور آتش را روشن کردن [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Tänd elden. [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Tänd elden.</column>
       <column name="definition_ru">Зажечь огонь. [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">點燃火。</column>
       <column name="definition_pt">Ascenda o fogo.</column>
@@ -3995,7 +3998,7 @@ To address a single person, say {qatlh choneH?:sen@@qatlh:ques, cho-:v, neH:v}</
       <column name="notes">This is part of the Story of the Promise, which tells of the departure (and prophesies the return) of {qeylIS'e' lIjlaHbe'bogh vay':n:name}.</column>
       <column name="notes_de">Dies ist Teil der Geschichte der Verheißung, die von der Abreise (und Prophezeiung der Rückkehr) von {qeylIS'e' lIjlaHbe'bogh vay':n:name} erzählt. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این بخشی از داستان وعده است که از عزیمت (و پیشگویی بازگشت) {qeylIS'e' lIjlaHbe'bogh vay':n:name} خبر می دهد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta är en del av berättelsens berättelse, som berättar om {qeylIS'e' lIjlaHbe'bogh vay':n:name}: s avgång (och profeterar återkomsten). [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är en del av berättelsen Historien om löftet, som berättar om {qeylIS'e' lIjlaHbe'bogh vay':n:name} avfärd (och profeserar om hans återkomst).</column>
       <column name="notes_ru">Это часть Истории Обещания, которая рассказывает об уходе (и предсказывает возвращение) {qeylIS'e' lIjlaHbe'bogh vay':n:name}. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是「諾言故事」的一部分，該故事講述了{qeylIS'e' lIjlaHbe'bogh vay':n:name}的離開（並預言了返回）。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso faz parte da história da promessa, que fala da partida (e profetiza o retorno) do {qeylIS'e' lIjlaHbe'bogh vay':n:name}. [AUTOTRANSLATED]</column>
@@ -4113,7 +4116,7 @@ The speech concludes with the words (in Federation Standard): "We come in peace.
       <column name="notes_fi">Tämä tarkoittaa kirjaimellisesti "Olemme Klingon, jatkaako se". Englanninkieliset tekstitykset tekevät tämän "Remain Klingon!" [AUTOTRANSLATED]</column>
       <column name="hidden_notes">The line was deliberately translated this way as it was believed that audiences would recognise the embedded {tlhIngan maH!:sen:nolink}
 
-This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, -taH:v, -jaj:v}, "May we continue to be Klingon". This technically violates the rule that a Type 7 suffix cannot be used with {-jaj:v:nolink} (see {TKD 4.2.9:src}), but this rule has been violated in canon.</column>
+This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, -taH:v, -jaj:v}, "May we continue to be Klingon". This technically violates the rule that a Type 7 suffix cannot be used with {-jaj:v} (see note under that entry), but this rule was later explained to have exceptions that would've made this sentence acceptable.[2]</column>
       <column name="components">{tlhIngan maH!:sen}, {taH:v:1}, {-jaj:v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4131,7 +4134,7 @@ This can also be interpreted as {tlhIngan maHtaHjaj!:sen@@tlhIngan:n, maH:n:1h, 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {DSC - The Vulcan Hello:src}</column>
+      <column name="source">[1] {DSC - The Vulcan Hello:src}, [2] {KLI mailing list 2022.06.11:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4208,7 +4211,8 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
 
     <!-- Section: Sentences and words from the paq'batlh -->
-    <!-- These were written by Marc Okrand. In the case of some {no' Hol} words, they were invented by someone else but approved by Okrand. -->
+    <!-- These were written by Marc Okrand. In the case of some {no' Hol} words, they were invented
+         by someone else but approved by Okrand. -->
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">cha'ang</column>
@@ -4250,7 +4254,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.xxii,62,87:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.35,73,92:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4267,14 +4271,14 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">Spoken by {qeylIS'e' lIjlaHbe'bogh vay':n:name} to {qotar:n:name} in the {paq'batlh:src}.</column>
-      <column name="notes_de">Wird von {qeylIS'e' lIjlaHbe'bogh vay':n:name} bis {qotar:n:name} im {paq'batlh:src} gesprochen. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">توسط {qeylIS'e' lIjlaHbe'bogh vay':n:name} به {qotar:n:name} در {paq'batlh:src} گفت. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Talat av {qeylIS'e' lIjlaHbe'bogh vay':n:name} till {qotar:n:name} i {paq'batlh:src}. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Сказано в диалоге между {qeylIS'e' lIjlaHbe'bogh vay':n:name} и {qotar:n:name} в {paq'batlh:src}.</column>
-      <column name="notes_zh_HK">在{paq'batlh:src}中由{qeylIS'e' lIjlaHbe'bogh vay':n:name}說話到{qotar:n:name}。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Falado por {qeylIS'e' lIjlaHbe'bogh vay':n:name} para {qotar:n:name} no {paq'batlh:src}. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">{qeylIS'e' lIjlaHbe'bogh vay':n:name} puhui {qotar:n:name}: lle {paq'batlh:src}: ssa. [AUTOTRANSLATED]</column>
+      <column name="notes">Spoken by {qeylIS'e' lIjlaHbe'bogh vay':n:name} to {qortar:n:name} in the {paq'batlh:src}.</column>
+      <column name="notes_de">Wird von {qeylIS'e' lIjlaHbe'bogh vay':n:name} bis {qortar:n:name} im {paq'batlh:src} gesprochen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">توسط {qeylIS'e' lIjlaHbe'bogh vay':n:name} به {qortar:n:name} در {paq'batlh:src} گفت. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Talat av {qeylIS'e' lIjlaHbe'bogh vay':n:name} till {qortar:n:name} i {paq'batlh:src}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Сказано в диалоге между {qeylIS'e' lIjlaHbe'bogh vay':n:name} и {qortar:n:name} в {paq'batlh:src}.</column>
+      <column name="notes_zh_HK">在{paq'batlh:src}中由{qeylIS'e' lIjlaHbe'bogh vay':n:name}說話到{qortar:n:name}。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Falado por {qeylIS'e' lIjlaHbe'bogh vay':n:name} para {qortar:n:name} no {paq'batlh:src}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">{qeylIS'e' lIjlaHbe'bogh vay':n:name} puhui {qortar:n:name}: lle {paq'batlh:src}: ssa. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
       <column name="components">{ghu':n}, {Da-:v}, {chup:v}, {-bogh:v}, {vI-:v}, {laj:v}</column>
       <column name="examples"></column>
@@ -4293,7 +4297,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.144-145:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.146-147:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4336,7 +4340,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.xxii:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.35:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4379,7 +4383,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.167-168:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.164-165:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4392,7 +4396,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Книга идеального крика [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">完美吶喊之書 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Livro do grito perfeito [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Täydellisen huudon kirja [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs kirja, Täydellisen huudon kirja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4435,7 +4439,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Земляная книга [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">地書 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Livro Básico [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Maakirja [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs kirja, Maakirja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4478,7 +4482,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Книга Силы [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">力書 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Livro de Força [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Voiman kirja [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs kirja, Voimakirja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4521,7 +4525,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Книга воздействия [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">影響書 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Livro de Impacto [AUTOTRANSLATED]</column>
-      <column name="definition_fi">Vaikutuskirja [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs kirja, Tuhokirja</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4594,7 +4598,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.182-183:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.178-179:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4637,15 +4641,18 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.xvii,xxii,xxxv:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.31,35,195:src}</column>
     </table>
 
     <!-- Section: Borrowings from Federation Standard -->
-    <!-- These were generally created by Marc Okrand. -->
+    <!-- These were generally created by Marc Okrand. Terms for Terran things expressed entirely in
+         Klingon (like "hamburger" and "baseball cap") belong in the main section rather than here.
+         Terran things should be tagged with "terran" in the parts of speech field.
+         -->
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'aqaD</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Akkad</column>
       <column name="definition_de">Akkad</column>
       <column name="definition_fa">آکاد [AUTOTRANSLATED]</column>
@@ -4688,7 +4695,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">'aqaDyan Hol</column>
-          <column name="part_of_speech">n:deriv</column>
+          <column name="part_of_speech">n:deriv,terran</column>
           <column name="definition">Akkadian language</column>
           <column name="definition_de">Akkadisch</column>
           <column name="definition_fa">زبان اکدی [AUTOTRANSLATED]</column>
@@ -4730,8 +4737,94 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
         </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">baDjer Hajvav</column>
+      <column name="part_of_speech">n:anim,terran</column>
+      <column name="definition">badger (Terran animal)</column>
+      <column name="definition_de">Dachs (terranisches Tier) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گورکن (حیوان خاکی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">grävling (Terran djur) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">барсук (терранское животное) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">獾（人族動物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">texugo (animal terrestre) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">mäyrä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Hajvav:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">bagh'et</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">baguette (Terran bread)</column>
+      <column name="definition_de">Baguette (terranisches Brot) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">باگت (نان تران) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">baguette (terran bröd) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">багет (терранский хлеб) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">長棍麵包（人族麵包） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">baguete (pão da terra) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">patonki</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">bambu'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">bamboo</column>
       <column name="definition_de">Bambus</column>
       <column name="definition_fa">بامبو</column>
@@ -4774,7 +4867,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">barbara' ma'rIch</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Barbara March</column>
       <column name="definition_de">Barbara March</column>
       <column name="definition_fa">باربارا مارچ</column>
@@ -4817,7 +4910,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">balgharya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Bulgaria</column>
       <column name="definition_de">Bulgarien</column>
       <column name="definition_fa">بلغارستان</column>
@@ -4860,7 +4953,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bama Hol</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">Burmese language</column>
       <column name="definition_de">Birmanische Sprache</column>
       <column name="definition_fa">زبان برمه</column>
@@ -4903,8 +4996,8 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">banan naH</column>
-      <column name="part_of_speech">n:food</column>
-      <column name="definition">banana</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">banana (Terran fruit)</column>
       <column name="definition_de">Banane</column>
       <column name="definition_fa">موز</column>
       <column name="definition_sv">banan</column>
@@ -4946,7 +5039,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">barat</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">India</column>
       <column name="definition_de">Indien</column>
       <column name="definition_fa">هندوستان</column>
@@ -4989,7 +5082,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">baStan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Boston</column>
       <column name="definition_de">Boston</column>
       <column name="definition_fa">بوستون</column>
@@ -5032,7 +5125,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">belghIya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Belgium</column>
       <column name="definition_de">Belgien</column>
       <column name="definition_fa">بلژیک</column>
@@ -5075,7 +5168,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">berlIn</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Berlin</column>
       <column name="definition_de">Berlin</column>
       <column name="definition_fa">برلین</column>
@@ -5118,7 +5211,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bewbeb</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">Baobab (a Terran tree)</column>
       <column name="definition_de">Affenbrotbaum</column>
       <column name="definition_fa">آدانسونیا</column>
@@ -5161,7 +5254,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIl jo'rIj</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Bill George</column>
       <column name="definition_de">Bill George</column>
       <column name="definition_fa">بیل جورج</column>
@@ -5205,8 +5298,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">bIqIynIy</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">bikini (Terran clothing)</column>
+      <column name="definition_de">Bikini (Terranerkleidung) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">بیکینی (لباس ترن) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bikini (Terran-kläder) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">бикини (терранская одежда) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">比基尼（人族服裝） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">biquíni (roupa terráquea) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">bikinit</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword for a kind of Terran clothing.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">bIraSIw</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Brazil</column>
       <column name="definition_de">Brasilien</column>
       <column name="definition_fa">برزیل</column>
@@ -5249,7 +5385,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIrI'tIS qolambIya</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">British Columbia</column>
       <column name="definition_de">Britisch-Kolumbien</column>
       <column name="definition_fa">بریتیش کلمبیا</column>
@@ -5292,7 +5428,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">boSporoS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Bosporus</column>
       <column name="definition_de">Bosporus</column>
       <column name="definition_fa">بسفر</column>
@@ -5300,7 +5436,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Боспорское</column>
       <column name="definition_zh_HK">博斯普魯斯海峽</column>
       <column name="definition_pt">Bósforo</column>
-      <column name="definition_fi">Bosporus</column>
+      <column name="definition_fi">Bosporinsalmi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -5335,7 +5471,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">cheSqa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Czech Republic</column>
       <column name="definition_de">Tschechien</column>
       <column name="definition_fa">جمهوری چک</column>
@@ -5378,7 +5514,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">choSan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Korea</column>
       <column name="definition_de">Korea</column>
       <column name="definition_fa">کشور کره [AUTOTRANSLATED]</column>
@@ -5421,7 +5557,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Da'lar</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">dollar</column>
       <column name="definition_de">Dollar</column>
       <column name="definition_fa">دلار</column>
@@ -5464,7 +5600,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Denmargh</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Denmark</column>
       <column name="definition_de">Dänemark</column>
       <column name="definition_fa">دانمارک</column>
@@ -5507,7 +5643,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DIreS'en</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Dresden</column>
       <column name="definition_de">Dresden</column>
       <column name="definition_fa">درسدن [AUTOTRANSLATED]</column>
@@ -5550,7 +5686,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DItroy'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Detroit</column>
       <column name="definition_de">Detroit</column>
       <column name="definition_fa">دیترویت</column>
@@ -5593,7 +5729,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DoyIchlan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Germany</column>
       <column name="definition_de">Deutschland</column>
       <column name="definition_fa">آلمان</column>
@@ -5636,7 +5772,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">DoyIchlan Hol</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,terran</column>
       <column name="definition">German (language)</column>
       <column name="definition_de">Deutsch (Sprache)</column>
       <column name="definition_fa">زبان آلمانی</column>
@@ -5679,7 +5815,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">gharlIq 'oQqar</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">garlic</column>
       <column name="definition_de">Knoblauch</column>
       <column name="definition_fa">سیر</column>
@@ -5722,7 +5858,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghenlan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Greenland</column>
       <column name="definition_de">Grönland</column>
       <column name="definition_fa">گرینلند</column>
@@ -5765,7 +5901,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghIrep naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">grape</column>
       <column name="definition_de">Traube</column>
       <column name="definition_fa">انگور</column>
@@ -5802,13 +5938,13 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">rypäle</column>
       <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghI'neS</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Guinness</column>
       <column name="definition_de">Guinness</column>
       <column name="definition_fa">گینس [AUTOTRANSLATED]</column>
@@ -5851,7 +5987,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghI'van</column>
-      <column name="part_of_speech">n:anim,fic</column>
+      <column name="part_of_speech">n:anim,fic,terran</column>
       <column name="definition">gryphon</column>
       <column name="definition_de">Greif</column>
       <column name="definition_fa">gryphon [AUTOTRANSLATED]</column>
@@ -5893,8 +6029,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">gho'lIv</column>
+      <column name="part_of_speech">n:terran</column>
+      <column name="definition">golf (Terran game)</column>
+      <column name="definition_de">Golf (Terranerspiel) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گلف (بازی Terran) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">golf (Terran spel) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">гольф (терранская игра) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">高爾夫（人族遊戲） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">golfe (jogo terrano) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">golf</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{cha'DaSvI':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ghuwan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Rouen</column>
       <column name="definition_de">Rouen</column>
       <column name="definition_fa">روئن [AUTOTRANSLATED]</column>
@@ -5937,7 +6116,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghuwI'nItlh wa'lIS</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Gwynyth Walsh</column>
       <column name="definition_de">Gwynyth Walsh</column>
       <column name="definition_fa">گوئینیث والش</column>
@@ -5980,7 +6159,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Hamburgh</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Hamburg</column>
       <column name="definition_de">Hamburg</column>
       <column name="definition_fa">هامبورگ</column>
@@ -6023,7 +6202,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Hanghuq</column>
-      <column name="part_of_speech">n:place,alt</column>
+      <column name="part_of_speech">n:place,alt,terran</column>
       <column name="definition">{choSan:n}</column>
       <column name="definition_de">{choSan:n}</column>
       <column name="definition_fa">{choSan:n}</column>
@@ -6066,7 +6245,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jan qalI'qoS</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">John Colicos</column>
       <column name="definition_de">John Colicos</column>
       <column name="definition_fa">جان کالیکوس</column>
@@ -6108,8 +6287,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">jeghwar</column>
+      <column name="part_of_speech">n:anim,terran</column>
+      <column name="definition">jaguar (Terran animal)</column>
+      <column name="definition_de">Jaguar (terranisches Tier) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">جگوار (حیوان خاکی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">jaguar (Terran djur) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">ягуар (земное животное) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">美洲虎（人族動物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">jaguar (animal terrestre) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">jaguaari</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword for a kind of {tera' vIghro''a':n@@tera':n, vIghro':n, -'a':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">jeS QoQ</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">jazz (music)</column>
       <column name="definition_de">Jazz (Musik)</column>
       <column name="definition_fa">موسیقی (جاز) [AUTOTRANSLATED]</column>
@@ -6151,8 +6373,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">jIn yopwaH</column>
+      <column name="part_of_speech">n:terran</column>
+      <column name="definition">jeans (Terran clothing)</column>
+      <column name="definition_de">Jeans (Terranerkleidung) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شلوار جین (لباس تران) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">jeans (Terran-kläder) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">джинсы (терранская одежда) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">牛仔褲（人族服裝） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">jeans (roupa terráquea) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">farkut</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ngayvo'wan:n}</column>
+      <column name="notes">This is a loanword for a kind of Terran clothing.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">jorja</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Georgia (US state)</column>
       <column name="definition_de">Georgia (US-Bundesstaat)</column>
       <column name="definition_fa">جورجیا (ایالت ایالات متحده) [AUTOTRANSLATED]</column>
@@ -6195,7 +6460,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">jungwoq</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">China</column>
       <column name="definition_de">China</column>
       <column name="definition_fa">چين</column>
@@ -6238,7 +6503,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ju'pIter</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Jupiter</column>
       <column name="definition_de">Jupiter</column>
       <column name="definition_fa">سیاره مشتری [AUTOTRANSLATED]</column>
@@ -6281,7 +6546,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lanDan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">London</column>
       <column name="definition_de">London</column>
       <column name="definition_fa">لندن</column>
@@ -6324,7 +6589,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">laS veghaS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Las Vegas</column>
       <column name="definition_de">Las Vegas</column>
       <column name="definition_fa">لاس وگاس</column>
@@ -6366,8 +6631,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">layyan</column>
+      <column name="part_of_speech">n:anim,terran</column>
+      <column name="definition">lion (Terran animal)</column>
+      <column name="definition_de">Löwe (terranisches Tier) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شیر (حیوان خاکی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">lejon (Terran djur) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">лев (терранское животное) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">獅子（人族動物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">leão (animal terrestre) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">leijona</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword for a kind of {tera' vIghro''a':n@@tera':n, vIghro':n, -'a':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">la'avghe</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Le Havre</column>
       <column name="definition_de">Le Havre</column>
       <column name="definition_fa">لو هاور [AUTOTRANSLATED]</column>
@@ -6410,7 +6718,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">letSeburgh</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Luxembourg</column>
       <column name="definition_de">Luxemburg</column>
       <column name="definition_fa">لوکزامبورگ</column>
@@ -6453,7 +6761,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lIHtentay'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Liechtenstein</column>
       <column name="definition_de">Liechtenstein</column>
       <column name="definition_fa">لیختن‌اشتاین</column>
@@ -6496,7 +6804,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lIbya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Libya</column>
       <column name="definition_de">Libyen</column>
       <column name="definition_fa">لیبی</column>
@@ -6539,7 +6847,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lIyenIn</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Lenin</column>
       <column name="definition_de">Lenin</column>
       <column name="definition_fa">لنین</column>
@@ -6582,7 +6890,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lI'lIy</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">lily</column>
       <column name="definition_de">Lilie</column>
       <column name="definition_fa">زنبق [AUTOTRANSLATED]</column>
@@ -6625,7 +6933,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maDyar</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Hungary</column>
       <column name="definition_de">Ungarn</column>
       <column name="definition_fa">مجارستان</column>
@@ -6668,7 +6976,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maghrIb</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Morocco</column>
       <column name="definition_de">Marokko</column>
       <column name="definition_fa">مراکش</column>
@@ -6711,7 +7019,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maleSya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Malaysia</column>
       <column name="definition_de">Malaysia</column>
       <column name="definition_fa">مالزی</column>
@@ -6754,7 +7062,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mangtay</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Thailand</column>
       <column name="definition_de">Thailand</column>
       <column name="definition_fa">تایلند [AUTOTRANSLATED]</column>
@@ -6797,7 +7105,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maqIy</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">Maquis (Resistance)</column>
       <column name="definition_de">Maquis (Widerstand)</column>
       <column name="definition_fa">Maquis (Resistance) [AUTOTRANSLATED]</column>
@@ -6840,7 +7148,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">marIS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Mars</column>
       <column name="definition_de">Mars</column>
       <column name="definition_fa">مریخ [AUTOTRANSLATED]</column>
@@ -6883,7 +7191,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maSIr</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Egypt</column>
       <column name="definition_de">Ägypten</column>
       <column name="definition_fa">مصر</column>
@@ -6926,7 +7234,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maSquwa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Moscow</column>
       <column name="definition_de">Moskau</column>
       <column name="definition_fa">مسکو</column>
@@ -6969,7 +7277,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">maw</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Mao</column>
       <column name="definition_de">Mao</column>
       <column name="definition_fa">مائو [AUTOTRANSLATED]</column>
@@ -7012,7 +7320,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mayqel Do'rIn</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Michael Dorn</column>
       <column name="definition_de">Michael Dorn</column>
       <column name="definition_fa">مایکل دورن</column>
@@ -7055,7 +7363,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mayqel 'anSara'</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Michael Ansara</column>
       <column name="definition_de">Michael Ansara</column>
       <column name="definition_fa">مایکل آنسارا</column>
@@ -7098,7 +7406,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">menggho' naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">mango</column>
       <column name="definition_de">Mango</column>
       <column name="definition_fa">انبه</column>
@@ -7140,8 +7448,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">meyIS tIr</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">sweet corn (Terran grain)</column>
+      <column name="definition_de">Mais</column>
+      <column name="definition_fa">ذرت شیرین [AUTOTRANSLATED]</column>
+      <column name="definition_sv">majs, sockermajs</column>
+      <column name="definition_ru">сладкая кукуруза [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">甜玉米</column>
+      <column name="definition_pt">milho doce</column>
+      <column name="definition_fi">maissi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tIr:n}</column>
+      <column name="notes">This is what Klingons would call Terran sweet corn (maize).</column>
+      <column name="notes_de">Dies ist, was Klingonen terranischen Zuckermais (Mais) nennen würden. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این همان چیزی است که کلینگونز Terran را ذرت شیرین (ذرت) می نامد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är vad Klingons skulle kalla Terran sweet majs (majs). [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это то, что клингоны называют терранской сладкой кукурузой (кукурузой). [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這就是克林崗人所說的人種甜玉米（玉米）。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso é o que os klingons chamariam de milho doce terráqueo (milho). [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä Klingons kutsuisi Terran-sokerimaissiksi (maissi). [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">maize</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">mIyama</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Burma/Myanmar</column>
       <column name="definition_de">Birma/Myanmar</column>
       <column name="definition_fa">برمه/میانمار</column>
@@ -7184,7 +7535,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mongghol 'uluS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Mongolia</column>
       <column name="definition_de">Mongolei</column>
       <column name="definition_fa">مغولستان</column>
@@ -7227,7 +7578,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">mu'neqo</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Monaco</column>
       <column name="definition_de">Monaco</column>
       <column name="definition_fa">موناکو</column>
@@ -7270,7 +7621,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nayeghra</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Niagara</column>
       <column name="definition_de">Niagara</column>
       <column name="definition_fa">نیاگارا</column>
@@ -7313,7 +7664,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nayjerya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Nigeria</column>
       <column name="definition_de">Nigeria</column>
       <column name="definition_fa">نیجریه</column>
@@ -7356,7 +7707,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nIve'Da'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Nevada</column>
       <column name="definition_de">Nevada</column>
       <column name="definition_fa">نوادا</column>
@@ -7399,7 +7750,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nIylo roDIS</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Nilo Rodis</column>
       <column name="definition_de">Nilo Rodis</column>
       <column name="definition_fa">نیلو رودیس</column>
@@ -7444,7 +7795,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">noghmanDIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Normandy</column>
       <column name="definition_de">Normandie</column>
       <column name="definition_fa">نرماندی [AUTOTRANSLATED]</column>
@@ -7487,7 +7838,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nuyorgh</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">New York</column>
       <column name="definition_de">New York</column>
       <column name="definition_fa">نیویورک</column>
@@ -7530,7 +7881,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">nu'SIylan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">New Zealand</column>
       <column name="definition_de">Neuseeland</column>
       <column name="definition_fa">نیوزلند</column>
@@ -7572,8 +7923,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">panDa'</column>
+      <column name="part_of_speech">n:anim,terran</column>
+      <column name="definition">panda bear (Terran animal)</column>
+      <column name="definition_de">Pandabär (terranisches Tier) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">خرس پاندا (حیوان خاکی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">pandabjörn (Terran djur) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">панда (терранское животное) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">熊貓熊（人族動物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">urso panda (animal terrestre) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">panda</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword for a kind of Terran bear.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">parIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Paris</column>
       <column name="definition_de">Paris</column>
       <column name="definition_fa">پاریس</column>
@@ -7616,7 +8010,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">paSta'</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">pasta, noodles, spaghetti</column>
       <column name="definition_de">Nudeln, Spaghetti</column>
       <column name="definition_fa">ماکارونی ، رشته فرنگی ، ماکارونی [AUTOTRANSLATED]</column>
@@ -7658,8 +8052,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">patat 'oQqar</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">potato (Terran vegetable)</column>
+      <column name="definition_de">Kartoffel</column>
+      <column name="definition_fa">سیب زمینی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">potatis</column>
+      <column name="definition_ru">картофель</column>
+      <column name="definition_zh_HK">土豆 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">batata</column>
+      <column name="definition_fi">peruna</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{'oQqar:n}</column>
+      <column name="notes">This is what Klingons would call the Terran vegetable.</column>
+      <column name="notes_de">Dies ist, was Klingonen das terranische Gemüse nennen würden. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این چیزی است که کلینگون ها آن را سبزیجات Terran می نامند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är vad Klingons skulle kalla Terran-grönsaken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это то, что Клингоны зовут земным овощем</column>
+      <column name="notes_zh_HK">這就是克林崗人所說的人族蔬菜。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso é o que os klingons chamariam de vegetal terráqueo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä Klingons kutsuisi Terran-vihannekseksi. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">pa'raghway</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Paraguay</column>
       <column name="definition_de">Paraguay</column>
       <column name="definition_fa">پاراگوئه</column>
@@ -7702,7 +8139,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">penSIlvenya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Pennsylvania</column>
       <column name="definition_de">Pennsylvania</column>
       <column name="definition_fa">پنسیلوانیا</column>
@@ -7745,7 +8182,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">per naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">pear</column>
       <column name="definition_de">Birne</column>
       <column name="definition_fa">گلابی</column>
@@ -7788,7 +8225,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pe'ru'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Peru</column>
       <column name="definition_de">Peru</column>
       <column name="definition_fa">پرو</column>
@@ -7831,7 +8268,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pIlam naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">plum</column>
       <column name="definition_de">Pflaume</column>
       <column name="definition_fa">آلو</column>
@@ -7874,7 +8311,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pIlIpIynaS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">the Philippines</column>
       <column name="definition_de">Die Philippinen</column>
       <column name="definition_fa">فیلیپین</column>
@@ -7917,7 +8354,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pIra'Ha</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Prague</column>
       <column name="definition_de">Prag</column>
       <column name="definition_fa">پراگ</column>
@@ -7960,7 +8397,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pItSa' chab</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">pizza</column>
       <column name="definition_de">Pizza</column>
       <column name="definition_fa">پیتزا</column>
@@ -8003,7 +8440,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pItlhbergh</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Pittsburgh</column>
       <column name="definition_de">Pittsburgh</column>
       <column name="definition_fa">پیتسبورگ</column>
@@ -8046,7 +8483,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">portughal</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Portugal</column>
       <column name="definition_de">Portugal</column>
       <column name="definition_fa">پرتغال</column>
@@ -8089,7 +8526,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">po'lISqa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Poland</column>
       <column name="definition_de">Polen</column>
       <column name="definition_fa">لهستان</column>
@@ -8131,8 +8568,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">po'lo yIvbeH</column>
+      <column name="part_of_speech">n:terran</column>
+      <column name="definition">polo shirt (Terran clothing)</column>
+      <column name="definition_de">Poloshirt (Terranerkleidung) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">پیراهن یقه دار (لباس تران) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">pikétröja (Terran-kläder) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">рубашка-поло (терранская одежда) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">polo衫（人族服裝） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">camisa polo (vestimenta terráquea) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">pikeepaita</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{yIvbeH:n:1}</column>
+      <column name="notes">This is a loanword for a kind of Terran clothing.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">qalIvornIya</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">California</column>
       <column name="definition_de">Kalifornien</column>
       <column name="definition_fa">کالیفرنیا</column>
@@ -8140,7 +8620,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">Калифорния</column>
       <column name="definition_zh_HK">加利福尼亞州</column>
       <column name="definition_pt">California</column>
-      <column name="definition_fi">Kaliforniassa</column>
+      <column name="definition_fi">Kalifornia</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -8175,7 +8655,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qamerun</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Cameroon</column>
       <column name="definition_de">Kamerun</column>
       <column name="definition_fa">کامرون</column>
@@ -8218,7 +8698,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qa'mel</column>
-      <column name="part_of_speech">n:anim</column>
+      <column name="part_of_speech">n:anim,terran</column>
       <column name="definition">camel</column>
       <column name="definition_de">Kamel</column>
       <column name="definition_fa">camel [AUTOTRANSLATED]</column>
@@ -8261,7 +8741,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qa'nabIS</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">cannabis</column>
       <column name="definition_de">Hanf, Cannabis</column>
       <column name="definition_fa">شاه‌دانه [AUTOTRANSLATED]</column>
@@ -8304,7 +8784,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qa'naDa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Canada</column>
       <column name="definition_de">Kanada</column>
       <column name="definition_fa">کانادا</column>
@@ -8353,7 +8833,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qebeq</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Quebec</column>
       <column name="definition_de">Quebec</column>
       <column name="definition_fa">کبک</column>
@@ -8396,7 +8876,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qebeq veng</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Quebec City</column>
       <column name="definition_de">Quebec City</column>
       <column name="definition_fa">شهر کبک</column>
@@ -8439,7 +8919,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qenSaS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Kansas</column>
       <column name="definition_de">Kansas</column>
       <column name="definition_fa">کانزاس</column>
@@ -8482,7 +8962,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qenya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Kenya</column>
       <column name="definition_de">Kenia</column>
       <column name="definition_fa">کنیا</column>
@@ -8524,8 +9004,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">qe'rot 'oQqar</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">carrot (Terran vegetable)</column>
+      <column name="definition_de">Karotte, Möhre</column>
+      <column name="definition_fa">هویج [AUTOTRANSLATED]</column>
+      <column name="definition_sv">morot</column>
+      <column name="definition_ru">морковь</column>
+      <column name="definition_zh_HK">胡蘿蔔 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">cenoura</column>
+      <column name="definition_fi">porkkana</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{'oQqar:n}</column>
+      <column name="notes">This is what Klingons would call the Terran vegetable.</column>
+      <column name="notes_de">Dies ist, was Klingonen das terranische Gemüse nennen würden. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این چیزی است که کلینگون ها آن را سبزیجات Terran می نامند. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är vad Klingons skulle kalla Terran-grönsaken. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это то, что Клингоны называют земным овощем</column>
+      <column name="notes_zh_HK">這就是克林崗人所說的人族蔬菜。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso é o que os klingons chamariam de vegetal terráqueo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä Klingons kutsuisi Terran-vihannekseksi. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">qo'qa' qo'la'</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">Coca Cola</column>
       <column name="definition_de">Coca Cola</column>
       <column name="definition_fa">کوکاکولا</column>
@@ -8568,7 +9091,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qoro'na javtIm</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">coronavirus</column>
       <column name="definition_de">Coronavirus</column>
       <column name="definition_fa">ویروس کرونا [AUTOTRANSLATED]</column>
@@ -8579,7 +9102,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_fi">koronavirus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{javtIm:n}</column>
       <column name="notes">This is not a native Klingon word but a borrowing. For the disease (COVID-19), one could say {qo'vID wa'maH Hut:n:nolink}.[1]</column>
       <column name="notes_de">Dies ist eindeutig eine irdische Sache, deswegen gibt es kein klingonisches Wort dafür. Für die Krankheit schlug er {qowvID wa'maH Hut:n:nolink} vor.[1]</column>
       <column name="notes_fa"></column>
@@ -8611,7 +9134,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qo'qo</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">coconut</column>
       <column name="definition_de">Kokosnuss</column>
       <column name="definition_fa">نارگیل</column>
@@ -8654,7 +9177,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qo'vID wa'maH Hut</column>
-      <column name="part_of_speech">n:alt,noanki</column>
+      <column name="part_of_speech">n:alt,noanki,terran</column>
       <column name="definition">{qoro'na javtIm:n}</column>
       <column name="definition_de">{qoro'na javtIm:n}</column>
       <column name="definition_fa">{qoro'na javtIm:n}</column>
@@ -8697,7 +9220,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">quba'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Cuba</column>
       <column name="definition_de">Kuba</column>
       <column name="definition_fa">کوبا</column>
@@ -8740,7 +9263,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">rabe'rIt 'o'raylIy</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Robert O'Reilly</column>
       <column name="definition_de">Robert O'Reilly</column>
       <column name="definition_fa">رابرت اورایلی</column>
@@ -8783,7 +9306,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">raqSan bIQ-DawSon</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,terran</column>
       <column name="definition">Roxann Biggs-Dawson</column>
       <column name="definition_de">Roxann Biggs-Dawson</column>
       <column name="definition_fa">روکسان بیگز داوسن</column>
@@ -8826,7 +9349,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">raSber naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">raspberry</column>
       <column name="definition_de">Himbeere</column>
       <column name="definition_fa">تمشک</column>
@@ -8869,7 +9392,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">raSya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Russia</column>
       <column name="definition_de">Russland</column>
       <column name="definition_fa">روسیه</column>
@@ -8911,8 +9434,51 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ray' tIr</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">rice (Terran grain)</column>
+      <column name="definition_de">Reis</column>
+      <column name="definition_fa">برنج [AUTOTRANSLATED]</column>
+      <column name="definition_sv">ris (mat)</column>
+      <column name="definition_ru">рис</column>
+      <column name="definition_zh_HK">白米、白飯</column>
+      <column name="definition_pt">arroz</column>
+      <column name="definition_fi">riisi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tIr:n}</column>
+      <column name="notes">This is what Klingons would call Terran rice.</column>
+      <column name="notes_de">Dies ist, was Klingonen terranischen Reis nennen würden. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این چیزی است که کلینگونز آن را برنج تران می نامد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Det här är vad Klingons skulle kalla Terran ris. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это то, что Клингоны называют земной пищей.</column>
+      <column name="notes_zh_HK">這就是克林崗人所說的人種大米。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso é o que os klingons chamariam de arroz terráqueo. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä Klingons kutsuisi Terran-riisiksi. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ra'yIn</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Rhine</column>
       <column name="definition_de">Rhein</column>
       <column name="definition_fa">راین [AUTOTRANSLATED]</column>
@@ -8955,7 +9521,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">romanI'ya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Romania</column>
       <column name="definition_de">Rumänien</column>
       <column name="definition_fa">رومانی</column>
@@ -8998,7 +9564,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">roma'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Rome</column>
       <column name="definition_de">Rom</column>
       <column name="definition_fa">رم [AUTOTRANSLATED]</column>
@@ -9041,7 +9607,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ro'Sa'</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">rose (a Terran flower)</column>
       <column name="definition_de">Rose</column>
       <column name="definition_fa">گل رز</column>
@@ -9084,7 +9650,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SaHa'ra'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Sahara (Earth desert)</column>
       <column name="definition_de">Sahara Wüste</column>
       <column name="definition_fa">بیابان صحرا</column>
@@ -9127,7 +9693,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Sam</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">shawm</column>
       <column name="definition_de">Schalmei</column>
       <column name="definition_fa">شال [AUTOTRANSLATED]</column>
@@ -9135,7 +9701,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <column name="definition_ru">средневековый музыкальный инструмент типа гобоя [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">嗩吶</column>
       <column name="definition_pt">shawm</column>
-      <column name="definition_fi">skalmeija (keskiaikainen puhellinsoitin)</column>
+      <column name="definition_fi">skalmeija (keskiaikainen puhallinsoitin)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -9170,7 +9736,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SaQatvelo'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Georgia</column>
       <column name="definition_de">Georgien</column>
       <column name="definition_fa">گرجستان</column>
@@ -9213,7 +9779,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Sarbruqen</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Saarbrücken (Germany)</column>
       <column name="definition_de">Saarbrücken</column>
       <column name="definition_fa">ساربروکن (آلمان) [AUTOTRANSLATED]</column>
@@ -9257,7 +9823,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
       <!-- https://twitter.com/CassiniSaturn/status/350659797164625922 -->
       <column name="_id"></column>
       <column name="entry_name">Saturn</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Saturn</column>
       <column name="definition_de">Saturn</column>
       <column name="definition_fa">زحل</column>
@@ -9300,7 +9866,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Sen</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Seine</column>
       <column name="definition_de">Seine</column>
       <column name="definition_fa">سن [AUTOTRANSLATED]</column>
@@ -9343,7 +9909,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SIlovenISqa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Slovakia</column>
       <column name="definition_de">Slowakei</column>
       <column name="definition_fa">اسلواکی</column>
@@ -9386,7 +9952,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SIqenDInavya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Scandinavia</column>
       <column name="definition_de">Scandinavia</column>
       <column name="definition_fa">اسکاندیناوی</column>
@@ -9429,7 +9995,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SIqotlan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Scotland</column>
       <column name="definition_de">Schottland</column>
       <column name="definition_fa">اسکاتلند</column>
@@ -9472,7 +10038,7 @@ Even though the line spoken by {tIquvma:n:name} means "Give me light to go", it 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Sol</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Sun (scientific name for Earth's sun)</column>
       <column name="definition_de">Sonne (wissenschaftlicher Name für die Sonne der Erde)</column>
       <column name="definition_fa">خورشید (نام علمی خورشید زمین) [AUTOTRANSLATED]</column>
@@ -9525,7 +10091,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Surya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Syria</column>
       <column name="definition_de">Syrien</column>
       <column name="definition_fa">سوریه</column>
@@ -9568,7 +10134,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Sutra'ber naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">strawberry</column>
       <column name="definition_de">Erdbeere</column>
       <column name="definition_fa">توت فرنگی</column>
@@ -9611,7 +10177,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SurIna'ma</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Suriname</column>
       <column name="definition_de">Surinam</column>
       <column name="definition_fa">سورینام [AUTOTRANSLATED]</column>
@@ -9654,7 +10220,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Suverya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Sweden</column>
       <column name="definition_de">Schweden</column>
       <column name="definition_fa">سوئد</column>
@@ -9697,7 +10263,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SuwISya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Switzerland</column>
       <column name="definition_de">Schweiz</column>
       <column name="definition_fa">سوئیس</column>
@@ -9740,7 +10306,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SuwomIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Finland</column>
       <column name="definition_de">Finnland</column>
       <column name="definition_fa">فنلاند</column>
@@ -9782,8 +10348,51 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Su'ghar qut</column>
+      <column name="part_of_speech">n:food,terran</column>
+      <column name="definition">sugar</column>
+      <column name="definition_de">Zucker</column>
+      <column name="definition_fa">قند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">socker</column>
+      <column name="definition_ru">сахар [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">糖 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">açúcar</column>
+      <column name="definition_fi">sokeri</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{na'ran:n}, {HaQchor:n}, {Halrov:n}</column>
+      <column name="notes">In {TNK:src}, sugar (common table sugar) is translated as {Su'ghar qutmey:n:nolink}. Presumably, then, a single {Su'ghar qut:n:nolink} would be one grain of sugar.</column>
+      <column name="notes_de">In {TNK:src} wird Zucker (gewöhnlicher Haushaltszucker) als {Su'ghar qutmey:n:nolink} übersetzt. Vermutlich wäre dann ein einzelnes {Su'ghar qut:n:nolink} ein Zuckerkorn. [AUTOTRANSLATED]</column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv">I {TNK:src} översätts socker (vanligt bordsocker) till {Su'ghar qutmey:n:nolink}. Förmodligen skulle en enda {Su'ghar qut:n:nolink} vara ett sockerkorn. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">В {TNK:src} сахар (обычный столовый сахар) переводится как {Su'ghar qutmey:n:nolink}. Предположительно, тогда один {Su'ghar qut:n:nolink} будет одним зерном сахара. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi">{TNK:src}-ohjelmassa sokeri (tavallinen ruokasokeri) käännetään nimellä {Su'ghar qutmey:n:nolink}. Oletettavasti yksi {Su'ghar qut:n:nolink} olisi siis yksi sokerirake. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">tanje'rIn</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">tangerine</column>
       <column name="definition_de">Mandarine</column>
       <column name="definition_fa">نارنگی [AUTOTRANSLATED]</column>
@@ -9825,8 +10434,51 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">taygher</column>
+      <column name="part_of_speech">n:anim,terran</column>
+      <column name="definition">tiger (Terran animal)</column>
+      <column name="definition_de">Tiger (terranisches Tier) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ببر (حیوان خاکی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">tiger (Terran djur) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">тигр (земное животное) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">虎（人族動物） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">tigre (animal terrestre) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">tiikeri</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a loanword for a kind of {tera' vIghro''a':n@@tera':n, vIghro':n, -'a':n}.</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">teqSaS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Texas</column>
       <column name="definition_de">Texas</column>
       <column name="definition_fa">تگزاس</column>
@@ -9869,7 +10521,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tera' rop bIr</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,terran</column>
       <column name="definition">common cold (mistranslation)</column>
       <column name="definition_de">Erkältung (Fehlübersetzung)</column>
       <column name="definition_fa">سرماخوردگی (ترجمه غلط) [AUTOTRANSLATED]</column>
@@ -9912,7 +10564,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tomat naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">tomato</column>
       <column name="definition_de">Tomate</column>
       <column name="definition_fa">گوجه فرنگی</column>
@@ -9955,7 +10607,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">toba'qo</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">tobacco</column>
       <column name="definition_de">Tabak</column>
       <column name="definition_fa">تنباکو [AUTOTRANSLATED]</column>
@@ -9997,8 +10649,51 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">to'qIpo'na Hol</column>
+      <column name="part_of_speech">n:terran</column>
+      <column name="definition">Toki Pona (language)</column>
+      <column name="definition_de">Toki Pona (Sprache)</column>
+      <column name="definition_fa">توکی پونا (زبان) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Toki Pona (språk) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Токи Пона (язык) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">Toki Pona (語言) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Toki Pona (idioma) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">toki pona</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">turIqya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Turkey</column>
       <column name="definition_de">Türkei</column>
       <column name="definition_fa">ترکیه</column>
@@ -10040,8 +10735,51 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">tlhagh patat 'oQqar naQHom</column>
+      <column name="part_of_speech">n:deriv,food,terran</column>
+      <column name="definition">fry, French fry (Terran food)</column>
+      <column name="definition_de">Pommes Frites</column>
+      <column name="definition_fa">سرخ شده، سرخ شده فرانسوی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">pomme frite</column>
+      <column name="definition_ru">фри, картофель фри [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">炸薯條</column>
+      <column name="definition_pt">batata frita</column>
+      <column name="definition_fi">ranskanperuna</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This was used in the plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) to translate "fries" (as in "French fries").</column>
+      <column name="notes_de">Dies wurde im Plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) verwendet, um "Pommes" (wie in "Pommes") zu übersetzen. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این در جمع ({tlhagh patat 'oQqar naQHommey:n:nolink}) برای ترجمه "سیب زمینی سرخ شده" (مانند "سیب زمینی سرخ کرده") استفاده شد. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta användes i plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) för att översätta "pommes frites" (som i "pommes frites"). [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это использовалось во множественном числе ({tlhagh patat 'oQqar naQHommey:n:nolink}), чтобы перевести «картофель фри» (как в «картофель фри»). [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">它用於復數形式（{tlhagh patat 'oQqar naQHommey:n:nolink}）來翻譯「炸薯條」（如「炸薯條」）。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso foi usado no plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) para traduzir "batatas fritas" (como em "batatas fritas"). [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä käytettiin monikkomuodossa ({tlhagh patat 'oQqar naQHommey:n:nolink}) kääntämään "perunat" (kuten "ranskalaiset"). [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components">{tlhagh:n}, {patat 'oQqar:n}, {naQ:n:1}, {-Hom:n}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">fries, French fries</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {TNK:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">veneSwe'la'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Venezuela</column>
       <column name="definition_de">Venezuela</column>
       <column name="definition_fa">ونزوئلا</column>
@@ -10084,7 +10822,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vIlaDelvIya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Philadelphia</column>
       <column name="definition_de">Philadelphia</column>
       <column name="definition_fa">فیلادلفیا</column>
@@ -10127,7 +10865,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vIraS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">France</column>
       <column name="definition_de">Frankreich</column>
       <column name="definition_fa">فرانسه</column>
@@ -10170,7 +10908,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">vIyetnam</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Vietnam</column>
       <column name="definition_de">Vietnam</column>
       <column name="definition_fa">ویتنام</column>
@@ -10213,7 +10951,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">wa'SIngtanDIySIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Washington, DC</column>
       <column name="definition_de">Washington, DC</column>
       <column name="definition_fa">ایالت واشنگتن [AUTOTRANSLATED]</column>
@@ -10256,7 +10994,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">we'lIS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Wales</column>
       <column name="definition_de">Wales</column>
       <column name="definition_fa">ولز [AUTOTRANSLATED]</column>
@@ -10299,7 +11037,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yeru'Sala'yIm</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Jerusalem</column>
       <column name="definition_de">Jerusalem</column>
       <column name="definition_fa">اورشلیم</column>
@@ -10342,7 +11080,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yISra'el</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Israel</column>
       <column name="definition_de">Israel</column>
       <column name="definition_fa">اسرائيل</column>
@@ -10385,7 +11123,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'amerI'qa' SepjIjQa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">United States of America</column>
       <column name="definition_de">Vereinigte Staaten von Amerika</column>
       <column name="definition_fa">ایالات متحده آمریکا</column>
@@ -10428,7 +11166,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'amerI'qa' tIng chan tIng</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">South America</column>
       <column name="definition_de">Südamerika</column>
       <column name="definition_fa">آمریکای جنوبی</column>
@@ -10471,7 +11209,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'amerI'qa' 'ev chan 'ev</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">North America</column>
       <column name="definition_de">Nordamerika</column>
       <column name="definition_fa">آمریکای شمالی</column>
@@ -10514,7 +11252,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'anDo'ra'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Andorra</column>
       <column name="definition_de">Andorra</column>
       <column name="definition_fa">آندورا</column>
@@ -10557,7 +11295,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'antartIq</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Antarctica</column>
       <column name="definition_de">Antarktis</column>
       <column name="definition_fa">جنوبگان</column>
@@ -10600,7 +11338,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'arab Hol</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">Arabic language</column>
       <column name="definition_de">arabische Sprache</column>
       <column name="definition_fa">زبان عربی</column>
@@ -10643,7 +11381,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'arHentInya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Argentina</column>
       <column name="definition_de">Argentinien</column>
       <column name="definition_fa">آرژانتین</column>
@@ -10686,7 +11424,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'aS</column>
-      <column name="part_of_speech">n:name,fic</column>
+      <column name="part_of_speech">n:name,fic,terran</column>
       <column name="definition">Oz</column>
       <column name="definition_de">Oz</column>
       <column name="definition_fa">اوز [AUTOTRANSLATED]</column>
@@ -10729,7 +11467,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'aSralya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Australia</column>
       <column name="definition_de">Australien</column>
       <column name="definition_fa">استرالیا</column>
@@ -10772,7 +11510,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'aSya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Asia</column>
       <column name="definition_de">Asien</column>
       <column name="definition_fa">آسیا</column>
@@ -10815,7 +11553,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'atlantIq bIQ'a'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Atlantic Ocean</column>
       <column name="definition_de">Atlantischer Ozean, Atlantik</column>
       <column name="definition_fa">اقیانوس اطلس</column>
@@ -10858,7 +11596,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'avghanIStan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Afghanistan</column>
       <column name="definition_de">Afghanistan</column>
       <column name="definition_fa">افغانستان</column>
@@ -10901,7 +11639,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'avrI'qa'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Africa</column>
       <column name="definition_de">Afrika</column>
       <column name="definition_fa">آفریقا</column>
@@ -10944,7 +11682,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ayItI</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Haiti</column>
       <column name="definition_de">Haiti</column>
       <column name="definition_fa">هائیتی</column>
@@ -10987,7 +11725,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'a'leghen'I'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Allegheny</column>
       <column name="definition_de">Allegheny</column>
       <column name="definition_fa">الگینی</column>
@@ -11030,7 +11768,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'elaDya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Greece</column>
       <column name="definition_de">Griechenland</column>
       <column name="definition_fa">یونان</column>
@@ -11073,7 +11811,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'epIl naH</column>
-      <column name="part_of_speech">n:food</column>
+      <column name="part_of_speech">n:food,terran</column>
       <column name="definition">apple</column>
       <column name="definition_de">Apfel</column>
       <column name="definition_fa">سیب</column>
@@ -11116,7 +11854,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eqwaDor</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Ecuador</column>
       <column name="definition_de">Ecuador</column>
       <column name="definition_fa">اکوادور</column>
@@ -11159,7 +11897,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eSpanya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Spain</column>
       <column name="definition_de">Spanien</column>
       <column name="definition_fa">اسپانیا</column>
@@ -11201,8 +11939,51 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">'eSperanto Hol</column>
+      <column name="part_of_speech">n:terran</column>
+      <column name="definition">Esperanto (language)</column>
+      <column name="definition_de">Esperanto (Sprache)</column>
+      <column name="definition_fa">اسپرانتو (زبان) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Esperanto (språk) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Эсперанто (язык) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">世界語（語言） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Esperanto (idioma) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">esperanto</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Informally, people had been using {tulwI' Hol:n@@tul:v, -wI':v, Hol:n}, based on its literal meaning.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 29 (2022):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">'eSpeD</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">spade (card suit)</column>
       <column name="definition_de">Pik, Schaufel (Kartenspielfarbe)</column>
       <column name="definition_fa">بیل (کت و شلوار) [AUTOTRANSLATED]</column>
@@ -11245,7 +12026,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eStIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Estonia</column>
       <column name="definition_de">Estland</column>
       <column name="definition_fa">استونی</column>
@@ -11288,7 +12069,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ewro</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:terran</column>
       <column name="definition">Euro</column>
       <column name="definition_de">Euro</column>
       <column name="definition_fa">یورو</column>
@@ -11331,7 +12112,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ewrop</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Europe</column>
       <column name="definition_de">Europa</column>
       <column name="definition_fa">اروپا</column>
@@ -11374,7 +12155,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eyawaDIy</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Irrawaddy</column>
       <column name="definition_de">Irrawaddy</column>
       <column name="definition_fa">ایراوادی [AUTOTRANSLATED]</column>
@@ -11417,7 +12198,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'eyre'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Ireland</column>
       <column name="definition_de">Irland</column>
       <column name="definition_fa">ایرلند</column>
@@ -11460,7 +12241,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'e'levan</column>
-      <column name="part_of_speech">n:anim</column>
+      <column name="part_of_speech">n:anim,terran</column>
       <column name="definition">elephant</column>
       <column name="definition_de">Elefant</column>
       <column name="definition_fa">فیل</column>
@@ -11503,7 +12284,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'InDIye'na'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Indiana</column>
       <column name="definition_de">Indiana</column>
       <column name="definition_fa">ایندیانا</column>
@@ -11546,7 +12327,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'InDIyene'palIS</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Indianapolis</column>
       <column name="definition_de">Indianapolis</column>
       <column name="definition_fa">ایندیاناپلیس [AUTOTRANSLATED]</column>
@@ -11589,7 +12370,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'Inglan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">England</column>
       <column name="definition_de">England</column>
       <column name="definition_fa">انگلستان</column>
@@ -11632,7 +12413,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'ISlan</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Iceland</column>
       <column name="definition_de">Island</column>
       <column name="definition_fa">ایسلند</column>
@@ -11675,7 +12456,7 @@ The scientific name for each planet is {Sol:n:nolink} followed by a name, e.g., 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'Italya'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Italy</column>
       <column name="definition_de">Italien</column>
       <column name="definition_fa">ایتالیا</column>
@@ -11734,7 +12515,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'onteryo</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Ontario</column>
       <column name="definition_de">Ontario</column>
       <column name="definition_fa">انتاریو</column>
@@ -11777,7 +12558,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'oSteray'</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Austria</column>
       <column name="definition_de">Österreich</column>
       <column name="definition_fa">اتریش</column>
@@ -11820,7 +12601,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">'oStIn</column>
-      <column name="part_of_speech">n:place</column>
+      <column name="part_of_speech">n:place,terran</column>
       <column name="definition">Austin</column>
       <column name="definition_de">Austin</column>
       <column name="definition_fa">آستین</column>
@@ -11860,9 +12641,52 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="search_tags_fi"></column>
       <column name="source">[1] {Sepqep wa'DIch:src} ({KLI mailing list 2019.11.10:src})</column>
     </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">'uqrayI'na</column>
+      <column name="part_of_speech">n:place,terran</column>
+      <column name="definition">Ukraine</column>
+      <column name="definition_de">Ukraine [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اوکراین [AUTOTRANSLATED]</column>
+      <column name="definition_sv">Ukraina [AUTOTRANSLATED]</column>
+      <column name="definition_ru">Украина [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">烏克蘭 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Ucrânia [AUTOTRANSLATED]</column>
+      <column name="definition_fi">Ukraina</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}</column>
+    </table>
 
     <!-- Section: Hamlet -->
-    <!-- These were borrowed/stolen from Klingon into Federation Standard. -->
+    <!-- These were borrowed/stolen from Klingon into Federation Standard. They are not marked "extcan" because Marc Okrand has said he would be consistent with these if he were to use them. -->
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bernarDo</column>
@@ -11917,7 +12741,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Гертруда [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">格特魯德 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Gertrude</column>
-      <column name="definition_fi">Gertrude</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Gertrude</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12046,7 +12870,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Гамлет</column>
       <column name="definition_zh_HK">哈姆雷特</column>
       <column name="definition_pt">Aldeia</column>
-      <column name="definition_fi">Hamlet</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmä, Khamlet; eräs Shex'pirin näytelmän hahmo, Khamlet</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{taH pagh taHbe'.:sen}</column>
@@ -12058,7 +12882,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="notes_zh_HK">這是{wIlyam SeQpIr:n:name}著名戲劇的名稱，也是其同名主角的名字。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Este é o nome de uma peça famosa de {wIlyam SeQpIr:n:name}, e também o nome de seu protagonista homônimo. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on {wIlyam SeQpIr:n:name}: n kuuluisan näytelmän nimi ja samannimisen päähenkilön nimi. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is written as "Khamlet" in the introductory text of {Hamlet:src}, but as "Hamlet" in the English side of the play itself.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -12068,14 +12892,14 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">Khamlet</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">Hamlet</column>
       <column name="source">[1] {Hamlet:src}</column>
     </table>
     <table name="mem">
@@ -12089,7 +12913,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Горацио [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">霍雷肖</column>
       <column name="definition_pt">Horatio</column>
-      <column name="definition_fi">Horatio</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Horatio</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12132,7 +12956,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Лаэрт [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">萊爾提斯 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Laertes</column>
-      <column name="definition_fi">Laertes</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Laertes</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12175,7 +12999,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Марцелл</column>
       <column name="definition_zh_HK">馬塞勒斯 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Marcellus</column>
-      <column name="definition_fi">Marcellus</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Marcellus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12218,7 +13042,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Полоний (персонаж Гамлета)</column>
       <column name="definition_zh_HK">波洛涅斯</column>
       <column name="definition_pt">Polonius</column>
-      <column name="definition_fi">Polonius</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Polonius</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12253,7 +13077,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">qaySar</column>
-      <column name="part_of_speech">n:name,fic,alt,noanki</column>
+      <column name="part_of_speech">n:name,alt,fic,noanki</column>
       <column name="definition">{yulyuS qaySar:n:name}</column>
       <column name="definition_de">{yulyuS qaySar:n:name}</column>
       <column name="definition_fa">{yulyuS qaySar:n:name}</column>
@@ -12304,7 +13128,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Корнелий</column>
       <column name="definition_zh_HK">科尼利厄斯 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Cornelius</column>
-      <column name="definition_fi">Cornelius</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Cornelius</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12347,7 +13171,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Рейнальдо [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">雷納爾多 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Reynaldo</column>
-      <column name="definition_fi">Reynaldo</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Reynaldo</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12390,7 +13214,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Розенкранц</column>
       <column name="definition_zh_HK">羅森克蘭茨 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Rosencrantz</column>
-      <column name="definition_fi">Rosencrantz</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Rosencrantz</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}, {ghIlDeSten:n:name}</column>
@@ -12425,7 +13249,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">SeQpIr</column>
-      <column name="part_of_speech">n:name,alt,noanki</column>
+      <column name="part_of_speech">n:name,alt,fic,noanki</column>
       <column name="definition">{wIlyam SeQpIr:n:name}</column>
       <column name="definition_de">{wIlyam SeQpIr:n:name}</column>
       <column name="definition_fa">{wIlyam SeQpIr:n:name}</column>
@@ -12476,7 +13300,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Франциско [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">弗朗西斯科 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Francisco</column>
-      <column name="definition_fi">Francisco</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Francisco</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12519,7 +13343,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Вольтиманд [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">Voltimand [AUTOTRANSLATED]</column>
       <column name="definition_pt">Voltimand</column>
-      <column name="definition_fi">Voltimand</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Voltimand</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12562,7 +13386,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="definition_ru">Фортинбрас [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">福丁布拉 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Fortinbras</column>
-      <column name="definition_fi">Fortinbras</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Fortinbras</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -12595,9 +13419,10 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="source">[1] {Hamlet:src}</column>
     </table>
     <table name="mem">
+      <!-- Note that "Shex'pir" and all characters in his plays are marked as "fic", even those based on people from Earth history, because they don't refer to these people in-universe. -->
       <column name="_id"></column>
       <column name="entry_name">wIlyam SeQpIr</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,fic</column>
       <column name="definition">Wil'yam Shex'pir</column>
       <column name="definition_de">Wil'yam Shex'pir</column>
       <column name="definition_fa">ویلیام شکسپیر</column>
@@ -12646,18 +13471,18 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="_id"></column>
       <column name="entry_name">yulyuS qaySar</column>
       <column name="part_of_speech">n:name,fic</column>
-      <column name="definition">Julius Caesar</column>
+      <column name="definition">Yulyush Kayshar</column>
       <column name="definition_de">Iulius Caesar</column>
       <column name="definition_fa">ژولیوس سزار</column>
       <column name="definition_sv">Julius Caesar [AUTOTRANSLATED]</column>
       <column name="definition_ru">Юлий Цезарь [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">尤利烏斯·凱撒</column>
       <column name="definition_pt">Julius Caesar</column>
-      <column name="definition_fi">Julius Caesar</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Yulyush Kayshar</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{maS'e' So'bogh pagh:n}</column>
-      <column name="notes">This is the name of a play by {wIlyam SeQpIr:n:name}, and also the name of its titular character.</column>
+      <column name="notes">This is the name of a play by {wIlyam SeQpIr:n:name}, and also the name of its titular character, a legendary Romulan leader.[1]</column>
       <column name="notes_de">Dies ist der Name eines Stücks von {wIlyam SeQpIr:n:name} und auch der Name seines Titelcharakters. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این نام یک نمایشنامه توسط {wIlyam SeQpIr:n:name} و همچنین نام شخصیت تیتراژ آن است. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta är namnet på en pjäs av {wIlyam SeQpIr:n:name}, och även namnet på dess titelfigur. [AUTOTRANSLATED]</column>
@@ -12675,7 +13500,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">Julius Caesar</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -12734,7 +13559,7 @@ Kursivoidun kirjasimen kuvaamiseen voidaan käyttää {chongHa':v@@chong:v:1, -H
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bIHnuch</column>
-      <column name="part_of_speech">n:extcan,archaic</column>
+      <column name="part_of_speech">n:archaic,extcan</column>
       <column name="definition">coward</column>
       <column name="definition_de">Feigling</column>
       <column name="definition_fa">ترسو</column>
@@ -12823,7 +13648,7 @@ It's likely that these sentences were made up by a writer who consulted {TKD:src
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">boQwI'</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:deriv,nodict</column>
       <column name="definition">assistant (this program)</column>
       <column name="definition_de">Assistent (diese App)</column>
       <column name="definition_fa">دستیار (این برنامه)</column>
@@ -13022,7 +13847,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">boqor</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Bokor</column>
       <column name="definition_de">Bokor</column>
       <column name="definition_fa">بوکور</column>
@@ -13065,7 +13890,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">buran</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Buran</column>
       <column name="definition_de">Buran</column>
       <column name="definition_fa">بوران [AUTOTRANSLATED]</column>
@@ -13324,7 +14149,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">Doq 'ej SuD</column>
-      <column name="part_of_speech">sen:phr</column>
+      <column name="part_of_speech">sen:phr,nodict</column>
       <column name="definition">violet, purple (not used in Klingon)</column>
       <column name="definition_de">violett, lila (nicht auf Klingonisch verwendet)</column>
       <column name="definition_fa">بنفش ، بنفش (در کلینگون استفاده نمی شود) [AUTOTRANSLATED]</column>
@@ -13496,7 +14321,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghInaq</column>
-      <column name="part_of_speech">n:fic,extcan</column>
+      <column name="part_of_speech">n:extcan,fic</column>
       <column name="definition">grinnak (a gambling game)</column>
       <column name="definition_de">Grinnak (ein Spiel)</column>
       <column name="definition_fa">grinnak (یک بازی قمار) [AUTOTRANSLATED]</column>
@@ -13540,7 +14365,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
       <column name="_id"></column>
       <column name="entry_name">ghIntaq</column>
       <column name="part_of_speech">n:2,being,extcan</column>
-      <column name="definition">trusted adviser of a Klingon house</column>
+      <column name="definition">gin'tak, trusted adviser of a Klingon House</column>
       <column name="definition_de">Berater eines Klingonischen Hauses</column>
       <column name="definition_fa">مشاور اعتماد یک خانه کلینگان [AUTOTRANSLATED]</column>
       <column name="definition_sv">stridsspjut, gin'tak</column>
@@ -13582,7 +14407,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghonglIq</column>
-      <column name="part_of_speech">n:food,fic,extcan</column>
+      <column name="part_of_speech">n:extcan,fic,food</column>
       <column name="definition">gonklik, a kind of vegetable</column>
       <column name="definition_de">Gonlik, eine Art Gemüse</column>
       <column name="definition_fa">gonklik، یک نوع سبزیجات [AUTOTRANSLATED]</column>
@@ -13668,7 +14493,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghurlaq</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Gurlak</column>
       <column name="definition_de">Gurlak</column>
       <column name="definition_fa">گورلاک [AUTOTRANSLATED]</column>
@@ -13754,7 +14579,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">HurqIq</column>
-      <column name="part_of_speech">n:food,fic,extcan</column>
+      <column name="part_of_speech">n:extcan,fic,food</column>
       <column name="definition">hurkik, a kind of fruit</column>
       <column name="definition_de">Hurkik (Obst)</column>
       <column name="definition_fa">hurkik، یک نوع میوه [AUTOTRANSLATED]</column>
@@ -13883,7 +14708,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">loDmach</column>
-      <column name="part_of_speech">n:extcan,deriv,body,archaic</column>
+      <column name="part_of_speech">n:body,archaic,deriv,extcan</column>
       <column name="definition">penis</column>
       <column name="definition_de">Penis</column>
       <column name="definition_fa">آلت تناسلی مرد [AUTOTRANSLATED]</column>
@@ -13969,7 +14794,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">lurveng</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Lurveng</column>
       <column name="definition_de">Lurveng</column>
       <column name="definition_fa">لورنگ [AUTOTRANSLATED]</column>
@@ -14055,7 +14880,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">may'qochvan</column>
-      <column name="part_of_speech">n:deriv,fic,extcan</column>
+      <column name="part_of_speech">n:deriv,extcan,fic</column>
       <column name="definition">temporary truce</column>
       <column name="definition_de">vorübergehender Waffenstillstand</column>
       <column name="definition_fa">موقت موقت [AUTOTRANSLATED]</column>
@@ -14141,7 +14966,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">moratlh ro'</column>
-      <column name="part_of_speech">n:deriv,weap,fic,extcan</column>
+      <column name="part_of_speech">n:deriv,extcan,fic,weap</column>
       <column name="definition">Morath's Fist (torpedo)</column>
       <column name="definition_de">Moraths Faust (Torpedo)</column>
       <column name="definition_fa">مشت مورات (اژدر) [AUTOTRANSLATED]</column>
@@ -14227,7 +15052,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">notqa' pach</column>
-      <column name="part_of_speech">n:deriv,weap,fic,extcan</column>
+      <column name="part_of_speech">n:deriv,extcan,fic,weap</column>
       <column name="definition">Eagle's Claw (torpedo or mine)</column>
       <column name="definition_de">Adlerklaue (Torpedo oder Mine)</column>
       <column name="definition_fa">پنجه عقاب (اژدر یا مین) [AUTOTRANSLATED]</column>
@@ -14270,7 +15095,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pach peng</column>
-      <column name="part_of_speech">n:deriv,weap,fic,extcan</column>
+      <column name="part_of_speech">n:deriv,extcan,fic,weap</column>
       <column name="definition">Talon's Strike (torpedo)</column>
       <column name="definition_de">Krallen-Torpedo</column>
       <column name="definition_fa">اعتصاب تالون (اژدر) [AUTOTRANSLATED]</column>
@@ -14313,7 +15138,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">pa'mey</column>
-      <column name="part_of_speech">n:deriv,plural,hyp</column>
+      <column name="part_of_speech">n:plural,deriv,hyp</column>
       <column name="definition">quarters, living quarters</column>
       <column name="definition_de">Quartiere</column>
       <column name="definition_fa">چهارم، چهارم زندگی [AUTOTRANSLATED]</column>
@@ -14528,8 +15353,51 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">qoleq</column>
+      <column name="part_of_speech">n:name,alt,fic,noanki,nodict</column>
+      <column name="definition">{qo'leq:n:name}</column>
+      <column name="definition_de">{qo'leq:n:name}</column>
+      <column name="definition_fa">{qo'leq:n:name}</column>
+      <column name="definition_sv">{qo'leq:n:name}</column>
+      <column name="definition_ru">{qo'leq:n:name}</column>
+      <column name="definition_zh_HK">{qo'leq:n:name}</column>
+      <column name="definition_pt">{qo'leq:n:name}</column>
+      <column name="definition_fi">{qo'leq:n:name}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This name is untranslated in {KGT:src}, and is possibly a misspelling for {qo'leq:n:name}.</column>
+      <column name="notes_de">Dieser Name ist in {KGT:src} nicht übersetzt und möglicherweise ein Rechtschreibfehler für {qo'leq:n:name}.</column>
+      <column name="notes_fa">این نام در {KGT:src} ترجمه نشده است ، و احتمالاً اشتباه برای {qo'leq:n:name} است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta namn är inte översatt i {KGT:src} och är eventuellt en stavfel för {qo'leq:n:name}. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это имя не переведено в {KGT:src} и, возможно, является ошибочным написанием для {qo'leq:n:name}. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">該名稱在{KGT:src}中未翻譯，可能是{qo'leq:n:name}的拼寫錯誤。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este nome não está traduzido em {KGT:src} e é possivelmente um erro ortográfico para {qo'leq:n:name}. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tätä nimeä ei ole käännetty kielellä {KGT:src}, ja se on mahdollisesti kirjoitusvirhe {qo'leq:n:name}: lle. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">qorghlaH</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Korglach</column>
       <column name="definition_de">Korglach</column>
       <column name="definition_fa">کورگلچ [AUTOTRANSLATED]</column>
@@ -14877,6 +15745,49 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">raptor</column>
+      <column name="part_of_speech">n:alt,fic,noanki,nodict</column>
+      <column name="definition">{qISa'ruj:n}</column>
+      <column name="definition_de">{qISa'ruj:n}</column>
+      <column name="definition_fa">{qISa'ruj:n}</column>
+      <column name="definition_sv">{qISa'ruj:n}</column>
+      <column name="definition_ru">{qISa'ruj:n}</column>
+      <column name="definition_zh_HK">{qISa'ruj:n}</column>
+      <column name="definition_pt">{qISa'ruj:n}</column>
+      <column name="definition_fi">{qISa'ruj:n}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Haynes BoP Manual:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">rISwI'</column>
       <column name="part_of_speech">n:deriv,extcan</column>
       <column name="definition">transponder</column>
@@ -15007,7 +15918,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">rotarran</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Rotarran</column>
       <column name="definition_de">Rotarran</column>
       <column name="definition_fa">روتاران [AUTOTRANSLATED]</column>
@@ -15178,6 +16089,49 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">Soq</column>
+      <column name="part_of_speech">v:t_c,alt,noanki,nodict</column>
+      <column name="definition">{Suq:v}</column>
+      <column name="definition_de">{Suq:v}</column>
+      <column name="definition_fa">{Suq:v}</column>
+      <column name="definition_sv">{Suq:v}</column>
+      <column name="definition_ru">{Suq:v}</column>
+      <column name="definition_zh_HK">{Suq:v}</column>
+      <column name="definition_pt">{Suq:v}</column>
+      <column name="definition_fi">{Suq:v}</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a typo for {Suq:v:nolink} which appeared in {HQ 6.2:src} in the transcription of {SkyBox 33:src}. The word is spelled correctly as {Suq:v:nolink} on the card itself.</column>
+      <column name="notes_de">Dies ist ein Tippfehler für {Suq:v:nolink}, der in {HQ 6.2:src} in der Transkription von {SkyBox 33:src} enthalten ist. Das Wort wird auf der Karte selbst korrekt als {Suq:v:nolink} geschrieben. [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این یک تایپی برای {Suq:v:nolink} است که در {HQ 6.2:src} در رونویسی از {SkyBox 33:src} ظاهر شده است. این کلمه به صورت صحیح به عنوان {Suq:v:nolink} روی خود کارت نوشته شده است. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta är en skrivfel för {Suq:v:nolink} som visades i {HQ 6.2:src} i transkriptionen av {SkyBox 33:src}. Ordet stavas korrekt som {Suq:v:nolink} på själva kortet. [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это опечатка для {Suq:v:nolink}, которая появилась в {HQ 6.2:src} в транскрипции {SkyBox 33:src}. Слово написано правильно как {Suq:v:nolink} на самой карте. [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這是{SkyBox 33:src}轉錄中出現在{HQ 6.2:src}中的{Suq:v:nolink}的錯字。該單詞本身在卡上的拼寫正確為{Suq:v:nolink}。 [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Este é um erro de digitação para {Suq:v:nolink} que apareceu em {HQ 6.2:src} na transcrição de {SkyBox 33:src}. A palavra está escrita corretamente como {Suq:v:nolink} no próprio cartão. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä on kirjoitusvirhe {Suq:v:nolink}: lle, joka ilmestyi {HQ 6.2:src}: ssa {SkyBox 33:src}: n transkriptiossa. Sana on kirjoitettu oikein nimellä {Suq:v:nolink} itse kortilla. [AUTOTRANSLATED]</column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {HQ 6.2, p.9, Jun. 1997:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">SoSbor</column>
       <column name="part_of_speech">n:hyp</column>
       <column name="definition">motherboard, core?</column>
@@ -15265,7 +16219,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tIb</column>
-      <column name="part_of_speech">v:alt,is,noanki</column>
+      <column name="part_of_speech">v:is,alt,noanki,nodict</column>
       <column name="definition">{bIt:v}</column>
       <column name="definition_de">{bIt:v}</column>
       <column name="definition_fa">{bIt:v}</column>
@@ -15308,7 +16262,7 @@ Erityiset kiitokset Marc Okrandille ({marq 'oqranD:n:name}) klingonin kielen luo
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tIq'ghob</column>
-      <column name="part_of_speech">n:extcan,archaic,deriv</column>
+      <column name="part_of_speech">n:archaic,deriv,extcan</column>
       <column name="definition">Heart of Virtue</column>
       <column name="definition_de">Herz der Tugend</column>
       <column name="definition_fa">قلب فضیلت [AUTOTRANSLATED]</column>
@@ -15439,7 +16393,7 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tuQloS</column>
-      <column name="part_of_speech">n:extcan,archaic</column>
+      <column name="part_of_speech">n:archaic,extcan</column>
       <column name="definition">a kind of vitamin pill</column>
       <column name="definition_de">eine Art Vitaminpille</column>
       <column name="definition_fa">نوعی قرص ویتامین [AUTOTRANSLATED]</column>
@@ -15482,7 +16436,7 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">turghal</column>
-      <column name="part_of_speech">n:name,fic,extcan</column>
+      <column name="part_of_speech">n:name,extcan,fic</column>
       <column name="definition">Turgal</column>
       <column name="definition_de">Turgal</column>
       <column name="definition_fa">تورگال [AUTOTRANSLATED]</column>
@@ -15612,7 +16566,7 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">yIghoSDo'!</column>
-      <column name="part_of_speech">excl:extcan,archaic</column>
+      <column name="part_of_speech">excl:archaic,extcan</column>
       <column name="definition">Good luck!</column>
       <column name="definition_de">Viel Glück!</column>
       <column name="definition_fa">موفق باشید! [AUTOTRANSLATED]</column>
@@ -15666,7 +16620,7 @@ The three arms of the {tIq'ghob:n:nolink} are said to represent honor, loyalty, 
       <column name="definition_fi">eräs suitsuke, adanji</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{pIw rebmugh:n}</column>
       <column name="notes">This is used in the {ma'to'vor:n} ritual. It must be real and not replicated.[1]</column>
       <column name="notes_de">Dies wird im {ma'to'vor:n}-Ritual verwendet. Es muss real sein und darf nicht repliziert werden.[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این در مراسم {ma'to'vor:n} استفاده می شود. این باید واقعی باشد و بدون تکرار باشد.[1] [AUTOTRANSLATED]</column>

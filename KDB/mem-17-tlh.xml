@@ -16,7 +16,7 @@
       <column name="notes">This refers to the sound, and not to any letter or glyph.</column>
       <column name="notes_de">Dies bezieht sich auf den Ton und nicht auf Buchstaben oder Glyphen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این به صدا اشاره دارد و به هیچ حرف یا حروف گلی اشاره نمی کند. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta hänvisar till ljudet och inte till någon bokstav eller tecken. [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Namnet på ett ljud, inte en skriven bokstav eller glyf.</column>
       <column name="notes_ru">Это относится к звуку, а не к букве или глифу. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">這是指聲音，而不是任何字母或字形。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere ao som, e não a qualquer letra ou glifo. [AUTOTRANSLATED]</column>
@@ -255,49 +255,6 @@
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
-    </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">tlhagh patat 'oQqar naQHom</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">fry, French fry</column>
-      <column name="definition_de">Pommes Frites</column>
-      <column name="definition_fa">سرخ شده، سرخ شده فرانسوی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">pomme frite</column>
-      <column name="definition_ru">фри, картофель фри [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">炸薯條</column>
-      <column name="definition_pt">batata frita</column>
-      <column name="definition_fi">ranskanperuna</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This was used in the plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) to translate "fries" (as in "French fries").</column>
-      <column name="notes_de">Dies wurde im Plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) verwendet, um "Pommes" (wie in "Pommes") zu übersetzen. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این در جمع ({tlhagh patat 'oQqar naQHommey:n:nolink}) برای ترجمه "سیب زمینی سرخ شده" (مانند "سیب زمینی سرخ کرده") استفاده شد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta användes i plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) för att översätta "pommes frites" (som i "pommes frites"). [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это использовалось во множественном числе ({tlhagh patat 'oQqar naQHommey:n:nolink}), чтобы перевести «картофель фри» (как в «картофель фри»). [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">它用於復數形式（{tlhagh patat 'oQqar naQHommey:n:nolink}）來翻譯「炸薯條」（如「炸薯條」）。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isso foi usado no plural ({tlhagh patat 'oQqar naQHommey:n:nolink}) para traduzir "batatas fritas" (como em "batatas fritas"). [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tätä käytettiin monikkomuodossa ({tlhagh patat 'oQqar naQHommey:n:nolink}) kääntämään "perunat" (kuten "ranskalaiset"). [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components">{tlhagh:n}, {patat 'oQqar:n}, {naQ:n:1}, {-Hom:n}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags">fries, French fries</column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TNK:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1080,7 +1037,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhaS</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:t_c</column>
       <column name="definition">fight, battle (relatively minor fight)</column>
       <column name="definition_de">kämpfen (relativ schwacher Kampf)</column>
       <column name="definition_fa">مبارزه، نبرد (مبارزه نسبتا جزئی) [AUTOTRANSLATED]</column>
@@ -1209,7 +1166,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhatlh vIychorgh</column>
-      <column name="part_of_speech">n:reg,fic,food,deriv</column>
+      <column name="part_of_speech">n:deriv,fic,food,reg</column>
       <column name="definition">sauce for gladst</column>
       <column name="definition_de">Soße für Gladst</column>
       <column name="definition_fa">سس برای گلادیاتور [AUTOTRANSLATED]</column>
@@ -1433,7 +1390,7 @@
       <column name="definition_ru">Клавдий [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">克勞 [AUTOTRANSLATED]</column>
       <column name="definition_pt">Claudius</column>
-      <column name="definition_fi">Claudius</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Claudius</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hamlet:n:name}</column>
@@ -1725,6 +1682,53 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">tlheb</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">urge, should, ought</column>
+      <column name="definition_de">drängen, sollen, sollen [AUTOTRANSLATED]</column>
+      <column name="definition_fa">اصرار، باید، باید [AUTOTRANSLATED]</column>
+      <column name="definition_sv">uppmana, borde, borde [AUTOTRANSLATED]</column>
+      <column name="definition_ru">понуждать, следует, следует [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">敦促，應該，應當 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">exortar, deveria, deveria [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla sitä mieltä että (jonkun) pitäisi</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{-nIS:v:suff}</column>
+      <column name="notes">The object of this verb is the activity being urged, not the person being urged. The construction is always {S 'e' tlheb:sen:nolink}  or {S net tlheb:sen:nolink}, where {S:sen:nolink} is a sentence whose subject ought to do whatever the verb is referring to. The subject of {tlheb:v:nolink} is almost always "I" or "you" (when it's not {net tlheb:sen:nolink}), though a third person subject is possible.[1] This verb isn't used for something like "I repaired the computer; it should work now," which is a different kind of "should". This verb implies decision, so it would not be used in a phrase like "it should rain".[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples">
+{qagh vISop net tlheb:sen:nolink} "I should eat gagh."[1]
+{qagh DaSop 'e' vItlheb:sen:nolink} "You should eat gagh (in my opinion)." (I urge you to eat qagh.)[1]
+{qagh vISop 'e' vItlheb:sen:nolink} "I should eat gagh." (I urge me to eat qagh.)[1]
+</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2022:src}, [2] {KLI mailing list 2022.11.21:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">tlheD</column>
       <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">depart</column>
@@ -1780,7 +1784,7 @@
       <column name="definition_fi">naru, köysi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{SIrgh:n}, {yamtaw:n}</column>
+      <column name="see_also">{SIrgh:n}, {yamtaw:n}, {ma'lI':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2071,7 +2075,7 @@
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {paq'batlh p.80-81:src}</column>
+      <column name="source">[1] {paq'batlh 2ed p.88-89:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2119,7 +2123,7 @@
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">tlhepwI'</column>
-          <column name="part_of_speech">n:alt,body,deriv</column>
+          <column name="part_of_speech">n:body,alt,deriv</column>
           <column name="definition">{roDSon:n}</column>
           <column name="definition_de">{roDSon:n}</column>
           <column name="definition_fa">{roDSon:n}</column>
@@ -2740,7 +2744,7 @@ Verbien etuliitteet, kun {tlhIH:n:nolink} on objekti:
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKDA:src}, [2] {paq'batlh p.128-129:src}</column>
+      <column name="source">[1] {TKDA:src}, [2] {paq'batlh 2ed p.130-131:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -2874,7 +2878,7 @@ Verbien etuliitteet, kun {tlhIH:n:nolink} on objekti:
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhIlwI'</column>
-      <column name="part_of_speech">n:deriv,being</column>
+      <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">miner</column>
       <column name="definition_de">Minenarbeiter</column>
       <column name="definition_fa">معدن کار [AUTOTRANSLATED]</column>
@@ -3036,7 +3040,7 @@ Lopuksi, {tlhIm:n:nolink}: ta voidaan käyttää myös huopana, vaikka klingonit
       <column name="_id"></column>
       <column name="entry_name">tlhIn</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be particular, individual</column>
+      <column name="definition">be particular, individual, one's own</column>
       <column name="definition_de">eigen, individuell sein</column>
       <column name="definition_fa">خاص، فردی [AUTOTRANSLATED]</column>
       <column name="definition_sv">var speciell, individuell [AUTOTRANSLATED]</column>
@@ -3047,21 +3051,25 @@ Lopuksi, {tlhIm:n:nolink}: ta voidaan käyttää myös huopana, vaikka klingonit
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">This does not mean simply "single, separate" but rather something like "be attributable to something or someone" or "be uniquely associated with something or someone".</column>
-      <column name="notes_de">Dies bedeutet nicht einfach "einzeln, getrennt", sondern etwas wie "auf etwas oder jemanden zurückzuführen sein" oder "eindeutig mit etwas oder jemandem verbunden sein". [AUTOTRANSLATED]</column>
-      <column name="notes_fa">این بدان معنا نیست که صرفاً "مجرد ، جدا" بلکه چیزی مانند "قابل انتساب به چیزی یا شخصی" یا "منحصر به فرد بودن با چیزی یا شخصی بودن" باشد. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Detta betyder inte bara "singel, separat" utan snarare något som "kan hänföras till något eller någon" eller "vara unikt associerat med något eller någon". [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Это не означает просто «отдельный, отдельный», а скорее что-то вроде «быть приписанным к чему-то или кому-то» или «быть однозначно связанным с чем-то или кем-то». [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">這並不意味著簡單地「單一，分離」，而是諸如「可歸於某物或某人」或「與某物或某物唯一地關聯」之類的東西。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Isso não significa simplesmente "único, separado", mas algo como "ser atribuível a algo ou alguém" ou "ser associado exclusivamente a algo ou alguém". [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Tämä ei tarkoita yksinkertaisesti "yksittäistä, erillistä", vaan pikemminkin jotain "johtuvan jostakin tai toisesta" tai "olla ainutlaatuisesti yhteydessä johonkin tai johonkin". [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">When asked whether the word {qangtlhIn:n} is related, MO said he did not know of any relationship.
+      <column name="notes">This does not mean simply "single, separate" but rather something like "be attributable to something or someone" or "be uniquely associated with something or someone".[1]</column>
+      <column name="notes_de">Dies bedeutet nicht einfach "einzeln, getrennt", sondern etwas wie "auf etwas oder jemanden zurückzuführen sein" oder "eindeutig mit etwas oder jemandem verbunden sein".[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fa">این بدان معنا نیست که صرفاً "مجرد ، جدا" بلکه چیزی مانند "قابل انتساب به چیزی یا شخصی" یا "منحصر به فرد بودن با چیزی یا شخصی بودن" باشد.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_sv">Detta betyder inte bara "singel, separat" utan snarare något som "kan hänföras till något eller någon" eller "vara unikt associerat med något eller någon".[1] [AUTOTRANSLATED]</column>
+      <column name="notes_ru">Это не означает просто «отдельный, отдельный», а скорее что-то вроде «быть приписанным к чему-то или кому-то» или «быть однозначно связанным с чем-то или кем-то».[1] [AUTOTRANSLATED]</column>
+      <column name="notes_zh_HK">這並不意味著簡單地「單一，分離」，而是諸如「可歸於某物或某人」或「與某物或某物唯一地關聯」之類的東西。[1] [AUTOTRANSLATED]</column>
+      <column name="notes_pt">Isso não significa simplesmente "único, separado", mas algo como "ser atribuível a algo ou alguém" ou "ser associado exclusivamente a algo ou alguém".[1] [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Tämä ei tarkoita yksinkertaisesti "yksittäistä, erillistä", vaan pikemminkin jotain "johtuvan jostakin tai toisesta" tai "olla ainutlaatuisesti yhteydessä johonkin tai johonkin".[1] [AUTOTRANSLATED]</column>
+      <column name="hidden_notes">This was defined as "be particular, individual", followed by a long explanation. The "one's own" clarification was added based on this clarification.[1]
+
+When asked whether the word {qangtlhIn:n} is related, MO said he did not know of any relationship.[1]
 
 In many languages, the endonym for its speakers means something like "our own people".</column>
       <column name="components"></column>
       <column name="examples">
-▶ {DujwIj tlhIn:n@@Duj:n:1, -wIj:n, tlhIn:v} "my particular ship, my own ship"
-▶ {betleHlIj vIneHbe', betleHwIj tlhIn vIghaj:sen@@betleH:n, -lIj:n, vI-:v, neH:v, -be':v, betleH:n, -wIj:n, tlhIn:v, vI-:v, ghaj:v} "I don't want your bat'leth, I have my own bat'leth"</column>
+▶ {DujwIj tlhIn:n@@Duj:n:1, -wIj:n, tlhIn:v} "my particular ship, my own ship"[1]
+▶ {betleHlIj vIneHbe', betleHwIj tlhIn vIghaj:sen@@betleH:n, -lIj:n, vI-:v, neH:v, -be':v, betleH:n, -wIj:n, tlhIn:v, vI-:v, ghaj:v} "I don't want your bat'leth, I have my own bat'leth"[1]
+▶ {DujDaj tlhIn legh HoD:sen@@Duj:n:1, -Daj:n, tlhIn:v, legh:v, HoD:n} "The captain sees his/her own ship" (might be ambiguous whether the ship is the captain's or someone else's, depending on context)[1]
+▶ {jagh Duj tlhIn legh HoD:sen@@jagh:n, Duj:n:1, tlhIn:v, legh:v, HoD:n} "The captain sees the enemy's own ship"[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3921,7 +3929,7 @@ On idioomi, {Hem; tlhIngan rur@@Hem:v, tlhIngan:n, rur:v}. [AUTOTRANSLATED]</col
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhI'yopatra'</column>
-      <column name="part_of_speech">n:name</column>
+      <column name="part_of_speech">n:name,fic</column>
       <column name="definition">Cleopatra</column>
       <column name="definition_de">Cleopatra</column>
       <column name="definition_fa">کلئوپاترا</column>
@@ -3929,7 +3937,7 @@ On idioomi, {Hem; tlhIngan rur@@Hem:v, tlhIngan:n, rur:v}. [AUTOTRANSLATED]</col
       <column name="definition_ru">Клеопатра</column>
       <column name="definition_zh_HK">克莉奧佩特拉</column>
       <column name="definition_pt">Cleópatra</column>
-      <column name="definition_fi">Kleopatra</column>
+      <column name="definition_fi">eräs Shex'pirin näytelmän hahmo, Kleopatra</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{'antonI':n:name}</column>
@@ -4012,7 +4020,7 @@ The examples show that the object of this verb can be the person of whom the req
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {TKDA:src}, [3] {HQ 7.4, p.3-4, Dec. 1998:src}, [4] {PK:src}, [5] {paq'batlh p.112-113:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {TKDA:src}, [3] {HQ 7.4, p.3-4, Dec. 1998:src}, [4] {PK:src}, [5] {paq'batlh 2ed p.118-119:src}</column>
     </table>
     <table name="mem">
       <!-- There's {HItlhochQo'.:sen:nolink} "Don't contradict me." from the old "Star Trek: Continuum" website, which had a "Klingon Linguistics Studies" section, but it's unclear if Marc Okrand wrote this sentence. -->
@@ -4278,7 +4286,13 @@ Voidaan sanoa joko {B tlhogh A:sen:nolink} "{A:sen:nolink} naimisiin {B:sen:noli
    {bIQ lungaS 'aDDu'Daj:sen:nolink}
   "I see now, I have failed
    To raise my son a man.
-   Water flows through his veins."[2]</column>
+   Water flows through his veins."[2, p.76-77]
+▶ {DIS 'elpu' 'e' tlhoj:sen:nolink}
+   {DISvam veghlu'chugh:sen:nolink}
+   {yInbogh nuvpu' Hutlhbogh qo'Daq pawlu':sen:nolink}
+  "Kahless finds himself in a cave
+   Leading to
+   The world beyond the living."[2, p.90-91]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -4294,7 +4308,7 @@ Voidaan sanoa joko {B tlhogh A:sen:nolink} "{A:sen:nolink} naimisiin {B:sen:noli
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {paq'batlh:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {paq'batlh 2ed:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4784,7 +4798,7 @@ The request that resulted in this word specified that a favor is "an act done ou
       <column name="definition_ru">быть острым (имея в виду еду) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">辛辣（指食物） [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser picante (referente a alimentos)</column>
-      <column name="definition_fi">olla pistevä, kirpeä, väkevä (ruoasta)</column>
+      <column name="definition_fi">olla pistävä, kirpeä, väkevä (ruoasta)</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tlhorghHa':v}</column>
       <column name="see_also">{'ey:v}, {mum:v}</column>
@@ -5387,7 +5401,7 @@ Previously, some people believed that this word means "to expel exhaust", based 
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhuD</column>
-      <column name="part_of_speech">v:t</column>
+      <column name="part_of_speech">v:t_c</column>
       <column name="definition">emit (energy, radiation, etc.)</column>
       <column name="definition_de">ausstrahlen (Energie, Strahlung)</column>
       <column name="definition_fa">انتشار (انرژی، تابش، و غیره) [AUTOTRANSLATED]</column>
@@ -5690,7 +5704,7 @@ Previously, some people believed that this word means "to expel exhaust", based 
       <column name="_id"></column>
       <column name="entry_name">tlhur</column>
       <column name="part_of_speech">v:t_c</column>
-      <column name="definition">catch</column>
+      <column name="definition">catch (grab in midair)</column>
       <column name="definition_de">fangen (z.B. einen Ball)</column>
       <column name="definition_fa">گرفتن [AUTOTRANSLATED]</column>
       <column name="definition_sv">fånga [AUTOTRANSLATED]</column>
