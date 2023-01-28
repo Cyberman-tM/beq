@@ -1913,7 +1913,7 @@ Tämän sanan ensimmäinen osa on {rav:n:1} "lattia", mutta toinen osa ei liity 
       <column name="part_of_speech">n</column>
       <column name="definition">triangle</column>
       <column name="definition_de">Dreieck</column>
-      <column name="definition_fa">مثلث [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مثلث</column>
       <column name="definition_sv">triangel, trekant</column>
       <column name="definition_ru">треугольник</column>
       <column name="definition_zh_HK">三角形</column>
@@ -2102,7 +2102,7 @@ Muille monikulmioille, joilla on yhtäläiset sivut / kulmat, {HoS:v}: ää käy
       <column name="definition_ru">командная группа, командный состав [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">指揮小組、指揮人員 [AUTOTRANSLATED]</column>
       <column name="definition_pt">grupo de comando, pessoal de comando</column>
-      <column name="definition_fi">(tehtävän, yksikön, armeijan tms.) johto, johtoesikunta</column>
+      <column name="definition_fi">(tehtävän, yksikön, armeijan tms.) johto, esikunta</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ra'ghomquv:n}</column>
@@ -2184,7 +2184,7 @@ Muille monikulmioille, joilla on yhtäläiset sivut / kulmat, {HoS:v}: ää käy
       <column name="part_of_speech">n</column>
       <column name="definition">coffee with liquor</column>
       <column name="definition_de">Kaffee mit Alkohol</column>
-      <column name="definition_fa">قهوه با مشروب [AUTOTRANSLATED]</column>
+      <column name="definition_fa">قهوه با مشروب</column>
       <column name="definition_sv">raktaj, kaffe med sprit i, ett slags dryck</column>
       <column name="definition_ru">кофе с ликером [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">咖啡加酒 [AUTOTRANSLATED]</column>
@@ -4927,7 +4927,7 @@ Tämä on sama sana kuin verbi {ret:v}.[2][1] [AUTOTRANSLATED]</column>
       <column name="definition_sv">organ, inre organ [AUTOTRANSLATED]</column>
       <column name="definition_ru">орган, внутренний орган [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">器官，內臟 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">órgão, órgão interno [AUTOTRANSLATED]</column>
+      <column name="definition_pt">órgão, órgão interno</column>
       <column name="definition_fi">sisäelin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -6586,7 +6586,7 @@ Tämä viittaa myös musteeseen, kuten kumileimasimeen ({toqwIn:n}).[2] [AUTOTRA
       <column name="notes_zh_HK">這是指對象圍繞其旋轉或對稱排列的假想線。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Isso se refere a uma linha imaginária em torno da qual um objeto gira ou é simetricamente disposto. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä viittaa kuvitteelliseen viivaan, jonka ympäri esine pyöri tai on järjestetty symmetrisesti. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The Rome-Berlin Axis was a coalition between Italy and Germany in World War II.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7730,7 +7730,7 @@ Tällä on täsmällinen merkitys lentokoneista puhuttaessa, ks. {ron:v:2}.</col
       <column name="definition_sv">steka, grilla, steka [AUTOTRANSLATED]</column>
       <column name="definition_ru">жаркое, гриль, бройл [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">烤，烤，烤 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">assar, grelhar, grelhar [AUTOTRANSLATED]</column>
+      <column name="definition_pt">assar, grelhar</column>
       <column name="definition_fi">paistaa, grillata</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8362,7 +8362,7 @@ Sanan käsite voidaan ilmaista muodossa {puq lut:n@@puq:n, lut:n} tai {lut rorgh
           <column name="definition_sv">vara libidinös [AUTOTRANSLATED]</column>
           <column name="definition_ru">быть страстным [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">性慾旺盛 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">ser libidinoso [AUTOTRANSLATED]</column>
+          <column name="definition_pt">ser libidinoso</column>
           <column name="definition_fi">olla himokas, kiihottunut</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -9276,7 +9276,7 @@ This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.
       <column name="definition_sv">vara fysisk (underställd fysikens lagar) [AUTOTRANSLATED]</column>
       <column name="definition_ru">быть физическим (в соответствии с законами физики) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">是物理的（服從物理定律） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ser físico (sujeito às leis da física) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser físico (sujeito às leis da física)</column>
       <column name="definition_fi">olla fysikaalinen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9796,7 +9796,7 @@ This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.
       <column name="definition_sv">noshörningsliknande djur [AUTOTRANSLATED]</column>
       <column name="definition_ru">животное похожее на носорога [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">類似犀牛的動物 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">animal parecido com rinoceronte [AUTOTRANSLATED]</column>
+      <column name="definition_pt">animal parecido com rinoceronte</column>
       <column name="definition_fi">eräs sarvikuonoa muistuttava eläin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -10202,12 +10202,12 @@ This was used for "Ok" (while {qIl:v} was used for "Cancel") in Klingon Blockly.
           <column name="entry_name">rutlh 'echlet</column>
           <column name="part_of_speech">n:deriv,terran</column>
           <column name="definition">skateboard (Terran sports equipment)</column>
-          <column name="definition_de">Skateboard (Geländesportgerät) [AUTOTRANSLATED]</column>
+          <column name="definition_de">Skateboard (terranisches Sportgerät)</column>
           <column name="definition_fa">اسکیت برد (تجهیزات ورزشی Terran) [AUTOTRANSLATED]</column>
           <column name="definition_sv">skateboard (Terran sportutrustning) [AUTOTRANSLATED]</column>
           <column name="definition_ru">скейтборд (терранский спортивный инвентарь) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">滑板（人族運動器材） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">skate (equipamentos esportivos terrestres) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">skate (equipamentos esportivos terrestres)</column>
           <column name="definition_fi">rullalauta</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>

@@ -168,7 +168,7 @@
       <column name="search_tags_ru">символ идентичности</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">naama</column>
       <column name="source">[1] {TKD:src}, [2] {TKW p.59:src}, [3] {KGT p.68:src}</column>
     </table>
         <table name="mem">
@@ -450,12 +450,12 @@ Katso {qach:n}-osat {qoD:n}-osasta kohdasta {pa':n:1}. [AUTOTRANSLATED]</column>
           <column name="entry_name">qach DIS</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">basement</column>
-          <column name="definition_de">Untergeschoss [AUTOTRANSLATED]</column>
-          <column name="definition_fa">زیر زمین [AUTOTRANSLATED]</column>
+          <column name="definition_de">Untergeschoss, Keller</column>
+          <column name="definition_fa">زیر زمین</column>
           <column name="definition_sv">källare [AUTOTRANSLATED]</column>
           <column name="definition_ru">подвал [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">地下室 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">porão [AUTOTRANSLATED]</column>
+          <column name="definition_pt">porão</column>
           <column name="definition_fi">kellari</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -5248,12 +5248,12 @@ The information about the length comes from {The Star Trek Encyclopedia, 4th ed.
       <column name="entry_name">qempa'QeH</column>
       <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">Qempa'keh, the Warriors of the Dead</column>
-      <column name="definition_de">Qempa'keh, die Krieger der Toten [AUTOTRANSLATED]</column>
+      <column name="definition_de">Qempa'keh, die Krieger der Toten</column>
       <column name="definition_fa">قمپاکه، رزمندگان مردگان [AUTOTRANSLATED]</column>
       <column name="definition_sv">Qempa'keh, de dödas krigare [AUTOTRANSLATED]</column>
       <column name="definition_ru">Кемпа'ке, воины мертвых [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">Qempa'keh，死者的勇士 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Qempa'keh, os Guerreiros dos Mortos [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Qempa'keh, os Guerreiros dos Mortos</column>
       <column name="definition_fi">Qempa'keh, kuolleiden soturit</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5767,13 +5767,13 @@ Kouluttaa todella hyvin, työskennellä siinä todella paljon ja saavuttaa aiotu
       <column name="_id"></column>
       <column name="entry_name">qeQvav</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">Dingsbums</column>
-      <column name="definition_de">Sachemajig [AUTOTRANSLATED]</column>
+      <column name="definition">thingamajig</column>
+      <column name="definition_de">Dingsbums</column>
       <column name="definition_fa">چیزماجیگ [AUTOTRANSLATED]</column>
       <column name="definition_sv">thingamajig [AUTOTRANSLATED]</column>
       <column name="definition_ru">штуковина [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">事情發生 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">coisamajig [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Palavra usada para se referir a coisas cujo nome não é conhecido ou não lembrado</column>
       <column name="definition_fi">juttu, härpäke, hilavitkutin; mikä se nyt olikaan</column>
       <column name="synonyms">{tIlqemchaw':n}</column>
       <column name="antonyms"></column>
@@ -5796,7 +5796,7 @@ Kouluttaa todella hyvin, työskennellä siinä todella paljon ja saavuttaa aiotu
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">doodad, whatchamacallit</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -8070,7 +8070,7 @@ This was used for "Cancel" (while {ruch:v} was used for "Ok") in Klingon Blockly
       <column name="definition_sv">vara libidinös [AUTOTRANSLATED]</column>
       <column name="definition_ru">быть страстным [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">性慾強 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ser libidinoso [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser libidinoso</column>
       <column name="definition_fi">olla himokas, kiihottunut</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8880,7 +8880,7 @@ Maltz näytti haluttomalta puhua mitä tämä oikein on[3][2] [AUTOTRANSLATED]</
       <column name="part_of_speech">n:1</column>
       <column name="definition">belt</column>
       <column name="definition_de">Gürtel</column>
-      <column name="definition_fa">کمربند [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کمربند</column>
       <column name="definition_sv">bälte</column>
       <column name="definition_ru">пояс, ремень, портупея</column>
       <column name="definition_zh_HK">腰帶</column>
@@ -11513,7 +11513,7 @@ There is no one way to say "firefighter". Some options are {qul SuvwI':n} "fire 
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">liekki</column>
       <column name="source">[1] {TKD:src}, [2] {Saarbrücken qepHom'a' 2020:src}</column>
     </table>
         <table name="mem">
@@ -12923,7 +12923,7 @@ Tätä sanaa ei voida käyttää maassa olevaan reikään (josta katso {QemjIq:n
       <column name="definition_sv">kur'leth [AUTOTRANSLATED]</column>
       <column name="definition_ru">кур'лет [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">庫勒斯 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">Kur'leth [AUTOTRANSLATED]</column>
+      <column name="definition_pt">Kur'leth</column>
       <column name="definition_fi">eräs ase, kur'leth</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>

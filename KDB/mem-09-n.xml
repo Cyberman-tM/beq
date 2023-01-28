@@ -176,12 +176,12 @@
           <column name="entry_name">nach Ha'quj</column>
           <column name="part_of_speech">n:deriv,slang</column>
           <column name="definition">scarf</column>
-          <column name="definition_de">Schal [AUTOTRANSLATED]</column>
+          <column name="definition_de">Schal, Halstuch</column>
           <column name="definition_fa">روسری [AUTOTRANSLATED]</column>
           <column name="definition_sv">scarf [AUTOTRANSLATED]</column>
           <column name="definition_ru">шарф [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">圍巾 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">cachecol [AUTOTRANSLATED]</column>
+          <column name="definition_pt">cachecol</column>
           <column name="definition_fi">huivi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -3385,12 +3385,12 @@ Não confunda esta palavra com {naHjej:n}. [AUTOTRANSLATED]</column>
           <column name="entry_name">neb mIv</column>
           <column name="part_of_speech">n:deriv,terran</column>
           <column name="definition">baseball cap (Terran clothing)</column>
-          <column name="definition_de">Baseballkappe (Terranerkleidung) [AUTOTRANSLATED]</column>
+          <column name="definition_de">Baseballkappe (Terranerkleidung)</column>
           <column name="definition_fa">کلاه بیسبال (لباس Terran) [AUTOTRANSLATED]</column>
           <column name="definition_sv">baseballkeps (Terran-kläder) [AUTOTRANSLATED]</column>
           <column name="definition_ru">бейсболка (терранская одежда) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">棒球帽（人族服裝） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">boné de beisebol (roupas terráqueas) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">boné de beisebol (roupas terráqueas)</column>
           <column name="definition_fi">lippalakki</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -6180,7 +6180,7 @@ A line which was cut from {Star Trek Into Darkness:src} reveals that the person 
       <column name="definition_ru">препятствовать, мешать, быть помехой, вмешиваться куда-то, подрывать, разрушать</column>
       <column name="definition_zh_HK">阻礙、干擾（擾亂）、擾亂 [AUTOTRANSLATED]</column>
       <column name="definition_pt">dificultar, interferir (com), perturbar</column>
-      <column name="definition_fi">estää, vaikeuttaa, haitata, häiritä</column>
+      <column name="definition_fi">estää, vaikeuttaa, haitata, häiritä; varjostaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{mun:v}, {Haq:v:2}</column>
@@ -7023,7 +7023,7 @@ Katso selitys näiden sormiverbien käytöstä kohdasta {SIq:v}. [AUTOTRANSLATED
       <column name="part_of_speech">n:1,body</column>
       <column name="definition">fingernail</column>
       <column name="definition_de">Fingernagel</column>
-      <column name="definition_fa">ناخن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ناخن</column>
       <column name="definition_sv">fingernagel</column>
       <column name="definition_ru">ноготь</column>
       <column name="definition_zh_HK">指甲 [AUTOTRANSLATED]</column>

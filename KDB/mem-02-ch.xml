@@ -1002,7 +1002,7 @@ Pakollinen verbin etuliite, kun kohde on {chaH:n:nolink}, on {tI-:v:pref}. [AUTO
       <column name="definition_sv">diamant (ädelsten)</column>
       <column name="definition_ru">бриллиант (драгоценный камень) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">鑽石（寶石） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">diamante (pedra preciosa) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">diamante (pedra preciosa)</column>
       <column name="definition_fi">timantti</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1306,7 +1306,7 @@ Pakollinen verbin etuliite, kun kohde on {chaH:n:nolink}, on {tI-:v:pref}. [AUTO
       <column name="definition_sv">vara officiell, vara autentiserad, vara auktoriserad, vara legitim</column>
       <column name="definition_ru">быть официальным, аутентифицированным, санкционированным, легитимным [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">是官方的、經過認證的、授權的、合法的 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ser oficial, autenticado, autorizado, legítimo [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser oficial, ser autenticado, ser autorizado, ser legítimo</column>
       <column name="definition_fi">olla virallinen, aito, valtuutettu, oikea</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1353,7 +1353,7 @@ Pakollinen verbin etuliite, kun kohde on {chaH:n:nolink}, on {tI-:v:pref}. [AUTO
       <column name="definition_fi">kenties, ehkä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghaytan:adv}, {ghaytanHa':adv}</column>
+      <column name="see_also">{ghaytan:adv}, {ghaytanHa':adv}, {pupHa':v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -2731,7 +2731,7 @@ UM {chaw':n:nolink} mostra que você está oficialmente ou legalmente autorizado
       <column name="definition_sv">ett spel som involverar att sikta noggrant med en projektil</column>
       <column name="definition_ru">игра, которая включает в себя точное прицеливание снаряда [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">一種涉及精確瞄準射彈的遊戲 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">um jogo que envolve apontar precisamente um projétil [AUTOTRANSLATED]</column>
+      <column name="definition_pt">um jogo que envolve apontar precisamente um projétil</column>
       <column name="definition_fi">eräs tarkka-ammuntapeli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4338,7 +4338,7 @@ The following four examples illustrate the role of the object(s) and how to use 
       <column name="definition_ru">Торнадо</column>
       <column name="definition_zh_HK">龍捲風</column>
       <column name="definition_pt">tornado</column>
-      <column name="definition_fi">tornado, trombi</column>
+      <column name="definition_fi">(tuulesta) pyöriä voimakkaasti kuin tornado tai trombi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{vung:v}, {SuS:n}, {jev:v:1}, {muD Dotlh:n}</column>
@@ -6524,7 +6524,7 @@ Tätä verbiä voidaan käyttää avainten väärään sijoittamiseen, mutta my�
       <column name="part_of_speech">v:t_c,klcp1</column>
       <column name="definition">bite</column>
       <column name="definition_de">beißen</column>
-      <column name="definition_fa">گاز گرفتن [AUTOTRANSLATED]</column>
+      <column name="definition_fa">گاز گرفتن، گزیدن</column>
       <column name="definition_sv">bita</column>
       <column name="definition_ru">Кусать, откусить</column>
       <column name="definition_zh_HK">咬</column>

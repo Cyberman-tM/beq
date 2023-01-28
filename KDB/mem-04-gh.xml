@@ -1278,12 +1278,12 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="entry_name">ghaQpey'</column>
       <column name="part_of_speech">n</column>
       <column name="definition">sex (biological)</column>
-      <column name="definition_de">Geschlecht (biologisch) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Geschlecht (biologisch)</column>
       <column name="definition_fa">جنسیت (بیولوژیکی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">kön (biologisk) [AUTOTRANSLATED]</column>
       <column name="definition_ru">пол (биологический) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">性（生物） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">sexo (biológico) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">sexo (biológico)</column>
       <column name="definition_fi">biologinen sukupuoli</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1951,7 +1951,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="definition_fi">todennäköisesti</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ghaytanHa':adv}</column>
-      <column name="see_also">{chaq:adv}</column>
+      <column name="see_also">{chaq:adv}, {pupHa':v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -3056,7 +3056,7 @@ Yleisempi termi musiikkia soittavalle ryhmälle (kaikenkokoisille) on {QoQ ghom:
           <column name="definition_sv">helikopter [AUTOTRANSLATED]</column>
           <column name="definition_ru">вертолет [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">直升機 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">helicóptero [AUTOTRANSLATED]</column>
+          <column name="definition_pt">helicóptero</column>
           <column name="definition_fi">helikopteri</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -3811,12 +3811,12 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
           <column name="entry_name">ghIgh yIvbeH</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">turtleneck (clothing)</column>
-          <column name="definition_de">Rollkragenpullover (Kleidung) [AUTOTRANSLATED]</column>
+          <column name="definition_de">Rollkragenpullover (Kleidung)</column>
           <column name="definition_fa">یقه یقه (لباس) [AUTOTRANSLATED]</column>
           <column name="definition_sv">turtleneck (kläder) [AUTOTRANSLATED]</column>
           <column name="definition_ru">водолазка (одежда) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">高領毛衣（衣服） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">gola alta (roupa) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">gola alta (roupa)</column>
           <column name="definition_fi">poolopaita</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -4794,7 +4794,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="definition_fi">keikkua, huojua, tutista, kiemurrella</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nogh:v}, {ghargh:n}, {qagh:n}, {raHta':n}</column>
+      <column name="see_also">{nogh:v}, {ngov:v}, {ghargh:n}, {qagh:n}, {raHta':n}</column>
       <column name="notes">This might be used to describe a good bowl of {qagh:n}.</column>
       <column name="notes_de">Damit könnte man gut einen Teller voller {qagh:n} beschreiben.</column>
       <column name="notes_fa">این ممکن است برای توصیف یک کاسه خوب از {qagh:n} مورد استفاده قرار گیرد. [AUTOTRANSLATED]</column>
@@ -5371,7 +5371,7 @@ Em {TNK:src}, {ghItlhwI':n:nolink} é usado para "caneta" e {ghojmeH ghItlhwI':n
       <column name="definition_sv">skrivbord [AUTOTRANSLATED]</column>
       <column name="definition_ru">стол письменный [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">桌子 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">mesa [AUTOTRANSLATED]</column>
+      <column name="definition_pt">mesa (mesa de escritório, escrivaninha)</column>
       <column name="definition_fi">kirjoituspöytä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5603,7 +5603,7 @@ Existem 243 {lawmey:n:nolink} em um {gho:n:nolink} ou 360 {lawrI'mey:n:nolink}. 
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">oval</column>
           <column name="definition_de">Oval</column>
-          <column name="definition_fa">بیضی [AUTOTRANSLATED]</column>
+          <column name="definition_fa">بیضی</column>
           <column name="definition_sv">oval [AUTOTRANSLATED]</column>
           <column name="definition_ru">овальный [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">橢圓</column>
@@ -7087,12 +7087,12 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
       <column name="entry_name">ghom DIp</column>
       <column name="part_of_speech">n:deriv</column>
       <column name="definition">plural noun (grammar)</column>
-      <column name="definition_de">Plural Substantiv (Grammatik) [AUTOTRANSLATED]</column>
+      <column name="definition_de">Plural Substantiv (Grammatik)</column>
       <column name="definition_fa">اسم جمع (گرامر) [AUTOTRANSLATED]</column>
       <column name="definition_sv">plural substantiv (grammatik) [AUTOTRANSLATED]</column>
       <column name="definition_ru">существительное во множественном числе (грамматика) [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">複數名詞（語法） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">substantivo plural (gramática) [AUTOTRANSLATED]</column>
+      <column name="definition_pt">substantivo plural (gramática)</column>
       <column name="definition_fi">monikollinen substantiivi</column>
       <column name="synonyms"></column>
       <column name="antonyms">{Dol DIp:n}</column>
@@ -9119,7 +9119,7 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">muhkura, nysty, patti</column>
       <column name="source">[1] {qep'a' 24 (2017):src}</column>
     </table>
     <table name="mem">

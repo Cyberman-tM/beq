@@ -2131,7 +2131,7 @@ Maltz thought there must have been, historically, a connection between this word
       <column name="part_of_speech">n</column>
       <column name="definition">institute, institution</column>
       <column name="definition_de">Institut</column>
-      <column name="definition_fa">مؤسسه [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مؤسسه</column>
       <column name="definition_sv">institut, institution</column>
       <column name="definition_ru">институт, институт [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">學院</column>
@@ -4024,7 +4024,7 @@ An earlier translation of this phrase appears in UPN's Star Trek 25th Anniversar
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">The request was for a protect suit of clothing like a space suit, bio-suit, NBC suit, hazmat suit, and so on.</column>
       <column name="components">{yIn:n}, {'eSqa':n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4034,7 +4034,7 @@ An earlier translation of this phrase appears in UPN's Star Trek 25th Anniversar
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags"></column>
+      <column name="search_tags">protective suit, hazmat suit, NBC suit, bio-suit</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
@@ -4330,7 +4330,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/HVOJkR51l
       <column name="definition_sv">nära vän [AUTOTRANSLATED]</column>
       <column name="definition_ru">близкие друзья [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">密友 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">amigo próximo [AUTOTRANSLATED]</column>
+      <column name="definition_pt">amigo próximo</column>
       <column name="definition_fi">läheinen ystävä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4862,13 +4862,13 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
           <column name="entry_name">yIvbeH naQHa'</column>
           <column name="part_of_speech">n:deriv</column>
           <column name="definition">vest, waistcoat</column>
-          <column name="definition_de">Weste [AUTOTRANSLATED]</column>
+          <column name="definition_de">Weste</column>
           <column name="definition_fa">جلیقه [AUTOTRANSLATED]</column>
           <column name="definition_sv">väst [AUTOTRANSLATED]</column>
           <column name="definition_ru">жилет [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">背心 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">colete [AUTOTRANSLATED]</column>
-          <column name="definition_fi">liivi [AUTOTRANSLATED]</column>
+          <column name="definition_pt">colete</column>
+          <column name="definition_fi">liivi</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also"></column>
@@ -5040,7 +5040,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="definition_sv">hjortdjursliknande djur [AUTOTRANSLATED]</column>
       <column name="definition_ru">цервидоподобное животное [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">類似子宮的動物 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">animal tipo cervídeo [AUTOTRANSLATED]</column>
+      <column name="definition_pt">animal tipo cervídeo</column>
       <column name="definition_fi">eräs hirveä muistuttava eläin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5131,8 +5131,8 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{toch:n}</column>
-      <column name="notes">For hitting a percussion instruction with one's palm, consider {weq:v}.</column>
-      <column name="notes_de">Wenn Sie eine Percussion-Anweisung mit der Handfläche ausführen möchten, ziehen Sie {weq:v} in Betracht. [AUTOTRANSLATED]</column>
+      <column name="notes">For hitting a percussion instrument with one's palm, consider {weq:v}.</column>
+      <column name="notes_de">Wenn Sie ein Schlaginstrument mit der Handfläche spielen wollen, ziehen Sie {weq:v} in Betracht.</column>
       <column name="notes_fa">برای ضربه زدن به یک دستور العمل کوبه ای با کف دست ، {weq:v} را در نظر بگیرید. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Överväg {weq:v} för att slå en slaginstruktion med handflatan. [AUTOTRANSLATED]</column>
       <column name="notes_ru">Для того, чтобы поразить ударную инструкцию ладонью, рассмотрите {weq:v}. [AUTOTRANSLATED]</column>
@@ -5728,7 +5728,7 @@ Em {TNK:src}, esta palavra é usada para traduzir "camisa" e {yIvbeH SeQHa':n:no
       <column name="part_of_speech">n</column>
       <column name="definition">pants</column>
       <column name="definition_de">Hose</column>
-      <column name="definition_fa">شلوار [AUTOTRANSLATED]</column>
+      <column name="definition_fa">شلوار</column>
       <column name="definition_sv">byxor</column>
       <column name="definition_ru">брюки</column>
       <column name="definition_zh_HK">褲</column>

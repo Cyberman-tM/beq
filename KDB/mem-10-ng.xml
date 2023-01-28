@@ -752,7 +752,7 @@ Begreppet "jungfru" kan uttryckas genom att bokstavligen säga vad en jungfru ä
       <column name="definition_sv">vara konsonant [AUTOTRANSLATED]</column>
       <column name="definition_ru">быть согласным [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">輔音 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">ser consonante [AUTOTRANSLATED]</column>
+      <column name="definition_pt">ser consonante</column>
       <column name="definition_fi">olla sopusointuinen, harmoninen (sävelistä)</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ngapHa':v}</column>
@@ -795,7 +795,7 @@ Begreppet "jungfru" kan uttryckas genom att bokstavligen säga vad en jungfru ä
           <column name="definition_sv">vara disharmonisk, dissonant [AUTOTRANSLATED]</column>
           <column name="definition_ru">быть диссонирующим, диссонирующим [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">不和諧，不和諧 [AUTOTRANSLATED]</column>
-          <column name="definition_pt">ser discordante, dissonante [AUTOTRANSLATED]</column>
+          <column name="definition_pt">ser discordante, dissonante</column>
           <column name="definition_fi">olla riitasointuinen, dissonantti (sävelistä)</column>
           <column name="synonyms"></column>
           <column name="antonyms">{ngap:v}</column>
@@ -1340,12 +1340,12 @@ Voidaan sanoa {mab ngaQmoH:sen@@mab:n:2, ngaQmoH:v:2} ja niin edelleen, mutta t�
           <column name="entry_name">ngaS 'aplo'</column>
           <column name="part_of_speech">sen:phr</column>
           <column name="definition">contents (of a game box)</column>
-          <column name="definition_de">Inhalt (einer Spielschachtel) [AUTOTRANSLATED]</column>
+          <column name="definition_de">Inhalt (einer Spielebox)</column>
           <column name="definition_fa">محتویات (یک جعبه بازی) [AUTOTRANSLATED]</column>
           <column name="definition_sv">innehåll (i en spellåda) [AUTOTRANSLATED]</column>
           <column name="definition_ru">содержимое (коробки с игрой) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">內容物（遊戲盒） [AUTOTRANSLATED]</column>
-          <column name="definition_pt">conteúdo (de uma caixa de jogo) [AUTOTRANSLATED]</column>
+          <column name="definition_pt">conteúdo (de uma caixa de jogo)</column>
           <column name="definition_fi">laatikko sisältää, "laatikon sisältö" (otsikko)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
@@ -1514,7 +1514,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="entry_name">ngav</column>
       <column name="part_of_speech">n</column>
       <column name="definition">writer's cramp</column>
-      <column name="definition_de">Krampf des Schreibers</column>
+      <column name="definition_de">Schreibkrampf</column>
       <column name="definition_fa">گرفتگی نویسنده [AUTOTRANSLATED]</column>
       <column name="definition_sv">skrivkramp</column>
       <column name="definition_ru">писательская судорога</column>
@@ -1686,12 +1686,12 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="entry_name">ngayvo'wan</column>
       <column name="part_of_speech">n</column>
       <column name="definition">work pants</column>
-      <column name="definition_de">Arbeitshose [AUTOTRANSLATED]</column>
+      <column name="definition_de">Arbeitshose</column>
       <column name="definition_fa">شلوار کار [AUTOTRANSLATED]</column>
       <column name="definition_sv">arbetsbyxor [AUTOTRANSLATED]</column>
       <column name="definition_ru">рабочие штаны [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">工作褲 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">calças de trabalho [AUTOTRANSLATED]</column>
+      <column name="definition_pt">calças de trabalho</column>
       <column name="definition_fi">eräs vaate, työhousut</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -1704,7 +1704,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Written in "xifan hol", this is "fayvo'wan" or "501", which is a style of Levi's jeans.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1785,7 +1785,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="antonyms"></column>
       <column name="see_also">{ngagh:v}, {Sep:v:1}, {qey'Hav:n}, {'InSep:n}, {ja'chuq:v}</column>
       <column name="notes">The subject of this verb is all the involved parties.</column>
-      <column name="notes_de">Das Thema dieses Verbs sind alle Beteiligten. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Das Subjekt dieses Verbs sind alle Beteiligten.</column>
       <column name="notes_fa">موضوع این فعل همه طرفین درگیر است. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Ämnet för detta verb är alla inblandade parter. [AUTOTRANSLATED]</column>
       <column name="notes_ru">Предметом этого глагола являются все вовлеченные стороны. [AUTOTRANSLATED]</column>
@@ -2581,7 +2581,7 @@ No {paq'batlh:src}, a expressão {qul ngeng HeH:n:nolink} é usada para se refer
       <column name="entry_name">ngep'oS</column>
       <column name="part_of_speech">n:reg</column>
       <column name="definition">stairs, stairway (except at ship door)</column>
-      <column name="definition_de">Treppe, Stufen</column>
+      <column name="definition_de">Treppe, Stufen (ausgenommen bei Schiffstüren)</column>
       <column name="definition_fa">پله ها، راه پله ها (به استثنای درب کشتی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">trappa, trappuppgång (utom vid skeppsdörr)</column>
       <column name="definition_ru">лестница, лестница (кроме двери корабля) [AUTOTRANSLATED]</column>
@@ -2935,7 +2935,7 @@ Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von ausw
       <column name="part_of_speech">n:being,deriv</column>
       <column name="definition">seller</column>
       <column name="definition_de">Verkäufer</column>
-      <column name="definition_fa">فروشنده [AUTOTRANSLATED]</column>
+      <column name="definition_fa">فروشنده</column>
       <column name="definition_sv">säljare</column>
       <column name="definition_ru">продавец, торговец</column>
       <column name="definition_zh_HK">賣家</column>
@@ -4070,7 +4070,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
       <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
+      <column name="search_tags_de">Ziegelstein</column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru"></column>
@@ -4977,7 +4977,7 @@ Tämä sana löytyy myös arkaaisesta lausekkeesta {ngoS tlhogh cha:sen:nolink} 
       <column name="definition_fi">luikerrella, kiemurrella, vääntelehtiä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{nogh:v}, {'eD:v:1}, {'orgh:v}, {ghargh:n}</column>
+      <column name="see_also">{nogh:v}, {ghIS:v}, {'eD:v:1}, {'orgh:v}, {ghargh:n}</column>
       <column name="notes">This means to move like a snake.[1]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
