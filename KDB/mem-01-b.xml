@@ -421,7 +421,7 @@ That the target is marked with {-Daq:n:nolink} is known from {SkyBox 14:src} and
       <column name="definition_sv">eld, avfyra (torped, raket, missil)</column>
       <column name="definition_ru">Вести огонь (торпедой, ракетой, реактивным снарядом)</column>
       <column name="definition_zh_HK">發射（魚雷、火箭、飛彈）</column>
-      <column name="definition_pt">fogo (torpedo, foguete, míssil)</column>
+      <column name="definition_pt">atirar (torpedo, foguete, míssil)</column>
       <column name="definition_fi">laukaista (torpedo, raketti, ohjus)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -466,7 +466,7 @@ Veja Gowron dizer o seguinte: {YouTube video:url:http://youtu.be/kWP0lgIYMBA}</c
 Pääte {-Daq:n} merkitsee kohteen.
 
 Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYMBA} [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Since {cha:n} is inherently plural, {yIbaH:sen:nolink} means to fire multiple torpedoes. {tIbaH:sen:nolink}, however, can be used to with {cha:n:nolink} to indicate multiple volleys of torpedoes, and its use in the song {cha cha cha:sen:nolink} (by {jenbom:n:name,nolink}) is with this meaning.[3]</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -484,7 +484,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi">ampua</column>
-      <column name="source">[1] {TKD:src}, [2] {KGT p.57:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KGT p.57:src}, [3] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -498,7 +498,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
       <column name="definition_zh_HK">發射器、火箭筒</column>
       <column name="definition_pt">lançador</column>
       <column name="definition_fi">raketinheitin, sinko</column>
-      <column name="synonyms">{tal:n}</column>
+      <column name="synonyms">{tal:n:1}</column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes"></column>
@@ -664,7 +664,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
       <column name="_id"></column>
       <column name="entry_name">bam</column>
       <column name="part_of_speech">v:t_c</column>
-      <column name="definition">face, have the prospect of having to deal with</column>
+      <column name="definition">face (have the prospect of having to deal with)</column>
       <column name="definition_de">gegenüber stehen, von etwas bedroht werden</column>
       <column name="definition_fa">چهره، چشم انداز نیاز به مقابله با [AUTOTRANSLATED]</column>
       <column name="definition_sv">bemöta, stå inför, behöva hantera</column>
@@ -674,7 +674,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/kWP0lgIYM
       <column name="definition_fi">kohdata, joutua käsittelemään jotakin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{qaD:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1184,6 +1184,49 @@ In Japanese, "baka" means "fool" or "idiot".</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">baQpel</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">pull-up with alternating hands</column>
+      <column name="definition_de">Klimmzug mit abwechselnden Händen [AUTOTRANSLATED]</column>
+      <column name="definition_fa">کشش با دست های متناوب [AUTOTRANSLATED]</column>
+      <column name="definition_sv">pull-up med omväxlande händer [AUTOTRANSLATED]</column>
+      <column name="definition_ru">подтягивания с чередованием рук [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">雙手交替引體向上 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pull-up com as mãos alternadas [AUTOTRANSLATED]</column>
+      <column name="definition_fi">leuanveto vuorotellen eri käsillä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is a variant form of the {choQpel:n} exercise in which one uses one arm for the first up-down movement, then the other arm for the next movement, and so forth. As with the more basic {choQpel:n:nolink}, there are {chap:n} and {toch:n} variants.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components">{baQ:v:3}, {pel:n:hyp}</column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">bar</column>
       <column name="part_of_speech">v:i</column>
       <column name="definition">blink, flash</column>
@@ -1225,6 +1268,49 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 25 (2018):src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">barwI'</column>
+          <column name="part_of_speech">n:alt,deriv</column>
+          <column name="definition">{wavre':n}</column>
+          <column name="definition_de">{wavre':n}</column>
+          <column name="definition_fa">{wavre':n}</column>
+          <column name="definition_sv">{wavre':n}</column>
+          <column name="definition_ru">{wavre':n}</column>
+          <column name="definition_zh_HK">{wavre':n}</column>
+          <column name="definition_pt">{wavre':n}</column>
+          <column name="definition_fi">{wavre':n}</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 30 (2023):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">bargh</column>
@@ -1240,7 +1326,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{vut'un:n}, {mIv bargh:n}, {nevDagh:n}, {'Ib:n}</column>
-      <column name="notes"></column>
+      <column name="notes">There are not many traditional ways of preparing hot Klingon food. Maltz thought that a "casserole" could be termed simply {bargh Soj:n@@bargh:n, Soj:n:1}.[2]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -1258,15 +1344,15 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="examples_zh_HK"></column>
       <column name="examples_pt"></column>
       <column name="examples_fi"></column>
-      <column name="search_tags">pan, pot, dish</column>
+      <column name="search_tags">pan, pot, dish, casserole</column>
       <column name="search_tags_de"></column>
       <column name="search_tags_fa"></column>
       <column name="search_tags_sv"></column>
       <column name="search_tags_ru">кастрюля, горшок, блюдо</column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="search_tags_fi">laatikkoruoka, vuokaruoka</column>
+      <column name="source">[1] {KGT:src}, [2] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1480,7 +1566,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
           <column name="notes_pt"></column>
           <column name="notes_fi"></column>
           <column name="hidden_notes"></column>
-          <column name="components"></column>
+          <column name="components">{baS:n}, {Ha'on:n}</column>
           <column name="examples"></column>
           <column name="examples_de"></column>
           <column name="examples_fa"></column>
@@ -1632,7 +1718,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="_id"></column>
       <column name="entry_name">baSta'</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">vector</column>
+      <column name="definition">vector (math)</column>
       <column name="definition_de">Vektor</column>
       <column name="definition_fa">وکتور [AUTOTRANSLATED]</column>
       <column name="definition_sv">vektor</column>
@@ -2376,7 +2462,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="definition_ru">Быть неудобным, быть тревожным, быть озабоченным, быть неуверенным</column>
       <column name="definition_zh_HK">不舒服、擔心、猶豫不決 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser desconfortável, ser preocupado, ser hesitante</column>
-      <column name="definition_fi">olla epämukavasti, olla huolissaan, olla epäröivä</column>
+      <column name="definition_fi">olla epämukavasti, olla huolissaan, olla epäröivä, olla epävarma</column>
       <column name="synonyms"></column>
       <column name="antonyms">{baw':v}</column>
       <column name="see_also"></column>
@@ -2680,7 +2766,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="definition_fi">katontekijä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{majyang mutlhwI':n}</column>
       <column name="notes">This refers to a person who lays out the shingles, planks, etc., when constructing a roof.</column>
       <column name="notes_de">Dies bezieht sich auf eine Person, die beim Bau eines Daches die Schindeln, Bretter usw. auslegt. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این مربوط به شخصی است که هنگام ساختن سقف ، زونا ، تخته و غیره را دراز می کند. [AUTOTRANSLATED]</column>
@@ -2690,7 +2776,7 @@ In Japanese, "baka" means "fool" or "idiot".</column>
       <column name="notes_pt">Refere-se a uma pessoa que estabelece as telhas, tábuas, etc., ao construir um telhado.</column>
       <column name="notes_fi">Tämä viittaa henkilöön, joka asentaa katon rakentamisen yhteydessä vyöruusut, lankut jne. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
-      <column name="components">{majyang:n}, {mutlh:v}, {-wI':v}</column>
+      <column name="components">{beb:n}, {mutlh:v}, {-wI':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -3871,7 +3957,7 @@ In the episode {DS9 - Sons and Daughters:src}, this word (Anglicised "bekk") was
           <column name="definition_ru">задняя обложка (книги) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">封底（書） [AUTOTRANSLATED]</column>
           <column name="definition_pt">contracapa (de livro)</column>
-      <column name="definition_fi">(kirjan) takakansi</column>
+          <column name="definition_fi">(kirjan) takakansi</column>
           <column name="synonyms"></column>
           <column name="antonyms">{bI'reS 'echlet:n}</column>
           <column name="see_also">{paq:n:1}, {wIlHay:n}</column>
@@ -4467,7 +4553,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="_id"></column>
       <column name="entry_name">beylI'</column>
       <column name="part_of_speech">n</column>
-      <column name="definition">bank</column>
+      <column name="definition">bank (financial establishment)</column>
       <column name="definition_de">Bank</column>
       <column name="definition_fa">بانک</column>
       <column name="definition_sv">bank</column>
@@ -4521,7 +4607,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
-      <column name="notes">Known types of {bey':n:nolink} include the {betleH bey':n}, the {quv bey':n}, and the {nuH bey':n}.</column>
+      <column name="notes">Known types of {bey':n:nolink} include the {betleH bey':n}, the {quv bey':n}, and the {nuH bey':n}.[2]</column>
       <column name="notes_de">Bekannte Arten von {bey':n:nolink} sind {betleH bey':n}, {quv bey':n} und {nuH bey':n}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">انواع شناخته شده {bey':n:nolink} شامل {betleH bey':n} ، {quv bey':n} و {nuH bey':n} است. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Kända typer av {bey':n:nolink} inkluderar {betleH bey':n}, {quv bey':n} och {nuH bey':n}. [AUTOTRANSLATED]</column>
@@ -4547,7 +4633,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {KGT:src}</column>
+      <column name="source">[1] {KGT:src}, [2] {KCD:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -4779,7 +4865,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="definition_ru">Бетазед</column>
       <column name="definition_zh_HK">Betazed [AUTOTRANSLATED]</column>
       <column name="definition_pt">Betazed</column>
-      <column name="definition_fi">Betazed</column>
+      <column name="definition_fi">eräs planeetta, Betazed</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -4790,7 +4876,7 @@ Klingonin legendassa {qeylIS'e' lIjlaHbe'bogh vay':n:name} vääristi alkuperäi
       <column name="notes_ru">Планета в составе Федерации. Населена телепатами.</column>
       <column name="notes_zh_HK">聯邦中的一顆行星。它的居民是心靈感應者。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Um planeta na Federação. Seus habitantes são telepatas. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Planeetta federaatiossa. Sen asukkaat ovat telepaatteja. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Eräs telepaattien asuttama planeetta Liitossa.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -7517,7 +7603,7 @@ Speculation: This may have been intended to be {tIS'ub:n:nolink} but was changed
       <column name="_id"></column>
       <column name="entry_name">bIt</column>
       <column name="part_of_speech">v:is,klcp1</column>
-      <column name="definition">be nervous, uneasy</column>
+      <column name="definition">be nervous, be uneasy</column>
       <column name="definition_de">nervös, unruhig sein</column>
       <column name="definition_fa">عصبی، ناراحت کننده بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara nervös, vara rastlös</column>
@@ -8001,6 +8087,49 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">bI'raD</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">dough, batter</column>
+      <column name="definition_de">Teig</column>
+      <column name="definition_fa">خمیر، خمیر [AUTOTRANSLATED]</column>
+      <column name="definition_sv">deg, smet [AUTOTRANSLATED]</column>
+      <column name="definition_ru">тесто, кляр [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">麵團，麵糊 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">massa, batedor [AUTOTRANSLATED]</column>
+      <column name="definition_fi">taikina</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{tIr ngogh:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">bI'rel tlharghDuj</column>
       <column name="part_of_speech">n:fic</column>
       <column name="definition">B'rel Scout</column>
@@ -8141,7 +8270,7 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
           <column name="definition_ru">передняя обложка (книги) [AUTOTRANSLATED]</column>
           <column name="definition_zh_HK">封面（書） [AUTOTRANSLATED]</column>
           <column name="definition_pt">capa (de livro)</column>
-      <column name="definition_fi">(kirjan) etukansi</column>
+          <column name="definition_fi">(kirjan) etukansi</column>
           <column name="synonyms"></column>
           <column name="antonyms">{bertlham 'echlet:n}</column>
           <column name="see_also">{paq:n:1}, {wIlHay:n}</column>
@@ -8170,7 +8299,7 @@ For "oh, yeah?" meaning simply "Is that so?", see {qar'a'?:sen}</column>
           <column name="search_tags_ru"></column>
           <column name="search_tags_zh_HK"></column>
           <column name="search_tags_pt"></column>
-          <column name="search_tags_fi"></column>
+          <column name="search_tags_fi">kansi</column>
           <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
         </table>
     <table name="mem">
@@ -8368,7 +8497,7 @@ For the Pittsburgh Art Tour, Marc Okrand suggested to translate "space capsule" 
       <column name="definition_fi">olla kiiltävä</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ghIch:n}, {bochmoHwI':n}, {wov:v}, {chorgh:v}</column>
+      <column name="see_also">{ghIch:n}, {bochmoHwI':n}, {wov:v}, {chorgh:v}, {naq:v}</column>
       <column name="notes">There is an idiom, {boch; ghIch rur@@boch:v, ghIch:n, rur:v}.[2]</column>
       <column name="notes_de">Es gibt eine Redewendung, {boch; ghIch rur@@boch:v, ghIch:n, rur:v}.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">اصطلاحی وجود دارد ، {boch; ghIch rur@@boch:v, ghIch:n, rur:v}.[2] [AUTOTRANSLATED]</column>
@@ -9185,7 +9314,7 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">olla kyse jostain</column>
       <column name="source">[1] {qep'a' 12 (2005):src}</column>
     </table>
     <table name="mem">
@@ -9285,7 +9414,7 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="definition_sv">alliera med, förena med, skapa en allians med</column>
       <column name="definition_ru">Вступать в союз с, заключать альянс с</column>
       <column name="definition_zh_HK">結盟</column>
-      <column name="definition_pt">aliado com, formar uma aliança com</column>
+      <column name="definition_pt">aliar com, formar uma aliança com</column>
       <column name="definition_fi">liittoutua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9328,7 +9457,7 @@ Reverse of {nob:v}. This was apparently not intentional.</column>
       <column name="definition_sv">lägg till (används i matematik) [AUTOTRANSLATED]</column>
       <column name="definition_ru">добавлять(используется в математике)</column>
       <column name="definition_zh_HK">加（數學）</column>
-      <column name="definition_pt">adição (usado em matemática)</column>
+      <column name="definition_pt">adicionar (usado em matemática)</column>
       <column name="definition_fi">laskea yhteen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9938,7 +10067,7 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
       <column name="definition_sv">kurra, knorra (ljud från mage)</column>
       <column name="definition_ru">Бульканье</column>
       <column name="definition_zh_HK">汩汩 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">gorgolejo</column>
+      <column name="definition_pt">gorgolejar</column>
       <column name="definition_fi">lorista</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -9981,7 +10110,7 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
       <column name="definition_sv">åska</column>
       <column name="definition_ru">Гром</column>
       <column name="definition_zh_HK">行雷</column>
-      <column name="definition_pt">trovão</column>
+      <column name="definition_pt">trovejar</column>
       <column name="definition_fi">ukkonen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -10029,7 +10158,7 @@ Marc Okrand ({marq 'oqranD:n:name}) is billed as Associate Producer, translated 
       <column name="definition_fi">borg</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{qoq:n}</column>
+      <column name="see_also">{qoq:n}, {yam:v}, {yamqeq:n}</column>
       <column name="notes">Watch the lecture on Klingon (by Marc Okrand) in which this word appears: {YouTube video:url:https://youtu.be/5G_v20YlwWc?t=3600}</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -10404,7 +10533,7 @@ On myös siihen liittyvä idioomi {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AU
       <column name="notes_zh_HK">這個詞是指圍繞飛船的力場（{Surchem:n}）。有關手持式防護罩，請參閱{yoD:n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Esta palavra refere-se ao campo de força ({Surchem:n}) ao redor de uma nave espacial. Para escudos de mão, consulte {yoD:n}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä sana viittaa avaruusalusta ympäröivään voimakenttään ({Surchem:n}). Katso kädessä pidettävät kilvet kohdasta {yoD:n}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This word appears to be singular (and not inherently plural) in Klingon.</column>
       <column name="components">{bot:n:hyp,nolink} or {bot:v}, {jan:n:1}</column>
       <column name="examples">
 ▶ {botjan yIchu'!:sen}</column>
@@ -10425,49 +10554,92 @@ On myös siihen liittyvä idioomi {bIr; bortaS rur@@bIr:v, bortaS:n, rur:v}. [AU
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">botjan yIchu'!</column>
-      <column name="part_of_speech">sen:phr</column>
-      <column name="definition">Raise shields!</column>
-      <column name="definition_de">Schilde heben!</column>
-      <column name="definition_fa">بالا بردن سپر! [AUTOTRANSLATED]</column>
-      <column name="definition_sv">Aktivera sköldar!</column>
-      <column name="definition_ru">Поднять щиты!</column>
-      <column name="definition_zh_HK">升起護盾！</column>
-      <column name="definition_pt">Levantar escudos!</column>
-      <column name="definition_fi">Nosta kilvet!</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">Watch Gowron say this: {YouTube video:url:http://youtu.be/BhNqW6yOnZU}</column>
-      <column name="notes_de">Beobachten Sie, wie Gowron Folgendes sagt: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="notes_fa">تماشا کنید Gowron این را می گوید: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Se Gowron säga detta: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Смотрите, как Гаурон говорит это: {YouTube video:url:http://youtu.be/BhNqW6yOnZU}</column>
-      <column name="notes_zh_HK">觀看Gowron這樣說：{YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Assista Gowron dizer o seguinte: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
-      <column name="components">{botjan:n}, {yI-:v}, {chu':v:2}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {KCD:src}</column>
-    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">botjan HoS SIlwI'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">shield energy diverter</column>
+          <column name="definition_de">Schildenergieumlenker [AUTOTRANSLATED]</column>
+          <column name="definition_fa">منحرف کننده انرژی سپر [AUTOTRANSLATED]</column>
+          <column name="definition_sv">skärm energiavledare [AUTOTRANSLATED]</column>
+          <column name="definition_ru">отвод энергии щита [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">護盾能量轉向器 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">escudo desviador de energia [AUTOTRANSLATED]</column>
+          <column name="definition_fi">kilven energiaohitin</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">This is a component of a cloaking device.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{botjan:n}, {HoS:n:1}, {SIl:v}, {-wI':n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Star Trek Picard - Season 3 credits:src}, [2] {qep'a' 30 (2023):src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">botjan yIchu'!</column>
+          <column name="part_of_speech">sen:phr</column>
+          <column name="definition">Raise shields!</column>
+          <column name="definition_de">Schilde heben!</column>
+          <column name="definition_fa">بالا بردن سپر! [AUTOTRANSLATED]</column>
+          <column name="definition_sv">Aktivera sköldar!</column>
+          <column name="definition_ru">Поднять щиты!</column>
+          <column name="definition_zh_HK">升起護盾！</column>
+          <column name="definition_pt">Levantar escudos!</column>
+          <column name="definition_fi">Nosta kilvet!</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">Watch Gowron say this: {YouTube video:url:http://youtu.be/BhNqW6yOnZU}</column>
+          <column name="notes_de">Beobachten Sie, wie Gowron Folgendes sagt: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="notes_fa">تماشا کنید Gowron این را می گوید: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Se Gowron säga detta: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Смотрите, как Гаурон говорит это: {YouTube video:url:http://youtu.be/BhNqW6yOnZU}</column>
+          <column name="notes_zh_HK">觀看Gowron這樣說：{YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Assista Gowron dizer o seguinte: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/BhNqW6yOnZU} [AUTOTRANSLATED]</column>
+          <column name="hidden_notes"></column>
+          <column name="components">{botjan:n}, {yI-:v}, {chu':v:2}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KCD:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">botlh</column>
@@ -11111,7 +11283,7 @@ Tätä sanaa käytetään sanastoissa {bo'Dagh'a' lo':sen} ja {bo'DaghHom lo':se
       <column name="definition_ru">Борет</column>
       <column name="definition_zh_HK">「布拉斯」星</column>
       <column name="definition_pt">Boreth</column>
-      <column name="definition_fi">Boreth</column>
+      <column name="definition_fi">eräs planeetta, Boreth</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghochwI':n}, {poH qut:n}</column>
@@ -11143,10 +11315,10 @@ Historien om löftet säger:
 
 A história da promessa afirma que:
 ▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Planeetta Klingonin imperiumissa. Klingonin mytologian mukaan {qeylIS'e' lIjlaHbe'bogh vay':n:name} palaa tänne.
+      <column name="notes_fi">Eräs planeetta klingonien imperiumissa. Klingonimytologian mukaan Kahless Unohtumaton ({qeylIS'e' lIjlaHbe'bogh vay':n:name}) palaa tänne.
 
-Lupauksen tarinassa todetaan, että:
-▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen} [AUTOTRANSLATED]</column>
+Lupauksen tarinassa todetaan:
+▶ {ghIq chalDaq HovDaq SIq qeylIS 'ej jatlh pa' DaqHomvetlh wovDaq HInej.:sen}</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>

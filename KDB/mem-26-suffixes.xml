@@ -1037,7 +1037,7 @@ Suurimmalle osalle kiinteää ajanjaksoa osoittavista sanoista tämä pääte os
       <column name="definition_fi">lokatiivi, -ssa/-ssä, -:n (substantiiviliite 5)</column>
       <column name="synonyms"></column>
       <column name="antonyms">{-vo':n:suff}</column>
-      <column name="see_also">{Daq:n}, {naDev:n}, {pa':n:2}, {Dat:n}, {chegh:v}</column>
+      <column name="see_also">{Daq:n:1}, {naDev:n}, {pa':n:2}, {Dat:n}, {chegh:v}</column>
       <column name="notes">This suffix indicates that an action is occurring (or has occurred or will occur) in the vicinity of the noun to which it is attached.[1] It can typically be used only for physical locations.[2]
 
 Some verbs have locative notions in their meanings, and care must be taken when using {-Daq:n:suff,nolink} with such verbs. See {ghoS:v:1} and {jaH:v} for more details. With verbs of shooting, such as {baH:v} and {bach:v}, {-Daq:n:suff,nolink} marks the target.
@@ -1558,7 +1558,7 @@ For machines, mechanical devices, automatic doors, etc., this suffix can indicat
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes">This suffix is rarely used with a first-person subject, as it's culturally taboo.[1]</column>
-      <column name="notes_de">Dieses Suffix wird bei einem Thema aus der ersten Person selten verwendet, da es kulturell tabu ist.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_de">Dieses Suffix wird bei einem Subjekt aus der ersten Person selten verwendet, da es kulturell tabu ist.[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این پسوند به ندرت با موضوع اول شخص استفاده می شود ، زیرا از نظر فرهنگی تابو است.[1] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Det här suffixet används sällan med ett förstapersonsämne, eftersom det är kulturellt tabu.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Этот суффикс редко используется с предметом от первого лица, поскольку это культурно табу.[1] [AUTOTRANSLATED]</column>
@@ -1826,7 +1826,7 @@ Multiple uses of {-lu'} in a complex sentence refer back to the same indefinite 
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes">Some speakers use this to combine {-lu':v} and {-laH:v} into one suffix, to express both indefinite subject and ability simultaneously. No one accepts this construction as grammatical, but its inappropriateness is what gives it elocutionary clout. It should be avoided unless one is very comfortable with the nuances of Klingon style.</column>
-      <column name="notes_de">Einige Sprecher verwenden dies, um {-lu':v} und {-laH:v} in einem Suffix zu kombinieren, um sowohl unbestimmtes Thema als auch Fähigkeit gleichzeitig auszudrücken. Niemand akzeptiert diese Konstruktion als grammatikalisch, aber ihre Unangemessenheit verleiht ihr elokutionären Einfluss. Es sollte vermieden werden, es sei denn, man ist mit den Nuancen des klingonischen Stils sehr vertraut. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Einige Sprecher verwenden dies, um {-lu':v} und {-laH:v} in einem Suffix zu kombinieren, um sowohl unbestimmtes Subjekt als auch Fähigkeit gleichzeitig auszudrücken. Niemand akzeptiert diese Konstruktion als grammatikalisch, aber ihre Unangemessenheit verleiht ihr elokutionären Einfluss. Es sollte vermieden werden, es sei denn, man ist mit den Nuancen des klingonischen Stils sehr vertraut. [AUTOTRANSLATED]</column>
       <column name="notes_fa">برخی از بلندگوها از این ترکیب برای ترکیب {-lu':v} و {-laH:v} در یک پسوند استفاده می کنند تا هم موضوع و توانایی نامشخص را به طور هم زمان بیان کنند. هیچ کس این ساخت و ساز را به عنوان دستوری نمی پذیرد ، اما نامناسب بودن آن چیزی است که به آن قدرت توجه می دهد. باید از آن پرهیز کرد مگر اینکه کسی با تفاوت های ظریف سبک کلینگون بسیار راحت باشد. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Vissa högtalare använder detta för att kombinera {-lu':v} och {-laH:v} till ett efterföljd för att uttrycka både obestämd ämne och förmåga samtidigt. Ingen accepterar denna konstruktion som grammatisk, men dess olämplighet är det som ger den elocutionary clout. Det bör undvikas såvida man inte är mycket bekväm med nyanserna i Klingon-stil. [AUTOTRANSLATED]</column>
       <column name="notes_ru"></column>
@@ -1869,7 +1869,7 @@ Multiple uses of {-lu'} in a complex sentence refer back to the same indefinite 
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes">Some speakers use this to combine {-lu':v} and {-laH:v} into one suffix, to express both indefinite subject and ability simultaneously. No one accepts this construction as grammatical, but its inappropriateness is what gives it elocutionary clout. It should be avoided unless one is very comfortable with the nuances of Klingon style.</column>
-      <column name="notes_de">Einige Sprecher verwenden dies, um {-lu':v} und {-laH:v} in einem Suffix zu kombinieren, um sowohl unbestimmtes Thema als auch Fähigkeit gleichzeitig auszudrücken. Niemand akzeptiert diese Konstruktion als grammatikalisch, aber ihre Unangemessenheit verleiht ihr elokutionären Einfluss. Es sollte vermieden werden, es sei denn, man ist mit den Nuancen des klingonischen Stils sehr vertraut. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Einige Sprecher verwenden dies, um {-lu':v} und {-laH:v} in einem Suffix zu kombinieren, um sowohl unbestimmtes Subjekt als auch Fähigkeit gleichzeitig auszudrücken. Niemand akzeptiert diese Konstruktion als grammatikalisch, aber ihre Unangemessenheit verleiht ihr elokutionären Einfluss. Es sollte vermieden werden, es sei denn, man ist mit den Nuancen des klingonischen Stils sehr vertraut. [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
       <column name="notes_sv">Vissa högtalare använder detta för att kombinera {-lu':v} och {-laH:v} till ett efterföljd för att uttrycka både obestämd ämne och förmåga samtidigt. Ingen accepterar denna konstruktion som grammatisk, men dess olämplighet är det som ger den elocutionary clout. Det bör undvikas såvida man inte är mycket bekväm med nyanserna i Klingon-stil. [AUTOTRANSLATED]</column>
       <column name="notes_ru">Некоторые ораторы используют это для объединения {-lu':v} и {-laH:v} в один суффикс, чтобы выразить одновременно неопределенный субъект и способность. Никто не принимает эту конструкцию как грамматическую, но ее неуместность - вот что дает ей красноречивое влияние. Этого следует избегать, если только вы не очень довольны нюансами стиля клингон. [AUTOTRANSLATED]</column>
@@ -2634,7 +2634,7 @@ There is an article in {HQ 7.3:src} which examines {-meH:v:suff,nolink} clauses 
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">While the interrogative suffix cannot be used on a noun, in {Star Trek V:src}, a surprised Captain Klaa says the line {'entepray''a'?:sen:nolink} which is captioned "Enterprise?" In the episode {DSC - Si vis pacem, para bellum:src} (whose Klingon lines were not written by Marc Okrand), Kol says {QIn'a'?:sen:nolink} which is captioned as "A message?" If these are instances of the interrogative suffix being attached to nouns, the grammar has not been explained.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2848,7 +2848,7 @@ Tämä pääte on liitetty paahtoleivän verbiin, joka tulee aina viimeiseksi pa
       <column name="definition_sv">gör inte!, tänker inte (verbtyp R)</column>
       <column name="definition_ru">не буду! (глагол тип R)</column>
       <column name="definition_zh_HK">不要！、不會！（動詞流浪後綴）</column>
-      <column name="definition_pt">não !, não vou! (verbal tipo R)</column>
+      <column name="definition_pt">não!, não vou! (verbal tipo R)</column>
       <column name="definition_fi">kieltäytyminen (seikkailija)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>

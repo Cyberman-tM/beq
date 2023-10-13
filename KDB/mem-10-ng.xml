@@ -266,7 +266,7 @@ This word might be used of someone who has beamed away, once that person is gone
       <column name="definition_de">sich paaren mit (Geschlechtsverkehr haben)</column>
       <column name="definition_fa">همسر با [AUTOTRANSLATED]</column>
       <column name="definition_sv">para sig med</column>
-      <column name="definition_ru">встречаться с</column>
+      <column name="definition_ru">совокупляться с</column>
       <column name="definition_zh_HK">與……交配</column>
       <column name="definition_pt">acasalar com</column>
       <column name="definition_fi">harrastaa seksiä jonkun kanssa, paritella</column>
@@ -745,7 +745,7 @@ Begreppet "jungfru" kan uttryckas genom att bokstavligen säga vad en jungfru ä
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngap</column>
-      <column name="part_of_speech">v</column>
+      <column name="part_of_speech">v:is</column>
       <column name="definition">be consonant</column>
       <column name="definition_de">konsonant, harmonisch sein</column>
       <column name="definition_fa">همخوان باشد [AUTOTRANSLATED]</column>
@@ -788,8 +788,8 @@ Begreppet "jungfru" kan uttryckas genom att bokstavligen säga vad en jungfru ä
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">ngapHa'</column>
-          <column name="part_of_speech">v:deriv</column>
-          <column name="definition">be discordant, dissonant</column>
+          <column name="part_of_speech">v:is,deriv</column>
+          <column name="definition">be discordant, be dissonant</column>
           <column name="definition_de">dissonant, unharmonisch sein</column>
           <column name="definition_fa">ناسازگار، ناسازگار باشد [AUTOTRANSLATED]</column>
           <column name="definition_sv">vara disharmonisk, dissonant [AUTOTRANSLATED]</column>
@@ -1210,7 +1210,7 @@ Voidaan sanoa {mab ngaQmoH:sen@@mab:n:2, ngaQmoH:v:2} ja niin edelleen, mutta t�
       <column name="_id"></column>
       <column name="entry_name">ngar</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be miraculous, supernatural, wondrous</column>
+      <column name="definition">be miraculous, be supernatural, be wondrous</column>
       <column name="definition_de">wundersam, übernatürlich, wunderlich sein</column>
       <column name="definition_fa">معجزه آسا، فوقالعاده، شگفت انگیز باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara mirakulös, övernaturlig, underbar [AUTOTRANSLATED]</column>
@@ -1437,7 +1437,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="definition_fi">maustettu jauhettu rusto (käytetään ruoanvalmistuksessa)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{wamwI' Ha'DIbaH:n}, {HomHap tun:n}</column>
+      <column name="see_also">{wamwI' Ha'DIbaH:n}, {tarleq:n}, {HomHap tun:n}</column>
       <column name="notes">This is mixed with {tIr:n} and used to {pID:v:1} food.[1, p.89]</column>
       <column name="notes_de"></column>
       <column name="notes_fa">این مخلوط با {tIr:n} است و برای {pID:v:1} مواد غذایی استفاده می شود.[1, p.89] [AUTOTRANSLATED]</column>
@@ -1704,7 +1704,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">Written in "xifan hol", this is "fayvo'wan" or "501", which is a style of Levi's jeans.</column>
+      <column name="hidden_notes">Written partially in "xifan hol", this is "fayvo'wan" or "501", which is a style of Levi's jeans. (The {qaghwI':n} would be written as "z" in pure "xifan hol".)</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1820,7 +1820,7 @@ In comparison, the table of contents of a book would be labeled {paq 'ay'mey:n}.
       <column name="_id"></column>
       <column name="entry_name">ngeb</column>
       <column name="part_of_speech">v:is,klcp1</column>
-      <column name="definition">be counterfeit, false, fake</column>
+      <column name="definition">be counterfeit, be false, be fake</column>
       <column name="definition_de">unecht, gefälscht sein</column>
       <column name="definition_fa">تقلبی، دروغ، جعلی بودن [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara förfalskad, vara falsk, vara oäkta</column>
@@ -2636,10 +2636,10 @@ No {paq'batlh:src}, a expressão {qul ngeng HeH:n:nolink} é usada para se refer
       <column name="see_also"></column>
       <column name="notes">This is used for the act of moving or putting things somewhere to store them. There is a subtle difference between this and {pol:v}, which refers to just keeping something somewhere. For example, {Soj Dangeq:sen@@Soj:n:1, Da-:v, ngeq:v} might be said to someone putting groceries into the food storage room ({Soj polmeH pa':n}). But {Soj Dapol:sen@@Soj:n:1, Da-:v, pol:v} might be said to someone whose groceries are already in the storage room.[1]
 
-This is also used with {qaw:n} idiomatically to refer to memorization. Once the thing is memorized, {pol:v:nolink} might make more sense. Both of these words are also used in the computer sense to mean "save" or "store" a file on a storage medium[1]</column>
+This is also used with {qaw:n} idiomatically to refer to memorization (see {ngeq qaw:sen}). Once the thing is memorized, {pol:v:nolink} might make more sense. Both of these words are also used in the computer sense to mean "save" or "store" a file on a storage medium.[1]</column>
       <column name="notes_de">Dies wird verwendet, wenn man Sachen irgendwo hinlegt, um sie dort zu lagern. Es gibt einen feinen Unterscheid zwischen dies und {pol:v}, welches sich nur auf den Verbleib der Sachen irgendwo bezieht. Zum Beispiel kann man {Soj Dangeq:sen@@Soj:n:1, Da-:v, ngeq:v} zu jemandem sagen, der gerade seine Einkäufe in die Speisekammer legt ({Soj polmeH pa':n}). Aber {Soj Dapol:sen@@Soj:n:1, Da-:v, pol:v} sagt man zu jemandem, wenn die Speisen bereits im Schrank liegen.[1]
 
-Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von auswendig lernen. Sobald man sich aber etwas gemerkt hat, ist {pol:v:nolink} wohl passender. Beide Verben können verwendet werden, wenn es darum geht, Daten auf einem Computer oder ähnlich zu speichern.[1]</column>
+Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von auswendig lernen (siehe {ngeq qaw:sen}). Sobald man sich aber etwas gemerkt hat, ist {pol:v:nolink} wohl passender. Beide Verben können verwendet werden, wenn es darum geht, Daten auf einem Computer oder ähnlich zu speichern.[1]</column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
       <column name="notes_ru"></column>
@@ -2649,9 +2649,9 @@ Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von ausw
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-{ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "I've memorized the poem" (literally, "my memory has stored the poem")</column>
+▶ {ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "I've memorized the poem" (literally, "my memory has stored the poem")</column>
       <column name="examples_de">
-{ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "Ich habe das Gedicht gelernt" (wörtlich, "mein Gedächtnis hat das Gedicht eingelagert")</column>
+▶ {ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "Ich habe das Gedicht gelernt" (wörtlich, "mein Gedächtnis hat das Gedicht eingelagert")</column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
       <column name="examples_ru"></column>
@@ -2668,6 +2668,51 @@ Das Verb kann auch in Kombination mit {qaw:n} verwendet werden im Sinne von ausw
       <column name="search_tags_fi">hamstrata, piilottaa</column>
       <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">ngeq qaw</column>
+          <column name="part_of_speech">sen:idiom</column>
+          <column name="definition">memorize (commit to memory), save (in storage medium)</column>
+          <column name="definition_de">sich merken (im Gedächtnis speichern), speichern (im Speichermedium)</column>
+          <column name="definition_fa">حفظ کردن (تعهد به حافظه)، ذخیره (در محیط ذخیره سازی) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">memorera (commit till minne), spara (på lagringsmedium) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">запомнить (зафиксировать в памяти), сохранить (на носителе) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">記憶（提交到內存中），保存（在存儲介質中） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">memorizar (confirmar na memória), salvar (no meio de armazenamento) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">opetella, oppia (ulkoa); tallentaa (tiedostojärjestelmään)</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">This is an idiom referring to committing something to memory. Once something is memorized, {pol:v} would be used to refer to keeping it there. Both of these expressions are also used in the computer sense to mean "save" or "store" a file on a storage medium.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{ngeq:v}, {qaw:n}</column>
+          <column name="examples">
+▶ {ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "I've memorized the poem" (literally, "my memory has stored the poem")</column>
+          <column name="examples_de">
+▶ {ghuQ ngeqpu' qawwIj:sen@@ghuQ:n, ngeq:v, -pu':v, qaw:n, -wIj:n} "Ich habe das Gedicht gelernt" (wörtlich, "mein Gedächtnis hat das Gedicht eingelagert")</column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi">opetella ulkoa, oppia ulkoa</column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2021:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ngeQ</column>
@@ -3111,7 +3156,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="_id"></column>
       <column name="entry_name">ngIbvay</column>
       <column name="part_of_speech">n:anim,fic</column>
-      <column name="definition">weird animal found on {Qo'noS:n} that looks like a rock</column>
+      <column name="definition">type of animal (weird animal found on {Qo'noS:n} that looks like a rock)</column>
       <column name="definition_de">seltsames Tier, das auf {Qo'noS:n} vorkommt und wie ein Stein aussieht</column>
       <column name="definition_fa">حیوان عجیبی در {Qo'noS:n} پیدا شد که شبیه سنگ است [AUTOTRANSLATED]</column>
       <column name="definition_sv">konstigt djur hittat på {Qo'noS:n} som ser ut som en sten [AUTOTRANSLATED]</column>
@@ -3197,7 +3242,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="_id"></column>
       <column name="entry_name">ngIj</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be rowdy, unruly</column>
+      <column name="definition">be rowdy, be unruly</column>
       <column name="definition_de">rauflustig, ungestüm sein</column>
       <column name="definition_fa">خجالت بکش [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara bråkig, vara stökig, vara oregerlig, vara bångstyrig</column>
@@ -3208,7 +3253,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Doch:v}, {Qut:v}</column>
-      <column name="notes"></column>
+      <column name="notes">This is a standard verb that is close in meaning to the slang expression {Duj ngaDHa':n}.[1, p.150]</column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -3250,7 +3295,7 @@ Kohdassa {TNK:src} "Missä kauppa on?" käännetään nimellä {nuqDaq ghaH ngev
       <column name="definition_fi">uskaltaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'uppol:n}</column>
       <column name="notes">Based on the {SkyBox 21:src} example, this means "have the courage to do something", rather than "provoke or challenge someone".</column>
       <column name="notes_de">Basierend auf dem {SkyBox 21:src}-Beispiel bedeutet dies "den Mut haben, etwas zu tun", anstatt "jemanden zu provozieren oder herauszufordern". [AUTOTRANSLATED]</column>
       <column name="notes_fa">براساس مثال {SkyBox 21:src} ، این بدان معنی است که "شجاعت انجام کاری را داشته باشید" ، نه اینکه "کسی را تحریک کرده یا به چالش بکشی". [AUTOTRANSLATED]</column>
@@ -4047,7 +4092,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="definition_fi">lohko, pala, paakku, tiili</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{Sawqe':n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4126,7 +4171,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="_id"></column>
       <column name="entry_name">ngogh tun</column>
       <column name="part_of_speech">n:deriv</column>
-      <column name="definition">pillow</column>
+      <column name="definition">pillow (soft head support not used by Klingons)</column>
       <column name="definition_de">Kissen</column>
       <column name="definition_fa">بالش</column>
       <column name="definition_sv">kudde</column>
@@ -4361,7 +4406,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="notes_pt"></column>
       <column name="notes_fi">Tätä sanaa voi käyttää verbin {mI':v} objektina.[1]</column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{ngol:v}, {pel:n:hyp}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4482,7 +4527,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="antonyms"></column>
       <column name="see_also">{ba'Suq:n}</column>
       <column name="notes">The subject of {ngon:v:nolink} (for example a liquid such as boiling water) produces or forms bubbles. A person blowing through a straw into a glass of water to make bubbles would be the subject of {ngonmoH:v@@ngon:v, -moH:v}.</column>
-      <column name="notes_de">Das Thema {ngon:v:nolink} (zum Beispiel eine Flüssigkeit wie kochendes Wasser) erzeugt oder bildet Blasen. Eine Person, die durch einen Strohhalm in ein Glas Wasser bläst, um Blasen zu bilden, wäre Gegenstand von {ngonmoH:v@@ngon:v, -moH:v}. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Das Subjekt {ngon:v:nolink} (zum Beispiel eine Flüssigkeit wie kochendes Wasser) erzeugt oder bildet Blasen. Eine Person, die durch einen Strohhalm in ein Glas Wasser bläst, um Blasen zu bilden, wäre Gegenstand von {ngonmoH:v@@ngon:v, -moH:v}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">موضوع {ngon:v:nolink} (به عنوان مثال مایع مانند آب جوش) حباب هایی را ایجاد یا شکل می دهد. شخصی که از طریق نی در یک لیوان آب برای ایجاد حباب دمیده می شود موضوع {ngonmoH:v@@ngon:v, -moH:v} خواهد بود. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Ämnet {ngon:v:nolink} (till exempel en vätska som kokande vatten) producerar eller bildar bubblor. En person som blåser genom ett sugrör i ett glas vatten för att göra bubblor skulle vara föremål för {ngonmoH:v@@ngon:v, -moH:v}. [AUTOTRANSLATED]</column>
       <column name="notes_ru"></column>
@@ -4566,7 +4611,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="definition_fi">koe, testi, kokeilu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ngong:v}, {QeD:n}, {bInglan:n}, {nger:n}, {Qulpa':n}</column>
+      <column name="see_also">{ngong:v}, {QeD:n}, {bInglan:n}, {nger:n}, {Qulpa':n}, {'aHDuH:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4873,7 +4918,7 @@ One of these was used in the production of the opera {'u':src}.</column>
       <column name="notes">The subject of this verb is the thing which is undergoing dissolution.
 
 This word is also found in the archaic expression {ngoS tlhogh cha:sen:nolink} (see {tlhogh:n}), which is said during the ritual of divorce.[2]</column>
-      <column name="notes_de">Das Thema dieses Verbs ist das, was sich auflöst.
+      <column name="notes_de">Das Subjekt dieses Verbs ist das, was sich auflöst.
 
 Dieses Wort findet sich auch im archaischen Ausdruck {ngoS tlhogh cha:sen:nolink} (siehe {tlhogh:n}), der während des Scheidungsrituals gesprochen wird. [2] [AUTOTRANSLATED]</column>
       <column name="notes_fa"></column>
@@ -4919,6 +4964,178 @@ Tämä sana löytyy myös arkaaisesta lausekkeesta {ngoS tlhogh cha:sen:nolink} 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}, [2] {DS9 - The House of Quark:src}, [3] {paq'batlh 2ed p.102-103:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ngotrI'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">latitude</column>
+      <column name="definition_de">Breite [AUTOTRANSLATED]</column>
+      <column name="definition_fa">عرض جغرافیایی [AUTOTRANSLATED]</column>
+      <column name="definition_sv">latitud [AUTOTRANSLATED]</column>
+      <column name="definition_ru">широта [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">緯度 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">latitude [AUTOTRANSLATED]</column>
+      <column name="definition_fi">leveysaste</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{'ab:v:2}, {Quv:n}</column>
+      <column name="notes">In some contexts, it's more common to express the location (stated in units of {lawrI'(mey):n@@lawrI':n}, though the word itself is optional) followed by {ngotrI':n:nolink} and/or {lungrI':n} without a verb. This is a form of clipped Klingon.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ngotrI'tal</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">parallel (latitude)</column>
+      <column name="definition_de">Breitengrad</column>
+      <column name="definition_fa">موازی (عرض جغرافیایی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">parallell (latitud) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">параллель (широта) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">平行（緯度） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">paralelo (latitude) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">leveyspiiri</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{Quv:n}</column>
+      <column name="notes">This refers to the imaginary lines used in determining coordinates (or the actual lines drawn on a map or similar image).[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ngottal</column>
+      <column name="part_of_speech">n:archaic</column>
+      <column name="definition">map line (traditional coordinate system)</column>
+      <column name="definition_de">Kartenlinie (traditionelles Koordinatensystem) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">خط نقشه (سیستم مختصات سنتی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">kartlinje (traditionellt koordinatsystem) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">линия карты (традиционная система координат) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">地圖線（傳統坐標系） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">linha do mapa (sistema de coordenadas tradicional) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräistä karttaviivoista perinteisessä koordinaattijärjestelmässä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ngotrI'tal:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ngotvI'</column>
+      <column name="part_of_speech">n:archaic</column>
+      <column name="definition">map coordinate (traditional coordinate system)</column>
+      <column name="definition_de">Kartenkoordinate (traditionelles Koordinatensystem) [AUTOTRANSLATED]</column>
+      <column name="definition_fa">مختصات نقشه (سیستم مختصات سنتی) [AUTOTRANSLATED]</column>
+      <column name="definition_sv">kartkoordinat (traditionellt koordinatsystem) [AUTOTRANSLATED]</column>
+      <column name="definition_ru">координата карты (традиционная система координат) [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">地圖坐標（傳統坐標系） [AUTOTRANSLATED]</column>
+      <column name="definition_pt">coordenada do mapa (sistema de coordenadas tradicional) [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräistä koordinaateista perinteisessä koordinaattijärjestelmässä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{ngotrI':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5112,6 +5329,49 @@ Tätä sanaa käytetään esineisiin tai ideoihin.[2] [AUTOTRANSLATED]</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ngub</column>
+      <column name="part_of_speech">v:i</column>
+      <column name="definition">migrate, immigrate, emigrate</column>
+      <column name="definition_de">auswandern, einwandern, migrieren</column>
+      <column name="definition_fa">مهاجرت، مهاجرت، مهاجرت [AUTOTRANSLATED]</column>
+      <column name="definition_sv">migrera, invandra, emigrera [AUTOTRANSLATED]</column>
+      <column name="definition_ru">мигрировать, иммигрировать, эмигрировать [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">移民，移​​民，移民 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">migrar, imigrar, emigrar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">muuttaa (maasta toiseen)</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">To specify immigration or emigration, the suffixes {-Daq:n:suff} and {-vo':n:suff} would be used on the destination or area of departure.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">nguD</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">be glued to</column>
@@ -5284,7 +5544,7 @@ Huomaa, että "silloin" tarkoittaa "myöhemmin" on {ghIq:adv}.[1][1] [AUTOTRANSL
       <column name="definition_ru">давать показания [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">作證 [AUTOTRANSLATED]</column>
       <column name="definition_pt">testificar</column>
-      <column name="definition_fi">todistaa</column>
+      <column name="definition_fi">todistaa (oikeudessa)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{nguHwI':n}, {mIwba':n}</column>
@@ -5320,14 +5580,14 @@ Huomaa, että "silloin" tarkoittaa "myöhemmin" on {ghIq:adv}.[1][1] [AUTOTRANSL
       <column name="_id"></column>
       <column name="entry_name">nguHwI'</column>
       <column name="part_of_speech">n:deriv,person</column>
-      <column name="definition">witness</column>
+      <column name="definition">witness (in court)</column>
       <column name="definition_de">Zeuge</column>
       <column name="definition_fa">شاهد [AUTOTRANSLATED]</column>
       <column name="definition_sv">bevittna [AUTOTRANSLATED]</column>
       <column name="definition_ru">свидетель [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">見證人 [AUTOTRANSLATED]</column>
       <column name="definition_pt">testemunha</column>
-      <column name="definition_fi">todistaja</column>
+      <column name="definition_fi">todistaja (oikeudessa)</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jantor:n}, {mIwba':n}, {bo'DIj:n}</column>
@@ -5578,7 +5838,7 @@ Huomaa, että "silloin" tarkoittaa "myöhemmin" on {ghIq:adv}.[1][1] [AUTOTRANSL
       <column name="_id"></column>
       <column name="entry_name">nguq</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be arrogant, haughty, conceited</column>
+      <column name="definition">be arrogant, be haughty, be conceited</column>
       <column name="definition_de">arrogant, hochmütig, eingebildet sein</column>
       <column name="definition_fa">متکبر، متکبر، متکبر [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara arrogant, vara inbilsk, vara högfärdig, vara egenkär</column>
@@ -5889,7 +6149,7 @@ Besides {chIS:v} and {qIj:v}, there are only two known color words in Klingon, {
       <column name="definition_sv">färga, fläcka, tona</column>
       <column name="definition_ru">краситель, морилка, оттенок [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">染料、染色、色調 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">corante, mancha, tonalidade</column>
+      <column name="definition_pt">tingir, manchar, colorir</column>
       <column name="definition_fi">värjätä, värittää</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5994,8 +6254,9 @@ The intransitivity of this verb was confirmed during the Q &amp; A session. The 
       <column name="components"></column>
       <column name="examples">
 ▶ {jar DamaSqu'bogh yIngu'!:sen}
-▶ {nuH DaneHbogh yIngu'!:sen:nolink}
-▶ {Daq DaDabbogh yIngu'!:sen}</column>
+▶ {nuH DaneHbogh yIngu'!:sen}
+▶ {Daq DaDabbogh yIngu'!:sen}
+▶ {DuHIv jagh Dangu'laHbe'bogh, vaj bIwunchoH 'ej bIpujchoH.:sen:nolink} "Attack by unknown enemy leaves you vulnerable and weak."[2]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -6011,5 +6272,48 @@ The intransitivity of this verb was confirmed during the Q &amp; A session. The 
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {Klingon Monopoly:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ngu'lIj</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">soot</column>
+      <column name="definition_de">Ruß</column>
+      <column name="definition_fa">دوده [AUTOTRANSLATED]</column>
+      <column name="definition_sv">sot [AUTOTRANSLATED]</column>
+      <column name="definition_ru">сажа [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">煤煙 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">fuligem [AUTOTRANSLATED]</column>
+      <column name="definition_fi">noki</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This may also be translated as "grime" in a non-technical context.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Latin "fuliginous" means "sooty".</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">grime</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>

@@ -453,7 +453,7 @@ Pakollinen verbi-etuliite, kun kohde on {pagh:n:1h,nolink}, on {yI-:v:pref}, jos
           <column name="synonyms"></column>
           <column name="antonyms"></column>
           <column name="see_also">{wa'DIch:n}, {HochDIch:n}</column>
-          <column name="notes">This is used to describe something that was expected to occur, or could conceivably occur, but has not.</column>
+          <column name="notes">This intentionally ungrammatical word is used to describe something that was expected to occur, or could conceivably occur, but has not.</column>
           <column name="notes_de">Dies wird verwendet, um etwas zu beschreiben, das erwartet wurde oder möglicherweise auftreten könnte, aber nicht aufgetreten ist. [AUTOTRANSLATED]</column>
           <column name="notes_fa">این مورد برای توصیف چیزی که انتظار می رود رخ دهد ، یا ممکن است قابل تصور باشد رخ می دهد ، اما چنین نیست. [AUTOTRANSLATED]</column>
           <column name="notes_sv">Detta används för att beskriva något som förväntades inträffa eller kan tänkas uppstå, men inte har gjort det. [AUTOTRANSLATED]</column>
@@ -497,7 +497,7 @@ Pakollinen verbi-etuliite, kun kohde on {pagh:n:1h,nolink}, on {yI-:v:pref}, jos
           <column name="synonyms">{not:adv}, {ghe'torvo' narghDI' qa'pu':sen}</column>
           <column name="antonyms">{Hochlogh:adv}</column>
           <column name="see_also"></column>
-          <column name="notes">This is an emphatic alternative for {not:adv}.</column>
+          <column name="notes">This intentionally ungrammatical word is an emphatic alternative for {not:adv}.</column>
           <column name="notes_de">Dies ist eine nachdrückliche Alternative für {not:adv}. [AUTOTRANSLATED]</column>
           <column name="notes_fa">این یک جایگزین مهم برای {not:adv} است. [AUTOTRANSLATED]</column>
           <column name="notes_sv">Detta är ett eftertryckt alternativ för {not:adv}. [AUTOTRANSLATED]</column>
@@ -1192,7 +1192,7 @@ Kun yhdistetään useita lauseita, tarvitaan vain viimeinen yhdistelmä. Katso e
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">paq 'ay'mey</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">contents, table of contents (of a book)</column>
       <column name="definition_de">Inhaltsverzeichnis (eines Buches)</column>
       <column name="definition_fa">مطالب، فهرست مطالب (کتاب) [AUTOTRANSLATED]</column>
@@ -1446,7 +1446,7 @@ Katso myös hypoteettinen samanlainen kieliopillinen rakenne kohdasta {tIq'ghob:
       <column name="definition_fi">eräs keskikokoinen ja (ainakin klingonin mielestä) räikeän värinen lintu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'amuS:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1522,7 +1522,7 @@ Katso myös hypoteettinen samanlainen kieliopillinen rakenne kohdasta {tIq'ghob:
       <column name="_id"></column>
       <column name="entry_name">pargh</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be synthetic, artificial</column>
+      <column name="definition">be synthetic, be artificial</column>
       <column name="definition_de">synthetisch, künstlich sein</column>
       <column name="definition_fa">مصنوعی، مصنوعی باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara syntetisk, artificiell [AUTOTRANSLATED]</column>
@@ -1541,7 +1541,7 @@ Katso myös hypoteettinen samanlainen kieliopillinen rakenne kohdasta {tIq'ghob:
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">A combination of "parve" and "margarine"?</column>
+      <column name="hidden_notes">Parkay is a brand of margarine.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2120,7 +2120,7 @@ Huomaa, että tähtijärjestelmän Klingon-termi on {Hovtay':n}. [AUTOTRANSLATED
       <column name="_id"></column>
       <column name="entry_name">patlh</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be ranked, have a status, be graded; be sorted</column>
+      <column name="definition">be ranked, have a status, be graded, be sorted</column>
       <column name="definition_de">eingestuft, eingeordnet, einen Rang haben</column>
       <column name="definition_fa">رتبه بندی شود، وضعیت داشته باشد، درجه بندی شود مرتب شود [AUTOTRANSLATED]</column>
       <column name="definition_sv">rankas, ha status, betygsättas sorteras [AUTOTRANSLATED]</column>
@@ -2139,7 +2139,7 @@ Huomaa, että tähtijärjestelmän Klingon-termi on {Hovtay':n}. [AUTOTRANSLATED
       <column name="notes_zh_HK">要按字母順序對英語單詞列表進行排序，請使用諸如{wa'DIch a, HochDIch z:sen:nolink}（或{wa'DIch z, HochDIch a:sen:nolink}為相反順序）之類的構造。對於克林崗語，請使用{wa'DIch bay, HochDIch qaghwI':sen:nolink}或{wa'DIch qaghwI', HochDIch bay:sen:nolink}。要反轉列表，請使用{DopmoH:v}.[2] [AUTOTRANSLATED]</column>
       <column name="notes_pt"></column>
       <column name="notes_fi">Voit lajitella luettelon englanninkielisistä sanoista aakkosjärjestyksessä käyttämällä rakennetta kuten {wa'DIch a, HochDIch z:sen:nolink} (tai {wa'DIch z, HochDIch a:sen:nolink} päinvastaisessa järjestyksessä). Käytä Klingon-sanoja varten {wa'DIch bay, HochDIch qaghwI':sen:nolink} tai {wa'DIch qaghwI', HochDIch bay:sen:nolink}. Voit kääntää luettelon kääntämällä {DopmoH:v}.[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This was defined as "be ranked, have a status, be graded" in [1], then defined additionally as "be sorted" in [2].</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -2163,7 +2163,7 @@ Huomaa, että tähtijärjestelmän Klingon-termi on {Hovtay':n}. [AUTOTRANSLATED
       <column name="_id"></column>
       <column name="entry_name">patlhmoH</column>
       <column name="part_of_speech">v:t_c,deriv</column>
-      <column name="definition">rank, assign status, sort; compare</column>
+      <column name="definition">rank, assign status, sort, compare</column>
       <column name="definition_de">einstufen, einordnen; gegenüberstellen, vergleichen</column>
       <column name="definition_fa">رتبه، اختصاص وضعیت، مرتب سازی بر اساس؛ مقایسه کردن [AUTOTRANSLATED]</column>
       <column name="definition_sv">rang, tilldel status, sortera; jämföra [AUTOTRANSLATED]</column>
@@ -2173,7 +2173,7 @@ Huomaa, että tähtijärjestelmän Klingon-termi on {Hovtay':n}. [AUTOTRANSLATED
       <column name="definition_fi">sijoittaa, määrittää asema, järjestää, lajitella; vertailla</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{num:v}, {DopmoH:v}</column>
+      <column name="see_also">{num:v}, {DopmoH:v}, {Day:v}</column>
       <column name="notes">When the object is singular, this means "rank" in the sense of "grade".[2]
 
 When used with the "compare" meaning, the object of the verb must be plural. The implication is that the things are ranked in comparison to one another.[1] When used to mean "sort", the object is not a list (as a whole) but the things in the list, the things to be ranked or sorted.[3]</column>
@@ -2196,7 +2196,9 @@ Quando usado com o significado de "comparar", o objeto do verbo deve estar no pl
       <column name="notes_fi">Kun kohde on yksikkö, se tarkoittaa "sijoitus" merkityksessä "arvosana" .[2]
 
 Verbi-merkinnän kanssa käytettynä verbiobjektin on oltava monikko. Tarkoituksena on, että asiat luokitellaan toisiinsa nähden.[1][3] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">The example sentence was suggested to Okrand in Klingon, who provided the English translation.</column>
+      <column name="hidden_notes">This was defined as "rank, assign status, sort" in [1], and also as "compare" in the same message. The "compare" usage was further explained in subsequent messages.
+
+The example sentence was suggested to Okrand in Klingon, who provided the English translation.</column>
       <column name="components">{patlh:v}, {-moH:v}</column>
       <column name="examples">
 ▶ {wo'rIv patlhmoH HoD.:sen:nolink} "The captain ranked Worf." (This means the captain made a judgment about Worf relative to someone else or a group.)</column>
@@ -2347,7 +2349,7 @@ Não confunda isso com {paw':v:1}. [AUTOTRANSLATED]</column>
       <column name="notes">The verb {paw':v:nolink} always takes a plural subject, namely, the things in motion which collide. When the subject is people, the verb is usually interpreted with the slang meaning of "butting heads" (see {paw':v:2,slang}). To describe the collision of something moving with something stationary, use {ngeQ:v} instead.[2; 3]
 
 Do not confuse this with {paw:v}.</column>
-      <column name="notes_de">Das Verb {paw':v:nolink} nimmt immer ein Plural-Subjekt auf, nämlich die bewegten Dinge, die kollidieren. Wenn es sich bei dem Thema um Personen handelt, wird das Verb normalerweise mit der umgangssprachlichen Bedeutung von "Stoßköpfen" interpretiert (siehe {paw':v:2,slang}). Verwenden Sie stattdessen {ngeQ:v}.[2; 3], um die Kollision von etwas zu beschreiben, das sich mit etwas Stationärem bewegt
+      <column name="notes_de">Das Verb {paw':v:nolink} nimmt immer ein Plural-Subjekt auf, nämlich die bewegten Dinge, die kollidieren. Wenn es sich bei dem Subjekt um Personen handelt, wird das Verb normalerweise mit der umgangssprachlichen Bedeutung von "Stoßköpfen" interpretiert (siehe {paw':v:2,slang}). Verwenden Sie stattdessen {ngeQ:v}.[2; 3], um die Kollision von etwas zu beschreiben, das sich mit etwas Stationärem bewegt
 
 Verwechseln Sie dies nicht mit {paw:v}. [AUTOTRANSLATED]</column>
       <column name="notes_fa">فعل {paw':v:nolink} همیشه یک موضوع جمع را شامل می شود ، یعنی چیزهایی که حرکت می کنند. وقتی موضوع افراد باشد ، معمولاً فعل با معنای عامیانه "سرهای سرخ" تفسیر می شود (به {paw':v:2,slang} مراجعه کنید). برای توصیف برخورد چیزی که در حال حرکت با چیزی ثابت است ، به جای آن از {ngeQ:v} استفاده کنید. [2; 3]
@@ -2403,7 +2405,7 @@ Não confunda isso com {paw:v}. [AUTOTRANSLATED]</column>
       <column name="antonyms"></column>
       <column name="see_also">{qIp'egh nachDu'chaj, tlhIngan SuvwI'pu'.:sen}</column>
       <column name="notes">As with the literal usage of this verb (see {paw':v:1}), when used in its slang meaning, it also takes a plural subject, in this case the people who butt heads. To say that two people collide without implying that they are butting heads, {ngeQ:v} might be used with {-chuq:v:suff}.[1]</column>
-      <column name="notes_de">Wie bei der wörtlichen Verwendung dieses Verbs (siehe {paw':v:1}) nimmt es, wenn es in seiner Slang-Bedeutung verwendet wird, auch ein Plural-Thema an, in diesem Fall die Personen, die Köpfe stoßen. Um zu sagen, dass zwei Personen kollidieren, ohne zu implizieren, dass sie Köpfe stoßen, könnte {ngeQ:v} mit {-chuq:v:suff}.[1] verwendet werden [AUTOTRANSLATED]</column>
+      <column name="notes_de">Wie bei der wörtlichen Verwendung dieses Verbs (siehe {paw':v:1}) nimmt es, wenn es in seiner Slang-Bedeutung verwendet wird, auch ein Plural-Subjekt an, in diesem Fall die Personen, die Köpfe stoßen. Um zu sagen, dass zwei Personen kollidieren, ohne zu implizieren, dass sie Köpfe stoßen, könnte {ngeQ:v} mit {-chuq:v:suff}.[1] verwendet werden [AUTOTRANSLATED]</column>
       <column name="notes_fa">همانطور که با استفاده تحت اللفظی این فعل (نگاه کنید به {paw':v:1}) ، هنگامی که در معنی عامیانه آن استفاده می شود ، یک موضوع کثرت نیز می گیرد ، در این حالت افرادی که سرشان را به سر می برند. برای اینکه بگوییم دو نفر بدون اینکه تذکر دهند که سرشان سر می رود برخورد می کنند ، ممکن است {ngeQ:v} با {-chuq:v:suff}.[1] استفاده شود [AUTOTRANSLATED]</column>
       <column name="notes_sv">Liksom med den bokstavliga användningen av detta verb (se {paw':v:1}), när det används i sin slangbetydelse, tar det också ett flertalsämne, i detta fall de människor som stöter huvuden. För att säga att två personer kolliderar utan att antyda att de stöter i huvuden, kan {ngeQ:v} användas med {-chuq:v:suff}.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru"></column>
@@ -3684,7 +3686,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_fi">päiväsaika, valoisan aika</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ram:n}</column>
-      <column name="see_also">{jaj:n}, {jajlo':n}, {po:n}, {pov:n}, {pemjep:n}</column>
+      <column name="see_also">{jaj:n}, {jajlo':n}, {po:n:1h}, {pov:n}, {pemjep:n}</column>
       <column name="notes">This refers to the part of the day when it is light out (as opposed to {ram:n}).[2]</column>
       <column name="notes_de">Dies bezieht sich auf den Teil des Tages, an dem es hell ist (im Gegensatz zu {ram:n}) .[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این مربوط به بخشی از روز روشنایی است (بر خلاف {ram:n}) .[2] [AUTOTRANSLATED]</column>
@@ -3767,7 +3769,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_ru">Пентат III(Планета)</column>
       <column name="definition_zh_HK">Pentath III [AUTOTRANSLATED]</column>
       <column name="definition_pt">Pentath III</column>
-      <column name="definition_fi">Pentath III</column>
+      <column name="definition_fi">eräs planeetta, Pentath III</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also"></column>
@@ -3778,7 +3780,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="notes_ru">Планета в Кардассианском Союзе. [AUTOTRANSLATED]</column>
       <column name="notes_zh_HK">Cardassian Union中的一顆行星。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">Um planeta na União Cardassiana. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Planeetta Cardassian Unionissa. [AUTOTRANSLATED]</column>
+      <column name="notes_fi">Eräs planeetta Cardassian unionissa.</column>
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples"></column>
@@ -3982,7 +3984,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="definition_sv">slakt [AUTOTRANSLATED]</column>
       <column name="definition_ru">устраивать резню, устраивать бойню, устраивать кровопролитие</column>
       <column name="definition_zh_HK">屠宰 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">abate</column>
+      <column name="definition_pt">abater</column>
       <column name="definition_fi">teurastaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -4085,7 +4087,7 @@ Tämä lyhennetään harvoin myös muotoon {pegh vIttlhegh:n:nolink}.[1][2] [AUT
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">This is written as {peQ chem:n:nolink} (with a space) in {TKDA:src}. The space has been removed for consistency with the other terms ending in {chem:n:hyp}.</column>
+      <column name="hidden_notes">This is written as {peQ chem:n:nolink} (with a space) in {TKDA:src}. The space has been removed for consistency with the other terms ending in {chem:n:hyp}, with MO's approval.</column>
       <column name="components">{peQ:n}, {chem:n:hyp}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -4457,6 +4459,49 @@ This would normally take the suffix {-pu':n}. Using the suffix {-mey:n} adds an 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKDA:src}, [2] {paq'batlh 2ed:src} ({KLI mailing list 2022.05.27:src})</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">petben</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">thump, thud</column>
+      <column name="definition_de">Schlag, Schlag [AUTOTRANSLATED]</column>
+      <column name="definition_fa">ضربه زدن، ضربه زدن [AUTOTRANSLATED]</column>
+      <column name="definition_sv">duns, duns [AUTOTRANSLATED]</column>
+      <column name="definition_ru">стук, стук [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">撲通，撲通 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">baque, baque [AUTOTRANSLATED]</column>
+      <column name="definition_fi">jysähdys, tömähdys</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This refers to the sound. It is often used as the object of {tlhen:v}.[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">Young Thumper from the film "Bambi" was voiced by Peter Behn.</column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">mätkähdys</column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5154,7 +5199,7 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="definition_sv">skylla på</column>
       <column name="definition_ru">винить, обвинять, возлагать вину, упрекать</column>
       <column name="definition_zh_HK">怪罪、責備</column>
-      <column name="definition_pt">culpa</column>
+      <column name="definition_pt">culpar</column>
       <column name="definition_fi">syyttää</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -5328,11 +5373,11 @@ Verbi {roS:v:2} tarkoittaa "kolmannen kärjen käyttämistä". Se on myös homof
       <column name="definition_sv">bestryka, täcka (mat) med örtkryddad blandning</column>
       <column name="definition_ru">шуба с травяной смесью(еда)</column>
       <column name="definition_zh_HK">帶有草藥混合物的外套（食物） [AUTOTRANSLATED]</column>
-      <column name="definition_pt">casaco (comida) com mistura de ervas</column>
+      <column name="definition_pt">cobrir (comida) com mistura de ervas</column>
       <column name="definition_fi">päällystää (ruokaa) yrttiseoksella</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{ngat:n:2}, {chanDoq:n}</column>
+      <column name="see_also">{ngat:n:2}, {chanDoq:n}, {tarleq:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -5902,7 +5947,8 @@ The homophony with {pIH:v:1} might indicate that they are the same word, and tha
       <column name="definition_ru">быть различным, быть отличающимся от, быть другим, быть непохожим</column>
       <column name="definition_zh_HK">與眾不同 [AUTOTRANSLATED]</column>
       <column name="definition_pt">ser diferente</column>
-      <column name="definition_fi">olla erilainen</column>
+      <column name="definition_fi">olla erilainen; olla eri</column>
+      <!-- This fi definition was confirmed to be accurate by Okrand at qep'a' 30 (2023) -->
       <column name="synonyms"></column>
       <column name="antonyms">{nIb:v}, {rap:v}</column>
       <column name="see_also">{jaS:adv}, {Sar:v}</column>
@@ -6024,7 +6070,7 @@ The homophony with {pIH:v:1} might indicate that they are the same word, and tha
           <column name="_id"></column>
           <column name="entry_name">pIn tlhoy'</column>
           <column name="part_of_speech">n:deriv</column>
-          <column name="definition">territorial wall (e.g. Berlin Wall)</column>
+          <column name="definition">territorial wall (e.g., Berlin Wall)</column>
           <column name="definition_de">Begrenzungsmauer (z.B. Berliner Mauer)</column>
           <column name="definition_fa">دیوار حائل (به عنوان مثال دیوار برلین) [AUTOTRANSLATED]</column>
           <column name="definition_sv">territorialmur (t.ex. Berlinmuren)</column>
@@ -7311,7 +7357,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/4gCJJiBXa
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">This is missing from the E-K side of {TKD:src}.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -7474,7 +7520,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/4gCJJiBXa
       <column name="definition_fi">olla paksu, tukeva</column>
       <column name="synonyms">{ror:v}</column>
       <column name="antonyms">{lang:v}</column>
-      <column name="see_also">{tlhagh:n}, {juch:v}, {vaS:v}</column>
+      <column name="see_also">{tlhagh:n}, {juch:v:1}, {vaS:v}</column>
       <column name="notes">This verb does not carry a connotation of bulk due to body fat or the like, for which see {ror:v}.[2]
 
 It can also be used in typography to describe a "bold" font. See {ngutlh tu'qom:n}.</column>
@@ -7522,7 +7568,7 @@ Sitä voidaan käyttää myös typografiassa "lihavoidun" fontin kuvaamiseen. Ka
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">po</column>
-      <column name="part_of_speech">n:klcp1</column>
+      <column name="part_of_speech">n:1h,klcp1</column>
       <column name="definition">morning</column>
       <column name="definition_de">Morgen</column>
       <column name="definition_fa">صبح</column>
@@ -7566,7 +7612,7 @@ Sitä voidaan käyttää myös typografiassa "lihavoidun" fontin kuvaamiseen. Ka
       <column name="_id"></column>
       <column name="entry_name">po Ha'DIbaH</column>
       <column name="part_of_speech">n:anim,deriv</column>
-      <column name="definition">animal that makes noise at dawn</column>
+      <column name="definition">animal that makes noise at dawn (literary name for {'uSgheb:n} or {jajlo' Qa':n})</column>
       <column name="definition_de">Tier, welches Morgens laut ist</column>
       <column name="definition_fa">حیوان که سر و صدا در صبح می کشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">djur som gör brus vid gryningen [AUTOTRANSLATED]</column>
@@ -7586,7 +7632,7 @@ Sitä voidaan käyttää myös typografiassa "lihavoidun" fontin kuvaamiseen. Ka
       <column name="notes_pt">Este é o nome literário para um {'uSgheb:n} ou um {jajlo' Qa':n}. É comumente usado em óperas e peças de teatro, mas raramente no discurso cotidiano. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on kirjallinen nimi tuotteelle {'uSgheb:n} tai {jajlo' Qa':n}. Sitä käytetään yleisesti oopperoissa ja näytelmissä, mutta harvoin jokapäiväisessä puheessa. [AUTOTRANSLATED]</column>
       <column name="hidden_notes"></column>
-      <column name="components">{po:n}, {Ha'DIbaH:n:1}</column>
+      <column name="components">{po:n:1h}, {Ha'DIbaH:n:1}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -7922,7 +7968,7 @@ This word can also be used for animals to refer to their body hair or fur.[3]</c
       <column name="definition_sv">klocka, ta tid på, bestämma tid för</column>
       <column name="definition_ru">приурочить, назначить время, удачно выбирать время, показывать время</column>
       <column name="definition_zh_HK">計時</column>
-      <column name="definition_pt">tempo</column>
+      <column name="definition_pt">medir o tempo</column>
       <column name="definition_fi">ottaa aikaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -8518,7 +8564,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">palkinto, kunnianosoitus, kunniakirja (saavutuksesta)</column>
       <column name="synonyms">{van'a':n}</column>
       <column name="antonyms">{bIj:n}</column>
-      <column name="see_also">{tev:n}</column>
+      <column name="see_also">{tev:n}, {jamjuD:n}</column>
       <column name="notes">Any formal recognition of an accomplishment or accomplishments.</column>
       <column name="notes_de">Jede formelle Anerkennung einer Leistung oder von Leistungen. [AUTOTRANSLATED]</column>
       <column name="notes_fa">هرگونه رسمیت شناختن یک موفقیت یا موفقیت. [AUTOTRANSLATED]</column>
@@ -8741,7 +8787,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">(kasvin) lehti</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Sor:n}, {bartIq:n}, {Qechjem'a':n}, {pu'veng:n}, {San'emDer:n}, {namchIl:n}, {lew:v}</column>
+      <column name="see_also">{Sor:n}, {bartIq:n}, {Qechjem'a':n}, {pu'veng:n}, {San'emDer:n}, {namchIl:n}, {lew:v}, {'e'qIn:n}</column>
       <column name="notes">This word can also refer to the "heart" suit in a deck of playing cards (see {Degh:n:1}).[2]</column>
       <column name="notes_de">Dieses Wort kann sich auch auf die "Herz" -Anzug in einem Kartenspiel beziehen (siehe {Degh:n:1}) .[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این کلمه همچنین می تواند به لباس "قلب" در یک کارت بازی (اشاره به {Degh:n:1} مراجعه کند) .[2] [AUTOTRANSLATED]</column>
@@ -8957,7 +9003,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">ruumiintoimintojen tieteellinen tutkimus, biologia, anatomia</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{Qur:n}, {porgh:n}, {porghtej:n}</column>
+      <column name="see_also">{Qur:n:2}, {porgh:n}, {porghtej:n}, {Qur:n:2}</column>
       <column name="notes">Klingons don't talk all that much about bodily functions as a group, but they certainly do talk about specific bodily functions (see {porgh mIw:n}).</column>
       <column name="notes_de">Klingonen sprechen nicht so viel über Körperfunktionen als Gruppe, aber sie sprechen sicherlich über bestimmte Körperfunktionen (siehe {porgh mIw:n}). [AUTOTRANSLATED]</column>
       <column name="notes_fa">کلینگونها در مورد عملکردهای بدن به عنوان یک گروه زیاد صحبت نمی کنند ، اما مطمئناً در مورد عملکردهای بدن خاص صحبت می کنند (نگاه کنید به {porgh mIw:n}). [AUTOTRANSLATED]</column>
@@ -9033,7 +9079,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="_id"></column>
       <column name="entry_name">poS</column>
       <column name="part_of_speech">v:is,klcp1</column>
-      <column name="definition">be open, opened</column>
+      <column name="definition">be open, be opened</column>
       <column name="definition_de">offen, geöffnet sein</column>
       <column name="definition_fa">باز شود، باز شود [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara öppen, vara öppnad</column>
@@ -9113,7 +9159,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi">paapuuri</column>
-      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2019.08.05:src}</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2015.08.05:src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9549,9 +9595,52 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">poy'</column>
+      <column name="part_of_speech">v:t_c</column>
+      <column name="definition">confiscate</column>
+      <column name="definition_de">beschlagnahmen, konfiszieren</column>
+      <column name="definition_fa">مصادره کند [AUTOTRANSLATED]</column>
+      <column name="definition_sv">konfiskera [AUTOTRANSLATED]</column>
+      <column name="definition_ru">конфисковать [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">沒收 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">confiscar [AUTOTRANSLATED]</column>
+      <column name="definition_fi">takavarikoida</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">po'</column>
       <column name="part_of_speech">v:is,klcp1</column>
-      <column name="definition">be expert, skilled</column>
+      <column name="definition">be expert, be skilled</column>
       <column name="definition_de">erfahren, gewandt, geschickt sein</column>
       <column name="definition_fa">متخصص، ماهر باشید [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara expert, vara kunnig, vara duktig, vara skicklig</column>
@@ -9741,7 +9830,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_fi">kiehua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tuj:v}, {bIQ:n}, {SeS:n}, {tet:v}, {'Im:v}</column>
+      <column name="see_also">{tuj:v}, {bIQ:n}, {SeS:n}, {tet:v}, {'Im:v}, {'unqal:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -9772,31 +9861,74 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKD:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">pubtaHbogh ghargh HIq</column>
+          <column name="part_of_speech">n:deriv,food</column>
+          <column name="definition">boiling worm wine</column>
+          <column name="definition_de">kochender Wurmwein</column>
+          <column name="definition_fa">شراب کرم جوش [AUTOTRANSLATED]</column>
+          <column name="definition_sv">kokande mask vin [AUTOTRANSLATED]</column>
+          <column name="definition_ru">кипящее червивое вино</column>
+          <column name="definition_zh_HK">煮沸的酒 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">vinho de sangue fervente</column>
+          <column name="definition_fi">eräs alkoholijuoma, kiehuva matoviini</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">While this does not have the impact of {romuluS HIq:n}, it is still impressive.</column>
+          <column name="notes_de">Dies hat zwar keine Auswirkungen auf {romuluS HIq:n}, ist aber dennoch beeindruckend. [AUTOTRANSLATED]</column>
+          <column name="notes_fa">اگرچه این تأثیر {romuluS HIq:n} را ندارد ، اما همچنان چشمگیر است. [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Även om detta inte påverkar {romuluS HIq:n}, är det fortfarande imponerande. [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Хотя это не влияет на {romuluS HIq:n}, оно все же впечатляет. [AUTOTRANSLATED]</column>
+          <column name="notes_zh_HK">儘管這沒有{romuluS HIq:n}的影響，但仍然令人印象深刻。 [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Embora isso não tenha o impacto de {romuluS HIq:n}, ainda é impressionante. [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Vaikka tällä ei ole {romuluS HIq:n}: n vaikutusta, se on silti vaikuttava. [AUTOTRANSLATED]</column>
+          <column name="hidden_notes"></column>
+          <column name="components">{pub:v}, {-taH:v}, {-bogh:v}, {ghargh:n}, {HIq:n}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {PK:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">pubtaHbogh ghargh HIq</column>
-      <column name="part_of_speech">n:deriv,food</column>
-      <column name="definition">boiling worm wine</column>
-      <column name="definition_de">kochender Wurmwein</column>
-      <column name="definition_fa">شراب کرم جوش [AUTOTRANSLATED]</column>
-      <column name="definition_sv">kokande mask vin [AUTOTRANSLATED]</column>
-      <column name="definition_ru">кипящее червивое вино</column>
-      <column name="definition_zh_HK">煮沸的酒 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">vinho de sangue fervente</column>
-      <column name="definition_fi">eräs alkoholijuoma, kiehuva matoviini</column>
+      <column name="entry_name">puboS</column>
+      <column name="part_of_speech">n:body</column>
+      <column name="definition">scapula, shoulder blade</column>
+      <column name="definition_de">Schulterblatt</column>
+      <column name="definition_fa">کتف، تیغه شانه [AUTOTRANSLATED]</column>
+      <column name="definition_sv">scapula, skulderblad [AUTOTRANSLATED]</column>
+      <column name="definition_ru">лопатка, лопатка [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">肩胛骨、肩胛骨 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">escápula, omoplata [AUTOTRANSLATED]</column>
+      <column name="definition_fi">lapaluu</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">While this does not have the impact of {romuluS HIq:n}, it is still impressive.</column>
-      <column name="notes_de">Dies hat zwar keine Auswirkungen auf {romuluS HIq:n}, ist aber dennoch beeindruckend. [AUTOTRANSLATED]</column>
-      <column name="notes_fa">اگرچه این تأثیر {romuluS HIq:n} را ندارد ، اما همچنان چشمگیر است. [AUTOTRANSLATED]</column>
-      <column name="notes_sv">Även om detta inte påverkar {romuluS HIq:n}, är det fortfarande imponerande. [AUTOTRANSLATED]</column>
-      <column name="notes_ru">Хотя это не влияет на {romuluS HIq:n}, оно все же впечатляет. [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">儘管這沒有{romuluS HIq:n}的影響，但仍然令人印象深刻。 [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Embora isso não tenha o impacto de {romuluS HIq:n}, ainda é impressionante. [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Vaikka tällä ei ole {romuluS HIq:n}: n vaikutusta, se on silti vaikuttava. [AUTOTRANSLATED]</column>
+      <column name="see_also">{volchaH:n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components">{pub:v}, {-taH:v}, {-bogh:v}, {ghargh:n}, {HIq:n}</column>
+      <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -9813,7 +9945,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {PK:src}</column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -10663,7 +10795,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_ru">пасть, падать, терпеть крах</column>
       <column name="definition_zh_HK">跌</column>
       <column name="definition_pt">cair</column>
-      <column name="definition_fi">kaatua, pudota</column>
+      <column name="definition_fi">pudota</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{peD:v}, {chagh:v}, {qaw':v}</column>
@@ -10875,7 +11007,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="_id"></column>
       <column name="entry_name">pup</column>
       <column name="part_of_speech">v:1,is</column>
-      <column name="definition">be perfect, exact</column>
+      <column name="definition">be perfect, be exact</column>
       <column name="definition_de">perfekt, exakt sein</column>
       <column name="definition_fa">کامل، دقیق [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara perfekt, vara exakt</column>
@@ -11097,7 +11229,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_sv">barn, avkomma</column>
       <column name="definition_ru">ребенок, отпрыск, потомство</column>
       <column name="definition_zh_HK">細路、孩子、後代</column>
-      <column name="definition_pt">criança, descendência</column>
+      <column name="definition_pt">criança, descendente</column>
       <column name="definition_fi">lapsi, jälkeläinen</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -11699,7 +11831,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_sv">flyga</column>
       <column name="definition_ru">летать, пролетать, лететь, пролететь</column>
       <column name="definition_zh_HK">飛</column>
-      <column name="definition_pt">mosca</column>
+      <column name="definition_pt">voar</column>
       <column name="definition_fi">lentää</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -11744,7 +11876,7 @@ Klingonsille {bo'retlh:n}: n ulkopuolella aikakiteet olivat myytti, Kahlessin sy
       <column name="definition_sv">krasha, haverera, ödelägga</column>
       <column name="definition_ru">разрушать, сносить, рухнуть</column>
       <column name="definition_zh_HK">破壞 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">naufrágio</column>
+      <column name="definition_pt">naufragar</column>
       <column name="definition_fi">romuttaa ?</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
@@ -12306,7 +12438,7 @@ The 2009 {Star Trek:src} movie has a deleted scene with the line: {buqmeylIjDaq 
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{pu'veng:n}, {-mey:n}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>

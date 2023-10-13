@@ -186,7 +186,7 @@
       <column name="antonyms"></column>
       <column name="see_also"></column>
       <column name="notes">This means that the subject is hidden but posing a threat, such as being ready to ambush.[1]</column>
-      <column name="notes_de">Dies bedeutet, dass das Thema versteckt ist, aber eine Bedrohung darstellt, z. B. die Bereitschaft zum Hinterhalt.[1] [AUTOTRANSLATED]</column>
+      <column name="notes_de">Dies bedeutet, dass das Subjekt versteckt ist, aber eine Bedrohung darstellt, z. B. die Bereitschaft zum Hinterhalt.[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این بدان معناست که موضوع پنهان است اما تهدیدی مانند آماده بودن برای کمین است.[1] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta innebär att motivet är doldt men utgör ett hot, till exempel att vara redo att bakhålla.[1] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Это означает, что субъект скрыт, но представляет угрозу, такую ​​как готовность к засаде.[1] [AUTOTRANSLATED]</column>
@@ -625,7 +625,7 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
       <column name="_id"></column>
       <column name="entry_name">ghan</column>
       <column name="part_of_speech">v:1,is</column>
-      <column name="definition">be hectic, very active, lively</column>
+      <column name="definition">be hectic, be very active, be lively</column>
       <column name="definition_de">hektisch, sehr aktiv, lebhaft sein</column>
       <column name="definition_fa">حیرت انگیز، بسیار فعال، پر جنب و جوش [AUTOTRANSLATED]</column>
       <column name="definition_sv">hektisk, mycket aktiv, livlig [AUTOTRANSLATED]</column>
@@ -668,7 +668,7 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
       <column name="_id"></column>
       <column name="entry_name">ghanHa'</column>
       <column name="part_of_speech">v:is,deriv</column>
-      <column name="definition">be peaceful, calm</column>
+      <column name="definition">be peaceful, be calm</column>
       <column name="definition_de">friedlich, entspannt, ruhig sein</column>
       <column name="definition_fa">صلح آمیز، آرام [AUTOTRANSLATED]</column>
       <column name="definition_sv">lugnt, lugnt [AUTOTRANSLATED]</column>
@@ -753,7 +753,7 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghanjaq</column>
-      <column name="part_of_speech">n</column>
+      <column name="part_of_speech">n:weap</column>
       <column name="definition">mace (stick, club)</column>
       <column name="definition_de">Keule, Amtsstab, Stab</column>
       <column name="definition_fa">موز (چوب، باشگاه) [AUTOTRANSLATED]</column>
@@ -793,6 +793,49 @@ Pakollinen verbin etuliite, kun kohde on {ghaH:n:nolink}, on {yI-:v:pref}. [AUTO
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">ghanjaq chuS</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">rattle (baby toy)</column>
+          <column name="definition_de">Rassel (Babyspielzeug)</column>
+          <column name="definition_fa">جغجغه (اسباب بازی کودک) [AUTOTRANSLATED]</column>
+          <column name="definition_sv">skallra (babyleksak) [AUTOTRANSLATED]</column>
+          <column name="definition_ru">погремушка (детская игрушка) [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">撥浪鼓（嬰兒玩具） [AUTOTRANSLATED]</column>
+          <column name="definition_pt">chocalho (brinquedo de bebê) [AUTOTRANSLATED]</column>
+          <column name="definition_fi">helistin</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{Qajnav:n}</column>
+          <column name="notes">This is what a baby rattle might be referred to in everyday speech. The full form is {ghu ghanjaq chuS:n@@ghu:n, ghanjaq chuS:n}.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{ghanjaq:n}, {chuS:v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {KLI mailing list 2023.03.01:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">ghanroq</column>
@@ -1026,7 +1069,7 @@ This is the "cornerstone" ({qor:sen:nolink}-{nagh:n}) of something.</column>
       <column name="antonyms"></column>
       <column name="see_also">{bertlham:n}, {Dor:v:2}, {rIn:v}, {van:v:2}, {'o'megh:n}</column>
       <column name="notes">The subject of this verb is the person causing an event to prematurely end. The object is the event that is ended. If the ending of the event was not premature, use {van:v:2} instead. To describe the ending of a period of time, use {Dor:v:2} instead.</column>
-      <column name="notes_de">Das Thema dieses Verbs ist die Person, die ein Ereignis vorzeitig beendet. Das Objekt ist das Ereignis, das beendet wird. Wenn das Ende des Ereignisses nicht verfrüht war, verwenden Sie stattdessen {van:v:2}. Verwenden Sie stattdessen {Dor:v:2}, um das Ende eines bestimmten Zeitraums zu beschreiben. [AUTOTRANSLATED]</column>
+      <column name="notes_de">Das Subjekt dieses Verbs ist die Person, die ein Ereignis vorzeitig beendet. Das Objekt ist das Ereignis, das beendet wird. Wenn das Ende des Ereignisses nicht verfrüht war, verwenden Sie stattdessen {van:v:2}. Verwenden Sie stattdessen {Dor:v:2}, um das Ende eines bestimmten Zeitraums zu beschreiben. [AUTOTRANSLATED]</column>
       <column name="notes_fa">موضوع این فعل ، شخصی است که باعث می شود یک رویداد به موقع پایان یابد. هدف واقعه ای است که پایان یافته است. اگر پایان این رویداد زودرس نبود ، به جای آن از {van:v:2} استفاده کنید. برای توصیف پایان یک دوره زمانی ، به جای آن از {Dor:v:2} استفاده کنید. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Ämnet för detta verb är den person som orsakar en händelse för tidigt slut. Objektet är händelsen som avslutas. Om avslutningen av händelsen inte var för tidig, använd {van:v:2} istället. Använd {Dor:v:2} istället för att beskriva slutet på en tidsperiod. [AUTOTRANSLATED]</column>
       <column name="notes_ru">Субъект этого глагола - лицо, вызывающее преждевременное завершение события. Объект - это законченное событие. Если завершение события не было преждевременным, используйте вместо этого {van:v:2}. Чтобы описать окончание периода времени, используйте вместо этого {Dor:v:2}. [AUTOTRANSLATED]</column>
@@ -1595,7 +1638,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="definition_fi">hiili</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also">{tamler:n}, {namchIl:n}</column>
+      <column name="see_also">{tamler:n}, {namchIl:n}, {nIl'atrogh:n}, {rISlIw:n}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -1893,7 +1936,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="definition_ru">распылять, разбрызгивать, бомбардировать, закидывать, заливать чем-то</column>
       <column name="definition_zh_HK">噴霧、轟擊、下雨 [AUTOTRANSLATED]</column>
       <column name="definition_pt">pulverizar, bombardear, chover</column>
-      <column name="definition_fi">ruiskuttaa, suihkuttaa, sumuttaa, pommittaa, sataa maahan</column>
+      <column name="definition_fi">ruiskuttaa, suihkuttaa, sumuttaa; pommittaa jollakin</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{ghIt:v}, {SIS:v}</column>
@@ -1934,7 +1977,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">sataa</column>
       <column name="source">[1] {TNK:src}, [2] {Klingon Monopoly:src}, [3] {KLI mailing list 2020.04.21:src}, [4] {paq'batlh 2ed p.138-139:src}</column>
     </table>
     <table name="mem">
@@ -1991,7 +2034,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="definition_ru">Ругательство общего характера(Прямого перевода не имеет)</column>
       <column name="definition_zh_HK">不太可能、少機會</column>
       <column name="definition_pt">improvável</column>
-      <column name="definition_fi">epätodennäköinen</column>
+      <column name="definition_fi">epätodennäköisesti</column>
       <column name="synonyms"></column>
       <column name="antonyms">{ghaytan:adv}</column>
       <column name="see_also">{chaq:adv}, {-Ha':v:suff}</column>
@@ -2020,7 +2063,7 @@ If X is a phrase, it can be followed by either {mu':n:nolink} or {mu'mey:n@@mu':
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">tuskin</column>
       <column name="source">[1] {Radio Times Star Trek 30th Anniversary Special Issue:src}</column>
     </table>
     <table name="mem">
@@ -3092,7 +3135,7 @@ Yleisempi termi musiikkia soittavalle ryhmälle (kaikenkokoisille) on {QoQ ghom:
         <table name="mem">
           <column name="_id"></column>
           <column name="entry_name">ghewmey</column>
-          <column name="part_of_speech">n:deriv,slang</column>
+          <column name="part_of_speech">n:plural,deriv,slang</column>
           <column name="definition">punctuation</column>
           <column name="definition_de">Satzzeichen</column>
           <column name="definition_fa">نقطه گذاری [AUTOTRANSLATED]</column>
@@ -3136,7 +3179,7 @@ Yleisempi termi musiikkia soittavalle ryhmälle (kaikenkokoisille) on {QoQ ghom:
       <column name="_id"></column>
       <column name="entry_name">ghe'</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be transformed, transmuted, metamorphosed, totally altered</column>
+      <column name="definition">be transformed, be transmuted, be metamorphosed, be totally altered</column>
       <column name="definition_de">umgewandelt, transmutiert, metamorphosiert, völlig verändert sein</column>
       <column name="definition_fa">تبدیل، تبدیل، دگرگون شده، کاملا تغییر یافته است [AUTOTRANSLATED]</column>
       <column name="definition_sv">transformeras, transmuteras, metamorferas, helt förändras [AUTOTRANSLATED]</column>
@@ -3853,7 +3896,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="_id"></column>
       <column name="entry_name">ghIH</column>
       <column name="part_of_speech">v:1,is,klcp1</column>
-      <column name="definition">be messy, sloppy</column>
+      <column name="definition">be messy, be sloppy</column>
       <column name="definition_de">unordentlich, schlampig, unsauber, nachlässig sein</column>
       <column name="definition_fa">خجالت بکش [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara slarvig, vara sjabbig, vara rörig, vara kladdig</column>
@@ -4483,7 +4526,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="antonyms"></column>
       <column name="see_also">{bo'DIj:n}, {mIwba':n}</column>
       <column name="notes">The object of this verb is the person charged and subject to trial (or actually tried) by a military tribunal. The subject is whoever brought the indictment.[2]</column>
-      <column name="notes_de">Der Gegenstand dieses Verbs ist die Person, die von einem Militärgericht angeklagt und vor Gericht gestellt (oder tatsächlich vor Gericht gestellt) wird. Das Thema ist, wer auch immer die Anklage erhoben hat.[2] [AUTOTRANSLATED]</column>
+      <column name="notes_de">Der Gegenstand dieses Verbs ist die Person, die von einem Militärgericht angeklagt und vor Gericht gestellt (oder tatsächlich vor Gericht gestellt) wird. Das Subjekt ist, wer auch immer die Anklage erhoben hat.[2] [AUTOTRANSLATED]</column>
       <column name="notes_fa">هدف این فعل ، شخصی است که توسط دادگاه نظامی متهم شده و تحت محاکمه قرار می گیرد (یا در حقیقت محاکمه شده است). موضوع هر کسی است که کیفرخواست را وارد کند.[2] [AUTOTRANSLATED]</column>
       <column name="notes_sv">Syftet med detta verb är personen som är anklagad och utsatt för rättegång (eller faktiskt prövad) av en militär domstol. Ämnet är vem som väckte åtalet.[2] [AUTOTRANSLATED]</column>
       <column name="notes_ru">Объектом этого глагола является лицо, обвиняемое и подлежащее судебному разбирательству (или фактически судимое) военным трибуналом. Субъект тот, кто предъявил обвинение.[2] [AUTOTRANSLATED]</column>
@@ -5095,7 +5138,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="definition_ru">рукопись [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">手稿 [AUTOTRANSLATED]</column>
       <column name="definition_pt">manuscrito</column>
-      <column name="definition_fi">käsikirjoitus</column>
+      <column name="definition_fi">kirjoitus</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Se'vIr:n}, {paq:n:1h}</column>
@@ -5107,7 +5150,9 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes">The word {ghItlhHom:n:nolink} was used for the "string" variable type in Klingon Blockly.[2]</column>
+      <column name="hidden_notes">The word {ghItlhHom:n:nolink} was used for the "string" variable type in Klingon Blockly.[2]
+
+At {qep'a' 30 (2023):src}, Okrand clarified that {ghItlh:n:nolink} refers to physical markings on a surface and not to the text contents of a document. It is not used to refer to books, though the physical pages of a book do technically contain {ghItlh:n:nolink}. He was unsure whether digital letters on a screen counted as {ghItlh:n:nolink}.[3]</column>
       <column name="components"></column>
       <column name="examples">
 ▶ {ghItlh vIghItlhta'bogh DalaD'a'?:sen:nolink} "Will you read my manuscript?"[1, p.172]</column>
@@ -5125,8 +5170,8 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2014.11.26:src}</column>
+      <column name="search_tags_fi">teksti, raapustus, käsikirjoitus</column>
+      <column name="source">[1] {TKD:src}, [2] {KLI mailing list 2014.11.26:src}, [3] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -5139,7 +5184,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="definition_ru">гравировать, насекать, стаить отметку, расписывать</column>
       <column name="definition_zh_HK">雕刻、切割、標記（上）、寫 [AUTOTRANSLATED]</column>
       <column name="definition_pt">gravar, incisar, marcar (em cima), escrever</column>
-      <column name="definition_fi">kirjoittaa, kaivertaa, viiltää, merkitä</column>
+      <column name="definition_fi">kaivertaa, merkitä; kirjoittaa</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{Hew:n}, {nan:v:1}, {tey:v:1}, {laD:v}</column>
@@ -5170,7 +5215,7 @@ On myös alueellinen sana {ley':n}, joka tarkoittaa "nenä". [AUTOTRANSLATED]</c
       <column name="search_tags_ru"></column>
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
+      <column name="search_tags_fi">raapustaa</column>
       <column name="source">[1] {TKD:src}, [2] {HQ 2.4, p.18, Dec. 1993:src}, [3] {KGT p.79:src}, [4] {s.k 1998.07.09:src} (reprinted in {HQ 8.1, p.8, Mar. 1999:src})</column>
     </table>
     <table name="mem">
@@ -5697,15 +5742,15 @@ Existem 243 {lawmey:n:nolink} em um {gho:n:nolink} ou 360 {lawrI'mey:n:nolink}. 
           <column name="definition_fi">pii (matemaattinen vakio)</column>
           <column name="synonyms"></column>
           <column name="antonyms"></column>
-          <column name="see_also">{bav:n}, {juch:v}</column>
-          <column name="notes">This is sometimes shortened to {ghomaH:n}. Note also {bav:n} "circumference". For "diameter", make use of {juch:v} "have a width of".</column>
-          <column name="notes_de">Dies wird manchmal zu {ghomaH:n} verkürzt. Man beachte auch {bav:n} "Umfang". Für "Durchmesser" verwendet man {juch:v} "eine Breite haben".</column>
-          <column name="notes_fa">این گاهی اوقات به {ghomaH:n} کوتاه می شود. توجه داشته باشید همچنین "محیط اطراف" {bav:n}. برای "قطر" ، از {juch:v} "دارای عرض" استفاده کنید. [AUTOTRANSLATED]</column>
-          <column name="notes_sv">Ibland förkortas detta till {ghomaH:n}. Observera också {bav:n} "omkrets". För "diameter", använd {juch:v} "har en bredd på". [AUTOTRANSLATED]</column>
-          <column name="notes_ru">Это иногда сокращается до {ghomaH:n}. Обратите внимание также на {bav:n} "окружность". Для «диаметра» используйте {juch:v} «иметь ширину». [AUTOTRANSLATED]</column>
-          <column name="notes_zh_HK">有時有時縮寫為{ghomaH:n}。另請注意{bav:n}「周長」。對於「直徑」，請使用{juch:v}「寬度為」。 [AUTOTRANSLATED]</column>
-          <column name="notes_pt">Às vezes, isso é reduzido para {ghomaH:n}. Observe também {bav:n} "circunferência". Para "diâmetro", use {juch:v} "com largura de". [AUTOTRANSLATED]</column>
-          <column name="notes_fi">Tämä lyhennetään joskus {ghomaH:n}-muotoon. Huomaa myös {bav:n} "ympärysmitta". Käytä halkaisijaa varten {juch:v}: n "leveys on". [AUTOTRANSLATED]</column>
+          <column name="see_also">{bav:n}, {juch:v:1}</column>
+          <column name="notes">This is sometimes shortened to {ghomaH:n}. Note also {bav:n} "circumference". For "diameter", make use of {juch:v:1} "have a width of".</column>
+          <column name="notes_de">Dies wird manchmal zu {ghomaH:n} verkürzt. Man beachte auch {bav:n} "Umfang". Für "Durchmesser" verwendet man {juch:v:1} "eine Breite haben".</column>
+          <column name="notes_fa">این گاهی اوقات به {ghomaH:n} کوتاه می شود. توجه داشته باشید همچنین "محیط اطراف" {bav:n}. برای "قطر" ، از {juch:v:1} "دارای عرض" استفاده کنید. [AUTOTRANSLATED]</column>
+          <column name="notes_sv">Ibland förkortas detta till {ghomaH:n}. Observera också {bav:n} "omkrets". För "diameter", använd {juch:v:1} "har en bredd på". [AUTOTRANSLATED]</column>
+          <column name="notes_ru">Это иногда сокращается до {ghomaH:n}. Обратите внимание также на {bav:n} "окружность". Для «диаметра» используйте {juch:v:1} «иметь ширину». [AUTOTRANSLATED]</column>
+          <column name="notes_zh_HK">有時有時縮寫為{ghomaH:n}。另請注意{bav:n}「周長」。對於「直徑」，請使用{juch:v:1}「寬度為」。 [AUTOTRANSLATED]</column>
+          <column name="notes_pt">Às vezes, isso é reduzido para {ghomaH:n}. Observe também {bav:n} "circunferência". Para "diâmetro", use {juch:v:1} "com largura de". [AUTOTRANSLATED]</column>
+          <column name="notes_fi">Tämä lyhennetään joskus {ghomaH:n}-muotoon. Huomaa myös {bav:n} "ympärysmitta". Käytä halkaisijaa varten {juch:v:1}: n "leveys on". [AUTOTRANSLATED]</column>
           <column name="hidden_notes"></column>
           <column name="components"></column>
           <column name="examples"></column>
@@ -6168,7 +6213,7 @@ Katso, kuinka Gowron sanoo tämän: {YouTube video:url:http://youtu.be/7_rXiSTQm
       <column name="_id"></column>
       <column name="entry_name">ghochwI'</column>
       <column name="part_of_speech">n:deriv,fic</column>
-      <column name="definition">the constellation "Tracker"</column>
+      <column name="definition">"Tracker" (constellation where Kahless prophesied he would return)</column>
       <column name="definition_de">Sternkonstellation "Aufspürer"</column>
       <column name="definition_fa">صورت فلکی "ردیاب" [AUTOTRANSLATED]</column>
       <column name="definition_sv">Spanaren (en stjärnbild)</column>
@@ -7264,7 +7309,7 @@ This was defined as "slot" at {qep'a' 28 (2021):src}. The meaning of "slit" was 
       <column name="definition_de">funkeln</column>
       <column name="definition_fa">زرق و برق، زرق و برق [AUTOTRANSLATED]</column>
       <column name="definition_sv">gnista, glitter [AUTOTRANSLATED]</column>
-      <column name="definition_ru">блеск, блеск [AUTOTRANSLATED]</column>
+      <column name="definition_ru">блестеть, сверкать</column>
       <column name="definition_zh_HK">閃閃發光</column>
       <column name="definition_pt">cintilar, brilhar</column>
       <column name="definition_fi">kimaltaa</column>
@@ -7454,7 +7499,7 @@ This was defined as "slot" at {qep'a' 28 (2021):src}. The meaning of "slit" was 
       <column name="hidden_notes">Something you "grope" with. The reverse of this is {pogh:n}.</column>
       <column name="components"></column>
       <column name="examples">
-▶ {ghopDu'wIjDaq yInmeyraj vIlaj:sen}</column>
+▶ {ghopDu'wIjDaq yInmeyraj vIlaj.:sen}</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -8151,7 +8196,7 @@ Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta
       <column name="synonyms"></column>
       <column name="antonyms"></column>
       <column name="see_also">{jaH:v}, {chol:v}, {tlha':v}, {Duv:v}, {HeD:v}, {ghoS:v:2}</column>
-      <column name="notes">This can mean either "approach" or "go away from" depending on the presence of nouns with the suffixes {-Daq:n} and {-vo':n}. The way to use {ghoS:v:nolink} and other verbs of movement are described in {HQ 7.4:src}[2]. See {jaH:v} for details.</column>
+      <column name="notes">This verb refers to following a course. Thus, it can be interpreted to mean either "approach" or "go away from", depending on the presence of nouns with the suffixes {-Daq:n} and {-vo':n}. The way to use {ghoS:v:nolink} and other verbs of movement are described in {HQ 7.4:src}[2]. See {jaH:v} for details.</column>
       <column name="notes_de">Dies kann je nach Vorhandensein von Substantiven mit den Suffixen {-Daq:n} und {-vo':n} entweder "Annäherung" oder "Weggehen von" bedeuten. Die Verwendung von {ghoS:v:nolink} und anderen Bewegungsverben ist in {HQ 7.4:src}[2] beschrieben. Siehe {jaH:v} für Details. [AUTOTRANSLATED]</column>
       <column name="notes_fa">این می تواند به معنی "رویکرد" یا "دور شدن از" بسته به حضور اسامی با پسوندهای {-Daq:n} و {-vo':n} باشد. روش استفاده از {ghoS:v:nolink} و سایر افعال حرکتی در {HQ 7.4:src}[2] شرح داده شده است. برای جزئیات بیشتر به {jaH:v} مراجعه کنید. [AUTOTRANSLATED]</column>
       <column name="notes_sv">Detta kan betyda antingen "tillvägagångssätt" eller "försvinna från" beroende på förekomsten av substantiv med suffikterna {-Daq:n} och {-vo':n}. Sättet att använda {ghoS:v:nolink} och andra rörelser verb beskrivs i {HQ 7.4:src}[2]. Se {jaH:v} för mer information. [AUTOTRANSLATED]</column>
@@ -8504,7 +8549,7 @@ Yksi hänen legendaarisista edeltäjistään nimettiin myös "Gorkoniksi", mutta
       <column name="_id"></column>
       <column name="entry_name">gho'rIch</column>
       <column name="part_of_speech">n:body</column>
-      <column name="definition">zit, acne</column>
+      <column name="definition">zit, acne, "gorch"</column>
       <column name="definition_de">Pickel, Zyste</column>
       <column name="definition_fa">زیت، آکنه [AUTOTRANSLATED]</column>
       <column name="definition_sv">zit, akne [AUTOTRANSLATED]</column>
@@ -8859,6 +8904,54 @@ Tämä sana on alkuperältään vieras. Syy siihen, miksi Klingonit käyttävät
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 24 (2017):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">ghuD</column>
+      <column name="part_of_speech">v:is</column>
+      <column name="definition">be in common, be co-</column>
+      <column name="definition_de">Kameraden, Kollegen usw. sein, Mit-/Ko- sein</column>
+      <column name="definition_fa">مشترک بودن، مشترک بودن [AUTOTRANSLATED]</column>
+      <column name="definition_sv">vara gemensam, vara med- [AUTOTRANSLATED]</column>
+      <column name="definition_ru">быть общим, быть со- [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">具有共同點，共同 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">estar em comum, ser co- [AUTOTRANSLATED]</column>
+      <column name="definition_fi">olla joku jolla on jotain yhteistä, olla kanssa-</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes">This is used to express "fellow X", "co-X".[1]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">"For he's a jolly good ({ghuD:sen:nolink}) fellow."</column>
+      <column name="components"></column>
+      <column name="examples">
+▶ {HoDpu' ghuD:n@@HoD:n, -pu':n, ghuD:v} "co-captains", "fellow captains"
+▶ {ghuD HoDpu'.:sen:nolink} (The captains share the same status, and perhaps work together.)
+▶ {ghojwI' ghuD:n@@ghojwI':n, ghuD:v} "a fellow student"
+▶ {puqpu' ghuD:n@@puq:n, -pu':n, ghuD:v} (This might refer to children who are growing up together, whether related or not.)
+▶ {SenDeqpu' ghuD:n@@SenDeq:n, -pu':n, ghuD:v} "identical twins"</column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">fellow</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">kaveri, toveri</column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -9402,6 +9495,49 @@ The example also makes clear that "be warm" refers to temperature, and not to pe
     </table>
     <table name="mem">
       <column name="_id"></column>
+      <column name="entry_name">ghunglItlh</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">piston</column>
+      <column name="definition_de">Kolben</column>
+      <column name="definition_fa">پیستون [AUTOTRANSLATED]</column>
+      <column name="definition_sv">kolv [AUTOTRANSLATED]</column>
+      <column name="definition_ru">поршень [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">活塞 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">pistão [AUTOTRANSLATED]</column>
+      <column name="definition_fi">mäntä</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also">{QuQ:n}, {jonta':n}</column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags"></column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi"></column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
       <column name="entry_name">ghup</column>
       <column name="part_of_speech">v:t_c</column>
       <column name="definition">swallow</column>
@@ -9538,7 +9674,7 @@ MO confirmed at {Saarbrücken qepHom'a' 2011:src} that {ghur:v:nolink} is intran
       <column name="_id"></column>
       <column name="entry_name">ghuS</column>
       <column name="part_of_speech">v:1,t_c</column>
-      <column name="definition">be prepared, ready (to launch)</column>
+      <column name="definition">be prepared, be ready (to launch)</column>
       <column name="definition_de">bereit, feuerbereit sein</column>
       <column name="definition_fa">آماده، آماده (برای راه اندازی) [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara beredd, vara redo (att avfyra)</column>

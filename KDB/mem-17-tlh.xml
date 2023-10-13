@@ -45,7 +45,7 @@
       <column name="_id"></column>
       <column name="entry_name">tlhab</column>
       <column name="part_of_speech">v:is,klcp1</column>
-      <column name="definition">be free, independent</column>
+      <column name="definition">be free, be independent</column>
       <column name="definition_de">frei, unabhängig sein</column>
       <column name="definition_fa">آزاد، مستقل باشد [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara fri, vara oberoende</column>
@@ -173,7 +173,7 @@
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhach mu'mey</column>
-      <column name="part_of_speech">n:deriv</column>
+      <column name="part_of_speech">n:plural,deriv</column>
       <column name="definition">jargon, argot</column>
       <column name="definition_de">Fachsprache</column>
       <column name="definition_fa">جرگه، آرژانتین [AUTOTRANSLATED]</column>
@@ -386,49 +386,92 @@
       <column name="search_tags_fi"></column>
       <column name="source">[1] {TKDA:src}</column>
     </table>
-    <table name="mem">
-      <column name="_id"></column>
-      <column name="entry_name">tlhamchem</column>
-      <column name="part_of_speech">n</column>
-      <column name="definition">gravitational field</column>
-      <column name="definition_de">Gravitationsfeld</column>
-      <column name="definition_fa">میدان گرانشی [AUTOTRANSLATED]</column>
-      <column name="definition_sv">gravitations fält [AUTOTRANSLATED]</column>
-      <column name="definition_ru">гравитационное поле [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">重力場</column>
-      <column name="definition_pt">campo gravitacional</column>
-      <column name="definition_fi">painovoimakenttä</column>
-      <column name="synonyms"></column>
-      <column name="antonyms"></column>
-      <column name="see_also">{HoSchem:n}, {peQchem:n}, {pIvchem:n}, {Surchem:n}</column>
-      <column name="notes"></column>
-      <column name="notes_de"></column>
-      <column name="notes_fa"></column>
-      <column name="notes_sv"></column>
-      <column name="notes_ru"></column>
-      <column name="notes_zh_HK"></column>
-      <column name="notes_pt"></column>
-      <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
-      <column name="components">{tlham:n:1}, {chem:n:hyp}</column>
-      <column name="examples"></column>
-      <column name="examples_de"></column>
-      <column name="examples_fa"></column>
-      <column name="examples_sv"></column>
-      <column name="examples_ru"></column>
-      <column name="examples_zh_HK"></column>
-      <column name="examples_pt"></column>
-      <column name="examples_fi"></column>
-      <column name="search_tags"></column>
-      <column name="search_tags_de"></column>
-      <column name="search_tags_fa"></column>
-      <column name="search_tags_sv"></column>
-      <column name="search_tags_ru"></column>
-      <column name="search_tags_zh_HK"></column>
-      <column name="search_tags_pt"></column>
-      <column name="search_tags_fi"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}</column>
-    </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tlhamchem</column>
+          <column name="part_of_speech">n</column>
+          <column name="definition">gravitational field</column>
+          <column name="definition_de">Gravitationsfeld</column>
+          <column name="definition_fa">میدان گرانشی [AUTOTRANSLATED]</column>
+          <column name="definition_sv">gravitations fält [AUTOTRANSLATED]</column>
+          <column name="definition_ru">гравитационное поле [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">重力場</column>
+          <column name="definition_pt">campo gravitacional</column>
+          <column name="definition_fi">painovoimakenttä</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{HoSchem:n}, {peQchem:n}, {pIvchem:n}, {Surchem:n}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components">{tlham:n:1}, {chem:n:hyp}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}</column>
+        </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tlham rI'gheS</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">gravity deflector, parachute</column>
+          <column name="definition_de">Schwerkraft-Deflektor, Fallschirm</column>
+          <column name="definition_fa">انحراف گرانش ، چتر نجات [AUTOTRANSLATED]</column>
+          <column name="definition_sv">gravitation deflector, fallskärm [AUTOTRANSLATED]</column>
+          <column name="definition_ru">гравитационный дефлектор, парашют [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">重力偏轉器，降落傘 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">defletor de gravidade, pára-quedas</column>
+          <column name="definition_fi">painovoimansuuntain, laskuvarjo</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">This is an apparatus that creates some sort of force field that counters gravity when descending. The old-fashioned contraption that resembles an umbrella is informally called an {'alwI':n}.[1]</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes"></column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlham</column>
@@ -486,7 +529,7 @@
       <column name="definition_fi">liukua</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
+      <column name="see_also">{'Ich:v}, {wuH:v}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -517,20 +560,20 @@
     </table>
     <table name="mem">
       <column name="_id"></column>
-      <column name="entry_name">tlham rI'gheS</column>
-      <column name="part_of_speech">n:deriv</column>
-      <column name="definition">gravity deflector, parachute</column>
-      <column name="definition_de">Schwerkraft-Deflektor, Fallschirm</column>
-      <column name="definition_fa">انحراف گرانش ، چتر نجات [AUTOTRANSLATED]</column>
-      <column name="definition_sv">gravitation deflector, fallskärm [AUTOTRANSLATED]</column>
-      <column name="definition_ru">гравитационный дефлектор, парашют [AUTOTRANSLATED]</column>
-      <column name="definition_zh_HK">重力偏轉器，降落傘 [AUTOTRANSLATED]</column>
-      <column name="definition_pt">defletor de gravidade, pára-quedas</column>
-      <column name="definition_fi">painovoimansuuntain, laskuvarjo</column>
+      <column name="entry_name">tlhamI'</column>
+      <column name="part_of_speech">n</column>
+      <column name="definition">geode</column>
+      <column name="definition_de">Geode, Druse</column>
+      <column name="definition_fa">ژئود [AUTOTRANSLATED]</column>
+      <column name="definition_sv">geode [AUTOTRANSLATED]</column>
+      <column name="definition_ru">жеода [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">晶洞 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">geodo [AUTOTRANSLATED]</column>
+      <column name="definition_fi">geodi</column>
       <column name="synonyms"></column>
       <column name="antonyms"></column>
-      <column name="see_also"></column>
-      <column name="notes">This is an apparatus that creates some sort of force field that counters gravity when descending. The old-fashioned contraption that resembles an umbrella is informally called an {'alwI':n}.[1]</column>
+      <column name="see_also">{mISjennegh:n}, {nagh:n}</column>
+      <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
       <column name="notes_sv"></column>
@@ -538,7 +581,7 @@
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Written backwards in "xifan hol", this is IMAX. La Géode is geodesic a dome in Paris holding an IMAX theatre.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -556,7 +599,7 @@
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2020:src}</column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -1143,7 +1186,7 @@
       <column name="notes_zh_HK">這是用棕葉製成的食物，最好不加醬料食用。參見{'uSu':n}。 [AUTOTRANSLATED]</column>
       <column name="notes_pt">É um alimento feito de folhas marrons, melhor servido sem molho. Consulte {'uSu':n}. [AUTOTRANSLATED]</column>
       <column name="notes_fi">Tämä on ruskeaista lehdistä valmistettu ruoka, jota tarjoillaan parhaiten ilman kastiketta. Katso {'uSu':n}. [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">The writers of {DS9 - Melora:src} made up the word "gladst", which contains sounds not possible in standard Klingon. This word is Okrand's backfit.</column>
+      <column name="hidden_notes">The writers of {DS9 - Melora:src} made up the word "gladst", which contains sounds not possible in standard Klingon. This word is Okrand's backfit, which would be pronounced as in the show in the {mo'rISqa':n} dialect.</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -1522,7 +1565,7 @@
       <column name="definition_fi">olla kesy, olla kesytetty</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tlhab:v}</column>
-      <column name="see_also">{Saj:n}, {Ha'DIbaH:n:1}</column>
+      <column name="see_also">{Saj:n}, {Ha'DIbaH:n:1}, {tlhay'qeq:n}</column>
       <column name="notes">This refers to animals living in a house.[1]</column>
       <column name="notes_de">Dies bezieht sich auf Tiere, die in einem Haus leben.[1] [AUTOTRANSLATED]</column>
       <column name="notes_fa">این مربوط به حیواناتی است که در یک خانه زندگی می کنند.[1] [AUTOTRANSLATED]</column>
@@ -1551,6 +1594,49 @@
       <column name="search_tags_fi"></column>
       <column name="source">[1] {qep'a' 23 (2016):src}</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tlhay'qeq</column>
+          <column name="part_of_speech">n</column>
+          <column name="definition">domestication</column>
+          <column name="definition_de">Domestizierung</column>
+          <column name="definition_fa">اهلی شدن [AUTOTRANSLATED]</column>
+          <column name="definition_sv">domesticering [AUTOTRANSLATED]</column>
+          <column name="definition_ru">приручение [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">馴化 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">domesticação [AUTOTRANSLATED]</column>
+          <column name="definition_fi">kesyttäminen</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also">{tlhay':v}</column>
+          <column name="notes"></column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes">Maltz noted that {-qeq:sen:nolink} is not a nominalizing suffix.[1]</column>
+          <column name="components"></column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {qep'a' 30 (2023):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlha'</column>
@@ -1706,10 +1792,9 @@
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-{qagh vISop net tlheb:sen:nolink} "I should eat gagh."[1]
-{qagh DaSop 'e' vItlheb:sen:nolink} "You should eat gagh (in my opinion)." (I urge you to eat qagh.)[1]
-{qagh vISop 'e' vItlheb:sen:nolink} "I should eat gagh." (I urge me to eat qagh.)[1]
-</column>
+▶ {qagh vISop net tlheb:sen:nolink} "I should eat gagh."[1]
+▶ {qagh DaSop 'e' vItlheb:sen:nolink} "You should eat gagh (in my opinion)." (I urge you to eat qagh.)[1]
+▶ {qagh vISop 'e' vItlheb:sen:nolink} "I should eat gagh." (I urge me to eat qagh.)[1]</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -2402,7 +2487,7 @@
       <column name="notes_zh_HK"></column>
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
-      <column name="hidden_notes"></column>
+      <column name="hidden_notes">Written in "xifan hol", the consonants in this word are "x", "y", "z", and "t", the four coordinates of spacetime.</column>
       <column name="components"></column>
       <column name="examples">{tlhey'at qIr'a':n}</column>
       <column name="examples_de"></column>
@@ -3040,7 +3125,7 @@ Lopuksi, {tlhIm:n:nolink}: ta voidaan käyttää myös huopana, vaikka klingonit
       <column name="_id"></column>
       <column name="entry_name">tlhIn</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be particular, individual, one's own</column>
+      <column name="definition">be particular, be individual, be one's own</column>
       <column name="definition_de">eigen, individuell sein</column>
       <column name="definition_fa">خاص، فردی [AUTOTRANSLATED]</column>
       <column name="definition_sv">var speciell, individuell [AUTOTRANSLATED]</column>
@@ -3069,7 +3154,8 @@ In many languages, the endonym for its speakers means something like "our own pe
 ▶ {DujwIj tlhIn:n@@Duj:n:1, -wIj:n, tlhIn:v} "my particular ship, my own ship"[1]
 ▶ {betleHlIj vIneHbe', betleHwIj tlhIn vIghaj:sen@@betleH:n, -lIj:n, vI-:v, neH:v, -be':v, betleH:n, -wIj:n, tlhIn:v, vI-:v, ghaj:v} "I don't want your bat'leth, I have my own bat'leth"[1]
 ▶ {DujDaj tlhIn legh HoD:sen@@Duj:n:1, -Daj:n, tlhIn:v, legh:v, HoD:n} "The captain sees his/her own ship" (might be ambiguous whether the ship is the captain's or someone else's, depending on context)[1]
-▶ {jagh Duj tlhIn legh HoD:sen@@jagh:n, Duj:n:1, tlhIn:v, legh:v, HoD:n} "The captain sees the enemy's own ship"[1]</column>
+▶ {jagh Duj tlhIn legh HoD:sen@@jagh:n, Duj:n:1, tlhIn:v, legh:v, HoD:n} "The captain sees the enemy's own ship"[1]
+▶ {SenDeqpu' tlhIn:n@@SenDeq:n, -pu':n, tlhIn:v} "non-identical twins"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3085,7 +3171,7 @@ In many languages, the endonym for its speakers means something like "our own pe
       <column name="search_tags_zh_HK"></column>
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
-      <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}</column>
+      <column name="source">[1] {Saarbrücken qepHom'a' 2017:src}, [2] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
@@ -3156,7 +3242,7 @@ In many languages, the endonym for its speakers means something like "our own pe
       <column name="hidden_notes"></column>
       <column name="components"></column>
       <column name="examples">
-▶ {tlhIngan juHqo'Daq tlhIng yoSDaq 'oH toQDuj chenmoHlu'meH Daq wa'DIch'e':sen@@tlhIngan:n, juHqo':n, -Daq:n, tlhIng yoS:n, -Daq:n, 'oH:n, toQDuj:n, chenmoH:v, -lu':v, -meH:v, Daq:n, wa'DIch:n, -'e':n} "1st Construction Site: The Kling District, Klingon Home World"</column>
+▶ {tlhIngan juHqo'Daq tlhIng yoSDaq 'oH toQDuj chenmoHlu'meH Daq wa'DIch'e':sen@@tlhIngan:n, juHqo':n, -Daq:n, tlhIng yoS:n, -Daq:n, 'oH:n, toQDuj:n, chenmoHlu'meH Daq:n, wa'DIch:n, -'e':n} "1st Construction Site: The Kling District, Klingon Home World"</column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
       <column name="examples_sv"></column>
@@ -3692,7 +3778,7 @@ On idioomi, {Hem; tlhIngan rur@@Hem:v, tlhIngan:n, rur:v}. [AUTOTRANSLATED]</col
       <column name="notes_pt"></column>
       <column name="notes_fi"></column>
       <column name="hidden_notes"></column>
-      <column name="components"></column>
+      <column name="components">{tlhIngan:n}, {SoH:n:pro}, {-'a':v}</column>
       <column name="examples"></column>
       <column name="examples_de"></column>
       <column name="examples_fa"></column>
@@ -4070,7 +4156,7 @@ The examples show that the object of this verb can be the person of whom the req
       <column name="_id"></column>
       <column name="entry_name">tlhoD</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be somewhat obscured, filtered, smudged, fuzzy</column>
+      <column name="definition">be somewhat obscured, be filtered, be smudged, be fuzzy</column>
       <column name="definition_de">etwas trüb, gefiltert, unklar sein</column>
       <column name="definition_fa">تا حدودی مبهم، فیلتر شده، پریده، فازی [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara något förmörkad, filtrerad, fläckig, fuzzy [AUTOTRANSLATED]</column>
@@ -4314,7 +4400,7 @@ Voidaan sanoa joko {B tlhogh A:sen:nolink} "{A:sen:nolink} naimisiin {B:sen:noli
       <column name="_id"></column>
       <column name="entry_name">tlhol</column>
       <column name="part_of_speech">v:is</column>
-      <column name="definition">be raw, unprocessed</column>
+      <column name="definition">be raw, be unprocessed</column>
       <column name="definition_de">roh, unbearbeitet sein</column>
       <column name="definition_fa">خام، بدون پردازش [AUTOTRANSLATED]</column>
       <column name="definition_sv">vara rå, vara obearbetad</column>
@@ -4656,6 +4742,7 @@ Voidaan sanoa joko {B tlhogh A:sen:nolink} "{A:sen:nolink} naimisiin {B:sen:noli
       <column name="source">[1] {KGT:src}</column>
     </table>
     <table name="mem">
+      <!-- The "public area" explanation is given in this video from 2019: http://youtu.be/xh5vM-jDFRs -->
       <column name="_id"></column>
       <column name="entry_name">tlhop</column>
       <column name="part_of_speech">n:2</column>
@@ -4801,7 +4888,7 @@ The request that resulted in this word specified that a favor is "an act done ou
       <column name="definition_fi">olla pistävä, kirpeä, väkevä (ruoasta)</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tlhorghHa':v}</column>
-      <column name="see_also">{'ey:v}, {mum:v}</column>
+      <column name="see_also">{'ey:v}, {mum:v:1}</column>
       <column name="notes"></column>
       <column name="notes_de"></column>
       <column name="notes_fa"></column>
@@ -4877,28 +4964,26 @@ The request that resulted in this word specified that a favor is "an act done ou
       <column name="_id"></column>
       <column name="entry_name">tlhoS</column>
       <column name="part_of_speech">adv</column>
-      <column name="definition">almost, nearly, virtually, not quite; barely</column>
-      <column name="definition_de">fast, beinahe, annähernd; kaum</column>
+      <column name="definition">almost, nearly, virtually, not quite; barely (when used with a negated verb)</column>
+      <column name="definition_de">fast, beinahe, annähernd</column>
       <column name="definition_fa">تقریبا، تقریبا، تقریبا، نه کاملا؛ به سختی [AUTOTRANSLATED]</column>
       <column name="definition_sv">nästan, så gott som, inte helt</column>
       <column name="definition_ru">почти, почти, практически, не совсем; едва [AUTOTRANSLATED]</column>
       <column name="definition_zh_HK">幾乎、不完全、僅僅</column>
       <column name="definition_pt">quase, virtualmente, não exatamente; mal</column>
-      <column name="definition_fi">lähes, melkein, käytännössä, ei aivan (myönteisissä lauseissa); tuskin (kielteisissä)</column>
+      <column name="definition_fi">lähes, melkein, käytännössä, ei aivan; (kielteisissä lauseissa) tuskin</column>
       <column name="synonyms"></column>
       <column name="antonyms">{tlhoSHa':adv:hyp}</column>
       <column name="see_also">{loQ:adv}, {tlhoy:adv}</column>
-      <column name="notes">When used with a negative verb, this has the meaning of "barely".[2]</column>
-      <column name="notes_de">Bei Verwendung mit einem negativen Verb hat dies die Bedeutung von "kaum".[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fa">وقتی از فعل منفی استفاده می شود ، این معنی "به سختی" را دارد.[2] [AUTOTRANSLATED]</column>
-      <column name="notes_sv">När det används med ett negativt verb har detta betydelsen "knappt".[2] [AUTOTRANSLATED]</column>
-      <column name="notes_ru">При использовании с отрицательным глаголом это имеет значение «едва».[2] [AUTOTRANSLATED]</column>
-      <column name="notes_zh_HK">與否定動詞一起使用時，其含義為「幾乎」。[2] [AUTOTRANSLATED]</column>
-      <column name="notes_pt">Quando usado com um verbo negativo, isso tem o significado de "mal".[2] [AUTOTRANSLATED]</column>
-      <column name="notes_fi">Negatiivisella verbillä käytettynä tällä on merkitys "tuskin" .[2] [AUTOTRANSLATED]</column>
-      <column name="hidden_notes">"Close".
-
-This was defined as "almost, nearly, virtually, not quite" in {KGT:src}. The "barely" meaning was added at {qep'a' 25 (2018):src}.</column>
+      <column name="notes">When used with a negated verb, this has the meaning of "barely". For example, {tlhoS Xbe':sen:nolink} "I almost don't {X:sen:nolink}" might also be translated as "I barely {X:sen:nolink}".[2]</column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes">"Close".</column>
       <column name="components"></column>
       <column name="examples"></column>
       <column name="examples_de"></column>
@@ -5442,6 +5527,49 @@ Previously, some people believed that this word means "to expel exhaust", based 
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}, [2] {SkyBox 32:src} (reprinted in {HQ 6.2, p.9, Jun. 1997:src})</column>
     </table>
+        <table name="mem">
+          <column name="_id"></column>
+          <column name="entry_name">tlhuDwI' yu'egh HISmoHwI'</column>
+          <column name="part_of_speech">n:deriv</column>
+          <column name="definition">emitter waveform compressor</column>
+          <column name="definition_de">Emitter-Wellenformkompressor [AUTOTRANSLATED]</column>
+          <column name="definition_fa">کمپرسور شکل موج امیتر [AUTOTRANSLATED]</column>
+          <column name="definition_sv">emittervågformskompressor [AUTOTRANSLATED]</column>
+          <column name="definition_ru">эмиттерный компрессор формы волны [AUTOTRANSLATED]</column>
+          <column name="definition_zh_HK">發射器波形壓縮器 [AUTOTRANSLATED]</column>
+          <column name="definition_pt">compressor de forma de onda emissor [AUTOTRANSLATED]</column>
+          <column name="definition_fi">muodostimen aaltopakkain</column>
+          <column name="synonyms"></column>
+          <column name="antonyms"></column>
+          <column name="see_also"></column>
+          <column name="notes">This is a component of a cloaking device.</column>
+          <column name="notes_de"></column>
+          <column name="notes_fa"></column>
+          <column name="notes_sv"></column>
+          <column name="notes_ru"></column>
+          <column name="notes_zh_HK"></column>
+          <column name="notes_pt"></column>
+          <column name="notes_fi"></column>
+          <column name="hidden_notes">This only appears in English in the manual. The Klingon term was provided at {qep'a' 30 (2023):src}.</column>
+          <column name="components">{tlhuD:v}, {-wI':v}, {yu'egh:n}, {HIS:v}, {-moH:v}, {-wI':v}</column>
+          <column name="examples"></column>
+          <column name="examples_de"></column>
+          <column name="examples_fa"></column>
+          <column name="examples_sv"></column>
+          <column name="examples_ru"></column>
+          <column name="examples_zh_HK"></column>
+          <column name="examples_pt"></column>
+          <column name="examples_fi"></column>
+          <column name="search_tags"></column>
+          <column name="search_tags_de"></column>
+          <column name="search_tags_fa"></column>
+          <column name="search_tags_sv"></column>
+          <column name="search_tags_ru"></column>
+          <column name="search_tags_zh_HK"></column>
+          <column name="search_tags_pt"></column>
+          <column name="search_tags_fi"></column>
+          <column name="source">[1] {Haynes BoP Manual:src}, [2] {qep'a' 30 (2023):src}</column>
+        </table>
     <table name="mem">
       <column name="_id"></column>
       <column name="entry_name">tlhuH</column>
@@ -5570,6 +5698,49 @@ Previously, some people believed that this word means "to expel exhaust", based 
       <column name="search_tags_pt"></column>
       <column name="search_tags_fi"></column>
       <column name="source">[1] {KGT:src}</column>
+    </table>
+    <table name="mem">
+      <column name="_id"></column>
+      <column name="entry_name">tlhuHtuch</column>
+      <column name="part_of_speech">n:anim</column>
+      <column name="definition">armadillo-like Klingon creature</column>
+      <column name="definition_de">Gürteltierähnliches klingonisches Wesen</column>
+      <column name="definition_fa">موجودی آرمادیلو مانند کلینگون [AUTOTRANSLATED]</column>
+      <column name="definition_sv">bältdjursliknande klingonska varelse [AUTOTRANSLATED]</column>
+      <column name="definition_ru">клингонское существо, похожее на броненосец [AUTOTRANSLATED]</column>
+      <column name="definition_zh_HK">類似犰狳的克林貢生物 [AUTOTRANSLATED]</column>
+      <column name="definition_pt">criatura Klingon semelhante a um tatu [AUTOTRANSLATED]</column>
+      <column name="definition_fi">eräs vyötiäistä muistuttava eläin</column>
+      <column name="synonyms"></column>
+      <column name="antonyms"></column>
+      <column name="see_also"></column>
+      <column name="notes"></column>
+      <column name="notes_de"></column>
+      <column name="notes_fa"></column>
+      <column name="notes_sv"></column>
+      <column name="notes_ru"></column>
+      <column name="notes_zh_HK"></column>
+      <column name="notes_pt"></column>
+      <column name="notes_fi"></column>
+      <column name="hidden_notes"></column>
+      <column name="components"></column>
+      <column name="examples"></column>
+      <column name="examples_de"></column>
+      <column name="examples_fa"></column>
+      <column name="examples_sv"></column>
+      <column name="examples_ru"></column>
+      <column name="examples_zh_HK"></column>
+      <column name="examples_pt"></column>
+      <column name="examples_fi"></column>
+      <column name="search_tags">anteater, sloth</column>
+      <column name="search_tags_de"></column>
+      <column name="search_tags_fa"></column>
+      <column name="search_tags_sv"></column>
+      <column name="search_tags_ru"></column>
+      <column name="search_tags_zh_HK"></column>
+      <column name="search_tags_pt"></column>
+      <column name="search_tags_fi">vyötiäinen</column>
+      <column name="source">[1] {qep'a' 30 (2023):src}</column>
     </table>
     <table name="mem">
       <column name="_id"></column>
