@@ -165,7 +165,7 @@ module.exports.Engine = function (beqTalk) {
 				//Try it 500 times at most
 				for (i = 0; i < 500; i++) {
 					tmpWord = module.exports.KDBJSon[Math.floor(Math.random() * (allWordsNum + 1))];
-					if (tmpWord != null && tmpWord.source.includes(lookSource))
+					if (tmpWord != null && tmpWord.source.includes(lookSource) && bT.isAlt(tmpWord.type) == false)
 						break;
 					tmpWord = null;
 				}
