@@ -83,7 +83,8 @@ bot.on('ready', function (evt) {
 	questGame.initGame(beq.KDBJSon);
 
 	//Timer runs once a minute (KWOTD excepted)
-	evTimer.startEventTimer(beq, bot);
+	//evTimer.startEventTimer(beq, bot);
+	//KWOTD macht Ärger, ich schalte es vorerst aus
 
 	//Notice that we're devBuild
 	if (DData.devBuild == "true")
