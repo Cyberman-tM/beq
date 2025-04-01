@@ -117,6 +117,14 @@ function processMessage(bot, messageDJS) {
 	if (message.length < 3)
 		return;
 
+
+//New special restriction - only react in ask_beq channel
+	if (channelID != DData.clipChan)
+	{
+		botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel');
+		return;
+	}
+
 	//Regular use: first char is bot-command
 	cmdMagic = message.substring(0, 1);
 	message = message.substring(1, 99999);
@@ -143,13 +151,6 @@ function processMessage(bot, messageDJS) {
 	//              % => default GAME indicator
 	//              $ => Categorize words
 
-//New special restriction - only react in ask_beq channel
-	if (channelID != DData.clipChan)
-	{
-		//botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel!');
-		return;
-	}
-	
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
