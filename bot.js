@@ -124,7 +124,7 @@ function processMessage(bot, messageDJS) {
 //New special restriction - only react in ask_beq channel
 	if ((cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '$' ) && channelID != DData.clipChan)
 	{
-		//botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel');
+		botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel');
 		return;
 	}
 	
