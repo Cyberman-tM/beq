@@ -117,18 +117,17 @@ function processMessage(bot, messageDJS) {
 	if (message.length < 3)
 		return;
 
-
-//New special restriction - only react in ask_beq channel
-	if (channelID != DData.clipChan)
-	{
-		//botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel');
-		return;
-	}
-
 	//Regular use: first char is bot-command
 	cmdMagic = message.substring(0, 1);
 	message = message.substring(1, 99999);
 
+//New special restriction - only react in ask_beq channel
+	if ((cmdMagic == '!' || cmdMagic == '?' || cmdMagic == '$' ) && channelID != DData.clipChan)
+	{
+		//botSendMessage(1, bot, messageDJS.channel.id, 'beq antwortet nur noch im ask_beq Channel');
+		return;
+	}
+	
 	//Dev build only, first char is dev-marker($)
 	if (DData.devBuild == "true") {
 		if (cmdMagic == '$') {
