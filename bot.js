@@ -143,6 +143,12 @@ function processMessage(bot, messageDJS) {
 	//              % => default GAME indicator
 	//              $ => Categorize words
 
+//New special restriction - only react in ask_beq channel
+	if (channelID != DData.clipChan)
+	{
+		return;
+	}
+	
 
 	// Our bot needs to know if it needs to execute a command
 	// for this script it will listen for messages that will start with `!`
