@@ -62,13 +62,21 @@ var gameData = [];
 logger.remove(logger.transports.Console);
 logger.level = 'debug';
 // Initialize Discord Bot
-var bot = new Discord.Client();
+var bot = new Discord.Client({
+	intents: [
+		Discord.GatewayIntentBits.Guilds,
+		Discord.GatewayIntentBits.GuildMessages,
+		Discord.GatewayIntentBits.DirectMessages,
+		Discord.GatewayIntentBits.MessageContent
+	],
+	partials: [Discord.Partials.Channel]
+});
 bot.login(DData.token);
 devTest = DData.devBuild;
 //		autorun: true
 
 
-bot.on('ready', function (evt) {
+bot.on('clientReady', function (evt) {
 	logger.info('Connected');
 	logger.info('Logged in as: ');
 	logger.info(bot.user.username + ' - (' + bot.user.id + ')');
@@ -92,11 +100,19 @@ bot.on('ready', function (evt) {
 }
 );
 
-bot.on('messageUpdate', function (oldMessage, newMessage) {
+bot.on('messageUpdate', async function (oldMessage, newMessage) {
+	if (newMessage.partial) {
+		try {
+			newMessage = await newMessage.fetch();
+		} catch (error) {
+			logger.warn('Could not fetch updated message: ' + error.message);
+			return;
+		}
+	}
 	processMessage(this, newMessage);
 });
 
-bot.on('message', function (messageDJS) {
+bot.on('messageCreate', function (messageDJS) {
 	processMessage(this, messageDJS);
 });
 
@@ -209,10 +225,10 @@ function processMessage(bot, messageDJS) {
 			case 'newGame':				
 				var gameTalk = {};
 				//Check if user already has a game open
-				if (userGame[messageDJS.author.userID] != undefined && userGame[messageDJS.author.userID] != null)
-					gameTalk = userGame[messageDJS.author.userID];
+				if (userGame[messageDJS.author.id] != undefined && userGame[messageDJS.author.id] != null)
+					gameTalk = userGame[messageDJS.author.id];
 				else
-					userGame[messageDJS.author.userID] = JSON.parse(questGame.gameTalkDef);
+					userGame[messageDJS.author.id] = JSON.parse(questGame.gameTalkDef);
 
 				sndMessage = "Done, I hope?";
 				if (args[1] == "add")
@@ -597,7 +613,7 @@ function processMessage(bot, messageDJS) {
 		//args[1] = args[1].toLowerCase();
 
 		var gameTalk = {};
-		var userGameID = userGame[messageDJS.author.userID];
+		var userGameID = userGame[messageDJS.author.id];
 		sndMessage = "Wrong command";
 
 		//User does not have a game running?
@@ -630,7 +646,7 @@ function processMessage(bot, messageDJS) {
 				gameTalk = JSON.parse(questGame.gameTalkDef);
 
 				//Return is length of array - first index is 0
-				userGameID = userGame[messageDJS.author.userID] = (gameData.push(gameTalk)) - 1;
+				userGameID = userGame[messageDJS.author.id] = (gameData.push(gameTalk)) - 1;
 			}
 		}
 

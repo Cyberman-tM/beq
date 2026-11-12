@@ -3,7 +3,7 @@ var DData = require('./../external/discord_data.js');
 
 module.exports = (bot, args, messageDJS) => 
 {
-  var LMChannel = bot.channels.get(DData.LMChan);
+  var LMChannel = bot.channels.cache.get(DData.LMChan);
   
   ////curMessage hat noch den Befehl - wie werden wir den los?
   //var curMessage = messageDJS.content;
@@ -14,18 +14,19 @@ module.exports = (bot, args, messageDJS) =>
   curMessage = curMessage.replace("\n", '\n');
   
   //Holen wir uns die gepinnten Nachrichten aus dem Letter to Maltz Channel
-  LMChannel.fetchPinnedMessages()
+  LMChannel.messages.fetchPinned()
   .then(function(messages)
   {
 	//Wir haben schon Nachrichten, wir nehmen momentan nur die erste!
     if (messages.size > 0)
     {
 		//Bestehende Nachricht mit neuer Nachricht verknüpfen:
-		newMessage = messages.array()[0].content + '\n';
+		var pinnedMessage = messages.first();
+		newMessage = pinnedMessage.content + '\n';
 	        newMessage += "Asked by:" + messageDJS.author + '\n' + curMessage;
 		
 		//Bestehende Nachricht editieren
-		messages.array()[0].edit(newMessage)
+		pinnedMessage.edit(newMessage)
 	    .then()
 	    .catch(console.error);
     }

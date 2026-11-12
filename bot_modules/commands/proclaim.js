@@ -5,7 +5,7 @@ var isLink = false;
 
 module.exports = (bot, args, messageDJS) => 
 {
-  var ANChannel = bot.channels.get(DData.ANChan);
+  var ANChannel = bot.channels.cache.get(DData.ANChan);
   
   //Probieren wirs so:
   args[0] = "";
